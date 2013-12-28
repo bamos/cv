@@ -1,0 +1,85 @@
+\begin{minipage}{\textwidth}
+\section*{ {{ name }} }
+
+{% if name == "Education" %}
+  {% for school in contents %}
+    {\large {{ school.school|e }} } \hfill {{ school.location|e }} \\
+    {{ school.degree|e }} \hfill {{ school.dates|e }} \\
+    Major GPA: {{ school.majorGPA|e }}, Overall GPA: {{ school.overallGPA|e }}
+    \vspace{3mm}
+  {% endfor %}
+{% elif name == "Research Experience" %}
+  {% for lab in contents %}
+    {\large {{ lab.lab|e }} } \hfill {{ lab.location|e }} \\
+    {{ lab.title|e }}, Advisor: {{ lab.advisor|e }} \hfill {{ lab.dates|e }}
+    \begin{itemize}
+    {% for detail in lab.details %}
+      \item {{ detail }}
+    {% endfor %}
+    \end{itemize}
+    \vspace{3mm}
+  {% endfor %}
+{% elif name == "Industry Experience" %}
+  {% for company in contents %}
+    {\large {{ company.company|e }} } \hfill {{ company.location|e }} \\
+    {{ company.title|e }} \hfill {{ company.dates|e }}
+    \begin{itemize}
+    {% for detail in company.details %}
+      \item {{ detail }}
+    {% endfor %}
+    \end{itemize}
+    \vspace{3mm}
+  {% endfor %}
+{% elif name == "Teaching Experience" %}
+  {% for university in contents %}
+    {\large {{ university.university|e }} }\hfill {{ university.location|e }} \\
+    {{ university.title|e }} \hfill {{ university.dates|e }}
+    \begin{itemize}
+    {% for detail in university.details %}
+      \item {{ detail }}
+    {% endfor %}
+    \end{itemize}
+    \vspace{3mm}
+  {% endfor %}
+{% elif name == "Publications" %}
+  {% for type in contents %}
+    \subsection*{ {{ type.title() }} }
+    \begin{enumerate}
+      {% for pub in contents[type] %}
+        \item {{ pub }}
+      {% endfor %}
+    \end{enumerate}
+  {% endfor %}
+{% elif name == "Honors \\& Awards" %}
+  \begin{itemize}
+    {% for award in contents %}
+      \item {{ award['title'] }}
+      {% if 'descr' in award %}
+        \begin{itemize}
+          \item {{ award['descr'] }}
+        \end{itemize}
+      {% endif %}
+    {% endfor %}
+  \end{itemize}
+{% elif name == "Projects" %}
+  {% for k,v in contents.items() %}
+    \subsection*{ {{ v['name'] }} -- \url{ {{ v['url'] }} } }
+    \begin{itemize}
+      {% for detail in v['details'] %}
+        \item {{ detail }}
+      {% endfor %}
+    \end{itemize}
+  {% endfor %}
+{% elif name == "Activities" %}
+  \begin{itemize}
+    {% for activity in contents %}
+      \item {{ activity }}
+    {% endfor %}
+  \end{itemize}
+{% else %}
+  {{ contents }}
+  \vspace{3mm}
+{% endif %}
+\end{minipage}
+
+

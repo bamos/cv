@@ -1,0 +1,217 @@
+name: brandon amos
+phone: (540) 947--1238
+email: bdamos@vt.edu
+url: "http://bamos.io"
+
+order:
+  - [interests, Interests]
+  - [education, Education]
+  - [research, Research Experience]
+  - [teaching, Teaching Experience]
+  - [publications, Publications]
+  - [industry, Industry Experience]
+  - [skills, Skills]
+  - [honors, Honors \& Awards]
+  - [projects, Projects]
+  - [activities, Activities]
+
+interests: Compiler, mobile, or security research
+  or development in Linux. \\
+  Seeking a PhD fellowship starting May 2014 or 
+  internship from May--August 2014.
+
+education:
+  - school: Virginia Tech
+    location: Blacksburg, Virginia
+    degree: B.S. Computer Science, Honors Scholar. Mathematics minor.
+    dates: August 2011--May 2014
+    overallGPA: 3.98/4.00
+    majorGPA: 4.00/4.00
+
+research:
+  - lab: Virginia Tech Computer Science Department
+    locatation: Blacksburg, Virginia
+    title: Undergraduate Research Assistant
+    advisor: Dr. Layne Watson
+    dates: January 2013--Present
+    details: 
+      - Optimization algorithm in {\bf Fortran 95}
+        resulting in primary authorship on a conference publication.
+      #- TODO - More details.
+
+  - lab: Systems Software Research Group
+    location: Blacksburg, Virginia
+    title: Undergraduate Research Assistant
+    advisor: Dr. Binoy Ravindran
+    dates: November 2012--Present
+    details:
+      - Work supported with NSF and NEEC REU grants.
+      - Automatic {\bf OpenMP} to {\bf CUDA} translation using
+        {\bf C++} and the {\bf ROSE} compiler framework.
+      - '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
+
+  - lab: Magnum Research Group
+    location: Blacksburg, Virginia
+    title: Undergraduate Research Assistant
+    advisor: Dr. Jules White
+    dates: May 2012--Present
+    details:
+      - Work supported with ARO REU grant.
+      - Android {\bf malware detection research} resulting in
+        primary authorship on a conference publication.
+      - Created a distributed {\bf Actor} system using {\bf Scala}
+        for {\bf machine learning} classification of APKs.
+      - Developed {\bf VC\#} programs for a pilot study on
+        manufacturing cyber-physical security.
+      - Assisted {\bf C++} and {\bf Make} development in {\bf Linux} for a
+        deployment optimization framework.
+      - Modified the {\bf Android source} to provide non-standard logging
+        information for dynamic malware analysis.
+
+industry:
+  - company: Qualcomm, Inc.
+    location: San Diego, California
+    title: Source Integrity Team Software Intern
+    dates: May 2013--August 2013
+    details:
+    - Developed a {\bf web application} to modify an XML-based grammar for
+      fuzz vector generation. \\
+      Implemented with client-side {\bf HTML} and {\bf js},
+      using {\bf D3} for graphics and {\bf Handlebars} for templating.
+    -  Developed an XML-based grammar translator in {\bf C++} with
+      the {\bf Xerces} XML parser in {\bf Linux}. \\
+      Reimplemented in {\bf Python} using the {\bf ElementTree} XML API for
+      better analysis and tree transformation.
+  - company: Phoenix Integration, Inc.
+    location: Blacksburg, Virginia
+    title: Software Engineer Intern
+    dates: May 2012--August 2012
+    details:
+      - Integrated a new licensing mode into CenterLink, a grid computing
+        application, using {\bf FLEXlm} and {\bf Java}.
+      - Assisted development of industry software in
+        {\bf VC++}, {\bf VC\#}, {\bf Java}, and {\bf Tomcat}.
+      - Improved the testing ({\bf JUnit} and {\bf NUnit}) and installation
+        ({\bf Ant}, {\bf InstallShield}, and {\bf Make}) frameworks.
+  - company: Sunapsys, Inc.
+    location: Vinton, Virginia
+    title: Network Administrator Intern
+    dates: January 2011--August 2011
+    details:
+      - '{\bf Linux} server configuration and {\bf Bash} development.'
+
+teaching:
+  - university: Virginia Tech Computer Science Department
+    location: Blacksburg, Virginia
+    title: Undergraduate Teaching Assistant
+    dates: January 2013--May 2013
+    details:
+      - Assisted students in a software design and data structures
+        class using {\bf Java} and {\bf Android}.
+
+publications:
+  conference:
+    - "``Applying machine learning classifiers to dynamic Android malware
+      detection at scale.'' {\\bf Brandon Amos}, Hamilton Turner, Jules White.
+      IWCMC'13 Security, Trust, and Privacy Symposium.
+      Cagliari, Italy, July 2013."
+    - "``Fortran 95 implementation of QNSTOP for global and stochastic
+      optimization.'' {\\bf Brandon Amos}, David Easterling, Layne Watson,
+      Brent Castle, Michael Trosset, William Thacker. Submitted."
+
+  magazine:
+    - "``Bad Parts: Are Our Manufacturing Systems At Risk of Silent
+      Cyber-attacks?'' Hamilton Turner, {\\bf Brandon Amos}, Jules White,
+      Jaime Camelio, Chris Williams, Robert Parker. Submitted."
+
+skills:
+  '{\bf Preferred Environments:} Linux***, vim/gdb***, git***, Make** \\
+  {\bf Languages}: Bash**, C/C++**, C\#*, Fortran**,
+    HTML/CSS*, \LaTeX **, Java**, JavaScript**, \\
+    \hspace*{.25in} {\it Mathematica}**, PHP*, Python***, R*, Scala**
+  {\bf Systems}: Android**, Linux*** \\
+  {\bf Version Control/Review}: Gerrit*, Git***, Subversion** \\
+  \vspace{-3mm}
+  {\bf Rankings:} 1/10* -- 3/10** -- 5/10*** -- 7/10****\\'
+
+honors:
+  - title: Honorable Mention,
+      CRA Outstanding Undergraduate Researcher Award, 2014
+    descr: 1 of 15 North American males awarded honorable mention for
+           exemplary computer science research.
+  - title: Qualstar Award, Qualcomm, 2013
+  - title: Benjamin F. Bock Merit Scholarship, Virginia Tech Engineering, 2013
+  - title: Sophomore Scholar Award, Virginia Tech Computer Science, 2013
+    descr: Given to the sophomore in Computer Science with the most
+           outstanding academic record.
+  - title: University Honors, Virginia Tech, 2012--2013
+
+  - title: Intelligence Community Center of Academic Excellence Scholar,
+      Virginia Tech, 2012--2013
+    descr: Merit-based scholarship providing a cyber-security
+           research fellowship.
+  - title: Dean's List with Distinction, Virginia Tech, 2011--2013
+  - title: Engineering Merit Scholarship,
+           Roanoke County Public Schools Education Foundation, 2011
+    descr: Merit-based scholarship presented annually to one student
+           in the graduating Engineering class.
+  - title: Papa John's Merit Scholarship, 2011
+  - title: Gay B. Shober Memorial Merit Scholarship,
+        Roanoke County Federal Credit Union, 2011
+  - title: Pamplin Leader Scholarship, Virginia Tech, 2011
+    descr: Merit-based scholarship presented to one student from
+           each public high school in Virginia.
+  - title: I. Luck Gravett Memorial Merit Scholarship,
+        Scottish Rite of Freemasonry, 2011
+  - title: Salem--Roanoke County Chamber of Commerce Merit Scholarship, 2011
+  #- title: 1st Place Regional CAD/Engineering Drawing,
+  #         Virginia TSA, Blue Ridge Region, 2011
+  #- title: District Band Trumpeter, VBODA District VI, 2009--2011
+  #- title: Virginia Aerospace Science and Technology Scholar,
+  #         National Space Grant Foundation, 2010
+  #  descr: Selected as an attendee of a summer academy at NASA
+  #         Langley Research Center.
+  #- title: Head Junior Marshall, Northside High School, 2010
+  #- title: 3rd Place District Foreign Extemporaneous Speaker,
+  #         VHSL Forensics, 2009	
+
+projects:
+  website:
+    name: Personal Blog and Website
+    url: http://bamos.io
+    details:
+      - Hosted on GitHub Pages. Uses {\bf Markdown} for posts and {\bf Jekyll}
+          for static HTML generation.
+      - '{\bf 27 posts} across the following tags,
+        listed by highest frequency. \\
+        Python, Bash, LaTeX, Linux, Scala, Android, Mathematica,
+        C++, Fortran, CUDA'
+  github:
+    name: GithHub Portfolio
+    url: http://github.com/bamos
+    details:
+      - Hosts code samples, original source code, and patches for
+          open source projects.
+      - 20 original repositories, 6 forked repositories.
+
+activities:
+  - Honors Residential College, Virginia Tech, 2013
+  - Hokies Pep Band, Virginia Tech, 2012--2013
+  - Computer Science Community Service, Virginia Tech, 2012
+  - Symphony Band, Virginia Tech, 2011--2012
+  - Linux and Unix Users Group, Virginia Tech, 2011--2012
+  - Galileo Living--Learning Community, Virginia Tech, 2011--2012
+  - Trumpet Section Leader, Marching Band, Northside High School, 2010--2011
+# - Math Club, Northside High School, 2010--2011
+# - National Honor Society, Northside High School, 2009--2011
+# - Academic Team, Northside High School, 2009--2011
+# - Chess Team, Northside High School, 2009--2011
+  - Tennis Team, Northside High School, 2008--2011
+# - Technology Student Association, Northside High School, 2008--2011
+# - Marching Band, Northside High School, 2007--2011
+# - Robotics Team, Virginia Western Community College, 2009--2010
+# - Guitar Club, Northside High School, 2009--2010
+# - Forensics Team, Northside High School, 2008--2010
+# - Spanish Club, Northside High School, 2008--2010
+# - Engineering Club, Burton Center for Arts and Technology, 2007--2008
+# - Soccer Team, Northside High School, 2007--2008
