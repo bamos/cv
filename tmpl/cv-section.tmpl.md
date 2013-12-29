@@ -68,6 +68,11 @@
 + {{ activity }}
 {%- endfor %}
 
+{% elif name == "Skills" %}
+{%- for skill in contents %}
++ __{{ skill['title'] }}:__ {{ skill['details'] }}
+{%- endfor %}
+
 {% else %}
 {{ contents }}
 {% endif %}

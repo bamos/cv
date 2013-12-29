@@ -6,7 +6,9 @@ BLOG_DIR=$(HOME)/repos/blog
 
 all: gen/cv.pdf gen/cv.md
 
-gen/cv.tex gen/cv.md: cv.yaml generate.py tmpl/cv-section.tmpl.tex tmpl/cv.tmpl.tex
+gen/cv.tex gen/cv.md: cv.yaml generate.py \
+	tmpl/cv-section.tmpl.tex tmpl/cv.tmpl.tex \
+	tmpl/cv-section.tmpl.md tmpl/cv.tmpl.md
 	./generate.py
 
 gen/cv.pdf: gen/cv.tex

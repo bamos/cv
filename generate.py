@@ -22,6 +22,7 @@ def latexToMd(s):
     s = s.replace('--', '-')
     s = s.replace('``', '"')
     s = s.replace("''", '"')
+    s = s.replace(r"\LaTeX", "LaTeX")
     s = s.replace(r"\#", "#")
     s = s.replace(r"\&", "&")
     s = re.sub(r'\\[hv]space\*?\{[^}]*\}', '', s)

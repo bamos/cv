@@ -76,6 +76,12 @@
       \item {{ activity }}
     {% endfor %}
   \end{itemize}
+{% elif name == "Skills" %}
+  \begin{itemize}
+    {% for skill in contents %}
+      \item { \bf {{ skill['title'] }}: } {{ skill['details'] }}
+    {% endfor %}
+  \end{itemize}
 {% else %}
   {{ contents }}
   \vspace{3mm}

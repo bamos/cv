@@ -127,14 +127,15 @@ publications:
       Jaime Camelio, Chris Williams, Robert Parker. Submitted."
 
 skills:
-  '{\bf Preferred Environments:} Linux***, vim/gdb***, git***, Make** \\
-  {\bf Languages}: Bash**, C/C++**, C\#*, Fortran**,
-    HTML/CSS*, \LaTeX **, Java**, JavaScript**, \\
-    \hspace*{.25in} {\it Mathematica}**, PHP*, Python***, R*, Scala**
-  {\bf Systems}: Android**, Linux*** \\
-  {\bf Version Control/Review}: Gerrit*, Git***, Subversion** \\
-  \vspace{-3mm}
-  {\bf Rankings:} 1/10* -- 3/10** -- 5/10*** -- 7/10****\\'
+  - title: Preferred Environments
+    details: Linux***, vim/gdb***, git***, Make**
+  - title: Languages
+    details: Bash**, C/C++**, C\#*, Fortran**, HTML/CSS*, \LaTeX **,
+      Java**, JavaScript**, {\it Mathematica}**, PHP*, Python***, R*, Scala**
+  - title: Systems
+    details: Android**, Linux***
+  - title: Rankings
+    details: 1/10* -- 3/10** -- 5/10*** -- 7/10****
 
 honors:
   - title: Honorable Mention,
