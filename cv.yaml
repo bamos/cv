@@ -29,8 +29,8 @@ education:
     majorGPA: 4.00/4.00
 
 research:
-  - lab: Virginia Tech Computer Science Department
-    locatation: Blacksburg, Virginia
+  - lab: Virginia Tech Computer Science
+    location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
     advisor: Dr. Layne Watson
     dates: January 2013--Present
@@ -75,11 +75,11 @@ industry:
     dates: May 2013--August 2013
     details:
     - Developed a {\bf web application} to modify an XML-based grammar for
-      fuzz vector generation. \\
+      fuzz vector generation.
       Implemented with client-side {\bf HTML} and {\bf js},
       using {\bf D3} for graphics and {\bf Handlebars} for templating.
     -  Developed an XML-based grammar translator in {\bf C++} with
-      the {\bf Xerces} XML parser in {\bf Linux}. \\
+      the {\bf Xerces} XML parser in {\bf Linux}.
       Reimplemented in {\bf Python} using the {\bf ElementTree} XML API for
       better analysis and tree transformation.
   - company: Phoenix Integration, Inc.
@@ -183,8 +183,8 @@ projects:
       - Hosted on GitHub Pages. Uses {\bf Markdown} for posts and {\bf Jekyll}
           for static HTML generation.
       - '{\bf 27 posts} across the following tags,
-        listed by highest frequency. \\
-        Python, Bash, LaTeX, Linux, Scala, Android, Mathematica,
+        listed by highest frequency.'
+      - Python, Bash, LaTeX, Linux, Scala, Android, Mathematica,
         C++, Fortran, CUDA'
   github:
     name: GithHub Portfolio
