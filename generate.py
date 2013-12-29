@@ -17,7 +17,7 @@ f.close()
 def latexToMd(s):
   if isinstance(s,str):
     s = s.replace(r'\\', '\n\n')
-    s = s.replace(r'\bf', '')
+    s = re.sub(r'\{ *\\bf *([^\}]*)\}', r' __\1__ ', s)
     s = s.replace(r'\it', '')
     s = s.replace('--', '-')
     s = s.replace('``', '"')

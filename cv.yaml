@@ -15,10 +15,10 @@ order:
   - [projects, Projects]
   - [activities, Activities]
 
-interests: Compiler, mobile, or security research
-  or development in Linux. \\
+interests: '{\bf Compiler}, {\bf mobile}, or {\bf security} research
+  or development in {\bf Linux}. \\
   Seeking a PhD fellowship starting May 2014 or 
-  internship from May--August 2014.
+  internship from May--August 2014.'
 
 education:
   - school: Virginia Tech

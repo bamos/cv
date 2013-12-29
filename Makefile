@@ -14,9 +14,12 @@ gen/cv.pdf: gen/cv.tex
 	rm -rf *.aux *.out *.log __pycache__
 	mv cv.pdf gen
 
-push: gen/cv.pdf gen/cv.md
+.PHONY: stage
+stage: gen/cv.pdf gen/cv.md
 	cp gen/cv.pdf $(BLOG_DIR)/data
 	cp gen/cv.md $(BLOG_DIR)
+
+push: stage
 	git -C $(BLOG_DIR) add $(BLOG_DIR)/data/cv.pdf
 	git -C $(BLOG_DIR) add $(BLOG_DIR)/cv.md
 	git -C $(BLOG_DIR) commit -m "Update vitae."
