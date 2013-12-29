@@ -40,10 +40,10 @@
 
 {% elif name == "Publications" %}
 {% for type in contents %}
-## {{ type.title() }}
+## {{ type['title'] }}
 
-{%- for pub in contents[type] %}
-+ {{ pub }}
+{%- for pub in type['details'] %}
+{{ loop.index }}. {{ pub }}
 {%- endfor %}
 {% endfor %}
 

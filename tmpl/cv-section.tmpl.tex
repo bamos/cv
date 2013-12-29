@@ -43,9 +43,9 @@
   {% endfor %}
 {% elif name == "Publications" %}
   {% for type in contents %}
-    \subsection*{ {{ type.title() }} }
+    \subsection*{ {{ type['title'] }} }
     \begin{enumerate}
-      {% for pub in contents[type] %}
+      {% for pub in type['details'] %}
         \item {{ pub }}
       {% endfor %}
     \end{enumerate}
