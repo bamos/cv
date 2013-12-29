@@ -188,7 +188,7 @@ projects:
       - '{\bf 27 posts} across the following tags,
         listed by highest frequency.'
       - Python, Bash, LaTeX, Linux, Scala, Android, Mathematica,
-        C++, Fortran, CUDA'
+        C++, Fortran, CUDA
   github:
     name: GithHub Portfolio
     url: http://github.com/bamos
