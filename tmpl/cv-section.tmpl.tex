@@ -50,6 +50,7 @@
       {% endfor %}
     \end{enumerate}
   {% endfor %}
+  \vspace{3mm}
 {% elif name == "Honors \\& Awards" %}
   \begin{itemize}
     {% for award in contents %}
@@ -61,6 +62,7 @@
       {% endif %}
     {% endfor %}
   \end{itemize}
+  \vspace{3mm}
 {% elif name == "Projects" %}
   {% for k,v in contents.items() %}
     \subsection*{ {{ v['name'] }} -- \url{ {{ v['url'] }} } }
@@ -70,22 +72,23 @@
       {% endfor %}
     \end{itemize}
   {% endfor %}
+  \vspace{3mm}
 {% elif name == "Activities" %}
   \begin{itemize}
     {% for activity in contents %}
       \item {{ activity }}
     {% endfor %}
   \end{itemize}
+  \vspace{3mm}
 {% elif name == "Skills" %}
   \begin{itemize}
     {% for skill in contents %}
       \item { \bf {{ skill['title'] }}: } {{ skill['details'] }}
     {% endfor %}
   \end{itemize}
+  \vspace{3mm}
 {% else %}
   {{ contents }}
   \vspace{3mm}
 {% endif %}
-\end{minipage}
-
-
+\end{minipage} \\ \\
