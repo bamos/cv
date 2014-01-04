@@ -57,7 +57,7 @@
 
 {% elif name == "Projects" %}
 {% for k,v in contents.items() %}
-## [{{ v['url'] }}]({{ v['name']}})
+## [{{ v['name']}}]({{ v['url'] }})
 {%- for detail in v['details'] %}
 + {{ detail }}
 {%- endfor %}
