@@ -78,10 +78,12 @@ industry:
     title: Software Winter Intern
     dates: December 2013--January 2014
     details:
-    - Open-source {\bf Scala} development on the
-      Snowplow analytics platform in a startup environment.
+    - Open-source {\bf Scala} development with a startup on the
+      Snowplow analytics platform.
     - Developed a new server using {\bf Spray} and {\bf Actors} to store
       {\bf Apache Thrift} events on {\bf Amazon Kinesis}.
+    - Completed project ahead of schedule, and also ported Snowplow's Scala
+      enrichment process to Kinesis.
   - company: Qualcomm, Inc.
     location: San Diego, California
     title: Source Integrity Team Software Intern
@@ -143,7 +145,7 @@ skills:
   - title: Preference
     details: Linux, vim, git, Make, sbt
   - title: Languages
-    details: Bash**, C/C++**, C\#*, Fortran**, HTML/CSS*, \LaTeX **,
+    details: Akka**, Bash**, C/C++**, C\#*, Fortran**, HTML/CSS*, \LaTeX **,
       Java**, JavaScript**, {\it Mathematica}**, Make***,
       PHP*, Python***, R*, Scala***
   - title: Systems
