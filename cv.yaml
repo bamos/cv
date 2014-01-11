@@ -35,9 +35,11 @@ research:
     advisor: Dr. Layne Watson
     dates: January 2013--Present
     details: 
-      - Optimization algorithm in {\bf Fortran 95}
+      - Algorithm development for stochastic optimization using quasi-Newton
+        methods for parameter estimation in {\bf Fortran 95} and {\bf OpenMP}
         resulting in primary authorship on a conference publication.
-      #- TODO - More details.
+      - Bioinformatics research on yeast cell modeling using
+        {\bf Fortran 95}, {\bf C++}, and {\bf Matlab}.
 
   - lab: Systems Software Research Group
     location: Blacksburg, Virginia
@@ -46,8 +48,10 @@ research:
     dates: November 2012--Present
     details:
       - Work supported with NSF and NEEC REU grants.
-      - Automatic {\bf OpenMP} to {\bf CUDA} translation using
-        {\bf C++} and the {\bf ROSE} compiler framework.
+      - Research on automatic {\bf OpenMP} to {\bf CUDA}
+        translation using {\bf C++} and the {\bf ROSE} compiler framework.
+      - Polyhedral loop optimization research to restructure
+        {\bf OpenCL} kernels for locality using {\bf LLVM} and {\bf Polly}.
       - '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
 
   - lab: Magnum Research Group
@@ -61,7 +65,7 @@ research:
         primary authorship on a conference publication.
       - Created a distributed {\bf Actor} system using {\bf Scala}
         for {\bf machine learning} classification of APKs.
-      - Developed {\bf VC\#} programs for a pilot study on
+      - Developed {\bf VC\#} and {\bf Python} programs for a pilot study on
         manufacturing cyber-physical security.
       - Assisted {\bf C++} and {\bf Make} development in {\bf Linux} for a
         deployment optimization framework.
@@ -69,6 +73,15 @@ research:
         information for dynamic malware analysis.
 
 industry:
+  - company: Snowplow Analytics Ltd.
+    location: London, United Kingdom (Remote)
+    title: Software Winter Intern
+    dates: December 2013--January 2014
+    details:
+    - Open-source {\bf Scala} development on the
+      Snowplow analytics platform in a startup environment.
+    - Developed a new server using {\bf Spray} and {\bf Actors} to store
+      {\bf Apache Thrift} events on {\bf Amazon Kinesis}.
   - company: Qualcomm, Inc.
     location: San Diego, California
     title: Source Integrity Team Software Intern
@@ -127,11 +140,12 @@ publications:
       Jaime Camelio, Chris Williams, Robert Parker. Submitted."
 
 skills:
-  - title: Preferred Environments
-    details: Linux***, vim/gdb***, git***, Make**
+  - title: Preference
+    details: Linux, vim, git, Make, sbt
   - title: Languages
     details: Bash**, C/C++**, C\#*, Fortran**, HTML/CSS*, \LaTeX **,
-      Java**, JavaScript**, {\it Mathematica}**, PHP*, Python***, R*, Scala**
+      Java**, JavaScript**, {\it Mathematica}**, Make***,
+      PHP*, Python***, R*, Scala***
   - title: Systems
     details: Android**, Linux***
   - title: Rankings
@@ -148,7 +162,6 @@ honors:
     descr: Given to the sophomore in Computer Science with the most
            outstanding academic record.
   - title: University Honors, Virginia Tech, 2012--2013
-
   - title: Intelligence Community Center of Academic Excellence Scholar,
       Virginia Tech, 2012--2013
     descr: Merit-based scholarship providing a cyber-security
