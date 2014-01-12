@@ -17,7 +17,6 @@ f.close()
 def latexToMd(s):
   if isinstance(s,str):
     s = s.replace(r'\\', '\n\n')
-    s = re.sub(r'\{ *\\bf *([^\}]*)\}', r' __\1__ ', s)
     s = s.replace(r'\it', '')
     s = s.replace('--', '-')
     s = s.replace('``', '"')
@@ -26,8 +25,9 @@ def latexToMd(s):
     s = s.replace(r"\#", "#")
     s = s.replace(r"\&", "&")
     s = re.sub(r'\\[hv]space\*?\{[^}]*\}', '', s)
-    s = re.sub('\{([^\}]*)\}', r'\1', s)
     s = s.replace(r"*", "\*")
+    s = re.sub(r'\{ *\\bf *([^\}]*)\}', r'**\1**', s)
+    s = re.sub('\{([^\}]*)\}', r'\1', s)
   elif isinstance(s,dict):
     for k,v in s.items():
       s[k] = latexToMd(v)
