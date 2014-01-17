@@ -82,7 +82,7 @@ industry:
       Snowplow analytics platform.
     - Developed a new server using {\bf Spray} and {\bf Actors} to store
       {\bf Apache Thrift} events on {\bf Amazon Kinesis}.
-    - Completed project ahead of schedule, and also ported Snowplow's Scala
+    - Completed project ahead of schedule, and also helped port Snowplow's Scala
       enrichment process to Kinesis.
   - company: Qualcomm, Inc.
     location: San Diego, California
