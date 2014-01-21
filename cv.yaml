@@ -127,15 +127,15 @@ teaching:
 publications:
   - title: Conference
     details:
-      - "``Applying machine learning classifiers to dynamic Android malware
-        detection at scale.'' {\\bf Brandon Amos}, Hamilton Turner, Jules White.
-        IWCMC'13 Security, Trust, and Privacy Symposium.
-        Cagliari, Italy, July 2013."
       - "``Fortran 95 implementation of QNSTOP for global and stochastic
         optimization.'' {\\bf Brandon Amos}, David Easterling, Layne Watson,
         Brent Castle, Michael Trosset, William Thacker.
         SpringSim'14 High Performance Computing Symposium.
         Tampa, Florida, USA, April 2014."
+      - "``Applying machine learning classifiers to dynamic Android malware
+        detection at scale.'' {\\bf Brandon Amos}, Hamilton Turner, Jules White.
+        IWCMC'13 Security, Trust, and Privacy Symposium.
+        Cagliari, Italy, July 2013." # 35% Acceptance.
 
   - title: Magazine
     details:
