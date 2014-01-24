@@ -113,7 +113,12 @@ industry:
     title: Network Administrator Intern
     dates: January 2011--August 2011
     details:
-      - '{\bf Linux} server configuration and {\bf Bash} development.'
+      - Internship in high-school with a small local company to replace
+        Windows domain, mail, DHCP, and DNS servers with virtualized
+        {\bf Linux} servers.
+      - Fully developed the servers and successfully migrated all
+        of the office's computers.
+      - Created {\bf Bash} scripts to provide incremental backups.
 
 teaching:
   - university: Virginia Tech Computer Science
