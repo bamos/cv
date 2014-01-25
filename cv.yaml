@@ -63,8 +63,8 @@ research:
       - Work supported with ARO REU grant.
       - Android {\bf malware detection research} resulting in
         primary authorship on a conference publication.
-      - Created a distributed {\bf Actor} system using {\bf Scala}
-        for {\bf machine learning} classification of APKs.
+      - Led a small team to create a distributed {\bf Actor} system
+        in {\bf Scala} for {\bf machine learning} classification of APKs.
       - Developed {\bf VC\#} and {\bf Python} programs for a pilot study on
         manufacturing cyber-physical security.
       - Assisted {\bf C++} and {\bf Make} development in {\bf Linux} for a
@@ -82,8 +82,8 @@ industry:
       Snowplow analytics platform.
     - Developed a new server using {\bf Spray} and {\bf Actors} to store
       {\bf Apache Thrift} events on {\bf Amazon Kinesis}.
-    - Completed project ahead of schedule, and also helped port Snowplow's Scala
-      enrichment process to Kinesis.
+    - Completed project ahead of schedule, and also helped port Snowplow's
+      Scala enrichment process to Kinesis.
   - company: Qualcomm, Inc.
     location: San Diego, California
     title: Source Integrity Team Software Intern
