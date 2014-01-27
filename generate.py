@@ -53,8 +53,11 @@ def generate(ext):
   f_cv = open("gen/cv." + ext, 'w')
   f_cv.write(env.get_template("cv.tmpl." + ext).render(
     name = yaml_contents['name'],
+    pdf = yaml_contents['pdf'],
+    src = yaml_contents['src'],
     phone = yaml_contents['phone'],
     email = yaml_contents['email'],
+    email_recaptcha = yaml_contents['email_recaptcha'],
     url = yaml_contents['url'],
     body = body
   ))
