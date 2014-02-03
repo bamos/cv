@@ -42,6 +42,8 @@
     \vspace{3mm}
   {% endfor %}
 {% elif name == "Publications" %}
+  \end{minipage} \\[3mm]
+  \begin{minipage}{\textwidth}
   {% for type in contents %}
     \subsection*{ {{ type['title'] }} }
     \begin{enumerate}
@@ -49,6 +51,8 @@
         \item {{ pub }}
       {% endfor %}
     \end{enumerate}
+    \end{minipage} \\[3mm]
+    \begin{minipage}{\textwidth}
   {% endfor %}
   \vspace{3mm}
 {% elif name == "Honors \\& Awards" %}
@@ -91,4 +95,4 @@
   {{ contents }}
   \vspace{3mm}
 {% endif %}
-\end{minipage} \\ \\
+\end{minipage} \\[3mm]
