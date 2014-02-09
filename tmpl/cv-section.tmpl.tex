@@ -3,9 +3,10 @@
 
 {% if name == "Education" %}
   {% for school in contents %}
-    {\large {{ school.school|e }} } \hfill {{ school.location|e }} \\
-    {{ school.degree|e }} \hfill {{ school.dates|e }} \\
+    {\large {{ school.degree }} {{ school.school }} }
+      \hfill {{ school.location|e }} \\
     Major GPA: {{ school.majorGPA|e }}, Overall GPA: {{ school.overallGPA|e }}
+      \hfill {{ school.dates|e }}
     \vspace{3mm}
   {% endfor %}
 {% elif name == "Research Experience" %}

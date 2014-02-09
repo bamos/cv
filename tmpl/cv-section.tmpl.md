@@ -2,8 +2,7 @@
 
 {% if name == "Education" %}
 {% for school in contents %}
-## {{ school.school|e }}
-### {{ school.degree|e }}
+## {{ school.degree|e }} {{ school.school|e }}
 + {{ school.location|e }} | {{ school.dates|e }}
 + Major GPA: {{ school.majorGPA|e }} | Overall GPA: {{ school.overallGPA|e }}
 {%- endfor %}
