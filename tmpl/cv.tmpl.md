@@ -8,6 +8,7 @@ title:  vitæ
 [PDF]({{ pdf }}) |
 [source]({{ src }}) |
 [email]({{ email_recaptcha }}) |
-{{ phone }}
+{{ phone }} |
+Generated {{ today }}.
 
 {{ body }}

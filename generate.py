@@ -9,6 +9,7 @@ from jinja2 import Environment, FileSystemLoader
 env = Environment(loader=FileSystemLoader("tmpl"))
 import re
 import yaml
+from datetime import date
 
 f = open("cv.yaml", 'r')
 yaml_contents = yaml.load(f)
@@ -59,7 +60,8 @@ def generate(ext):
     email = yaml_contents['email'],
     email_recaptcha = yaml_contents['email_recaptcha'],
     url = yaml_contents['url'],
-    body = body
+    body = body,
+    today = date.today().strftime("%B %d, %Y")
   ))
   f_cv.close()
 
