@@ -19,9 +19,9 @@ order:
   - [activities, Activities]
 
 interests: '{\bf Compiler}, {\bf mobile}, or {\bf security} research
-  or development in {\bf Linux}. \\
-  Seeking a PhD fellowship starting May 2014 or 
-  internship from May--August 2014.'
+  or development in {\bf Linux}.'
+  #Seeking a PhD fellowship starting May 2014 or 
+  #internship from May--August 2014.'
 
 education:
   - school: Virginia Tech
@@ -213,17 +213,17 @@ projects:
     details:
       - Hosted on GitHub Pages. Uses {\bf Markdown} for posts and {\bf Jekyll}
           for static HTML generation.
-      - '{\bf 27 posts} across the following tags,
+      - '{\bf 37 posts} across the following tags,
         listed by highest frequency.'
-      - Python, Bash, LaTeX, Linux, Scala, Android, Mathematica,
-        C++, Fortran, CUDA
+      - Python, Bash, LaTeX, Scala, Linux, Fortran, JavaScript, Android, News,
+        CUDA, OpenMP, C++, Mathematica
   github:
     name: GithHub Portfolio
     url: http://github.com/bamos
     details:
       - Hosts code samples, original source code, and patches for
           open source projects.
-      - 20 original repositories, 6 forked repositories.
+      - 23 original repositories, 7 forked repositories.
 
 activities:
   - Honors Residential College, Virginia Tech, 2013
