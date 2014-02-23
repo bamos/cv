@@ -5,5 +5,6 @@
 + Python 3.3
   + jinja2
   + yaml
+  + BeautifulSoup 4 (for info scripts)
 + LaTeX
 + Rubber
