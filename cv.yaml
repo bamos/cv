@@ -20,8 +20,6 @@ order:
 
 interests: '{\bf Compiler}, {\bf mobile}, or {\bf security} research
   or development in {\bf Linux}.'
-  #Seeking a PhD fellowship starting May 2014 or 
-  #internship from May--August 2014.'
 
 education:
   - school: Virginia Tech
@@ -167,10 +165,13 @@ skills:
     details: 1/10* -- 3/10** -- 5/10*** -- 7/10****
 
 honors:
+  - title: ACC Meeting of the Minds Undergraduate Research Conference
+    url: http://www.vtnews.vt.edu/articles/2014/03/030514-uged-accmom.html
   - title: Honorable Mention,
       CRA Outstanding Undergraduate Researcher Award, 2014
     descr: 1 of 15 North American males awarded honorable mention for
            exemplary computer science research.
+    url: http://cra.org/awards/undergrad-view/2014_outstanding_undergraduate_award_recipients/
   - title: Qualstar Award, Qualcomm, 2013
   - title: Benjamin F. Bock Merit Scholarship, Virginia Tech Engineering, 2013
   - title: Sophomore Scholar Award, Virginia Tech Computer Science, 2013
@@ -192,9 +193,11 @@ honors:
   - title: Pamplin Leader Scholarship, Virginia Tech, 2011
     descr: Merit-based scholarship presented to one student from
            each public high school in Virginia.
+    url: http://ww2.roanoke.com/community/virginia/education/wb/292050
   - title: I. Luck Gravett Memorial Merit Scholarship,
         Scottish Rite of Freemasonry, 2011
   - title: Salem--Roanoke County Chamber of Commerce Merit Scholarship, 2011
+    url: http://s-rcchamber.org/wp-content/uploads/2011/03/August-2011-NL.pdf
   #- title: 1st Place Regional CAD/Engineering Drawing,
   #         Virginia TSA, Blue Ridge Region, 2011
   #- title: District Band Trumpeter, VBODA District VI, 2009--2011
