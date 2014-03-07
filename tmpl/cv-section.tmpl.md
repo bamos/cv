@@ -48,7 +48,11 @@
 
 {% elif name == "Honors \\& Awards" or name == "Honors & Awards" %}
 {%- for award in contents %}
+  {%- if 'url' in award %}
++ [{{ award['title'] }}]({{ award['url'] }})
+  {%- else %}
 + {{ award['title'] }}
+  {%- endif %}
 {%- if 'descr' in award %}
   + {{ award['descr'] }}
 {%- endif %}
