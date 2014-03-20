@@ -35,7 +35,7 @@ research:
     title: Undergraduate Research Assistant
     advisor: Dr. Layne Watson
     dates: January 2013--Present
-    details: 
+    details:
       - Algorithm development for stochastic optimization using quasi-Newton
         methods for parameter estimation in {\bf Fortran 95} and {\bf OpenMP}
         resulting in primary authorship on a conference publication.
@@ -133,24 +133,35 @@ teaching:
 publications:
   - title: Conference
     details:
-      - "``Fortran 95 implementation of QNSTOP for global and stochastic
-        optimization.'' {\\bf Brandon Amos}, David Easterling, Layne Watson,
+      - |
+        ``Fortran 95 implementation of QNSTOP for global and stochastic
+        optimization.'' {\bf Brandon Amos}, David Easterling, Layne Watson,
         Brent Castle, Michael Trosset, William Thacker.
         SpringSim'14 High Performance Computing Symposium.
-        Tampa, Florida, USA, April 2014."
-      - "``Applying machine learning classifiers to dynamic Android malware
-        detection at scale.'' {\\bf Brandon Amos}, Hamilton Turner, Jules White.
+        Tampa, Florida, USA, April 2014.
+      - | # 35% Acceptance.
+        ``Applying machine learning classifiers to dynamic Android malware
+        detection at scale.''
+        {\bf Brandon Amos}, Hamilton Turner, Jules White.
         IWCMC'13 Security, Trust, and Privacy Symposium.
-        Cagliari, Italy, July 2013." # 35% Acceptance.
+        Cagliari, Italy, July 2013.
 
   - title: Submitted
     details:
-      - "``Cyber Security and Industrial Manufacturing: Toward a
-      Future of Trusted Manufacturing.'' Hamilton Turner, {\\bf Brandon Amos},
-      Jules White, Robert Parker, Christopher Williams, Jaime Camelio."
-      - "``Bad Parts: Are Our Manufacturing Systems At Risk of Silent
-      Cyber-attacks?'' Hamilton Turner, {\\bf Brandon Amos}, Jules White,
-      Jaime Camelio, Chris Williams, Robert Parker."
+      - |
+        ``Global Parameter Estimation for a Eukaryotic Cell Cycle Model in
+        Systems Biology.'' Tricity Andrew, {\bf Brandon Amos},
+        David Easterling, Cihan Oguz, William Baumann, John Tyson,
+        Layne Watson.
+      - |
+        ``Cyber Security and Industrial Manufacturing: Toward a
+        Future of Trusted Manufacturing.'' Hamilton Turner,
+        {\bf Brandon Amos}, Jules White, Robert Parker,
+        Christopher Williams, Jaime Camelio.
+      - |
+        ``Bad Parts: Are Our Manufacturing Systems At Risk of Silent
+        Cyber-attacks?'' Hamilton Turner, {\bf Brandon Amos}, Jules White,
+        Jaime Camelio, Chris Williams, Robert Parker.
 
 skills:
   - title: Preference
@@ -208,7 +219,7 @@ honors:
   #         Langley Research Center.
   #- title: Head Junior Marshall, Northside High School, 2010
   #- title: 3rd Place District Foreign Extemporaneous Speaker,
-  #         VHSL Forensics, 2009	
+  #         VHSL Forensics, 2009
 
 projects:
   website:
