@@ -46,7 +46,7 @@ research:
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
     advisor: Dr. Binoy Ravindran
-    dates: November 2012--Present
+    dates: November 2012--March 2014
     details:
       - Work supported with NSF and NEEC REU grants.
       - Research on automatic {\bf OpenMP} to {\bf CUDA}
@@ -59,7 +59,7 @@ research:
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
     advisor: Dr. Jules White
-    dates: May 2012--Present
+    dates: May 2012--January 2014
     details:
       - Work supported with ARO REU grant.
       - Android {\bf malware detection research} resulting in
