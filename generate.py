@@ -1,4 +1,4 @@
-#!/usr/bin/python3.3
+#!/usr/bin/python3
 #
 # Generates LaTeX, markdown, and plaintext copies of my CV.
 #
