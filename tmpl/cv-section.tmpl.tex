@@ -5,7 +5,12 @@
   {% for school in contents %}
     {\large {{ school.degree }} {{ school.school }}. }
       \hfill {{ school.location|e }} \\
-    Major GPA: {{ school.majorGPA|e }}, Overall GPA: {{ school.overallGPA|e }}
+    {%- if school.majorGPA -%}
+      Major GPA: {{ school.majorGPA|e }},
+      Overall GPA: {{ school.overallGPA|e }}
+    {%- else -%}
+      \mbox{}~
+    {%- endif -%}
       \hfill {{ school.dates|e }}
     \vspace{3mm}
   {% endfor %}
@@ -13,22 +18,26 @@
   {% for lab in contents %}
     {\large {{ lab.lab|e }} } \hfill {{ lab.location|e }} \\
     {{ lab.title|e }}, Advisor: {{ lab.advisor|e }} \hfill {{ lab.dates|e }}
-    \begin{itemize}
-    {% for detail in lab.details %}
-      \item {{ detail }}
-    {% endfor %}
-    \end{itemize}
+    {%- if lab.details -%}
+      \begin{itemize}
+      {% for detail in lab.details %}
+        \item {{ detail }}
+      {% endfor %}
+      \end{itemize}
+    {%- endif -%}
     \vspace{3mm}
   {% endfor %}
 {% elif name == "Industry Experience" %}
   {% for company in contents %}
     {\large {{ company.company|e }} } \hfill {{ company.location|e }} \\
     {{ company.title|e }} \hfill {{ company.dates|e }}
-    \begin{itemize}
-    {% for detail in company.details %}
-      \item {{ detail }}
-    {% endfor %}
-    \end{itemize}
+    {%- if company.details -%}
+      \begin{itemize}
+      {% for detail in company.details %}
+        \item {{ detail }}
+      {% endfor %}
+      \end{itemize}
+    {%- endif -%}
     \vspace{3mm}
   {% endfor %}
 {% elif name == "Teaching Experience" %}

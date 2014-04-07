@@ -4,7 +4,9 @@
 {% for school in contents %}
 {{ school.degree|e }} {{ school.school|e }}.
 + {{ school.location|e }} | {{ school.dates|e }}
+{%- if school.majorGPA -%}
 + Major GPA: {{ school.majorGPA|e }} | Overall GPA: {{ school.overallGPA|e }}
+{%- endif -%}
 {%- endfor %}
 
 {% elif name == "Research Experience" %}
@@ -12,9 +14,11 @@
 ## {{ lab.lab|e }}
 ### {{ lab.title|e }}
 + {{ lab.location|e }} | Advisor: {{ lab.advisor|e }} | {{ lab.dates|e }}
+{%- if lab.details -%}
 {%- for detail in lab.details %}
 + {{ detail }}
 {%- endfor %}
+{%- endif -%}
 {% endfor %}
 
 {% elif name == "Industry Experience" %}
@@ -22,9 +26,11 @@
 ## {{ company.company|e }}
 ### {{ company.title|e }}
 + {{ company.location|e }} | {{ company.dates|e }}
+{%- if company.details -%}
 {%- for detail in company.details %}
 + {{ detail }}
 {%- endfor %}
+{%- endif -%}
 {% endfor %}
 
 {% elif name == "Teaching Experience" %}
