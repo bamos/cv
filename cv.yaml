@@ -22,6 +22,10 @@ interests: '{\bf Compiler}, {\bf mobile}, or {\bf security} research
   or development in {\bf Linux}.'
 
 education:
+  - school: Carnegie Mellon University
+    location: Pittsburgh, Pennsylvania
+    degree: Ph.D. Candidate Computer Science.
+    dates: August 2014--
   - school: Virginia Tech
     location: Blacksburg, Virginia
     degree: B.S. Computer Science, Honors Scholar. Mathematics minor.
@@ -74,6 +78,11 @@ research:
         information for dynamic malware analysis.
 
 industry:
+  - company: Adobe Research
+    location: San Jose, California
+    title: Data Science Intern
+    dates: Map 2014--August 2014
+    details: []
   - company: Snowplow Analytics Ltd.
     location: London, United Kingdom (Remote)
     title: Software Winter Intern
