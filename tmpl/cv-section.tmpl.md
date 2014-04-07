@@ -3,11 +3,12 @@
 {% if name == "Education" %}
 {% for school in contents %}
 {{ school.degree|e }} {{ school.school|e }}.
+
 + {{ school.location|e }} | {{ school.dates|e }}
-{%- if school.majorGPA -%}
+{%- if school.majorGPA %}
 + Major GPA: {{ school.majorGPA|e }} | Overall GPA: {{ school.overallGPA|e }}
-{%- endif -%}
-{%- endfor %}
+{%- endif %}
+{% endfor %}
 
 {% elif name == "Research Experience" %}
 {% for lab in contents %}
