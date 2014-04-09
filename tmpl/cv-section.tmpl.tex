@@ -3,15 +3,13 @@
 
 {% if name == "Education" %}
   {% for school in contents %}
-    {\large {{ school.degree }} {{ school.school }}. }
+    {\large {{ school.school }} }
       \hfill {{ school.location|e }} \\
-    {%- if school.majorGPA -%}
-      Major GPA: {{ school.majorGPA|e }},
-      Overall GPA: {{ school.overallGPA|e }}
-    {%- else -%}
-      \mbox{}~
+    {{ school.degree }}.
+    {%- if school.overallGPA %}
+      GPA: {{ school.overallGPA }}
     {%- endif -%}
-      \hfill {{ school.dates|e }}
+    \hfill {{ school.dates }}
     \vspace{3mm}
   {% endfor %}
 {% elif name == "Research Experience" %}

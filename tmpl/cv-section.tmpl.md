@@ -2,7 +2,7 @@
 
 {% if name == "Education" %}
 {% for school in contents %}
-{{ school.degree|e }} {{ school.school|e }}.
+__{{ school.school|e }}__.  {{ school.degree|e }}.
 
 + {{ school.location|e }} | {{ school.dates|e }}
 {%- if school.majorGPA %}
