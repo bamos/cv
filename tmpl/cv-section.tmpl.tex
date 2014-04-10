@@ -16,8 +16,9 @@
     {\large {{ n.place }} } \hfill {{ n.location }} \\
     {{ n.title }}
     {%- if n.advisor -%}
-      , {\bf Advisor}: {{ n.advisor }} \hfill {{ n.dates }}
+      , {\bf Advisor}: {{ n.advisor }}
     {%- endif -%}
+    \hfill {{ n.dates }}
     {%- if n.details -%}
       \begin{itemize}
       {% for detail in n.details %}
