@@ -74,7 +74,7 @@ __{{ type['title'] }}.__
 
 __[{{ v['name']}}]({{ v['url'] }})__
 
-{%- for detail in v['details'] %}
+{% for detail in v['details'] %}
 + {{ detail }}
 {%- endfor %}
 {% endfor %}
