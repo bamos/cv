@@ -2,19 +2,20 @@
 
 {% if name == "Education" %}
 {% for school in contents %}
-__{{ school.school|e }}__.  {{ school.degree|e }}.
+__{{ school.school }}__.  {{ school.degree }}.
 
-+ {{ school.location|e }} | {{ school.dates|e }}
++ {{ school.location }} &#124; {{ school.dates }}
 {%- if school.majorGPA %}
-+ Major GPA: {{ school.majorGPA|e }} | Overall GPA: {{ school.overallGPA|e }}
++ Major GPA: {{ school.majorGPA }} &#124; Overall GPA: {{ school.overallGPA }}
 {%- endif %}
 {% endfor %}
 
 {% elif name == "Research Experience" %}
 {% for lab in contents %}
-## {{ lab.lab|e }}
-### {{ lab.title|e }}
-+ {{ lab.location|e }} | Advisor: {{ lab.advisor|e }} | {{ lab.dates|e }}
+
+__{{ lab.lab }}__.  {{ lab.title }}.
+
++ {{ lab.location }} &#124; Advisor: {{ lab.advisor }} &#124; {{ lab.dates }}
 {%- if lab.details -%}
 {%- for detail in lab.details %}
 + {{ detail }}
@@ -24,21 +25,23 @@ __{{ school.school|e }}__.  {{ school.degree|e }}.
 
 {% elif name == "Industry Experience" %}
 {% for company in contents %}
-## {{ company.company|e }}
-### {{ company.title|e }}
-+ {{ company.location|e }} | {{ company.dates|e }}
+
+__{{ company.company }}__.  {{ company.title }}.
+
++ {{ company.location }} &#124; {{ company.dates }}
 {%- if company.details -%}
 {%- for detail in company.details %}
 + {{ detail }}
 {%- endfor %}
-{%- endif -%}
+{% endif %}
 {% endfor %}
 
 {% elif name == "Teaching Experience" %}
 {% for university in contents %}
-## {{ university.university|e }}
-### {{ university.title|e }}
-+ {{ university.location|e }} | {{ university.dates|e }}
+
+__{{ university.university }}__.  {{ university.title }}.
+
++ {{ university.location }} &#123; {{ university.dates }}
 {%- for detail in university.details %}
 + {{ detail }}
 {%- endfor %}
@@ -46,11 +49,12 @@ __{{ school.school|e }}__.  {{ school.degree|e }}.
 
 {% elif name == "Publications" %}
 {% for type in contents %}
-## {{ type['title'] }}
 
-{%- for pub in type['details'] %}
+__{{ type['title'] }}.__
+
+{% for pub in type['details'] %}
 {{ loop.index }}. {{ pub }}
-{%- endfor %}
+{% endfor %}
 {% endfor %}
 
 {% elif name == "Honors \\& Awards" or name == "Honors & Awards" %}
@@ -68,6 +72,7 @@ __{{ school.school|e }}__.  {{ school.degree|e }}.
 {% elif name == "Projects" %}
 {% for k,v in contents.items() %}
 ## [{{ v['name']}}]({{ v['url'] }})
+
 {%- for detail in v['details'] %}
 + {{ detail }}
 {%- endfor %}

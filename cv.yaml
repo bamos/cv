@@ -95,7 +95,7 @@ industry:
       {\bf Apache Thrift} events on {\bf Amazon Kinesis}.
     - Completed project ahead of schedule, and also helped port Snowplow's
       Scala enrichment process to Kinesis.
-  - company: Qualcomm, Inc.
+  - company: Qualcomm, Inc
     location: San Diego, California
     title: Source Integrity Team Software Intern
     dates: May 2013--August 2013
@@ -108,7 +108,7 @@ industry:
       the {\bf Xerces} XML parser in {\bf Linux}.
       Reimplemented in {\bf Python} using the {\bf ElementTree} XML API for
       better analysis and tree transformation.
-  - company: Phoenix Integration, Inc.
+  - company: Phoenix Integration, Inc
     location: Blacksburg, Virginia
     title: Software Engineer Intern
     dates: May 2012--August 2012
@@ -119,7 +119,7 @@ industry:
         {\bf VC++}, {\bf VC\#}, {\bf Java}, and {\bf Tomcat}.
       - Improved the testing ({\bf JUnit} and {\bf NUnit}) and installation
         ({\bf Ant}, {\bf InstallShield}, and {\bf Make}) frameworks.
-  - company: Sunapsys, Inc.
+  - company: Sunapsys, Inc
     location: Vinton, Virginia
     title: Network Administrator Intern
     dates: January 2011--August 2011
