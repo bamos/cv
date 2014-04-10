@@ -21,6 +21,10 @@ stage: gen/cv.pdf gen/cv.md
 	cp gen/cv.pdf $(BLOG_DIR)/data
 	cp gen/cv.md $(BLOG_DIR)
 
+.PHONY: jekyll
+jekyll: stage
+	cd $(BLOG_DIR) && jekyll server
+
 push: stage
 	git -C $(BLOG_DIR) add $(BLOG_DIR)/data/cv.pdf
 	git -C $(BLOG_DIR) add $(BLOG_DIR)/cv.md
