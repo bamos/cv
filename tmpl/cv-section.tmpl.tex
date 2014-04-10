@@ -3,66 +3,46 @@
 
 {% if name == "Education" %}
   {% for school in contents %}
-    {\large {{ school.school }} }
-      \hfill {{ school.location|e }} \\
+    {\large {{ school.school }} } \hfill {{ school.location }} \\
     {{ school.degree }}.
     {%- if school.overallGPA %}
       GPA: {{ school.overallGPA }}
     {%- endif -%}
     \hfill {{ school.dates }}
-    \vspace{3mm}
+    \bigskip
   {% endfor %}
-{% elif name == "Research Experience" %}
-  {% for lab in contents %}
-    {\large {{ lab.lab|e }} } \hfill {{ lab.location|e }} \\
-    {{ lab.title|e }}, Advisor: {{ lab.advisor|e }} \hfill {{ lab.dates|e }}
-    {%- if lab.details -%}
+{% elif name.endswith("Experience") %}
+  {% for n in contents %}
+    {\large {{ n.place }} } \hfill {{ n.location }} \\
+    {{ n.title }}
+    {%- if n.advisor -%}
+      , {\bf Advisor}: {{ n.advisor }} \hfill {{ n.dates }}
+    {%- endif -%}
+    {%- if n.details -%}
       \begin{itemize}
-      {% for detail in lab.details %}
+      {% for detail in n.details %}
         \item {{ detail }}
       {% endfor %}
       \end{itemize}
     {%- endif -%}
-    \vspace{3mm}
-  {% endfor %}
-{% elif name == "Industry Experience" %}
-  {% for company in contents %}
-    {\large {{ company.company|e }} } \hfill {{ company.location|e }} \\
-    {{ company.title|e }} \hfill {{ company.dates|e }}
-    {%- if company.details -%}
-      \begin{itemize}
-      {% for detail in company.details %}
-        \item {{ detail }}
-      {% endfor %}
-      \end{itemize}
-    {%- endif -%}
-    \vspace{3mm}
-  {% endfor %}
-{% elif name == "Teaching Experience" %}
-  {% for university in contents %}
-    {\large {{ university.university|e }} }\hfill {{ university.location|e }} \\
-    {{ university.title|e }} \hfill {{ university.dates|e }}
-    \begin{itemize}
-    {% for detail in university.details %}
-      \item {{ detail }}
-    {% endfor %}
-    \end{itemize}
-    \vspace{3mm}
+    \bigskip
   {% endfor %}
 {% elif name == "Publications" %}
-  \end{minipage} \\[3mm]
+  \end{minipage}
+  \bigskip
   \begin{minipage}{\textwidth}
   {% for type in contents %}
-    \subsection*{ {{ type['title'] }} }
+    {\large {{ type['title'] }} }
     \begin{enumerate}
       {% for pub in type['details'] %}
         \item {{ pub }}
       {% endfor %}
     \end{enumerate}
-    \end{minipage} \\[3mm]
+    \end{minipage}
+    \bigskip
     \begin{minipage}{\textwidth}
   {% endfor %}
-  \vspace{3mm}
+  \bigskip
 {% elif name == "Honors \\& Awards" %}
   \begin{itemize}
     {% for award in contents %}
@@ -74,33 +54,34 @@
       {% endif %}
     {% endfor %}
   \end{itemize}
-  \vspace{3mm}
+  \bigskip
 {% elif name == "Projects" %}
   {% for k,v in contents.items() %}
-    \subsection*{ {{ v['name'] }} -- \url{ {{ v['url'] }} } }
+    {\large {{ v['name'] }} -- \url{ {{ v['url'] }} } }
     \begin{itemize}
       {% for detail in v['details'] %}
         \item {{ detail }}
       {% endfor %}
     \end{itemize}
+    \bigskip
   {% endfor %}
-  \vspace{3mm}
 {% elif name == "Activities" %}
   \begin{itemize}
     {% for activity in contents %}
       \item {{ activity }}
     {% endfor %}
   \end{itemize}
-  \vspace{3mm}
+  \bigskip
 {% elif name == "Skills" %}
   \begin{itemize}
     {% for skill in contents %}
-      \item { \bf {{ skill['title'] }}: } {{ skill['details'] }}
+      \item { \bf {{ skill['title'] }}. } {{ skill['details'] }}
     {% endfor %}
   \end{itemize}
-  \vspace{3mm}
+  \bigskip
 {% else %}
   {{ contents }}
-  \vspace{3mm}
+  \bigskip
 {% endif %}
-\end{minipage} \\[3mm]
+\end{minipage}
+\medskip

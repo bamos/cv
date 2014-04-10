@@ -2,7 +2,7 @@
 
 {% if name == "Education" %}
 {% for school in contents %}
-__{{ school.school }}__.  {{ school.degree }}.
+__<big>{{ school.school }}.</big>__  {{ school.degree }}.
 
 + {{ school.location }} &#124; {{ school.dates }}
 {%- if school.majorGPA %}
@@ -10,41 +10,21 @@ __{{ school.school }}__.  {{ school.degree }}.
 {%- endif %}
 {% endfor %}
 
-{% elif name == "Research Experience" %}
-{% for lab in contents %}
+{% elif name.endswith("Experience") %}
+{% for n in contents %}
 
-__{{ lab.lab }}__.  {{ lab.title }}.
+__<big>{{ n.place }}.</big>__  {{ n.title }}.
 
-+ {{ lab.location }} &#124; Advisor: {{ lab.advisor }} &#124; {{ lab.dates }}
-{%- if lab.details -%}
-{%- for detail in lab.details %}
++ {{ n.location }}
+{%- if n.advisor -%}
+  &#124; Advisor: {{ n.advisor }} -->
+{%- endif -%}
+&#124; {{ n.dates }}
+{%- if n.details -%}
+{%- for detail in n.details %}
 + {{ detail }}
 {%- endfor %}
 {%- endif -%}
-{% endfor %}
-
-{% elif name == "Industry Experience" %}
-{% for company in contents %}
-
-__{{ company.company }}__.  {{ company.title }}.
-
-+ {{ company.location }} &#124; {{ company.dates }}
-{%- if company.details -%}
-{%- for detail in company.details %}
-+ {{ detail }}
-{%- endfor %}
-{% endif %}
-{% endfor %}
-
-{% elif name == "Teaching Experience" %}
-{% for university in contents %}
-
-__{{ university.university }}__.  {{ university.title }}.
-
-+ {{ university.location }} &#123; {{ university.dates }}
-{%- for detail in university.details %}
-+ {{ detail }}
-{%- endfor %}
 {% endfor %}
 
 {% elif name == "Publications" %}
@@ -86,7 +66,7 @@ __{{ type['title'] }}.__
 
 {% elif name == "Skills" %}
 {%- for skill in contents %}
-+ __{{ skill['title'] }}:__ {{ skill['details'] }}
++ __{{ skill['title'] }}.__ {{ skill['details'] }}
 {%- endfor %}
 
 {% else %}
