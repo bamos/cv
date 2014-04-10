@@ -30,7 +30,7 @@ __<big>{{ n.place }}.</big>__  {{ n.title }}.
 {% elif name == "Publications" %}
 {% for type in contents %}
 
-__{{ type['title'] }}.__
+__<big>{{ type['title'] }}.</big>__
 
 {% for pub in type['details'] %}
 {{ loop.index }}. {{ pub }}
@@ -52,7 +52,7 @@ __{{ type['title'] }}.__
 {% elif name == "Projects" %}
 {% for k,v in contents.items() %}
 
-[{{ v['name']}}]({{ v['url'] }})
+<big>[{{ v['name']}}]({{ v['url'] }})<\big>
 
 {% for detail in v['details'] %}
 + {{ detail }}
