@@ -17,7 +17,7 @@ __<big>{{ n.place }}.</big>__  {{ n.title }}.
 
 + {{ n.location }}
 {%- if n.advisor -%}
-  &#124; Advisor: {{ n.advisor }} -->
+  &#124; Advisor: {{ n.advisor }}
 {%- endif -%}
 &#124; {{ n.dates }}
 {%- if n.details -%}
