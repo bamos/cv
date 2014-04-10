@@ -52,7 +52,7 @@ __<big>{{ type['title'] }}.</big>__
 {% elif name == "Projects" %}
 {% for k,v in contents.items() %}
 
-<big>[{{ v['name']}}]({{ v['url'] }})<\big>
+<big>[{{ v['name']}}]({{ v['url'] }})</big>
 
 {% for detail in v['details'] %}
 + {{ detail }}
