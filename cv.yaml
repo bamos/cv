@@ -18,8 +18,10 @@ order:
   - [projects, Projects]
   - [activities, Activities]
 
-interests: '{\bf Compiler}, {\bf mobile}, or {\bf security} research
-  or development in {\bf Linux}.'
+interests: My research interests are currently in the
+  {\bf mobile} and {\bf distributed} computing space
+  to provide enabling technology for next-generation
+  mobile applications.
 
 education:
   - school: Carnegie Mellon University
