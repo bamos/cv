@@ -1,6 +1,6 @@
 ---
-layout: cv
-title:  vitæ
+layout: default
+title: vitæ
 ---
 
 # {{ name }}. vitæ.
