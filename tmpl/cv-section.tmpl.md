@@ -3,11 +3,12 @@
 {% if name == "Education" %}
 {% for school in contents %}
 __<big>{{ school.school }}.</big>__  {{ school.degree }}.
-
-+ {{ school.location }} &#124; {{ school.dates }}
-{%- if school.majorGPA %}
-+ Major GPA: {{ school.majorGPA }} &#124; Overall GPA: {{ school.overallGPA }}
+{%- if school.overallGPA %}
+GPA: {{ school.overallGPA }}
 {%- endif %}
+
++ {{ school.location }}
+&#124; {{ school.dates }}
 {% endfor %}
 
 {% elif name.endswith("Experience") %}
@@ -16,9 +17,9 @@ __<big>{{ school.school }}.</big>__  {{ school.degree }}.
 __<big>{{ n.place }}.</big>__  {{ n.title }}.
 
 + {{ n.location }}
-{%- if n.advisor -%}
+{% if n.advisor -%}
   &#124; Advisor: {{ n.advisor }}
-{%- endif -%}
+{% endif -%}
 &#124; {{ n.dates }}
 {%- if n.details -%}
 {%- for detail in n.details %}
