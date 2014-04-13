@@ -1,3 +1,5 @@
+\medskip
+
 \begin{minipage}{\textwidth}
 \section*{ {{ name }} }
 
@@ -8,7 +10,7 @@
     {%- if school.overallGPA %}
       GPA: {{ school.overallGPA }}
     {%- endif -%}
-    \hfill {{ school.dates }}
+    \hfill {\it {{ school.dates }}}
     \bigskip
   {% endfor %}
 {% elif name.endswith("Experience") %}
@@ -18,7 +20,7 @@
     {%- if n.advisor -%}
       , {\bf Advisor}: {{ n.advisor }}
     {%- endif -%}
-    \hfill {{ n.dates }}
+    \hfill {\it {{ n.dates }}}
     {%- if n.details -%}
       \begin{itemize}
       {% for detail in n.details %}
@@ -29,9 +31,6 @@
     \bigskip
   {% endfor %}
 {% elif name == "Publications" %}
-  \end{minipage}
-  \bigskip
-  \begin{minipage}{\textwidth}
   {% for type in contents %}
     {\large {{ type['title'] }} }
     \begin{enumerate}
@@ -85,4 +84,3 @@
   \bigskip
 {% endif %}
 \end{minipage}
-\medskip

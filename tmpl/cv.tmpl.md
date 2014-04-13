@@ -3,6 +3,12 @@ layout: default
 title: vitæ
 ---
 
+<style>
+h1 {
+  color:#008cba;
+}
+</style>
+
 # {{ name }}. vitæ.
 
 [PDF]({{ pdf }}) &#124;
