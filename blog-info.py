@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.3
+#!/usr/bin/env python3
 #
 # blog-posts.py
 # Counts the posts in my jekyll blog.
