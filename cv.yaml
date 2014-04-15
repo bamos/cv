@@ -188,7 +188,10 @@ skills:
     details: 1/10* -- 3/10** -- 5/10*** -- 7/10****
 
 honors:
-  - title: Senior Scholar Award, Virginia Tech Computer Science, 2013
+  - title: David Heilman Research Award, Virginia Tech Computer Science, 2014
+    descr: Given to the Computer Science student with the most
+      outstanding research experience.
+  - title: Senior Scholar Award, Virginia Tech Computer Science, 2014
     descr: Given to the senior in Computer Science with the most
            outstanding academic record.
   - title: ACC Meeting of the Minds Undergraduate Research Conference, 2014
