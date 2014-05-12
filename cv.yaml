@@ -41,7 +41,7 @@ research:
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
     advisor: Dr. Layne Watson
-    dates: January 2013--Present
+    dates: January 2013--May 2014
     details:
       - Algorithm development for stochastic optimization using quasi-Newton
         methods for parameter estimation in {\bf Fortran 95} and {\bf OpenMP}
