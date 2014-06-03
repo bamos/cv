@@ -146,11 +146,12 @@ publications:
   - title: Conference
     details:
       - |
+        {\bf Brandon Amos}, David Easterling, Layna Watson, Brent Castle,
+        Michael Trosset, and William Thacker,
         ``Fortran 95 implementation of QNSTOP for global and stochastic
-        optimization.'' {\bf Brandon Amos}, David Easterling, Layne Watson,
-        Brent Castle, Michael Trosset, William Thacker.
-        SpringSim'14 High Performance Computing Symposium.
-        Tampa, Florida, USA, April 2014.
+        optimization'', in Proc. 2014 Spring Simulation Multiconference,
+        22nd High Performance Computer Symp.,
+        Soc. for Modelling and Simulation Internat., Vista, CA, 2014, 111--118.
       - | # 35% Acceptance.
         ``Applying machine learning classifiers to dynamic Android malware
         detection at scale.''
