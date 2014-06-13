@@ -3,19 +3,17 @@ This repo contains the source I use to automatically generate
 [my curriculum vitae](http://bamos.io/cv) as a webpage and PDF
 from YAML and BibTeX input.
 
-[generate.py][generate.py] is a Python 3 script that reads
-from [cv.yaml][cv.yaml] and [publications.bib][publications.bib]
-and outputs LaTeX and Markdown by using Jinja templates.
-
-The scripts [blog-info.py][blog-info.py] and
-[github-info.py][github-info.py] are Python 3 scripts that
-produce statistics about my blog and github account.
+[generate.py][generate.py] reads from [cv.yaml][cv.yaml] and
+[publications.bib][publications.bib] and outputs LaTeX and Markdown
+by using Jinja templates.
+Statistics about my blog and github account are obtained
+using [blog-info.py][blog-info.py] and [github-info.py][github-info.py].
 
 ## How to run.
 The dependencies are included in `requirements.txt` and can be installed
 using `pip` with `pip3 install -r requirements.txt`.
-On Linux, `make` will call [generate.py][generate.py] and build
-the LaTeX documents.
+On Mac or Linux, `make` will call [generate.py][generate.py] and build
+the LaTeX documents with `pdflatex` and `biber`.
 
 The Makefile will also:
 
