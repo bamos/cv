@@ -33,9 +33,8 @@ __<big>{{ n.place }}.</big>__  {{ n.title }}.
 
 __<big>{{ type['title'] }}.</big>__
 
-{% for pub in type['details'] %}
-{{ loop.index }}. {{ pub }}
-{% endfor %}
+{{ type['details'] }}
+
 {% endfor %}
 
 {% elif name == "Honors \\& Awards" or name == "Honors & Awards" %}

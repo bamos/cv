@@ -142,39 +142,7 @@ teaching:
       - Assisted students in a software design and data structures
         class using {\bf Java} and {\bf Android}.
 
-publications:
-  - title: Conference
-    details:
-      - |
-        {\bf Brandon Amos}, David Easterling, Layne Watson, Brent Castle,
-        Michael Trosset, and William Thacker,
-        ``Fortran 95 implementation of QNSTOP for global and stochastic
-        optimization'', in Proc. 2014 Spring Simulation Multiconference,
-        22nd High Performance Computer Symp.,
-        Soc. for Modelling and Simulation Internat., Vista, CA, 2014, 111--118.
-      - | # 35% Acceptance.
-        ``Applying machine learning classifiers to dynamic Android malware
-        detection at scale.''
-        {\bf Brandon Amos}, Hamilton Turner, Jules White.
-        IWCMC'13 Security, Trust, and Privacy Symposium.
-        Cagliari, Italy, July 2013.
-
-  - title: Submitted
-    details:
-      - |
-        ``Global Parameter Estimation for a Eukaryotic Cell Cycle Model in
-        Systems Biology.'' Tricity Andrew, {\bf Brandon Amos},
-        David Easterling, Cihan Oguz, William Baumann, John Tyson,
-        Layne Watson.
-      - |
-        ``Cyber Security and Industrial Manufacturing: Toward a
-        Future of Trusted Manufacturing.'' Hamilton Turner,
-        {\bf Brandon Amos}, Jules White, Robert Parker,
-        Christopher Williams, Jaime Camelio.
-      - |
-        ``Bad Parts: Are Our Manufacturing Systems At Risk of Silent
-        Cyber-attacks?'' Hamilton Turner, {\bf Brandon Amos}, Jules White,
-        Jaime Camelio, Chris Williams, Robert Parker.
+publications: publications.bib
 
 skills:
   - title: Preference
