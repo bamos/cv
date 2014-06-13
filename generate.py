@@ -73,13 +73,16 @@ def get_bibtex_md(p, pub_types):
     details = ""
     for item in filtered:
       author_str = get_author_str(item['author'])
+      if item['title'][-1] not in ("?", ".", "!"): punc = ","
+      else: punc = ""
+      titlePunctuation = ","
       if t[0] == "inproceedings":
         details += "[" + str(gidx) + "] " + \
-          author_str + ", \"" + item['title'] + ",\" in <em>" + \
+          author_str + ", \"" + item['title'] + punc + "\" in <em>" + \
           item['booktitle'] + "</em>, " + item['year'] + "<br><br>\n"
       elif t[0] == "article":
         details += "[" + str(gidx) + "] " + \
-          author_str + ", \"" + item['title'] + ",\" <em>" + \
+          author_str + ", \"" + item['title'] + punc + "\" <em>" + \
           item['journal'] + "</em>, " + item['year'] + "<br><br>\n"
       else:
         print(t)
