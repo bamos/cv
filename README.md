@@ -1,17 +1,15 @@
 ## About.
-This repo contains code to generate my [my curriculum vitae](http://bamos.io/cv).
-The data is stored in the YAML file [cv.yaml][cv.yaml] and
-BibTeX file [publications.bib][publications.bib],
-and the rest of the scripts and templates output Markdown and LaTeX
-code to produce the webpage and PDF on my website.
+This repo contains the source I use to automatically generate
+[my curriculum vitae](http://bamos.io/cv) as a webpage and PDF
+from YAML and BibTeX input.
 
 [generate.py][generate.py] is a Python 3 script that reads
-from [cv.yaml][cv.yaml] and outputs LaTeX and Markdown
-by using Jinja templates.
+from [cv.yaml][cv.yaml] and [publications.bib][publications.bib]
+and outputs LaTeX and Markdown by using Jinja templates.
 
 The scripts [blog-info.py][blog-info.py] and
 [github-info.py][github-info.py] are Python 3 scripts that
-produce statistics about my blog and github account to include in my CV.
+produce statistics about my blog and github account.
 
 ## How to run.
 The dependencies are included in `requirements.txt` and can be installed
