@@ -12,7 +12,7 @@ using [blog-info.py][blog-info.py] and [github-info.py][github-info.py].
 ### YAML.
 I chose to use YAML because it can be easily written and maintained
 by hand and it's easy to read into Python.
-Also, I chase YAML over JSON because YAML better supports
+Also, I chose YAML over JSON because YAML better supports
 comments, which I use a lot in my CV for experimental changes
 and archiving outdated information.
 
