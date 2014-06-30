@@ -18,10 +18,9 @@ order:
   - [projects, Projects]
   - [activities, Activities]
 
-interests: My research interests are currently in the
-  {\bf mobile} and {\bf distributed} computing space
-  to provide enabling technology for next-generation
-  mobile applications.
+interests: My research interests are in the {\bf mobile} and
+  {\bf distributed} computing space to enable technology for
+  next-generation mobile applications.
 
 education:
   - school: Carnegie Mellon University
