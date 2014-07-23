@@ -1,6 +1,6 @@
 ---
 layout: default
-title: vitæ
+title: CV
 ---
 
 <style>
