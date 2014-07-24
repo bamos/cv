@@ -1,75 +1,75 @@
-# {{ name }}
+# ~{{ name }}~
 
-{% if name == "Education" %}
-{% for school in contents %}
-__<big>{{ school.school }}.</big>__  {{ school.degree }}.
-{%- if school.overallGPA %}
-GPA: {{ school.overallGPA }}
-{%- endif %}
+~{ if name == "Education" }~
+~{ for school in contents }~
+__<big>~{{ school.school }}~.</big>__  ~{{ school.degree }}~.
+~{- if school.overallGPA }~
+GPA: ~{{ school.overallGPA }}~
+~{- endif }~
 
-+ {{ school.location }}
-&#124; {{ school.dates }}
-{% endfor %}
++ ~{{ school.location }}~
+&#124; ~{{ school.dates }}~
+~{ endfor }~
 
-{% elif name.endswith("Experience") %}
-{% for n in contents %}
+~{ elif name.endswith("Experience") }~
+~{ for n in contents }~
 
-__<big>{{ n.place }}.</big>__  {{ n.title }}.
+__<big>~{{ n.place }}~.</big>__  ~{{ n.title }}~.
 
-+ {{ n.location }}
-{% if n.advisor -%}
-  &#124; Advisor: {{ n.advisor }}
-{% endif -%}
-&#124; {{ n.dates }}
-{%- if n.details -%}
-{%- for detail in n.details %}
-+ {{ detail }}
-{%- endfor %}
-{%- endif -%}
-{% endfor %}
++ ~{{ n.location }}~
+~{ if n.advisor -}~
+  &#124; Advisor: ~{{ n.advisor }}~
+~{ endif -}~
+&#124; ~{{ n.dates }}~
+~{- if n.details -}~
+~{- for detail in n.details }~
++ ~{{ detail }}~
+~{- endfor }~
+~{- endif -}~
+~{ endfor }~
 
-{% elif name == "Publications" %}
-{% for type in contents %}
+~{ elif name == "Publications" }~
+~{ for type in contents }~
 
-__<big>{{ type['title'] }}.</big>__
+__<big>~{{ type['title'] }}~.</big>__
 
-{{ type['details'] }}
+~{{ type['details'] }}~
 
-{% endfor %}
+~{ endfor }~
 
-{% elif name == "Honors \\& Awards" or name == "Honors & Awards" %}
-{%- for award in contents %}
-  {%- if 'url' in award %}
-+ [{{ award['title'] }}]({{ award['url'] }})
-  {%- else %}
-+ {{ award['title'] }}
-  {%- endif %}
-{%- if 'descr' in award %}
-  + {{ award['descr'] }}
-{%- endif %}
-{%- endfor %}
+~{ elif name == "Honors \\& Awards" or name == "Honors & Awards" }~
+~{- for award in contents }~
+  ~{- if 'url' in award }~
++ [~{{ award['title'] }}~](~{{ award['url'] }}~)
+  ~{- else }~
++ ~{{ award['title'] }}~
+  ~{- endif }~
+~{- if 'descr' in award }~
+  + ~{{ award['descr'] }}~
+~{- endif }~
+~{- endfor }~
 
-{% elif name == "Projects" %}
-{% for k,v in contents.items() %}
+~{ elif name == "Projects" }~
+~{ for k,v in contents.items() }~
 
-<big>[{{ v['name']}}]({{ v['url'] }})</big>
+<big>[~{{ v['name']}}~](~{{ v['url'] }}~)</big>
 
-{% for detail in v['details'] %}
-+ {{ detail }}
-{%- endfor %}
-{% endfor %}
+~{ for detail in v['details'] }~
++ ~{{ detail }}~
+~{- endfor }~
+~{ endfor }~
 
-{% elif name == "Activities" %}
-{%- for activity in contents %}
-+ {{ activity }}
-{%- endfor %}
+~{ elif name == "Activities" }~
+~{- for activity in contents }~
++ ~{{ activity }}~
+~{- endfor }~
 
-{% elif name == "Skills" %}
-{%- for skill in contents %}
-+ __{{ skill['title'] }}.__ {{ skill['details'] }}
-{%- endfor %}
+~{ elif name == "Skills" }~
+~{- for skill in contents }~
++ __~{{ skill['title'] }}~.__ ~{{ skill['details'] }}~
+~{- endfor }~
 
-{% else %}
-{{ contents }}
-{% endif %}
+~{ else }~
+~{{ contents }}~
+~{ endif }~
 
