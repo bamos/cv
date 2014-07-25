@@ -33,7 +33,7 @@ def parseTags(tagContent):
   for header in headers:
     tp = re.match("(\S*) - (\d*) Posts?", header.text)
     tags[tp.group(1)] = int(tp.group(2))
-  
+
   sortedTags = sorted(tags.items(), key=operator.itemgetter(1), reverse=True)
   return [x[0] for x in sortedTags]
 
