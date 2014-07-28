@@ -84,7 +84,10 @@ industry:
     location: San Jose, California
     title: Data Scientist Intern
     dates: May 2014--August 2014
-    details: []
+    details:
+      - Advanced {\bf Scala} devoplement on the Adobe analytics platform
+        to create and benchmark an analytics query engine using
+        Spark and Spray.
   - place: Snowplow Analytics
     location: London, United Kingdom (Remote)
     title: Software Winter Intern
