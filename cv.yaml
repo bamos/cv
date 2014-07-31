@@ -85,9 +85,11 @@ industry:
     title: Data Scientist Intern
     dates: May 2014--August 2014
     details:
-      - Advanced {\bf Scala} devoplement on the Adobe analytics platform
-        to create and benchmark an analytics query engine using
-        Spark and Spray.
+      - Distributed systems research on building and benchmarking
+        an analytics query engine.
+      - The analytics query engine is implemented in {\bf Scala} with the
+        Spark, and Spray libraries and the benchmarking is implemented
+        in {\bf Python}.
   - place: Snowplow Analytics
     location: London, United Kingdom (Remote)
     title: Software Winter Intern
