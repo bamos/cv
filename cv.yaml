@@ -36,6 +36,23 @@ education:
     majorGPA: 4.00/4.00
 
 research:
+  - place: Magnum Research Group
+    location: Blacksburg, Virginia
+    title: Undergraduate Research Assistant
+    advisor: Dr. Jules White
+    dates: May 2012--January 2014
+    details:
+      - Work supported with ARO REU grant.
+      - Android {\bf malware detection research} resulting in
+        primary authorship on a conference publication.
+      - Led a small team to create a distributed {\bf Actor} system
+        in {\bf Scala} for {\bf machine learning} classification of APKs.
+      - Developed {\bf VC\#} and {\bf Python} programs for a pilot study on
+        manufacturing cyber-physical security.
+      - Assisted {\bf C++} and {\bf Make} development in {\bf Linux} for a
+        deployment optimization framework.
+      - Modified the {\bf Android source} to provide non-standard logging
+        information for dynamic malware analysis.
   - place: Virginia Tech Computer Science
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
@@ -61,24 +78,6 @@ research:
         {\bf OpenCL} kernels for locality using {\bf LLVM} and {\bf Polly}.
       - '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
 
-  - place: Magnum Research Group
-    location: Blacksburg, Virginia
-    title: Undergraduate Research Assistant
-    advisor: Dr. Jules White
-    dates: May 2012--January 2014
-    details:
-      - Work supported with ARO REU grant.
-      - Android {\bf malware detection research} resulting in
-        primary authorship on a conference publication.
-      - Led a small team to create a distributed {\bf Actor} system
-        in {\bf Scala} for {\bf machine learning} classification of APKs.
-      - Developed {\bf VC\#} and {\bf Python} programs for a pilot study on
-        manufacturing cyber-physical security.
-      - Assisted {\bf C++} and {\bf Make} development in {\bf Linux} for a
-        deployment optimization framework.
-      - Modified the {\bf Android source} to provide non-standard logging
-        information for dynamic malware analysis.
-
 industry:
   - place: Adobe Research
     location: San Jose, California
@@ -86,10 +85,10 @@ industry:
     dates: May 2014--August 2014
     details:
       - Distributed systems research on building and benchmarking
-        an analytics query engine.
-      - The analytics query engine is implemented in {\bf Scala} with the
-        Spark, and Spray libraries and the benchmarking is implemented
-        in {\bf Python}.
+        a web analytics processing engine with {\bf Scala}, {\bf Spark},
+        {\bf Spray}, and {\bf Parquet}.
+      - Released 3 open source projects on the Adobe Research GitHub
+        page and submitted a conference paper.
   - place: Snowplow Analytics
     location: London, United Kingdom (Remote)
     title: Software Winter Intern
