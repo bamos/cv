@@ -13,11 +13,8 @@ gen/cv.tex gen/cv.md: cv.yaml generate.py publications.bib \
 
 gen/cv.pdf: gen/cv.tex publications.bib
 	cd gen && \
-	pdflatex --halt-on-error cv && \
-	rm -rf `biber --cache` && \
-	biber cv && \
-	pdflatex --halt-on-error cv && \
-	rm -rf __pycache__ gen/cv.{aux,bcf,blg,log,out,run.xml}
+	latexmk --pdf  && \
+	latexmk -c
 
 .PHONY: stage
 stage: gen/cv.pdf gen/cv.md
