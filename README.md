@@ -27,7 +27,7 @@ I like making small changes.
 The larger resume and templates I've seen are more difficult to modify.
 I've also had problems with a multi-page CV when using other
 templates, and I've added better support in these by
-wrapping every section in a `miniipage` environment
+wrapping every section in a `minipage` environment
 so the sections are intelligently put on correct pages.
 This is working well for small sections, but I'm not sure how
 it will work for sections that are larger than a page in length.
