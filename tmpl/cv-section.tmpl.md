@@ -11,6 +11,13 @@ GPA: ~{{ school.overallGPA }}~
 &#124; ~{{ school.dates }}~
 ~{ endfor }~
 
+~{ elif name == "Teaching Experience" }~
+~{- for n in contents }~
++ ~{{ n.details}}~.
+  **~{{ n.course.number }}~, ~{{ n.course.name }}~**.
+  ~{{ n.university }}~.
+  ~{{ n.dates }}~.
+~{- endfor }~
 ~{ elif name.endswith("Experience") }~
 ~{ for n in contents }~
 

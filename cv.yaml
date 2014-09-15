@@ -5,9 +5,11 @@ email_recaptcha: http://goo.gl/O4586Q
 pdf: /data/cv.pdf
 src: https://github.com/bamos/cv
 url: "http://bamos.io"
+# Erdős  number is at most 4.
+# (Brandon Amos -> Layne Watson -> Leroy Kelly -> Zoltán Füredi -> Paul Erdős )
 
 order:
-  - [interests, Interests]
+  - [interests, Research Interests]
   - [education, Education]
   - [research, Research Experience]
   - [teaching, Teaching Experience]
@@ -18,9 +20,7 @@ order:
   - [honors, Honors \& Awards]
   - [activities, Activities]
 
-interests: My research interests are in the {\bf mobile} and
-  {\bf distributed} computing space to enable next-generation
-  mobile applications.
+interests: Mobile computing; distributed systems; computer vision.
 
 education:
   - school: Carnegie Mellon University
@@ -36,32 +36,41 @@ education:
     majorGPA: 4.00/4.00
 
 research:
+  - place: Carnegie Mellon University
+    location: Pittsburgh, Pennsylvania
+    title: Research Assistant
+    advisor: Dr. Mahadev Satyanarayanan
+    dates: August 2014--Present
+    details:
+      - '{\bf Research Area}: Mobile computing and distributed systems.'
   - place: Magnum Research Group
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
     advisor: Dr. Jules White
     dates: May 2012--January 2014
     details:
-      - Work supported with ARO REU grant.
+      - '{\bf Research Area}: Mobile computing and security.'
       - Android {\bf malware detection research} resulting in
         primary authorship on a conference publication.
-      - Led a small team to create a distributed {\bf Actor} system
-        in {\bf Scala} for {\bf machine learning} classification of APKs.
+        The current {\bf Scala} implementation uses a distributed
+        {\bf Actor} system to obtain run-time feature vectors
+        to train {\bf machine learning} classifiers.
+      - Modified the {\bf Android source} to provide non-standard logging
+        information for dynamic malware analysis.
       - Developed {\bf VC\#} and {\bf Python} programs for a pilot study on
         manufacturing cyber-physical security.
       - Assisted {\bf C++} and {\bf Make} development in {\bf Linux} for a
         deployment optimization framework.
-      - Modified the {\bf Android source} to provide non-standard logging
-        information for dynamic malware analysis.
-  - place: Virginia Tech Computer Science
+  - place: Virginia Tech, Computer Science
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
     advisor: Dr. Layne Watson
     dates: January 2013--May 2014
     details:
+      - '{\bf Research Area}: Scientific computing.'
       - Algorithm development for stochastic optimization using quasi-Newton
-        methods for parameter estimation in {\bf Fortran 95} and {\bf OpenMP}
-        resulting in primary authorship on a conference publication.
+        methods for {\bf parameter estimation} in
+        {\bf Fortran 95} and {\bf OpenMP}.
       - Bioinformatics research on yeast cell modeling using
         {\bf Fortran 95}, {\bf C++}, and {\bf Matlab}.
 
@@ -71,7 +80,7 @@ research:
     advisor: Dr. Binoy Ravindran
     dates: November 2012--March 2014
     details:
-      - Work supported with NSF and NEEC REU grants.
+      - '{\bf Research Area}: Compilers.'
       - Research on automatic {\bf OpenMP} to {\bf CUDA}
         translation using {\bf C++} and the {\bf ROSE} compiler framework.
       - Polyhedral loop optimization research to restructure
@@ -84,18 +93,20 @@ industry:
     title: Data Scientist Intern
     dates: May 2014--August 2014
     details:
-      - Distributed systems research on building and benchmarking
-        a web analytics processing engine with {\bf Scala}, {\bf Spark},
-        {\bf Spray}, and {\bf Parquet}.
-      - Released 3 open source projects on the Adobe Research GitHub
-        page and submitted a conference paper.
+      - '{\bf Research Area}: Distributed Systems'
+      - Built and released {\it Spindle}, an open source
+        web analytics processing engine with {\bf Scala}, {\bf Spark},
+        {\bf Spray}, and {\bf Parquet} on {\bf HDFS}.
+      - Spindle is available on GitHub at
+        \url{http://github.com/adobe-research/spindle}.
   - place: Snowplow Analytics
     location: London, United Kingdom (Remote)
     title: Software Winter Intern
     dates: December 2013--January 2014
     details:
     - Open-source {\bf Scala} development with a startup on the
-      Snowplow analytics platform.
+      Snowplow analytics platform, available at
+      \url{http://github.com/snowplow/snowplow}.
     - Developed a new server using {\bf Spray} and {\bf Actors} to store
       {\bf Apache Thrift} events on {\bf Amazon Kinesis}.
     - Completed project ahead of schedule, and also helped port Snowplow's
@@ -109,41 +120,41 @@ industry:
       fuzz vector generation.
       Implemented with client-side {\bf HTML} and {\bf js},
       using {\bf D3} for graphics and {\bf Handlebars} for templating.
-    -  Developed an XML-based grammar translator in {\bf C++} with
+    - Developed an XML-based grammar translator in {\bf C++} with
       the {\bf Xerces} XML parser in {\bf Linux}.
       Reimplemented in {\bf Python} using the {\bf ElementTree} XML API for
-      better analysis and tree transformation.
+      sophisticated analysis and tree transformations.
   - place: Phoenix Integration
     location: Blacksburg, Virginia
     title: Software Engineer Intern
     dates: May 2012--August 2012
     details:
-      - Integrated a new licensing mode into CenterLink, a grid computing
-        application, using {\bf FLEXlm} and {\bf Java}.
-      - Assisted development of industry software in
+      - Developed industry software in
         {\bf VC++}, {\bf VC\#}, {\bf Java}, and {\bf Tomcat}.
       - Improved the testing ({\bf JUnit} and {\bf NUnit}) and installation
         ({\bf Ant}, {\bf InstallShield}, and {\bf Make}) frameworks.
+      - Integrated a new licensing mode into CenterLink, a grid computing
+        application, using {\bf FLEXlm} and {\bf Java}.
   - place: Sunapsys
     location: Vinton, Virginia
     title: Network Administrator Intern
     dates: January 2011--August 2011
     details:
-      - Internship in high school with a small local company to replace
-        Windows domain, mail, DHCP, and DNS servers with virtualized
-        {\bf Linux} servers.
-      - Fully developed the servers and successfully migrated all
-        of the office's computers.
-      - Created {\bf Bash} scripts to provide incremental backups.
+      - Internship in high school to replace Windows domain, mail,
+        DHCP, and DNS servers with virtual {\bf Linux} servers
+        using {\bf KVM} and {\bf virsh}.
+      - Successfully created the servers and migrated the
+        office's computers to the Linux servers.
+      - Created {\bf Bash} scripts for incremental backups with rsync
+        and hard links.
 
 teaching:
-  - place: Virginia Tech Computer Science
-    location: Blacksburg, Virginia
-    title: Undergraduate Teaching Assistant
+  - university: Virginia Tech
+    course:
+      number: CS 2114
+      name: Software Design and Data Structures
     dates: January 2013--May 2013
-    details:
-      - Assisted students in a software design and data structures
-        class using {\bf Java} and {\bf Android}.
+    details: Undergraduate TA
 
 publications: publications.bib
 
@@ -221,17 +232,17 @@ projects:
     details:
       - Hosted on GitHub Pages. Uses {\bf Markdown} for posts and {\bf Jekyll}
           for static HTML generation.
-      - '{\bf 40 posts} across the following tags,
+      - '{\bf 42 posts} across the following tags,
         listed by highest frequency.'
-      - Python, Bash, Linux, \LaTeX, Fortran, Scala, Android, JavaScript, Zsh,
-        CUDA, News, OpenMP, C++, Mathematica, mpv, Lua
+      - Python, Bash, Linux, LaTeX, Fortran, Android, Scala, News,
+        JavaScript, Zsh, C++, OpenMP, Lua, Make, Mathematica, mpv
   github:
     name: GitHub Portfolio
     url: http://github.com/bamos
     details:
       - Hosts code samples, original source code, and patches for
-          open source projects.
-      - 23 original repositories, 7 forked repositories.
+        open source projects.
+      - 25 original repositories, 5 forked repositories.
 
 activities:
   - Honors Residential College, Virginia Tech, 2013--2014
@@ -240,12 +251,12 @@ activities:
   - Symphony Band, Virginia Tech, 2011--2012
   - Linux and Unix Users Group, Virginia Tech, 2011--2012
   - Galileo Living--Learning Community, Virginia Tech, 2011--2012
-  # - Trumpet Section Leader, Marching Band, Northside High School, 2010--2011
+# - Trumpet Section Leader, Marching Band, Northside High School, 2010--2011
 # - Math Club, Northside High School, 2010--2011
 # - National Honor Society, Northside High School, 2009--2011
 # - Academic Team, Northside High School, 2009--2011
 # - Chess Team, Northside High School, 2009--2011
-  # - Tennis Team, Northside High School, 2008--2011
+# - Tennis Team, Northside High School, 2008--2011
 # - Technology Student Association, Northside High School, 2008--2011
 # - Marching Band, Northside High School, 2007--2011
 # - Robotics Team, Virginia Western Community College, 2009--2010

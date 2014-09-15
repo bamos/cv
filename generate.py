@@ -34,6 +34,7 @@ def latexToMd(s):
     s = re.sub(r'\\[hv]space\*?\{[^}]*\}', '', s)
     s = s.replace(r"*", "\*")
     s = re.sub(r'\{ *\\bf *([^\}]*)\}', r'**\1**', s)
+    s = re.sub(r'\\url\{*([^\}]*)\}', r'[\1](\1)', s)
     s = re.sub('\{([^\}]*)\}', r'\1', s)
   elif isinstance(s,dict):
     for k,v in s.items():
@@ -80,12 +81,16 @@ def get_bibtex_md(p, pub_types):
       titlePunctuation = ","
       if t[0] == "inproceedings":
         details += "[" + str(gidx) + "] " + \
-          author_str + ", \"" + item['title'] + punc + "\" in <em>" + \
-          item['booktitle'] + "</em>, " + item['year'] + "<br><br>\n"
+          author_str + ", \"" + item['title'] + punc + "\""
+        if item['booktitle']:
+          details += " in <em>" + item['booktitle'] + "</em>,"
+        details += " " + item['year'] + "<br><br>\n"
       elif t[0] == "article":
         details += "[" + str(gidx) + "] " + \
-          author_str + ", \"" + item['title'] + punc + "\" <em>" + \
-          item['journal'] + "</em>, " + item['year'] + "<br><br>\n"
+          author_str + ", \"" + item['title'] + punc + "\""
+        if item['journal']:
+          details += " <em>" + item['journal'] + "</em>,"
+        details += " " + item['year'] + "<br><br>\n"
       else:
         print(t)
         raise Exception()
