@@ -49,7 +49,7 @@ research:
     advisor: Dr. Jules White
     dates: May 2012--January 2014
     details:
-      - '{\bf Research Area}: Mobile computing and security.'
+      - '{\bf Research Area}: Mobile computing, cyber-physical systems, and security.'
       - Android {\bf malware detection research} resulting in
         primary authorship on a conference publication.
         The current {\bf Scala} implementation uses a distributed
