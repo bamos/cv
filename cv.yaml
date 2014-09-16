@@ -81,7 +81,8 @@ research:
     dates: November 2012--March 2014
     details:
       - '{\bf Research Area}: Compilers.'
-      - Research on automatic {\bf OpenMP} to {\bf CUDA}
+      - Compiler research on a heterogenous system
+        on automatic {\bf OpenMP} to {\bf CUDA}
         translation using {\bf C++} and the {\bf ROSE} compiler framework.
       - Polyhedral loop optimization research to restructure
         {\bf OpenCL} kernels for locality using {\bf LLVM} and {\bf Polly}.
