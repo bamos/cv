@@ -7,6 +7,7 @@
 
 import re
 import yaml
+import sys
 
 from bibtexparser.customization import *
 from bibtexparser.bparser import BibTexParser
@@ -64,15 +65,25 @@ def get_bibtex_md(p, pub_types):
     for auth in item['author']:
       new_auth = auth.split(", ")
       new_auth = new_auth[1][0] + ". " + new_auth[0]
+      if new_auth == "B. Amos":
+        new_auth = "**" + new_auth + "**"
       new_auth_list.append(new_auth)
     item['author'] = new_auth_list
 
   contents = []
-  gidx = 1
   for t in pub_types:
+    gidx = 1
     type_content = {}
-    type_content['title'] = t[1]
-    filtered = filter(lambda x: x['type'] == t[0], p)
+    type_content['title'] = t[3]
+    filtered = list(filter(lambda x: x['type'] == t[0], p))
+    if t[1]:
+      for x in filtered:
+        if 'keyword' not in x or \
+            (x['keyword'] != 'journal' and x['keyword'] != 'magazine'):
+          print("Error: Bibliography 'article' items must define a "+
+            "keyword 'journal' or 'magazine'.")
+          sys.exit(-1)
+      filtered = list(filter(lambda x: x['keyword'] == t[1], filtered))
     details = ""
     for item in filtered:
       author_str = get_author_str(item['author'])
@@ -80,7 +91,7 @@ def get_bibtex_md(p, pub_types):
       else: punc = ""
       titlePunctuation = ","
       if t[0] == "inproceedings":
-        details += "[" + str(gidx) + "] " + \
+        details += "[" + t[2] + str(gidx) + "] " + \
           author_str + ", \"" + item['title'] + punc + "\""
         if item['booktitle']:
           details += " in <em>" + item['booktitle'] + "</em>,"
@@ -114,8 +125,9 @@ def generate(ext):
       with open(contents, 'r') as f:
         p = BibTexParser(f.read(), author).get_entry_list()
         pub_types = [
-          ('inproceedings', 'Conference Proceedings'),
-          ('article', 'Articles')
+          ('inproceedings', '', 'C', 'Conference Proceedings'),
+          ('article', 'journal', 'J', 'Journal Articles'),
+          ('article', 'magazine', 'M', 'Magazine Articles'),
         ]
         contents = get_bibtex_md(p, pub_types)
 
