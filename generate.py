@@ -98,7 +98,7 @@ def get_bibtex_md(p, pub_types):
           details += " in <em>" + item['booktitle'] + "</em>,"
         details += " " + item['year'] + "<br><br>\n"
       elif t[0] == "article":
-        details += "[" + str(gidx) + "] " + \
+        details += "[" + t[2] + str(gidx) + "] " + \
           author_str + ", \"" + item['title'] + punc + "\""
         if item['journal']:
           details += " <em>" + item['journal'] + "</em>,"
