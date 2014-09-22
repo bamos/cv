@@ -4,6 +4,17 @@
 \usepackage{hyperref,url}
 \usepackage[backend=biber,style=ieee,defernumbers=true]{biblatex}
 \addbibresource{../publications.bib}
+\DeclareNameFormat{author}{%
+  \ifthenelse{\equal{#1}{Amos}}%
+    {\textbf{\ifblank{#4}{}{#4\space}#1}}%
+    {\ifblank{#4}{}{#4\space}#1}%
+  \ifthenelse{\value{listcount}=1 \AND \value{liststop}=2}%
+    {\space and\space}
+    {\ifthenelse{\value{listcount}<\value{liststop}}%
+      {\addcomma\space}
+      {}
+    }
+}
 
 \usepackage{fancyhdr}\pagestyle{fancy}\usepackage{lastpage}
 \fancyhf{}\renewcommand{\headrulewidth}{0pt}
