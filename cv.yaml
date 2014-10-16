@@ -161,7 +161,7 @@ publications: publications.bib
 
 skills:
   - title: Preference
-    details: Mac, vim, git, Make, sbt
+    details: Arch Linux, Mac, vim, git, Make, sbt
   - title: Languages
     details: Akka**, Bash**, C/C++**, C\#*, Fortran**, HTML/CSS*, \LaTeX**,
       Java**, JavaScript**, {\it Mathematica}**, Make***,
