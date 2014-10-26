@@ -52,9 +52,8 @@ research:
       - '{\bf Research Area}: Mobile computing, cyber-physical systems, and security.'
       - Android {\bf malware detection research} resulting in
         primary authorship on a conference publication.
-        The current {\bf Scala} implementation uses a distributed
-        {\bf Actor} system to obtain run-time feature vectors
-        to train {\bf machine learning} classifiers.
+        The current {\bf Actor-based Scala} implementation obtains
+        run-time feature vectors for machine learning.
       - Modified the {\bf Android source} to provide non-standard logging
         information for dynamic malware analysis.
       - Developed {\bf VC\#} and {\bf Python} programs for a pilot study on
@@ -117,7 +116,7 @@ industry:
     title: Source Integrity Team Software Intern
     dates: May 2013--August 2013
     details:
-    - Developed a {\bf web application} to modify an XML-based grammar for
+    - Developed an XML modification {\bf web application} for
       fuzz vector generation.
       Implemented with client-side {\bf HTML} and {\bf js},
       using {\bf D3} for graphics and {\bf Handlebars} for templating.
@@ -144,8 +143,7 @@ industry:
       - Internship in high school to replace Windows domain, mail,
         DHCP, and DNS servers with virtual {\bf Linux} servers
         using {\bf KVM} and {\bf virsh}.
-      - Successfully created the servers and migrated the
-        office's computers to the Linux servers.
+      - Migrated the office's computers to the Linux servers.
       - Created {\bf Bash} scripts for incremental backups with rsync
         and hard links.
 
