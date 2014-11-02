@@ -80,22 +80,52 @@ and this project uses unique Markdown and LaTeX templates.
 The following list shows a short sampling of projects,
 and I'm happy to merge pull requests of other projects.
 
-+ https://github.com/afriggeri/cv
-+ https://github.com/cies/resume
-+ https://github.com/deedydas/Deedy-Resume
-+ https://github.com/divad12/resume
-+ https://github.com/geekcompany/DeerResume
-+ https://github.com/icco/Resume
-+ https://github.com/jsonresume/resume-schema
-+ https://github.com/kaeluka/cv
-+ https://github.com/mwhite/resume
-+ https://github.com/prat0318/json_resume
-+ https://github.com/QuteBits/resume_42
-+ https://github.com/raphink/CV
-+ https://github.com/sc932/resume
-+ https://github.com/terro/CV
-+ https://github.com/there4/markdown-resume
-+ https://github.com/zellux/resume
+<!--
+To generate the following list, install v1 of https://github.com/jacquev6/PyGithub
+and run the following command. Please add projects alphabetically to the list in
+the comment and in the table below.
+
+python3<<EOF
+from github import Github
+import time
+github = Github()
+repo_list = [
+  "afriggeri/cv", "cies/resume", "deedydas/Deedy-Resume", "divad12/resume",
+  "icco/Resume", "jsonresume/resume-schema", "kaeluka/cv",
+  "mwhite/resume", "prat0318/json_resume", "QuteBits/resume_42", "raphink/CV",
+  "sc932/resume", "terro/CV", "there4/markdown-resume", "zellux/resume"
+]
+
+print("Name | Stargazers ({}) | Description".format(time.strftime("%Y-%m-%d")))
+print("|".join(["----"]*3))
+for r_name in repo_list:
+  r = github.get_repo(r_name)
+  content = " | ".join([
+    "[{}]({})".format(r.full_name,r.html_url),
+    str(r.stargazers_count),
+    r.description
+  ])
+  print(content)
+EOF
+-->
+
+Name | Stargazers (2014-11-02) | Description
+----|----|----
+[afriggeri/cv](https://github.com/afriggeri/cv) | 749 | CV, typesetted in Helvetica Neue, using XeTeX, TikZ and Biblatex
+[cies/resume](https://github.com/cies/resume) | 184 | My resume as a PDF including the well commented Latex sources and build instructions.
+[deedydas/Deedy-Resume](https://github.com/deedydas/Deedy-Resume) | 464 | A one page , two asymmetric column resume template in XeTeX that caters to an undergraduate Computer Science student
+[divad12/resume](https://github.com/divad12/resume) | 22 | Yaml resume compiled into multiple formats (such as LaTeX, HTML (TODO), etc.)
+[icco/Resume](https://github.com/icco/Resume) | 212 | A markdown port of my resume
+[jsonresume/resume-schema](https://github.com/jsonresume/resume-schema) | 303 | JSON-Schema is used here to define and validate our proposed resume json
+[kaeluka/cv](https://github.com/kaeluka/cv) | 64 | My CV.
+[mwhite/resume](https://github.com/mwhite/resume) | 527 | Markdown -> PDF/HTML resumé generator
+[prat0318/json_resume](https://github.com/prat0318/json_resume) | 1002 | Generates pretty HTML, LaTeX, markdown, with biodata feeded as input in JSON
+[QuteBits/resume_42](https://github.com/QuteBits/resume_42) | 2 | It generates a beautiful resume from yaml data
+[raphink/CV](https://github.com/raphink/CV) | 45 | My CV
+[sc932/resume](https://github.com/sc932/resume) | 294 | My CV/resume in LaTeX.
+[terro/CV](https://github.com/terro/CV) | 17 | My cv template
+[there4/markdown-resume](https://github.com/there4/markdown-resume) | 353 | Generate a responsive CSS3 and HTML5 resume with Markdown, with optional PDF output.
+[zellux/resume](https://github.com/zellux/resume) | 88 | My resume, generated with moderncv
 
 [generate.py]: https://github.com/bamos/cv/blob/master/generate.py
 [publications.bib]: https://github.com/bamos/cv/blob/master/publications.bib
