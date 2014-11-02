@@ -81,48 +81,30 @@ The following list shows a short sampling of projects,
 and I'm happy to merge pull requests of other projects.
 
 <!--
-To generate the following list, install v1 of https://github.com/jacquev6/PyGithub
-and run the following command. Please add projects to the list in the comment
-and in the table below.
+To generate the following list, install https://github.com/jacquev6/PyGithub
+and download the `github-repo-summary.py` script from
+https://github.com/bamos/python-scripts/blob/master/python3/github-repo-summary.py.
+Please add projects to the list in the comment and in the table below.
 
-The below code portion can be extracted and copied with:
-perl -ne 'print if /^python3<<EOF/ .. /EOF$/' README.md | pbcopy
-
-python3<<EOF | pbcopy
-from github import Github
-import time
-import os
-import sys
-
-github = Github(os.getenv("GITHUB_TOKEN"))
-repo_list = [
-  "afriggeri/cv", "cies/resume", "deedydas/Deedy-Resume", "divad12/resume",
-  "icco/Resume", "jsonresume/resume-schema", "kaeluka/cv",
-  "mwhite/resume", "prat0318/json_resume", "qutebits/resume_42", "raphink/CV",
-  "sc932/resume", "terro/CV", "there4/markdown-resume", "zellux/resume"
-]
-
-print("Generated on {}, see the Markdown source for more details.\n".format(
-  time.strftime("%Y-%m-%d")
-))
-print("Name | Stargazers | Description")
-print("|".join(["----"]*3))
-for r_name in sorted(repo_list):
-  try:
-    r = github.get_repo(r_name)
-  except:
-    print("Error: Repository '{}' not found.".format(r_name),file=sys.stderr)
-    sys.exit(-1)
-  content = " | ".join([
-    "[{}]({})".format(r.full_name,r.html_url),
-    str(r.stargazers_count),
-    r.description
-  ])
-  print(content)
-EOF
+github-repo-summary.py \
+  afriggeri/cv \
+  cies/resume \
+  deedydas/Deedy-Resume \
+  divad12/resume \
+  icco/Resume \
+  jsonresume/resume-schema \
+  kaeluka/cv \
+  mwhite/resume \
+  prat0318/json_resume \
+  qutebits/resume_42 \
+  raphink/CV \
+  sc932/resume \
+  terro/CV \
+  there4/markdown-resume \
+  zellux/resume
 -->
 
-Generated on 2014-11-02, see the Markdown source for more details.
+Generated on 2014-11-02, see the Markdown source of this file for more details.
 
 Name | Stargazers | Description
 ----|----|----
