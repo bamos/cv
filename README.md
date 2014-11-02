@@ -92,6 +92,7 @@ python3<<EOF | pbcopy
 from github import Github
 import time
 import os
+import sys
 
 github = Github(os.getenv("GITHUB_TOKEN"))
 repo_list = [
@@ -107,7 +108,11 @@ print("Generated on {}, see the Markdown source for more details.\n".format(
 print("Name | Stargazers | Description")
 print("|".join(["----"]*3))
 for r_name in sorted(repo_list):
-  r = github.get_repo(r_name)
+  try:
+    r = github.get_repo(r_name)
+  except:
+    print("Error: Repository '{}' not found.".format(r_name),file=sys.stderr)
+    sys.exit(-1)
   content = " | ".join([
     "[{}]({})".format(r.full_name,r.html_url),
     str(r.stargazers_count),
