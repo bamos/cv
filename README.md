@@ -74,6 +74,29 @@ but producing Markdown is slightly more complicated.
 I use [BibtexParser][bibtexparser] to load the bibliography into
 a map and manually format the data to mimic the LaTeX IEEE bibliography style.
 
+# Similar Projects
+There are many approaches to managing a resume or CV in git,
+and this project uses unique Markdown and LaTeX templates.
+The following list shows a short sampling of projects,
+and I'm happy to merge pull requests of other projects.
+
++ https://github.com/afriggeri/cv
++ https://github.com/cies/resume
++ https://github.com/deedydas/Deedy-Resume
++ https://github.com/divad12/resume
++ https://github.com/geekcompany/DeerResume
++ https://github.com/icco/Resume
++ https://github.com/jsonresume/resume-schema
++ https://github.com/kaeluka/cv
++ https://github.com/mwhite/resume
++ https://github.com/prat0318/json_resume
++ https://github.com/QuteBits/resume_42
++ https://github.com/raphink/CV
++ https://github.com/sc932/resume
++ https://github.com/terro/CV
++ https://github.com/there4/markdown-resume
++ https://github.com/zellux/resume
+
 [generate.py]: https://github.com/bamos/cv/blob/master/generate.py
 [publications.bib]: https://github.com/bamos/cv/blob/master/publications.bib
 [cv.yaml]: https://github.com/bamos/cv/blob/master/cv.yaml
