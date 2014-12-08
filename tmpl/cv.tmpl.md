@@ -9,7 +9,7 @@ h1 {
 }
 </style>
 
-# ~{{name}}~. vitæ.
+# ~{{name.first}}~ ~{{name.last}}~. vitæ.
 
 [PDF](~{{pdf}}~) &#124;
 [source](~{{src}}~) &#124;
