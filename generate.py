@@ -38,6 +38,7 @@ def latexToMd(s):
     s = re.sub(r'\{ *\\bf *([^\}]*)\}', r'**\1**', s)
     s = re.sub(r'\\url\{*([^\}]*)\}', r'[\1](\1)', s)
     s = re.sub('\{([^\}]*)\}', r'\1', s)
+    s = s.replace("~"," ")
   elif isinstance(s,dict):
     for k,v in s.items():
       s[k] = latexToMd(v)
@@ -144,7 +145,7 @@ def generate(ext):
     color = yaml_contents['color'],
     pdf = yaml_contents['pdf'],
     src = yaml_contents['src'],
-    phone = yaml_contents['phone'],
+    phone = latexToMd(yaml_contents['phone']),
     email = yaml_contents['email'],
     url = yaml_contents['url'],
     social = yaml_contents['social'],
