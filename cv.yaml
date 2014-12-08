@@ -1,10 +1,17 @@
-name: brandon amos
-phone: (540) 947--1238
+name:
+  first: brandon
+  last: amos
+style: banking # casual, classic, oldstyle, or banking
+color: blue # blue, orange, green, red, purple, grey and black
+phone: ~(540)~947~1238
 email: bamos@cs.cmu.edu
-email_recaptcha: http://goo.gl/O4586Q
 pdf: /data/cv.pdf
 src: https://github.com/bamos/cv
-url: "http://bamos.io"
+url: "bamos.github.io"
+social:
+  github: bamos
+  twitter: brandondamos
+  linkedin: bdamos
 # Erdős  number is at most 4.
 # (Brandon Amos -> Layne Watson -> Leroy Kelly -> Zoltán Füredi -> Paul Erdős )
 
@@ -50,16 +57,16 @@ research:
     dates: May 2012--May 2014
     details:
       - '{\bf Research Area}: Mobile computing, cyber-physical systems, and security.'
-      - Android {\bf malware detection research} resulting in
-        primary authorship on a conference publication.
-        The current {\bf Actor-based Scala} implementation obtains
-        run-time feature vectors for machine learning.
-      - Modified the {\bf Android source} to provide non-standard logging
-        information for dynamic malware analysis.
-      - Developed {\bf VC\#} and {\bf Python} programs for a pilot study on
-        manufacturing cyber-physical security.
-      - Assisted {\bf C++} and {\bf Make} development in {\bf Linux} for a
-        deployment optimization framework.
+      - Android malware detection research implemented with
+        a distributed {\bf Actor-based Scala} system.
+      #- Modified the {\bf Android source} to provide non-standard logging
+      #  information for dynamic malware analysis.
+      - Manufacturing cyber-physical security research implemented
+        with {\bf VC\#} and {\bf Python}.
+      #- Developed {\bf VC\#} and {\bf Python} programs for a pilot study on
+      #  manufacturing cyber-physical security.
+      #- Assisted {\bf C++} and {\bf Make} development in {\bf Linux} for a
+      #  deployment optimization framework.
   - place: Virginia Tech, Computer Science
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
@@ -85,7 +92,7 @@ research:
         translation using {\bf C++} and the {\bf ROSE} compiler framework.
       - Polyhedral loop optimization research to restructure
         {\bf OpenCL} kernels for locality using {\bf LLVM} and {\bf Polly}.
-      - '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
+      #- '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
 
 industry:
   - place: Adobe Research
@@ -94,10 +101,10 @@ industry:
     dates: May 2014--August 2014
     details:
       - '{\bf Research Area}: Distributed Systems'
-      - Built and released {\it Spindle}, an open source
-        web analytics processing engine with {\bf Scala}, {\bf Spark},
-        {\bf Spray}, and {\bf Parquet} on {\bf HDFS}.
-      - Spindle is available on GitHub at
+      - Built and released {\it Spindle} as an open sourec web analytics
+        processing engine using {\bf Scala},
+        {\bf Spark}, {\bf Spray}, and {\bf Parquet} on {\bf HDFS}.
+        Spindle is available on GitHub at
         \url{http://github.com/adobe-research/spindle}.
   - place: Snowplow Analytics
     location: London, United Kingdom (Remote)
@@ -143,9 +150,9 @@ industry:
       - Internship in high school to replace Windows domain, mail,
         DHCP, and DNS servers with virtual {\bf Linux} servers
         using {\bf KVM} and {\bf virsh}.
-      - Migrated the office's computers to the Linux servers.
-      - Created {\bf Bash} scripts for incremental backups with rsync
-        and hard links.
+      # - Migrated the office's computers to the Linux servers.
+      # - Created {\bf Bash} scripts for incremental backups with rsync
+      #   and hard links.
 
 teaching:
   - university: Virginia Tech

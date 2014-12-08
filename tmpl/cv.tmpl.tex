@@ -1,7 +1,22 @@
-\documentclass[letter]{article}
-\usepackage[hmargin=0.75in, vmargin=0.75in]{geometry}
+\documentclass[11pt,a4paper,sans]{moderncv}
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+\DeclareRobustCommand*\cal{\@fontswitch\relax\mathcal}
+\DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
 
-\usepackage{hyperref,url}
+\moderncvstyle{~{{ style }}~}
+\moderncvcolor{~{{ color }}~}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
+%\setlength{\makecvtitlenamewidth}{10cm}
+
 \usepackage[backend=biber,style=ieee,defernumbers=true]{biblatex}
 \addbibresource{../publications.bib}
 \DeclareNameFormat{author}{%
@@ -16,25 +31,25 @@
     }
 }
 
-\usepackage{fancyhdr}\pagestyle{fancy}\usepackage{lastpage}
-\fancyhf{}\renewcommand{\headrulewidth}{0pt}
-\cfoot{Page \thepage\ of \pageref{LastPage}}
+\usepackage{lastpage}
+\cfoot{\addressfont\itshape\textcolor{gray}{Page \thepage\ of \pageref{LastPage}}}
 
-\usepackage{enumitem}\setlist{nolistsep}
-\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}
-\setlength\parindent{0pt}\setlength{\topskip}{0pt}
+\name{~{{ name.first }}~}{~{{ name.last }}~}
+%\title{Resumé title}
+%\address{street and number}{postcode city}{country}
+\phone{~{{ phone }}~}
+\email{~{{ email }}~}
+\homepage{~{{ url }}~}
+\social[linkedin]{~{{social.linkedin}}~}
+\social[twitter]{~{{social.twitter}}~}
+\social[github]{~{{social.github}}~}
+%\extrainfo{additional information}
+%\photo[64pt][0.4pt]{picture}
+%\quote{Some quote}
 
-\usepackage{titlesec}
-\titleformat*{\section}{\huge}
-
-\usepackage{hyphenat}\hyphenation{Mathematica}
 
 \begin{document}
-{\huge ~{{ name }}~. vit\ae.} \hfill
-{Phone.} {\small ~{{ phone }}~} \hspace{2mm}
-{Email.} {\small \href{mailto: ~{{ email }}~ }{ ~{{email }}~ }} \\
-\url{ ~{{ url }}~ } \hfill Generated \today.
-\vspace{3mm}
+\makecvtitle
 
 ~{{ body }}~
 

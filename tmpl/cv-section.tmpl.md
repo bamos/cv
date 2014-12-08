@@ -1,14 +1,14 @@
-# ~{{ name }}~
+# ~{{name}}~
 
 ~{ if name == "Education" }~
 ~{ for school in contents }~
-__<big>~{{ school.school }}~.</big>__  ~{{ school.degree }}~.
+__<big>~{{school.school}}~.</big>__  ~{{school.degree}}~.
 ~{- if school.overallGPA }~
-GPA: ~{{ school.overallGPA }}~
+GPA: ~{{school.overallGPA}}~
 ~{- endif }~
 
-+ ~{{ school.location }}~
-&#124; ~{{ school.dates }}~
++ ~{{school.location}}~
+&#124; ~{{school.dates}}~
 ~{ endfor }~
 
 ~{ elif name == "Teaching Experience" }~
@@ -21,16 +21,16 @@ GPA: ~{{ school.overallGPA }}~
 ~{ elif name.endswith("Experience") }~
 ~{ for n in contents }~
 
-__<big>~{{ n.place }}~.</big>__  ~{{ n.title }}~.
+__<big>~{{n.place}}~.</big>__  ~{{n.title}}~.
 
-+ ~{{ n.location }}~
++ ~{{n.location}}~
 ~{ if n.advisor -}~
-  &#124; Advisor: ~{{ n.advisor }}~
+  &#124; Advisor: ~{{n.advisor}}~
 ~{ endif -}~
-&#124; ~{{ n.dates }}~
+&#124; ~{{n.dates}}~
 ~{- if n.details -}~
 ~{- for detail in n.details }~
-+ ~{{ detail }}~
++ ~{{detail}}~
 ~{- endfor }~
 ~{- endif -}~
 ~{ endfor }~
@@ -38,45 +38,44 @@ __<big>~{{ n.place }}~.</big>__  ~{{ n.title }}~.
 ~{ elif name == "Publications" }~
 ~{ for type in contents }~
 
-__<big>~{{ type['title'] }}~.</big>__
+__<big>~{{type['title']}}~.</big>__
 
-~{{ type['details'] }}~
+~{{type['details']}}~
 
 ~{ endfor }~
 
 ~{ elif name == "Honors \\& Awards" or name == "Honors & Awards" }~
 ~{- for award in contents }~
   ~{- if 'url' in award }~
-+ [~{{ award['title'] }}~](~{{ award['url'] }}~)
++ [~{{award['title']}}~](~{{award['url']}}~)
   ~{- else }~
-+ ~{{ award['title'] }}~
++ ~{{award['title']}}~
   ~{- endif }~
 ~{- if 'descr' in award }~
-  + ~{{ award['descr'] }}~
+  + ~{{award['descr']}}~
 ~{- endif }~
 ~{- endfor }~
 
 ~{ elif name == "Projects" }~
 ~{ for k,v in contents.items() }~
 
-<big>[~{{ v['name']}}~](~{{ v['url'] }}~)</big>
+<big>[~{{v['name']}}~](~{{v['url']}}~)</big>
 
 ~{ for detail in v['details'] }~
-+ ~{{ detail }}~
++ ~{{detail}}~
 ~{- endfor }~
 ~{ endfor }~
 
 ~{ elif name == "Activities" }~
 ~{- for activity in contents }~
-+ ~{{ activity }}~
++ ~{{activity}}~
 ~{- endfor }~
 
 ~{ elif name == "Skills" }~
 ~{- for skill in contents }~
-+ __~{{ skill['title'] }}~.__ ~{{ skill['details'] }}~
++ __~{{skill['title']}}~.__ ~{{skill['details']}}~
 ~{- endfor }~
 
 ~{ else }~
-~{{ contents }}~
+~{{contents}}~
 ~{ endif }~
-
