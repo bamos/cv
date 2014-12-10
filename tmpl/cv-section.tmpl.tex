@@ -41,9 +41,9 @@
 ~{ elif name == "Publications" }~
   \nocite{*}
 
+  \renewcommand*{\bibfont}{\small}
   \subsection{Conference Proceedings}
-  \printbibliography[heading=none,type=inproceedings,
-    prefixnumbers=C]
+  \printbibliography[heading=none,type=inproceedings,prefixnumbers=C]
 
   \subsection{Journal Articles}
   \printbibliography[heading=none,type=article,keyword=journal,
@@ -52,6 +52,7 @@
   \subsection{Magazine Articles}
   \printbibliography[heading=none,type=article,keyword=magazine,
     resetnumbers=true,prefixnumbers=M]
+
 ~{ elif name == "Honors \\& Awards" }~
   \begin{itemize}
   ~{ for award in contents }~
