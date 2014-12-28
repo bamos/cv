@@ -65,8 +65,9 @@
   \end{itemize}
 ~{ elif name == "Projects" }~
   ~{ for k,v in contents.items() }~
-    \subsection{~{{ v['name'] }}~} %-- \url{ ~{{ v['url'] }}~ } }
+  \subsection{~{{ v['name'] }}~}
     \begin{itemize}
+      \item Available at \url{ ~{{ v['url'] }}~ }.
     ~{ for detail in v['details'] }~
       \item ~{{ detail }}~
     ~{- endfor -}~
