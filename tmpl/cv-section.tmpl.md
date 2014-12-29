@@ -47,7 +47,7 @@ __<big>~{{type['title']}}~.</big>__
 ~{ elif name == "Honors \\& Awards" or name == "Honors & Awards" }~
 ~{- for award in contents }~
   ~{- if 'url' in award }~
-+ [~{{award['title']}}~](~{{award['url']}}~)
++ [~{{award['title']}}~](~{{award['url']}}~), ~{{award['date']}}~
   ~{- else }~
 + ~{{award['title']}}~
   ~{- endif }~
@@ -79,4 +79,3 @@ __<big>~{{type['title']}}~.</big>__
 ~{ else }~
 ~{{contents}}~
 ~{ endif }~
-
