@@ -177,48 +177,59 @@ skills:
     details: 1/10* -- 3/10** -- 5/10*** -- 7/10****
 
 honors:
-  - title: Phi Beta Kappa Honor Society, Inducted 2014
-  - title: 1st Place Capstone Award, Virginia Tech Computer Science, 2014
-  - title: David Heilman Research Award, Virginia Tech Computer Science, 2014
+  - title: Phi Beta Kappa Honor Society
+    year: Inducted 2014
+  - title: 1st Place Capstone Award, Virginia Tech Computer Science
+    year: 2014
+  - title: David Heilman Research Award, Virginia Tech Computer Science
+    year: 2014
     descr: Given to the Computer Science student with the most
       outstanding research experience.
-  - title: Senior Scholar Award, Virginia Tech Computer Science, 2014
+  - title: Senior Scholar Award, Virginia Tech Computer Science
+    year: 2014
     descr: Given to the senior in Computer Science with the most
            outstanding academic record.
   #- title: ACC Meeting of the Minds Undergraduate Research Conference, 2014
   #  url: http://www.vtnews.vt.edu/articles/2014/03/030514-uged-accmom.html
-  - title: Honorable Mention,
-      CRA Outstanding Undergraduate Researcher Award, 2014
+  - title: Honorable Mention, CRA Outstanding Undergraduate Researcher Award
+    year: 2014
     # descr: 1 of 15 North American males awarded honorable mention for
     #        exemplary computer science research.
     url: http://cra.org/awards/undergrad-view/2014_outstanding_undergraduate_award_recipients/
   #- title: Qualstar Award, Qualcomm, 2013
   #- title: Pi Mu Epsilon Honor Society, Inducted 2013
-  - title: Benjamin F. Bock Merit Scholarship,
-      Virginia Tech Engineering, 2013--2014
+  - title: Benjamin F. Bock Merit Scholarship, Virginia Tech Engineering
+    year: 2013--2014
   # - title: Sophomore Scholar Award, Virginia Tech Computer Science, 2013
   #descr: Given to the sophomore in Computer Science with the most
   #         outstanding academic record.
   #- title: University Honors, Virginia Tech, 2012--2014
-  - title: Intelligence Community Center of Academic Excellence Fellowship,
-      Virginia Tech, 2012--2014
+  - title: Intelligence Community Center of Academic Excellence Scholarship,
+      Virginia Tech
+    year: 2012--2014
     # descr: Merit-based scholarship providing a cyber-security
     #        research fellowship.
   #- title: Dean's List with Distinction, Virginia Tech, 2011--2014
   - title: Engineering Merit Scholarship,
-           Roanoke County Public Schools Education Foundation, 2011
+           Roanoke County Public Schools Education Foundation
+    year: 2011
     # descr: Merit-based scholarship presented annually to one student
     #        in the graduating Engineering class.
-  - title: "Papa John's Merit Scholarship, 2011"
+  - title: "Papa John's Merit Scholarship"
+    year: 2011
   - title: Gay B. Shober Memorial Merit Scholarship,
-        Roanoke County Federal Credit Union, 2011
-  - title: Pamplin Leader Merit Scholarship, Virginia Tech, 2011
+        Roanoke County Federal Credit Union
+    year: 2011
+  - title: Pamplin Leader Merit Scholarship, Virginia Tech
+    year: 2011
     # descr: Merit-based scholarship presented to one student from
     #        each public high school in Virginia.
     url: http://ww2.roanoke.com/community/virginia/education/wb/292050
   - title: I. Luck Gravett Memorial Merit Scholarship,
-        Scottish Rite of Freemasonry, 2011
-  - title: Salem--Roanoke County Chamber of Commerce Merit Scholarship, 2011
+        Scottish Rite of Freemasonry
+    year: 2011
+  - title: Salem--Roanoke County Chamber of Commerce Merit Scholarship
+    year: 2011
     url: http://s-rcchamber.org/wp-content/uploads/2011/03/August-2011-NL.pdf
   #- title: 1st Place Regional CAD/Engineering Drawing,
   #         Virginia TSA, Blue Ridge Region, 2011

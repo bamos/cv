@@ -55,7 +55,7 @@
 ~{ elif name == "Honors \\& Awards" }~
   \begin{itemize}
   ~{ for award in contents }~
-    \item ~{{ award['title'] }}~
+    \item ~{{ award['title'] }}~ \hfill ~{{ award['year'] }}~
     ~{ if award['descr'] }~
       \begin{itemize}
       \item {~{{award['descr']}}~}
