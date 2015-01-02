@@ -87,7 +87,7 @@ research:
     dates: November 2012--March 2014
     details:
       - '{\bf Research Area}: Compilers.'
-      - Compiler research on a heterogenous system
+      - Compiler research on a heterogeneous system
         on automatic {\bf OpenMP} to {\bf CUDA}
         translation using {\bf C++} and the {\bf ROSE} compiler framework.
       - Polyhedral loop optimization research to restructure
@@ -101,7 +101,7 @@ industry:
     dates: May 2014--August 2014
     details:
       - '{\bf Research Area}: Distributed Systems'
-      - Built and released {\it Spindle} as an open sourec web analytics
+      - Built and released {\it Spindle} as an open source web analytics
         processing engine using {\bf Scala},
         {\bf Spark}, {\bf Spray}, and {\bf Parquet} on {\bf HDFS}.
         Spindle is available on GitHub at
