@@ -72,6 +72,7 @@ github-repo-summary.py \
   cies/resume \
   deedydas/Deedy-Resume \
   divad12/resume \
+  emichael/resume \
   icco/Resume \
   jsonresume/resume-schema \
   kaeluka/cv \
@@ -85,25 +86,24 @@ github-repo-summary.py \
   zellux/resume
 -->
 
-Generated on 2014-11-02, see the Markdown source of this file for more details.
-
 Name | Stargazers | Description
 ----|----|----
-[afriggeri/cv](https://github.com/afriggeri/cv) | 749 | CV, typesetted in Helvetica Neue, using XeTeX, TikZ and Biblatex
-[cies/resume](https://github.com/cies/resume) | 184 | My resume as a PDF including the well commented Latex sources and build instructions.
-[deedydas/Deedy-Resume](https://github.com/deedydas/Deedy-Resume) | 464 | A one page , two asymmetric column resume template in XeTeX that caters to an undergraduate Computer Science student
-[divad12/resume](https://github.com/divad12/resume) | 22 | Yaml resume compiled into multiple formats (such as LaTeX, HTML (TODO), etc.)
-[icco/Resume](https://github.com/icco/Resume) | 212 | A markdown port of my resume
-[jsonresume/resume-schema](https://github.com/jsonresume/resume-schema) | 303 | JSON-Schema is used here to define and validate our proposed resume json
-[kaeluka/cv](https://github.com/kaeluka/cv) | 64 | My CV.
-[mwhite/resume](https://github.com/mwhite/resume) | 527 | Markdown -> PDF/HTML resumé generator
-[prat0318/json_resume](https://github.com/prat0318/json_resume) | 1002 | Generates pretty HTML, LaTeX, markdown, with biodata feeded as input in JSON
-[QuteBits/resume_42](https://github.com/QuteBits/resume_42) | 2 | It generates a beautiful resume from yaml data
-[raphink/CV](https://github.com/raphink/CV) | 45 | My CV
-[sc932/resume](https://github.com/sc932/resume) | 294 | My CV/resume in LaTeX.
-[terro/CV](https://github.com/terro/CV) | 17 | My cv template
-[there4/markdown-resume](https://github.com/there4/markdown-resume) | 353 | Generate a responsive CSS3 and HTML5 resume with Markdown, with optional PDF output.
-[zellux/resume](https://github.com/zellux/resume) | 88 | My resume, generated with moderncv
+[afriggeri/cv](https://github.com/afriggeri/cv) | 768 | CV, typesetted in Helvetica Neue, using XeTeX, TikZ and Biblatex
+[cies/resume](https://github.com/cies/resume) | 192 | My resume as a PDF including the well commented Latex sources and build instructions.
+[deedydas/Deedy-Resume](https://github.com/deedydas/Deedy-Resume) | 501 | A one page , two asymmetric column resume template in XeTeX that caters to an undergraduate Computer Science student
+[divad12/resume](https://github.com/divad12/resume) | 24 | Yaml resume compiled into multiple formats (such as LaTeX, HTML (TODO), etc.)
+[emichael/resume](https://github.com/emichael/resume) | 1 | Generate LaTeX and Markdown resume from YAML with Python.
+[icco/Resume](https://github.com/icco/Resume) | 214 | A markdown port of my resume
+[jsonresume/resume-schema](https://github.com/jsonresume/resume-schema) | 330 | JSON-Schema is used here to define and validate our proposed resume json
+[kaeluka/cv](https://github.com/kaeluka/cv) | 65 | My CV.
+[mwhite/resume](https://github.com/mwhite/resume) | 546 | Markdown -> PDF/HTML resumé generator
+[prat0318/json_resume](https://github.com/prat0318/json_resume) | 1026 | Generates pretty HTML, LaTeX, markdown, with biodata feeded as input in JSON
+[QuteBits/resume_42](https://github.com/QuteBits/resume_42) | 4 | It generates a beautiful resume from yaml data
+[raphink/CV](https://github.com/raphink/CV) | 48 | My CV
+[sc932/resume](https://github.com/sc932/resume) | 296 | My CV/resume in LaTeX.
+[terro/CV](https://github.com/terro/CV) | 18 | My cv template
+[there4/markdown-resume](https://github.com/there4/markdown-resume) | 397 | Generate a responsive CSS3 and HTML5 resume with Markdown, with optional PDF output.
+[zellux/resume](https://github.com/zellux/resume) | 97 | My resume, generated with moderncv
 
 [generate.py]: https://github.com/bamos/cv/blob/master/generate.py
 [publications.bib]: https://github.com/bamos/cv/blob/master/publications.bib
