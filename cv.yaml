@@ -168,13 +168,18 @@ skills:
   - title: Preference
     details: Arch Linux/Mac, vim/emacs, git/Make/sbt
   - title: Languages
-    details: Akka**, Bash**, C/C++**, C\#*, Fortran**, HTML/CSS*, \LaTeX**,
-      Java**, JavaScript**, {\it Mathematica}**, Make***,
-      PHP*, Python***, R*, Scala***
+    details: Akka, Bash, C/C++, C\#, Fortran, HTML/CSS, \LaTeX,
+      Java, JavaScript, {\it Mathematica}, Make,
+      PHP, Python, R, Scala
+    # details: Akka**, Bash**, C/C++**, C\#*, Fortran**, HTML/CSS*, \LaTeX**,
+      # Java**, JavaScript**, {\it Mathematica}**, Make***,
+      # PHP*, Python***, R*, Scala***
   - title: Systems
-    details: Android**, Linux***, Mac***
-  - title: Rankings
-    details: 1/10* -- 3/10** -- 5/10*** -- 7/10****
+    details: Android, Linux, Mac
+    # details: Android**, Linux***, Mac***
+  # - title: Rankings
+  #   If uncommented, make clearer:
+  #   details: 1/10* -- 3/10** -- 5/10*** -- 7/10****
 
 honors:
   - title: Phi Beta Kappa Honor Society
@@ -245,7 +250,7 @@ honors:
 projects:
   website:
     name: Personal Blog and Website
-    url: http://bamos.io
+    url: http://bamos.github.io
     details:
       - Hosted on GitHub Pages. Uses {\bf Markdown} for posts and {\bf Jekyll}
           for static HTML generation.
