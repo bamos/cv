@@ -56,9 +56,8 @@ This work is distributed under the MIT license (`LICENSE-bamos.mit`)
 with portions copyright Ellis Michael from
 [emichael/resume](https://github.com/emichael/resume).
 Ellis' portions are also distributed under the MIT license
-(`LICENSE-emichael.mit`) and include:
-+ Re-write of `generate.py`
-+ Template directory restructuring
+(`LICENSE-emichael.mit`) and include
+a re-write of `generate.py` and template restructuring.
 
 # Similar Projects
 There are many approaches to managing a resume or CV in git,
