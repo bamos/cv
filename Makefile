@@ -45,7 +45,7 @@ jekyll: stage
 	cd $(BLOG_DIR) && jekyll server
 
 push: stage
-	git -C $(BLOG_DIR) add $(BLOG_DIR)/assets/cv.pdf
+	git -C $(BLOG_DIR) add $(BLOG_DIR)/data/cv.pdf
 	git -C $(BLOG_DIR) add $(BLOG_DIR)/cv.md
 	git -C $(BLOG_DIR) commit -m "Update cv."
 	git -C $(BLOG_DIR) push
