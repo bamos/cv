@@ -14,7 +14,7 @@ The dependencies are included in `requirements.txt` and can be
 installed
 using `pip` with `pip3 install -r requirements.txt`.
 On Mac or Linux, `make` will call [generate.py][generate.py] and
-build the LaTeX documents with `pdflatex` and `biber`.
+build the LaTeX documents with `latexmk` and `biber`.
 
 The Makefile will also:
 
@@ -23,24 +23,20 @@ The Makefile will also:
   documents with `make jekyll`, and
 3. Push updated documents to my website with `make push`.
 
-# Implementation details
-## generate.py
-1. Read `cv.yaml` into Python as a map and loop through the
-   `order` vector,
-   which maps a section key to the title to display.
-   This is done so sections can be moved and hidden without
-   deleting them.
-2. Generate the LaTeX or Markdown content for every section by
-   using the templates
-   [cv-section.tmpl.tex][cv-section.tmpl.tex] and
-   [cv-section.tmpl.md][cv-section.tmpl.md], which use
-   [moderncv](http://www.ctan.org/pkg/moderncv).
-   The conditional statements make the sections a little messy,
-   but using a template for each section lets the order be changed
-   solely by the `order` vector.
-3. Generate the entire LaTeX or Markdown document by using
-   the templates [cv.tmpl.tex][cv.tmpl.tex] and
-   [cv.tmpl.md][cv.tmpl.md].
+# What to modify
+Change the content in `cv.yaml`.
+You should also look through the template files to make sure there isn't any
+special-case code that needs to be modified.
+If you want to use the `Makefile` with your jekyll website,
+you'll need to modify the `Makefile` slightly.
+
+## Warnings
+1. Strings in `cv.yaml` should be LaTeX (though, the actual LaTeX formatting
+   should be in the left in the templates as much as possible).
+2. If you do include any new LaTeX commands, make sure that one of the
+   `REPLACEMENTS` in `generate.py` converts them properly.
+3. The LaTeX templates use modified Jinja delimiters to avoid overlaps with
+   normal LaTeX. See `generate.py` for details.
 
 ## Publications
 All publications are stored as BibTeX in `publications.bib`.
