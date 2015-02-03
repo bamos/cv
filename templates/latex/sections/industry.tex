@@ -1,0 +1,11 @@
+~< extends "section.tex" >~
+
+~< block body >~
+    ~< for item in items >~
+        \cvlistitem{
+          << item.title >>,
+          << item.place >>\hfill
+          << item.dates >>
+        }
+    ~< endfor >~
+~< endblock body >~

@@ -9,8 +9,8 @@
 \DeclareRobustCommand*\cal{\@fontswitch\relax\mathcal}
 \DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
 
-\moderncvstyle{~{{ style }}~}
-\moderncvcolor{~{{ color }}~}
+\moderncvstyle{<< style >>}
+\moderncvcolor{<< color >>}
 %\renewcommand{\familydefault}{\sfdefault}
 
 \usepackage[scale=0.75]{geometry}
@@ -22,7 +22,7 @@
 
 % Make the author's name bold in publications.
 \DeclareNameFormat{author}{%
-  \ifthenelse{\equal{#1}{~{{ name.last }}~}}%
+  \ifthenelse{\equal{#1}{<< name.last >>}}%
     {\textbf{\ifblank{#4}{}{#4\space}#1}}%
     {\ifblank{#4}{}{#4\space}#1}%
   \ifthenelse{\value{listcount}=1 \AND \value{liststop}=2}%
@@ -36,15 +36,15 @@
 \usepackage{lastpage}
 \cfoot{\addressfont\itshape\textcolor{gray}{Page \thepage\ of \pageref{LastPage}}}
 
-\name{~{{ name.first }}~}{~{{ name.last }}~}
+\name{<< name.first >>}{<< name.last >>}
 %\title{Resumé title}
 %\address{street and number}{postcode city}{country}
-\phone{~{{ phone }}~}
-\email{~{{ email }}~}
-\homepage{~{{ url }}~}
-\social[linkedin]{~{{social.linkedin}}~}
-\social[twitter]{~{{social.twitter}}~}
-\social[github]{~{{social.github}}~}
+\phone{<< phone >>}
+\email{<< email >>}
+\homepage{<< url >>}
+\social[linkedin]{<<social.linkedin>>}
+\social[twitter]{<<social.twitter>>}
+\social[github]{<<social.github>>}
 %\extrainfo{additional information}
 %\photo[64pt][0.4pt]{picture}
 %\quote{Some quote}
@@ -53,6 +53,6 @@
 \begin{document}
 \makecvtitle
 
-~{{ body }}~
+<< body >>
 
 \end{document}

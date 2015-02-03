@@ -1,36 +1,54 @@
-# Makefile to build PDF, Markdown, and plaintext CV from YAML.
+# Makefile to build PDF and Markdown cv from YAML.
 #
-# Brandon Amos <http://bamos.io>
+# Brandon Amos <http://bamos.io> and Ellis Michael <http://ellismichael.com>
 
 BLOG_DIR=$(HOME)/repos/blog
 
-all: gen/cv.pdf gen/cv.md
+TEMPLATES=$(shell find templates -type f)
 
-gen/cv.tex gen/cv.md: cv.yaml generate.py publications.bib \
-	tmpl/cv-section.tmpl.tex tmpl/cv.tmpl.tex \
-	tmpl/cv-section.tmpl.md tmpl/cv.tmpl.md
-	./generate.py
+BUILD_DIR=build
+TEX=$(BUILD_DIR)/cv.tex
+PDF=$(BUILD_DIR)/cv.pdf
+MD=$(BUILD_DIR)/cv.md
 
-gen/cv.pdf: gen/cv.tex publications.bib
-	cd gen && \
-	latexmk --pdf  && \
-	latexmk -c
+ifneq ("$(wildcard cv.hidden.yaml)","")
+	YAML_FILES = cv.yaml cv.hidden.yaml
+else
+	YAML_FILES = cv.yaml
+endif
 
-.PHONY: stage
-stage: gen/cv.pdf gen/cv.md
-	cp gen/cv.pdf $(BLOG_DIR)/data
-	cp gen/cv.md $(BLOG_DIR)
+.PHONY: all public viewpdf stage jekyll push clean
 
-.PHONY: jekyll
+all: $(PDF) $(MD)
+
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
+
+public: $(BUILD_DIR) $(TEMPLATES) $(YAML_FILES) generate.py
+	./generate.py cv.yaml
+
+$(TEX) $(MD): $(BUILD_DIR) $(TEMPLATES) $(YAML_FILES) generate.py
+	./generate.py $(YAML_FILES)
+
+$(PDF): $(TEX)
+	latexmk -pdf -cd- -quiet -jobname=$(BUILD_DIR)/cv $(BUILD_DIR)/cv
+	latexmk -c -cd $(BUILD_DIR)/cv
+
+viewpdf: $(PDF)
+	gnome-open $(PDF)
+
+stage: $(PDF) $(MD)
+	cp $(PDF) $(BLOG_DIR)/data/cv.pdf
+	cp $(MD) $(BLOG_DIR)/cv.md
+
 jekyll: stage
 	cd $(BLOG_DIR) && jekyll server
 
 push: stage
-	git -C $(BLOG_DIR) add $(BLOG_DIR)/data/cv.pdf
+	git -C $(BLOG_DIR) add $(BLOG_DIR)/assets/cv.pdf
 	git -C $(BLOG_DIR) add $(BLOG_DIR)/cv.md
-	git -C $(BLOG_DIR) commit -m "Update vitae."
+	git -C $(BLOG_DIR) commit -m "Update cv."
 	git -C $(BLOG_DIR) push
 
-.PHONY: clean
 clean:
-	rm -rf *.aux *.out *.log gen/* __pycache__
+	rm -rf $(BUILD_DIR)

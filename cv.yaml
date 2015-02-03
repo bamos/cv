@@ -15,6 +15,7 @@ social:
 # Erdős  number is at most 4.
 # (Brandon Amos -> Layne Watson -> Leroy Kelly -> Zoltán Füredi -> Paul Erdős )
 
+# (tag, section type, title)
 order:
   - [interests, Research Interests]
   - [education, Education]
@@ -22,7 +23,7 @@ order:
   - [teaching, Teaching Experience]
   - [publications, Publications]
   - [industry, Industry Experience]
-  - [projects, Projects]
+  # - [projects, Projects]
   - [skills, Skills]
   - [honors, Honors \& Awards]
 #  - [activities, Activities]
@@ -33,12 +34,14 @@ education:
   - school: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     degree: Ph.D. Student, Computer Science
-    dates: August 2014--Present
+    dates: Aug 2014--Present
 
   - school: Virginia Tech
     location: Blacksburg, Virginia
-    degree: B.S., Computer Science, Honors Scholar
-    dates: August 2011--May 2014
+    degree: B.S., Computer Science
+    # degree: B.S., Computer Science, Honors Scholar
+    # dates: Aug 2011--May 2014
+    dates: May 2014
     overallGPA: 3.99/4.00
     majorGPA: 4.00/4.00
 
@@ -47,16 +50,15 @@ research:
     location: Pittsburgh, Pennsylvania
     title: Research Assistant
     advisor: Dr. Mahadev Satyanarayanan
-    dates: August 2014--Present
-    details:
-      - '{\bf Research Area}: Mobile computing and distributed systems.'
+    dates: Aug 2014--Present
+    area: Mobile computing, distributed systems, and computer vision
   - place: Magnum Research Group
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
     advisor: Dr. Jules White
     dates: May 2012--May 2014
+    area: Mobile computing, cyber-physical systems, and security
     details:
-      - '{\bf Research Area}: Mobile computing, cyber-physical systems, and security.'
       - Android malware detection research implemented with
         a distributed {\bf Actor-based Scala} system.
       #- Modified the {\bf Android source} to provide non-standard logging
@@ -71,9 +73,9 @@ research:
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
     advisor: Dr. Layne Watson
-    dates: January 2013--May 2014
+    dates: Jan 2013--May 2014
+    area: Scientific computing
     details:
-      - '{\bf Research Area}: Scientific computing.'
       - Algorithm development for stochastic optimization using quasi-Newton
         methods for {\bf parameter estimation} in
         {\bf Fortran 95} and {\bf OpenMP}.
@@ -84,9 +86,9 @@ research:
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
     advisor: Dr. Binoy Ravindran
-    dates: November 2012--March 2014
+    dates: Nov 2012--Mar 2014
+    area: Compilers
     details:
-      - '{\bf Research Area}: Compilers.'
       - Compiler research on a heterogeneous system
         on automatic {\bf OpenMP} to {\bf CUDA}
         translation using {\bf C++} and the {\bf ROSE} compiler framework.
@@ -98,7 +100,7 @@ industry:
   - place: Adobe Research
     location: San Jose, California
     title: Data Scientist Intern
-    dates: May 2014--August 2014
+    dates: May 2014--Aug 2014
     details:
       - '{\bf Research Area}: Distributed Systems'
       - Built and released {\it Spindle} as an open source web analytics
@@ -109,7 +111,7 @@ industry:
   - place: Snowplow Analytics
     location: London, United Kingdom (Remote)
     title: Software Winter Intern
-    dates: December 2013--January 2014
+    dates: Dec 2013--Jan 2014
     details:
     - Open-source {\bf Scala} development with a startup on the
       Snowplow analytics platform, available at
@@ -121,7 +123,7 @@ industry:
   - place: Qualcomm
     location: San Diego, California
     title: Source Integrity Team Software Intern
-    dates: May 2013--August 2013
+    dates: May 2013--Aug 2013
     details:
     - Developed an XML modification {\bf web application} for
       fuzz vector generation.
@@ -134,7 +136,7 @@ industry:
   - place: Phoenix Integration
     location: Blacksburg, Virginia
     title: Software Engineer Intern
-    dates: May 2012--August 2012
+    dates: May 2012--Aug 2012
     details:
       - Developed industry software in
         {\bf VC++}, {\bf VC\#}, {\bf Java}, and {\bf Tomcat}.
@@ -145,7 +147,7 @@ industry:
   - place: Sunapsys
     location: Vinton, Virginia
     title: Network Administrator Intern
-    dates: January 2011--August 2011
+    dates: Jan 2011--Aug 2011
     details:
       - Internship in high school to replace Windows domain, mail,
         DHCP, and DNS servers with virtual {\bf Linux} servers
@@ -159,32 +161,23 @@ teaching:
     course:
       number: CS 2114
       name: Software Design and Data Structures
-    dates: January 2013--May 2013
+    dates: Jan 2013--May 2013
     details: Undergraduate TA
 
 publications: publications.bib
 
 skills:
-  - title: Preference
-    details: Arch Linux/Mac, vim/emacs, git/Make/sbt
-  - title: Languages
-    details: Akka, Bash, C/C++, C\#, Fortran, HTML/CSS, \LaTeX,
-      Java, JavaScript, {\it Mathematica}, Make,
-      PHP, Python, R, Scala
-    # details: Akka**, Bash**, C/C++**, C\#*, Fortran**, HTML/CSS*, \LaTeX**,
-      # Java**, JavaScript**, {\it Mathematica}**, Make***,
-      # PHP*, Python***, R*, Scala***
-  - title: Systems
-    details: Android, Linux, Mac
-    # details: Android**, Linux***, Mac***
-  # - title: Rankings
-  #   If uncommented, make clearer:
-  #   details: 1/10* -- 3/10** -- 5/10*** -- 7/10****
+  - title: Most Experience
+    details: C/C++, Fortran, Linux, Python, Scala/sbt
+  - title: Some Experience
+    details: Akka, Android, Bash, Java, \LaTeX, Make, {\it Mathematica}, R
+  - title: Least Experience
+    details: C\#, HTML/CSS/js
 
 honors:
-  - title: Phi Beta Kappa Honor Society
-    year: Inducted 2014
-  - title: 1st Place Capstone Award, Virginia Tech Computer Science
+  # - title: Phi Beta Kappa Honor Society
+    # year: Inducted 2014
+  - title: 1st Place Undergraduate Senior Capstone Award, Virginia Tech Computer Science
     year: 2014
   - title: David Heilman Research Award, Virginia Tech Computer Science
     year: 2014
@@ -194,48 +187,50 @@ honors:
     year: 2014
     descr: Given to the senior in Computer Science with the most
            outstanding academic record.
-  #- title: ACC Meeting of the Minds Undergraduate Research Conference, 2014
-  #  url: http://www.vtnews.vt.edu/articles/2014/03/030514-uged-accmom.html
+  # - title: ACC Meeting of the Minds Undergraduate Research Conference, 2014
+   # url: http://www.vtnews.vt.edu/articles/2014/03/030514-uged-accmom.html
   - title: Honorable Mention, CRA Outstanding Undergraduate Researcher Award
     year: 2014
     # descr: 1 of 15 North American males awarded honorable mention for
     #        exemplary computer science research.
-    url: http://cra.org/awards/undergrad-view/2014_outstanding_undergraduate_award_recipients/
+    # url: http://cra.org/awards/undergrad-view/2014_outstanding_undergraduate_award_recipients/
   #- title: Qualstar Award, Qualcomm, 2013
   #- title: Pi Mu Epsilon Honor Society, Inducted 2013
-  - title: Benjamin F. Bock Merit Scholarship, Virginia Tech Engineering
-    year: 2013--2014
+  - title: Awarded eight undergraduate merit scholarships, Virginia Tech
+    year: 2011--2014
+  # - title: Benjamin F. Bock Merit Scholarship, Virginia Tech Engineering
+    # year: 2013--2014
   # - title: Sophomore Scholar Award, Virginia Tech Computer Science, 2013
   #descr: Given to the sophomore in Computer Science with the most
   #         outstanding academic record.
   #- title: University Honors, Virginia Tech, 2012--2014
-  - title: Intelligence Community Center of Academic Excellence Scholarship,
-      Virginia Tech
-    year: 2012--2014
+  # - title: Intelligence Community Center of Academic Excellence Scholarship,
+      # Virginia Tech
+    # year: 2012--2014
     # descr: Merit-based scholarship providing a cyber-security
     #        research fellowship.
   #- title: Dean's List with Distinction, Virginia Tech, 2011--2014
-  - title: Engineering Merit Scholarship,
-           Roanoke County Public Schools Education Foundation
-    year: 2011
+  # - title: Engineering Merit Scholarship,
+           # Roanoke County Public Schools Education Foundation
+    # year: 2011
     # descr: Merit-based scholarship presented annually to one student
     #        in the graduating Engineering class.
-  - title: "Papa John's Merit Scholarship"
-    year: 2011
-  - title: Gay B. Shober Memorial Merit Scholarship,
-        Roanoke County Federal Credit Union
-    year: 2011
-  - title: Pamplin Leader Merit Scholarship, Virginia Tech
-    year: 2011
+  # - title: "Papa John's Merit Scholarship"
+    # year: 2011
+  # - title: Gay B. Shober Memorial Merit Scholarship,
+        # Roanoke County Federal Credit Union
+    # year: 2011
+  # - title: Pamplin Leader Merit Scholarship, Virginia Tech
+    # year: 2011
     # descr: Merit-based scholarship presented to one student from
     #        each public high school in Virginia.
-    url: http://ww2.roanoke.com/community/virginia/education/wb/292050
-  - title: I. Luck Gravett Memorial Merit Scholarship,
-        Scottish Rite of Freemasonry
-    year: 2011
-  - title: Salem--Roanoke County Chamber of Commerce Merit Scholarship
-    year: 2011
-    url: http://s-rcchamber.org/wp-content/uploads/2011/03/August-2011-NL.pdf
+    # url: http://ww2.roanoke.com/community/virginia/education/wb/292050
+  # - title: I. Luck Gravett Memorial Merit Scholarship,
+        # Scottish Rite of Freemasonry
+    # year: 2011
+  # - title: Salem--Roanoke County Chamber of Commerce Merit Scholarship
+    # year: 2011
+    # url: http://s-rcchamber.org/wp-content/uploads/2011/03/August-2011-NL.pdf
   #- title: 1st Place Regional CAD/Engineering Drawing,
   #         Virginia TSA, Blue Ridge Region, 2011
   #- title: District Band Trumpeter, VBODA District VI, 2009--2011
@@ -273,14 +268,14 @@ activities:
   - Symphony Band, Virginia Tech, 2011--2012
   - Linux and Unix Users Group, Virginia Tech, 2011--2012
   - Galileo Living--Learning Community, Virginia Tech, 2011--2012
-# - Trumpet Section Leader, Marching Band, Northside High School, 2010--2011
+# - Trumpet Section Leader, Maring Band, Northside High School, 2010--2011
 # - Math Club, Northside High School, 2010--2011
 # - National Honor Society, Northside High School, 2009--2011
 # - Academic Team, Northside High School, 2009--2011
 # - Chess Team, Northside High School, 2009--2011
 # - Tennis Team, Northside High School, 2008--2011
 # - Technology Student Association, Northside High School, 2008--2011
-# - Marching Band, Northside High School, 2007--2011
+# - Maring Band, Northside High School, 2007--2011
 # - Robotics Team, Virginia Western Community College, 2009--2010
 # - Guitar Club, Northside High School, 2009--2010
 # - Forensics Team, Northside High School, 2008--2010

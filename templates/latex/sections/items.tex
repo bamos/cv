@@ -1,0 +1,33 @@
+~< extends "section.tex" >~
+
+~< macro listitem(item) >~
+  ~< if item.description >~
+    \cvitem{<< item.name >>}{<< item.description >>}
+  ~< elif item.notes >~
+    \begin{itemize}
+      \item{<< item.name >>}
+      \begin{itemize}
+      ~< for note in item.notes >~
+        \item{<< note >>}
+      ~< endfor >~
+      \end{itemize}
+    \end{itemize}
+  ~< else >~
+    \cvlistitem{<< item >>}
+  ~< endif >~
+~< endmacro >~
+
+~< block body >~
+  ~< if subsections >~
+    ~< for subs in subsections >~
+      \subsection{<< subs.name >>}
+        ~< for item in subs.subitems >~
+          << listitem(item) >>
+        ~< endfor >~
+    ~< endfor >~
+  ~< else >~
+    ~< for item in items >~
+      << listitem(item) >>
+    ~< endfor >~
+  ~< endif >~
+~< endblock body >~

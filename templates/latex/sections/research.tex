@@ -1,0 +1,15 @@
+~< extends "section.tex" >~
+
+~< block body >~
+    ~< for item in items >~
+        \cvlistitem{
+          << item.title >>,
+          << item.place >>\hfill
+          << item.dates >>
+          \begin{itemize}
+          \item Advisor: << item.advisor >>
+          \item Area: << item.area >>
+          \end{itemize}
+        }
+    ~< endfor >~
+~< endblock body >~

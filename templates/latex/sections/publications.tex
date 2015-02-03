@@ -1,0 +1,17 @@
+~< extends "section.tex" >~
+
+~< block body >~
+\nocite{*}
+
+\renewcommand*{\bibfont}{\small}
+\subsection{Conference Proceedings}
+\printbibliography[heading=none,type=inproceedings,prefixnumbers=C]
+
+\subsection{Journal Articles}
+\printbibliography[heading=none,type=article,keyword=journal,
+  resetnumbers=true,prefixnumbers=J]
+
+\subsection{Magazine Articles}
+\printbibliography[heading=none,type=article,keyword=magazine,
+  resetnumbers=true,prefixnumbers=M]
+~< endblock body >~

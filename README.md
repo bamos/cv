@@ -55,6 +55,15 @@ bibliography into a map.
 The data is manually formatted to mimic the LaTeX
 IEEE bibliography style.
 
+# Licensing
+This work is distributed under the MIT license (`LICENSE-bamos.mit`)
+with portions copyright Ellis Michael from
+[emichael/resume](https://github.com/emichael/resume).
+Ellis' portions are also distributed under the MIT license
+(`LICENSE-emichael.mit`) and include:
++ Re-write of `generate.py`
++ Template directory restructuring
+
 # Similar Projects
 There are many approaches to managing a resume or CV in git,
 and this project uses unique Markdown and LaTeX templates.
