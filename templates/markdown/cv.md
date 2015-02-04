@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: layout
 title: CV
 ---
+
+<section class="content">
 
 ## {{ name.first }} {{ name.last }} ##
 
@@ -11,3 +13,5 @@ Generated {{ today }}.
 
 
 {{ body }}
+
+</section>
