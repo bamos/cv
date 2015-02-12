@@ -65,14 +65,24 @@ def _get_bibtex_md(p, pub_types):
             else: punc = ""
             titlePunctuation = ","
             if t[0] == "inproceedings":
-                details += "[" + t[2] + str(gidx) + "] " + \
-                    author_str + ", \"" + item['title'] + punc + "\""
+                if 'link' in item:
+                    details += "[" + t[2] + str(gidx) + "] " + author_str + \
+                               ", \"<a href='" + item['link'] + "'>" + \
+                               item['title'] + "</a>" + punc + "\""
+                else:
+                    details += "[" + t[2] + str(gidx) + "] " + \
+                        author_str + ", \"" + item['title'] + punc + "\""
                 if item['booktitle']:
                     details += " in <em>" + item['booktitle'] + "</em>,"
                 details += " " + item['year'] + "<br><br>\n"
             elif t[0] == "article":
-                details += "[" + t[2] + str(gidx) + "] " + \
-                    author_str + ", \"" + item['title'] + punc + "\""
+                if 'link' in item:
+                    details += "[" + t[2] + str(gidx) + "] " + \
+                        author_str + ", \"<a href='" + item['link'] + "'>" + \
+                        item['title'] + "</a>" + punc + "\""
+                else:
+                    details += "[" + t[2] + str(gidx) + "] " + \
+                        author_str + ", \"" + item['title'] + punc + "\""
                 if item['journal']:
                     details += " <em>" + item['journal'] + "</em>,"
                 details += " " + item['year'] + "<br><br>\n"
