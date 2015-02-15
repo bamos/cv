@@ -95,27 +95,6 @@ def _get_bibtex_md(p, pub_types):
 
     return contents
 
-# def generate(ext):
-    # print("Generating for extension: {}".format(ext))
-    # body = ""
-    # for section_tag,section_title in yaml_contents['order']:
-    #     print("  + Section: {}".format(section_tag))
-    #     section_contents = yaml_contents[section_tag]
-    #     section_title = section_title.title()
-    #     if ext == "md":
-    #         section_contents = latexToMd(section_contents)
-    #         section_title = latexToMd(section_title)
-
-    #     if section_tag == 'publications' and ext == "md":
-    #         with open(contents, 'r') as f:
-    #             p = BibTexParser(f.read(), author).get_entry_list()
-    #             pub_types = [
-    #                 ('inproceedings', '', 'C', 'Conference Proceedings'),
-    #                 ('article', 'journal', 'J', 'Journal Articles'),
-    #                 ('article', 'magazine', 'M', 'Magazine Articles'),
-    #             ]
-    #             contents = get_bibtex_md(p, pub_types)
-
 class RenderContext(object):
     BUILD_DIR = 'build'
     TEMPLATES_DIR = 'templates'
