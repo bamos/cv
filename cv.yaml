@@ -171,8 +171,8 @@ skills:
     details: C/C++, Fortran, Linux, Python, Scala/sbt
   - title: Some Experience
     details: Akka, Android, Bash, Java, \LaTeX, Make, {\it Mathematica}, R
-  - title: Least Experience
-    details: C\#, HTML/CSS/js
+  # - title: Least Experience
+    # details: C\#, HTML/CSS/js
 
 honors:
   # - title: Phi Beta Kappa Honor Society
