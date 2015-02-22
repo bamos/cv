@@ -15,6 +15,21 @@ social:
 # Erdős  number is at most 4.
 # (Brandon Amos -> Layne Watson -> Leroy Kelly -> Zoltán Füredi -> Paul Erdős )
 
+publication_config:
+  name: "B. Amos"
+  categories:
+    - heading: Conference Proceedings
+      prefix: C
+      type: inproceedings
+    - heading: Journal Articles
+      prefix: J
+      type: article
+      keyword: journal
+    - heading: Magazine Articles
+      prefix: M
+      type: article
+      keyword: magazine
+
 # (tag, section type, title)
 order:
   - [interests, Research Interests]

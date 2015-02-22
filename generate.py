@@ -19,81 +19,90 @@ from bibtexparser.bparser import BibTexParser
 from datetime import date
 from jinja2 import Environment, FileSystemLoader
 
-def _get_bibtex_md(p, pub_types):
-    def get_author_str(authors):
-        a_len = len(authors)
-        if a_len == 1:
-            author_str = authors[0]
-        elif a_len == 2:
-            author_str = authors[0] + " and " + authors[1]
-        else:
-            author_str = ""
-            for i in range(a_len):
-                author_str += authors[i]
-                if i < a_len-1: author_str += ", "
-                if i == a_len-2: author_str += "and "
-        return author_str
+class BibtexMd:
+    def __init__(self,immut_publications,config):
+        self.immut_publications = immut_publications
+        self.config = config
 
-    for item in p:
-        new_auth_list = []
-        for auth in item['author']:
-            new_auth = auth.split(", ")
+    def _get_author_str(self,immut_author_list):
+        authors = copy.copy(immut_author_list)
+        if len(authors) > 1:
+            authors[-1] = "and " + authors[-1]
+        return ", ".join(authors)
+
+    # [First Initial]. [Last Name]
+    def _format_author_list(self,immut_author_list):
+        formatted_authors = []
+        for author in immut_author_list:
+            new_auth = author.split(", ")
             new_auth = new_auth[1][0] + ". " + new_auth[0]
-            if new_auth == "B. Amos":
+            if new_auth == self.config['name']:
                 new_auth = "**" + new_auth + "**"
-            new_auth_list.append(new_auth)
-        item['author'] = new_auth_list
+            formatted_authors.append(new_auth)
+        return formatted_authors
 
-    contents = []
-    for t in pub_types:
-        gidx = 1
-        type_content = {}
-        type_content['title'] = t[3]
-        filtered = list(filter(lambda x: x['type'] == t[0], p))
-        if t[1]:
+    def _get_filtered_publications(self,category,publications):
+        filtered = list(filter(lambda x: x['type'] == category['type'],
+                               publications))
+        if 'keyword' in category:
             for x in filtered:
                 if 'keyword' not in x or \
-                        (x['keyword'] != 'journal' and x['keyword'] != 'magazine'):
+                   (x['keyword'] != 'journal' and x['keyword'] != 'magazine'):
                     print("Error: Bibliography 'article' items must define a "+
-                      "keyword 'journal' or 'magazine'.")
+                          "keyword 'journal' or 'magazine'.")
                     sys.exit(-1)
-            filtered = list(filter(lambda x: x['keyword'] == t[1], filtered))
-        details = ""
-        for item in filtered:
-            author_str = get_author_str(item['author'])
-            if item['title'][-1] not in ("?", ".", "!"): punc = ","
-            else: punc = ""
-            titlePunctuation = ","
-            if t[0] == "inproceedings":
-                if 'link' in item:
-                    details += "[" + t[2] + str(gidx) + "] " + author_str + \
-                               ", \"<a href='" + item['link'] + "'>" + \
-                               item['title'] + "</a>" + punc + "\""
-                else:
-                    details += "[" + t[2] + str(gidx) + "] " + \
-                        author_str + ", \"" + item['title'] + punc + "\""
-                if item['booktitle']:
-                    details += " in <em>" + item['booktitle'] + "</em>,"
-                details += " " + item['year'] + "<br><br>\n"
-            elif t[0] == "article":
-                if 'link' in item:
-                    details += "[" + t[2] + str(gidx) + "] " + \
-                        author_str + ", \"<a href='" + item['link'] + "'>" + \
-                        item['title'] + "</a>" + punc + "\""
-                else:
-                    details += "[" + t[2] + str(gidx) + "] " + \
-                        author_str + ", \"" + item['title'] + punc + "\""
-                if item['journal']:
-                    details += " <em>" + item['journal'] + "</em>,"
-                details += " " + item['year'] + "<br><br>\n"
-            else:
-                print(t)
-                raise Exception()
-            gidx += 1
-        type_content['details'] = details
-        contents.append(type_content)
+            filtered = list(filter(lambda x: x['keyword'] == category['keyword'],
+                                   filtered))
+        return filtered
 
-    return contents
+    def get_md_str(self):
+        p = copy.copy(self.immut_publications)
+        for item in p:
+            item['author'] = self._format_author_list(item['author'])
+
+        contents = []
+        for category in self.config['categories']:
+            gidx = 1
+            type_content = {}
+            type_content['title'] = category['heading']
+            filtered_pubs = self._get_filtered_publications(category,p)
+
+            details = ""
+            for item in filtered_pubs:
+                author_str = self._get_author_str(item['author'])
+                if item['title'][-1] not in ("?", ".", "!"): punc = ","
+                else: punc = ""
+                titlePunctuation = ","
+                if category['type'] == "inproceedings":
+                    if 'link' in item:
+                        details += "[" + category['prefix'] + str(gidx) + "] " + author_str + \
+                                   ", \"<a href='" + item['link'] + "'>" + \
+                                   item['title'] + "</a>" + punc + "\""
+                    else:
+                        details += "[" + category['prefix'] + str(gidx) + "] " + \
+                            author_str + ", \"" + item['title'] + punc + "\""
+                    if item['booktitle']:
+                        details += " in <em>" + item['booktitle'] + "</em>,"
+                    details += " " + item['year'] + "<br><br>\n"
+                elif category['type'] == "article":
+                    if 'link' in item:
+                        details += "[" + category['prefix'] + str(gidx) + "] " + \
+                            author_str + ", \"<a href='" + item['link'] + "'>" + \
+                            item['title'] + "</a>" + punc + "\""
+                    else:
+                        details += "[" + category['prefix'] + str(gidx) + "] " + \
+                            author_str + ", \"" + item['title'] + punc + "\""
+                    if item['journal']:
+                        details += " <em>" + item['journal'] + "</em>,"
+                    details += " " + item['year'] + "<br><br>\n"
+                else:
+                    print(t)
+                    raise Exception()
+                gidx += 1
+            type_content['details'] = details
+            contents.append(type_content)
+
+        return contents
 
 class RenderContext(object):
     BUILD_DIR = 'build'
@@ -177,12 +186,8 @@ class RenderContext(object):
                 elif self._file_ending == ".md":
                     with open(section_content, 'r') as f:
                         p = BibTexParser(f.read(), author).get_entry_list()
-                        pub_types = [
-                            ('inproceedings', '', 'C', 'Conference Proceedings'),
-                            ('article', 'journal', 'J', 'Journal Articles'),
-                            ('article', 'magazine', 'M', 'Magazine Articles'),
-                        ]
-                        section_data['items'] = _get_bibtex_md(p,pub_types)
+                        bibtexMd = BibtexMd(p,yaml_data['publication_config'])
+                        section_data['items'] = bibtexMd.get_md_str()
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             else:
