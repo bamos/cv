@@ -51,4 +51,4 @@ push: stage
 	git -C $(BLOG_DIR) push
 
 clean:
-	rm -rf $(BUILD_DIR)
+	rm -rf $(BUILD_DIR)/cv*
