@@ -205,7 +205,7 @@ class RenderContext(object):
             self._base_template, yaml_data).rstrip() + '\n'
 
     def write_to_outfile(self, output_data):
-        with open(self._output_file, 'w') as out:
+        with open(self._output_file, 'wb') as out:
             output_data=output_data.encode('utf-8')
             out.write(output_data)
 
