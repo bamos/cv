@@ -206,6 +206,7 @@ class RenderContext(object):
 
     def write_to_outfile(self, output_data):
         with open(self._output_file, 'w') as out:
+            output_data=output_data.encode('utf-8')
             out.write(output_data)
 
 
