@@ -147,6 +147,7 @@ class RenderContext(object):
         return yaml_data
 
     def _render_template(self, template_name, yaml_data):
+        template_name = template_name.replace(os.path.sep,'/') # Fixes #11.
         return self._jinja_env.get_template(template_name).render(yaml_data)
 
     @staticmethod
