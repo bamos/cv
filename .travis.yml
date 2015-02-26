@@ -1,6 +1,8 @@
 language: python
 python:
   - "3.4"
+pre-install:
+  - sudo apt-get update
 install:
   - pip install -r requirements.txt
   - sudo apt-get install latexmk texlive-fonts-recommended texlive-latex-extra texlive-latex-recommended
