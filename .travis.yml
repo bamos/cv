@@ -9,8 +9,5 @@ install:
   - sudo apt-get install latexmk
   - sudo apt-get install texlive-fonts-recommended texlive-latex-extra texlive-latex-recommended
   - sudo apt-get install biblatex
-  - wget http://mirrors.ctan.org/macros/latex/contrib/moderncv.zip
-  - unzip moderncv.zip
-  - mv moderncv/{*.cls,*.sty} .
 script:
-  - make
+  - python generate.py -p cv.yaml
