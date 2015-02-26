@@ -1,3 +1,4 @@
+# Source: https://github.com/ogrisel/python-appveyor-demo/blob/master/appveyor.yml
 environment:
   global:
     # SDK v7.0 MSVC Express 2008's SetEnv.cmd script will fail if the
