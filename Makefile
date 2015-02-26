@@ -31,7 +31,7 @@ $(TEX) $(MD): $(BUILD_DIR) $(TEMPLATES) $(YAML_FILES) generate.py
 	./generate.py $(YAML_FILES)
 
 $(PDF): $(TEX)
-	latexmk -pdf -cd- -quiet -jobname=$(BUILD_DIR)/cv $(BUILD_DIR)/cv
+	latexmk -pdf -cd- -jobname=$(BUILD_DIR)/cv $(BUILD_DIR)/cv
 	latexmk -c -cd $(BUILD_DIR)/cv
 
 viewpdf: $(PDF)
