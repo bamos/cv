@@ -5,8 +5,12 @@ before_install:
   - sudo apt-get update
 install:
   - pip install -r requirements.txt
+  - sudo apt-get install wget
   - sudo apt-get install latexmk
   - sudo apt-get install texlive-fonts-recommended texlive-latex-extra texlive-latex-recommended
   - sudo apt-get install biblatex
+  - wget http://mirrors.ctan.org/macros/latex/contrib/moderncv.zip
+  - unzip moderncv.zip
+  - mv moderncv/{*.cls,*.sty} .
 script:
   - make
