@@ -7,6 +7,6 @@ install:
   - pip install -r requirements.txt
   - sudo apt-get install latexmk
   - sudo apt-get install texlive-fonts-recommended texlive-latex-extra texlive-latex-recommended
-  - sudo apt-get install biber biblatex
+  - sudo apt-get install biblatex
 script:
   - make
