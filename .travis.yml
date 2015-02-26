@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.4"
+install:
+  - pip install -r requirements.txt
+  - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+  - sudo apt-get install chktex
+script:
+  - make
+  - chktex -w # Version information
+  - chktex -q -n 6 build/*.tex .@/dev/null | tee lint.out
+  - test ! -s lint.out
