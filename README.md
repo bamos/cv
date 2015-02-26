@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/bamos/cv.svg?branch=master)](https://travis-ci.org/bamos/cv)
+[![Build status](https://ci.appveyor.com/api/projects/status/l06od9i143im059m?svg=true)](https://ci.appveyor.com/project/bamos/cv)
+
 # About
 This repo contains the source I use to automatically generate
 [my curriculum vitae](http://bamos.io/cv) as a webpage and PDF
