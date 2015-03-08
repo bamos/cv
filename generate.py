@@ -42,18 +42,34 @@ class BibtexMd:
         return formatted_authors
 
     def _get_filtered_publications(self,category,publications):
-        filtered = list(filter(lambda x: x['type'] == category['type'],
-                               publications))
-        if 'keyword' in category:
-            for x in filtered:
-                if 'keyword' not in x or \
-                   (x['keyword'] != 'journal' and x['keyword'] != 'magazine'):
-                    print("Error: Bibliography 'article' items must define a "+
-                          "keyword 'journal' or 'magazine'.")
-                    sys.exit(-1)
-            filtered = list(filter(lambda x: x['keyword'] == category['keyword'],
-                                   filtered))
-        return filtered
+        def is_in_category(publication):
+            if publication['type'] != category['type']:
+                return False
+            if 'keyword' in category and 'keyword' in publication:
+                return publication['keyword'] == category['keyword']
+            else:
+                return True
+        return filter(is_in_category,publications)
+
+    def _get_pub_str(self,pub,category,gidx):
+        author_str = self._get_author_str(pub['author'])
+        prefix = category['prefix']
+        title = pub['title']
+        if title[-1] not in ("?", ".", "!"):
+            title += ","
+        title = '"{}"'.format(title)
+        if 'link' in pub:
+            title = "<a href=\'{}\'>{}</a>".format(
+                pub['link'], title)
+
+        if category['type'] == "inproceedings":
+            if pub['booktitle']:
+                title += ' in <em>{}</em>,'.format(pub['booktitle'])
+        elif category['type'] == "article":
+            if pub['journal']:
+                title += ' <em>{}</em>,'.format(pub['journal'])
+        return '[{}{}] {}, {} {}.'.format(
+            prefix, gidx, author_str, title, pub['year'])
 
     def get_md_str(self):
         p = copy.copy(self.immut_publications)
@@ -68,36 +84,9 @@ class BibtexMd:
             filtered_pubs = self._get_filtered_publications(category,p)
 
             details = ""
-            for item in filtered_pubs:
-                author_str = self._get_author_str(item['author'])
-                if item['title'][-1] not in ("?", ".", "!"): punc = ","
-                else: punc = ""
-                titlePunctuation = ","
-                if category['type'] == "inproceedings":
-                    if 'link' in item:
-                        details += "[" + category['prefix'] + str(gidx) + "] " + author_str + \
-                                   ", \"<a href='" + item['link'] + "'>" + \
-                                   item['title'] + "</a>" + punc + "\""
-                    else:
-                        details += "[" + category['prefix'] + str(gidx) + "] " + \
-                            author_str + ", \"" + item['title'] + punc + "\""
-                    if item['booktitle']:
-                        details += " in <em>" + item['booktitle'] + "</em>,"
-                    details += " " + item['year'] + "<br><br>\n"
-                elif category['type'] == "article":
-                    if 'link' in item:
-                        details += "[" + category['prefix'] + str(gidx) + "] " + \
-                            author_str + ", \"<a href='" + item['link'] + "'>" + \
-                            item['title'] + "</a>" + punc + "\""
-                    else:
-                        details += "[" + category['prefix'] + str(gidx) + "] " + \
-                            author_str + ", \"" + item['title'] + punc + "\""
-                    if item['journal']:
-                        details += " <em>" + item['journal'] + "</em>,"
-                    details += " " + item['year'] + "<br><br>\n"
-                else:
-                    print(t)
-                    raise Exception()
+            sep = "<br><br>\n"
+            for pub in filtered_pubs:
+                details += self._get_pub_str(pub,category,gidx)+sep
                 gidx += 1
             type_content['details'] = details
             contents.append(type_content)
