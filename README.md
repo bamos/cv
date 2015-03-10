@@ -14,8 +14,10 @@ Statistics about my blog and github account are obtained
 using [blog-info.py][blog-info.py] and [github-info.py][github-info.py].
 
 # Building and running
-The dependencies are included in `requirements.txt` and can be
-installed
+This requires a Python 3 installation,
+and the hashbang of `generate.py` assumes an executable named
+`python3` is available on the path.
+Dependencies are included in `requirements.txt` and can be installed
 using `pip` with `pip3 install -r requirements.txt`.
 On Mac or Linux, `make` will call [generate.py][generate.py] and
 build the LaTeX documents with `latexmk` and `biber`.
