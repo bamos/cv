@@ -33,8 +33,10 @@ The Makefile will also:
 Change the content in `cv.yaml`.
 You should also look through the template files to make sure there isn't any
 special-case code that needs to be modified.
-If you want to use the `Makefile` with your jekyll website,
-you'll need to modify the `Makefile` slightly.
+The `Makefile` can also start a Jekyll server and push the
+new documents to another repository.
+To use the Jekyll integration,
+review the `BLOG_DIR` variable and the `jekyll` and `push` targets.
 
 ## Warnings
 1. Strings in `cv.yaml` should be LaTeX (though, the actual LaTeX formatting
