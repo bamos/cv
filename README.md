@@ -10,8 +10,6 @@ from YAML and BibTeX input.
 [generate.py][generate.py] reads from [cv.yaml][cv.yaml] and
 [publications.bib][publications.bib] and outputs LaTeX and Markdown
 by using Jinja templates.
-Statistics about my blog and github account are obtained
-using [blog-info.py][blog-info.py] and [github-info.py][github-info.py].
 
 # Building and running
 This requires a Python 3 installation,
@@ -122,8 +120,6 @@ Name | Stargazers | Description
 [generate.py]: https://github.com/bamos/cv/blob/master/generate.py
 [publications.bib]: https://github.com/bamos/cv/blob/master/publications.bib
 [cv.yaml]: https://github.com/bamos/cv/blob/master/cv.yaml
-[blog-info.py]: https://github.com/bamos/cv/blob/master/blog-info.py
-[github-info.py]: https://github.com/bamos/cv/blob/master/github-info.py
 [Requirements.txt]: https://github.com/bamos/cv/blob/master/Requirements.txt
 [cv-section.tmpl.tex]: https://github.com/bamos/cv/blob/master/tmpl/cv-section.tmpl.tex
 [cv-section.tmpl.md]: https://github.com/bamos/cv/blob/master/tmpl/cv-section.tmpl.md
