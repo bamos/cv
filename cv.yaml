@@ -43,7 +43,7 @@ order:
   - [honors, Honors \& Awards]
 #  - [activities, Activities]
 
-interests: Mobile computing, distributed systems, and computer vision.
+interests: Machine learning, mobile computing, and distributed systems.
 
 education:
   - school: Carnegie Mellon University
@@ -66,13 +66,13 @@ research:
     title: Research Assistant
     advisor: Dr. Mahadev Satyanarayanan
     dates: Aug 2014--Present
-    area: Mobile computing, distributed systems, and computer vision
+    area: Machine learning, mobile computing, and distributed systems.
   - place: Magnum Research Group
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
     advisor: Dr. Jules White
     dates: May 2012--May 2014
-    area: Mobile computing, cyber-physical systems, and security
+    area: Mobile computing, cyber-physical systems, and security.
     details:
       - Android malware detection research implemented with
         a distributed {\bf Actor-based Scala} system.
@@ -89,9 +89,9 @@ research:
     title: Undergraduate Research Assistant
     advisor: Dr. Layne Watson
     dates: Jan 2013--May 2014
-    area: Scientific computing
+    area: Scientific computing, global/stochastic optimization, and bioinformatics.
     details:
-      - Algorithm development for stochastic optimization using quasi-Newton
+      - Algorithm development for global and stochastic optimization using quasi-Newton
         methods for {\bf parameter estimation} in
         {\bf Fortran 95} and {\bf OpenMP}.
       - Bioinformatics research on yeast cell modeling using
@@ -102,7 +102,7 @@ research:
     title: Undergraduate Research Assistant
     advisor: Dr. Binoy Ravindran
     dates: Nov 2012--Mar 2014
-    area: Compilers
+    area: Heterogeneous compilers.
     details:
       - Compiler research on a heterogeneous system
         on automatic {\bf OpenMP} to {\bf CUDA}
