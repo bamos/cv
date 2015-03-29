@@ -5,5 +5,7 @@ python:
 #  - sudo apt-get update
 install:
   - pip install -r requirements.txt
+  - pip install pep8
 script:
+  - pep8 --ignore=E402,E501 generate.py
   - python generate.py -p cv.yaml
