@@ -19,7 +19,8 @@ from bibtexparser.bparser import BibTexParser
 from datetime import date
 from jinja2 import Environment, FileSystemLoader
 
-def get_md_str(immut_publications,config):
+
+def get_md_str(immut_publications, config):
     """Given the bibtexparser's representation and configuration,
     return a markdown string similar to BibTeX's output
     of a markdown file.
@@ -50,7 +51,7 @@ def get_md_str(immut_publications,config):
             formatted_authors.append(new_auth)
         return formatted_authors
 
-    def _get_filtered_publications(category,publications):
+    def _get_filtered_publications(category, publications):
         def is_in_category(publication):
             if publication['type'] != category['type']:
                 return False
@@ -58,9 +59,9 @@ def get_md_str(immut_publications,config):
                 return publication['keyword'] == category['keyword']
             else:
                 return True
-        return filter(is_in_category,publications)
+        return filter(is_in_category, publications)
 
-    def _get_pub_str(pub,category,gidx):
+    def _get_pub_str(pub, category, gidx):
         author_str = _get_author_str(pub['author'])
         prefix = category['prefix']
         title = pub['title']
@@ -89,17 +90,18 @@ def get_md_str(immut_publications,config):
         gidx = 1
         type_content = {}
         type_content['title'] = category['heading']
-        filtered_pubs = _get_filtered_publications(category,p)
+        filtered_pubs = _get_filtered_publications(category, p)
 
         details = ""
         sep = "<br><br>\n"
         for pub in filtered_pubs:
-            details += _get_pub_str(pub,category,gidx)+sep
+            details += _get_pub_str(pub, category, gidx) + sep
             gidx += 1
         type_content['details'] = details
         contents.append(type_content)
 
     return contents
+
 
 class RenderContext(object):
     BUILD_DIR = 'build'
@@ -144,7 +146,7 @@ class RenderContext(object):
         return yaml_data
 
     def _render_template(self, template_name, yaml_data):
-        template_name = template_name.replace(os.path.sep,'/') # Fixes #11.
+        template_name = template_name.replace(os.path.sep, '/')  # Fixes #11.
         return self._jinja_env.get_template(template_name).render(yaml_data)
 
     @staticmethod
@@ -164,17 +166,17 @@ class RenderContext(object):
         yaml_data = self.make_replacements(yaml_data)
 
         body = ''
-        for section_tag,section_title in yaml_data['order']:
+        for section_tag, section_title in yaml_data['order']:
             print("  + Processing section: {}".format(section_tag))
 
             section_data = {'name': section_title}
             section_content = yaml_data[section_tag]
             if section_tag == 'interests':
-                section_template_name = "section"+self._file_ending
+                section_template_name = "section" + self._file_ending
                 section_data['data'] = section_content
-            elif section_tag in ['education','honors',
-                                 'industry','research',
-                                 'skills','teaching']:
+            elif section_tag in ['education', 'honors',
+                                 'industry', 'research',
+                                 'skills', 'teaching']:
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
@@ -185,7 +187,7 @@ class RenderContext(object):
                     with open(section_content, 'r') as f:
                         pubs = BibTexParser(f.read(), author).get_entry_list()
                         config = yaml_data['publication_config']
-                        section_data['items'] = get_md_str(pubs,config)
+                        section_data['items'] = get_md_str(pubs, config)
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             else:
@@ -204,9 +206,8 @@ class RenderContext(object):
 
     def write_to_outfile(self, output_data):
         with open(self._output_file, 'wb') as out:
-            output_data=output_data.encode('utf-8')
+            output_data = output_data.encode('utf-8')
             out.write(output_data)
-
 
 
 LATEX_CONTEXT = RenderContext(
@@ -233,18 +234,19 @@ MARKDOWN_CONTEXT = RenderContext(
         lstrip_blocks=True
     ),
     [
-        (r'\\ ', ' '), # spaces
-        (r'\\&', '&'), # unescape &
-        (r'\\textbf{([^}]*)}', r'**\1**'), # bold text
-        (r'\\textit{([^}]*)}', r'*\1*'), # italic text
+        (r'\\ ', ' '),  # spaces
+        (r'\\&', '&'),  # unescape &
+        (r'\\textbf{([^}]*)}', r'**\1**'),  # bold text
+        (r'\\textit{([^}]*)}', r'*\1*'),  # italic text
         (r'\{ *\\it *([^}]*)\}', r'*\1*'),
-        (r'\\LaTeX', 'LaTeX'), # \LaTeX to boring old LaTeX
-        (r'\\TeX', 'TeX'), # \TeX to boring old TeX
-        ('---', '-'), # em dash
-        ('--', '-'), # en dash
-        (r'``([^\']*)\'\'', r'"\1"'), # quotes
+        (r'\\LaTeX', 'LaTeX'),  # \LaTeX to boring old LaTeX
+        (r'\\TeX', 'TeX'),  # \TeX to boring old TeX
+        ('---', '-'),  # em dash
+        ('--', '-'),  # en dash
+        (r'``([^\']*)\'\'', r'"\1"'),  # quotes
     ]
 )
+
 
 def process_resume(context, yaml_data, preview):
     rendered_resume = context.render_resume(yaml_data)
@@ -253,20 +255,20 @@ def process_resume(context, yaml_data, preview):
     else:
         context.write_to_outfile(rendered_resume)
 
+
 def main():
     # Parse the command line arguments
-    parser = argparse.ArgumentParser(description=
-        'Generates HTML, LaTeX, and Markdown resumes from data in YAML files.')
+    parser = argparse.ArgumentParser(description='Generates HTML, LaTeX, and Markdown resumes from data in YAML files.')
     parser.add_argument('yamls', metavar='YAML_FILE', nargs='+',
-        help='the YAML files that contain the resume/cv details, in order of '
-             'increasing precedence')
+                        help='The YAML files that contain the resume/cv'
+                        'details, in order of increasing precedence')
     parser.add_argument('-p', '--preview', action='store_true',
-        help='prints generated content to stdout instead of writing to file')
+                        help='prints generated content to stdout instead of writing to file')
     group = parser.add_mutually_exclusive_group()
     group.add_argument('-l', '--latex', action='store_true',
-        help='only generate LaTeX resume/cv')
+                       help='only generate LaTeX resume/cv')
     group.add_argument('-m', '--markdown', action='store_true',
-        help='only generate Markdown resume/cv')
+                       help='only generate Markdown resume/cv')
     args = parser.parse_args()
 
     yaml_data = {}
