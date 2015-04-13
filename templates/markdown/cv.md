@@ -5,11 +5,13 @@ title: CV
 
 <section class="content">
 
-## {{ name.first }} {{ name.last }} ##
+# {{ name.first }} {{ name.last }}
 
-[PDF]({{ pdf }}) |
-[source]({{ src }}) |
-Generated {{ today }}.
+<section class="byline">
+  [PDF]({{ pdf }}) &bull;
+  [source]({{ src }}) &bull;
+  Generated {{ today }}
+</section>
 
 
 {{ body }}
