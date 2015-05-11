@@ -3,11 +3,10 @@
 ~< block body >~
     ~< for item in items >~
         \cvlistitem{
-          << item.details >>,
-          << item.university >>,
-          << item.course.number >>
+          << item.name >>,
+          << item.position >>
           \hfill
-          << item.dates >>
+          << item.semester>>
         }
     ~< endfor >~
 ~< endblock body >~

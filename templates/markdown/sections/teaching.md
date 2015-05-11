@@ -2,7 +2,7 @@
 
 {% block body %}
 {% for item in items %}
-+ {{ item.details }}, {{ item.university }},
-  {{ item.course.number }}, {{ item.dates }}
++ {{ item.name }}, {{ item.position }},
+  {{ item.semester }}
 {% endfor %}
 {% endblock body %}

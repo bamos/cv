@@ -174,7 +174,7 @@ class RenderContext(object):
             if section_tag == 'interests':
                 section_template_name = "section" + self._file_ending
                 section_data['data'] = section_content
-            elif section_tag in ['education', 'honors',
+            elif section_tag in ['coursework', 'education', 'honors',
                                  'industry', 'research',
                                  'skills', 'teaching']:
                 section_data['items'] = section_content

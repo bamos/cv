@@ -39,6 +39,7 @@ order:
   - [publications, Publications]
   - [industry, Industry Experience]
   # - [projects, Projects]
+  - [coursework, Graduate Coursework]
   - [skills, Skills]
   - [honors, Honors \& Awards]
 #  - [activities, Activities]
@@ -172,20 +173,33 @@ industry:
       #   and hard links.
 
 teaching:
-  - university: Virginia Tech
-    course:
-      number: CS 2114
-      name: Software Design and Data Structures
-    dates: Jan 2013--May 2013
-    details: Undergraduate TA
+  - semester: VT S2013
+    name: Software Design and Data Structures (CS 2114)
+    position: Undergraduate TA
 
 publications: publications.bib
 
+coursework:
+  - semester: CMU S2015
+    name: Semantics of Programming Languages (15-812)
+    instructor: A. Platzer
+  - semester: CMU S2015
+    name: Optimizing Compilers for Modern Architecture (15-745)
+    instructor: T. Mowry
+  - semester: CMU F2014
+    name: Advanced Operating Systems and Distributed Systems (15-712)
+    instructor: D. Andersen
+  - semester: CMU F2014
+    name: Mobile and Pervasive Computing (15-812)
+    instructor: M. Satyanarayanan and D. Siewiorek
+
 skills:
   - title: Most Experience
-    details: C/C++, Fortran, Linux, Python, Scala/sbt
+    details: Fortran, Linux, Python, Scala
   - title: Some Experience
-    details: Akka, Android, Bash, Java, \LaTeX, Make, {\it Mathematica}, R
+    details: Akka, Android, Bash, C/C++, Haskell, \LaTeX,
+      Make, {\it Mathematica}, R
+      # Java
   # - title: Least Experience
     # details: C\#, HTML/CSS/js
 
