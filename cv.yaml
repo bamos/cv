@@ -195,7 +195,7 @@ coursework:
 
 skills:
   - title: Most Experience
-    details: Fortran, Linux, Python, Scala
+    details: Linux, Python, Scala
   - title: Some Experience
     details: Akka, Android, Bash, C/C++, Haskell, \LaTeX,
       Make, {\it Mathematica}, R
