@@ -1,17 +1,15 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-\nocite{*}
-
 \renewcommand*{\bibfont}{\small}
-\subsection{Conference Proceedings}
-\printbibliography[heading=none,type=inproceedings,prefixnumbers=C]
 
-\subsection{Journal Articles}
-\printbibliography[heading=none,type=article,keyword=journal,
-  resetnumbers=true,prefixnumbers=J]
+~< for p in items.categories >~
+\subsection{<<p.heading>>}
+\begin{refsection}[publications/<<p.file>>]
+  \nocite{*}
+  \printbibliography[heading=none,prefixnumbers=<<p.prefix>>]
+\end{refsection}
 
-\subsection{Magazine Articles}
-\printbibliography[heading=none,type=article,keyword=magazine,
-  resetnumbers=true,prefixnumbers=M]
+~< endfor >~
+
 ~< endblock body >~

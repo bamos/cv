@@ -14,13 +14,13 @@ import re
 import sys
 import yaml
 
-from bibtexparser.customization import *
+import bibtexparser.customization as bc
 from bibtexparser.bparser import BibTexParser
 from datetime import date
 from jinja2 import Environment, FileSystemLoader
 
 
-def get_md_str(context, immut_publications, config):
+def get_pub_md(context, config):
     """Given the bibtexparser's representation and configuration,
     return a markdown string similar to BibTeX's output
     of a markdown file.
@@ -51,17 +51,7 @@ def get_md_str(context, immut_publications, config):
             formatted_authors.append(new_auth)
         return formatted_authors
 
-    def _get_filtered_publications(category, publications):
-        def is_in_category(publication):
-            if publication['type'] != category['type']:
-                return False
-            if 'keyword' in category and 'keyword' in publication:
-                return publication['keyword'] == category['keyword']
-            else:
-                return True
-        return filter(is_in_category, publications)
-
-    def _get_pub_str(pub, category, gidx):
+    def _get_pub_str(pub, prefix, gidx):
         author_str = _get_author_str(pub['author'])
         prefix = category['prefix']
         title = pub['title']
@@ -72,33 +62,35 @@ def get_md_str(context, immut_publications, config):
             title = "<a href=\'{}\'>{}</a>".format(
                 pub['link'], title)
 
-        if category['type'] == "inproceedings":
+        if pub['type'] == "inproceedings":
             if pub['booktitle']:
                 title += ' in <em>{}</em>,'.format(pub['booktitle'])
-        elif category['type'] == "article":
+        elif pub['type'] == "article":
             if pub['journal']:
                 title += ' <em>{}</em>,'.format(pub['journal'])
         return '[{}{}] {}, {} {}.'.format(
             prefix, gidx, author_str, title, pub['year'])
 
-    p = copy.copy(immut_publications)
-    for pub in p:
-        for field in pub:
-            pub[field] = context.make_replacements(pub[field])
-        pub['author'] = _format_author_list(pub['author'])
+    def load_and_replace(bibtex_file):
+        with open(os.path.join('publications', bibtex_file), 'r') as f:
+            p = BibTexParser(f.read(), bc.author).get_entry_list()
+        for pub in p:
+            for field in pub:
+                pub[field] = context.make_replacements(pub[field])
+            pub['author'] = _format_author_list(pub['author'])
+        return p
 
     contents = []
     for category in config['categories']:
-        gidx = 1
         type_content = {}
         type_content['title'] = category['heading']
-        filtered_pubs = _get_filtered_publications(category, p)
+
+        pubs = load_and_replace(category['file'])
 
         details = ""
         sep = "<br><br>\n"
-        for pub in filtered_pubs:
-            details += _get_pub_str(pub, category, gidx) + sep
-            gidx += 1
+        for i, pub in enumerate(pubs):
+            details += _get_pub_str(pub, category['prefix'], i) + sep
         type_content['details'] = details
         contents.append(type_content)
 
@@ -186,10 +178,7 @@ class RenderContext(object):
                 if self._file_ending == ".tex":
                     section_data['items'] = section_content
                 elif self._file_ending == ".md":
-                    with open(section_content, 'r') as f:
-                        pubs = BibTexParser(f.read(), author).get_entry_list()
-                        config = yaml_data['publication_config']
-                        section_data['items'] = get_md_str(self, pubs, config)
+                    section_data['items'] = get_pub_md(self, section_content)
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             else:
