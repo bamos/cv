@@ -90,7 +90,7 @@ def get_pub_md(context, config):
         details = ""
         sep = "<br><br>\n"
         for i, pub in enumerate(pubs):
-            details += _get_pub_str(pub, category['prefix'], i+1) + sep
+            details += _get_pub_str(pub, category['prefix'], i + 1) + sep
         type_content['details'] = details
         contents.append(type_content)
 
