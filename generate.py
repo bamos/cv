@@ -20,7 +20,7 @@ from datetime import date
 from jinja2 import Environment, FileSystemLoader
 
 
-def get_md_str(immut_publications, config):
+def get_md_str(context, immut_publications, config):
     """Given the bibtexparser's representation and configuration,
     return a markdown string similar to BibTeX's output
     of a markdown file.
@@ -82,8 +82,10 @@ def get_md_str(immut_publications, config):
             prefix, gidx, author_str, title, pub['year'])
 
     p = copy.copy(immut_publications)
-    for item in p:
-        item['author'] = _format_author_list(item['author'])
+    for pub in p:
+        for field in pub:
+            pub[field] = context.make_replacements(pub[field])
+        pub['author'] = _format_author_list(pub['author'])
 
     contents = []
     for category in config['categories']:
@@ -187,7 +189,7 @@ class RenderContext(object):
                     with open(section_content, 'r') as f:
                         pubs = BibTexParser(f.read(), author).get_entry_list()
                         config = yaml_data['publication_config']
-                        section_data['items'] = get_md_str(pubs, config)
+                        section_data['items'] = get_md_str(self, pubs, config)
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             else:
