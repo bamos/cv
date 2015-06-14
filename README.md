@@ -7,8 +7,8 @@ This repo contains the source I use to automatically generate
 [my curriculum vitae](http://bamos.io/cv) as a webpage and PDF
 from YAML and BibTeX input.
 
-[generate.py][generate.py] reads from [cv.yaml][cv.yaml] and
-[publications.bib][publications.bib] and outputs LaTeX and Markdown
+[generate.py](generate.py) reads from [cv.yaml](cv.yaml) and
+[publications](publications) and outputs LaTeX and Markdown
 by using Jinja templates.
 
 # Building and running
@@ -17,7 +17,7 @@ and the hashbang of `generate.py` assumes an executable named
 `python3` is available on the path.
 Dependencies are included in `requirements.txt` and can be installed
 using `pip` with `pip3 install -r requirements.txt`.
-On Mac or Linux, `make` will call [generate.py][generate.py] and
+On Mac or Linux, `make` will call [generate.py](generate.py) and
 build the LaTeX documents with `latexmk` and `biber`.
 
 The Makefile will also:
@@ -45,7 +45,7 @@ review the `BLOG_DIR` variable and the `jekyll` and `push` targets.
    normal LaTeX. See `generate.py` for details.
 
 ## Publications
-All publications are stored as BibTeX in `publications.bib`.
+All publications are stored as BibTeX in [publications](publications).
 The entries can be obtained from Google Scholar.
 The order in the BibTeX file will be the order in
 the output files.
@@ -117,12 +117,4 @@ Name | Stargazers | Description
 [there4/markdown-resume](https://github.com/there4/markdown-resume) | 430 | Generate a responsive CSS3 and HTML5 resume with Markdown, with optional PDF output.
 [zellux/resume](https://github.com/zellux/resume) | 101 | My resume, generated with moderncv
 
-[generate.py]: https://github.com/bamos/cv/blob/master/generate.py
-[publications.bib]: https://github.com/bamos/cv/blob/master/publications.bib
-[cv.yaml]: https://github.com/bamos/cv/blob/master/cv.yaml
-[Requirements.txt]: https://github.com/bamos/cv/blob/master/Requirements.txt
-[cv-section.tmpl.tex]: https://github.com/bamos/cv/blob/master/tmpl/cv-section.tmpl.tex
-[cv-section.tmpl.md]: https://github.com/bamos/cv/blob/master/tmpl/cv-section.tmpl.md
-[cv.tmpl.tex]: https://github.com/bamos/cv/blob/master/tmpl/cv.tmpl.tex
-[cv.tmpl.md]: https://github.com/bamos/cv/blob/master/tmpl/cv.tmpl.md
 [bibtexparser]: https://bibtexparser.readthedocs.org/en/latest/index.html
