@@ -20,8 +20,8 @@ order:
   - [interests, Research Interests]
   - [education, Education]
   - [research, Research Experience]
-  - [teaching, Teaching Experience]
   - [publications, Publications]
+  - [teaching, Teaching Experience]
   - [industry, Industry Experience]
   # - [projects, Projects]
   - [coursework, Graduate Coursework]
@@ -119,8 +119,8 @@ industry:
       \url{http://github.com/snowplow/snowplow}.
     - Developed a new server using {\bf Spray} and {\bf Actors} to store
       {\bf Apache Thrift} events on {\bf Amazon Kinesis}.
-    - Completed project ahead of schedule, and also helped port Snowplow's
-      Scala enrichment process to Kinesis.
+    - "Completed project ahead of schedule, and also helped port Snowplow's
+    Scala enrichment process to Kinesis."
   - place: Qualcomm
     location: San Diego, California
     title: Software Engineer Intern
@@ -191,14 +191,14 @@ coursework:
     instructor: M. Satyanarayanan and D. Siewiorek
 
 skills:
-  - title: Most Experience
+  - title: Fluent
     details: Linux, Python, Scala
-  - title: Some Experience
-    details: Akka, Android, Bash, C/C++, Haskell, \LaTeX,
-      Make, {\it Mathematica}, R
-      # Java
-  # - title: Least Experience
-    # details: C\#, HTML/CSS/js
+  - title: Experienced
+    details: Bash, C/C++, Haskell, HTML/CSS/JavaScript, Java, \LaTeX, Lua, Make,
+      {\it Mathematica}, R
+  - title: Frameworks
+    details: Akka, Android, Caffe, Node.js, NumPy, Torch7, Pandas,
+      SciPy, scikit-learn, Spark, Spray
 
 honors:
   # - title: Phi Beta Kappa Honor Society

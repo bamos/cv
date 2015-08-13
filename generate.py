@@ -228,6 +228,7 @@ MARKDOWN_CONTEXT = RenderContext(
         (r'\\ ', ' '),  # spaces
         (r'\\&', '&'),  # unescape &
         (r'\\textbf{([^}]*)}', r'**\1**'),  # bold text
+        (r'\{ *\\bf *([^}]*)\}', r'**\1**'),
         (r'\\textit{([^}]*)}', r'*\1*'),  # italic text
         (r'\{ *\\it *([^}]*)\}', r'*\1*'),
         (r'\\LaTeX', 'LaTeX'),  # \LaTeX to boring old LaTeX
@@ -235,6 +236,7 @@ MARKDOWN_CONTEXT = RenderContext(
         ('---', '-'),  # em dash
         ('--', '-'),  # en dash
         (r'``([^\']*)\'\'', r'"\1"'),  # quotes
+        (r'\\url{([^}]*)}', r'[\1](\1)'),  # urls
     ]
 )
 
