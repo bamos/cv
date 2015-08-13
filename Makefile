@@ -28,7 +28,7 @@ $(BUILD_DIR):
 public: $(BUILD_DIR) $(TEMPLATES) $(YAML_FILES) generate.py
 	./generate.py cv.yaml
 
-$(TEX) $(MD): $(BUILD_DIR) $(TEMPLATES) $(YAML_FILES) generate.py
+$(TEX) $(MD): $(TEMPLATES) $(YAML_FILES) generate.py
 	./generate.py $(YAML_FILES)
 
 $(PDF): $(TEX)
