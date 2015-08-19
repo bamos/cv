@@ -9,6 +9,9 @@
           \begin{itemize}
           \item {\bf Advisor}: << item.advisor >>
           \item {\bf Area}: << item.area >>
+          ~< for detail in item.details ->~
+            \item <<detail>>
+          ~<- endfor ->~
           \end{itemize}
         }
     ~< endfor >~
