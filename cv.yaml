@@ -41,8 +41,7 @@ education:
     location: Blacksburg, Virginia
     degree: B.S., Computer Science
     # degree: B.S., Computer Science, Honors Scholar
-    # dates: Aug 2011--May 2014
-    dates: May 2014
+    dates: Aug 2011--May 2014
     overallGPA: 3.99/4.00
     majorGPA: 4.00/4.00
 
@@ -197,7 +196,7 @@ skills:
     details: Bash, C/C++, Haskell, HTML/CSS/JavaScript, Java, \LaTeX, Lua, Make,
       {\it Mathematica}, R
   - title: Frameworks
-    details: Akka, Android, Caffe, Node.js, NumPy, Torch7, Pandas,
+    details: Akka, Android SDK/NDK, Caffe, Node.js, NumPy, Torch7, Pandas,
       SciPy, scikit-learn, Spark, Spray
 
 honors:
