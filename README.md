@@ -78,7 +78,6 @@ https://github.com/bamos/python-scripts/blob/master/python3/github-repo-summary.
 Please add projects to the list in the comment and in the table below.
 
 github-repo-summary.py \
-  afriggeri/cv \
   ajn123/CV \
   cies/resume \
   deedydas/Deedy-Resume \
@@ -99,7 +98,6 @@ github-repo-summary.py \
 
 Name | Stargazers | Description
 ----|----|----
-[afriggeri/cv](https://github.com/afriggeri/cv) | 776 | CV, typesetted in Helvetica Neue, using XeTeX, TikZ and Biblatex
 [ajn123/CV](https://github.com/ajn123/CV) | 2 | My resume in Latex
 [cies/resume](https://github.com/cies/resume) | 198 | My resume as a PDF including the well commented Latex sources and build instructions.
 [deedydas/Deedy-Resume](https://github.com/deedydas/Deedy-Resume) | 516 | A one page , two asymmetric column resume template in XeTeX that caters to an undergraduate Computer Science student
