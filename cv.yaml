@@ -52,6 +52,10 @@ research:
     advisor: Dr. Mahadev Satyanarayanan
     dates: Aug 2014--Present
     area: Machine learning, mobile computing, and distributed systems.
+    details:
+      - OpenFace project lead,
+        available on GitHub at
+        \url{http://github.com/cmusatyalab/openface}.
   - place: Magnum Research Group
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
