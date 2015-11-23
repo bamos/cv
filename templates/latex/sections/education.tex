@@ -3,7 +3,9 @@
 ~< block body >~
 ~< for school in items >~
 \cvlistitem{
-  << school.degree >>,
+  ~< if school.degree >~
+    << school.degree >>,
+  ~< endif >~
   << school.school >>,
   << school.dates >>
   ~< if school.overallGPA >~

@@ -2,7 +2,9 @@
 
 {% block body %}
 {% for school in items %}
-+ {{ school.degree }},
++ {% if school.degree -%}
+    {{ school.degree }},
+  {% endif %}
   {{ school.school }},
   {{ school.dates }}
   {% if school.overallGPA %}
