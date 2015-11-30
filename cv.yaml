@@ -52,7 +52,7 @@ research:
   - place: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     title: Research Assistant
-    advisor: Dr. Mahadev Satyanarayanan
+    advisor: Prof. Mahadev Satyanarayanan
     dates: Aug 2014--Present
     area: Machine learning, computer vision, and mobile computing.
     details:
@@ -63,7 +63,7 @@ research:
   - place: Magnum Research Group
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
-    advisor: Dr. Jules White
+    advisor: Prof. Jules White
     dates: May 2012--May 2014
     area: Mobile computing, cyber-physical systems, and security.
     details:
@@ -80,7 +80,7 @@ research:
   - place: Virginia Tech
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
-    advisor: Dr. Layne Watson
+    advisor: Prof. Layne Watson
     dates: Jan 2013--May 2014
     area: Scientific computing, global/stochastic optimization, and bioinformatics.
     details:
@@ -93,7 +93,7 @@ research:
   - place: Systems Software Research Group
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
-    advisor: Dr. Binoy Ravindran
+    advisor: Prof. Binoy Ravindran
     dates: Nov 2012--Mar 2014
     area: Heterogeneous compilers.
     details:
