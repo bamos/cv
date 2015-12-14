@@ -13,9 +13,11 @@
 \moderncvcolor{<< color >>}
 %\renewcommand{\familydefault}{\sfdefault}
 
-\usepackage[scale=0.75]{geometry}
+\usepackage[top=1in, bottom=1in, left=1.1in, right=1.1in]{geometry}
 \setlength{\hintscolumnwidth}{3cm}
 %\setlength{\makecvtitlenamewidth}{10cm}
+
+\frenchspacing
 
 \usepackage[backend=biber,style=ieee,defernumbers=true]{biblatex}
 \addbibresource{../publications.bib}
@@ -34,7 +36,7 @@
 }
 
 \usepackage{lastpage}
-\cfoot{\addressfont\itshape\textcolor{gray}{Page \thepage\ of \pageref{LastPage}}}
+\cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref{LastPage}}}
 
 \name{<< name.first >>}{<< name.last >>}
 %\title{Resumé title}
@@ -45,9 +47,9 @@
 \social[linkedin]{<<social.linkedin>>}
 \social[twitter]{<<social.twitter>>}
 \social[github]{<<social.github>>}
-%\extrainfo{additional information}
+\extrainfo{\small Generated on \today}
 %\photo[64pt][0.4pt]{picture}
-%\quote{Some quote}
+% \quote{Generated on \today}
 
 
 \begin{document}

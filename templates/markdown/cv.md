@@ -10,7 +10,7 @@ title: CV
 <section class="byline">
   [PDF]({{ pdf }}) &bull;
   [source]({{ src }}) &bull;
-  Generated {{ today }}
+  Generated on {{ today }}
 </section>
 
 

@@ -20,6 +20,7 @@ order:
   - [interests, Research Interests]
   - [education, Education]
   - [research, Research Experience]
+  - [NEWPAGE, NEWPAGE]
   - [publications, Publications]
   - [teaching, Teaching Experience]
   - [industry, Industry Experience]
@@ -183,10 +184,10 @@ publications:
 
 
 coursework:
-  - semester: (in progress) CMU F2015
+  - semester: CMU F2015
     name: Convex Optimization (10-725)
-    instructor: Ryan Tibshirani
-  - semester: (in progress) CMU F2015
+    instructor: R. J. Tibshirani
+  - semester: CMU F2015
     name: Algorithms in the Real World (15-853)
     instructor: G. Blelloch and A. Gupta
   - semester: CMU S2015

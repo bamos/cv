@@ -6,11 +6,12 @@
   ~< if school.degree >~
     << school.degree >>,
   ~< endif >~
-  << school.school >>,
-  << school.dates >>
+  << school.school >>
   ~< if school.overallGPA >~
     (<< school.overallGPA >>)
   ~< endif >~
+  \hfill
+  << school.dates >>
 }
 ~< endfor >~
 ~< endblock body >~

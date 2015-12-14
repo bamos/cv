@@ -164,7 +164,7 @@ class RenderContext(object):
             print("  + Processing section: {}".format(section_tag))
 
             section_data = {'name': section_title}
-            section_content = yaml_data[section_tag]
+            section_content = None if section_tag == "NEWPAGE" else yaml_data[section_tag]
             if section_tag == 'interests':
                 section_template_name = "section" + self._file_ending
                 section_data['data'] = section_content
@@ -181,14 +181,22 @@ class RenderContext(object):
                     section_data['items'] = get_pub_md(self, section_content)
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
+            elif section_tag == 'NEWPAGE':
+                pass
             else:
                 print("Error: Unrecognized section tag: {}".format(section_tag))
                 # sys.exit(-1) TODO
                 continue
 
-            rendered_section = self._render_template(
-                section_template_name, section_data)
-            body += rendered_section.rstrip() + '\n\n\n'
+            if section_tag == 'NEWPAGE':
+                if self._file_ending == ".tex":
+                    body += "\n\n\\newpage\n"
+                elif self._file_ending == ".md":
+                    pass
+            else:
+                rendered_section = self._render_template(
+                    section_template_name, section_data)
+                body += rendered_section.rstrip() + '\n\n\n'
 
         yaml_data['body'] = body
         yaml_data['today'] = date.today().strftime("%B %d, %Y")
