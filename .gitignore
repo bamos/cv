@@ -4,3 +4,4 @@ __pycache__
 *.out
 *.pdf
 venv
+auto
