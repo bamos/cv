@@ -245,7 +245,7 @@ MARKDOWN_CONTEXT = RenderContext(
         ('--', '-'),  # en dash
         (r'``([^\']*)\'\'', r'"\1"'),  # quotes
         (r'\\url{([^}]*)}', r'[\1](\1)'),  # urls
-        (r'\{([^}]*)\}', r'\1'), # Brackets.
+        (r'\{([^}]*)\}', r'\1'),  # Brackets.
     ]
 )
 
