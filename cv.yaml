@@ -57,7 +57,7 @@ research:
     dates: Aug 2014--Present
     area: Machine learning, computer vision, and mobile computing.
     details:
-      - I created and lead the OpenFace project, which provides face recognition
+      - Project lead of OpenFace, which provides face recognition
         with deep neural networks and is available on GitHub at
         \url{http://github.com/cmusatyalab/openface}.
   - place: Magnum Research Group
