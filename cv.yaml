@@ -25,7 +25,7 @@ order:
   - [teaching, Teaching Experience]
   - [industry, Industry Experience]
   # - [projects, Projects]
-  - [coursework, Graduate Coursework]
+  - [coursework, CMU Graduate Coursework]
   - [skills, Skills]
   - [honors, Honors \& Awards]
 #  - [activities, Activities]
@@ -122,8 +122,9 @@ industry:
     dates: Dec 2013--Jan 2014
     details:
     - Open-source {\bf Scala} development with a startup on the
-      Snowplow analytics platform, available at
-      \url{http://github.com/snowplow/snowplow}.
+      Snowplow analytics platform.
+      My contributions are available at
+      \url{https://github.com/snowplow/snowplow/commits?author=bamos}.
     - Developed a new server using {\bf Spray} and {\bf Actors} to store
       {\bf Apache Thrift} events on {\bf Amazon Kinesis}.
     - "Completed project ahead of schedule, and also helped port Snowplow's
@@ -184,22 +185,22 @@ publications:
 
 
 coursework:
-  - semester: CMU F2015
+  - semester: F2015
     name: Convex Optimization (10-725)
     instructor: R. J. Tibshirani
-  - semester: CMU F2015
+  - semester: F2015
     name: Algorithms in the Real World (15-853)
     instructor: G. Blelloch and A. Gupta
-  - semester: CMU S2015
+  - semester: S2015
     name: Semantics of Programming Languages (15-812)
     instructor: A. Platzer
-  - semester: CMU S2015
+  - semester: S2015
     name: Optimizing Compilers for Modern Architecture (15-745)
     instructor: T. Mowry
-  - semester: CMU F2014
+  - semester: F2014
     name: Advanced Operating Systems and Distributed Systems (15-712)
     instructor: D. Andersen
-  - semester: CMU F2014
+  - semester: F2014
     name: Mobile and Pervasive Computing (15-812)
     instructor: M. Satyanarayanan and D. Siewiorek
 
