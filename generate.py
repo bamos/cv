@@ -11,7 +11,6 @@ import argparse
 import copy
 import os
 import re
-import sys
 import yaml
 
 import bibtexparser.customization as bc
