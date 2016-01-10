@@ -61,10 +61,10 @@ def get_pub_md(context, config):
             title = "<a href=\'{}\'>{}</a>".format(
                 pub['link'], title)
 
-        if pub['type'] == "inproceedings":
+        if pub['ENTRYTYPE'] == "inproceedings":
             if pub['booktitle']:
                 title += ' in <em>{}</em>,'.format(pub['booktitle'])
-        elif pub['type'] == "article":
+        elif pub['ENTRYTYPE'] == "article":
             if pub['journal']:
                 title += ' <em>{}</em>,'.format(pub['journal'])
         return '[{}{}] {}, {} {}.'.format(
