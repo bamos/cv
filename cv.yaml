@@ -185,6 +185,9 @@ publications:
 
 
 coursework:
+  - semester: S2016
+    name: Computer Vision (16-720)
+    instructor: D. Ramanan
   - semester: F2015
     name: Convex Optimization (10-725)
     instructor: R. J. Tibshirani
