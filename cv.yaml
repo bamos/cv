@@ -166,8 +166,11 @@ industry:
       #   and hard links.
 
 teaching:
-  - semester: VT S2013
-    name: Software Design and Data Structures (CS 2114)
+  - semester: S2016
+    name: Distributed Systems (CMU 15-440/640)
+    position: Graduate TA
+  - semester: S2013
+    name: Software Design and Data Structures (VT CS 2114)
     position: Undergraduate TA
 
 publications:
@@ -185,7 +188,10 @@ publications:
 
 
 coursework:
-  - semester: S2016
+  - semester: S2016 (Au)
+    name: Intro to Machine Learning (10-701)
+    instructor: T. Mitchell
+  - semester: S2016 (Au)
     name: Computer Vision (16-720)
     instructor: D. Ramanan
   - semester: F2015
