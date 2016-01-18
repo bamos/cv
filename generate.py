@@ -67,7 +67,7 @@ def get_pub_md(context, config):
         elif pub['ENTRYTYPE'] == "article":
             if pub['journal']:
                 title += ' <em>{}</em>,'.format(pub['journal'])
-        return '[{}{}] {}, {} {}.'.format(
+        return '+ [{}{}] {}, {} {}.'.format(
             prefix, gidx, author_str, title, pub['year'])
 
     def load_and_replace(bibtex_file):
@@ -87,7 +87,8 @@ def get_pub_md(context, config):
         pubs = load_and_replace(category['file'])
 
         details = ""
-        sep = "<br><br>\n"
+        # sep = "<br><br>\n"
+        sep = "\n"
         for i, pub in enumerate(pubs):
             details += _get_pub_str(pub, category['prefix'], i + 1) + sep
         type_content['details'] = details
