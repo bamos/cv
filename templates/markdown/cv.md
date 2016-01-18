@@ -1,11 +1,11 @@
 ---
 layout: layout
-title: CV
+title: 'Brandon Amos: CV'
 ---
 
 <section class="content">
 
-# {{ name.first }} {{ name.last }}
+# {{ name.first }} {{ name.last }}: CV
 
 <section class="byline">
   [PDF]({{ pdf }}) &bull;
