@@ -22,6 +22,7 @@ order:
   - [research, Research Experience]
   - [NEWPAGE, NEWPAGE]
   - [publications, Publications]
+  - [NEWPAGE, NEWPAGE]
   - [teaching, Teaching Experience]
   - [industry, Industry Experience]
   # - [projects, Projects]
@@ -179,12 +180,15 @@ publications:
     - heading: Conference Proceedings
       prefix: C
       file: conference.bib
-    - heading: Journal Articles
-      prefix: J
-      file: journal.bib
+    # - heading: Journal Articles
+      # prefix: J
+      # file: journal.bib
     - heading: Magazine Articles
       prefix: M
       file: magazine.bib
+    - heading: Tech Reports
+      prefix: T
+      file: tech-reports.bib
 
 
 coursework:

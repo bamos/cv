@@ -67,6 +67,7 @@ def get_pub_md(context, config):
         elif pub['ENTRYTYPE'] == "article":
             if pub['journal']:
                 title += ' <em>{}</em>,'.format(pub['journal'])
+
         return '+ [{}{}] {}, {} {}.'.format(
             prefix, gidx, author_str, title, pub['year'])
 
