@@ -222,8 +222,8 @@ coursework:
 
 skills:
   - title: Languages
-    details: Bash, C/C++, Haskell, HTML/CSS/JavaScript, Java, \LaTeX, Lua, Make,
-      {\it Mathematica}, Python, R, Scala
+    details: Bash, C, C++, Haskell, HTML/CSS/JavaScript, Java, \LaTeX,
+      Lua, Make, {\it Mathematica}, Python, R, Scala
   - title: Frameworks
     details: Akka, Android SDK/NDK, Caffe, Node.js, NumPy, Torch7, Pandas,
       SciPy, scikit-learn, Spark, Spray
