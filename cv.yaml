@@ -1,8 +1,6 @@
 name:
   first: Brandon
   last: Amos
-style: banking # casual, classic, oldstyle, or banking
-color: blue # blue, orange, green, red, purple, grey and black
 phone: ~(540)~947~1238
 email: bamos@cs.cmu.edu
 pdf: /data/cv.pdf
@@ -14,6 +12,11 @@ social:
   linkedin: bdamos
 # Erdős  number is at most 4.
 # (Brandon Amos -> Layne Watson -> Leroy Kelly -> Zoltán Füredi -> Paul Erdős )
+
+# LaTeX formatting.
+style: banking # casual, classic, oldstyle, or banking
+color: blue # blue, orange, green, red, purple, grey and black
+color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 
 # (tag, section type, title)
 order:
