@@ -29,7 +29,7 @@ order:
   - [teaching, Teaching Experience]
   - [industry, Industry Experience]
   # - [projects, Projects]
-  - [coursework, CMU Graduate Coursework]
+  # - [coursework, CMU Graduate Coursework]
   - [skills, Skills]
   - [honors, Honors \& Awards]
 #  - [activities, Activities]
@@ -195,12 +195,6 @@ publications:
 
 
 coursework:
-  - semester: S2016 (Au)
-    name: Intro to Machine Learning (10-701)
-    instructor: T. Mitchell
-  - semester: S2016 (Au)
-    name: Computer Vision (16-720)
-    instructor: D. Ramanan
   - semester: F2015
     name: Convex Optimization (10-725)
     instructor: R. J. Tibshirani
