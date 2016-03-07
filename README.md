@@ -4,7 +4,7 @@
 
 # About
 This repo contains the source I use to automatically generate
-[my curriculum vitae](http://bamos.io/cv) as a webpage and PDF
+[my curriculum vitae](http://bamos.github.io/cv) as a webpage and PDF
 from YAML and BibTeX input.
 
 [generate.py](generate.py) reads from [cv.yaml](cv.yaml) and
