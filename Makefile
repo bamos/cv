@@ -4,6 +4,9 @@
 # Ellis Michael <http://ellismichael.com>
 
 WEBSITE_DIR=$(HOME)/repos/website
+WEBSITE_PDF=$(WEBSITE_DIR)/data/cv.pdf
+WEBSITE_MD=$(WEBSITE_DIR)/_includes/cv.md
+WEBSITE_DATE=$(WEBSITE_DIR)/_includes/last-updated.txt
 
 TEMPLATES=$(shell find templates -type f)
 
@@ -42,15 +45,16 @@ viewpdf: $(PDF)
 	gnome-open $(PDF)
 
 stage: $(PDF) $(MD)
-	cp $(PDF) $(WEBSITE_DIR)/data/cv.pdf
-	cp $(MD) $(WEBSITE_DIR)/cv.md
+	cp $(PDF) $(WEBSITE_PDF)
+	cp $(MD) $(WEBSITE_MD)
+	date +%Y-%m-%d > $(WEBSITE_DATE)
 
 jekyll: stage
 	cd $(WEBSITE_DIR) && jekyll server
 
 push: stage
-	git -C $(WEBSITE_DIR) add $(WEBSITE_DIR)/data/cv.pdf
-	git -C $(WEBSITE_DIR) add $(WEBSITE_DIR)/cv.md
+	git -C $(WEBSITE_DIR) add $(WEBSITE_PDF)
+	git -C $(WEBSITE_DIR) add $(WEBSITE_MD)
 	git -C $(WEBSITE_DIR) commit -m "Update cv."
 	git -C $(WEBSITE_DIR) push
 

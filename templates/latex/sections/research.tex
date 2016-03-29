@@ -7,7 +7,9 @@
           << item.place >>\hfill
           << item.dates >>
           \begin{itemize}
+          ~< if item.advisor >~
           \item {\bf Advisor}: << item.advisor >>
+          ~< endif >~
           \item {\bf Area}: << item.area >>
           ~< for detail in item.details ->~
             \item <<detail>>

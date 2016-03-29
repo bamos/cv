@@ -20,7 +20,7 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 
 # (tag, section type, title)
 order:
-  - [interests, Research Interests]
+  # - [interests, Research Interests]
   - [education, Education]
   - [research, Research Experience]
   - [NEWPAGE, NEWPAGE]
@@ -30,8 +30,8 @@ order:
   - [industry, Industry Experience]
   # - [projects, Projects]
   # - [coursework, CMU Graduate Coursework]
-  - [skills, Skills]
   - [honors, Honors \& Awards]
+  - [skills, Skills]
 #  - [activities, Activities]
 
 interests: Machine learning, computer vision, and mobile computing.
@@ -113,8 +113,8 @@ industry:
     location: San Jose, California
     title: Data Scientist Intern
     dates: May 2014--Aug 2014
+    area: Distributed Systems
     details:
-      - '{\bf Research Area}: Distributed Systems'
       - Built and released {\it Spindle} as an open source web analytics
         processing engine using {\bf Scala},
         {\bf Spark}, {\bf Spray}, and {\bf Parquet} on {\bf HDFS}.
@@ -227,6 +227,8 @@ skills:
 honors:
   # - title: Phi Beta Kappa Honor Society
     # year: Inducted May 2014
+  - title: 'NSF Graduate Research Fellowship: \$138,000'
+    year: 2016--2019
   - title: 1st Place Undergraduate Senior Capstone Award, Virginia Tech Computer Science
     year: 2014
   - title: David Heilman Research Award, Virginia Tech Computer Science

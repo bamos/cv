@@ -236,6 +236,7 @@ MARKDOWN_CONTEXT = RenderContext(
     [
         (r'\\ ', ' '),  # spaces
         (r'\\&', '&'),  # unescape &
+        (r'\\\$', '\$'),  # unescape $
         (r'\\textbf{([^}]*)}', r'**\1**'),  # bold text
         (r'\{ *\\bf *([^}]*)\}', r'**\1**'),
         (r'\\textit{([^}]*)}', r'*\1*'),  # italic text
