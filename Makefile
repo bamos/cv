@@ -50,7 +50,7 @@ stage: $(PDF) $(MD)
 	date +%Y-%m-%d > $(WEBSITE_DATE)
 
 jekyll: stage
-	cd $(WEBSITE_DIR) && jekyll server
+	cd $(WEBSITE_DIR) && bundle exec jekyll server
 
 push: stage
 	git -C $(WEBSITE_DIR) add $(WEBSITE_PDF)
