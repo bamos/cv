@@ -53,8 +53,7 @@ jekyll: stage
 	cd $(WEBSITE_DIR) && bundle exec jekyll server
 
 push: stage
-	git -C $(WEBSITE_DIR) add $(WEBSITE_PDF)
-	git -C $(WEBSITE_DIR) add $(WEBSITE_MD)
+	git -C $(WEBSITE_DIR) add $(WEBSITE_PDF) $(WEBSITE_MD) $(WEBSITE_DATE)
 	git -C $(WEBSITE_DIR) commit -m "Update cv."
 	git -C $(WEBSITE_DIR) push
 
