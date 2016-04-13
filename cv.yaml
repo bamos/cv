@@ -57,8 +57,14 @@ research:
   - place: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     title: Research Assistant
+    advisor: Prof. Zico Kolter
+    dates: Apr 2016--Present
+    area: Machine learning and optimization
+  - place: Carnegie Mellon University
+    location: Pittsburgh, Pennsylvania
+    title: Research Assistant
     advisor: Prof. Mahadev Satyanarayanan
-    dates: Aug 2014--Present
+    dates: Aug 2014--Apr 2016
     area: Machine learning, computer vision, and mobile computing.
     details:
       - Project lead of OpenFace, which provides face recognition
