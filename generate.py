@@ -54,22 +54,19 @@ def get_pub_md(context, config):
         author_str = _get_author_str(pub['author'])
         prefix = category['prefix']
         title = pub['title']
-        if title[-1] not in ("?", ".", "!"):
-            title += ","
-        title = '"{}"'.format(title)
+        # if title[-1] not in ("?", ".", "!"):
+            # title += ","
+        # title = '"{}"'.format(title)
         if 'link' in pub:
             title = "<a href=\'{}\'>{}</a>".format(
                 pub['link'], title)
+        title = title.replace("\n", " ")
 
-        if pub['ENTRYTYPE'] == "inproceedings":
-            if pub['booktitle']:
-                title += ' in <em>{}</em>,'.format(pub['booktitle'])
-        elif pub['ENTRYTYPE'] == "article":
-            if pub['journal']:
-                title += ' <em>{}</em>,'.format(pub['journal'])
+        assert('_venue' in pub and 'year' in pub)
+        yearVenue = "{} {}".format(pub['_venue'], pub['year'])
 
-        return '+ [{}{}] {}, {} {}.'.format(
-            prefix, gidx, author_str, title, pub['year'])
+        return '| [{}{}] | {} | {} | {} |'.format(
+            prefix, gidx, title, author_str, yearVenue)
 
     def load_and_replace(bibtex_file):
         with open(os.path.join('publications', bibtex_file), 'r') as f:

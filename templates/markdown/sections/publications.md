@@ -9,6 +9,11 @@
 {% for p in items %}
 
 ### {{ p.title }}
+
+{:.table}
+| | Title | Authors | Location |
+|---|---|---|---|
 {{ p.details }}
+
 {% endfor %}
 {% endblock body %}

@@ -67,9 +67,9 @@ research:
     dates: Aug 2014--Apr 2016
     area: Machine learning, computer vision, and mobile computing.
     details:
-      - Project lead of OpenFace, which provides face recognition
-        with deep neural networks and is available on GitHub at
-        \url{http://github.com/cmusatyalab/openface}.
+      - |
+          Face recognition with deep neural networks:
+          \url{http://github.com/cmusatyalab/openface}
   - place: Magnum Research Group
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
@@ -77,7 +77,7 @@ research:
     dates: May 2012--May 2014
     area: Mobile computing, cyber-physical systems, and security.
     details:
-      - Android malware detection research implemented with
+      - Android malware detection research using
         a distributed {\bf Actor-based Scala} system.
       #- Modified the {\bf Android source} to provide non-standard logging
       #  information for dynamic malware analysis.
@@ -192,6 +192,9 @@ publications:
     # - heading: Journal Articles
       # prefix: J
       # file: journal.bib
+    - heading: Workshop, Symposium, and Short Papers
+      prefix: WS
+      file: short.bib
     - heading: Magazine Articles
       prefix: M
       file: magazine.bib
