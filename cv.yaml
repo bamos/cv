@@ -193,7 +193,7 @@ publications:
       # prefix: J
       # file: journal.bib
     - heading: Workshop, Symposium, and Short Papers
-      prefix: WS
+      prefix: W
       file: short.bib
     - heading: Magazine Articles
       prefix: M
