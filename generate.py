@@ -37,7 +37,8 @@ def get_pub_md(context, config):
         authors = copy.copy(immut_author_list)
         if len(authors) > 1:
             authors[-1] = "and " + authors[-1]
-        return ", ".join(authors)
+        sep = ", " if len(authors) > 2 else " "
+        return sep.join(authors)
 
     # [First Initial]. [Last Name]
     def _format_author_list(immut_author_list):
