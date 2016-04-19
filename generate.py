@@ -56,7 +56,7 @@ def get_pub_md(context, config):
         prefix = category['prefix']
         title = pub['title']
         # if title[-1] not in ("?", ".", "!"):
-            # title += ","
+        #    title += ","
         # title = '"{}"'.format(title)
         if 'link' in pub:
             title = "<a href=\'{}\'>{}</a>".format(
