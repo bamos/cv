@@ -9,6 +9,7 @@
 \DeclareRobustCommand*\cal{\@fontswitch\relax\mathcal}
 \DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
 
+
 \moderncvstyle{<< style >>}
 \moderncvcolor{<< color >>}
 \definecolor{color2}{rgb}{<<color2>>}
@@ -38,6 +39,7 @@
 \usepackage{lastpage}
 \cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref{LastPage}}}
 
+\AtEndPreamble{\hypersetup{pdftitle={CV -- << name.first >> << name.last >>}}}
 \name{<< name.first >>}{<< name.last >>}
 %\title{Resumé title}
 %\address{street and number}{postcode city}{country}
