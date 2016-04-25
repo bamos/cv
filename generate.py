@@ -91,6 +91,7 @@ def get_pub_md(context, config):
         for i, pub in enumerate(pubs):
             details += _get_pub_str(pub, category['prefix'], i + 1) + sep
         type_content['details'] = details
+        type_content['file'] = category['file']
         contents.append(type_content)
 
     return contents

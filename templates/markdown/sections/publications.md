@@ -8,7 +8,7 @@
 
 {% for p in items %}
 
-### {{ p.title }}
+### {{ p.title }} <a href="https://github.com/bamos/cv/blob/master/publications/{{ p.file }}"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
 
 {:.table}
 | | Title | Authors | Location |
