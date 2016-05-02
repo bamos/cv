@@ -201,6 +201,9 @@ publications:
     - heading: Tech Reports
       prefix: T
       file: tech-reports.bib
+    - heading: Posters
+      prefix: P
+      file: posters.bib
 
 
 coursework:
