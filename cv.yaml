@@ -25,7 +25,7 @@ order:
   - [research, Research Experience]
   - [NEWPAGE, NEWPAGE]
   - [publications, Publications]
-  - [NEWPAGE, NEWPAGE]
+  # - [NEWPAGE, NEWPAGE]
   - [teaching, Teaching Experience]
   - [industry, Industry Experience]
   # - [projects, Projects]
