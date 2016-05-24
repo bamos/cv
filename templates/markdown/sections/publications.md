@@ -10,7 +10,7 @@
 
 ### {{ p.title }} <a href="https://github.com/bamos/cv/blob/master/publications/{{ p.file }}"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
 
-{:.table}
+{:.table .table-hover}
 | | Title | Authors | Location |
 |---|---|---|---|
 {{ p.details }}
