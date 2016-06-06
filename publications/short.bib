@@ -8,7 +8,25 @@
   booktitle={HotMobile},
   _venue={HotMobile},
   year={2016},
-  url={http://eprints.lancs.ac.uk/78255/1/44691.pdf}
+  url={http://eprints.lancs.ac.uk/78255/1/44691.pdf},
+  abstract={
+    Unease over data privacy will retard consumer acceptance of IoT
+    deployments. The primary source of discomfort is a lack of user
+    control over raw data that is streamed directly from sensors to the
+    cloud. This is a direct consequence of the over-centralization of
+    today’s cloud-based IoT hub designs. We propose a solution that
+    interposes a locally-controlled software component called a privacy
+    mediator on every raw sensor stream. Each mediator is in the same
+    administrative domain as the sensors whose data is being collected,
+    and dynamically enforces the current privacy policies of the owners
+    of the sensors or mobile users within the domain. This solution necessitates
+    a logical point of presence for mediators within the administrative
+    boundaries of each organization. Such points of presence
+    are provided by cloudlets, which are small locally-administered data
+    centers at the edge of the Internet that can support code mobility.
+    The use of cloudlet-based mediators aligns well with natural personal
+    and organizational boundaries of trust and responsibility.
+  }
 }
 
 @inproceedings{chen2015early,
@@ -17,7 +35,19 @@
   booktitle={WearSys},
   _venue={WearSys},
   year={2015},
-  url={http://www.cs.cmu.edu/~satya/docdir/chen-wearsys2015.pdf}
+  url={http://www.cs.cmu.edu/~satya/docdir/chen-wearsys2015.pdf},
+  abstract={
+    A cognitive assistance application combines a wearable device such
+    as Google Glass with cloudlet processing to provide step-by-step
+    guidance on a complex task. In this paper, we focus on user assistance
+    for narrow and well-defined tasks that require specialized
+    knowledge and/or skills. We describe proof-of-concept implementations
+    for four different tasks: assembling 2D Lego models, freehand
+    sketching, playing ping-pong, and recommending context-relevant
+    YouTube tutorials. We then reflect on the difficulties we faced in
+    building these applications, and suggest future research that could
+    simplify the creation of similar applications.
+  }
 }
 
 @inproceedings{hu2014case,
@@ -30,7 +60,16 @@
   booktitle={HotMobile},
   _venue={HotMobile},
   year={2015},
-  url={http://www.cs.cmu.edu/~satya/docdir/hu-hotmobile2015.pdf}
+  url={http://www.cs.cmu.edu/~satya/docdir/hu-hotmobile2015.pdf},
+  abstract={
+    When offloading computation from a mobile device, we show
+    that it can pay to perform additional on-device work in order
+    to reduce the offloading workload. We call this offload shaping,
+    and demonstrate its application at many different levels
+    of abstraction using a variety of techniques. We show that
+    offload shaping can produce significant reduction in resource
+    demand, with little loss of application-level fidelity
+  }
 }
 
 @inproceedings{amos2014performance,
@@ -40,7 +79,17 @@
   booktitle={IEEE CloudCom},
   _venue={CloudCom},
   year={2014},
-  url={http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7037709}
+  codeurl={https://github.com/adobe-research/spindle},
+  url={http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7037709},
+  abstract={
+    This paper shares our experiences building and benchmarking Spindle as an open
+    source Spark-based web analytics platform. Spindle's design has been
+    motivated by real-world queries and data requiring concurrent, low latency
+    query execution. We identify a search space of Spark tuning options and study
+    their impact on Spark's performance. Results from a self-hosted six node
+    cluster with one week of analytics data (13.1GB) indicate tuning options such
+    as proper partitioning can cause a 5x performance improvement.
+  }
 }
 
 @inproceedings{andrew2014global,
@@ -52,7 +101,21 @@
     Society for Modeling and Simulation International},
   _venue={SummerSim},
   year={2014},
-  url={http://dl.acm.org/citation.cfm?id=2685662}
+  url={http://dl.acm.org/citation.cfm?id=2685662},
+  abstract={
+    The complicated process by which a yeast cell divides, known as the cell
+    cycle, has been modeled by a system of 26 nonlinear ordinary differential
+    equations (ODEs) with 149 parameters. This model captures the chemical
+    kinetics of the regulatory networks controlling the cell division process
+    in budding yeast cells. Empirical data is discrete and matched against
+    discrete inferences (e.g., whether a particular mutant cell lives or dies)
+    computed from the ODE solution trajectories. The problem of
+    estimating the ODE parameters to best fit the model to the data is a
+    149-dimensional global optimization problem attacked by the deterministic
+    algorithm VTDIRECT95 and by the nondeterministic algorithms differential
+    evolution, QNSTOP, and simulated annealing, whose performances are
+    compared.
+  }
 }
 
 @inproceedings{amos2014fortran,
@@ -65,5 +128,12 @@
     Society for Modeling and Simulation International},
   _venue={SpringSim (HPC)},
   year={2014},
-  url={http://dl.acm.org/citation.cfm?id=2663525}
+  url={http://dl.acm.org/citation.cfm?id=2663525},
+  abstract={
+    A serial Fortran 95 implementation of the QNSTOP algorithm is presented.
+      QNSTOP is a class of quasi-Newton methods for stochastic optimization with
+      variations for deterministic global optimization. This discussion provides
+      results from testing on various deterministic and stochastic optimization
+      functions.
+  }
 }

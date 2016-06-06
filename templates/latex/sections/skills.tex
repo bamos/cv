@@ -1,7 +1,9 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
+\begin{tabular}{p{1in}p{5in}}
   ~< for item in items >~
-    \cvlistitem{<< item.title >>: << item.details >> }
+    << item.title >> & << item.details >> \\
   ~< endfor >~
+\end{tabular}
 ~< endblock body >~

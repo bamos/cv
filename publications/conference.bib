@@ -3,7 +3,24 @@
   author={Han Zhao and Tameem Adel and Geoff Gordon and Brandon Amos},
   booktitle={ICML},
   _venue={ICML},
-  year={2016}
+  year={2016},
+  url={http://www.cs.cmu.edu/~hzhao1/papers/ICML2016/BL-SPN-main.pdf},
+  abstract={
+    Sum-Product Networks (SPNs) are probabilistic inference machines that admit
+    exact inference in linear time in the size of the network. Existing
+    parameter learning approaches for SPNs are largely based on the maximum
+    likelihood principle and hence are subject to overfitting compared to
+    more Bayesian approaches. Exact Bayesian posterior inference for SPNs is
+    computationally intractable. Both standard variational inference and
+    posterior sampling for SPNs are computationally infeasible even for
+    networks of moderate size due to the large number of local latent
+    variables per instance. In this work, we propose a novel deterministic
+    collapsed variational inference algorithm for SPNs that is
+    computationally efficient, easy to implement and at the same time allows
+    us to incorporate prior information into the optimization formulation.
+    Extensive experiments show a significant improvement in accuracy compared
+    with a maximum likelihood based approach.
+  }
 }
 
 @inproceedings{amos2013applying,
@@ -13,5 +30,17 @@
   booktitle={IWCMC Security, Trust and Privacy Symposium},
   _venue={IWCMC},
   year={2013},
-  url={http://bamos.github.io/data/papers/amos-iwcmc2013.pdf}
+  codeurl={https://github.com/VT-Magnum-Research/antimalware},
+  url={http://bamos.github.io/data/papers/amos-iwcmc2013.pdf},
+  abstract={
+    The widespread adoption and contextually sensitive
+    nature of smartphone devices has increased concerns over smartphone
+    malware. Machine learning classifiers are a current method
+    for detecting malicious applications on smartphone systems. This
+    paper presents the evaluation of a number of existing classifiers,
+    using a dataset containing thousands of real (i.e. not synthetic)
+    applications. We also present our STREAM framework, which
+    was developed to enable rapid large-scale validation of mobile
+    malware machine learning classifiers.
+  }
 }

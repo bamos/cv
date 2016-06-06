@@ -1,12 +1,12 @@
 {% extends "section.md" %}
 
 {% block body %}
+<table class="table table-hover">
 {% for i in items %}
-+ {{ i.title }}, {{ i.place }}, {{ i.dates }}
-  {#
-  {% for detail in i.details %}
-    + {{ detail }}
-  {% endfor %}
-  #}
+<tr>
+  <td class='col-md-3'>{{ i.dates }}</td>
+  <td><strong>{{ i.place }}</strong>, {{ i.title }}</td>
+</tr>
 {% endfor %}
+</table>
 {% endblock body %}

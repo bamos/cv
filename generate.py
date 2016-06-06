@@ -47,7 +47,7 @@ def get_pub_md(context, config):
             new_auth = author.split(", ")
             new_auth = new_auth[1][0] + ". " + new_auth[0]
             if new_auth == config['name']:
-                new_auth = "**" + new_auth + "**"
+                new_auth = "<strong>" + new_auth + "</strong>"
             formatted_authors.append(new_auth)
         return formatted_authors
 
@@ -58,16 +58,52 @@ def get_pub_md(context, config):
         # if title[-1] not in ("?", ".", "!"):
         #    title += ","
         # title = '"{}"'.format(title)
-        if 'link' in pub:
-            title = "<a href=\'{}\'>{}</a>".format(
-                pub['link'], title)
+        # if 'link' in pub:
+        #     title = "<a href=\'{}\'>{}</a>".format(
+        #         pub['link'], title)
         title = title.replace("\n", " ")
 
         assert('_venue' in pub and 'year' in pub)
         yearVenue = "{} {}".format(pub['_venue'], pub['year'])
 
-        return '| [{}{}] | {} | {} | {} |'.format(
-            prefix, gidx, title, author_str, yearVenue)
+        imgStr = '<img src="images/publications/{}.png"/>'.format(pub['ID'])
+        links = ['[{}{}]'.format(prefix, gidx)]
+        abstract = ''
+        if 'abstract' in pub:
+            links.append("""
+[<a href='javascript: none'
+    onclick=\'$(\"#abs_{}\").toggle()\'>abs</a>]
+""".format(pub['ID']))
+            abstract = context.make_replacements(pub['abstract'])
+        if 'link' in pub:
+            imgStr = "<a href=\'{}\' target='_blank'>{}</a> ".format(
+                pub['link'], imgStr)
+            links.append(
+                "[<a href=\'{}\' target='_blank'>pdf</a>] ".format(pub['link']))
+        if 'codeurl' in pub:
+            links.append(
+                "[<a href=\'{}\' target='_blank'>code</a>] ".format(pub['codeurl']))
+        links = ' '.join(links)
+
+        if abstract:
+            abstract = '''
+<div id="abs_{}" style="text-align: justify; display: none">
+  {}
+</div>
+'''.format(pub['ID'], abstract)
+
+        return '''
+    <tr>
+    <td class="col-md-3">{}</td>
+    <td>
+        <strong>{}</strong><br>
+        {}<br>
+        {}<br>
+        {}<br>
+        {}
+    </td>
+    </tr>
+    '''.format(imgStr, title, author_str, yearVenue, links, abstract)
 
     def load_and_replace(bibtex_file):
         with open(os.path.join('publications', bibtex_file), 'r') as f:
@@ -236,6 +272,7 @@ MARKDOWN_CONTEXT = RenderContext(
         (r'\\ ', ' '),  # spaces
         (r'\\&', '&'),  # unescape &
         (r'\\\$', '\$'),  # unescape $
+        (r'\\%', '%'),  # unescape %
         (r'\\textbf{([^}]*)}', r'**\1**'),  # bold text
         (r'\{ *\\bf *([^}]*)\}', r'**\1**'),
         (r'\\textit{([^}]*)}', r'*\1*'),  # italic text
