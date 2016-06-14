@@ -87,8 +87,8 @@ def get_pub_md(context, config):
 
         if abstract:
             abstract = '''
-<div id="abs_{}" style="text-align: justify; display: none">
-  {}
+<div id="abs_{}" style="text-align: justify; display: none" markdown="1">
+{}
 </div>
 '''.format(pub['ID'], abstract)
 
