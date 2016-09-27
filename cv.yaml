@@ -24,7 +24,7 @@ order:
   - [education, Education]
   - [research, Research Experience]
   # - [NEWPAGE, NEWPAGE]
-  - [publications, Publications]
+  - [publications, Selected Publications]
   # - [NEWPAGE, NEWPAGE]
   - [teaching, Teaching Experience]
   - [industry, Industry Experience]
@@ -190,25 +190,27 @@ teaching:
 
 publications:
   name: "B. Amos"
-  categories:
-    - heading: Conference Proceedings
-      prefix: C
-      file: conference.bib
+  file: selected.bib
+
+  # categories:
+  #   - heading: Conference Proceedings
+  #     prefix: C
+  #     file: conference.bib
     # - heading: Journal Articles
       # prefix: J
       # file: journal.bib
-    - heading: Workshop, Symposium, and Short Papers
-      prefix: W
-      file: short.bib
-    - heading: Magazine Articles
-      prefix: M
-      file: magazine.bib
-    - heading: Tech Reports
-      prefix: T
-      file: tech-reports.bib
-    - heading: Posters
-      prefix: P
-      file: posters.bib
+    # - heading: Workshop, Symposium, and Short Papers
+    #   prefix: W
+    #   file: short.bib
+    # - heading: Magazine Articles
+    #   prefix: M
+    #   file: magazine.bib
+    # - heading: Tech Reports
+    #   prefix: T
+    #   file: tech-reports.bib
+    # - heading: Posters
+    #   prefix: P
+    #   file: posters.bib
 
 
 coursework:

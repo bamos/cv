@@ -3,13 +3,19 @@
 ~< block body >~
 \renewcommand*{\bibfont}{\small}
 
+<#
 ~< for p in items.categories >~
 \subsection{<<p.heading>>}
 \begin{refsection}[publications/<<p.file>>]
   \nocite{*}
   \printbibliography[heading=none,prefixnumbers=<<p.prefix>>]
 \end{refsection}
-
 ~< endfor >~
+#>
+
+\begin{refsection}[publications/<<content.file>>]
+  \nocite{*}
+  \printbibliography[heading=none,prefixnumbers=]
+\end{refsection}
 
 ~< endblock body >~
