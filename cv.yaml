@@ -20,19 +20,29 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 
 # (tag, section type, title)
 order:
-  # - [interests, Research Interests]
+  - [interests, About]
   - [education, Education]
   - [research, Research Experience]
-  # - [NEWPAGE, NEWPAGE]
-  - [publications, Selected Publications]
-  # - [NEWPAGE, NEWPAGE]
+  - [selected_publications, Selected Publications]
+  - [NEWPAGE, NEWPAGE]
   - [teaching, Teaching Experience]
   - [industry, Industry Experience]
   # - [projects, Projects]
   # - [coursework, CMU Graduate Coursework]
   - [honors, Honors \& Awards]
   - [skills, Skills]
+  # - [all_publications, All Publications]
 #  - [activities, Activities]
+
+interests:
+  I am a third-year Computer Science Ph.D. student at Carnegie Mellon University.
+  I work with Zico Kolter on machine learning and optimization and am
+  supported by an NSF graduate research fellowship.
+  I am particularly interested in improving our understanding of important
+  modeling problems in computer vision, language, and reinforcement learning
+  through the use of deep learning, optimization (sometimes convex),
+  theory, and statistics.
+
 
 education:
   - school: Carnegie Mellon University
@@ -188,29 +198,30 @@ teaching:
     short: VT CS 2114
     position: TA
 
-publications:
+selected_publications:
   name: "B. Amos"
   file: selected.bib
 
-  # categories:
-  #   - heading: Conference Proceedings
-  #     prefix: C
-  #     file: conference.bib
+all_publications:
+  categories:
+    - heading: Conference Proceedings
+      prefix: C
+      file: conference.bib
     # - heading: Journal Articles
-      # prefix: J
-      # file: journal.bib
-    # - heading: Workshop, Symposium, and Short Papers
-    #   prefix: W
-    #   file: short.bib
-    # - heading: Magazine Articles
-    #   prefix: M
-    #   file: magazine.bib
-    # - heading: Tech Reports
-    #   prefix: T
-    #   file: tech-reports.bib
-    # - heading: Posters
-    #   prefix: P
-    #   file: posters.bib
+    #   prefix: J
+    #   file: journal.bib
+    - heading: Workshop, Symposium, and Short Papers
+      prefix: W
+      file: short.bib
+    - heading: Magazine Articles
+      prefix: M
+      file: magazine.bib
+    - heading: Tech Reports
+      prefix: T
+      file: tech-reports.bib
+    - heading: Posters
+      prefix: P
+      file: posters.bib
 
 
 coursework:
