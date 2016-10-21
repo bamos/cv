@@ -38,7 +38,8 @@ about:
   I am a third-year Computer Science Ph.D. student at Carnegie Mellon University
   and am supported by an NSF graduate research fellowship.
   I spent the first two years of my Ph.D. working between mobile computing
-  and machine learning and I now work with \href{http://zicokolter.com/}{Zico Kolter}
+  and applied machine learning and I now work
+  with \href{http://zicokolter.com/}{Zico Kolter}
   on machine learning and optimization.
   I am particularly interested in improving our understanding of important
   modeling problems in computer vision, language, and reinforcement learning
@@ -86,7 +87,7 @@ research:
     title: Research Assistant
     advisor: Prof. Mahadev Satyanarayanan
     dates: Aug 2014 -- Apr 2016
-    area: Machine learning and mobile computing
+    area: Applied machine learning and mobile computing
     details:
       - |
           Face recognition with deep neural networks:
