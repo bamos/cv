@@ -211,7 +211,7 @@ class RenderContext(object):
 
             section_data = {'name': section_title}
             section_content = None if section_tag == "NEWPAGE" else yaml_data[section_tag]
-            if section_tag == 'interests':
+            if section_tag == 'about':
                 section_template_name = "section" + self._file_ending
                 section_data['data'] = section_content
             elif section_tag in ['coursework', 'education', 'honors',
@@ -279,6 +279,7 @@ MARKDOWN_CONTEXT = RenderContext(
         lstrip_blocks=True
     ),
     [
+        (r'\\\\\[[^\]]*]', '\n'),  # newlines
         (r'\\ ', ' '),  # spaces
         (r'\\&', '&'),  # unescape &
         (r'\\\$', '\$'),  # unescape $
@@ -293,6 +294,7 @@ MARKDOWN_CONTEXT = RenderContext(
         ('--', '-'),  # en dash
         (r'``([^\']*)\'\'', r'"\1"'),  # quotes
         (r'\\url{([^}]*)}', r'[\1](\1)'),  # urls
+        (r'\\href{([^}]*)}{([^}]*)}', r'[\2](\1)'),  # urls
         (r'\{([^}]*)\}', r'\1'),  # Brackets.
     ]
 )
