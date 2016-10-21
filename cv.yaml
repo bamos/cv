@@ -35,10 +35,11 @@ order:
 #  - [activities, Activities]
 
 about:
-  I am a third-year Computer Science Ph.D. student at Carnegie Mellon University.
-  I work with \href{http://zicokolter.com/}{Zico Kolter} on machine learning
-  and optimization and am
-  supported by an NSF graduate research fellowship.
+  I am a third-year Computer Science Ph.D. student at Carnegie Mellon University
+  and am supported by an NSF graduate research fellowship.
+  I spent the first two years of my Ph.D. working between mobile computing
+  and machine learning and I now work with \href{http://zicokolter.com/}{Zico Kolter}
+  on machine learning and optimization
   I am particularly interested in improving our understanding of important
   modeling problems in computer vision, language, and reinforcement learning
   through the use of deep learning, optimization (sometimes convex),
