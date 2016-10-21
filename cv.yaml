@@ -20,7 +20,7 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 
 # (tag, section type, title)
 order:
-  - [interests, About]
+  - [about, NONE]
   - [education, Education]
   - [research, Research Experience]
   - [selected_publications, Selected Publications]
@@ -28,21 +28,28 @@ order:
   - [teaching, Teaching Experience]
   - [industry, Industry Experience]
   # - [projects, Projects]
-  # - [coursework, CMU Graduate Coursework]
+  - [coursework, CMU Graduate Coursework]
   - [honors, Honors \& Awards]
   - [skills, Skills]
   # - [all_publications, All Publications]
 #  - [activities, Activities]
 
-interests:
+about:
   I am a third-year Computer Science Ph.D. student at Carnegie Mellon University.
-  I work with Zico Kolter on machine learning and optimization and am
+  I work with \href{http://zicokolter.com/}{Zico Kolter} on machine learning
+  and optimization and am
   supported by an NSF graduate research fellowship.
   I am particularly interested in improving our understanding of important
   modeling problems in computer vision, language, and reinforcement learning
   through the use of deep learning, optimization (sometimes convex),
-  theory, and statistics.
+  theory, and statistics. \\[0.5em]
 
+  I strongly believe in open science and reproducible research
+  and actively publish code on \href{https://github.com/bamos}{my Github profile}.
+  I am also the author of
+  \href{https://cmusatyalab.github.io/openface/}{OpenFace},
+  which is an open source face recognition project that
+  uses deep learning.
 
 education:
   - school: Carnegie Mellon University
@@ -78,7 +85,7 @@ research:
     title: Research Assistant
     advisor: Prof. Mahadev Satyanarayanan
     dates: Aug 2014 -- Apr 2016
-    area: Machine learning, computer vision, and mobile computing
+    area: Machine learning and mobile computing
     details:
       - |
           Face recognition with deep neural networks:
@@ -225,6 +232,21 @@ all_publications:
 
 
 coursework:
+  - semester: F2016
+    name: Advanced Machine Learning (10-715, Au)
+    instructor: B. Poczos
+  - semester: F2016
+    name: Intermediate Statistics (10-705, Au)
+    instructor: L. Wasserman
+  - semester: F2016
+    name: Topics in Deep Learning (10-807)
+    instructor: R. Salakhutdinov
+  - semester: S2016
+    name: Machine Learning (10-701, Au)
+    instructor: T. Mitchell
+  - semester: S2016
+    name: Computer Vision (16-720, Au)
+    instructor: D. Ramanan
   - semester: F2015
     name: Convex Optimization (10-725)
     instructor: R. J. Tibshirani
@@ -238,7 +260,7 @@ coursework:
     name: Optimizing Compilers for Modern Architecture (15-745)
     instructor: T. Mowry
   - semester: F2014
-    name: Advanced Operating Systems and Distributed Systems (15-712)
+    name: Advanced Operating and Distributed Systems (15-712)
     instructor: D. Andersen
   - semester: F2014
     name: Mobile and Pervasive Computing (15-812)
