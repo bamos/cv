@@ -252,12 +252,12 @@ coursework:
   - semester: F2016
     name: Topics in Deep Learning (10-807)
     instructor: R. Salakhutdinov
-  - semester: S2016
-    name: Machine Learning (10-701, Au)
-    instructor: T. Mitchell
-  - semester: S2016
-    name: Computer Vision (16-720, Au)
-    instructor: D. Ramanan
+  # - semester: S2016
+  #   name: Machine Learning (10-701, Au) # Informal
+  #   instructor: T. Mitchell
+  # - semester: S2016
+  #   name: Computer Vision (16-720, Au) # Informal
+  #   instructor: D. Ramanan
   - semester: F2015
     name: Convex Optimization (10-725)
     instructor: R. J. Tibshirani
