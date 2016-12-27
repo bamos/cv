@@ -207,6 +207,10 @@ industry:
       #   and hard links.
 
 teaching:
+  - semester: S2017
+    name: Graduate AI
+    short: CMU 15-780
+    position: TA
   - semester: S2016
     name: Distributed Systems
     short: CMU 15-440/640
@@ -243,21 +247,18 @@ all_publications:
 
 
 coursework:
-  - semester: F2016
-    name: Advanced Machine Learning (10-715, Au)
-    instructor: B. Poczos
+  - semester: S2017
+    name: Statistical Machine Learning (10-702, Au)
+    instructor: L. Wasserman
+  - semester: S2017
+    name: Deep Reinforcement Learning (10-703)
+    instructor: R. Salakhutdinov and A. Fragkiadaki
   - semester: F2016
     name: Intermediate Statistics (10-705, Au)
     instructor: L. Wasserman
   - semester: F2016
     name: Topics in Deep Learning (10-807)
     instructor: R. Salakhutdinov
-  # - semester: S2016
-  #   name: Machine Learning (10-701, Au) # Informal
-  #   instructor: T. Mitchell
-  # - semester: S2016
-  #   name: Computer Vision (16-720, Au) # Informal
-  #   instructor: D. Ramanan
   - semester: F2015
     name: Convex Optimization (10-725)
     instructor: R. J. Tibshirani
