@@ -37,7 +37,7 @@ order:
 about: '
   I am a third-year Computer Science Ph.D. student at Carnegie Mellon University
   and am supported by an NSF graduate research fellowship.
-  I spent the first two years of my Ph.D. working between mobile computing
+  I spent the first two years of my Ph.D. working between mobile systems
   and applied machine learning and I now work
   with \href{http://zicokolter.com/}{Zico Kolter}
   on machine learning and optimization.
@@ -96,7 +96,7 @@ research:
     title: Research Assistant
     advisor: Prof. Mahadev Satyanarayanan
     dates: Aug 2014 -- Apr 2016
-    area: Applied machine learning and mobile computing
+    area: Applied machine learning and mobile systems
     details:
       - |
           Face recognition with deep neural networks:
@@ -106,7 +106,7 @@ research:
     title: Undergraduate Research Assistant
     advisor: Prof. Jules White
     dates: May 2012 -- May 2014
-    area: Mobile computing, cyber-physical systems, and security
+    area: Mobile systems, cyber-physical systems, and security
     details:
       - Android malware detection research using
         a distributed {\bf Actor-based Scala} system.
