@@ -1,0 +1,11 @@
+~< extends "section.tex" >~
+
+~< block body >~
+\renewcommand*{\bibfont}{\small}
+
+\begin{refsection}[publications/<<content.file>>]
+\nocite{*}
+\printbibliography[heading=none,prefixnumbers=]
+\end{refsection}
+
+~< endblock body >~

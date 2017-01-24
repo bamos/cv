@@ -10,6 +10,7 @@ social:
   github: bamos
   twitter: brandondamos
   linkedin: bdamos
+  google_scholar: CZwrwHAAAAAJ
 # Erdős  number is at most 4.
 # (Brandon Amos -> Layne Watson -> Leroy Kelly -> Zoltán Füredi -> Paul Erdős )
 
@@ -31,7 +32,7 @@ order:
   - [coursework, CMU Graduate Coursework]
   - [honors, Honors \& Awards]
   - [skills, Skills]
-  # - [all_publications, All Publications]
+  - [all_publications, All Publications]
 #  - [activities, Activities]
 
 about: '
@@ -152,11 +153,8 @@ industry:
     dates: May 2014 -- Aug 2014
     area: Distributed Systems
     details:
-      - Built and released {\it Spindle} as an open source web analytics
-        processing engine using {\bf Scala},
-        {\bf Spark}, {\bf Spray}, and {\bf Parquet} on {\bf HDFS}.
-        Spindle is available on GitHub at
-        \url{http://github.com/adobe-research/spindle}.
+      - I built a web analytics processing engine using {\bf Scala},
+        {\bf Spark}, {\bf Spray}, {\bf Parquet}, and {\bf HDFS}.
   - place: Snowplow Analytics
     location: London, United Kingdom (Remote)
     title: Software Engineer Intern
@@ -164,36 +162,39 @@ industry:
     details:
     - Open-source {\bf Scala} development with a startup on the
       Snowplow analytics platform.
-      My contributions are available at
+      My commits are online at
       \url{https://github.com/snowplow/snowplow/commits?author=bamos}.
     - Developed a new server using {\bf Spray} and {\bf Actors} to store
-      {\bf Apache Thrift} events on {\bf Amazon Kinesis}.
-    - "Completed project ahead of schedule, and also helped port Snowplow's
-    Scala enrichment process to Kinesis."
+      {\bf Thrift} events on {\bf Amazon Kinesis}.
+    # - "Helped port Snowplow's Scala enrichment process to Kinesis."
   - place: Qualcomm
     location: San Diego, California
     title: Software Engineer Intern
     dates: May 2013 -- Aug 2013
     details:
-    - Developed an XML modification {\bf web application} for
-      fuzz vector generation.
-      Implemented with client-side {\bf HTML} and {\bf js},
-      using {\bf D3} for graphics and {\bf Handlebars} for templating.
-    - Developed an XML-based grammar translator in {\bf C++} with
-      the {\bf Xerces} XML parser in {\bf Linux}.
-      Reimplemented in {\bf Python} using the {\bf ElementTree} XML API for
-      sophisticated analysis and tree transformations.
+    - "I created a specification format language translator for fuzz
+      testing with Python."
+    # - Developed an XML modification {\bf web application} for
+    #   fuzz vector generation.
+    #   Implemented with client-side {\bf HTML} and {\bf js},
+    #   using {\bf D3} for graphics and {\bf Handlebars} for templating.
+    # - Developed an XML-based grammar translator in {\bf C++} with
+    #   the {\bf Xerces} XML parser in {\bf Linux}.
+    #   Reimplemented in {\bf Python} using the {\bf ElementTree} XML API for
+    #   sophisticated analysis and tree transformations.
   - place: Phoenix Integration
     location: Blacksburg, Virginia
     title: Software Engineer Intern
     dates: May 2012 -- Aug 2012
     details:
-      - Developed industry software in
-        {\bf VC++}, {\bf VC\#}, {\bf Java}, and {\bf Tomcat}.
-      - Improved the testing ({\bf JUnit} and {\bf NUnit}) and installation
-        ({\bf Ant}, {\bf InstallShield}, and {\bf Make}) frameworks.
-      - Integrated a new licensing mode into CenterLink, a grid computing
-        application, using {\bf FLEXlm} and {\bf Java}.
+      - I developed industry software for software integration and
+        design process optimization in {\bf VC++}, {\bf VC\#}, and {\bf Java}.
+      # - Developed industry software in
+      #   {\bf VC++}, {\bf VC\#}, {\bf Java}, and {\bf Tomcat}.
+      # - Improved the testing ({\bf JUnit} and {\bf NUnit}) and installation
+      #   ({\bf Ant}, {\bf InstallShield}, and {\bf Make}) frameworks.
+      # - Integrated a new licensing mode into CenterLink, a grid computing
+      #   application, using {\bf FLEXlm} and {\bf Java}.
   - place: Sunapsys
     location: Vinton, Virginia
     title: Network Administrator Intern
@@ -225,6 +226,7 @@ selected_publications:
   file: selected.bib
 
 all_publications:
+  name: "B. Amos"
   categories:
     - heading: Conference Proceedings
       prefix: C

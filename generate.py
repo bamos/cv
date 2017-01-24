@@ -51,7 +51,7 @@ def get_pub_md(context, config):
             formatted_authors.append(new_auth)
         return formatted_authors
 
-    def _get_pub_str(pub, prefix, gidx):
+    def _get_pub_str(pub, prefix, gidx, includeImage):
         author_str = _get_author_str(pub['author'])
         # prefix = category['prefix']
         title = pub['title']
@@ -92,18 +92,31 @@ def get_pub_md(context, config):
 </div>
 '''.format(pub['ID'], abstract)
 
-        return '''
-    <tr>
-    <td class="col-md-3">{}</td>
-    <td>
-        <strong>{}</strong><br>
-        {}<br>
-        {}<br>
-        {}<br>
-        {}
-    </td>
-    </tr>
-    '''.format(imgStr, title, author_str, yearVenue, links, abstract)
+        if includeImage:
+            return '''
+<tr>
+<td class="col-md-3">{}</td>
+<td>
+    <strong>{}</strong><br>
+    {}<br>
+    {}<br>
+    {}<br>
+    {}
+</td>
+</tr>
+'''.format(imgStr, title, author_str, yearVenue, links, abstract)
+        else:
+            return '''
+<tr>
+<td>
+    <strong>{}</strong><br>
+    {}<br>
+    {}<br>
+    {}<br>
+    {}
+</td>
+</tr>
+'''.format(title, author_str, yearVenue, links, abstract)
 
     def load_and_replace(bibtex_file):
         with open(os.path.join('publications', bibtex_file), 'r') as f:
@@ -126,7 +139,8 @@ def get_pub_md(context, config):
             # sep = "<br><br>\n"
             sep = "\n"
             for i, pub in enumerate(pubs):
-                details += _get_pub_str(pub, category['prefix'], i + 1) + sep
+                details += _get_pub_str(pub, category['prefix'],
+                                        i + 1, includeImage=False) + sep
             type_content['details'] = details
             type_content['file'] = category['file']
             contents.append(type_content)
@@ -136,7 +150,7 @@ def get_pub_md(context, config):
         details = ""
         sep = "\n"
         for i, pub in enumerate(pubs):
-            details += _get_pub_str(pub, '', i + 1) + sep
+            details += _get_pub_str(pub, '', i + 1, includeImage=True) + sep
         contents['details'] = details
         contents['file'] = config['file']
 
@@ -225,8 +239,9 @@ class RenderContext(object):
                     section_data['content'] = section_content
                 elif self._file_ending == ".md":
                     section_data['content'] = get_pub_md(self, section_content)
+                section_data['scholar_id'] = yaml_data['social']['google_scholar']
                 section_template_name = os.path.join(
-                    self.SECTIONS_DIR, 'publications' + self._file_ending)
+                    self.SECTIONS_DIR, section_tag + self._file_ending)
             elif section_tag == 'NEWPAGE':
                 pass
             else:
