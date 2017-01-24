@@ -72,8 +72,7 @@ def get_pub_md(context, config):
         if 'abstract' in pub:
             links.append("""
 [<a href='javascript: none'
-    onclick=\'$(\"#abs_{}\").toggle()\'>abs</a>]
-""".format(pub['ID']))
+    onclick=\'$(\"#abs_{}{}\").toggle()\'>abs</a>]""".format(pub['ID'], prefix))
             abstract = context.make_replacements(pub['abstract'])
         if 'link' in pub:
             imgStr = "<a href=\'{}\' target='_blank'>{}</a> ".format(
@@ -87,10 +86,10 @@ def get_pub_md(context, config):
 
         if abstract:
             abstract = '''
-<div id="abs_{}" style="text-align: justify; display: none" markdown="1">
+<div id="abs_{}{}" style="text-align: justify; display: none" markdown="1">
 {}
 </div>
-'''.format(pub['ID'], abstract)
+'''.format(pub['ID'], prefix, abstract)
 
         if includeImage:
             return '''
