@@ -46,16 +46,12 @@ about: '
   I am particularly interested in improving our understanding of important
   modeling problems in computer vision, language, and reinforcement learning
   through the use of deep learning, optimization (sometimes convex),
-  theory, and statistics. \\[0.5em]
-
-  As an example, we''ve recently been exploring the intersection of
-  deep learning and convex optimization with input convex neural
-  networks (ICNNs): neural networks that are convex with respect
-  to some of the inputs.
-  Our preprint is available at
-  \href{https://arxiv.org/abs/1609.07152}{arXiv:1609.07152}
-  and shows applications to multi-label classification,
-  image completion, and continuous-action reinforcement learning. \\[0.5em]
+  theory, and statistics.
+  As examples, see our
+  \href{https://arxiv.org/abs/1609.07152}{input-convex neural network}
+  and
+  \href{https://arxiv.org/abs/1703.00443}{OptNet}
+  papers. \\[0.5em]
 
   I strongly believe in open science and reproducible research
   and actively publish code on \href{https://github.com/bamos}{my Github profile}.
