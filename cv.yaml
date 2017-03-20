@@ -229,6 +229,9 @@ selected_publications:
 all_publications:
   name: "B. Amos"
   categories:
+    - heading: Preprints and Tech Reports
+      prefix: P
+      file: tech-reports.bib
     - heading: Conference Proceedings
       prefix: C
       file: conference.bib
