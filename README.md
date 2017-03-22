@@ -119,3 +119,4 @@ Name | Stargazers | Description
 [terro/CV](https://github.com/terro/CV) | 27 | My cv template
 [there4/markdown-resume](https://github.com/there4/markdown-resume) | 749 | Generate a responsive CSS3 and HTML5 resume with Markdown, with optional PDF output.
 [zellux/resume](https://github.com/zellux/resume) | 134 | My resume, generated with moderncv
+[Maples7/barn](https://github.com/Maples7/barn) | 10 | A resume/CV generator, parsing information from YAML file to generate a static website which you can deploy on the Github Pages. Exactly like resume-version Hexo.
