@@ -240,9 +240,6 @@ all_publications:
     - heading: Magazine Articles
       prefix: M
       file: magazine.bib
-    - heading: Tech Reports
-      prefix: T
-      file: tech-reports.bib
     - heading: Posters
       prefix: P
       file: posters.bib
