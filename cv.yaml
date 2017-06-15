@@ -25,8 +25,8 @@ order:
   - [education, Education]
   - [research, Research Experience]
   - [selected_publications, Selected Publications]
-  - [teaching, Teaching Experience]
   - [NEWPAGE, NEWPAGE]
+  - [teaching, Teaching Experience]
   - [industry, Industry Experience]
   # - [projects, Projects]
   - [coursework, CMU Graduate Coursework]
@@ -89,6 +89,12 @@ research:
     advisor: Prof. Zico Kolter
     dates: Apr 2016 -- Present
     area: Machine learning and optimization
+  - place: Google DeepMind
+    location: London, UK
+    title: Research Intern
+    dates: May 2017 -- Sept 2017
+    advisor: Prof. Nando de Freitas
+    area: Machine and reinforcement learning
   - place: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     title: Research Assistant
@@ -250,7 +256,7 @@ coursework:
     name: Statistical Machine Learning (10-702, Au)
     instructor: L. Wasserman
   - semester: S2017
-    name: Deep Reinforcement Learning (10-703)
+    name: Deep Reinforcement Learning (10-703, Au)
     instructor: R. Salakhutdinov and A. Fragkiadaki
   - semester: F2016
     name: Intermediate Statistics (10-705, Au)

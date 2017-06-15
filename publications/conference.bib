@@ -1,3 +1,65 @@
+@inproceedings{amos2017optnet,
+  title = "{OptNet: Differentiable Optimization as a Layer in Neural Networks}",
+  author={Brandon Amos and J. Zico Kolter},
+  booktitle={ICML},
+  _venue={ICML},
+  codeurl={https://github.com/locuslab/optnet},
+  year={2017},
+  url={http://arxiv.org/abs/1703.00443},
+  abstract={
+    This paper presents OptNet, a network architecture that integrates
+    optimization problems (here, specifically in the form of quadratic programs)
+    as individual layers in larger end-to-end trainable deep networks.
+    These layers encode constraints and complex dependencies
+    between the hidden states that traditional convolutional and
+    fully-connected layers often cannot capture.
+    In this paper, we explore the foundations for such an architecture:
+    we show how techniques from sensitivity analysis, bilevel
+    optimization, and implicit differentiation can be used to
+    exactly differentiate through these layers and with respect
+    to layer parameters;
+    we develop a highly efficient solver for these layers that exploits fast
+    GPU-based batch solves within a primal-dual interior point method, and which
+    provides backpropagation gradients with virtually no additional cost on top of
+    the solve;
+    and we highlight the application of these approaches in several problems.
+    In one notable example, we show that the method is
+    capable of learning to play mini-Sudoku (4x4) given just input and output games,
+    with no a priori information about the rules of the game;
+    this highlights the ability of our architecture to learn hard
+    constraints better than other neural architectures.
+  }
+}
+
+
+@inproceedings{amos2017input,
+  title={Input Convex Neural Networks},
+  author={Brandon Amos and Lei Xu and J. Zico Kolter},
+  booktitle={ICML},
+  _venue={ICML},
+  codeurl={https://github.com/locuslab/icnn},
+  year={2017},
+  url={http://arxiv.org/abs/1609.07152},
+  abstract={
+    This paper presents the input convex neural network
+    architecture. These are scalar-valued (potentially deep) neural
+    networks with constraints on the network parameters such that the
+    output of the network is a convex function of (some of) the inputs.
+    The networks allow for efficient inference via optimization over some
+    inputs to the network given others, and can be applied to settings
+    including structured prediction, data imputation, reinforcement
+    learning, and others. In this paper we lay the basic groundwork for
+    these models, proposing methods for inference, optimization and
+    learning, and analyze their representational power. We show that many
+    existing neural network architectures can be made input-convex with
+    a minor modification, and develop specialized optimization
+    algorithms tailored to this setting. Finally, we highlight the
+    performance of the methods on multi-label prediction, image
+    completion, and reinforcement learning problems, where we show
+    improvement over the existing state of the art in many cases.
+  }
+}
+
 @inproceedings{zhao2016collapsed,
   title={{{Collapsed Variational Inference for Sum-Product Networks}}},
   author={Han Zhao and Tameem Adel and Geoff Gordon and Brandon Amos},
