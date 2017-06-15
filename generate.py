@@ -229,6 +229,11 @@ class RenderContext(object):
                     continue
                 section_template_name = "section" + self._file_ending
                 section_data['data'] = section_content
+            elif section_tag == 'news':
+                if self._file_ending == '.tex':
+                    continue
+                section_template_name = os.path.join(self.SECTIONS_DIR, 'news.md')
+                section_data['items'] = section_content
             elif section_tag in ['coursework', 'education', 'honors',
                                  'industry', 'research',
                                  'skills', 'teaching']:

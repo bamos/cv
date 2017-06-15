@@ -22,6 +22,7 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 # (tag, section type, title)
 order:
   - [about, NONE]
+  - [news, News]
   - [education, Education]
   - [research, Research Experience]
   - [selected_publications, Selected Publications]
@@ -59,6 +60,14 @@ about: '
   \href{https://cmusatyalab.github.io/openface/}{OpenFace},
   which is an open source face recognition project that
   uses deep learning.'
+
+news:
+  - date: June 2017
+    info: "Our ICNN and OptNet papers have been accepted to ICML and
+    the camera-ready versions are available on arXiv."
+  - date: May 2017
+    info: "I am interning at Google DeepMind in London this summer
+    with Nando de Freitas."
 
 education:
   - school: Carnegie Mellon University
