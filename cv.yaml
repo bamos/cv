@@ -38,11 +38,9 @@ order:
 #  - [activities, Activities]
 
 about: '
-  I am a third-year Computer Science Ph.D. student at Carnegie Mellon University
+  I am a Computer Science Ph.D. student at Carnegie Mellon University
   and am supported by an NSF graduate research fellowship.
-  I spent the first two years of my Ph.D. working between mobile systems
-  and applied machine learning and I now work
-  with \href{http://zicokolter.com/}{Zico Kolter}
+  I work with \href{http://zicokolter.com/}{Zico Kolter}
   on machine learning and optimization.
   I am particularly interested in improving our understanding of important
   modeling problems in computer vision, language, and reinforcement learning
@@ -101,7 +99,7 @@ research:
   - place: Google DeepMind
     location: London, UK
     title: Research Intern
-    dates: May 2017 -- Sept 2017
+    dates: May 2017 -- Oct 2017
     advisor: Prof. Nando de Freitas
     area: Machine and reinforcement learning
   - place: Carnegie Mellon University
