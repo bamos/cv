@@ -38,7 +38,7 @@ order:
 #  - [activities, Activities]
 
 about: '
-  I am a Computer Science Ph.D. student at Carnegie Mellon University
+  I am a fourth-year Computer Science Ph.D. student at Carnegie Mellon University
   and am supported by an NSF graduate research fellowship.
   I work with \href{http://zicokolter.com/}{Zico Kolter}
   on machine learning and optimization.
@@ -57,9 +57,17 @@ about: '
   I am also the author of
   \href{https://cmusatyalab.github.io/openface/}{OpenFace},
   which is an open source face recognition project that
-  uses deep learning.'
+  uses deep learning.<br><br>'
 
 news:
+  - date: Nov 2017
+    info: "I will be at NIPS 2017 this year.
+    Come see our
+    <a href='https://papers.nips.cc/paper/7132-task-based-end-to-end-model-learning-in-stochastic-optimization'>Task-based End-to-end Model Learning in Stochastic Optimization</a>
+    work at the main conference and our (unpublished)
+    End-to-end Model Predictive Control work at the
+    deep reinforcement learning symposium.
+    "
   - date: June 2017
     info: "Our ICNN and OptNet papers have been accepted to ICML and
     the camera-ready versions are available on arXiv."
