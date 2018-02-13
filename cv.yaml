@@ -61,6 +61,9 @@ about: '
   uses deep learning.<br><br>'
 
 news:
+  - date: Feb 2018
+    info: "I am interning at Intel Labs in Santa Clara this summer
+    with <a href='http://vladlen.info/'>Vladlen Koltun</a>."
   - date: Nov 2017
     info: "I will be at NIPS 2017 this year.
     Come see our
@@ -73,8 +76,9 @@ news:
     info: "Our ICNN and OptNet papers have been accepted to ICML and
     the camera-ready versions are available on arXiv."
   - date: May 2017
-    info: "I am interning at Google DeepMind in London this summer
-    with Nando de Freitas."
+    info: "I am interning at <a href='https://deepmind.com/'>Google DeepMind</a>
+    in London this summer with
+    <a href='http://www.cs.ox.ac.uk/people/nando.defreitas/'>Nando de Freitas</a>."
 
 education:
   - school: Carnegie Mellon University
@@ -102,19 +106,25 @@ research:
   - place: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     title: Research Assistant
-    advisor: Prof. Zico Kolter
+    advisor: Zico Kolter
     dates: Apr 2016 -- Present
     area: Machine learning and optimization
+  - place: Intel Labs
+    location: Santa Clara, California
+    title: Research Intern
+    dates: June 2018 - Sept 2018
+    advisor: Vladlen Koltun
+    area: Machine learning
   - place: Google DeepMind
     location: London, UK
     title: Research Intern
     dates: May 2017 -- Oct 2017
-    advisor: Prof. Nando de Freitas
+    advisor: Nando de Freitas
     area: Machine and reinforcement learning
   - place: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     title: Research Assistant
-    advisor: Prof. Mahadev Satyanarayanan
+    advisor: Mahadev Satyanarayanan
     dates: Aug 2014 -- Apr 2016
     area: Applied machine learning and mobile systems
     details:
@@ -124,7 +134,7 @@ research:
   - place: Virginia Tech
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
-    advisor: Prof. Jules White
+    advisor: Jules White
     dates: May 2012 -- May 2014
     area: Mobile systems, cyber-physical systems, and security
     details:
@@ -141,7 +151,7 @@ research:
   - place: Virginia Tech
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
-    advisor: Prof. Layne Watson
+    advisor: Layne Watson
     dates: Jan 2013 -- May 2014
     area: Scientific computing, global/stochastic optimization, and bioinformatics
     details:
@@ -154,7 +164,7 @@ research:
   - place: Virginia Tech
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
-    advisor: Prof. Binoy Ravindran
+    advisor: Binoy Ravindran
     dates: Nov 2012 -- Mar 2014
     area: Heterogeneous compilers
     details:
