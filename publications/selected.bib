@@ -1,5 +1,39 @@
+@inproceedings{amos2018learning,
+  title={{{Learning Awareness Models}}},
+  author={Brandon Amos and Laurent Dinh and Serkan Cabi and Thomas Roth{\"o}rl and Sergio G{\'o}mez Colmenarejo and Alistair Muldal and Tom Erez and Yuval Tassa and Nando de Freitas and Misha Denil},
+  booktitle={International Conference on Learning Representations},
+  year={2018},
+  url={https://openreview.net/forum?id=r1HhRfWRZ},
+  _venue={ICLR},
+  abstract={
+    We consider the setting of an agent with a fixed body interacting with an
+    unknown and uncertain external world. We show that models
+    trained to predict proprioceptive information about the
+    agent's body come to represent objects in the external world.
+    In spite of being trained with only internally available
+    signals, these dynamic body models come to represent external
+    objects through the necessity of predicting their effects on
+    the agent's own body. That is, the model learns holistic
+    persistent representations of objects in the world, even
+    though the only training signals are body signals. Our
+    dynamics model is able to successfully predict distributions
+    over 132 sensor readings over 100 steps into the future and we
+    demonstrate that even when the body is no longer in contact
+    with an object, the latent variables of the dynamics model
+    continue to represent its shape. We show that active data
+    collection by maximizing the entropy of predictions about the
+    body---touch sensors, proprioception and vestibular
+    information---leads to learning of dynamic models that show
+    superior performance when used for control. We also collect
+    data from a real robotic hand and show that the same models
+    can be used to answer questions about properties of objects in
+    the real world. Videos with qualitative results of our models
+    are available <a href="https://goo.gl/mZuqAV">here</a>.
+  }
+}
+
 @inproceedings{donti2017task,
-  title={Task-based End-to-end Model Learning},
+  title={{{Task-based End-to-end Model Learning}}},
   author={Donti, Priya L and Amos, Brandon and Kolter, J Zico},
   year={2017},
   booktitle={NIPS},
@@ -24,7 +58,7 @@
 }
 
 @inproceedings{amos2017optnet,
-  title = "{OptNet: Differentiable Optimization as a Layer in Neural Networks}",
+  title = {{{OptNet: Differentiable Optimization as a Layer in Neural Networks}}},
   author={Brandon Amos and J. Zico Kolter},
   booktitle={ICML},
   _venue={ICML},
@@ -58,7 +92,7 @@
 
 
 @inproceedings{amos2017input,
-  title={Input Convex Neural Networks},
+  title={{{Input Convex Neural Networks}}},
   author={Brandon Amos and Lei Xu and J. Zico Kolter},
   booktitle={ICML},
   _venue={ICML},
@@ -111,11 +145,11 @@
 }
 
 @techreport{amos2016openface,
-  title={OpenFace: A general-purpose face recognition
-    library with mobile applications},
+  title={{{OpenFace: A general-purpose face recognition
+    library with mobile applications}}},
   author={Amos, Brandon and Bartosz Ludwiczuk and Satyanarayanan, Mahadev},
   _venue={CMU},
-  year={2016},
+  year=2016,
   institution={Technical Report CMU-CS-16-118, CMU School of Computer Science},
   url={http://reports-archive.adm.cs.cmu.edu/anon/anon/2016/CMU-CS-16-118.pdf},
   codeurl={https://cmusatyalab.github.io/openface},

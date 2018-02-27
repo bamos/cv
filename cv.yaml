@@ -61,6 +61,12 @@ about: '
   uses deep learning.<br><br>'
 
 news:
+  - date: Mar 2018
+    info: "I will be at ICLR this year presenting
+    my DeepMind internship paper
+    <a href='https://openreview.net/forum?id=r1HhRfWRZ'>
+      Learning Awareness Models
+    </a>."
   - date: Feb 2018
     info: "I am interning at Intel Labs in Santa Clara this summer
     with <a href='http://vladlen.info/'>Vladlen Koltun</a>."
@@ -263,9 +269,9 @@ all_publications:
     - heading: Conference Proceedings
       prefix: C
       file: conference.bib
-    # - heading: Journal Articles
-    #   prefix: J
-    #   file: journal.bib
+    - heading: Journal Articles
+      prefix: J
+      file: journal.bib
     - heading: Workshop, Symposium, and Short Papers
       prefix: W
       file: short.bib
@@ -273,7 +279,7 @@ all_publications:
       prefix: M
       file: magazine.bib
     - heading: Posters
-      prefix: P
+      prefix: S
       file: posters.bib
 
 
