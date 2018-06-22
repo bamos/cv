@@ -38,20 +38,20 @@ order:
 #  - [activities, Activities]
 
 about: '
-  I am a fourth-year Computer Science Ph.D. student at Carnegie Mellon University
+  I am a fifth- and final-year Computer Science Ph.D. student
+  at Carnegie Mellon University
   and am supported by an NSF graduate research fellowship.
-  I spent the first two years of my Ph.D. working on mobile systems
-  and now work with \href{http://zicokolter.com/}{Zico Kolter}
-  on machine learning and optimization.
-  I am particularly interested in improving our understanding of important
+  I work with \href{http://zicokolter.com/}{Zico Kolter}
+  on machine learning and optimization and
+  am particularly interested in improving our understanding of important
   modeling problems in computer vision, language, and reinforcement learning
   through the use of deep learning, optimization (sometimes convex),
   theory, and statistics.
-  As examples, see our
-  \href{https://arxiv.org/abs/1609.07152}{input-convex neural network}
+  My most recent work is on
+  \href{https://arxiv.org/abs/1609.07152}{input-convex neural networks}
   and
-  \href{https://arxiv.org/abs/1703.00443}{OptNet}
-  papers. \\[0.5em]
+  \href{https://arxiv.org/abs/1703.00443}{OptNet layers}.
+  \\[0.5em]
 
   I strongly believe in open science and reproducible research
   and actively publish code on \href{https://github.com/bamos}{my Github profile}.
@@ -89,7 +89,7 @@ education:
   - school: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     degree: Ph.D. in Computer Science
-    dates: Aug 2014 -- Present
+    dates: Aug 2014 -- May 2019 (expected)
 
   - school: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
