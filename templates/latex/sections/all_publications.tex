@@ -13,7 +13,10 @@ Google Scholar ID:
 \subsection{<<p.heading>>}
 \begin{refsection}[publications/<<p.file>>]
 \nocite{*}
-\printbibliography[heading=none,prefixnumbers=<<p.prefix>>]
+% \printbibliography[heading=none,prefixnumbers=<<p.prefix>>]
+\newrefcontext[labelprefix=<<p.prefix>>]
+% \assignrefcontextkeyws[labelprefix=<<p.prefix>>]{<<p.prefix>>}
+\printbibliography[heading=none] %, prefixnumbers=<<p.prefix>>]
 \end{refsection}
 ~< endfor >~
 
