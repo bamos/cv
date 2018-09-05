@@ -1,12 +1,23 @@
-@article{brown2018depth,
+@inproceedings{brown2018depth,
   title={Depth-Limited Solving for Imperfect-Information Games},
   author={Brown, Noam and Sandholm, Tuomas and Amos, Brandon},
-  journal={arXiv preprint arXiv:1805.08195},
   year={2018},
-  _venue={arXiv},
+  booktitle={NIPS},
+  _venue={NIPS},
   url={http://arxiv.org/abs/1805.08195},
   abstract={
 A fundamental challenge in imperfect-information games is that states do not have well-defined values. As a result, depth-limited search algorithms used in single-agent settings and perfect-information games do not apply. This paper introduces a principled way to conduct depth-limited solving in imperfect-information games by allowing the opponent to choose among a number of strategies for the remainder of the game at the depth limit. Each one of these strategies results in a different set of values for leaf nodes. This forces an agent to be robust to the different strategies an opponent may employ. We demonstrate the effectiveness of this approach by building a master-level heads-up no-limit Texas hold'em poker AI that defeats two prior top agents using only a 4-core CPU and 16 GB of memory. Developing such a powerful agent would have previously required a supercomputer.
+  }
+}
+
+@inproceedings{amos2018end,
+  title={{{Differentiable MPC for End-to-end Planning and Control}}},
+  author={Amos, Brandon and Sacks, Jacob and Rodriguez, Ivan Dario Jimenez and Boots, Byron and Kolter, J Zico},
+  year={2018},
+  booktitle={NIPS},
+  _venue={NIPS},
+  abstract={
+  In this paper we present foundations for using model predictive control (MPC) as a differentiable policy class in reinforcement learning. Specifically, we differentiate through MPC by using the KKT conditions of the convex approximation at a fixed point of the solver. Using this strategy, we are able to learn the cost and dynamics of a controller via end-to-end learning in a larger system. We empirically show results in an imitation learning setting, demonstrating that we can recover the underlying dynamics and cost more efficiently and reliably than with a generic neural network policy class
   }
 }
 

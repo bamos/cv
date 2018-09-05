@@ -61,6 +61,11 @@ about: '
   uses deep learning.<br><br>'
 
 news:
+  - date: Sept 2018
+    info: "I will be attending NIPS 2018 this year. Come see our work on
+      1) differentiable model-predictive control and
+      2) depth-limited solving for imperfect-information games.
+    "
   - date: Mar 2018
     info: "I will be at ICLR this year presenting
     my DeepMind internship paper
