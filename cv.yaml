@@ -56,29 +56,35 @@ about: '
   my \href{https://scholar.google.com/citations?user=d8gdZR4AAAAJ}{Google Scholar} page.
   <br><br>
   My research straddles <b>applied and theoretical contributions</b>.
-  As an undergraduate I studied \href{https://vtechworks.lib.vt.edu/bitstream/handle/10919/49672/qnTOMS14.pdf}{Quasi-Newton Methods for Stochastic Optimization}.
-  I value important <b>societal applications</b> of my work and
-  spent the first two years of my Ph.D. (from 2014-2016)
-  working on the machine learning and computer vision technologies
-  underlying <b>mobile and wearable cognitive assistance systems,</b>
-  publishing papers at <b>systems- and mobile-oriented</b> venues during this time.
-  Over the past three years (since 2016) I have gone deeper into
+  Over the past three years (since 2016) I have focused on
   foundational contributions to the <b>NIPS, ICML, and ICLR communities</b>.
   The core pillars of my dissertation are
-  my ICML 2017 papers on
+  my <b>ICML 2017</b> papers on
   \href{https://arxiv.org/abs/1609.07152}{input-convex neural networks}
   and
   \href{https://arxiv.org/abs/1703.00443}{OptNet layers}.
-  <br><br>
-  I have worked on <b>reinforcement learning</b>
+  My <b>NIPS 2018</b> paper uses OptNet as a foundation to
+  <b>combine model-free and model-based</b> reinforcement learning.
+  I have also worked on <b>reinforcement learning</b>
   during an internship
   with \href{https://www.cs.ubc.ca/~nando/}{Nando de Freitas}
   at <b>DeepMind</b> in 2017,
-  publishing an ICLR 2018 paper
+  publishing an <b>ICLR 2018</b> paper
   \href{https://arxiv.org/abs/1804.06318}{Learning Awareness Models},
   and on <b>combinatorial and discrete learning problems</b>
   with \href{http://vladlen.info}{Vladlen Koltun}
   at <b>Intel Labs</b> in 2018.
+  <br><br>
+  Before this, as an undergraduate (from 2011-2014) I focused on compilers,
+  distributed systems, mobile computing, and
+  \href{https://vtechworks.lib.vt.edu/bitstream/handle/10919/49672/qnTOMS14.pdf}{Quasi-Newton Methods for Stochastic Optimization}.
+  I value important <b>societal applications</b> of my work and
+  spent the first two years of my Ph.D. (from 2014-2016)
+  working on the machine learning and computer vision technologies
+  underlying <b>mobile and wearable cognitive assistance systems</b>
+  with
+  \href{https://www.cs.cmu.edu/~satya/}{Mahadev Satyanarayanan},
+  publishing papers at <b>systems- and mobile-oriented</b> venues during this time.
   <br><br>
   I strongly believe in <b>open science, reproducible research,
   and well-engineered projects</b>
@@ -87,6 +93,9 @@ about: '
   \href{https://cmusatyalab.github.io/openface/}{OpenFace} in 2014,
   which was the first open-source deep-learning-based
   face recognition project.
+  I <b>deeply value collaboration</b> and believe it catalyzes scientific
+  progress and have been involved as a non-primary co-author on
+  <b>~15 papers</b> over the past few years.
   <br><br>
   <b>I am on the job market.</b>
   For at least the next decade of my career I want to stay
@@ -147,7 +156,7 @@ education:
     majorGPA: 4.00/4.00
 
   - school: Northside High School (Roanoke, Virginia)
-    dates: May 2011
+    dates: Aug 2007 -- May 2011
 
 research:
   - place: Carnegie Mellon University
