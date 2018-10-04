@@ -67,7 +67,10 @@ about: '
   <b>combine model-free and model-based</b> reinforcement learning.
   I have also worked on <b>reinforcement learning</b>
   during an internship
-  with \href{https://www.cs.ubc.ca/~nando/}{Nando de Freitas}
+  with
+  \href{https://www.cs.ubc.ca/~nando/}{Nando de Freitas}
+  and
+  \href{http://mdenil.com/}{Misha Denil}
   at <b>DeepMind</b> in 2017,
   publishing an <b>ICLR 2018</b> paper
   \href{https://arxiv.org/abs/1804.06318}{Learning Awareness Models},
@@ -80,7 +83,7 @@ about: '
   \href{https://vtechworks.lib.vt.edu/bitstream/handle/10919/49672/qnTOMS14.pdf}{Quasi-Newton Methods for Stochastic Optimization}.
   I value important <b>societal applications</b> of my work and
   spent the first two years of my Ph.D. (from 2014-2016)
-  working on the machine learning and computer vision technologies
+  working on applied machine learning and computer vision technologies
   underlying <b>mobile and wearable cognitive assistance systems</b>
   with
   \href{https://www.cs.cmu.edu/~satya/}{Mahadev Satyanarayanan},
@@ -90,7 +93,7 @@ about: '
   and well-engineered projects</b>
   and actively publish code on \href{https://github.com/bamos}{my Github profile}.
   This led me to create
-  \href{https://cmusatyalab.github.io/openface/}{OpenFace} in 2014,
+  \href{https://cmusatyalab.github.io/openface/}{OpenFace} in 2016,
   which was the first open-source deep-learning-based
   face recognition project.
   I <b>deeply value collaboration</b> and believe it catalyzes scientific
