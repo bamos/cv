@@ -33,7 +33,8 @@ order:
   - [coursework, CMU Graduate Coursework]
   - [honors, Honors \& Awards]
   - [skills, Skills]
-  - [NEWPAGE, NEWPAGE]
+  - [service, Service]
+  # - [NEWPAGE, NEWPAGE]
   - [all_publications, All Publications]
 #  - [activities, Activities]
 
@@ -141,6 +142,23 @@ news:
   #   info: "I am interning at <a href='https://deepmind.com/'>Google DeepMind</a>
   #   in London this summer with
   #   <a href='http://www.cs.ox.ac.uk/people/nando.defreitas/'>Nando de Freitas</a>."
+
+
+service:
+  - title: Reviewer
+    details: ICML 2018, NIPS 2018, ICLR 2019, NIPS Deep RL Workshop 2018
+  - title: Admissions
+    details: CMU CSD MS 2014-2015
+
+selected_repos:
+  https://github.com/locuslab/icnn
+  https://locuslab.github.io/qpth/
+  https://github.com/locuslab/qpth
+  https://github.com/locuslab/mpc.pytorch
+  https://github.com/bamos/densenet.pytorch
+  https://github.com/bamos/dcgan-completion.tensorflow
+  https://github.com/bamos/block
+  https://github.com/bamos/setGPU
 
 education:
   - school: Carnegie Mellon University
