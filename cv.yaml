@@ -129,7 +129,7 @@ about: '
 
 service:
   - title: Reviewer
-    details: ICML 2018, NeurIPS 2018, ICLR 2019, NeurIPS Deep RL Workshop 2018
+    details: ICML 2018, NeurIPS 2018, NeurIPS Deep RL Workshop 2018, ICLR 2019 (outstanding reviewer), ICCV 2019
   - title: Admissions
     details: CMU CSD MS 2014-2015
 
@@ -148,11 +148,13 @@ education:
     location: Pittsburgh, Pennsylvania
     degree: Ph.D. in Computer Science
     dates: Aug 2014 -- May 2019 (expected)
+    overallGPA: 0.00/0.00
 
   - school: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     degree: M.S. in Computer Science
     dates: Aug 2014 -- May 2016
+    overallGPA: 0.00/0.00
 
   - school: Virginia Tech
     location: Blacksburg, Virginia
@@ -239,6 +241,18 @@ research:
       #- '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
 
 industry:
+  - place: Intel Labs
+    location: Santa Clara, California
+    title: Research Intern
+    dates: June 2018 -- Sept 2018
+    advisor: Vladlen Koltun
+    area: Machine learning
+  - place: Google DeepMind
+    location: London, UK
+    title: Research Intern
+    dates: May 2017 -- Oct 2017
+    advisor: Nando de Freitas
+    area: Machine and reinforcement learning
   - place: Adobe Research
     location: San Jose, California
     title: Data Scientist Intern
