@@ -49,10 +49,10 @@ about: '
   I am finishing a Ph.D. at <b>Carnegie Mellon University</b>
   advised by \href{http://zicokolter.com/}{Zico Kolter}
   and am supported by an <b>NSF graduate research fellowship.</b>
-  My dissertation is entitled
-  "Differentiable Optimization-Based Inference for Machine Learning"
-  and my <b>thesis proposal</b> is available
-  \href{https://goo.gl/MTiDrb}{here}.
+  My <b>thesis</b> is entitled
+  "Differentiable Optimization-Based for Machine Learning"
+  and is available
+  \href{https://github.com/bamos/thesis/blob/master/bamos_thesis.pdf}{here}.
   My publications are available below and on
   my \href{https://scholar.google.com/citations?user=d8gdZR4AAAAJ}{Google Scholar} page.
   <br><br>
@@ -129,7 +129,7 @@ about: '
 
 service:
   - title: Reviewer
-    details: ICML 2018, NeurIPS 2018, NeurIPS Deep RL Workshop 2018, ICLR 2019 (outstanding reviewer), ICCV 2019
+    details: ICML 2018, NeurIPS 2018, NeurIPS Deep RL Workshop 2018, ICLR 2019 (outstanding reviewer), ICML 2019, ICCV 2019
   - title: Admissions
     details: CMU CSD MS 2014-2015
 
