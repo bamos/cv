@@ -24,77 +24,46 @@ order:
   - [about, NONE]
   # - [news, News]
   - [education, Education]
-  - [research, Research Experience]
+  - [industry, Experience]
+  # - [research, Research Experience]
   - [selected_publications, Selected Publications]
   # - [NEWPAGE, NEWPAGE]
   - [teaching, Teaching Experience]
-  - [industry, Industry Experience]
   # - [projects, Projects]
-  - [coursework, CMU Graduate Coursework]
+  # - [coursework, CMU Graduate Coursework]
   - [honors, Honors \& Awards]
-  - [skills, Skills]
   - [service, Service]
+  - [skills, Skills]
   # - [NEWPAGE, NEWPAGE]
   - [all_publications, All Publications]
 #  - [activities, Activities]
 
 about: '
-  I am a researcher and broadly study foundational topics
-  and applications in
+  I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and
+  broadly study foundational topics and applications in
   <b>machine learning</b> (sometimes deep) and
   <b>optimization</b> (sometimes convex),
   including
   reinforcement learning, computer vision, language,
   statistics, and theory.
-  I am finishing a Ph.D. at <b>Carnegie Mellon University</b>
+  I have a Ph.D. from <b>Carnegie Mellon University</b> and was
   advised by \href{http://zicokolter.com/}{Zico Kolter}
-  and am supported by an <b>NSF graduate research fellowship.</b>
-  My thesis is entitled
-  "Differentiable Optimization-Based Modeling for Machine Learning"
-  and is available
-  \href{https://github.com/bamos/thesis/blob/master/bamos_thesis.pdf}{here}.
+  and supported by an <b>NSF graduate research fellowship.</b>
+  My thesis is on
+  \href{https://github.com/bamos/thesis}{Differentiable Optimization-Based Modeling for Machine Learning}.
   My publications are available below and on
-  my \href{https://scholar.google.com/citations?user=d8gdZR4AAAAJ}{Google Scholar} page.
-  <br><br>
-  My research straddles <b>applied and theoretical contributions</b>.
-  Over the past three years (since 2016) I have focused on
-  foundational contributions to the <b>NeurIPS, ICML, and ICLR communities</b>.
-  The core pillars of my dissertation are
-  my <b>ICML 2017</b> papers on
-  \href{https://arxiv.org/abs/1609.07152}{input-convex neural networks}
-  and
-  \href{https://arxiv.org/abs/1703.00443}{OptNet layers}.
-  My <b>NeurIPS 2018</b> paper uses OptNet as a foundation to
-  <b>combine model-free and model-based</b> reinforcement learning.
+  \href{https://scholar.google.com/citations?user=d8gdZR4AAAAJ}{my Google Scholar page}
+  and my open source contributions can be found on
+  \href{https://github.com/bamos}{my Github profile}.
   I have also worked on <b>reinforcement learning</b>
-  during an internship
-  with
+  during an internship with
   \href{https://www.cs.ubc.ca/~nando/}{Nando de Freitas}
   and
   \href{http://mdenil.com/}{Misha Denil}
-  at <b>DeepMind</b> in 2017,
-  publishing an <b>ICLR 2018</b> paper
-  \href{https://arxiv.org/abs/1804.06318}{Learning Awareness Models},
+  at <b>DeepMind</b> in 2017
   and on vision with
   \href{http://vladlen.info}{Vladlen Koltun}
   at <b>Intel Labs</b> in 2018.
-  <br><br>
-  Before this, as an undergraduate (from 2011-2014) I focused on compilers,
-  distributed systems, mobile computing, and
-  \href{https://vtechworks.lib.vt.edu/bitstream/handle/10919/49672/qnTOMS14.pdf}{Quasi-Newton Methods for Stochastic Optimization}.
-  I value important <b>societal applications</b> of my work and
-  spent the first two years of my Ph.D. (from 2014-2016)
-  working on applied machine learning and computer vision technologies
-  underlying <b>mobile and wearable cognitive assistance systems</b>
-  with
-  \href{https://www.cs.cmu.edu/~satya/}{Mahadev Satyanarayanan},
-  publishing papers at <b>systems- and mobile-oriented</b> venues during this time.
-  <br><br>
-  I strongly believe in <b>open science, reproducible research,
-  and well-engineered projects</b>
-  and actively publish code on \href{https://github.com/bamos}{my Github profile}.
-  This led me to create
-  \href{https://cmusatyalab.github.io/openface/}{OpenFace} in 2016.
   <br><br>'
 
 # news:
@@ -168,11 +137,16 @@ education:
     dates: Aug 2007 -- May 2011
 
 research:
+  - place: Facebook AI
+    location: New York, New York
+    title: Research Scientist
+    dates: May 2019 -- Present
+    area: Machine learning and optimization
   - place: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     title: Research Assistant
     advisor: Zico Kolter
-    dates: Apr 2016 -- Present
+    dates: Apr 2016 -- May 2019
     area: Machine learning and optimization
   - place: Intel Labs
     location: Santa Clara, California
@@ -241,18 +215,18 @@ research:
       #- '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
 
 industry:
+  - place: Facebook AI
+    location: New York, New York
+    title: Research Scientist
+    dates: May 2019 -- Present
   - place: Intel Labs
     location: Santa Clara, California
     title: Research Intern
     dates: June 2018 -- Sept 2018
-    advisor: Vladlen Koltun
-    area: Machine learning
   - place: Google DeepMind
     location: London, UK
     title: Research Intern
     dates: May 2017 -- Oct 2017
-    advisor: Nando de Freitas
-    area: Machine and reinforcement learning
   - place: Adobe Research
     location: San Jose, California
     title: Data Scientist Intern
@@ -349,9 +323,9 @@ all_publications:
     - heading: Magazine Articles
       prefix: M
       file: magazine.bib
-    - heading: Posters
-      prefix: S
-      file: posters.bib
+    # - heading: Posters
+    #   prefix: S
+    #   file: posters.bib
 
 
 coursework:
