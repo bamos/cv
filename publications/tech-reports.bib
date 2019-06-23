@@ -1,3 +1,27 @@
+@article{amos2019limited,
+  title={{The Limited Multi-Label Projection Layer}},
+  author={Brandon Amos and Vladlen Koltun and J. Zico Kolter},
+  journal={arXiv preprint arXiv:1906.08707},
+  year={2019},
+  _venue={arXiv},
+  url={https://arxiv.org/abs/1906.08707},
+  codeurl={https://github.com/locuslab/lml},
+  abstract={
+    We propose the Limited Multi-Label (LML) projection layer as a new
+    primitive operation for end-to-end learning systems. The LML layer
+    provides a probabilistic way of modeling multi-label predictions
+    limited to having exactly k labels. We derive efficient forward and
+    backward passes for this layer and show how the layer can be used to
+    optimize the top-k recall for multi-label tasks with incomplete label
+    information. We evaluate LML layers on top-k CIFAR-100 classification
+    and scene graph generation. We show that LML layers add a negligible
+    amount of computational overhead, strictly improve the model's
+    representational capacity, and improve accuracy. We also revisit the
+    truncated top-k entropy method as a competitive baseline for top-k
+    classification.
+  }
+}
+
 @phdthesis{amos2019differentiable,
   author       = {Brandon Amos},
   title        = {{Differentiable Optimization-Based Modeling for Machine Learning}},
