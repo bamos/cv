@@ -121,3 +121,14 @@ Name | Stargazers | Description
 [there4/markdown-resume](https://github.com/there4/markdown-resume) | 749 | Generate a responsive CSS3 and HTML5 resume with Markdown, with optional PDF output.
 [zellux/resume](https://github.com/zellux/resume) | 134 | My resume, generated with moderncv
 [Maples7/barn](https://github.com/Maples7/barn) | 10 | A resume/CV generator, parsing information from YAML file to generate a static website which you can deploy on the Github Pages. Exactly like resume-version Hexo.
+
+# Steps if using a local python virtual env
+`$ mkvirtualenv cv` - create a new python virtual env
+
+`$ pip install -r ./requirements` install pip dependencies
+
+`$ vim ./cv.yaml` - edit the cv file
+
+`$ generate.py cv.yaml` - create the cv based on markdown
+
+`$ make clean` - restart  
