@@ -1,8 +1,8 @@
 name:
   first: Brandon
   last: Amos
-phone: ~(540)~947~1238
-email: bamos@cs.cmu.edu
+# phone: ~(540)~947~1238
+email: bda@fb.com
 pdf: /data/cv.pdf
 src: https://github.com/bamos/cv
 url: "bamos.github.io"
