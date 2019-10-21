@@ -1,3 +1,14 @@
+@inproceedings{amos2019differentiable3,
+  title={{Differentiable Convex Optimization Layers}},
+  author={Agrawal, Akshay and Amos, Brandon and Barratt, Shane and Boyd, Stephen and Diamond, Steven and Kolter, J Zico},
+  year={2019},
+  booktitle={NeurIPS},
+  _venue={NeurIPS},
+  abstract={
+    Recent work has shown how to embed differentiable optimization problems (that is, optimization problems whose solutions can be backpropagated through) as layers within deep learning architectures. This method provides a useful inductive bias for certain problems, but existing software for differentiable optimization layers is rigid and difficult to apply to new settings. In this paper, we propose an approach to differentiating through disciplined convex programs, a subclass of convex optimization problems used by domain-specific languages (DSLs) for convex optimization. We represent a disciplined convex program as the composition of an affine map from parameters to problem data, a solver, and an affine map from the solver’s solution to a solution of the original problem (a new form we refer to as affine-solver-affine form). We then demonstrate how to efficiently differentiate through each of these components, allowing for end-to-end analytical differentiation through the convex program. We implement our methodology in version 1.1 of CVXPY, a popular Python-embedded DSL for convex optimization, and additionally implement differentiable layers for disciplined convex programs in PyTorch and TensorFlow 2.0. Our implementation significantly lowers the barrier to using convex optimization problems in differentiable programs. We present applications in linear machine learning models and in stochastic control, and we show that our layer is competitive (in execution time) with specialized differentiable solvers from past work.
+  }
+}
+
 @inproceedings{amos2018end,
   title={{{Differentiable MPC for End-to-end Planning and Control}}},
   author={Amos, Brandon and Rodriguez, Ivan Dario Jimenez and Sacks, Jacob and Boots, Byron and Kolter, J Zico},
