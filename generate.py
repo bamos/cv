@@ -49,10 +49,13 @@ def get_pub_md(context, config):
     def _format_author_list(immut_author_list):
         formatted_authors = []
         for author in immut_author_list:
-            new_auth = author.split(", ")
-            new_auth = new_auth[1][0] + ". " + new_auth[0]
-            if new_auth == config['name']:
-                new_auth = "<strong>" + new_auth + "</strong>"
+            if 'zico' in author.lower():
+                new_auth = 'J. Z. Kolter'
+            else:
+                new_auth = author.split(", ")
+                new_auth = new_auth[1][0] + ". " + new_auth[0]
+                if config['name'] in new_auth:
+                    new_auth = "<strong>" + new_auth + "</strong>"
             formatted_authors.append(new_auth)
         return formatted_authors
 
