@@ -51,6 +51,8 @@ def get_pub_md(context, config):
         for author in immut_author_list:
             if 'zico' in author.lower():
                 new_auth = 'J. Z. Kolter'
+                if '*' in author:
+                    new_auth += '*'
             else:
                 new_auth = author.split(", ")
                 new_auth = new_auth[1][0] + ". " + new_auth[0]
