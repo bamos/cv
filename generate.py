@@ -16,6 +16,7 @@ import yaml
 import bibtexparser.customization as bc
 from bibtexparser.bparser import BibTexParser
 from datetime import date
+from itertools import groupby
 from jinja2 import Environment, FileSystemLoader
 
 
@@ -81,7 +82,7 @@ def get_pub_md(context, config):
         abstract = ''
         if 'abstract' in pub:
             links.append("""
-[<a href='javascript: none'
+[<a href='javascript:;'
     onclick=\'$(\"#abs_{}{}\").toggle()\'>abs</a>]""".format(pub['ID'], prefix))
             abstract = context.make_replacements(pub['abstract'])
         if 'link' in pub:
@@ -164,15 +165,34 @@ def get_pub_md(context, config):
 
     include_image = config['include_image']
     sort_bib = config['sort_bib']
+    group_by_year = config['group_by_year']
 
     contents = {}
     pubs = load_and_replace(config['file'])
+    sep = "\n"
+
     if sort_bib:
         pubs = sorted(pubs, key=lambda pub: int(pub['year']), reverse=True)
-    details = ""
-    sep = "\n"
-    for i, pub in enumerate(pubs):
-        details += _get_pub_str(pub, '', i + 1, includeImage=include_image) + sep
+
+    if group_by_year:
+        for pub in pubs:
+            m = re.search('(\d{4})', pub['year'])
+            assert m is not None
+            pub['year_int'] = int(m.group(1))
+            pub['ID'] += f"_{config['file'].replace('.', '_')}"
+
+        details = ''
+        for year, year_pubs in groupby(pubs, lambda pub: pub['year_int']):
+            details += f'<h2>{year}</h2>\n'
+            details += '<table class="table table-hover">\n'
+            for i, pub in enumerate(year_pubs):
+                details += _get_pub_str(pub, '', i + 1, includeImage=include_image) + sep
+            details += '</table>\n'
+    else:
+        details = '<table class="table table-hover">'
+        for i, pub in enumerate(pubs):
+            details += _get_pub_str(pub, '', i + 1, includeImage=include_image) + sep
+        details += '</table>'
     contents['details'] = details
     contents['file'] = config['file']
 

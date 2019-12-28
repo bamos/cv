@@ -306,12 +306,14 @@ selected_publications:
   file: selected.bib
   sort_bib: False
   include_image: True
+  group_by_year: False
 
 all_publications:
   name: "B. Amos"
   file: all.bib
   sort_bib: True
   include_image: False
+  group_by_year: True
   # categories:
   #   - heading: Preprints and Tech Reports
   #     prefix: P
