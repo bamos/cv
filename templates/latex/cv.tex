@@ -22,7 +22,15 @@
 \frenchspacing
 
 % \usepackage[backend=biber,style=ieee,defernumbers=true]{biblatex}
-\usepackage[backend=biber,style=ieee]{biblatex}
+\usepackage[
+backend=biber,style=publist,
+sorting=ydmdnt,
+%plauthorhandling=highlight,
+% marginyear=true,
+plnumbered=false,
+maxnames=8,
+nameorder=given-family
+]{biblatex}
 
 % Make the author's name bold in publications.
 \DeclareNameFormat{author}{%

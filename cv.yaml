@@ -304,25 +304,30 @@ teaching:
 selected_publications:
   name: "B. Amos"
   file: selected.bib
+  sort_bib: False
+  include_image: True
 
 all_publications:
   name: "B. Amos"
-  categories:
-    - heading: Preprints and Tech Reports
-      prefix: P
-      file: tech-reports.bib
-    - heading: Conference Proceedings
-      prefix: C
-      file: conference.bib
-    - heading: Journal Articles
-      prefix: J
-      file: journal.bib
-    - heading: Workshop, Symposium, and Short Papers
-      prefix: W
-      file: short.bib
-    - heading: Magazine Articles
-      prefix: M
-      file: magazine.bib
+  file: all.bib
+  sort_bib: True
+  include_image: False
+  # categories:
+  #   - heading: Preprints and Tech Reports
+  #     prefix: P
+  #     file: tech-reports.bib
+  #   - heading: Conference Proceedings
+  #     prefix: C
+  #     file: conference.bib
+  #   - heading: Journal Articles
+  #     prefix: J
+  #     file: journal.bib
+  #   - heading: Workshop, Symposium, and Short Papers
+  #     prefix: W
+  #     file: short.bib
+  #   - heading: Magazine Articles
+  #     prefix: M
+  #     file: magazine.bib
     # - heading: Posters
     #   prefix: S
     #   file: posters.bib

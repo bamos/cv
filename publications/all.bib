@@ -1,0 +1,661 @@
+@inproceedings{amos2019differentiable3,
+  title={{Differentiable Convex Optimization Layers}},
+  author={Agrawal*, Akshay and Amos*, Brandon and Barratt*, Shane and Boyd*, Stephen and Diamond*, Steven and Kolter*, J Zico},
+  year={2019},
+  booktitle={NeurIPS},
+  _venue={NeurIPS},
+  url={http://web.stanford.edu/~boyd/papers/pdf/diff_cvxpy.pdf},
+  codeurl={https://github.com/cvxgrp/cvxpylayers},
+  abstract={
+    Recent work has shown how to embed differentiable optimization problems (that is, problems whose solutions can be backpropagated through) as layers within deep learning architectures. This method provides a useful inductive bias for certain problems, but existing software for differentiable optimization layers is rigid and difficult to apply to new settings. In this paper, we propose an approach to differentiating through disciplined convex programs, a subclass of convex optimization problems used by domain-specific languages (DSLs) for convex optimization. We introduce disciplined parametrized programming, a subset of disciplined convex programming, and we show that every disciplined parametrized program can be represented as the composition of an affine map from parameters to problem data, a solver, and an affine map from the solver’s solution to a solution of the original problem (a new form we refer to as affine-solver-affine form). We then demonstrate how to efficiently differentiate through each of these components, allowing for end-to-end analytical differentiation through the entire convex program. We implement our methodology in version 1.1 of CVXPY, a popular Python-embedded DSL for convex optimization, and additionally implement differentiable layers for disciplined convex programs in PyTorch and TensorFlow 2.0. Our implementation significantly lowers the barrier to using convex optimization problems in differentiable programs. We present applications in linear machine learning models and in stochastic control, and we show that our layer is competitive (in execution time) compared to specialized differentiable solvers from past work.
+  }
+}
+
+@inproceedings{amos2018end,
+  title={{{Differentiable MPC for End-to-end Planning and Control}}},
+  author={Amos, Brandon and Rodriguez, Ivan Dario Jimenez and Sacks, Jacob and Boots, Byron and Kolter, J Zico},
+  year={2018},
+  booktitle={NeurIPS},
+  _venue={NeurIPS},
+  abstract={
+  In this paper we present foundations for using model predictive control (MPC) as a differentiable policy class in reinforcement learning. Specifically, we differentiate through MPC by using the KKT conditions of the convex approximation at a fixed point of the solver. Using this strategy, we are able to learn the cost and dynamics of a controller via end-to-end learning in a larger system. We empirically show results in an imitation learning setting, demonstrating that we can recover the underlying dynamics and cost more efficiently and reliably than with a generic neural network policy class
+  }
+}
+
+@inproceedings{brown2018depth,
+  title={Depth-Limited Solving for Imperfect-Information Games},
+  author={Brown, Noam and Sandholm, Tuomas and Amos, Brandon},
+  year={2018},
+  booktitle={NeurIPS},
+  _venue={NeurIPS},
+  url={http://arxiv.org/abs/1805.08195},
+  abstract={
+A fundamental challenge in imperfect-information games is that states do not have well-defined values. As a result, depth-limited search algorithms used in single-agent settings and perfect-information games do not apply. This paper introduces a principled way to conduct depth-limited solving in imperfect-information games by allowing the opponent to choose among a number of strategies for the remainder of the game at the depth limit. Each one of these strategies results in a different set of values for leaf nodes. This forces an agent to be robust to the different strategies an opponent may employ. We demonstrate the effectiveness of this approach by building a master-level heads-up no-limit Texas hold'em poker AI that defeats two prior top agents using only a 4-core CPU and 16 GB of memory. Developing such a powerful agent would have previously required a supercomputer.
+  }
+}
+
+@inproceedings{amos2018learning,
+  title={Learning Awareness Models},
+  author={Brandon Amos and Laurent Dinh and Serkan Cabi and Thomas Roth{\"o}rl and Sergio G{\'o}mez Colmenarejo and Alistair Muldal and Tom Erez and Yuval Tassa and Nando de Freitas and Misha Denil},
+  booktitle={International Conference on Learning Representations},
+  year={2018},
+  url={https://openreview.net/forum?id=r1HhRfWRZ},
+  _venue={ICLR},
+  abstract={
+    We consider the setting of an agent with a fixed body interacting with an
+    unknown and uncertain external world. We show that models
+    trained to predict proprioceptive information about the
+    agent's body come to represent objects in the external world.
+    In spite of being trained with only internally available
+    signals, these dynamic body models come to represent external
+    objects through the necessity of predicting their effects on
+    the agent's own body. That is, the model learns holistic
+    persistent representations of objects in the world, even
+    though the only training signals are body signals. Our
+    dynamics model is able to successfully predict distributions
+    over 132 sensor readings over 100 steps into the future and we
+    demonstrate that even when the body is no longer in contact
+    with an object, the latent variables of the dynamics model
+    continue to represent its shape. We show that active data
+    collection by maximizing the entropy of predictions about the
+    body---touch sensors, proprioception and vestibular
+    information---leads to learning of dynamic models that show
+    superior performance when used for control. We also collect
+    data from a real robotic hand and show that the same models
+    can be used to answer questions about properties of objects in
+    the real world. Videos with qualitative results of our models
+    are available <a href="https://goo.gl/mZuqAV">here</a>.
+  }
+}
+
+@inproceedings{wang2017scalable,
+  title={A Scalable and Privacy-Aware IoT Service for Live Video Analytics},
+  author={Wang, Junjue and Amos, Brandon and Das, Anupam and Pillai, Padmanabhan and Sadeh, Norman and Satyanarayanan, Mahadev},
+  booktitle={Proceedings of the 8th ACM on Multimedia Systems Conference},
+  pages={38--49},
+  year={2017},
+  organization={ACM},
+  _venue={ACM MMSys},
+  _note={Best Paper Award},
+}
+
+@inproceedings{donti2017task,
+  title={Task-based End-to-end Model Learning},
+  author={Donti, Priya L and Amos, Brandon and Kolter, J Zico},
+  year={2017},
+  booktitle={NeurIPS},
+  _venue={NeurIPS},
+  codeurl={https://github.com/locuslab/e2e-model-learning},
+  url={http://arxiv.org/abs/1703.04529},
+  abstract={
+    As machine learning techniques have become more ubiquitous, it has
+    become common to see machine learning prediction algorithms operating
+    within some larger process. However, the criteria by which we train
+    machine learning algorithms often differ from the ultimate criteria on
+    which we evaluate them. This paper proposes an end-to-end approach for
+    learning probabilistic machine learning models within the context of
+    stochastic programming, in a manner that directly captures the
+    ultimate task-based objective for which they will be used. We then
+    present two experimental evaluations of the proposed approach, one as
+    applied to a generic inventory stock problem and the second to a
+    real-world electrical grid scheduling task. In both cases, we show
+    that the proposed approach can outperform both a traditional modeling
+    approach and a purely black-box policy optimization approach.
+  }
+}
+
+@inproceedings{amos2017optnet,
+  title = "{OptNet: Differentiable Optimization as a Layer in Neural Networks}",
+  author={Brandon Amos and J. Zico Kolter},
+  booktitle={ICML},
+  _venue={ICML},
+  codeurl={https://github.com/locuslab/optnet},
+  year={2017},
+  url={http://arxiv.org/abs/1703.00443},
+  abstract={
+    This paper presents OptNet, a network architecture that integrates
+    optimization problems (here, specifically in the form of quadratic programs)
+    as individual layers in larger end-to-end trainable deep networks.
+    These layers encode constraints and complex dependencies
+    between the hidden states that traditional convolutional and
+    fully-connected layers often cannot capture.
+    In this paper, we explore the foundations for such an architecture:
+    we show how techniques from sensitivity analysis, bilevel
+    optimization, and implicit differentiation can be used to
+    exactly differentiate through these layers and with respect
+    to layer parameters;
+    we develop a highly efficient solver for these layers that exploits fast
+    GPU-based batch solves within a primal-dual interior point method, and which
+    provides backpropagation gradients with virtually no additional cost on top of
+    the solve;
+    and we highlight the application of these approaches in several problems.
+    In one notable example, we show that the method is
+    capable of learning to play mini-Sudoku (4x4) given just input and output games,
+    with no a priori information about the rules of the game;
+    this highlights the ability of our architecture to learn hard
+    constraints better than other neural architectures.
+  }
+}
+
+
+@inproceedings{amos2017input,
+  title={Input Convex Neural Networks},
+  author={Brandon Amos and Lei Xu and J. Zico Kolter},
+  booktitle={ICML},
+  _venue={ICML},
+  codeurl={https://github.com/locuslab/icnn},
+  year={2017},
+  url={http://arxiv.org/abs/1609.07152},
+  abstract={
+    This paper presents the input convex neural network
+    architecture. These are scalar-valued (potentially deep) neural
+    networks with constraints on the network parameters such that the
+    output of the network is a convex function of (some of) the inputs.
+    The networks allow for efficient inference via optimization over some
+    inputs to the network given others, and can be applied to settings
+    including structured prediction, data imputation, reinforcement
+    learning, and others. In this paper we lay the basic groundwork for
+    these models, proposing methods for inference, optimization and
+    learning, and analyze their representational power. We show that many
+    existing neural network architectures can be made input-convex with
+    a minor modification, and develop specialized optimization
+    algorithms tailored to this setting. Finally, we highlight the
+    performance of the methods on multi-label prediction, image
+    completion, and reinforcement learning problems, where we show
+    improvement over the existing state of the art in many cases.
+  }
+}
+
+@inproceedings{zhao2016collapsed,
+  title={{{Collapsed Variational Inference for Sum-Product Networks}}},
+  author={Han Zhao and Tameem Adel and Geoff Gordon and Brandon Amos},
+  booktitle={ICML},
+  _venue={ICML},
+  year={2016},
+  url={http://www.cs.cmu.edu/~hzhao1/papers/ICML2016/BL-SPN-main.pdf},
+  abstract={
+    Sum-Product Networks (SPNs) are probabilistic inference machines that admit
+    exact inference in linear time in the size of the network. Existing
+    parameter learning approaches for SPNs are largely based on the maximum
+    likelihood principle and hence are subject to overfitting compared to
+    more Bayesian approaches. Exact Bayesian posterior inference for SPNs is
+    computationally intractable. Both standard variational inference and
+    posterior sampling for SPNs are computationally infeasible even for
+    networks of moderate size due to the large number of local latent
+    variables per instance. In this work, we propose a novel deterministic
+    collapsed variational inference algorithm for SPNs that is
+    computationally efficient, easy to implement and at the same time allows
+    us to incorporate prior information into the optimization formulation.
+    Extensive experiments show a significant improvement in accuracy compared
+    with a maximum likelihood based approach.
+  }
+}
+@article{chen2017quasi,
+  title={Quasi-Newton Stochastic Optimization Algorithm for Parameter Estimation of a Stochastic Model of the Budding Yeast Cell Cycle},
+  author={Chen, Minghan and Amos, Brandon and Watson, Layne T and Tyson, John and Cao, Yang and Shaffer, Cliff and Trosset, Michael and Oguz, Cihan and Kakoti, Gisella},
+  journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+  year={2017},
+  publisher={IEEE},
+  _venue={IEEE/ACM TCBB},
+}@article{satyanarayanan2015edge,
+  title={Edge Analytics in the Internet of Things},
+  author={
+    Mahadev Satyanarayanan and Pieter Simoens and Yu Xiao and
+    Padmanabhan Pillai and Zhuo Chen and Kiryong Ha and
+    Wenlu Hu and Brandon Amos
+  },
+  journal={IEEE Pervasive Computing},
+  number={2},
+  pages={24--31},
+  _venue={IEEE Pervasive Computing},
+  year={2015},
+  publisher={IEEE},
+  url={https://www.cs.cmu.edu/~satya/docdir/satya-edge2015.pdf},
+  abstract={
+    High-data-rate sensors, such as video cameras, are becoming ubiquitous in the
+    Internet of Things. This article describes GigaSight, an Internet-scale
+    repository of crowd-sourced video content, with strong enforcement of privacy
+    preferences and access controls. The GigaSight architecture is a federated
+    system of VM-based cloudlets that perform video analytics at the edge of the
+    Internet, thus reducing the demand for ingress bandwidth into the cloud.
+    Denaturing, which is an owner-specific reduction in fidelity of video content
+    to preserve privacy, is one form of analytics on cloudlets. Content-based
+    indexing for search is another form of cloudlet-based analytics. This article
+    is part of a special issue on smart spaces.
+  }
+}
+
+@article{turner2015bad,
+  title={{{Bad Parts: Are Our Manufacturing Systems at Risk of Silent Cyberattacks?}}},
+  author={Turner, Hamilton and White, Jules and Camelio, Jaime A and Williams, Christopher and Amos, Brandon and Parker, Robert},
+  journal={Security \& Privacy, IEEE},
+  volume={13},
+  number={3},
+  pages={40--47},
+  _venue={IEEE Security \& Privacy},
+  year={2015},
+  publisher={IEEE},
+  keywords={magazine},
+  url={http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7118094},
+  abstract={
+    Recent cyberattacks have highlighted the risk of physical equipment operating
+    outside designed tolerances to produce catastrophic failures. A related
+    threat is cyberattacks that change the design and manufacturing of a
+    machine's part, such as an automobile brake component, so it no longer
+    functions properly. These risks stem from the lack of cyber-physical models
+    to identify ongoing attacks as well as the lack of rigorous application of
+    known cybersecurity best practices. To protect manufacturing processes in the
+    future, research will be needed on a number of critical cyber-physical
+    manufacturing security topics.
+  }
+}
+@inproceedings{ha2017you,
+  title={You can teach elephants to dance: agile VM handoff for edge computing},
+  author={Ha, Kiryong and Abe, Yoshihisa and Eiszler, Thomas and Chen, Zhuo and Hu, Wenlu and Amos, Brandon and Upadhyaya, Rohit and Pillai, Padmanabhan and Satyanarayanan, Mahadev},
+  booktitle={Proceedings of the Second ACM/IEEE Symposium on Edge Computing},
+  pages={12},
+  year={2017},
+  organization={ACM},
+  _venue={SEC},
+}
+
+@inproceedings{chen2017empirical,
+  author = {Chen, Zhuo and Hu, Wenlu and Wang, Junjue and Zhao, Siyan and Amos, Brandon and Wu, Guanhang and Ha, Kiryong and Elgazzar, Khalid and Pillai, Padmanabhan and Klatzky, Roberta and Siewiorek, Daniel and Satyanarayanan, Mahadev},
+  title = {An Empirical Study of Latency in an Emerging Class of Edge Computing Applications for Wearable Cognitive Assistance},
+  booktitle={Proceedings of the Second ACM/IEEE Symposium on Edge Computing},
+  pages={12},
+  year={2017},
+  organization={ACM},
+  _venue={SEC},
+}
+
+@inproceedings{hu2016quantifying,
+  title={Quantifying the impact of edge computing on mobile applications},
+  author={Hu, Wenlu and Gao, Ying and Ha, Kiryong and Wang, Junjue and Amos, Brandon and Chen, Zhuo and Pillai, Padmanabhan and Satyanarayanan, Mahadev},
+  booktitle={Proceedings of the 7th ACM SIGOPS Asia-Pacific Workshop on Systems},
+  pages={5},
+  year={2016},
+  organization={ACM},
+  _venue={ACM SIGOPS},
+}
+
+@inproceedings{davies2016privacy,
+  title={{Privacy mediators: helping IoT cross the chasm}},
+  author={
+    Davies, Nigel Andrew Justin and Taft, Nina and
+    Satyanarayanan, Mahadev and Clinch, Sarah and
+    Amos, Brandon
+  },
+  booktitle={HotMobile},
+  _venue={HotMobile},
+  year={2016},
+  url={http://eprints.lancs.ac.uk/78255/1/44691.pdf},
+  abstract={
+    Unease over data privacy will retard consumer acceptance of IoT
+    deployments. The primary source of discomfort is a lack of user
+    control over raw data that is streamed directly from sensors to the
+    cloud. This is a direct consequence of the over-centralization of
+    today’s cloud-based IoT hub designs. We propose a solution that
+    interposes a locally-controlled software component called a privacy
+    mediator on every raw sensor stream. Each mediator is in the same
+    administrative domain as the sensors whose data is being collected,
+    and dynamically enforces the current privacy policies of the owners
+    of the sensors or mobile users within the domain. This solution necessitates
+    a logical point of presence for mediators within the administrative
+    boundaries of each organization. Such points of presence
+    are provided by cloudlets, which are small locally-administered data
+    centers at the edge of the Internet that can support code mobility.
+    The use of cloudlet-based mediators aligns well with natural personal
+    and organizational boundaries of trust and responsibility.
+  }
+}
+
+@inproceedings{chen2015early,
+  title={{{Early Implementation Experience with Wearable Cognitive Assistance Applications}}},
+  author={Chen, Zhuo and Jiang, Lu and Hu, Wenlu and Ha, Kiryong and Amos, Brandon and Pillai, Padmanabhan and Hauptmann, Alex and Satyanarayanan, Mahadev},
+  booktitle={WearSys},
+  _venue={WearSys},
+  year={2015},
+  url={http://www.cs.cmu.edu/~satya/docdir/chen-wearsys2015.pdf},
+  abstract={
+    A cognitive assistance application combines a wearable device such
+    as Google Glass with cloudlet processing to provide step-by-step
+    guidance on a complex task. In this paper, we focus on user assistance
+    for narrow and well-defined tasks that require specialized
+    knowledge and/or skills. We describe proof-of-concept implementations
+    for four different tasks: assembling 2D Lego models, freehand
+    sketching, playing ping-pong, and recommending context-relevant
+    YouTube tutorials. We then reflect on the difficulties we faced in
+    building these applications, and suggest future research that could
+    simplify the creation of similar applications.
+  }
+}
+
+@inproceedings{hu2014case,
+  title={{{The Case for Offload Shaping}}},
+  author={
+    Wenlu Hu and Brandon Amos and Zhuo Chen and Kiryong Ha and
+    Wolfgang Richter and Padmanabhan Pillai and Benjamin Gilbert and
+    Jan Harkes and Mahadev Satyanarayanan
+  },
+  booktitle={HotMobile},
+  _venue={HotMobile},
+  year={2015},
+  url={http://www.cs.cmu.edu/~satya/docdir/hu-hotmobile2015.pdf},
+  abstract={
+    When offloading computation from a mobile device, we show
+    that it can pay to perform additional on-device work in order
+    to reduce the offloading workload. We call this offload shaping,
+    and demonstrate its application at many different levels
+    of abstraction using a variety of techniques. We show that
+    offload shaping can produce significant reduction in resource
+    demand, with little loss of application-level fidelity
+  }
+}
+
+@inproceedings{amos2014performance,
+  title={{{Performance study of Spindle, a web analytics query engine
+    implemented in Spark}}},
+  author={Brandon Amos and David Tompkins},
+  booktitle={IEEE CloudCom},
+  _venue={CloudCom},
+  year={2014},
+  codeurl={https://github.com/adobe-research/spindle},
+  url={http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7037709},
+  abstract={
+    This paper shares our experiences building and benchmarking Spindle as an open
+    source Spark-based web analytics platform. Spindle's design has been
+    motivated by real-world queries and data requiring concurrent, low latency
+    query execution. We identify a search space of Spark tuning options and study
+    their impact on Spark's performance. Results from a self-hosted six node
+    cluster with one week of analytics data (13.1GB) indicate tuning options such
+    as proper partitioning can cause a 5x performance improvement.
+  }
+}
+
+@inproceedings{andrew2014global,
+  title={{{Global Parameter Estimation for a Eukaryotic Cell Cycle Model
+    in Systems Biology}}},
+  author={Tricity Andrew and Brandon Amos and David Easterling and Cihan Oguz and
+    William Baumann and John Tyson and Layne Watson},
+  booktitle={Summer Simulation Multiconference,
+    Society for Modeling and Simulation International},
+  _venue={SummerSim},
+  year={2014},
+  url={http://dl.acm.org/citation.cfm?id=2685662},
+  abstract={
+    The complicated process by which a yeast cell divides, known as the cell
+    cycle, has been modeled by a system of 26 nonlinear ordinary differential
+    equations (ODEs) with 149 parameters. This model captures the chemical
+    kinetics of the regulatory networks controlling the cell division process
+    in budding yeast cells. Empirical data is discrete and matched against
+    discrete inferences (e.g., whether a particular mutant cell lives or dies)
+    computed from the ODE solution trajectories. The problem of
+    estimating the ODE parameters to best fit the model to the data is a
+    149-dimensional global optimization problem attacked by the deterministic
+    algorithm VTDIRECT95 and by the nondeterministic algorithms differential
+    evolution, QNSTOP, and simulated annealing, whose performances are
+    compared.
+  }
+}
+
+@inproceedings{amos2014fortran,
+  title={{{Fortran 95 implementation of QNSTOP for global and
+    stochastic optimization}}},
+  author={Brandon Amos and David Easterling and Layne Watson and
+    Brent Castle and Michael Trosset and William Thacker},
+  booktitle={Spring Simulation Multiconference,
+    High Performance Computer Symposium,
+    Society for Modeling and Simulation International},
+  _venue={SpringSim (HPC)},
+  year={2014},
+  url={http://dl.acm.org/citation.cfm?id=2663525},
+  abstract={
+    A serial Fortran 95 implementation of the QNSTOP algorithm is presented.
+      QNSTOP is a class of quasi-Newton methods for stochastic optimization with
+      variations for deterministic global optimization. This discussion provides
+      results from testing on various deterministic and stochastic optimization
+      functions.
+  }
+}
+
+@inproceedings{amos2013applying,
+  title={{{Applying machine learning classifiers to dynamic Android
+    malware detection at scale}}},
+  author={Amos, Brandon and Turner, Hamilton and White, Jules},
+  booktitle={IWCMC Security, Trust and Privacy Symposium},
+  _venue={IWCMC},
+  year={2013},
+  codeurl={https://github.com/VT-Magnum-Research/antimalware},
+  url={http://bamos.github.io/data/papers/amos-iwcmc2013.pdf},
+  abstract={
+    The widespread adoption and contextually sensitive
+    nature of smartphone devices has increased concerns over smartphone
+    malware. Machine learning classifiers are a current method
+    for detecting malicious applications on smartphone systems. This
+    paper presents the evaluation of a number of existing classifiers,
+    using a dataset containing thousands of real (i.e. not synthetic)
+    applications. We also present our STREAM framework, which
+    was developed to enable rapid large-scale validation of mobile
+    malware machine learning classifiers.
+  }
+}@article{amos2019differentiable,
+  title={{The Differentiable Cross-Entropy Method}},
+  author={Amos, Brandon and Yarats, Denis},
+  journal={arXiv preprint arXiv:1909.12830},
+  year={2019},
+  _venue={arXiv},
+  url={https://arxiv.org/abs/1909.12830},
+  abstract={
+    We study the Cross-Entropy Method (CEM) for the non-convex
+    optimization of a continuous and parameterized
+    objective function and introduce a differentiable
+    variant (DCEM) that enables us to differentiate the
+    output of CEM with respect to the objective
+    function's parameters. In the machine learning
+    setting this brings CEM inside of the end-to-end
+    learning pipeline where this has otherwise been
+    impossible. We show applications in a synthetic
+    energy-based structured prediction task and in
+    non-convex continuous control. In the control
+    setting we show on the simulated cheetah and walker
+    tasks that we can embed their optimal action
+    sequences with DCEM and then use policy optimization
+    to fine-tune components of the controller as a step
+    towards combining model-based and model-free RL.
+  }
+}
+
+@article{grefenstette2019generalized,
+  title={{Generalized Inner Loop Meta-Learning}},
+  author={Grefenstette, Edward and Amos, Brandon and Yarats, Denis and Htut, Phu Mon and Molchanov, Artem and Meier, Franziska and Kiela, Douwe and Cho, Kyunghyun and Chintala, Soumith},
+  journal={arXiv preprint arXiv:1910.01727},
+  year={2019},
+  _venue={arXiv},
+  url={https://arxiv.org/abs/1910.01727},
+  abstract={
+    Many (but not all) approaches self-qualifying as "meta-learning" in
+    deep learning and reinforcement learning fit a
+    common pattern of approximating the solution to a
+    nested optimization problem. In this paper, we give
+    a formalization of this shared pattern, which we
+    call GIMLI, prove its general requirements, and
+    derive a general-purpose algorithm for implementing
+    similar approaches. Based on this analysis and
+    algorithm, we describe a library of our design,
+    higher, which we share with the community to assist
+    and enable future research into these kinds of
+    meta-learning approaches. We end the paper by
+    showcasing the practical applications of this
+    framework and library through illustrative
+    experiments and ablation studies which they
+    facilitate.
+  }
+}
+
+@article{yarats2019improving,
+  title={{Improving Sample Efficiency in Model-Free Reinforcement Learning from Images}},
+  author={Yarats, Denis and Zhang, Amy and Kostrikov, Ilya and Amos, Brandon and Pineau, Joelle and Fergus, Rob},
+  journal={arXiv preprint arXiv:1910.01741},
+  year={2019},
+  _venue={arXiv},
+  url={https://arxiv.org/abs/1910.01741},
+  abstract={
+    Training an agent to solve control tasks directly from
+    high-dimensional images with model-free
+    reinforcement learning (RL) has proven
+    difficult. The agent needs to learn a latent
+    representation together with a control policy to
+    perform the task. Fitting a high-capacity encoder
+    using a scarce reward signal is not only sample
+    inefficient, but also prone to suboptimal
+    convergence. Two ways to improve sample efficiency
+    are to extract relevant features for the task and
+    use off-policy algorithms. We dissect various
+    approaches of learning good latent features, and
+    conclude that the image reconstruction loss is the
+    essential ingredient that enables efficient and
+    stable representation learning in image-based
+    RL. Following these findings, we devise an
+    off-policy actor-critic algorithm with an auxiliary
+    decoder that trains end-to-end and matches
+    state-of-the-art performance across both model-free
+    and model-based algorithms on many challenging
+    control tasks. We release our code to encourage
+    future research on image-based RL.
+  }
+}
+
+@article{amos2019limited,
+  title={{The Limited Multi-Label Projection Layer}},
+  author={Brandon Amos and Vladlen Koltun and J. Zico Kolter},
+  journal={arXiv preprint arXiv:1906.08707},
+  year={2019},
+  _venue={arXiv},
+  url={https://arxiv.org/abs/1906.08707},
+  codeurl={https://github.com/locuslab/lml},
+  abstract={
+    We propose the Limited Multi-Label (LML) projection layer as a new
+    primitive operation for end-to-end learning systems. The LML layer
+    provides a probabilistic way of modeling multi-label predictions
+    limited to having exactly k labels. We derive efficient forward and
+    backward passes for this layer and show how the layer can be used to
+    optimize the top-k recall for multi-label tasks with incomplete label
+    information. We evaluate LML layers on top-k CIFAR-100 classification
+    and scene graph generation. We show that LML layers add a negligible
+    amount of computational overhead, strictly improve the model's
+    representational capacity, and improve accuracy. We also revisit the
+    truncated top-k entropy method as a competitive baseline for top-k
+    classification.
+  }
+}
+
+@phdthesis{amos2019differentiable,
+  author       = {Brandon Amos},
+  title        = {{Differentiable Optimization-Based Modeling for Machine Learning}},
+  school       = {Carnegie Mellon University},
+  year         = 2019,
+  _venue = {Ph.D. Thesis},
+  codeurl={https://github.com/bamos/thesis},
+  url={https://github.com/bamos/thesis/raw/master/bamos_thesis.pdf},
+}
+
+@techreport{amos2016openface,
+  title={OpenFace: A general-purpose face recognition
+    library with mobile applications},
+  author={Amos, Brandon and Bartosz Ludwiczuk and Satyanarayanan, Mahadev},
+  _venue={CMU},
+  year={2016},
+  institution={Technical Report CMU-CS-16-118, CMU School of Computer Science},
+  url={http://reports-archive.adm.cs.cmu.edu/anon/anon/2016/CMU-CS-16-118.pdf},
+  codeurl={https://cmusatyalab.github.io/openface},
+  abstract={
+    Cameras are becoming ubiquitous in the Internet of Things (IoT) and
+    can use face recognition technology to improve context. There is a
+    large accuracy gap between today's publicly available face recognition
+    systems and the state-of-the-art private face recognition
+    systems. This paper presents our OpenFace face recognition library
+    that bridges this accuracy gap. We show that OpenFace provides
+    near-human accuracy on the LFW benchmark and present a new
+    classification benchmark for mobile scenarios. This paper is intended
+    for non-experts interested in using OpenFace and provides a light
+    introduction to the deep neural network techniques we use.
+
+    We released OpenFace in October 2015 as an open source library under
+    the Apache 2.0 license. It is available at:
+    <http://cmusatyalab.github.io/openface/>
+  }
+}
+
+@techreport{gao2015cloudlets,
+  title={Are Cloudlets Necessary?},
+  author={
+    Gao, Ying and Hu, Wenlu and Ha, Kiryong and
+    Amos, Brandon and Pillai, Padmanabhan and
+    Satyanarayanan, Mahadev
+  },
+  _venue={CMU},
+  year={2015},
+  institution={Technical Report CMU-CS-15-139, CMU School of Computer Science},
+  url={http://reports-archive.adm.cs.cmu.edu/anon/anon/2015/CMU-CS-15-139.pdf},
+  abstract={
+    We present experimental results from Wi-Fi and 4G LTE networks to validate the
+    intuition that low end-to-end latency of cloud services improves application
+    response time and reduces energy consumption on mobile devices. We focus
+    specifically on computational offloading as a cloud service. Using a wide
+    range of applications, and exploring both pre-partitioned and dynamically
+    partitioned approaches, we demonstrate the importance of low latency for
+    cloud offload services. We show the best performance is achieved by
+    offloading to cloudlets, which are small-scale edge-located data centers. Our
+    results show that cloudlets can improve response times 51\% and reduce energy
+    consumption in a mobile device by up to 42\% compared to cloud offload.
+  }
+}
+
+@techreport{ha2015adaptive,
+  title={Adaptive VM handoff across cloudlets},
+  author={
+    Ha, Kiryong and Abe, Yoshihisa and Chen, Zhuo and
+    Hu, Wenlu and Amos, Brandon and Pillai, Padmanabhan and
+    Satyanarayanan, Mahadev
+  },
+  _venue={CMU},
+  year={2015},
+  institution={Technical Report CMU-CS-15-113, CMU School of Computer Science},
+  url={http://ra.adm.cs.cmu.edu/anon/2015/CMU-CS-15-113.pdf},
+  abstract={
+    Cloudlet offload is a valuable technique for ensuring low end-to-end latency of
+    resource-intensive cloud processing for many emerging mobile applications.
+    This paper examines the impact of user mobility on cloudlet offload, and
+    shows that even modest user mobility can result in significant network
+    degradation. We propose VM handoff as a technique for seamlessly transferring
+    VMencapsulated execution to a more optimal offload site as users move. Our
+    approach can perform handoff in roughly a minute even over limited WANs by
+    adaptively reducing data transferred. We present experimental results to
+    validate our implementation and to demonstrate effectiveness of adaptation to
+    changing network conditions and processing capacity
+  }
+}
+
+@article{amos2014QNSTOP,
+  title={{{QNSTOP-QuasiNewton Algorithm for Stochastic Optimization}}},
+  author={Brandon Amos and David Easterling and Layne Watson and
+    William Thacker and Brent Castle and Michael Trosset},
+  journal={},
+  _venue={VT},
+  year={2014},
+  keywords={journal},
+  url={https://vtechworks.lib.vt.edu/bitstream/handle/10919/49672/qnTOMS14.pdf},
+  abstract={
+    QNSTOP consists of serial and parallel (OpenMP) Fortran 2003 codes for the
+    quasi-Newton stochastic optimization method of Castle and Trosset. For
+    stochastic problems, convergence theory exists for the particular
+    algorithmic choices and parameter values used in QNSTOP. Both the parallel
+    driver subroutine, which offers several parallel decomposition strategies,
+    and the serial driver subroutine can be used for stochastic optimization or
+    deterministic global optimization, based on an input switch. QNSTOP is
+    particularly effective for “noisy” deterministic problems, using only
+    objective function values. Some performance data for computational systems
+    biology problems is given.
+  }
+}

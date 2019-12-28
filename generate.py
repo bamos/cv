@@ -143,32 +143,38 @@ def get_pub_md(context, config):
             pub['author'] = _format_author_list(pub['author'])
         return p
 
-    if 'categories' in config:
-        contents = []
-        for category in config['categories']:
-            type_content = {}
-            type_content['title'] = category['heading']
+    # if 'categories' in config:
+    #     contents = []
+    #     for category in config['categories']:
+    #         type_content = {}
+    #         type_content['title'] = category['heading']
 
-            pubs = load_and_replace(category['file'])
+    #         pubs = load_and_replace(category['file'])
 
-            details = ""
-            # sep = "<br><br>\n"
-            sep = "\n"
-            for i, pub in enumerate(pubs):
-                details += _get_pub_str(pub, category['prefix'],
-                                        i + 1, includeImage=False) + sep
-            type_content['details'] = details
-            type_content['file'] = category['file']
-            contents.append(type_content)
-    else:
-        contents = {}
-        pubs = load_and_replace(config['file'])
-        details = ""
-        sep = "\n"
-        for i, pub in enumerate(pubs):
-            details += _get_pub_str(pub, '', i + 1, includeImage=True) + sep
-        contents['details'] = details
-        contents['file'] = config['file']
+    #         details = ""
+    #         # sep = "<br><br>\n"
+    #         sep = "\n"
+    #         for i, pub in enumerate(pubs):
+    #             details += _get_pub_str(pub, category['prefix'],
+    #                                     i + 1, includeImage=False) + sep
+    #         type_content['details'] = details
+    #         type_content['file'] = category['file']
+    #         contents.append(type_content)
+    # else:
+
+    include_image = config['include_image']
+    sort_bib = config['sort_bib']
+
+    contents = {}
+    pubs = load_and_replace(config['file'])
+    if sort_bib:
+        pubs = sorted(pubs, key=lambda pub: int(pub['year']), reverse=True)
+    details = ""
+    sep = "\n"
+    for i, pub in enumerate(pubs):
+        details += _get_pub_str(pub, '', i + 1, includeImage=include_image) + sep
+    contents['details'] = details
+    contents['file'] = config['file']
 
     return contents
 
