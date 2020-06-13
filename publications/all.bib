@@ -1,3 +1,17 @@
+@inproceedings{lambert2020objective,
+  title={Objective Mismatch in Model-based Reinforcement Learning},
+  author={Lambert, Nathan and Amos, Brandon and Yadan, Omry and Calandra, Roberto},
+  year={2020},
+  booktitle={L4DC},
+  _venue={L4DC},
+  year={2020},
+  url={https://arxiv.org/abs/2002.04523},
+  abstract={
+  Model-based reinforcement learning (MBRL) has been shown to be a powerful framework for data-efficiently learning control of continuous tasks. Recent work in MBRL has mostly focused on using more advanced function approximators and planning schemes, with little development of the general framework. In this paper, we identify a fundamental issue of the standard MBRL framework--what we call the objective mismatch issue. Objective mismatch arises when one objective is optimized in the hope that a second, often uncorrelated, metric will also be optimized. In the context of MBRL, we characterize the objective mismatch between training the forward dynamics model wrt the likelihood of the one-step ahead prediction, and the overall goal of improving performance on a downstream control task. For example, this issue can emerge with the realization that dynamics models effective for a specific task do not necessarily need to be globally accurate, and vice versa globally accurate models might not be sufficiently accurate locally to obtain good control performance on a specific task. In our experiments, we study this objective mismatch issue and demonstrate that the likelihood of one-step ahead predictions is not always correlated with control performance. This observation highlights a critical limitation in the MBRL framework which will require further research to be fully understood and addressed. We propose an initial method to mitigate the mismatch issue by re-weighting dynamics model training. Building on it, we conclude with a discussion about other potential directions of research for addressing this issue.
+  }
+}
+
+
 @inproceedings{amos2019differentiable3,
   title={{Differentiable Convex Optimization Layers}},
   author={Agrawal*, Akshay and Amos*, Brandon and Barratt*, Shane and Boyd*, Stephen and Diamond*, Steven and Kolter*, J Zico},
@@ -172,7 +186,7 @@ A fundamental challenge in imperfect-information games is that states do not hav
   booktitle={ICML},
   _venue={ICML},
   year={2016},
-  url={http://www.cs.cmu.edu/~hzhao1/papers/ICML2016/BL-SPN-main.pdf},
+  url={http://proceedings.mlr.press/v48/zhaoa16.html},
   abstract={
     Sum-Product Networks (SPNs) are probabilistic inference machines that admit
     exact inference in linear time in the size of the network. Existing
@@ -443,12 +457,12 @@ A fundamental challenge in imperfect-information games is that states do not hav
   }
 }
 
-@article{amos2019differentiable,
+@inproceedings{amos2020differentiable,
   title={{The Differentiable Cross-Entropy Method}},
   author={Amos, Brandon and Yarats, Denis},
-  journal={arXiv preprint arXiv:1909.12830},
-  year={2019},
-  _venue={arXiv},
+  booktitle={ICML},
+  _venue={ICML},
+  year={2020},
   url={https://arxiv.org/abs/1909.12830},
   abstract={
     We study the Cross-Entropy Method (CEM) for the non-convex
@@ -642,14 +656,14 @@ A fundamental challenge in imperfect-information games is that states do not hav
 }
 
 @article{amos2014QNSTOP,
-  title={{{QNSTOP-QuasiNewton Algorithm for Stochastic Optimization}}},
+  title={{{QNSTOP: Quasi-Newton Algorithm for Stochastic Optimization}}},
   author={Brandon Amos and David Easterling and Layne Watson and
     William Thacker and Brent Castle and Michael Trosset},
   journal={},
-  _venue={VT},
+  _venue={ACM TOMS},
   year={2014},
   keywords={journal},
-  url={https://vtechworks.lib.vt.edu/bitstream/handle/10919/49672/qnTOMS14.pdf},
+  url={https://dl.acm.org/doi/10.1145/3374219},
   abstract={
     QNSTOP consists of serial and parallel (OpenMP) Fortran 2003 codes for the
     quasi-Newton stochastic optimization method of Castle and Trosset. For
