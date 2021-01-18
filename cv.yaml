@@ -66,41 +66,14 @@ about: '
   at <b>Intel Labs</b> in 2018.
   <br><br>'
 
-# news:
-  # - date: Sept 2018
-  #   info: "I will be attending NIPS 2018 this year. Come see our work on
-  #     1) differentiable model predictive control and
-  #     2) depth-limited solving for imperfect-information games."
-  # - date: Mar 2018
-  #   info: "I will be at ICLR this year presenting
-  #   my DeepMind internship paper
-  #   <a href='https://openreview.net/forum?id=r1HhRfWRZ'>
-  #     Learning Awareness Models</a>."
-  # - date: Feb 2018
-  #   info: "I am interning at Intel Labs in Santa Clara this summer
-  #   with <a href='http://vladlen.info/'>Vladlen Koltun</a>."
-  # - date: Nov 2017
-  #   info: "I will be at NIPS 2017 this year.
-  #   Come see our
-  #   <a href='https://papers.nips.cc/paper/7132-task-based-end-to-end-model-learning-in-stochastic-optimization'>Task-based End-to-end Model Learning in Stochastic Optimization</a>
-  #   work at the main conference and our (unpublished)
-  #   End-to-end Model Predictive Control work at the
-  #   deep reinforcement learning symposium.
-  #   "
-  # - date: June 2017
-  #   info: "Our ICNN and OptNet papers have been accepted to ICML and
-  #   the camera-ready versions are available on arXiv."
-  # - date: May 2017
-  #   info: "I am interning at <a href='https://deepmind.com/'>Google DeepMind</a>
-  #   in London this summer with
-  #   <a href='http://www.cs.ox.ac.uk/people/nando.defreitas/'>Nando de Freitas</a>."
-
-
 service:
-  - title: Reviewer
-    details: ICML 2018, NeurIPS 2018, NeurIPS Deep RL Workshop 2018, ICLR 2019 (outstanding reviewer), ICML 2019, ICCV 2019
+  - title: Reviewing
+    details: AAAI, ICML, NeurIPS, ICLR*, ICCV, CVPR, ICRA
+    sub_details: "*Outstanding reviewer"
   - title: Admissions
     details: CMU CSD MS 2014-2015
+  # - title: Organizing
+  #   details: TODO, ICCV/CVPR DDN workshop/tutorial, NeurIPS LMCA
 
 selected_repos:
   https://github.com/locuslab/icnn
@@ -133,7 +106,8 @@ education:
     overallGPA: 3.99/4.00
     majorGPA: 4.00/4.00
 
-  - school: Northside High School (Roanoke, Virginia)
+  - school: Northside High School
+    location: Roanoke, Virginia
     dates: Aug 2007 -- May 2011
 
 research:
@@ -150,13 +124,13 @@ research:
     area: Machine learning and optimization
   - place: Intel Labs
     location: Santa Clara, California
-    title: Research Intern
+    title: Research Intern (Vladlen Koltun)
     dates: June 2018 -- Sept 2018
     advisor: Vladlen Koltun
     area: Machine learning
   - place: Google DeepMind
     location: London, UK
-    title: Research Intern
+    title: Research Intern (Misha Denil and Nando de Freitas)
     dates: May 2017 -- Oct 2017
     advisor: Nando de Freitas
     area: Machine and reinforcement learning
@@ -236,7 +210,7 @@ industry:
       - I built a web analytics processing engine using {\bf Scala},
         {\bf Spark}, {\bf Spray}, {\bf Parquet}, and {\bf HDFS}.
   - place: Snowplow Analytics
-    location: London, United Kingdom (Remote)
+    location: London, UK (Remote)
     title: Software Engineer Intern
     dates: Dec 2013 -- Jan 2014
     details:
@@ -298,7 +272,7 @@ teaching:
     position: TA
   - semester: S2013
     name: Software Design and Data Structures
-    short: VT CS 2114
+    short: VT CS2114
     position: TA
 
 selected_publications:
@@ -334,6 +308,16 @@ all_publications:
     #   prefix: S
     #   file: posters.bib
 
+talks:
+  - 2020, MPI, MILA, ECCV, CVPR workshop, Yisong class
+  - INFORMS, ISMP
+  - Facebook, Google, Bosch, Waymo, NVIDIA
+
+students:
+  - Aaron Lou
+  - Ricky Chen
+  - Paul Liang
+  - Phillip Wang
 
 coursework:
   - semester: S2017
@@ -370,16 +354,17 @@ coursework:
 skills:
   - title: Languages
     details: C, C++, Fortran, Haskell, Java,
-      Lua, Make, {\it Mathematica}, Python, R, Scala
+      Lua, Make, Mathematica, Python, R, Scala
   - title: Frameworks
-    details: NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
+    details: jax, NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
   - title: Systems
-    details: Linux, OSX
+    details: Linux
 
 honors:
   - title: NSF Graduate Research Fellowship
     year: 2016 -- 2019
-  - title: "Eight undergraduate scholarships"
+  - title: Eight undergraduate scholarships
+    descr: Benjamin F. Bock, Intelligence Community Center of Academic Excellence, Roanoke County Public Schools Engineering, Papa John's, Gay B. Shober Memorial, Pamplin Leader, I. Luck Gravett Memorial, Scottish Rite of Freemasonry, Salem--Roanoke County Chamber of Commerce
     year: 2011 -- 2014
   # - title: Phi Beta Kappa Honor Society
     # year: Inducted May 2014

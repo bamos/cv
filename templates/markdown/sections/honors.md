@@ -7,9 +7,9 @@
   <td class='col-md-2'>{{ award.year }}</td>
   <td>
     {{ award.title }}
-    <!-- {% if award.descr %} -->
-    <!-- <ul><li>{{ award.descr }}</li></ul> -->
-    <!-- {% endif %} -->
+    {% if award.descr %}
+    <br><p style="color:grey;font-size:1.2rem">{{ award.descr }}</p>
+    {% endif %}
   </td>
 </tr>
 {% endfor %}

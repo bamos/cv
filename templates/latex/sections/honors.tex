@@ -5,9 +5,9 @@
   ~< for award in items >~
     \item << award.title >> \hfill << award['year'] >>
     ~< if award.descr >~
-      \begin{itemize}
-      \item << award.descr >>
-      \end{itemize}
+    \\ \scriptsize{
+      \color{gray}{<< award.descr >>}
+    }
     ~< endif >~
   ~< endfor >~
 \end{itemize}

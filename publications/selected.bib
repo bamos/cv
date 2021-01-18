@@ -1,3 +1,122 @@
+@inproceedings{chen2021learning,
+      title={Learning Neural Event Functions for Ordinary Differential Equations},
+      author={Ricky T. Q. Chen and Brandon Amos and Maximilian Nickel},
+      booktitle={ICLR},
+      _venue={ICLR},
+      year={2021},
+      url={https://arxiv.org/abs/2011.03902},
+      abstract={
+        The existing Neural ODE formulation relies on an explicit
+        knowledge of the termination time. We extend Neural
+        ODEs to implicitly defined termination criteria
+        modeled by neural event functions, which can be
+        chained together and differentiated through. Neural
+        Event ODEs are capable of modeling discrete
+        (instantaneous) changes in a continuous-time system,
+        without prior knowledge of when these changes should
+        occur or how many such changes should exist. We test
+        our approach in modeling hybrid discrete- and
+        continuous- systems such as switching dynamical
+        systems and collision in multi-body systems, and we
+        propose simulation-based training of point processes
+        with applications in discrete control.
+      }
+}
+
+@inproceedings{chen2021neural,
+      title={Neural Spatio-Temporal Point Processes}, 
+      author={Ricky T. Q. Chen and Brandon Amos and Maximilian Nickel},
+      booktitle={ICLR},
+      _venue={ICLR},
+      year={2021},
+      url={https://arxiv.org/abs/2011.04583},
+      abstract={
+        We propose a new class of parameterizations for spatio-temporal
+        point processes which leverage Neural ODEs as a
+        computational method and enable flexible,
+        high-fidelity models of discrete events that are
+        localized in continuous time and space. Central to
+        our approach is a combination of recurrent
+        continuous-time neural networks with two novel
+        neural architectures, i.e., Jump and Attentive
+        Continuous-time Normalizing Flows. This approach
+        allows us to learn complex distributions for both
+        the spatial and temporal domain and to condition
+        non-trivially on the observed event history. We
+        validate our models on data sets from a wide variety
+        of contexts such as seismology, epidemiology, urban
+        mobility, and neuroscience.
+      }
+}
+
+@misc{cohen2020aligning,
+      title={Aligning Time Series on Incomparable Spaces},
+      author={Samuel Cohen and Giulia Luise and Alexander Terenin and Brandon Amos and Marc Peter Deisenroth},
+      year={2020},
+      _venue={arXiv},
+      url={https://arxiv.org/abs/2006.12648},
+      abstract={
+        Dynamic time warping (DTW) is a useful method for aligning, comparing
+        and combining time series, but it requires them to
+        live in comparable spaces. In this work, we consider
+        a setting in which time series live on different
+        spaces without a sensible ground metric, causing DTW
+        to become ill-defined. To alleviate this, we propose
+        Gromov dynamic time warping (GDTW), a distance
+        between time series on potentially incomparable
+        spaces that avoids the comparability requirement by
+        instead considering intra-relational geometry. We
+        derive a Frank-Wolfe algorithm for computing it and
+        demonstrate its effectiveness at aligning, combining
+        and comparing time series living on incomparable
+        spaces. We further propose a smoothed version of
+        GDTW as a differentiable loss and assess its
+        properties in a variety of settings, including
+        barycentric averaging, generative modeling and
+        imitation learning.
+      }
+}
+
+@misc{amos2020modelbased,
+      title={On the model-based stochastic value gradient for continuous reinforcement learning},
+      author={Brandon Amos and Samuel Stanton and Denis Yarats and Andrew Gordon Wilson},
+      year={2020},
+      _venue={arXiv},
+      url={https://arxiv.org/abs/2008.12775},
+      abstract={
+        Model-based reinforcement learning approaches add explicit domain
+        knowledge to agents in hopes of improving the
+        sample-efficiency in comparison to model-free
+        agents. However, in practice model-based methods are
+        unable to achieve the same asymptotic performance on
+        challenging continuous control tasks due to the
+        complexity of learning and controlling an explicit
+        world model. In this paper we investigate the
+        stochastic value gradient (SVG), which is a
+        well-known family of methods for controlling
+        continuous systems which includes model-based
+        approaches that distill a model-based value
+        expansion into a model-free policy. We consider a
+        variant of the model-based SVG that scales to larger
+        systems and uses 1) an entropy regularization to
+        help with exploration, 2) a learned deterministic
+        world model to improve the short-horizon value
+        estimate, and 3) a learned model-free value estimate
+        after the model's rollout. This SVG variation
+        captures the model-free soft actor-critic method as
+        an instance when the model rollout horizon is zero,
+        and otherwise uses short-horizon model rollouts to
+        improve the value estimate for the policy update. We
+        surpass the asymptotic performance of other
+        model-based methods on the proprioceptive MuJoCo
+        locomotion tasks from the OpenAI gym, including a
+        humanoid. We notably achieve these results with a
+        simple deterministic world model without requiring
+        an ensemble.
+      }
+}
+
+
 @inproceedings{amos2020differentiable,
   title={{The Differentiable Cross-Entropy Method}},
   author={Amos, Brandon and Yarats, Denis},
@@ -35,6 +154,29 @@
   url={https://arxiv.org/abs/2002.04523},
   abstract={
   Model-based reinforcement learning (MBRL) has been shown to be a powerful framework for data-efficiently learning control of continuous tasks. Recent work in MBRL has mostly focused on using more advanced function approximators and planning schemes, with little development of the general framework. In this paper, we identify a fundamental issue of the standard MBRL framework--what we call the objective mismatch issue. Objective mismatch arises when one objective is optimized in the hope that a second, often uncorrelated, metric will also be optimized. In the context of MBRL, we characterize the objective mismatch between training the forward dynamics model wrt the likelihood of the one-step ahead prediction, and the overall goal of improving performance on a downstream control task. For example, this issue can emerge with the realization that dynamics models effective for a specific task do not necessarily need to be globally accurate, and vice versa globally accurate models might not be sufficiently accurate locally to obtain good control performance on a specific task. In our experiments, we study this objective mismatch issue and demonstrate that the likelihood of one-step ahead predictions is not always correlated with control performance. This observation highlights a critical limitation in the MBRL framework which will require further research to be fully understood and addressed. We propose an initial method to mitigate the mismatch issue by re-weighting dynamics model training. Building on it, we conclude with a discussion about other potential directions of research for addressing this issue.
+  }
+}
+
+@article{amos2020QNSTOP,
+  title={{{QNSTOP: Quasi-Newton Algorithm for Stochastic Optimization}}},
+  author={Brandon Amos and David Easterling and Layne Watson and
+    William Thacker and Brent Castle and Michael Trosset},
+  journal={},
+  _venue={ACM TOMS},
+  year={2020},
+  keywords={journal},
+  url={https://dl.acm.org/doi/10.1145/3374219},
+  abstract={
+    QNSTOP consists of serial and parallel (OpenMP) Fortran 2003 codes for the
+    quasi-Newton stochastic optimization method of Castle and Trosset. For
+    stochastic problems, convergence theory exists for the particular
+    algorithmic choices and parameter values used in QNSTOP. Both the parallel
+    driver subroutine, which offers several parallel decomposition strategies,
+    and the serial driver subroutine can be used for stochastic optimization or
+    deterministic global optimization, based on an input switch. QNSTOP is
+    particularly effective for “noisy” deterministic problems, using only
+    objective function values. Some performance data for computational systems
+    biology problems is given.
   }
 }
 
@@ -310,28 +452,5 @@ A fundamental challenge in imperfect-information games is that states do not hav
     We released OpenFace in October 2015 as an open source library under
     the Apache 2.0 license. It is available at:
     <http://cmusatyalab.github.io/openface/>
-  }
-}
-
-@article{amos2014QNSTOP,
-  title={{{QNSTOP: Quasi-Newton Algorithm for Stochastic Optimization}}},
-  author={Brandon Amos and David Easterling and Layne Watson and
-    William Thacker and Brent Castle and Michael Trosset},
-  journal={},
-  _venue={ACM TOMS},
-  year={2014},
-  keywords={journal},
-  url={https://dl.acm.org/doi/10.1145/3374219},
-  abstract={
-    QNSTOP consists of serial and parallel (OpenMP) Fortran 2003 codes for the
-    quasi-Newton stochastic optimization method of Castle and Trosset. For
-    stochastic problems, convergence theory exists for the particular
-    algorithmic choices and parameter values used in QNSTOP. Both the parallel
-    driver subroutine, which offers several parallel decomposition strategies,
-    and the serial driver subroutine can be used for stochastic optimization or
-    deterministic global optimization, based on an input switch. QNSTOP is
-    particularly effective for “noisy” deterministic problems, using only
-    objective function values. Some performance data for computational systems
-    biology problems is given.
   }
 }

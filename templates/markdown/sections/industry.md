@@ -5,7 +5,7 @@
 {% for i in items %}
 <tr>
   <td class='col-md-3'>{{ i.dates }}</td>
-  <td><strong>{{ i.place }}</strong>, {{ i.title }}</td>
+  <td><strong>{{ i.place }}</strong> | {{ i.title }} | {{ i.location }}</td>
 </tr>
 <tr>
 {#

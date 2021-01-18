@@ -14,7 +14,7 @@
         {% endif %}
         <br>
       {% endif %}
-      {{ school.school }}
+      {{ school.school }} | {{ school.location }}
     </td>
   </tr>
 {% endfor %}
