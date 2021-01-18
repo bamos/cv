@@ -356,7 +356,7 @@ skills:
     details: C, C++, Fortran, Haskell, Java,
       Lua, Make, Mathematica, Python, R, Scala
   - title: Frameworks
-    details: jax, NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
+    details: JAX, NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
   - title: Tools
     details: Linux, emacs, vim, evil, org, mu4e, xmonad, i3, git, tmux, zsh
 
