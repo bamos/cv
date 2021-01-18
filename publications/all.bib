@@ -49,6 +49,40 @@
       }
 }
 
+@inproceedings{yarats2021improving,
+  title={{Improving Sample Efficiency in Model-Free Reinforcement Learning from Images}},
+  author={Yarats, Denis and Zhang, Amy and Kostrikov, Ilya and Amos, Brandon and Pineau, Joelle and Fergus, Rob},
+  journal={arXiv preprint arXiv:1910.01741},
+  booktitle={AAAI},
+  _venue={AAAI},
+  year={2021},
+  url={https://arxiv.org/abs/1910.01741},
+  abstract={
+    Training an agent to solve control tasks directly from
+    high-dimensional images with model-free
+    reinforcement learning (RL) has proven
+    difficult. The agent needs to learn a latent
+    representation together with a control policy to
+    perform the task. Fitting a high-capacity encoder
+    using a scarce reward signal is not only sample
+    inefficient, but also prone to suboptimal
+    convergence. Two ways to improve sample efficiency
+    are to extract relevant features for the task and
+    use off-policy algorithms. We dissect various
+    approaches of learning good latent features, and
+    conclude that the image reconstruction loss is the
+    essential ingredient that enables efficient and
+    stable representation learning in image-based
+    RL. Following these findings, we devise an
+    off-policy actor-critic algorithm with an auxiliary
+    decoder that trains end-to-end and matches
+    state-of-the-art performance across both model-free
+    and model-based algorithms on many challenging
+    control tasks. We release our code to encourage
+    future research on image-based RL.
+  }
+}
+
 @misc{cohen2020aligning,
       title={Aligning Time Series on Incomparable Spaces},
       author={Samuel Cohen and Giulia Luise and Alexander Terenin and Brandon Amos and Marc Peter Deisenroth},
@@ -648,39 +682,6 @@ A fundamental challenge in imperfect-information games is that states do not hav
     framework and library through illustrative
     experiments and ablation studies which they
     facilitate.
-  }
-}
-
-@article{yarats2019improving,
-  title={{Improving Sample Efficiency in Model-Free Reinforcement Learning from Images}},
-  author={Yarats, Denis and Zhang, Amy and Kostrikov, Ilya and Amos, Brandon and Pineau, Joelle and Fergus, Rob},
-  journal={arXiv preprint arXiv:1910.01741},
-  year={2019},
-  _venue={arXiv},
-  url={https://arxiv.org/abs/1910.01741},
-  abstract={
-    Training an agent to solve control tasks directly from
-    high-dimensional images with model-free
-    reinforcement learning (RL) has proven
-    difficult. The agent needs to learn a latent
-    representation together with a control policy to
-    perform the task. Fitting a high-capacity encoder
-    using a scarce reward signal is not only sample
-    inefficient, but also prone to suboptimal
-    convergence. Two ways to improve sample efficiency
-    are to extract relevant features for the task and
-    use off-policy algorithms. We dissect various
-    approaches of learning good latent features, and
-    conclude that the image reconstruction loss is the
-    essential ingredient that enables efficient and
-    stable representation learning in image-based
-    RL. Following these findings, we devise an
-    off-policy actor-critic algorithm with an auxiliary
-    decoder that trains end-to-end and matches
-    state-of-the-art performance across both model-free
-    and model-based algorithms on many challenging
-    control tasks. We release our code to encourage
-    future research on image-based RL.
   }
 }
 
