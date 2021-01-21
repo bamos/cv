@@ -92,11 +92,11 @@ education:
     dates: Aug 2014 -- May 2019
     overallGPA: 0.00/0.00
 
-  - school: Carnegie Mellon University
-    location: Pittsburgh, Pennsylvania
-    degree: M.S. in Computer Science
-    dates: Aug 2014 -- May 2016
-    overallGPA: 0.00/0.00
+  # - school: Carnegie Mellon University
+  #   location: Pittsburgh, Pennsylvania
+  #   degree: M.S. in Computer Science
+  #   dates: Aug 2014 -- May 2016
+  #   overallGPA: 0.00/0.00
 
   - school: Virginia Tech
     location: Blacksburg, Virginia
