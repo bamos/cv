@@ -33,7 +33,7 @@ order:
   # - [coursework, CMU Graduate Coursework]
   - [service, Service]
   - [skills, Skills]
-  - [teaching, Teaching Experience]
+  - [teaching, Teaching]
   - [NEWPAGE, NEWPAGE]
 #  - [activities, Activities]
   - [all_publications, Publications]
