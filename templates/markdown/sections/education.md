@@ -14,9 +14,9 @@
         {% endif %}
         <br>
       {% endif %}
-      {{ school.school }} | {{ school.location }}
+      <strong>{{ school.school }}</strong> | {{ school.location }}
       {% if school.details %}
-        <p style='margin-top:-0.5em' markdown='1'>
+        <p style='margin-top:-0.5em;margin-bottom:0em' markdown='1'>
         {% for detail in school.details %}
         <br> {{ detail }}
         {% endfor %}
