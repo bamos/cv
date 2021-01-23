@@ -5,11 +5,11 @@
     ~< for item in items >~
       \item \textbf{<< item.title >>} | << item.place >> | << item.location >> \hfill << item.dates >>
         ~< if item.details >~
-            \begin{itemize}
+            % \begin{itemize}
             ~< for detail in item.details ->~
-                \item <<detail>>
+                ~\\ <<detail>>
             ~<- endfor ->~
-            \end{itemize}
+            % \end{itemize}
         ~< endif >~
     ~< endfor >~
   \end{itemize}
