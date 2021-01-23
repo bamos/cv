@@ -88,7 +88,7 @@ education:
     dates: Aug 2014 -- May 2019
     overallGPA: 0.00/0.00
     details:
-      - "Thesis: \\href{https://github.com/bamos/thesis}{Differentiable Optimization-Based Modeling for Machine Learning}"
+      - "\\textit{\\href{https://github.com/bamos/thesis}{Differentiable Optimization-Based Modeling for Machine Learning}}"
       - "Advisors: \\href{http://zicokolter.com}{J. Zico Kolter} (2016 -- 2019),  \\href{https://www.cs.cmu.edu/~satya/}{Mahadev Satyanarayanan} (2014 -- 2016)"
 
 
