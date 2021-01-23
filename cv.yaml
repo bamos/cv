@@ -26,17 +26,17 @@ order:
   - [education, Education]
   - [industry, Experience]
   # - [research, Research Experience]
-  - [selected_publications, Selected Publications]
+  # - [selected_publications, Selected Publications]
   # - [NEWPAGE, NEWPAGE]
-  - [teaching, Teaching Experience]
+  - [honors, Honors \& Awards]
   # - [projects, Projects]
   # - [coursework, CMU Graduate Coursework]
-  - [honors, Honors \& Awards]
   - [service, Service]
   - [skills, Skills]
-  # - [NEWPAGE, NEWPAGE]
-  - [all_publications, All Publications]
+  - [teaching, Teaching Experience]
+  - [NEWPAGE, NEWPAGE]
 #  - [activities, Activities]
+  - [all_publications, Publications]
 
 about: '
   I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and
@@ -209,9 +209,9 @@ industry:
     details:
       - I built a web analytics processing engine using {\bf Scala},
         {\bf Spark}, {\bf Spray}, {\bf Parquet}, and {\bf HDFS}.
-  - place: Snowplow Analytics
+  - place: Snowplow
     location: London, UK (Remote)
-    title: Software Engineer Intern
+    title: Software Intern
     dates: Dec 2013 -- Jan 2014
     details:
     - Open-source {\bf Scala} development with a startup on the
@@ -223,7 +223,7 @@ industry:
     # - "Helped port Snowplow's Scala enrichment process to Kinesis."
   - place: Qualcomm
     location: San Diego, California
-    title: Software Engineer Intern
+    title: Software Intern
     dates: May 2013 -- Aug 2013
     details:
     - "I created a specification format language translator for fuzz
@@ -238,7 +238,7 @@ industry:
     #   sophisticated analysis and tree transformations.
   - place: Phoenix Integration
     location: Blacksburg, Virginia
-    title: Software Engineer Intern
+    title: Software Intern
     dates: May 2012 -- Aug 2012
     details:
       - I developed industry software for software integration and
@@ -286,7 +286,7 @@ all_publications:
   name: "B. Amos"
   file: all.bib
   sort_bib: True
-  include_image: False
+  include_image: True
   group_by_year: True
   # categories:
   #   - heading: Preprints and Tech Reports
@@ -307,6 +307,7 @@ all_publications:
     # - heading: Posters
     #   prefix: S
     #   file: posters.bib
+
 
 talks:
   - 2020, MPI, MILA, ECCV, CVPR workshop, Yisong class
@@ -363,7 +364,7 @@ skills:
 honors:
   - title: NSF Graduate Research Fellowship
     year: 2016 -- 2019
-  - title: Eight undergraduate scholarships
+  - title: Nine undergraduate scholarships
     descr: Benjamin F. Bock, Intelligence Community Center of Academic Excellence, Roanoke County Public Schools Engineering, Papa John's, Gay B. Shober Memorial, Pamplin Leader, I. Luck Gravett Memorial, Scottish Rite of Freemasonry, Salem--Roanoke County Chamber of Commerce
     year: 2011 -- 2014
   # - title: Phi Beta Kappa Honor Society

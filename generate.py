@@ -77,7 +77,7 @@ def get_pub_md(context, config):
         assert('_venue' in pub and 'year' in pub)
         yearVenue = "{} {}".format(pub['_venue'], pub['year'])
 
-        imgStr = '<img src="images/publications/{}.png"/>'.format(pub['ID'])
+        imgStr = '<img src="images/publications/{}.png" onerror="this.style.display=\'none\'"/>'.format(pub['ID'])
         links = ['[{}{}]'.format(prefix, gidx)]
         abstract = ''
         if 'abstract' in pub:
@@ -179,7 +179,6 @@ def get_pub_md(context, config):
             m = re.search('(\d{4})', pub['year'])
             assert m is not None
             pub['year_int'] = int(m.group(1))
-            pub['ID'] += f"_{config['file'].replace('.', '_')}"
 
         details = ''
         for year, year_pubs in groupby(pubs, lambda pub: pub['year_int']):

@@ -3,7 +3,7 @@
 ~< block body >~
   \begin{itemize}
     ~< for item in items >~
-      \item << item.title >>, << item.place >>\hfill << item.dates >>
+      \item \textbf{<< item.title >>} | << item.place >> | << item.location >> \hfill << item.dates >>
         \iffalse
         \begin{itemize}
           ~< for detail in item.details ->~

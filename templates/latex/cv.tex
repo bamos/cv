@@ -28,14 +28,14 @@ sorting=ydmdnt,
 %plauthorhandling=highlight,
 % marginyear=true,
 plnumbered=false,
-maxnames=8,
+maxnames=10,
 nameorder=given-family
 ]{biblatex}
 
 % Make the author's name bold in publications.
 \DeclareNameFormat{author}{%
   \nameparts{#1}%
-  \ifthenelse{\equal{\namepartfamily}{Amos}}%
+  \ifthenelse{\equal{\namepartfamily}{Amos}\or\equal{\namepartfamily}{Amos*}}%
     {\textbf{\ifblank{\namepartgiveni}{}{\namepartgiveni\space}\namepartfamily}}%
     {\ifblank{\namepartgiveni}{}{\namepartgiveni\space}\namepartfamily}%
   \ifthenelse{\value{listcount}=1 \AND \value{liststop}=2}%

@@ -4,14 +4,15 @@
 ~< for school in items >~
 \cvlistitem{
   ~< if school.degree >~
-    << school.degree >>,
+    \textbf{<< school.degree >>}
+    ~< if school.overallGPA >~
+        (<< school.overallGPA >>)
+    ~< endif >~
+    \hfill << school.dates >> \\
+    << school.school >> | << school.location >>
+  ~< else >~
+    << school.school >> | << school.location >> \hfill << school.dates >>
   ~< endif >~
-  << school.school >>
-  ~< if school.overallGPA >~
-    (<< school.overallGPA >>)
-  ~< endif >~
-  \hfill
-  << school.dates >>
 }
 ~< endfor >~
 ~< endblock body >~
