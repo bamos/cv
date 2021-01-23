@@ -15,6 +15,13 @@
         <br>
       {% endif %}
       {{ school.school }} | {{ school.location }}
+      {% if school.details %}
+        <p style='margin-top:-0.5em' markdown='1'>
+        {% for detail in school.details %}
+        <br> {{ detail }}
+        {% endfor %}
+        </p>
+      {% endif %}
     </td>
   </tr>
 {% endfor %}

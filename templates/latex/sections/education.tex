@@ -1,8 +1,10 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
+\vspace{-2mm}
+\begin{itemize}
 ~< for school in items >~
-\cvlistitem{
+\item
   ~< if school.degree >~
     \textbf{<< school.degree >>}
     ~< if school.overallGPA >~
@@ -13,6 +15,15 @@
   ~< else >~
     << school.school >> | << school.location >> \hfill << school.dates >>
   ~< endif >~
-}
+  ~< if school.details >~
+    \begin{itemize}
+    ~< for detail in school.details ->~
+        \item <<detail>>
+    ~<- endfor ->~
+    \end{itemize}
+  ~< endif >~
+  \vspace{3mm}
 ~< endfor >~
+\end{itemize}
+\vspace{-3mm}
 ~< endblock body >~

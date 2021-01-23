@@ -7,20 +7,14 @@
   <td class='col-md-3'>{{ i.dates }}</td>
   <td>
     <strong>{{ i.title }}</strong> | {{ i.place}} | {{ i.location }}
+    {% if i.details %}
+    {% for detail in i.details %}
+        <p style='display:inline' markdown='1'>
+            <br> {{ detail }}
+        </p>
+    {% endfor %}
+    {% endif %}
   </td>
-</tr>
-<tr>
-{#
-<td colspan="100%">
-<ul>
-{% for detail in i.details %}
-<li markdown="1">
-{{ detail }}
-</li>
-{% endfor %}
-</ul>
-</td>
-#}
 </tr>
 {% endfor %}
 </table>
