@@ -77,7 +77,7 @@ def get_pub_md(context, config):
         assert('_venue' in pub and 'year' in pub)
         yearVenue = "{} {}".format(pub['_venue'], pub['year'])
 
-        imgStr = '<img src="images/publications/{}.png" onerror="this.style.display=\'none\'" onload="$(\'#tr-{}\').css(\'background-color\', \'#ffffd0\')" />'.format(pub['ID'], pub['ID'])
+        imgStr = '<img src="images/publications/{}.png" onerror="this.style.display=\'none\'" onload="$(\'#tr-{}\').css(\'background-color\', \'#ffffd0\')" style=\'border: none;\' />'.format(pub['ID'], pub['ID'])
         links = ['[{}{}]'.format(prefix, gidx)]
         abstract = ''
         if 'abstract' in pub:
