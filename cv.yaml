@@ -308,7 +308,7 @@ all_publications:
 
 talks:
   - year: 2020
-    location: Max Planck Institute for Intelligent Systems, Tübingen, Seminar
+    location: Max Planck Institute for Intelligent Systems (Tübingen) Seminar
   - year: 2020
     location: Montreal Institute for Learning Algorithms Seminar
   - year: 2020
@@ -321,7 +321,7 @@ talks:
     location: Caltech CS 159, Guest Lecture
     url: https://sites.google.com/view/cs-159-spring-2020/lectures
   - year: 2019
-    location: New York University
+    location: New York University CILVR Seminar
   - year: 2019
     location: INFORMS Session on Prediction and Optimization
   - year: 2018
