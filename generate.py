@@ -77,7 +77,7 @@ def get_pub_md(context, config):
         assert('_venue' in pub and 'year' in pub)
         yearVenue = "{} {}".format(pub['_venue'], pub['year'])
 
-        imgStr = '<img src="images/publications/{}.png" onerror="this.style.display=\'none\'"/>'.format(pub['ID'])
+        imgStr = '<img src="images/publications/{}.png" onerror="this.style.display=\'none\'" onload="$(\'#tr-{}\').css(\'background-color\', \'#ffffd0\')" />'.format(pub['ID'], pub['ID'])
         links = ['[{}{}]'.format(prefix, gidx)]
         abstract = ''
         if 'abstract' in pub:
@@ -109,7 +109,7 @@ def get_pub_md(context, config):
 
         if includeImage:
             return '''
-<tr>
+<tr id="tr-{}">
 <td class="col-md-3">{}</td>
 <td>
     <strong>{}</strong><br>
@@ -120,7 +120,9 @@ def get_pub_md(context, config):
     {}
 </td>
 </tr>
-'''.format(imgStr, title, author_str, yearVenue, note_str, links, abstract)
+'''.format(
+    pub['ID'], imgStr, title, author_str, yearVenue, note_str, links, abstract
+)
         else:
             return '''
 <tr>
@@ -281,7 +283,8 @@ class RenderContext(object):
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, 'skills' + self._file_ending)
             elif section_tag in ['coursework', 'education', 'honors',
-                                 'industry', 'research', 'skills', 'teaching']:
+                                 'industry', 'research', 'skills',
+                                 'teaching', 'talks', 'advising']:
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)

@@ -37,6 +37,8 @@ order:
   - [NEWPAGE, NEWPAGE]
 #  - [activities, Activities]
   - [all_publications, Publications]
+  - [talks, Invited Talks]
+  - [advising, Advising]
 
 about: '
   I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and
@@ -56,10 +58,6 @@ about: '
   I actively publish code to \href{https://github.com/bamos}{GitHub}
   as I believe that science should be open and accessible,
   and that well-engineered code enables new frontiers.
-<br><br>
-  I am always interested in learning more about
-  music, philosophy, and cute mathematics.
-  Please get in touch if you have any to share.
 <br><br>'
 
 service:
@@ -309,15 +307,61 @@ all_publications:
 
 
 talks:
-  - 2020, MPI, MILA, ECCV, CVPR workshop, Yisong class
-  - INFORMS, ISMP
-  - Facebook, Google, Bosch, Waymo, NVIDIA
+  - year: 2020
+    location: Max Planck Institute for Intelligent Systems, Tübingen, Seminar
+  - year: 2020
+    location: Montreal Institute for Learning Algorithms Seminar
+  - year: 2020
+    location: ECCV Deep Declarative Networks Tutorial
+    url: https://anucvml.github.io/ddn-eccvt2020/
+  - year: 2020
+    location: CVPR Deep Declarative Networks Workshop
+    url: https://anucvml.github.io/ddn-cvprw2020/
+  - year: 2020
+    location: Caltech CS 159, Guest Lecture
+    url: https://sites.google.com/view/cs-159-spring-2020/lectures
+  - year: 2019
+    location: New York University
+  - year: 2019
+    location: INFORMS Session on Prediction and Optimization
+  - year: 2018
+    location: ISMP Session on Machine Learning and Optimization
+  - year: 2018
+    location: Facebook AI Research
+  - year: 2018
+    location: Google Brain
+  - year: 2018
+    location: Bosch Center for AI
+  - year: 2018
+    location: Waymo Research
+  - year: 2018
+    location: Tesla AI
+  - year: 2018
+    location: NVIDIA Robotics
+  - year: 2018
+    location: Salesforce Research
+  - year: 2018
+    location: OpenAI
+  - year: 2018
+    location: NNAISENSE
 
-students:
-  - Aaron Lou
-  - Ricky Chen
-  - Paul Liang
-  - Phillip Wang
+advising:
+  - year: 2020
+    name: Aaron Lou
+    details: (Cornell), FAIR Intern
+    url: https://www.aaronlou.com/
+  - year: 2020
+    name: Ricky Chen
+    details: (Toronto), FAIR Intern
+    url: http://www.cs.toronto.edu/~rtqichen/
+  - year: 2020
+    name: Paul Liang
+    details: (CMU), FAIR Intern
+    url: http://www.cs.cmu.edu/~pliang/
+  - year: 2018
+    name: Phillip Wang
+    details: (CMU)
+    url: https://phillipkwang.com/
 
 coursework:
   - semester: S2017
