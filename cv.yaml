@@ -38,7 +38,7 @@ order:
 #  - [activities, Activities]
   - [all_publications, Publications]
   - [talks, Invited Talks]
-  - [advising, Advising]
+  - [advising, Students \& Advising]
 
 about: '
   I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and
@@ -348,19 +348,23 @@ talks:
 advising:
   - year: 2020
     name: Aaron Lou
-    details: (Cornell), FAIR Intern
+    details: (Cornell), FAIR Intern (with Max Nickel)
     url: https://www.aaronlou.com/
   - year: 2020
     name: Ricky Chen
-    details: (Toronto), FAIR Intern
+    details: (Toronto), FAIR Intern (with Max Nickel)
     url: http://www.cs.toronto.edu/~rtqichen/
   - year: 2020
     name: Paul Liang
-    details: (CMU), FAIR Intern
+    details: (CMU), FAIR Intern (with Ed Grefenstette and Tim Rocktäschel)
     url: http://www.cs.cmu.edu/~pliang/
   - year: 2018
     name: Phillip Wang
-    details: (CMU)
+    details: (CMU), Undergraduate Researcher
+    url: https://phillipkwang.com/
+  - year: 2016
+    name: Lei Xu
+    details: (Tsinghua), CMU Intern (with J. Zico Kolter)
     url: https://phillipkwang.com/
 
 coursework:
