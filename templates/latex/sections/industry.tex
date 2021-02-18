@@ -7,7 +7,7 @@
         ~< if item.details >~
             % \begin{itemize}
             ~< for detail in item.details ->~
-                ~\\ <<detail>>
+                \par <<detail>>
             ~<- endfor ->~
             % \end{itemize}
         ~< endif >~

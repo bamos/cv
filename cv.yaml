@@ -88,7 +88,8 @@ education:
   - school: Carnegie Mellon University
     location: Pittsburgh, Pennsylvania
     degree: Ph.D. in Computer Science
-    dates: Aug 2014 -- May 2019
+    dates: 2019
+    # dates: May 2019
     overallGPA: 0.00/0.00
     details:
       - "\\textit{\\href{https://github.com/bamos/thesis}{Differentiable Optimization-Based Modeling for Machine Learning}}"
@@ -98,7 +99,8 @@ education:
   - school: Virginia Tech
     location: Blacksburg, Virginia
     degree: B.S. in Computer Science, Honors
-    dates: Aug 2011 -- May 2014
+    dates: 2014
+    # dates: May 2014
     overallGPA: 3.99/4.00
     majorGPA: 4.00/4.00
     details:
@@ -106,7 +108,8 @@ education:
 
   - school: Northside High School
     location: Roanoke, Virginia
-    dates: Aug 2007 -- May 2011
+    dates: 2011
+    # dates: May 2011
 
 research:
   - place: Facebook AI
@@ -190,23 +193,27 @@ industry:
   - place: Facebook AI
     location: New York, New York
     title: Research Scientist
-    dates: May 2019 -- Present
+    # dates: May 2019 -- Present
+    dates: 2019 -- Present
   - place: Intel Labs
     location: Santa Clara, California
     title: Research Intern
-    dates: June 2018 -- Sept 2018
+    dates: 2018
+    # dates: June 2018 -- Sept 2018
     details:
       - "Host: \\href{http://vladlen.info/}{Vladlen Koltun}"
   - place: Google DeepMind
     location: London, UK
     title: Research Intern
-    dates: May 2017 -- Oct 2017
+    dates: 2017
+    # dates: May 2017 -- Oct 2017
     details:
       - "Hosts: \\href{http://mdenil.com/}{Misha Denil} and \\href{https://scholar.google.com/citations?user=nzEluBwAAAAJ}{Nando de Freitas}"
   - place: Adobe Research
     location: San Jose, California
     title: Data Scientist Intern
-    dates: May 2014 -- Aug 2014
+    dates: 2014
+    # dates: May 2014 -- Aug 2014
     area: Distributed Systems
     # details:
     #   - I built a web analytics processing engine using {\bf Scala},
@@ -214,7 +221,8 @@ industry:
   - place: Snowplow
     location: London, UK (Remote)
     title: Software Intern
-    dates: Dec 2013 -- Jan 2014
+    dates: 2013
+    # dates: Dec 2013 -- Jan 2014
     # details:
     # - Open-source {\bf Scala} development with a startup on the
     #   Snowplow analytics platform.
@@ -226,7 +234,8 @@ industry:
   - place: Qualcomm
     location: San Diego, California
     title: Software Intern
-    dates: May 2013 -- Aug 2013
+    dates: 2013
+    # dates: May 2013 -- Aug 2013
     # details:
     # - "I created a specification format language translator for fuzz
     #   testing with Python."
@@ -241,7 +250,8 @@ industry:
   - place: Phoenix Integration
     location: Blacksburg, Virginia
     title: Software Intern
-    dates: May 2012 -- Aug 2012
+    dates: 2012
+    # dates: May 2012 -- Aug 2012
     # details:
     #   - I developed industry software for software integration and
     #     design process optimization in {\bf VC++}, {\bf VC\#}, and {\bf Java}.
@@ -254,7 +264,8 @@ industry:
   - place: Sunapsys
     location: Vinton, Virginia
     title: Network Administrator Intern
-    dates: Jan 2011 -- Aug 2011
+    dates: 2011
+    # dates: Jan 2011 -- Aug 2011
     # details:
     #   - Internship in high school to replace Windows domain, mail,
     #     DHCP, and DNS servers with virtual {\bf Linux} servers
