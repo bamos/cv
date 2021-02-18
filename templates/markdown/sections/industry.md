@@ -4,7 +4,6 @@
 <table class="table table-hover">
 {% for i in items %}
 <tr>
-  <td class='col-md-3'>{{ i.dates }}</td>
   <td>
     <strong>{{ i.title }}</strong> | {{ i.place}} | {{ i.location }}
     {% if i.details %}
@@ -15,6 +14,7 @@
     {% endfor %}
     {% endif %}
   </td>
+  <td class='col-md-2' style='text-align:right;'>{{ i.dates }}</td>
 </tr>
 {% endfor %}
 </table>

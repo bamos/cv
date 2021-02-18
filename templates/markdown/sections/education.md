@@ -5,7 +5,6 @@
 <table class="table table-hover">
 {% for school in items %}
   <tr>
-    <td class="col-md-3">{{ school.dates }}</td>
     <td>
       {% if school.degree %}
         <strong>{{ school.degree }}</strong>
@@ -23,6 +22,7 @@
         </p>
       {% endif %}
     </td>
+    <td class="col-md-1" style='text-align:right;'>{{ school.dates }}</td>
   </tr>
 {% endfor %}
 </table>
