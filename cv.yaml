@@ -325,13 +325,15 @@ talks:
   - year: 2020
     location: Caltech CS 159, Guest Lecture
     url: https://sites.google.com/view/cs-159-spring-2020/lectures
+  - year: 2020
+    location: SIAM MDS Minisymposium on Learning Parameterized Energy Minimization Models
   - year: 2019
     location: New York University CILVR Seminar
   - year: 2019
     location: INFORMS Session on Prediction and Optimization
   - year: 2018
     location: ISMP Session on Machine Learning and Optimization
-  - year: 2018
+  - year: 2019
     location: Facebook AI Research
   - year: 2018
     location: Google Brain
