@@ -331,10 +331,10 @@ talks:
     location: New York University CILVR Seminar
   - year: 2019
     location: INFORMS Session on Prediction and Optimization
-  - year: 2018
-    location: ISMP Session on Machine Learning and Optimization
   - year: 2019
     location: Facebook AI Research
+  - year: 2018
+    location: ISMP Session on Machine Learning and Optimization
   - year: 2018
     location: Google Brain
   - year: 2018
