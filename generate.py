@@ -142,7 +142,8 @@ def get_pub_md(context, config):
             p = BibTexParser(f.read(), bc.author).get_entry_list()
         for pub in p:
             for field in pub:
-                pub[field] = context.make_replacements(pub[field])
+                if field is not 'link':
+                    pub[field] = context.make_replacements(pub[field])
             pub['author'] = _format_author_list(pub['author'])
         return p
 
