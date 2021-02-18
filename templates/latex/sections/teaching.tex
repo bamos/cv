@@ -2,12 +2,10 @@
 
 ~< block body >~
     ~< for item in items >~
-        \cvlistitem{
-          << item.name >>
-          (<< item.short >>),
-          << item.position >>
-          \hfill
-          << item.semester>>
-        }
+        << item.name >>
+        (<< item.short >>),
+        << item.position >>
+        \hfill
+        << item.semester>> \\
     ~< endfor >~
 ~< endblock body >~

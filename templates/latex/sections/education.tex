@@ -1,10 +1,10 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-\vspace{-2mm}
-\begin{itemize}
+% \vspace{-2mm}
+% \begin{itemize}
 ~< for school in items >~
-\item
+    % \item 
   ~< if school.degree >~
     \textbf{<< school.degree >>}
     ~< if school.overallGPA >~
@@ -20,8 +20,8 @@
         ~\\ <<detail>>
     ~<- endfor ->~
   ~< endif >~
-  \vspace{3mm}
+  \vspace{3mm} \\
 ~< endfor >~
-\end{itemize}
-\vspace{-3mm}
+% \end{itemize}
+\vspace{-10mm}
 ~< endblock body >~

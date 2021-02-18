@@ -1,9 +1,9 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-  \begin{itemize}
+  % \begin{itemize}
     ~< for item in items >~
-      \item \textbf{<< item.title >>} | << item.place >> | << item.location >> \hfill << item.dates >>
+      \textbf{<< item.title >>} | << item.place >> | << item.location >> \hfill << item.dates >>
         ~< if item.details >~
             % \begin{itemize}
             ~< for detail in item.details ->~
@@ -11,6 +11,7 @@
             ~<- endfor ->~
             % \end{itemize}
         ~< endif >~
+        \par
     ~< endfor >~
-  \end{itemize}
+  % \end{itemize}
 ~< endblock body >~

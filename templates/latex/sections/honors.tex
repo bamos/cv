@@ -1,14 +1,14 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-\begin{itemize}
-  ~< for award in items >~
-    \item << award.title >> \hfill << award['year'] >>
-    ~< if award.descr >~
-    \\ \scriptsize{
-      \color{gray}{<< award.descr >>}
-    }
-    ~< endif >~
-  ~< endfor >~
-\end{itemize}
+% \begin{itemize}
+~< for award in items >~
+  << award.title >> \hfill << award['year'] >>
+  ~< if award.descr >~
+    \\ {\scriptsize \color{gray}{<< award.descr >>} \par}
+  ~< else >~
+    \par
+  ~< endif >~
+~< endfor >~
+% \end{itemize}
 ~< endblock body >~
