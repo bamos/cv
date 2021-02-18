@@ -37,6 +37,7 @@ order:
   - [NEWPAGE, NEWPAGE]
 #  - [activities, Activities]
   - [all_publications, Publications]
+  - [NEWPAGE, NEWPAGE]
   - [talks, Invited Talks]
   - [advising, Students \& Advising]
 

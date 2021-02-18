@@ -1,14 +1,14 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-\begin{tabular}{p{0.5in}p{5in}}
+% \begin{tabular}{p{0.5in}p{5in}}
   ~< for item in items >~
-    << item.year >> &
     ~< if item.url >~
       \href{<< item.url >>}{<< item.name >>} << item.details >>
     ~< else >~
       << item.name >> << item.details >>
-    ~< endif >~ \\
+      ~< endif >~
+    \hfill << item.year >> \\
   ~< endfor >~
-\end{tabular}
+% \end{tabular}
 ~< endblock body >~
