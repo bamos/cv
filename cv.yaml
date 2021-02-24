@@ -72,11 +72,11 @@ service:
   #   details: ICCV/CVPR DDN workshop/tutorial, NeurIPS LMCA
 
 repos:
-  - repo_url: https://github.com/facebookresearch/higher
-    year: 2020
-    desc: PyTorch higher-order gradients
   - repo_url: https://github.com/facebookresearch/dcem
     year: 2020
+  - repo_url: https://github.com/facebookresearch/higher
+    year: 2019
+    desc: PyTorch higher-order gradients
   - repo_url: https://github.com/bamos/thesis
     year: 2019
     desc: Thesis source cdoe
@@ -109,7 +109,7 @@ repos:
     desc: Image completion in TensorFlow
   - repo_url: https://github.com/cmusatyalab/openface
     www: http://cmusatyalab.github.io/openface/
-    year: 2016
+    year: 2015
     desc: Face recognition with deep neural networks
   - repo_url: https://github.com/bamos/zsh-history-analysis
     year: 2014
