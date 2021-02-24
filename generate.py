@@ -314,17 +314,13 @@ class RenderContext(object):
                     continue
                 section_template_name = os.path.join(self.SECTIONS_DIR, 'news.md')
                 section_data['items'] = section_content
-            elif section_tag == 'service':
-                section_data['items'] = section_content
-                section_template_name = os.path.join(
-                    self.SECTIONS_DIR, 'skills' + self._file_ending)
             elif section_tag == 'repos':
                 add_repo_data(self, section_content)
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             elif section_tag in ['coursework', 'education', 'honors',
-                                 'industry', 'research', 'skills',
+                                 'industry', 'research', 'skills', 'service',
                                  'teaching', 'talks', 'advising']:
                 section_data['items'] = section_content
                 section_template_name = os.path.join(

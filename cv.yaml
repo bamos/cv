@@ -27,14 +27,12 @@ order:
   - [industry, Experience]
   # - [research, Research Experience]
   # - [selected_publications, Selected Publications]
-  # - [NEWPAGE, NEWPAGE]
   - [honors, Honors \& Awards]
   # - [projects, Projects]
   # - [coursework, CMU Graduate Coursework]
   - [service, Service]
   - [skills, Skills]
   - [teaching, Teaching]
-  - [NEWPAGE, NEWPAGE]
 #  - [activities, Activities]
   - [all_publications, Publications]
   - [NEWPAGE, NEWPAGE]
@@ -63,13 +61,19 @@ about: '
 <br><br>'
 
 service:
-  - title: Reviewing
-    details: AAAI, ICML, NeurIPS, ICLR*, ICCV, CVPR, ICRA
+  - details: "Reviewing: AAAI, ICML, NeurIPS, ICLR*, ICCV, CVPR, ICRA"
     sub_details: "*Outstanding reviewer"
-  - title: Admissions
-    details: CMU CSD MS 2014-2015
-  # - title: Organizing
-  #   details: ICCV/CVPR DDN workshop/tutorial, NeurIPS LMCA
+  - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
+    year: 2020
+    url: https://sites.google.com/view/lmca2020/home
+  - details: CVPR Deep Declarative Workshop Organizer
+    url: https://anucvml.github.io/ddn-cvprw2020/
+    year: 2020
+  - details: ECCV Deep Declarative Tutorial Organizer
+    url: https://anucvml.github.io/ddn-eccvt2020/
+    year: 2020
+  - details: CMU CSD MS Admissions
+    year: 2014 -- 2015
 
 repos:
   - repo_url: https://github.com/facebookresearch/dcem
