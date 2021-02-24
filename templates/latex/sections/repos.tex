@@ -1,0 +1,11 @@
+~< extends "section.tex" >~
+
+~< block body >~
+% \begin{tabular}{p{0.5in}p{5in}}
+  ~< for item in items >~
+    \href{<< item.repo_url >>}{<< item.name >>} | $\bigstar$<< item.stars >> |
+    \emph{<< item.desc >>} \hfill
+    << item.year>> \par
+  ~< endfor >~
+% \end{tabular}
+~< endblock body >~

@@ -13,6 +13,11 @@ import os
 import re
 import yaml
 
+import requests
+from bs4 import BeautifulSoup
+
+import shelve
+
 import bibtexparser.customization as bc
 from bibtexparser.bparser import BibTexParser
 from datetime import date
@@ -201,6 +206,36 @@ def get_pub_md(context, config):
     return contents
 
 
+def add_repo_data(context, config):
+    repo_htmls = shelve.open('repo_htmls.shelf')
+
+
+    for item in config:
+        assert 'repo_url' in item
+        assert 'year' in item
+        assert 'github' in item['repo_url']
+
+        short_name = re.search('.*github\.com/(.*)', item['repo_url'])[1]
+        if 'name' not in item:
+            item['name'] = short_name
+
+        # Scrape the repo HTML instead of using the GitHub API
+        # to avoid being rate-limited (sorry), and be nice by
+        # caching to disk.
+        if short_name not in repo_htmls:
+            r = requests.get(item['repo_url'])
+            repo_htmls[short_name] = r.content
+        soup = BeautifulSoup(repo_htmls[short_name], 'html.parser')
+
+        item['stars'] = soup.find(
+            'a', class_="social-count js-social-count"
+        ).text.strip()
+
+        if 'desc' not in item:
+            item['desc'] = soup.find('p', class_='f4 mt-3').text.strip()
+    # import ipdb; ipdb.set_trace()
+
+
 class RenderContext(object):
     BUILD_DIR = 'build'
     TEMPLATES_DIR = 'templates'
@@ -283,6 +318,11 @@ class RenderContext(object):
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, 'skills' + self._file_ending)
+            elif section_tag == 'repos':
+                add_repo_data(self, section_content)
+                section_data['items'] = section_content
+                section_template_name = os.path.join(
+                    self.SECTIONS_DIR, section_tag + self._file_ending)
             elif section_tag in ['coursework', 'education', 'honors',
                                  'industry', 'research', 'skills',
                                  'teaching', 'talks', 'advising']:

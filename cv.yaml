@@ -40,6 +40,7 @@ order:
   - [NEWPAGE, NEWPAGE]
   - [talks, Invited Talks]
   - [advising, Students \& Advising]
+  - [repos, Open Source]
 
 about: '
   I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and
@@ -70,19 +71,55 @@ service:
   # - title: Organizing
   #   details: ICCV/CVPR DDN workshop/tutorial, NeurIPS LMCA
 
-selected_repos:
-  - repo: https://github.com/cvxgrp/cvxpylayers
-  - repo: https://github.com/locuslab/icnn
-  - repo: https://github.com/locuslab/qpth
+repos:
+  - repo_url: https://github.com/facebookresearch/higher
+    year: 2020
+    desc: PyTorch higher-order gradients
+  - repo_url: https://github.com/facebookresearch/dcem
+    year: 2020
+  - repo_url: https://github.com/bamos/thesis
+    year: 2019
+    desc: Thesis source cdoe
+  - repo_url: https://github.com/cvxgrp/cvxpylayers
+    year: 2019
+  - repo_url: https://github.com/locuslab/mpc.pytorch
+    year: 2018
+    desc: PyTorch differentiable model-predictive control
+  - repo_url: https://github.com/locuslab/icnn
+    year: 2017
+    desc: Input Convex Neural Network Experiments
+  - repo_url: https://github.com/locuslab/optnet
+    year: 2017
+    desc: OptNet Experiments
+  - repo_url: https://github.com/locuslab/qpth
     www: https://locuslab.github.io/qpth/
-  - repo: https://github.com/locuslab/mpc.pytorch
-  - repo: https://github.com/bamos/densenet.pytorch
-  - repo: https://github.com/bamos/dcgan-completion.tensorflow
-  - repo: https://github.com/bamos/block
-  - repo: https://github.com/bamos/setGPU
-  - repo: https://github.com/cmusatyalab/openface
+    year: 2017
+    desc: A fast and differentiable QP solver for PyTorch
+  - repo_url: https://github.com/bamos/densenet.pytorch
+    year: 2017
+    desc: PyTorch DenseNet implementation
+  - repo_url: https://github.com/bamos/block
+    year: 2017
+    desc: An intelligent block matrix library
+  - repo_url: https://github.com/bamos/setGPU
+    year: 2017
+    desc: Automatically use the least-loaded GPU
+  - repo_url: https://github.com/bamos/dcgan-completion.tensorflow
+    year: 2016
+    desc: Image completion in TensorFlow
+  - repo_url: https://github.com/cmusatyalab/openface
     www: http://cmusatyalab.github.io/openface/
-  - repo: https://github.com/bamos/dotfiles
+    year: 2016
+    desc: Face recognition with deep neural networks
+  - repo_url: https://github.com/bamos/zsh-history-analysis
+    year: 2014
+    desc: Analyze and plot your zsh history
+  - repo_url: https://github.com/bamos/cv
+    year: 2013
+    desc: My YAML/LaTeX/Markdown cv
+  - repo_url: https://github.com/bamos/dotfiles
+    year: 2012
+    desc: Linux, mutt, xmonad, i3, vim, emacs, zsh
 
 education:
   - school: Carnegie Mellon University
