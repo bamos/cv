@@ -3,6 +3,6 @@ __pycache__
 *.log
 *.out
 *.pdf
-*.shelf
+*.db
 venv
 auto
