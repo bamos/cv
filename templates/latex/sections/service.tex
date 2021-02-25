@@ -9,9 +9,10 @@
       << item.details >>
     ~< endif >~
     ~< if item.sub_details >~
-      \par \vspace{-1mm} {\scriptsize
+      % \par \vspace{-1mm} {\scriptsize
+      \,\, {\scriptsize
         \color{gray}{<< item.sub_details >>}
-      } \par \vspace{3mm}
+      } \\[2mm]
     ~< endif >~
     ~< if item.year >~
         \hfill << item.year >> \\

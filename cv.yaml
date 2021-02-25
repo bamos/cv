@@ -30,15 +30,15 @@ order:
   - [honors, Honors \& Awards]
   # - [projects, Projects]
   # - [coursework, CMU Graduate Coursework]
-  - [service, Service]
-  - [skills, Skills]
-  - [teaching, Teaching]
 #  - [activities, Activities]
   - [all_publications, Publications]
-  - [NEWPAGE, NEWPAGE]
+  - [repos, Open Source]
+  # - [NEWPAGE, NEWPAGE]
   - [talks, Invited Talks]
   - [advising, Students \& Advising]
-  - [repos, Open Source]
+  - [service, Service]
+  - [teaching, Teaching]
+  - [skills, Skills]
 
 about: '
   I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and
