@@ -3,15 +3,18 @@
 ~< block body >~
   % \begin{itemize}
     ~< for item in items >~
-      \textbf{<< item.title >>} | << item.place >> | << item.location >> \hfill << item.dates >>
+      ~< if item.title >~
+      \textbf{<< item.title >>} | << item.place >>
+      ~< else >~
+      \textbf{<< item.place>>}
+      ~< endif >~
+      | << item.location >>
         ~< if item.details >~
-            % \begin{itemize}
-            ~< for detail in item.details ->~
-                \par <<detail>>
-            ~<- endfor ->~
-            % \end{itemize}
+        ~< for detail in item.details ->~
+            | <<detail>>
+        ~<- endfor ->~
         ~< endif >~
-        \par
+        \hfill << item.dates >> \par
     ~< endfor >~
   % \end{itemize}
 ~< endblock body >~

@@ -23,8 +23,9 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 order:
   - [about, NONE]
   # - [news, News]
+  - [positions, Current Position]
   - [education, Education]
-  - [industry, Experience]
+  - [industry, Research Internships]
   # - [research, Research Experience]
   # - [selected_publications, Selected Publications]
   - [honors, Honors \& Awards]
@@ -32,11 +33,11 @@ order:
   # - [coursework, CMU Graduate Coursework]
 #  - [activities, Activities]
   - [all_publications, Publications]
-  - [repos, Open Source]
+  - [repos, Repositories]
   # - [NEWPAGE, NEWPAGE]
   - [talks, Invited Talks]
   - [advising, Students \& Advising]
-  - [service, Service]
+  - [service, Professional Activities]
   - [teaching, Teaching]
   - [skills, Skills]
 
@@ -83,34 +84,34 @@ repos:
     desc: PyTorch higher-order gradients
   - repo_url: https://github.com/bamos/thesis
     year: 2019
-    desc: Thesis source cdoe
+    desc: Thesis LaTeX source code
   - repo_url: https://github.com/cvxgrp/cvxpylayers
     year: 2019
   - repo_url: https://github.com/locuslab/mpc.pytorch
     year: 2018
-    desc: PyTorch differentiable model-predictive control
+    desc: Differentiable model-predictive control
   - repo_url: https://github.com/locuslab/icnn
     year: 2017
-    desc: Input Convex Neural Network Experiments
+    desc: Input Convex Neural Networks
   - repo_url: https://github.com/locuslab/optnet
     year: 2017
-    desc: OptNet Experiments
+    desc: OptNet
   - repo_url: https://github.com/locuslab/qpth
     www: https://locuslab.github.io/qpth/
     year: 2017
-    desc: A fast and differentiable QP solver for PyTorch
+    desc: Differentiable PyTorch QP solver
   - repo_url: https://github.com/bamos/densenet.pytorch
     year: 2017
     desc: PyTorch DenseNet implementation
   - repo_url: https://github.com/bamos/block
     year: 2017
-    desc: An intelligent block matrix library
+    desc: Intelligent block matrix constructions
   - repo_url: https://github.com/bamos/setGPU
     year: 2017
     desc: Automatically use the least-loaded GPU
   - repo_url: https://github.com/bamos/dcgan-completion.tensorflow
     year: 2016
-    desc: Image completion in TensorFlow
+    desc: Image completion with GANs in TensorFlow
   - repo_url: https://github.com/cmusatyalab/openface
     www: http://cmusatyalab.github.io/openface/
     year: 2015
@@ -230,39 +231,43 @@ research:
         {\bf OpenCL} kernels for locality using {\bf LLVM} and {\bf Polly}.
       #- '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
 
-industry:
+positions:
   - place: Facebook AI
     location: New York, New York
     title: Research Scientist
     # dates: May 2019 -- Present
     dates: 2019 -- Present
+
+industry:
   - place: Intel Labs
     location: Santa Clara, California
-    title: Research Intern
+    # title: Research Intern
     dates: 2018
     # dates: June 2018 -- Sept 2018
     details:
       - "Host: \\href{http://vladlen.info/}{Vladlen Koltun}"
   - place: Google DeepMind
     location: London, UK
-    title: Research Intern
+    # title: Research Intern
     dates: 2017
     # dates: May 2017 -- Oct 2017
     details:
       - "Hosts: \\href{http://mdenil.com/}{Misha Denil} and \\href{https://scholar.google.com/citations?user=nzEluBwAAAAJ}{Nando de Freitas}"
   - place: Adobe Research
     location: San Jose, California
-    title: Data Scientist Intern
+    # title: Data Scientist Intern
     dates: 2014
-    # dates: May 2014 -- Aug 2014
-    area: Distributed Systems
+    details:
+      - "Host: \\href{https://research.adobe.com/person/david-tompkins/}{David Tompkins}"
+  #   # dates: May 2014 -- Aug 2014
+  #   area: Distributed Systems
     # details:
     #   - I built a web analytics processing engine using {\bf Scala},
     #     {\bf Spark}, {\bf Spray}, {\bf Parquet}, and {\bf HDFS}.
-  - place: Snowplow
-    location: London, UK (Remote)
-    title: Software Intern
-    dates: 2013
+  # - place: Snowplow
+  #   location: London, UK (Remote)
+  #   title: Software Intern
+  #   dates: 2013
     # dates: Dec 2013 -- Jan 2014
     # details:
     # - Open-source {\bf Scala} development with a startup on the
@@ -272,10 +277,10 @@ industry:
     # - Developed a new server using {\bf Spray} and {\bf Actors} to store
     #   {\bf Thrift} events on {\bf Amazon Kinesis}.
     # - "Helped port Snowplow's Scala enrichment process to Kinesis."
-  - place: Qualcomm
-    location: San Diego, California
-    title: Software Intern
-    dates: 2013
+  # - place: Qualcomm
+  #   location: San Diego, California
+  #   title: Software Intern
+  #   dates: 2013
     # dates: May 2013 -- Aug 2013
     # details:
     # - "I created a specification format language translator for fuzz
@@ -288,10 +293,10 @@ industry:
     #   the {\bf Xerces} XML parser in {\bf Linux}.
     #   Reimplemented in {\bf Python} using the {\bf ElementTree} XML API for
     #   sophisticated analysis and tree transformations.
-  - place: Phoenix Integration
-    location: Blacksburg, Virginia
-    title: Software Intern
-    dates: 2012
+  # - place: Phoenix Integration
+  #   location: Blacksburg, Virginia
+  #   title: Software Intern
+  #   dates: 2012
     # dates: May 2012 -- Aug 2012
     # details:
     #   - I developed industry software for software integration and
@@ -302,10 +307,10 @@ industry:
       #   ({\bf Ant}, {\bf InstallShield}, and {\bf Make}) frameworks.
       # - Integrated a new licensing mode into CenterLink, a grid computing
       #   application, using {\bf FLEXlm} and {\bf Java}.
-  - place: Sunapsys
-    location: Vinton, Virginia
-    title: Network Administrator Intern
-    dates: 2011
+  # - place: Sunapsys
+  #   location: Vinton, Virginia
+  #   title: Network Administrator Intern
+  #   dates: 2011
     # dates: Jan 2011 -- Aug 2011
     # details:
     #   - Internship in high school to replace Windows domain, mail,

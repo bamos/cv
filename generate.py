@@ -189,11 +189,14 @@ def get_pub_md(context, config):
             pub['year_int'] = int(m.group(1))
 
         details = ''
+        gidx = len(pubs)
         for year, year_pubs in groupby(pubs, lambda pub: pub['year_int']):
             details += f'<h2>{year}</h2>\n'
             details += '<table class="table table-hover">\n'
             for i, pub in enumerate(year_pubs):
-                details += _get_pub_str(pub, '', i + 1, includeImage=include_image) + sep
+                details += _get_pub_str(
+                    pub, '', gidx, includeImage=include_image) + sep
+                gidx -= 1
             details += '</table>\n'
     else:
         details = '<table class="table table-hover">'
@@ -319,6 +322,10 @@ class RenderContext(object):
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
+            elif section_tag in ['positions']:
+                section_data['items'] = section_content
+                section_template_name = os.path.join(
+                    self.SECTIONS_DIR, 'industry' + self._file_ending)
             elif section_tag in ['coursework', 'education', 'honors',
                                  'industry', 'research', 'skills', 'service',
                                  'teaching', 'talks', 'advising']:
