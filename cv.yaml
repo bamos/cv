@@ -128,7 +128,7 @@ repos:
 
 education:
   - school: Carnegie Mellon University
-    location: Pittsburgh, Pennsylvania
+    location: Pittsburgh, PA
     degree: Ph.D. in Computer Science
     dates: 2019
     # dates: May 2019
@@ -139,8 +139,8 @@ education:
 
 
   - school: Virginia Tech
-    location: Blacksburg, Virginia
-    degree: B.S. in Computer Science, Honors
+    location: Blacksburg, VA
+    degree: B.S. in Computer Science
     dates: 2014
     # dates: May 2014
     overallGPA: 3.99/4.00
@@ -149,18 +149,18 @@ education:
       - "Advisors: \\href{https://people.cs.vt.edu/~ltw/shortvita.html}{Layne Watson}, \\href{https://www.magnum.io/people/jules.html}{Jules White}, \\href{https://www.ssrg.ece.vt.edu/}{Binoy Ravindran}"
 
   - school: Northside High School
-    location: Roanoke, Virginia
+    location: Roanoke, VA
     dates: 2011
     # dates: May 2011
 
 research:
   - place: Facebook AI
-    location: New York, New York
+    location: NYC
     title: Research Scientist
     dates: May 2019 -- Present
     area: Machine learning and optimization
   - place: Carnegie Mellon University
-    location: Pittsburgh, Pennsylvania
+    location: Pittsburgh
     title: Research Assistant
     advisor: Zico Kolter
     dates: Apr 2016 -- May 2019
@@ -233,14 +233,14 @@ research:
 
 positions:
   - place: Facebook AI
-    location: New York, New York
+    location: NYC
     title: Research Scientist
     # dates: May 2019 -- Present
     dates: 2019 -- Present
 
 industry:
   - place: Intel Labs
-    location: Santa Clara, California
+    location: Santa Clara, CA
     # title: Research Intern
     dates: 2018
     # dates: June 2018 -- Sept 2018
@@ -254,7 +254,7 @@ industry:
     details:
       - "Hosts: \\href{http://mdenil.com/}{Misha Denil} and \\href{https://scholar.google.com/citations?user=nzEluBwAAAAJ}{Nando de Freitas}"
   - place: Adobe Research
-    location: San Jose, California
+    location: San Jose, CA
     # title: Data Scientist Intern
     dates: 2014
     details:
