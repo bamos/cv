@@ -10,18 +10,18 @@
     ~< if school.overallGPA >~
         (<< school.overallGPA >>)
     ~< endif >~
-    \hfill << school.dates >> \\
-    << school.school >> | << school.location >>
+    \hfill << school.dates >> \par
+    << school.school >> | << school.location >> \par
   ~< else >~
-    << school.school >> | << school.location >> \hfill << school.dates >>
+    << school.school >> | << school.location >> \hfill << school.dates >> \par
   ~< endif >~
   ~< if school.details >~
     ~< for detail in school.details ->~
-        ~\\ <<detail>>
-    ~<- endfor ->~
+        <<detail>> \par
+    ~< endfor >~
   ~< endif >~
-  \vspace{3mm} \\
+  \vspace{3mm}
 ~< endfor >~
 % \end{itemize}
-\vspace{-10mm}
+\vspace{-3mm}
 ~< endblock body >~

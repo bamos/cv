@@ -92,10 +92,10 @@ repos:
     desc: Differentiable model-predictive control
   - repo_url: https://github.com/locuslab/icnn
     year: 2017
-    desc: Input Convex Neural Networks
+    desc: Input Convex Neural Network Experiments
   - repo_url: https://github.com/locuslab/optnet
     year: 2017
-    desc: OptNet
+    desc: OptNet Experiments
   - repo_url: https://github.com/locuslab/qpth
     www: https://locuslab.github.io/qpth/
     year: 2017
@@ -111,7 +111,7 @@ repos:
     desc: Automatically use the least-loaded GPU
   - repo_url: https://github.com/bamos/dcgan-completion.tensorflow
     year: 2016
-    desc: Image completion with GANs in TensorFlow
+    desc: Image completion with GANs
   - repo_url: https://github.com/cmusatyalab/openface
     www: http://cmusatyalab.github.io/openface/
     year: 2015
