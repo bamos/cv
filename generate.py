@@ -220,6 +220,7 @@ def get_pub_latex(context, config):
                 new_auth = new_auth[1][0] + ". " + new_auth[0]
                 if config['name'] in new_auth:
                     new_auth = r"\textbf{" + new_auth + r"}"
+            new_auth = new_auth.replace('. ', '.~')
             formatted_authors.append(new_auth)
         return formatted_authors
 
