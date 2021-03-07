@@ -79,12 +79,13 @@ service:
 repos:
   - repo_url: https://github.com/facebookresearch/dcem
     year: 2020
+    desc: Differentiable Cross-Entropy Method Experiments
   - repo_url: https://github.com/facebookresearch/higher
     year: 2019
-    desc: PyTorch higher-order gradients
+    desc: PyTorch higher-order gradient and optimization library
   - repo_url: https://github.com/bamos/thesis
     year: 2019
-    desc: Thesis LaTeX source code
+    desc: Ph.D.~Thesis LaTeX source code
   - repo_url: https://github.com/cvxgrp/cvxpylayers
     year: 2019
   - repo_url: https://github.com/locuslab/mpc.pytorch
