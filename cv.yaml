@@ -429,7 +429,7 @@ advising:
   - year: 2016
     name: Lei Xu
     details: (Tsinghua), CMU Intern (with J. Zico Kolter)
-    url: https://phillipkwang.com/
+    url: https://leix28.github.io
 
 coursework:
   - semester: S2017
@@ -476,7 +476,14 @@ honors:
   - title: NSF Graduate Research Fellowship
     year: 2016 -- 2019
   - title: Nine undergraduate scholarships
-    descr: Benjamin F.~Bock, Gay B.~Shober, I.~Luck Gravett, VT IC CAE, Roanoke County Public Schools Engineering, Papa John's, Pamplin Leader, Scottish Rite of Freemasonry, Salem--Roanoke County Chamber of Commerce
+    descr: |
+      Roanoke County Public Schools Engineering,
+      Salem--Roanoke County Chamber of Commerce,
+      Papa John's,
+      Scottish Rite of Freemasonry,
+      VT Intelligence Community Conter for Academic Excellence,
+      VT Pamplin Leader,
+      VT Benjamin F.~Bock, VT Gay B.~Shober, VT I.~Luck Gravett
     year: 2011 -- 2014
   # - title: Phi Beta Kappa Honor Society
     # year: Inducted May 2014

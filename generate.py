@@ -24,21 +24,8 @@ from datetime import date
 from itertools import groupby
 from jinja2 import Environment, FileSystemLoader
 
-
+# TODO: Could really be cleaned up
 def get_pub_md(context, config):
-    """Given the bibtexparser's representation and configuration,
-    return a markdown string similar to BibTeX's output
-    of a markdown file.
-    See `publications.bib` for an example BibTeX file.
-
-    ### Conference Proceedings
-    [C1] Names. "Paper A," in <em>IEEE</em>, 2015.<br><br>
-    [C2] Names. "Paper B," in <em>IEEE</em>, 2015.<br><br>
-
-    ### Journal Articles
-    [J1] Names. "Paper C," in <em>IEEE</em>, 2015.<br><br>
-"""
-
     def _get_author_str(immut_author_list):
         authors = copy.copy(immut_author_list)
         if len(authors) > 1:
@@ -83,7 +70,7 @@ def get_pub_md(context, config):
         yearVenue = "{} {}".format(pub['_venue'], pub['year'])
 
         imgStr = '<img src="images/publications/{}.png" onerror="this.style.display=\'none\'" onload="$(\'#tr-{}\').css(\'background-color\', \'#ffffd0\')" style=\'border: none;\' />'.format(pub['ID'], pub['ID'])
-        links = ['[{}{}]'.format(prefix, gidx)]
+        links = []
         abstract = ''
         if 'abstract' in pub:
             links.append("""
@@ -117,7 +104,7 @@ def get_pub_md(context, config):
 <tr id="tr-{}">
 <td class="col-md-3">{}</td>
 <td>
-    <strong>{}</strong><br>
+    [{}{}] <em>{}</em><br>
     {}<br>
     {}<br>
     {}
@@ -126,13 +113,13 @@ def get_pub_md(context, config):
 </td>
 </tr>
 '''.format(
-    pub['ID'], imgStr, title, author_str, yearVenue, note_str, links, abstract
+    pub['ID'], imgStr, prefix, gidx, title, author_str, yearVenue, note_str, links, abstract
 )
         else:
             return '''
 <tr>
 <td>
-    <strong>{}</strong><br>
+    [{}{}] <strong>{}</strong><br>
     {}<br>
     {}<br>
     {}
@@ -140,7 +127,7 @@ def get_pub_md(context, config):
     {}
 </td>
 </tr>
-'''.format(title, author_str, yearVenue, note_str, links, abstract)
+'''.format(prefix, gidx, title, author_str, yearVenue, note_str, links, abstract)
 
     def load_and_replace(bibtex_file):
         with open(os.path.join('publications', bibtex_file), 'r') as f:
@@ -189,20 +176,127 @@ def get_pub_md(context, config):
             pub['year_int'] = int(m.group(1))
 
         details = ''
-        gidx = len(pubs)
+        gidx = 1
         for year, year_pubs in groupby(pubs, lambda pub: pub['year_int']):
             details += f'<h2>{year}</h2>\n'
             details += '<table class="table table-hover">\n'
             for i, pub in enumerate(year_pubs):
                 details += _get_pub_str(
                     pub, '', gidx, includeImage=include_image) + sep
-                gidx -= 1
+                gidx += 1
             details += '</table>\n'
     else:
         details = '<table class="table table-hover">'
         for i, pub in enumerate(pubs):
             details += _get_pub_str(pub, '', i + 1, includeImage=include_image) + sep
         details += '</table>'
+    contents['details'] = details
+    contents['file'] = config['file']
+
+    return contents
+
+
+# TODO: Could really be cleaned up
+def get_pub_latex(context, config):
+    def _get_author_str(immut_author_list):
+        authors = copy.copy(immut_author_list)
+        if len(authors) > 1:
+            authors[-1] = "and " + authors[-1]
+        sep = ", " if len(authors) > 2 else " "
+        authors = sep.join(authors)
+
+        return authors
+
+    # [First Initial]. [Last Name]
+    def _format_author_list(immut_author_list):
+        formatted_authors = []
+        for author in immut_author_list:
+            if 'zico' in author.lower():
+                new_auth = 'J. Z. Kolter'
+                if '*' in author:
+                    new_auth += '*'
+            else:
+                new_auth = author.split(", ")
+                new_auth = new_auth[1][0] + ". " + new_auth[0]
+                if config['name'] in new_auth:
+                    new_auth = r"\textbf{" + new_auth + r"}"
+            formatted_authors.append(new_auth)
+        return formatted_authors
+
+    def _get_pub_str(pub, prefix, gidx):
+        author_str = _get_author_str(pub['author'])
+        # prefix = category['prefix']
+        title = pub['title']
+        # if title[-1] not in ("?", ".", "!"):
+        #    title += ","
+        # title = '"{}"'.format(title)
+        # if 'link' in pub:
+        #     title = "<a href=\'{}\'>{}</a>".format(
+        #         pub['link'], title)
+        title = title.replace("\n", " ")
+        if 'link' in pub:
+            title = r"\href{{{}}}{{{}}} ".format(pub['link'], title)
+
+        assert('_venue' in pub and 'year' in pub)
+        yearVenue = "{} {}".format(pub['_venue'], pub['year'])
+
+        links = []
+        # if 'link' in pub:
+        #     links.append(
+        #         r"[\href{{{}}}{{pdf}}] ".format(pub['link']))
+        if 'codeurl' in pub:
+            links.append(
+                r"[\href{{{}}}{{code}}] ".format(pub['codeurl']))
+        links = ' '.join(links)
+
+        if '_note' in pub:
+            note_str = r'\textbf{{{}}} \\'.format(pub['_note'])
+        else:
+            note_str = ''
+
+        return rf'''
+\begin{{minipage}}{{\textwidth}}
+[{prefix}{gidx}] \textit{{{title}}} {links} \\
+{author_str} \\
+{yearVenue} \\
+{note_str}
+\end{{minipage}}'''
+
+    def load_and_replace(bibtex_file):
+        with open(os.path.join('publications', bibtex_file), 'r') as f:
+            p = BibTexParser(f.read(), bc.author).get_entry_list()
+        for pub in p:
+            for field in pub:
+                if field is not 'link':
+                    pub[field] = context.make_replacements(pub[field])
+            pub['author'] = _format_author_list(pub['author'])
+        return p
+
+    sort_bib = config['sort_bib']
+    group_by_year = config['group_by_year']
+
+    contents = {}
+    pubs = load_and_replace(config['file'])
+    sep = "\n"
+
+    if sort_bib:
+        pubs = sorted(pubs, key=lambda pub: int(pub['year']), reverse=True)
+
+    if group_by_year:
+        for pub in pubs:
+            m = re.search('(\d{4})', pub['year'])
+            assert m is not None
+            pub['year_int'] = int(m.group(1))
+
+        details = ''
+        gidx = 1
+        for year, year_pubs in groupby(pubs, lambda pub: pub['year_int']):
+            details += rf'\subsection{{{year}}}' + '\n'
+            for i, pub in enumerate(year_pubs):
+                details += _get_pub_str(pub, '', gidx) + sep
+                gidx += 1
+    else:
+        assert False
     contents['details'] = details
     contents['file'] = config['file']
 
@@ -270,11 +364,12 @@ class RenderContext(object):
         if isinstance(yaml_data, str):
             for o, r in self._replacements:
                 yaml_data = re.sub(o, r, yaml_data)
-
         elif isinstance(yaml_data, dict):
             for k, v in yaml_data.items():
+                # TODO: Better way of handling exceptions?
+                if k == 'advising':
+                    continue
                 yaml_data[k] = self.make_replacements(v)
-
         elif isinstance(yaml_data, list):
             for idx, item in enumerate(yaml_data):
                 yaml_data[idx] = self.make_replacements(item)
@@ -334,7 +429,8 @@ class RenderContext(object):
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             elif 'publications' in section_tag:
                 if self._file_ending == ".tex":
-                    section_data['content'] = section_content
+                    # section_data['content'] = section_content
+                    section_data['content'] = get_pub_latex(self, section_content)
                 elif self._file_ending == ".md":
                     section_data['content'] = get_pub_md(self, section_content)
                 section_data['scholar_id'] = yaml_data['social']['google_scholar']
