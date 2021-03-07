@@ -43,21 +43,6 @@ review the `BLOG_DIR` variable and the `jekyll` and `push` targets.
 3. The LaTeX templates use modified Jinja delimiters to avoid overlaps with
    normal LaTeX. See `generate.py` for details.
 
-## Publications
-All publications are stored as BibTeX in [publications](publications).
-The entries can be obtained from Google Scholar.
-The order in the BibTeX file will be the order in
-the output files.
-
-BibTeX is built for integration with LaTeX, but producing
-Markdown is not traditionally done from BibTeX files.
-This repository uses [BibtexParser][bibtexparser] to load the
-bibliography into a map.
-The data is manually formatted to mimic the LaTeX
-IEEE bibliography style.
-
-[bibtexparser]: https://bibtexparser.readthedocs.org/en/latest/index.html
-
 # Licensing
 This work is distributed under the MIT license (`LICENSE-bamos.mit`)
 with portions copyright Ellis Michael from
