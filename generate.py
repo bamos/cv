@@ -104,16 +104,16 @@ def get_pub_md(context, config):
 <tr id="tr-{}">
 <td class="col-md-3">{}</td>
 <td>
-    [{}{}] <em>{}</em><br>
+    <em>{}</em><br>
     {}<br>
     {}<br>
     {}
-    {}<br>
+    [{}{}] {}<br>
     {}
 </td>
 </tr>
 '''.format(
-    pub['ID'], imgStr, prefix, gidx, title, author_str, yearVenue, note_str, links, abstract
+    pub['ID'], imgStr, title, author_str, yearVenue, note_str, prefix, gidx, links, abstract
 )
         else:
             return '''
