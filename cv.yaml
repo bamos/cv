@@ -131,7 +131,7 @@ education:
   - school: Carnegie Mellon University
     location: Pittsburgh, PA
     degree: Ph.D. in Computer Science
-    dates: 2019
+    dates: 2014 -- 2019
     # dates: May 2019
     overallGPA: 0.00/0.00
     details:
@@ -142,16 +142,15 @@ education:
   - school: Virginia Tech
     location: Blacksburg, VA
     degree: B.S. in Computer Science
-    dates: 2014
+    dates: 2011 -- 2014
     # dates: May 2014
     overallGPA: 3.99/4.00
     majorGPA: 4.00/4.00
     details:
       - "Advisors: \\href{https://people.cs.vt.edu/~ltw/shortvita.html}{Layne Watson}, \\href{https://www.magnum.io/people/jules.html}{Jules White}, \\href{https://www.ssrg.ece.vt.edu/}{Binoy Ravindran}"
 
-  - school: Northside High School
-    location: Roanoke, VA
-    dates: 2011
+  # - school: Northside High School
+  #   location: Roanoke, VA
     # dates: May 2011
 
 research:

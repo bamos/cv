@@ -22,7 +22,7 @@
         </p>
       {% endif %}
     </td>
-    <td class="col-md-1" style='text-align:right;'>{{ school.dates }}</td>
+    <td class="col-md-2" style='text-align:right;'>{{ school.dates }}</td>
   </tr>
 {% endfor %}
 </table>
