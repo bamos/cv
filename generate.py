@@ -251,16 +251,18 @@ def get_pub_latex(context, config):
         links = ' '.join(links)
 
         if '_note' in pub:
-            note_str = r'\textbf{{{}}} \\'.format(pub['_note'])
+            note_str = r'& \textbf{{{}}} \\'.format(pub['_note'])
         else:
             note_str = ''
 
         return rf'''
 \begin{{minipage}}{{\textwidth}}
-[{prefix}{gidx}] \textit{{{title}}} {links} \\
-{author_str} \\
-{yearVenue} \\
+\begin{{tabular}}{{R{{8mm}}p{{6.5in}}}}
+{prefix}{gidx}.\hspace*{{2mm}} & \textit{{{title}}} {links} \\
+& {author_str} \\
+& {yearVenue} \\
 {note_str}
+\end{{tabular}} \\[2mm]
 \end{{minipage}}'''
 
     def load_and_replace(bibtex_file):
