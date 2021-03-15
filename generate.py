@@ -69,7 +69,11 @@ def get_pub_md(context, config):
         assert('_venue' in pub and 'year' in pub)
         yearVenue = "{} {}".format(pub['_venue'], pub['year'])
 
-        imgStr = '<img src="images/publications/{}.png" onerror="this.style.display=\'none\'" onload="$(\'#tr-{}\').css(\'background-color\', \'#ffffd0\')" style=\'border: none;\' />'.format(pub['ID'], pub['ID'])
+        highlight = 'selected' in pub
+        # if highlight:
+        imgStr = '<img src="images/publications/{}.png" onerror="this.style.display=\'none\'" style=\'border: none;\' />'.format(pub['ID'], pub['ID'])
+        # else:
+        #     imgStr = ''
         links = []
         abstract = ''
         if 'abstract' in pub:
@@ -99,9 +103,10 @@ def get_pub_md(context, config):
         else:
             note_str = ''
 
+        tr_style = 'style="background-color: #ffffd0"' if highlight else ''
         if includeImage:
             return '''
-<tr id="tr-{}">
+<tr id="tr-{}" {}>
 <td class="col-md-3">{}</td>
 <td>
     <em>{}</em><br>
@@ -112,7 +117,7 @@ def get_pub_md(context, config):
 </td>
 </tr>
 '''.format(
-    pub['ID'], imgStr, title, author_str, yearVenue, note_str, prefix, gidx, links, abstract
+    pub['ID'], tr_style, imgStr, title, author_str, yearVenue, note_str, prefix, gidx, links, abstract
 )
         else:
             return '''

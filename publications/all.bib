@@ -424,6 +424,7 @@
   _venue={ICML},
   year={2016},
   url={http://proceedings.mlr.press/v48/zhaoa16.html},
+  selected={true},
   abstract={
     Sum-Product Networks (SPNs) are probabilistic inference machines that admit
     exact inference in linear time in the size of the network. Existing
@@ -761,6 +762,19 @@
   }
 }
 
+@inproceedings{brown2018depth,
+  title={Depth-Limited Solving for Imperfect-Information Games},
+  author={Brown, Noam and Sandholm, Tuomas and Amos, Brandon},
+  year={2018},
+  booktitle={NeurIPS},
+  _venue={NeurIPS},
+  url={http://arxiv.org/abs/1805.08195},
+  selected={true},
+  abstract={
+A fundamental challenge in imperfect-information games is that states do not have well-defined values. As a result, depth-limited search algorithms used in single-agent settings and perfect-information games do not apply. This paper introduces a principled way to conduct depth-limited solving in imperfect-information games by allowing the opponent to choose among a number of strategies for the remainder of the game at the depth limit. Each one of these strategies results in a different set of values for leaf nodes. This forces an agent to be robust to the different strategies an opponent may employ. We demonstrate the effectiveness of this approach by building a master-level heads-up no-limit Texas hold'em poker AI that defeats two prior top agents using only a 4-core CPU and 16 GB of memory. Developing such a powerful agent would have previously required a supercomputer.
+  }
+}
+
 @article{wang2018enabling,
   title={Enabling Live Video Analytics with a Scalable and Privacy-Aware Framework},
   author={Wang, Junjue and Amos, Brandon and Das, Anupam and Pillai, Padmanabhan and Sadeh, Norman and Satyanarayanan, Mahadev},
@@ -806,14 +820,3 @@
 }
 
 
-@inproceedings{brown2018depth,
-  title={Depth-Limited Solving for Imperfect-Information Games},
-  author={Brown, Noam and Sandholm, Tuomas and Amos, Brandon},
-  year={2018},
-  booktitle={NeurIPS},
-  _venue={NeurIPS},
-  url={http://arxiv.org/abs/1805.08195},
-  abstract={
-A fundamental challenge in imperfect-information games is that states do not have well-defined values. As a result, depth-limited search algorithms used in single-agent settings and perfect-information games do not apply. This paper introduces a principled way to conduct depth-limited solving in imperfect-information games by allowing the opponent to choose among a number of strategies for the remainder of the game at the depth limit. Each one of these strategies results in a different set of values for leaf nodes. This forces an agent to be robust to the different strategies an opponent may employ. We demonstrate the effectiveness of this approach by building a master-level heads-up no-limit Texas hold'em poker AI that defeats two prior top agents using only a 4-core CPU and 16 GB of memory. Developing such a powerful agent would have previously required a supercomputer.
-  }
-}
