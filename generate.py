@@ -95,7 +95,7 @@ def get_pub_md(context, config):
 '''.format(pub['ID'], prefix, abstract)
 
         if '_note' in pub:
-            note_str = '<strong>{}</strong><br>'.format(pub['_note'])
+            note_str = f"({pub['_note']})"
         else:
             note_str = ''
 
@@ -106,8 +106,7 @@ def get_pub_md(context, config):
 <td>
     <em>{}</em><br>
     {}<br>
-    {}<br>
-    {}
+    {} {} <br>
     [{}{}] {}<br>
     {}
 </td>
@@ -252,8 +251,8 @@ def get_pub_latex(context, config):
 
         highlight_color = '\cellcolor{tab_highlight}' if 'selected' in pub else ''
         if '_note' in pub:
-            note_str = r'{} && \textbf{{{}}} \\'.format(
-                highlight_color, pub['_note'])
+            # note_str = r'{} && \textbf{{{}}} \\'.format(
+            note_str = f"({pub['_note']})"
         else:
             note_str = ''
 
@@ -262,8 +261,7 @@ def get_pub_latex(context, config):
 \begin{{tabular}}{{R{{8mm}}p{{1mm}}p{{6.5in}}}}
 {highlight_color} {prefix}{gidx}.\hspace*{{1mm}} && \textit{{{title}}} {links} \\
 {highlight_color} && {author_str} \\
-{highlight_color} && {yearVenue} \\
-{note_str}
+{highlight_color} && {yearVenue} {note_str} \\
 \end{{tabular}} \\[2mm]
 \end{{minipage}}'''
 

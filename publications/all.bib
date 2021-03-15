@@ -1,3 +1,83 @@
+@phdthesis{amos2019differentiable,
+  author       = {Brandon Amos},
+  title        = {{Differentiable Optimization-Based Modeling for Machine Learning}},
+  school       = {Carnegie Mellon University},
+  year         = 2019,
+  _venue = {Ph.D. Thesis},
+  codeurl={https://github.com/bamos/thesis},
+  url={https://github.com/bamos/thesis/raw/master/bamos_thesis.pdf},
+  selected={true},
+}
+
+@techreport{amos2016openface,
+  title={OpenFace: A general-purpose face recognition
+    library with mobile applications},
+  author={Amos, Brandon and Bartosz Ludwiczuk and Satyanarayanan, Mahadev},
+  _venue={CMU},
+  year={2016},
+  institution={Technical Report CMU-CS-16-118, CMU School of Computer Science},
+  url={http://reports-archive.adm.cs.cmu.edu/anon/anon/2016/CMU-CS-16-118.pdf},
+  codeurl={https://cmusatyalab.github.io/openface},
+  selected={true},
+  abstract={
+    Cameras are becoming ubiquitous in the Internet of Things (IoT) and
+    can use face recognition technology to improve context. There is a
+    large accuracy gap between today's publicly available face recognition
+    systems and the state-of-the-art private face recognition
+    systems. This paper presents our OpenFace face recognition library
+    that bridges this accuracy gap. We show that OpenFace provides
+    near-human accuracy on the LFW benchmark and present a new
+    classification benchmark for mobile scenarios. This paper is intended
+    for non-experts interested in using OpenFace and provides a light
+    introduction to the deep neural network techniques we use.
+
+    We released OpenFace in October 2015 as an open source library under
+    the Apache 2.0 license. It is available at:
+    <http://cmusatyalab.github.io/openface/>
+  }
+}
+
+@misc{amos2020modelbased,
+      title={On the model-based stochastic value gradient for continuous reinforcement learning},
+      author={Brandon Amos and Samuel Stanton and Denis Yarats and Andrew Gordon Wilson},
+      year={2021},
+      _venue={L4DC},
+      _note={Oral},
+      url={https://arxiv.org/abs/2008.12775},
+      selected={true},
+      abstract={
+        Model-based reinforcement learning approaches add explicit domain
+        knowledge to agents in hopes of improving the
+        sample-efficiency in comparison to model-free
+        agents. However, in practice model-based methods are
+        unable to achieve the same asymptotic performance on
+        challenging continuous control tasks due to the
+        complexity of learning and controlling an explicit
+        world model. In this paper we investigate the
+        stochastic value gradient (SVG), which is a
+        well-known family of methods for controlling
+        continuous systems which includes model-based
+        approaches that distill a model-based value
+        expansion into a model-free policy. We consider a
+        variant of the model-based SVG that scales to larger
+        systems and uses 1) an entropy regularization to
+        help with exploration, 2) a learned deterministic
+        world model to improve the short-horizon value
+        estimate, and 3) a learned model-free value estimate
+        after the model's rollout. This SVG variation
+        captures the model-free soft actor-critic method as
+        an instance when the model rollout horizon is zero,
+        and otherwise uses short-horizon model rollouts to
+        improve the value estimate for the policy update. We
+        surpass the asymptotic performance of other
+        model-based methods on the proprioceptive MuJoCo
+        locomotion tasks from the OpenAI gym, including a
+        humanoid. We notably achieve these results with a
+        simple deterministic world model without requiring
+        an ensemble.
+      }
+}
+
 @inproceedings{cohen2020aligning,
       title={Aligning Time Series on Incomparable Spaces},
       author={Samuel Cohen and Giulia Luise and Alexander Terenin and Brandon Amos and Marc Peter Deisenroth},
@@ -116,45 +196,35 @@
   }
 }
 
-@misc{amos2020modelbased,
-      title={On the model-based stochastic value gradient for continuous reinforcement learning},
-      author={Brandon Amos and Samuel Stanton and Denis Yarats and Andrew Gordon Wilson},
-      year={2020},
-      _venue={arXiv},
-      url={https://arxiv.org/abs/2008.12775},
-      selected={true},
-      abstract={
-        Model-based reinforcement learning approaches add explicit domain
-        knowledge to agents in hopes of improving the
-        sample-efficiency in comparison to model-free
-        agents. However, in practice model-based methods are
-        unable to achieve the same asymptotic performance on
-        challenging continuous control tasks due to the
-        complexity of learning and controlling an explicit
-        world model. In this paper we investigate the
-        stochastic value gradient (SVG), which is a
-        well-known family of methods for controlling
-        continuous systems which includes model-based
-        approaches that distill a model-based value
-        expansion into a model-free policy. We consider a
-        variant of the model-based SVG that scales to larger
-        systems and uses 1) an entropy regularization to
-        help with exploration, 2) a learned deterministic
-        world model to improve the short-horizon value
-        estimate, and 3) a learned model-free value estimate
-        after the model's rollout. This SVG variation
-        captures the model-free soft actor-critic method as
-        an instance when the model rollout horizon is zero,
-        and otherwise uses short-horizon model rollouts to
-        improve the value estimate for the policy update. We
-        surpass the asymptotic performance of other
-        model-based methods on the proprioceptive MuJoCo
-        locomotion tasks from the OpenAI gym, including a
-        humanoid. We notably achieve these results with a
-        simple deterministic world model without requiring
-        an ensemble.
-      }
+@inproceedings{amos2020differentiable,
+  title={{The Differentiable Cross-Entropy Method}},
+  author={Amos, Brandon and Yarats, Denis},
+  booktitle={ICML},
+  _venue={ICML},
+  year={2020},
+  url={https://arxiv.org/abs/1909.12830},
+  codeurl={https://github.com/facebookresearch/dcem},
+  selected={true},
+  abstract={
+    We study the Cross-Entropy Method (CEM) for the non-convex
+    optimization of a continuous and parameterized
+    objective function and introduce a differentiable
+    variant (DCEM) that enables us to differentiate the
+    output of CEM with respect to the objective
+    function's parameters. In the machine learning
+    setting this brings CEM inside of the end-to-end
+    learning pipeline where this has otherwise been
+    impossible. We show applications in a synthetic
+    energy-based structured prediction task and in
+    non-convex continuous control. In the control
+    setting we show on the simulated cheetah and walker
+    tasks that we can embed their optimal action
+    sequences with DCEM and then use policy optimization
+    to fine-tune components of the controller as a step
+    towards combining model-based and model-free RL.
+  }
 }
+
 
 @inproceedings{lambert2020objective,
   title={Objective Mismatch in Model-based Reinforcement Learning},
@@ -179,7 +249,6 @@
   keywords={journal},
   url={https://vtechworks.lib.vt.edu/bitstream/handle/10919/49672/qnTOMS14.pdf},
   codeurl={https://github.com/vtopt/qnstop},
-  selected={true},
   abstract={
     QNSTOP consists of serial and parallel (OpenMP) Fortran 2003 codes for the
     quasi-Newton stochastic optimization method of Castle and Trosset. For
@@ -222,18 +291,6 @@
   }
 }
 
-@inproceedings{brown2018depth,
-  title={Depth-Limited Solving for Imperfect-Information Games},
-  author={Brown, Noam and Sandholm, Tuomas and Amos, Brandon},
-  year={2018},
-  booktitle={NeurIPS},
-  _venue={NeurIPS},
-  url={http://arxiv.org/abs/1805.08195},
-  abstract={
-A fundamental challenge in imperfect-information games is that states do not have well-defined values. As a result, depth-limited search algorithms used in single-agent settings and perfect-information games do not apply. This paper introduces a principled way to conduct depth-limited solving in imperfect-information games by allowing the opponent to choose among a number of strategies for the remainder of the game at the depth limit. Each one of these strategies results in a different set of values for leaf nodes. This forces an agent to be robust to the different strategies an opponent may employ. We demonstrate the effectiveness of this approach by building a master-level heads-up no-limit Texas hold'em poker AI that defeats two prior top agents using only a 4-core CPU and 16 GB of memory. Developing such a powerful agent would have previously required a supercomputer.
-  }
-}
-
 @inproceedings{amos2018learning,
   title={Learning Awareness Models},
   author={Brandon Amos and Laurent Dinh and Serkan Cabi and Thomas Roth{\"o}rl and Sergio G{\'o}mez Colmenarejo and Alistair Muldal and Tom Erez and Yuval Tassa and Nando de Freitas and Misha Denil},
@@ -267,19 +324,6 @@ A fundamental challenge in imperfect-information games is that states do not hav
     the real world. Videos with qualitative results of our models
     are available <a href="https://goo.gl/mZuqAV">here</a>.
   }
-}
-
-@inproceedings{wang2017scalable,
-  title={A Scalable and Privacy-Aware IoT Service for Live Video Analytics},
-  author={Wang, Junjue and Amos, Brandon and Das, Anupam and Pillai, Padmanabhan and Sadeh, Norman and Satyanarayanan, Mahadev},
-  booktitle={Proceedings of the 8th ACM on Multimedia Systems Conference},
-  pages={38--49},
-  year={2017},
-  organization={ACM},
-  url={http://elijah.cs.cmu.edu/DOCS/wang-mmsys2017.pdf},
-  codeurl={http://cmusatyalab.github.io/openface/},
-  _venue={ACM MMSys},
-  _note={Best Paper Award},
 }
 
 @inproceedings{donti2017task,
@@ -613,35 +657,6 @@ A fundamental challenge in imperfect-information games is that states do not hav
   }
 }
 
-@inproceedings{amos2020differentiable,
-  title={{The Differentiable Cross-Entropy Method}},
-  author={Amos, Brandon and Yarats, Denis},
-  booktitle={ICML},
-  _venue={ICML},
-  year={2020},
-  url={https://arxiv.org/abs/1909.12830},
-  codeurl={https://github.com/facebookresearch/dcem},
-  selected={true},
-  abstract={
-    We study the Cross-Entropy Method (CEM) for the non-convex
-    optimization of a continuous and parameterized
-    objective function and introduce a differentiable
-    variant (DCEM) that enables us to differentiate the
-    output of CEM with respect to the objective
-    function's parameters. In the machine learning
-    setting this brings CEM inside of the end-to-end
-    learning pipeline where this has otherwise been
-    impossible. We show applications in a synthetic
-    energy-based structured prediction task and in
-    non-convex continuous control. In the control
-    setting we show on the simulated cheetah and walker
-    tasks that we can embed their optimal action
-    sequences with DCEM and then use policy optimization
-    to fine-tune components of the controller as a step
-    towards combining model-based and model-free RL.
-  }
-}
-
 @article{grefenstette2019generalized,
   title={{Generalized Inner Loop Meta-Learning}},
   author={Grefenstette, Edward and Amos, Brandon and Yarats, Denis and Htut, Phu Mon and Molchanov, Artem and Meier, Franziska and Kiela, Douwe and Cho, Kyunghyun and Chintala, Soumith},
@@ -692,45 +707,6 @@ A fundamental challenge in imperfect-information games is that states do not hav
     representational capacity, and improve accuracy. We also revisit the
     truncated top-k entropy method as a competitive baseline for top-k
     classification.
-  }
-}
-
-@phdthesis{amos2019differentiable,
-  author       = {Brandon Amos},
-  title        = {{Differentiable Optimization-Based Modeling for Machine Learning}},
-  school       = {Carnegie Mellon University},
-  year         = 2019,
-  _venue = {Ph.D. Thesis},
-  codeurl={https://github.com/bamos/thesis},
-  url={https://github.com/bamos/thesis/raw/master/bamos_thesis.pdf},
-  selected={true},
-}
-
-@techreport{amos2016openface,
-  title={OpenFace: A general-purpose face recognition
-    library with mobile applications},
-  author={Amos, Brandon and Bartosz Ludwiczuk and Satyanarayanan, Mahadev},
-  _venue={CMU},
-  year={2016},
-  institution={Technical Report CMU-CS-16-118, CMU School of Computer Science},
-  url={http://reports-archive.adm.cs.cmu.edu/anon/anon/2016/CMU-CS-16-118.pdf},
-  codeurl={https://cmusatyalab.github.io/openface},
-  selected={true},
-  abstract={
-    Cameras are becoming ubiquitous in the Internet of Things (IoT) and
-    can use face recognition technology to improve context. There is a
-    large accuracy gap between today's publicly available face recognition
-    systems and the state-of-the-art private face recognition
-    systems. This paper presents our OpenFace face recognition library
-    that bridges this accuracy gap. We show that OpenFace provides
-    near-human accuracy on the LFW benchmark and present a new
-    classification benchmark for mobile scenarios. This paper is intended
-    for non-experts interested in using OpenFace and provides a light
-    introduction to the deep neural network techniques we use.
-
-    We released OpenFace in October 2015 as an open source library under
-    the Apache 2.0 license. It is available at:
-    <http://cmusatyalab.github.io/openface/>
   }
 }
 
@@ -813,4 +789,30 @@ A fundamental challenge in imperfect-information games is that states do not hav
     video streams and analytics services.
   },
   url={https://dl.acm.org/citation.cfm?id=3209659}
+}
+
+@inproceedings{wang2017scalable,
+  title={A Scalable and Privacy-Aware IoT Service for Live Video Analytics},
+  author={Wang, Junjue and Amos, Brandon and Das, Anupam and Pillai, Padmanabhan and Sadeh, Norman and Satyanarayanan, Mahadev},
+  booktitle={Proceedings of the 8th ACM on Multimedia Systems Conference},
+  pages={38--49},
+  year={2017},
+  organization={ACM},
+  url={http://elijah.cs.cmu.edu/DOCS/wang-mmsys2017.pdf},
+  codeurl={http://cmusatyalab.github.io/openface/},
+  _venue={ACM MMSys},
+  _note={Best Paper},
+}
+
+
+@inproceedings{brown2018depth,
+  title={Depth-Limited Solving for Imperfect-Information Games},
+  author={Brown, Noam and Sandholm, Tuomas and Amos, Brandon},
+  year={2018},
+  booktitle={NeurIPS},
+  _venue={NeurIPS},
+  url={http://arxiv.org/abs/1805.08195},
+  abstract={
+A fundamental challenge in imperfect-information games is that states do not have well-defined values. As a result, depth-limited search algorithms used in single-agent settings and perfect-information games do not apply. This paper introduces a principled way to conduct depth-limited solving in imperfect-information games by allowing the opponent to choose among a number of strategies for the remainder of the game at the depth limit. Each one of these strategies results in a different set of values for leaf nodes. This forces an agent to be robust to the different strategies an opponent may employ. We demonstrate the effectiveness of this approach by building a master-level heads-up no-limit Texas hold'em poker AI that defeats two prior top agents using only a 4-core CPU and 16 GB of memory. Developing such a powerful agent would have previously required a supercomputer.
+  }
 }
