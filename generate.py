@@ -84,8 +84,10 @@ def get_pub_md(context, config):
         if 'link' in pub:
             imgStr = "<a href=\'{}\' target='_blank'>{}</a> ".format(
                 pub['link'], imgStr)
-            links.append(
-                "[<a href=\'{}\' target='_blank'>pdf</a>] ".format(pub['link']))
+            title = "<a href=\'{}\' target='_blank'>{}</a> ".format(
+                pub['link'], title)
+            # links.append(
+            #     "[<a href=\'{}\' target='_blank'>pdf</a>] ".format(pub['link']))
         if 'codeurl' in pub:
             links.append(
                 "[<a href=\'{}\' target='_blank'>code</a>] ".format(pub['codeurl']))

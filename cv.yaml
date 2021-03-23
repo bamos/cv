@@ -43,22 +43,15 @@ order:
 
 about: '
   I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and
-  study foundational topics and applications in
-  <b>machine learning</b> (sometimes deep) and
-  <b>optimization</b> (sometimes convex),
-  including
-  reinforcement learning, geometry, computer vision,
-  language, statistics, and theory.
-  In my research I seek to uncover new modeling principles
-  that enable us to express new operations and pieces of
-  domain knowledge.
-  I focus on optimization as non-trivial reasoning operations
-  can be expressed in the language of optimization,
-  and the lens of optimization offers insights into
-  established paradigms.
-  I actively publish code to \href{https://github.com/bamos}{GitHub}
-  as I believe that science should be open and accessible,
-  and that well-engineered code enables new frontiers.
+  study foundational topics in <b>machine learning</b> and <b>optimization</b>,
+  recently involving reinforcement learning, control,
+  optimal transport, and geometry.
+  I am interested in developing new modeling principles
+  that improve learning systems and agents that interact
+  with and understand our world.
+  My current focus is on optimization as non-trivial reasoning operations can be
+  expressed in the language of optimization, and the lens of
+  optimization brings insights into established paradigms.
 <br><br>'
 
 service:
@@ -155,7 +148,7 @@ education:
 
 research:
   - place: Facebook AI
-    location: NYC
+    location: New York, NY
     title: Research Scientist
     dates: May 2019 -- Present
     area: Machine learning and optimization
@@ -233,7 +226,7 @@ research:
 
 positions:
   - place: Facebook AI
-    location: NYC
+    location: New York, NY
     title: Research Scientist
     # dates: May 2019 -- Present
     dates: 2019 -- Present
