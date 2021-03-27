@@ -351,6 +351,7 @@ class RenderContext(object):
     BASE_FILE_NAME = 'cv'
 
     def __init__(self, context_name, file_ending, jinja_options, replacements):
+        self._context_name = context_name
         self._file_ending = file_ending
         self._replacements = replacements
 
@@ -428,6 +429,8 @@ class RenderContext(object):
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             elif section_tag in ['positions']:
+                if self._context_name == 'markdown':
+                    continue
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, 'industry' + self._file_ending)
