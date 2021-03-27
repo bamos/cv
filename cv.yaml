@@ -36,7 +36,7 @@ order:
   - [repos, Repositories]
   # - [NEWPAGE, NEWPAGE]
   - [talks, Invited Talks]
-  - [advising, Students \& Advising]
+  - [advising, Interns and Students]
   - [service, Professional Activities]
   - [teaching, Teaching]
   - [skills, Skills]
@@ -405,25 +405,33 @@ talks:
     location: NNAISENSE
 
 advising:
+  - year: 2021
+    name: Samuel Cohen
+    details: (visiting FAIR from UCL)
+    url: https://samcohen16.github.io/
+  - year: 2021
+    name: Eugene Vinitsky
+    details: (visiting FAIR from Berkeley)
+    url: https://eugenevinitsky.github.io/
   - year: 2020
     name: Aaron Lou
-    details: (Cornell), FAIR Intern (with Max Nickel)
+    details: (visiting FAIR from Cornell)
     url: https://www.aaronlou.com/
   - year: 2020
     name: Ricky Chen
-    details: (Toronto), FAIR Intern (with Max Nickel)
+    details: (visiting FAIR from Toronto)
     url: http://www.cs.toronto.edu/~rtqichen/
   - year: 2020
     name: Paul Liang
-    details: (CMU), FAIR Intern (with Ed Grefenstette and Tim Rocktäschel)
+    details: "(visiting FAIR from CMU)"
     url: http://www.cs.cmu.edu/~pliang/
   - year: 2018
     name: Phillip Wang
-    details: (CMU), Undergraduate Researcher
+    details: "(at CMU, now: CEO at \\href{https://gather.town/}{Gather})"
     url: https://phillipkwang.com/
   - year: 2016
     name: Lei Xu
-    details: (Tsinghua), CMU Intern (with J. Zico Kolter)
+    details: "(visiting CMU from Tsinghua, now: Ph.D. student at MIT)"
     url: https://leix28.github.io
 
 coursework:

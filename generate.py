@@ -373,13 +373,11 @@ class RenderContext(object):
         yaml_data = copy.copy(yaml_data)
 
         if isinstance(yaml_data, str):
-            for o, r in self._replacements:
-                yaml_data = re.sub(o, r, yaml_data)
+            if not yaml_data.startswith('http'):
+                for o, r in self._replacements:
+                    yaml_data = re.sub(o, r, yaml_data)
         elif isinstance(yaml_data, dict):
             for k, v in yaml_data.items():
-                # TODO: Better way of handling exceptions?
-                if k == 'advising':
-                    continue
                 yaml_data[k] = self.make_replacements(v)
         elif isinstance(yaml_data, list):
             for idx, item in enumerate(yaml_data):
@@ -517,7 +515,8 @@ MARKDOWN_CONTEXT = RenderContext(
         ('--', '-'),  # en dash
         (r'``([^\']*)\'\'', r'"\1"'),  # quotes
         (r'\\url{([^}]*)}', r'[\1](\1)'),  # urls
-        (r'\\href{([^}]*)}{([^}]*)}', r'[\2](\1)'),  # urls
+        # (r'\\href{([^}]*)}{([^}]*)}', r'[\2](\1)'),  # urls
+        (r'\\href{([^}]*)}{([^}]*)}', r'<a href="\1">\2</a>'),  # urls
         (r'\{([^}]*)\}', r'\1'),  # Brackets.
     ]
 )
