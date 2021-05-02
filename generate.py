@@ -71,7 +71,7 @@ def get_pub_md(context, config):
 
         highlight = 'selected' in pub
         # if highlight:
-        imgStr = '<img src="images/publications/{}.png" onerror="this.style.display=\'none\'" style=\'border: none;\' />'.format(pub['ID'], pub['ID'])
+        imgStr = '<img src="images/publications/{}.png" onerror="this.style.display=\'none\'" style=\'border: none; height: 100px;\'/>'.format(pub['ID'], pub['ID'])
         # else:
         #     imgStr = ''
         links = []
@@ -109,17 +109,19 @@ def get_pub_md(context, config):
         if includeImage:
             return '''
 <tr id="tr-{}" {}>
-<td class="col-md-3">{}</td>
 <td>
+<div class="col-sm-10">
     <em>{}</em><br>
     {}<br>
     {} {} <br>
     [{}{}] {}<br>
     {}
+</div>
+<div class="col-sm-2">{}</div>
 </td>
 </tr>
 '''.format(
-    pub['ID'], tr_style, imgStr, title, author_str, yearVenue, note_str, prefix, gidx, links, abstract
+    pub['ID'], tr_style, title, author_str, yearVenue, note_str, prefix, gidx, links, abstract, imgStr,
 )
         else:
             return '''
