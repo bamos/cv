@@ -337,7 +337,7 @@ all_publications:
   name: "B. Amos"
   file: all.bib
   sort_bib: True
-  include_image: True
+  include_image: False
   group_by_year: True
   # categories:
   #   - heading: Preprints and Tech Reports

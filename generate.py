@@ -125,17 +125,18 @@ def get_pub_md(context, config):
 )
         else:
             return '''
-<tr>
+<tr id="tr-{}" {}>
 <td>
-    [{}{}] <strong>{}</strong><br>
+    <em>{}</em><br>
     {}<br>
-    {}<br>
-    {}
-    {}<br>
+    {} {} <br>
+    [{}{}] {}<br>
     {}
 </td>
 </tr>
-'''.format(prefix, gidx, title, author_str, yearVenue, note_str, links, abstract)
+'''.format(
+    pub['ID'], tr_style, title, author_str, yearVenue, note_str, prefix, gidx, links, abstract
+)
 
     def load_and_replace(bibtex_file):
         with open(os.path.join('publications', bibtex_file), 'r') as f:
