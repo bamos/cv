@@ -88,9 +88,13 @@ def get_pub_md(context, config):
                 pub['link'], title)
             # links.append(
             #     "[<a href=\'{}\' target='_blank'>pdf</a>] ".format(pub['link']))
-        if 'codeurl' in pub:
-            links.append(
-                "[<a href=\'{}\' target='_blank'>code</a>] ".format(pub['codeurl']))
+
+        for base in ['code', 'slides', 'talk']:
+            key = base + 'url'
+            if key in pub:
+                links.append(
+                    "[<a href=\'{}\' target='_blank'>{}</a>] ".format(
+                        pub[key], base))
         links = ' '.join(links)
 
         if abstract:
@@ -251,12 +255,11 @@ def get_pub_latex(context, config):
         yearVenue = "{} {}".format(pub['_venue'], pub['year'])
 
         links = []
-        # if 'link' in pub:
-        #     links.append(
-        #         r"[\href{{{}}}{{pdf}}] ".format(pub['link']))
-        if 'codeurl' in pub:
-            links.append(
-                r"[\href{{{}}}{{code}}] ".format(pub['codeurl']))
+        for base in ['code', 'slides', 'talk']:
+            key = base + 'url'
+            if key in pub:
+                links.append(
+                    r"[\href{{{}}}{{{}}}] ".format(pub[key], base))
         links = ' '.join(links)
 
         highlight_color = '\cellcolor{tab_highlight}' if 'selected' in pub else ''

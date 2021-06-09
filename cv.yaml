@@ -69,6 +69,12 @@ service:
     year: 2014 -- 2015
 
 repos:
+  - repo_url: https://github.com/facebookresearch/mbrl-lib
+    year: 2021
+    desc: Model-based reinforcement learning library
+  # - repo_url: https://github.com/facebookresearch/svg
+  #   year: 2021
+  #   desc: Stochastic Value Gradient Experiments
   - repo_url: https://github.com/facebookresearch/dcem
     year: 2020
     desc: Differentiable Cross-Entropy Method Experiments
