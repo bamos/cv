@@ -34,7 +34,8 @@ def get_pub_md(context, config):
         authors = sep.join(authors)
 
         # Hacky fix for special characters.
-        authors = authors.replace('\\"o', '&ouml;')
+        authors = authors.replace(r'\"o', '&ouml;')
+        authors = authors.replace(r"\'\i", '&iacute;')
 
         return authors
 

@@ -1,4 +1,4 @@
-@mphdthesis{amos2019differentiable,
+@phdthesis{amos2019differentiable,
   author       = {Brandon Amos},
   title        = {{Differentiable Optimization-Based Modeling for Machine Learning}},
   school       = {Carnegie Mellon University},
@@ -37,7 +37,7 @@
   }
 }
 
-@misc{amos2020modelbased,
+@misc{amos2021modelbased,
       title={On the model-based stochastic value gradient for continuous reinforcement learning},
       author={Brandon Amos and Samuel Stanton and Denis Yarats and Andrew Gordon Wilson},
       year={2021},
@@ -80,6 +80,64 @@
         an ensemble.
       }
 }
+
+@inproceedings{cohen2021riemannian,
+  title={{Riemannian Convex Potential Maps}},
+  author={Cohen*, Samuel and Amos*, Brandon and Lipman, Yaron},
+  booktitle={ICML},
+  _venue={ICML},
+  year={2021},
+  url={https://arxiv.org/abs/2106.10272},
+  codeurl={https://github.com/facebookresearch/rcpm},
+  slidesurl={http://bamos.github.io/data/slides/2021.rcpm.pdf},
+  selected={true},
+  abstract={
+    Modeling distributions on Riemannian manifolds is a crucial
+    component in understanding non-Euclidean data that
+    arises, e.g., in physics and geology. The budding
+    approaches in this space are limited by
+    representational and computational tradeoffs. We
+    propose and study a class of flows that uses convex
+    potentials from Riemannian optimal transport. These
+    are universal and can model distributions on any
+    compact Riemannian manifold without requiring domain
+    knowledge of the manifold to be integrated into the
+    architecture. We demonstrate that these flows can
+    model standard distributions on spheres, and tori,
+    on synthetic and geological data.
+  }
+}
+
+@@inproceedings{paulus2021comboptnet,
+  title={CombOptNet: Fit the Right NP-Hard Problem by Learning Integer Programming Constraints},
+  author={Paulus, Anselm and Rol{\'\i}nek, Michal and Musil, V{\'\i}t and Amos, Brandon and Martius, Georg},
+  booktitle={ICML},
+  _venue={ICML},
+  year={2021},
+  url={https://arxiv.org/abs/2105.02343},
+  codeurl={https://github.com/martius-lab/CombOptNet},
+  abstract={
+    Bridging logical and algorithmic reasoning with modern machine
+    learning techniques is a fundamental challenge with
+    potentially transformative impact. On the
+    algorithmic side, many NP-hard problems can be
+    expressed as integer programs, in which the
+    constraints play the role of their "combinatorial
+    specification". In this work, we aim to integrate
+    integer programming solvers into neural network
+    architectures as layers capable of learning both the
+    cost terms and the constraints. The resulting
+    end-to-end trainable architectures jointly extract
+    features from raw data and solve a suitable
+    (learned) combinatorial problem with
+    state-of-the-art integer programming solvers. We
+    demonstrate the potential of such layers with an
+    extensive performance analysis on synthetic data and
+    with a demonstration on a competitive computer
+    vision keypoint matching benchmark.
+  }
+}
+
 
 @inproceedings{cohen2020aligning,
       title={Aligning Time Series on Incomparable Spaces},
