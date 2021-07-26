@@ -261,7 +261,6 @@
 @article{pineda2021mbrl,
   title={MBRL-Lib: A Modular Library for Model-based Reinforcement Learning},
   author={Pineda, Luis and Amos, Brandon and Zhang, Amy and Lambert, Nathan O and Calandra, Roberto},
-  journal={arXiv preprint arXiv:2104.10159},
   year={2021},
   url={https://arxiv.org/abs/2104.10159},
   _venue={arXiv},
@@ -284,6 +283,30 @@
   }
 }
 
+@article{venkataraman2021neural,
+  title={Neural Fixed-Point Acceleration for Convex Optimization},
+  author={Shobha Venkataraman* and Brandon Amos*},
+  year={2021},
+  url={https://arxiv.org/abs/2107.10254},
+  _venue={arXiv},
+  codeurl={https://github.com/facebookresearch/neural-opt},
+  abstract={
+    Fixed-point iterations are at the heart of numerical computing and
+    are often a computational bottleneck in real-time
+    applications that typically need a fast solution of
+    moderate accuracy. We present neural fixed-point
+    acceleration which combines ideas from meta-learning
+    and classical acceleration methods to automatically
+    learn to accelerate fixed-point problems that are
+    drawn from a distribution. We apply our framework to
+    SCS, the state-of-the-art solver for convex cone
+    programming, and design models and loss functions to
+    overcome the challenges of learning over unrolled
+    optimization and acceleration instabilities. Our
+    work brings neural acceleration into any
+    optimization problem expressible with CVXPY.
+  }
+}
 
 @inproceedings{amos2020differentiable,
   title={{The Differentiable Cross-Entropy Method}},
