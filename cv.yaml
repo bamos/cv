@@ -77,7 +77,7 @@ repos:
   #   desc: Stochastic Value Gradient Experiments
   - repo_url: https://github.com/facebookresearch/dcem
     year: 2020
-    desc: Differentiable Cross-Entropy Method Experiments
+    desc: The Differentiable Cross-Entropy Method
   - repo_url: https://github.com/facebookresearch/higher
     year: 2019
     desc: PyTorch higher-order gradient and optimization library
@@ -86,15 +86,16 @@ repos:
     desc: Ph.D.~Thesis LaTeX source code
   - repo_url: https://github.com/cvxgrp/cvxpylayers
     year: 2019
+    desc: Differentiable Convex Optimization Layers
   - repo_url: https://github.com/locuslab/mpc.pytorch
     year: 2018
-    desc: Differentiable model-predictive control
+    desc: Differentiable Model-Predictive Control
   - repo_url: https://github.com/locuslab/icnn
     year: 2017
-    desc: Input Convex Neural Network Experiments
+    desc: Input Convex Neural Networks
   - repo_url: https://github.com/locuslab/optnet
     year: 2017
-    desc: OptNet Experiments
+    desc: OptNet experiments
   - repo_url: https://github.com/locuslab/qpth
     www: https://locuslab.github.io/qpth/
     year: 2017
@@ -416,6 +417,10 @@ advising:
     name: Eugene Vinitsky
     details: (visiting FAIR from Berkeley)
     url: https://eugenevinitsky.github.io/
+  - year: 2021
+    name: Arnaud Fickinger
+    details: (visiting FAIR from Berkeley)
+    url: https://www.linkedin.com/in/arnaudfickinger/
   - year: 2020
     name: Aaron Lou
     details: (visiting FAIR from Cornell)

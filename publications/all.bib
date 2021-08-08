@@ -138,6 +138,31 @@
   }
 }
 
+@article{venkataraman2021neural,
+  title={Neural Fixed-Point Acceleration for Convex Optimization},
+  author={Shobha Venkataraman* and Brandon Amos*},
+  year={2021},
+  url={https://arxiv.org/abs/2107.10254},
+  _venue={ICML AutoML},
+  codeurl={https://github.com/facebookresearch/neural-opt},
+  abstract={
+    Fixed-point iterations are at the heart of numerical computing and
+    are often a computational bottleneck in real-time
+    applications that typically need a fast solution of
+    moderate accuracy. We present neural fixed-point
+    acceleration which combines ideas from meta-learning
+    and classical acceleration methods to automatically
+    learn to accelerate fixed-point problems that are
+    drawn from a distribution. We apply our framework to
+    SCS, the state-of-the-art solver for convex cone
+    programming, and design models and loss functions to
+    overcome the challenges of learning over unrolled
+    optimization and acceleration instabilities. Our
+    work brings neural acceleration into any
+    optimization problem expressible with CVXPY.
+  }
+}
+
 
 @inproceedings{cohen2020aligning,
       title={Aligning Time Series on Incomparable Spaces},
@@ -283,31 +308,6 @@
   }
 }
 
-@article{venkataraman2021neural,
-  title={Neural Fixed-Point Acceleration for Convex Optimization},
-  author={Shobha Venkataraman* and Brandon Amos*},
-  year={2021},
-  url={https://arxiv.org/abs/2107.10254},
-  _venue={arXiv},
-  codeurl={https://github.com/facebookresearch/neural-opt},
-  abstract={
-    Fixed-point iterations are at the heart of numerical computing and
-    are often a computational bottleneck in real-time
-    applications that typically need a fast solution of
-    moderate accuracy. We present neural fixed-point
-    acceleration which combines ideas from meta-learning
-    and classical acceleration methods to automatically
-    learn to accelerate fixed-point problems that are
-    drawn from a distribution. We apply our framework to
-    SCS, the state-of-the-art solver for convex cone
-    programming, and design models and loss functions to
-    overcome the challenges of learning over unrolled
-    optimization and acceleration instabilities. Our
-    work brings neural acceleration into any
-    optimization problem expressible with CVXPY.
-  }
-}
-
 @inproceedings{amos2020differentiable,
   title={{The Differentiable Cross-Entropy Method}},
   author={Amos, Brandon and Yarats, Denis},
@@ -398,6 +398,24 @@
     amortization for low-depth multiple sequence
     alignments; the result is then confirmed on a
     database with broad coverage of protein sequences.
+  }
+}
+
+@article{lou2020riemannian,
+  title={Deep Riemannian Manifold Learning},
+  author={Lou, Aaron and Nickel, Maximilian and Amos, Brandon},
+  year={2020},
+  _venue = {NeurIPS Geo4dl},
+  url={https://drive.google.com/file/d/1Ewro0Ne1tvK15nHyYopY4wZ59QTVB-1c/view},
+  abstract = {
+We present a new class of learnable Riemannian manifolds with a metric
+parameterized by a deep neural network. The core manifold operations–specifically
+the Riemannian exponential and logarithmic maps–are solved using approximate
+numerical techniques. Input and parameter gradients are computed with an
+adjoint sensitivity analysis. This enables us to fit geodesics and distances with
+gradient-based optimization of both on-manifold values and the manifold itself.
+We demonstrate our method’s capability to model smooth, flexible metric structures
+in graph embedding tasks.
   }
 }
 
