@@ -507,7 +507,7 @@ MARKDOWN_CONTEXT = RenderContext(
     ),
     [
         (r'\\\\\[[^\]]*]', '\n'),  # newlines
-        # (r'~', ' '),  # spaces
+        (r'~', ' '),  # spaces
         (r'\\ ', ' '),  # spaces
         (r'\\&', '&'),  # unescape &
         (r'\\\$', '\$'),  # unescape $
