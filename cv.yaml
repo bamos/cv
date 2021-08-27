@@ -121,7 +121,7 @@ repos:
     desc: Analyze and plot your zsh history
   - repo_url: https://github.com/bamos/cv
     year: 2013
-    desc: My YAML/LaTeX/Markdown cv
+    desc: "Source for this CV: Creates LaTeX/Markdown from YAML/BibTeX"
   - repo_url: https://github.com/bamos/dotfiles
     year: 2012
     desc: Linux, mutt, xmonad, i3, vim, emacs, zsh
@@ -368,6 +368,10 @@ all_publications:
 
 
 talks:
+  - year: 2021
+    location: Columbia University
+  - year: 2021
+    location: IBM Research
   - year: 2020
     location: Max Planck Institute for Intelligent Systems (Tübingen) Seminar
   - year: 2020
@@ -407,6 +411,8 @@ talks:
     location: OpenAI
   - year: 2018
     location: NNAISENSE
+  - year: 2018
+    location: UC Berkeley
 
 advising:
   - year: 2021

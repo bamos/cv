@@ -192,13 +192,26 @@ def get_pub_md(context, config):
         details = ''
         gidx = 1
         for year, year_pubs in groupby(pubs, lambda pub: pub['year_int']):
-            details += f'<h2>{year}</h2>\n'
-            details += '<table class="table table-hover">\n'
+            print_year = year >= 2015
+
+            if print_year:
+                year_str = str(year)
+                if year == 2015:
+                    year_str = "2015 and earlier"
+                details += f'<h2>{year_str}</h2>\n'
+                details += '<table class="table table-hover">\n'
+
             for i, pub in enumerate(year_pubs):
                 details += _get_pub_str(
                     pub, '', gidx, includeImage=include_image) + sep
                 gidx += 1
+
+            if print_year and year > 2015:
+                details += '</table>\n'
+
+        if not print_year:
             details += '</table>\n'
+
     else:
         details = '<table class="table table-hover">'
         for i, pub in enumerate(pubs):
@@ -308,10 +321,17 @@ def get_pub_latex(context, config):
         details = ''
         gidx = 1
         for year, year_pubs in groupby(pubs, lambda pub: pub['year_int']):
-            details += rf'\subsection{{{year}}}' + '\n'
+            print_year = year >= 2015
+            if print_year:
+                year_str = str(year)
+                if year == 2015:
+                    year_str = "2015 and earlier"
+                details += rf'\subsection{{{year_str}}}' + '\n'
+
             for i, pub in enumerate(year_pubs):
                 details += _get_pub_str(pub, '', gidx) + sep
                 gidx += 1
+
     else:
         assert False
     contents['details'] = details
