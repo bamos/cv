@@ -481,7 +481,7 @@ coursework:
     instructor: M. Satyanarayanan and D. Siewiorek
 
 skills:
-  - title: Languages
+  - title: Programming
     details: C, C++, Fortran, Haskell, Java,
       Lua, Make, Mathematica, Python, R, Scala
   - title: Frameworks
