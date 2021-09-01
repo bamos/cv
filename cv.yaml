@@ -145,8 +145,8 @@ education:
     # dates: May 2014
     overallGPA: 3.99/4.00
     majorGPA: 4.00/4.00
-    details:
-      - "Advisors: \\href{https://people.cs.vt.edu/~ltw/shortvita.html}{Layne Watson}, \\href{https://www.magnum.io/people/jules.html}{Jules White}, \\href{https://www.ssrg.ece.vt.edu/}{Binoy Ravindran}"
+    # details:
+    #   - "Advisors: \\href{https://people.cs.vt.edu/~ltw/shortvita.html}{Layne Watson}, \\href{https://www.magnum.io/people/jules.html}{Jules White}, \\href{https://www.ssrg.ece.vt.edu/}{Binoy Ravindran}"
 
   # - school: Northside High School
   #   location: Roanoke, VA
@@ -154,7 +154,7 @@ education:
 
 research:
   - place: Facebook AI
-    location: New York, NY
+    location: New York City
     title: Research Scientist
     dates: May 2019 -- Present
     area: Machine learning and optimization
@@ -165,13 +165,13 @@ research:
     dates: Apr 2016 -- May 2019
     area: Machine learning and optimization
   - place: Intel Labs
-    location: Santa Clara, California
+    location: Santa Clara
     title: Research Intern (Vladlen Koltun)
     dates: June 2018 -- Sept 2018
     advisor: Vladlen Koltun
     area: Machine learning
   - place: Google DeepMind
-    location: London, UK
+    location: London
     title: Research Intern (Misha Denil and Nando de Freitas)
     dates: May 2017 -- Oct 2017
     advisor: Nando de Freitas
@@ -232,32 +232,32 @@ research:
 
 positions:
   - place: Facebook AI
-    location: New York, NY
+    location: New York City
     title: Research Scientist
     # dates: May 2019 -- Present
     dates: 2019 -- Present
 
 industry:
   - place: Intel Labs
-    location: Santa Clara, CA
+    location: Santa Clara
     # title: Research Intern
     dates: 2018
     # dates: June 2018 -- Sept 2018
     details:
-      - "Host: \\href{http://vladlen.info/}{Vladlen Koltun}"
+      - "(Host: \\href{http://vladlen.info/}{Vladlen Koltun})"
   - place: Google DeepMind
-    location: London, UK
+    location: London
     # title: Research Intern
     dates: 2017
     # dates: May 2017 -- Oct 2017
     details:
-      - "Hosts: \\href{http://mdenil.com/}{Misha Denil} and \\href{https://scholar.google.com/citations?user=nzEluBwAAAAJ}{Nando de Freitas}"
+      - "(Hosts: \\href{http://mdenil.com/}{Misha Denil} and \\href{https://scholar.google.com/citations?user=nzEluBwAAAAJ}{Nando de Freitas})"
   - place: Adobe Research
-    location: San Jose, CA
+    location: San Jose
     # title: Data Scientist Intern
     dates: 2014
     details:
-      - "Host: \\href{https://research.adobe.com/person/david-tompkins/}{David Tompkins}"
+      - "(Host: \\href{https://research.adobe.com/person/david-tompkins/}{David Tompkins})"
   #   # dates: May 2014 -- Aug 2014
   #   area: Distributed Systems
     # details:

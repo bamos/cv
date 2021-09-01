@@ -4,14 +4,14 @@
   % \begin{itemize}
     ~< for item in items >~
       ~< if item.title >~
-      \textbf{<< item.title >>} | << item.place >>
+      \textbf{<< item.title >>}, << item.place >>,
       ~< else >~
-      \textbf{<< item.place>>}
+      \textbf{<< item.place>>},
       ~< endif >~
-      | << item.location >>
+      << item.location >>
         ~< if item.details >~
         ~< for detail in item.details ->~
-            | <<detail>>
+            <<detail>>
         ~<- endfor ->~
         ~< endif >~
         \hfill << item.dates >> \par

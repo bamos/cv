@@ -7,14 +7,14 @@
   <td>
 <p markdown="1" style='margin: 0'>
 {% if i.title %}
-<strong>{{ i.title }}</strong> | {{ i.place }}
+<strong>{{ i.title }}</strong>, {{ i.place }}
 {% else %}
-<strong>{{ i.place}}</strong>
+<strong>{{ i.place}}</strong>,
 {% endif %}
-| {{ i.location }}
+{{ i.location }}
 {% if i.details %}
 {% for detail in i.details %}
-| {{ detail }}
+{{ detail }}
 {% endfor %}
 {% endif %}
 </p>

@@ -6,14 +6,11 @@
 ~< for school in items >~
     % \item 
   ~< if school.degree >~
-    \textbf{<< school.degree >>}
+    \textbf{<< school.degree >>}, << school.school >>
     ~< if school.overallGPA >~
         (<< school.overallGPA >>)
     ~< endif >~
     \hfill << school.dates >> \par
-    << school.school >> | << school.location >> \par
-  ~< else >~
-    << school.school >> | << school.location >> \hfill << school.dates >> \par
   ~< endif >~
   ~< if school.details >~
     ~< for detail in school.details ->~

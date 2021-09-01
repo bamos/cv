@@ -6,14 +6,11 @@
 {% for school in items %}
   <tr>
     <td>
-      {% if school.degree %}
-        <strong>{{ school.degree }}</strong>
-        {% if school.overallGPA %}
-          ({{ school.overallGPA }})
-        {% endif %}
-        <br>
+      <strong>{{ school.degree }}</strong>, {{ school.school }}
+      {% if school.overallGPA %}
+        ({{ school.overallGPA }})
       {% endif %}
-      {{ school.school }} | {{ school.location }}
+      <br>
       {% if school.details %}
         <p style='margin-top:-1em;margin-bottom:0em' markdown='1'>
         {% for detail in school.details %}
