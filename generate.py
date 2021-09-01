@@ -35,23 +35,38 @@ def get_pub_md(context, config):
 
         # Hacky fix for special characters.
         authors = authors.replace(r'\"o', '&ouml;')
+        authors = authors.replace(r'\'o', '&oacute;')
         authors = authors.replace(r"\'\i", '&iacute;')
 
         return authors
 
-    # [First Initial]. [Last Name]
     def _format_author_list(immut_author_list):
         formatted_authors = []
         for author in immut_author_list:
-            if 'zico' in author.lower():
-                new_auth = 'J. Z. Kolter'
-                if '*' in author:
-                    new_auth += '*'
-            else:
-                new_auth = author.split(", ")
-                new_auth = new_auth[1][0] + ". " + new_auth[0]
-                if config['name'] in new_auth:
-                    new_auth = "<strong>" + new_auth + "</strong>"
+            new_auth = author.split(", ")
+            assert len(new_auth) == 2
+            new_auth = new_auth[1] + " " + new_auth[0]
+            author_urls = config['author_urls']
+
+            k = list(filter(lambda k: k in new_auth, author_urls.keys()))
+            new_auth = new_auth.replace(' ', '&nbsp;')
+            if len(k) > 0:
+                assert len(k) == 1, k
+                url = author_urls[k[0]]
+                new_auth = f"<a href='{url}' target='_blank'>{new_auth}</a>"
+
+            if config['name'] in new_auth:
+                new_auth = "<strong>" + new_auth + "</strong>"
+
+            # if 'zico' in author.lower():
+            #     new_auth = 'J. Z. Kolter'
+            #     if '*' in author:
+            #         new_auth += '*'
+            # else:
+            #     new_auth = author.split(", ")
+            #     new_auth = new_auth[1][0] + ". " + new_auth[0]
+            #     if config['name'] in new_auth:
+            #         new_auth = "<strong>" + new_auth + "</strong>"
             formatted_authors.append(new_auth)
         return formatted_authors
 
@@ -238,18 +253,24 @@ def get_pub_latex(context, config):
     def _format_author_list(immut_author_list):
         formatted_authors = []
         for author in immut_author_list:
-            if 'zico' in author.lower():
-                new_auth = 'J. Z. Kolter'
-                if '*' in author:
-                    new_auth += '*'
-            else:
-                new_auth = author.split(", ")
-                new_auth = new_auth[1][0] + ". " + new_auth[0]
-                if config['name'] in new_auth:
-                    new_auth = r"\textbf{" + new_auth + r"}"
+            new_auth = author.split(", ")
+            assert len(new_auth) == 2
+            new_auth = new_auth[1] + " " + new_auth[0]
+            author_urls = config['author_urls']
+
+            k = list(filter(lambda k: k in new_auth, author_urls.keys()))
+            if len(k) > 0:
+                assert len(k) == 1, k
+                url = author_urls[k[0]]
+                new_auth = f"\href{{{url}}}{{{new_auth}}}"
+
+            if config['name'] in new_auth:
+                new_auth = r"\textbf{" + new_auth + r"}"
             new_auth = new_auth.replace('. ', '.~')
+            new_auth = '\mbox{' + new_auth + '}'
             formatted_authors.append(new_auth)
         return formatted_authors
+
 
     def _get_pub_str(pub, prefix, gidx):
         author_str = _get_author_str(pub['author'])
@@ -285,7 +306,7 @@ def get_pub_latex(context, config):
 
         return rf'''
 \begin{{minipage}}{{\textwidth}}
-\begin{{tabular}}{{R{{8mm}}p{{1mm}}p{{6.5in}}}}
+\begin{{tabular}}{{R{{8mm}}p{{1mm}}L{{6.5in}}}}
 {highlight_color} {prefix}{gidx}.\hspace*{{1mm}} && \textit{{{title}}} {links} \\
 {highlight_color} && {author_str} \\
 {highlight_color} && {yearVenue} {note_str} \\
@@ -543,7 +564,7 @@ MARKDOWN_CONTEXT = RenderContext(
         (r'``([^\']*)\'\'', r'"\1"'),  # quotes
         (r'\\url{([^}]*)}', r'[\1](\1)'),  # urls
         # (r'\\href{([^}]*)}{([^}]*)}', r'[\2](\1)'),  # urls
-        (r'\\href{([^}]*)}{([^}]*)}', r'<a href="\1">\2</a>'),  # urls
+        (r'\\href{([^}]*)}{([^}]*)}', r'<a href="\1" target="_blank">\2</a>'),  # urls
         (r'\{([^}]*)\}', r'\1'),  # Brackets.
     ]
 )

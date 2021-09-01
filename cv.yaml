@@ -333,15 +333,15 @@ teaching:
     short: VT CS2114
     position: TA
 
-selected_publications:
-  name: "B. Amos"
-  file: selected.bib
-  sort_bib: False
-  include_image: True
-  group_by_year: False
+# selected_publications:
+#   name: "Amos"
+#   file: selected.bib
+#   sort_bib: False
+#   include_image: True
+#   group_by_year: False
 
 all_publications:
-  name: "B. Amos"
+  name: "Amos"
   file: all.bib
   sort_bib: True
   include_image: False
@@ -365,6 +365,99 @@ all_publications:
     # - heading: Posters
     #   prefix: S
     #   file: posters.bib
+
+  author_urls:
+    'Aaron Lou': 'https://www.aaronlou.com/'
+    'Akshay Agrawal': 'https://www.akshayagrawal.com/'
+    'Alexander Rives': 'https://scholar.google.com/citations?user=vqb78-gAAAAJ'
+    'Alistair Muldal': 'https://scholar.google.com/citations?user=YfgdfyYAAAAJ'
+    'Amy Zhang': 'https://amyzhang.github.io/'
+    'Andrew Gordon Wilson': 'https://people.orie.cornell.edu/andrew/'
+    'Anselm Paulus': 'https://scholar.google.com/citations?user=njZL5CQAAAAJ'
+    'Anupam Das': 'https://anupamdas.org/'
+    'Artem Molchanov': 'https://amolchanov86.github.io/'
+    'Bartosz Ludwiczuk': 'https://www.linkedin.com/in/bartosz-ludwiczuk-a677a760'
+    'Byron Boots': 'https://homes.cs.washington.edu/~bboots/'
+    'Christopher Williams': 'https://scholar.google.com/citations?user=AW81mosAAAAJ'
+    'Cihan Oguz': 'https://scholar.google.com/citations?user=Z4534DUAAAAJ'
+    'Cliff Shaffer': 'https://people.cs.vt.edu/shaffer/'
+    'Colmenarejo': 'https://scholar.google.com/citations?user=0Dkf68EAAAAJ'
+    'Daniel Siewiorek': 'http://www.cs.cmu.edu/~dps/'
+    'Deisenroth': 'https://deisenroth.cc/'
+    'Denis Yarats': 'https://cs.nyu.edu/~dy1042/'
+    'Douwe Kiela': 'https://douwekiela.github.io/'
+    'Edward Grefenstette': 'https://www.egrefen.com/'
+    'Franziska Meier': 'https://fmeier.github.io/'
+    'Geoff Gordon': 'http://www.cs.cmu.edu/~ggordon/'
+    'Georg': 'http://georg.playfulmachines.com/'
+    'Giulia Luise': 'https://giulslu.github.io/'
+    'Guanhang Wu': 'https://scholar.google.com/citations?user=0pF6i38AAAAJ'
+    'Hamilton Turner': 'https://scholar.google.com/citations?user=MRKab9cAAAAJ'
+    'Han Zhao': 'https://hanzhaoml.github.io/'
+    'Ilya Kostrikov': 'https://scholar.google.com/citations?user=PTS2AOgAAAAJ'
+    'Ivan Dario Jimenez Rodriguez': 'https://ivandariojr.io/'
+    'Jacob Sacks': 'https://scholar.google.com/citations?user=Th4PuGkAAAAJ'
+    'Jaime A. Camelio': 'https://scholar.google.com/citations?user=tWmVBNwAAAAJ'
+    'Joelle Pineau': 'https://www.cs.mcgill.ca/~jpineau/'
+    'John Tyson': 'https://scholar.google.com/citations?user=syETjMMAAAAJ'
+    'Joshua Meier': 'https://scholar.google.com/citations?user=2M0OltAAAAAJ'
+    'Jules White': 'https://scholar.google.com/citations?user=10HSX90AAAAJ'
+    'Junjue Wang': 'https://junjuew.github.io/'
+    'Khalid Elgazzar': 'https://scholar.google.com/citations?user=R9r5_GIAAAAJ'
+    'Kiryong Ha': 'http://krha.kr/'
+    'Kyunghyun Cho': 'https://kyunghyuncho.me/'
+    'Laurent Dinh': 'https://laurent-dinh.github.io/'
+    'Layne T. Watson': 'https://people.cs.vt.edu/~ltw/shortvita.html'
+    'Lei Xu': 'https://leix28.github.io/'
+    'Luis Pineda': 'https://scholar.google.com/citations?user=rebEn8oAAAAJ'
+    'Mahadev Satyanarayanan': 'https://www.cs.cmu.edu/~satya/'
+    'Maximilian Nickel': 'https://mnick.github.io/'
+    'Michal Rol': 'https://mrolinek.github.io/'
+    'Minghan Chen': 'https://chenm.sites.wfu.edu/publications/'
+    'Misha Denil': 'https://mdenil.com/'
+    'Musil': 'https://scholar.google.com/citations?user=hA1rlU4AAAAJ'
+    'Nando de Freitas': 'https://scholar.google.com/citations?user=nzEluBwAAAAJ'
+    'Nathan Lambert': 'https://www.natolambert.com/'
+    'Nigel Davies': 'https://www.lancaster.ac.uk/sci-tech/about-us/people/nigel-davies'
+    'Nina Taft': 'https://scholar.google.com/citations?user=BItCgjYAAAAJ'
+    'Noam Brown': 'http://www.noambrown.com/'
+    'Norman Sadeh': 'https://www.normsadeh.org/'
+    'Omry Yadan': 'https://scholar.google.com/citations?user=zSsW478AAAAJ'
+    'Padmanabhan Pillai': 'https://www.andrew.cmu.edu/user/pspillai/'
+    'Phu Mon Htut': 'https://phumonhtut.me/'
+    'Pieter Simoens': 'https://www.ugent.be/ea/idlab/en/members/pieter-simoens.htm'
+    'Priya L. Donti': 'https://priyadonti.com/'
+    'Ricky T. Q. Chen': 'https://scholar.google.com/citations?user=7MxQd6UAAAAJ'
+    'Rob Fergus': 'https://cs.nyu.edu/~fergus/pmwiki/pmwiki.php'
+    'Roberta Klatzky': 'https://www.cmu.edu/dietrich/psychology/people/core-training-faculty/klatzky-roberta.html'
+    'Roberto Calandra': 'https://www.robertocalandra.com/about/'
+    'Samuel Cohen': 'https://scholar.google.com/citations?user=CmdjfTsAAAAJ'
+    'Samuel Stanton': 'https://samuelstanton.github.io/'
+    'Sarah Clinch': 'http://www.sclinch.com/'
+    'Serkan Cabi': 'https://scholar.google.com/citations?user=l-HhJaUAAAAJ'
+    'Shane Barratt': 'https://web.stanford.edu/~sbarratt/'
+    'Shobha': 'https://scholar.google.com/citations?user=BFWurDEAAAAJ'
+    'Siyan Zhao': 'https://www.siyanz.com/'
+    'Soumith Chintala': 'https://soumith.ch/'
+    'Stephen Boyd': 'https://web.stanford.edu/~boyd/'
+    'Steven Diamond': 'https://stevendiamond.me/'
+    'Tameem Adel': 'https://tameemadel.wordpress.com/'
+    'Terenin': 'https://avt.im/'
+    'Thacker': 'https://scholar.google.com/citations?user=2I6IgikAAAAJ'
+    'Tom Erez': 'https://scholar.google.com/citations?user=gVFnjOcAAAAJ'
+    'Tom Sercu': 'https://tom.sercu.me/'
+    'Trosset': 'https://mtrosset.pages.iu.edu/'
+    'Tuomas Sandholm': 'http://www.cs.cmu.edu/~sandholm/'
+    'Vladlen Koltun': 'http://vladlen.info/'
+    'Wenlu Hu': 'http://www.cs.cmu.edu/~wenluh/'
+    'Wolfgang Richter': 'https://scholar.google.com/citations?user=vU6bKxEAAAAJ'
+    'Yang Cao': 'https://people.cs.vt.edu/~ycao/'
+    'Yann LeCun': 'http://yann.lecun.com/'
+    'Yaron Lipman': 'https://www.wisdom.weizmann.ac.il/~ylipman/'
+    'Yuval Tassa': 'https://scholar.google.com/citations?user=CjOTm_4AAAAJ'
+    'Zeming Lin': 'https://scholar.google.com/citations?user=ZDjmMuwAAAAJ'
+    'Zhuo Chen': 'https://scholar.google.com/citations?user=-wKpBNkAAAAJ'
+    'Zico Kolter': 'http://zicokolter.com/'
 
 
 talks:
@@ -418,7 +511,7 @@ advising:
   - year: 2021
     name: Samuel Cohen
     details: (visiting FAIR from UCL)
-    url: https://www.samcohen16.com/
+    url: https://scholar.google.com/citations?user=CmdjfTsAAAAJ
   - year: 2021
     name: Eugene Vinitsky
     details: (visiting FAIR from Berkeley)
@@ -429,11 +522,11 @@ advising:
     url: https://www.linkedin.com/in/arnaudfickinger/
   - year: 2020
     name: Aaron Lou
-    details: (visiting FAIR from Cornell)
+    details: "(visiting FAIR from Cornell, now: Ph.D.~student at Stanford)"
     url: https://www.aaronlou.com/
   - year: 2020
     name: Ricky Chen
-    details: (visiting FAIR from Toronto)
+    details: "(visiting FAIR from Toronto, now: scientist at FAIR)"
     url: http://www.cs.toronto.edu/~rtqichen/
   - year: 2020
     name: Paul Liang
@@ -443,10 +536,6 @@ advising:
     name: Phillip Wang
     details: "(at CMU, now: CEO at \\href{https://gather.town/}{Gather})"
     url: https://phillipkwang.com/
-  - year: 2016
-    name: Lei Xu
-    details: "(visiting CMU from Tsinghua, now: Ph.D. student at MIT)"
-    url: https://leix28.github.io
 
 coursework:
   - semester: S2017
