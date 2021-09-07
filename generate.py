@@ -49,6 +49,9 @@ def get_pub_md(context, config):
             author_urls = config['author_urls']
 
             k = list(filter(lambda k: k in new_auth, author_urls.keys()))
+            if len(k) == 0 and config['name'] not in new_auth:
+                print(f"+ Author URL not found for {new_auth}")
+
             new_auth = new_auth.replace(' ', '&nbsp;')
             if len(k) > 0:
                 assert len(k) == 1, k
@@ -455,7 +458,7 @@ class RenderContext(object):
 
         body = ''
         for section_tag, section_title in yaml_data['order']:
-            print("  + Processing section: {}".format(section_tag))
+            print("Processing section: {}".format(section_tag))
 
             section_data = {'name': section_title}
             section_content = None if section_tag == "NEWPAGE" else yaml_data[section_tag]
