@@ -7,6 +7,22 @@
   codeurl={https://github.com/bamos/thesis},
   url={https://github.com/bamos/thesis/raw/master/bamos_thesis.pdf},
   selected={true},
+  abstract={
+Domain-specific modeling priors and specialized components are becoming
+increasingly important to the machine learning field. These components integrate specialized knowledge that we have as humans into model. We argue in
+this thesis that optimization methods provide an expressive set of operations
+that should be part of the machine learning practitioner’s modeling toolbox.
+We present two foundational approaches for optimization-based modeling:
+1) the OptNet architecture that integrates optimization problems as individual
+layers in larger end-to-end trainable deep networks, and 2) the input-convex
+neural network (ICNN) architecture that helps make inference and learning in
+deep energy-based models and structured prediction more tractable.
+We then show how to use the OptNet approach 1) as a way of combining
+model-free and model-based reinforcement learning and 2) for top-k learning
+problems. We conclude by showing how to differentiate cone programs and turn
+the cvxpy domain specific language into a differentiable optimization layer that
+enables rapid prototyping of the approaches in this thesis.
+  }
 }
 
 @techreport{amos2016openface,
@@ -609,6 +625,33 @@ in graph embedding tasks.
   url={https://par.nsf.gov/servlets/purl/10111392},
   publisher={IEEE},
   _venue={IEEE/ACM TCBB},
+  abstract={
+Parameter estimation in discrete or continuous deterministic cell
+cycle models is challenging for several reasons,
+including the nature of what can be observed, and
+the accuracy and quantity of those observations. The
+challenge is even greater for stochastic models,
+where the number of simulations and amount of
+empirical data must be even larger to obtain
+statistically valid parameter estimates. The two
+main contributions of this work are (1) stochastic
+model parameter estimation based on directly
+matching multivariate probability distributions, and
+(2) a new quasi-Newton algorithm class QNSTOP for
+stochastic optimization problems. QNSTOP directly
+uses the random objective function value samples
+rather than creating ensemble statistics. QNSTOP is
+used here to directly match empirical and simulated
+joint probability distributions rather than matching
+summary statistics. Results are given for a current
+state-of-the-art stochastic cell cycle model of
+budding yeast, whose predictions match well some
+summary statistics and one-dimensional distributions
+from empirical data, but do not match well the
+empirical joint distributions. The nature of the
+mismatch provides insight into the weakness in the
+stochastic model.
+  }
 }
 
 @article{satyanarayanan2015edge,
@@ -669,9 +712,23 @@ in graph embedding tasks.
   booktitle={Proceedings of the Second ACM/IEEE Symposium on Edge Computing},
   pages={12},
   year={2017},
-  url={https://www.cs.cmu.edu/~15-821/READINGS/PAPERS/ha2017.pdf},
+  url={https://dl.acm.org/doi/10.1145/3132211.3134453},
   organization={ACM},
   _venue={SEC},
+  abstract={
+VM handoff enables rapid and transparent placement changes to
+executing code in edge computing use cases where the
+safety and management attributes of VM encapsulation
+are important. This versatile primitive offers the
+functionality of classic live migration but is
+highly optimized for the edge. Over WAN bandwidths
+ranging from 5 to 25 Mbps, VM handoff migrates a
+running 8 GB VM in about a minute, with a downtime
+of a few tens of seconds. By dynamically adapting to
+varying network bandwidth and processing load, VM
+handoff is more than an order of magnitude faster
+than live migration at those bandwidths.
+  }
 }
 
 @inproceedings{chen2017empirical,
@@ -683,6 +740,21 @@ in graph embedding tasks.
   year={2017},
   organization={ACM},
   _venue={SEC},
+  abstract={
+An emerging class of interactive wearable cognitive assistance
+applications is poised to become one of the key
+demonstrators of edge computing infrastructure. In
+this paper, we design seven such applications and
+evaluate their performance in terms of latency
+across a range of edge computing configurations,
+mobile hardware, and wireless networks, including 4G
+LTE. We also devise a novel multi-algorithm approach
+that leverages temporal locality to reduce
+end-to-end latency by 60% to 70%, without
+sacrificing accuracy. Finally, we derive target
+latencies for our applications, and show that edge
+computing is crucial to meeting these targets.
+ }
 }
 
 @inproceedings{hu2016quantifying,
@@ -694,6 +766,16 @@ in graph embedding tasks.
   year={2016},
   organization={ACM},
   _venue={ACM SIGOPS},
+  abstract={
+Computational offloading services at the edge of the Internet for
+mobile devices are becoming a reality. Using a wide
+range of mobile applications, we explore how such
+infrastructure improves latency and energy
+consumption relative to the cloud. We present
+experimental results from WiFi and 4G LTE networks
+that confirm substantial wins from edge computing
+for highly interactive mobile applications.
+  }
 }
 
 @inproceedings{davies2016privacy,
