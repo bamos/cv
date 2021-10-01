@@ -1,58 +1,3 @@
-@phdthesis{amos2019differentiable,
-  author       = {Brandon Amos},
-  title        = {{Differentiable Optimization-Based Modeling for Machine Learning}},
-  school       = {Carnegie Mellon University},
-  year         = 2019,
-  _venue = {Ph.D. Thesis},
-  codeurl={https://github.com/bamos/thesis},
-  url={https://github.com/bamos/thesis/raw/master/bamos_thesis.pdf},
-  selected={true},
-  abstract={
-Domain-specific modeling priors and specialized components are becoming
-increasingly important to the machine learning field. These components integrate specialized knowledge that we have as humans into model. We argue in
-this thesis that optimization methods provide an expressive set of operations
-that should be part of the machine learning practitioner’s modeling toolbox.
-We present two foundational approaches for optimization-based modeling:
-1) the OptNet architecture that integrates optimization problems as individual
-layers in larger end-to-end trainable deep networks, and 2) the input-convex
-neural network (ICNN) architecture that helps make inference and learning in
-deep energy-based models and structured prediction more tractable.
-We then show how to use the OptNet approach 1) as a way of combining
-model-free and model-based reinforcement learning and 2) for top-k learning
-problems. We conclude by showing how to differentiate cone programs and turn
-the cvxpy domain specific language into a differentiable optimization layer that
-enables rapid prototyping of the approaches in this thesis.
-  }
-}
-
-@techreport{amos2016openface,
-  title={OpenFace: A general-purpose face recognition
-    library with mobile applications},
-  author={Amos, Brandon and Bartosz Ludwiczuk and Satyanarayanan, Mahadev},
-  _venue={CMU},
-  year={2016},
-  institution={Technical Report CMU-CS-16-118, CMU School of Computer Science},
-  url={http://reports-archive.adm.cs.cmu.edu/anon/anon/2016/CMU-CS-16-118.pdf},
-  codeurl={https://cmusatyalab.github.io/openface},
-  selected={true},
-  abstract={
-    Cameras are becoming ubiquitous in the Internet of Things (IoT) and
-    can use face recognition technology to improve context. There is a
-    large accuracy gap between today's publicly available face recognition
-    systems and the state-of-the-art private face recognition
-    systems. This paper presents our OpenFace face recognition library
-    that bridges this accuracy gap. We show that OpenFace provides
-    near-human accuracy on the LFW benchmark and present a new
-    classification benchmark for mobile scenarios. This paper is intended
-    for non-experts interested in using OpenFace and provides a light
-    introduction to the deep neural network techniques we use.
-
-    We released OpenFace in October 2015 as an open source library under
-    the Apache 2.0 license. It is available at:
-    <http://cmusatyalab.github.io/openface/>
-  }
-}
-
 @misc{amos2021modelbased,
       title={On the model-based stochastic value gradient for continuous reinforcement learning},
       author={Brandon Amos and Samuel Stanton and Denis Yarats and Andrew Gordon Wilson},
@@ -154,31 +99,34 @@ enables rapid prototyping of the approaches in this thesis.
   }
 }
 
-@article{venkataraman2021neural,
-  title={Neural Fixed-Point Acceleration for Convex Optimization},
-  author={Shobha Venkataraman* and Brandon Amos*},
+@inproceedings{fickinger2021scalable,
   year={2021},
-  url={https://arxiv.org/abs/2107.10254},
-  _venue={ICML AutoML},
-  codeurl={https://github.com/facebookresearch/neural-opt},
+  booktitle={NeurIPS},
+  _venue={NeurIPS},
+  url={http://web.stanford.edu/~boyd/papers/pdf/diff_cvxpy.pdf},
+  title={{Scalable Online Planning via Reinforcement Learning Fine-Tuning}},
+  author={Arnaud Fickinger and Hengyuan Hu and Brandon Amos and Stuart Russell and Noam Brown},
+  year={2021},
   abstract={
-    Fixed-point iterations are at the heart of numerical computing and
-    are often a computational bottleneck in real-time
-    applications that typically need a fast solution of
-    moderate accuracy. We present neural fixed-point
-    acceleration which combines ideas from meta-learning
-    and classical acceleration methods to automatically
-    learn to accelerate fixed-point problems that are
-    drawn from a distribution. We apply our framework to
-    SCS, the state-of-the-art solver for convex cone
-    programming, and design models and loss functions to
-    overcome the challenges of learning over unrolled
-    optimization and acceleration instabilities. Our
-    work brings neural acceleration into any
-    optimization problem expressible with CVXPY.
+    Lookahead search has been a critical component of recent AI successes,
+    such as in the games of chess, go, and
+    poker. However, the search methods used in these
+    games, and in many other settings, are
+    tabular. Tabular search methods do not scale well
+    with the size of the search space, and this problem
+    is exacerbated by stochasticity and partial
+    observability. In this work we replace tabular
+    search with online model-based fine-tuning of a
+    policy neural network via reinforcement learning,
+    and show that this approach outperforms
+    state-of-the-art search algorithms in benchmark
+    settings. In particular, we use our search algorithm
+    to achieve a new state-of-the-art result in
+    self-play Hanabi, and show the generality of our
+    algorithm by also showing that it outperforms
+    tabular search in the Atari game Ms. Pacman.
   }
 }
-
 
 @inproceedings{cohen2020aligning,
       title={Aligning Time Series on Incomparable Spaces},
@@ -296,6 +244,31 @@ enables rapid prototyping of the approaches in this thesis.
     and model-based algorithms on many challenging
     control tasks. We release our code to encourage
     future research on image-based RL.
+  }
+}
+
+@article{venkataraman2021neural,
+  title={Neural Fixed-Point Acceleration for Convex Optimization},
+  author={Shobha Venkataraman* and Brandon Amos*},
+  year={2021},
+  url={https://arxiv.org/abs/2107.10254},
+  _venue={ICML AutoML},
+  codeurl={https://github.com/facebookresearch/neural-opt},
+  abstract={
+    Fixed-point iterations are at the heart of numerical computing and
+    are often a computational bottleneck in real-time
+    applications that typically need a fast solution of
+    moderate accuracy. We present neural fixed-point
+    acceleration which combines ideas from meta-learning
+    and classical acceleration methods to automatically
+    learn to accelerate fixed-point problems that are
+    drawn from a distribution. We apply our framework to
+    SCS, the state-of-the-art solver for convex cone
+    programming, and design models and loss functions to
+    overcome the challenges of learning over unrolled
+    optimization and acceleration instabilities. Our
+    work brings neural acceleration into any
+    optimization problem expressible with CVXPY.
   }
 }
 
@@ -432,6 +405,34 @@ adjoint sensitivity analysis. This enables us to fit geodesics and distances wit
 gradient-based optimization of both on-manifold values and the manifold itself.
 We demonstrate our method’s capability to model smooth, flexible metric structures
 in graph embedding tasks.
+  }
+}
+
+
+@phdthesis{amos2019differentiable,
+  author       = {Brandon Amos},
+  title        = {{Differentiable Optimization-Based Modeling for Machine Learning}},
+  school       = {Carnegie Mellon University},
+  year         = 2019,
+  _venue = {Ph.D. Thesis},
+  codeurl={https://github.com/bamos/thesis},
+  url={https://github.com/bamos/thesis/raw/master/bamos_thesis.pdf},
+  selected={true},
+  abstract={
+Domain-specific modeling priors and specialized components are becoming
+increasingly important to the machine learning field. These components integrate specialized knowledge that we have as humans into model. We argue in
+this thesis that optimization methods provide an expressive set of operations
+that should be part of the machine learning practitioner’s modeling toolbox.
+We present two foundational approaches for optimization-based modeling:
+1) the OptNet architecture that integrates optimization problems as individual
+layers in larger end-to-end trainable deep networks, and 2) the input-convex
+neural network (ICNN) architecture that helps make inference and learning in
+deep energy-based models and structured prediction more tractable.
+We then show how to use the OptNet approach 1) as a way of combining
+model-free and model-based reinforcement learning and 2) for top-k learning
+problems. We conclude by showing how to differentiate cone programs and turn
+the cvxpy domain specific language into a differentiable optimization layer that
+enables rapid prototyping of the approaches in this thesis.
   }
 }
 
@@ -589,6 +590,34 @@ in graph embedding tasks.
     real-world electrical grid scheduling task. In both cases, we show
     that the proposed approach can outperform both a traditional modeling
     approach and a purely black-box policy optimization approach.
+  }
+}
+
+@techreport{amos2016openface,
+  title={OpenFace: A general-purpose face recognition
+    library with mobile applications},
+  author={Amos, Brandon and Bartosz Ludwiczuk and Satyanarayanan, Mahadev},
+  _venue={CMU},
+  year={2016},
+  institution={Technical Report CMU-CS-16-118, CMU School of Computer Science},
+  url={http://reports-archive.adm.cs.cmu.edu/anon/anon/2016/CMU-CS-16-118.pdf},
+  codeurl={https://cmusatyalab.github.io/openface},
+  selected={true},
+  abstract={
+    Cameras are becoming ubiquitous in the Internet of Things (IoT) and
+    can use face recognition technology to improve context. There is a
+    large accuracy gap between today's publicly available face recognition
+    systems and the state-of-the-art private face recognition
+    systems. This paper presents our OpenFace face recognition library
+    that bridges this accuracy gap. We show that OpenFace provides
+    near-human accuracy on the LFW benchmark and present a new
+    classification benchmark for mobile scenarios. This paper is intended
+    for non-experts interested in using OpenFace and provides a light
+    introduction to the deep neural network techniques we use.
+
+    We released OpenFace in October 2015 as an open source library under
+    the Apache 2.0 license. It is available at:
+    <http://cmusatyalab.github.io/openface/>
   }
 }
 

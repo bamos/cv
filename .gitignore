@@ -4,5 +4,6 @@ __pycache__
 *.out
 *.pdf
 *.db
+*.shelf.*
 venv
 auto

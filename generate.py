@@ -166,7 +166,7 @@ def get_pub_md(context, config):
             p = BibTexParser(f.read(), bc.author).get_entry_list()
         for pub in p:
             for field in pub:
-                if field is not 'link':
+                if field != 'link':
                     pub[field] = context.make_replacements(pub[field])
             pub['author'] = _format_author_list(pub['author'])
         return p
@@ -321,7 +321,7 @@ def get_pub_latex(context, config):
             p = BibTexParser(f.read(), bc.author).get_entry_list()
         for pub in p:
             for field in pub:
-                if field is not 'link':
+                if field != 'link':
                     pub[field] = context.make_replacements(pub[field])
             pub['author'] = _format_author_list(pub['author'])
         return p
@@ -551,7 +551,8 @@ MARKDOWN_CONTEXT = RenderContext(
     ),
     [
         (r'\\\\\[[^\]]*]', '\n'),  # newlines
-        (r'~', ' '),  # spaces
+        # (r'~', ' '),  # spaces
+        (r'\.~', '. '),  # spaces
         (r'\\ ', ' '),  # spaces
         (r'\\&', '&'),  # unescape &
         (r'\\\$', '\$'),  # unescape $
