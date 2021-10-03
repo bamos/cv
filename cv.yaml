@@ -124,7 +124,7 @@ repos:
     desc: "Source for this CV: Creates LaTeX/Markdown from YAML/BibTeX"
   - repo_url: https://github.com/bamos/dotfiles
     year: 2012
-    desc: Linux, mutt, xmonad, i3, vim, emacs, zsh
+    desc: Linux, mutt, xmonad, vim, emacs, zsh
 
 education:
   - school: Carnegie Mellon University
@@ -598,7 +598,7 @@ skills:
   - title: Frameworks
     details: JAX, NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
   - title: Tools
-    details: Linux, emacs, vim, evil, org, mu4e, xmonad, i3, git, tmux, zsh
+    details: Linux, emacs, vim, evil, org, mu4e, xmonad, git, tmux, zsh
 
 honors:
   - title: NSF Graduate Research Fellowship
