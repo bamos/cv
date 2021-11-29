@@ -272,6 +272,69 @@
   }
 }
 
+@misc{cohen2021sliced,
+    title={Sliced Multi-Marginal Optimal Transport},
+    author={Samuel Cohen and Alexander Terenin and Yannik Pitcan and Brandon Amos and Marc Peter Deisenroth and K S Sesh Kumar},
+    year={2021},
+    url={https://arxiv.org/abs/2102.07115},
+    _venue={NeurIPS OTML},
+    abstract={
+        Multi-marginal optimal transport enables one to compare multiple
+        probability measures, which increasingly finds
+        application in multi-task learning problems. One
+        practical limitation of multi-marginal transport is
+        computational scalability in the number of measures,
+        samples and dimensionality. In this work, we propose
+        a multi-marginal optimal transport paradigm based on
+        random one-dimensional projections, whose
+        (generalized) distance we term the sliced
+        multi-marginal Wasserstein distance. To construct
+        this distance, we introduce a characterization of
+        the one-dimensional multi-marginal Kantorovich
+        problem and use it to highlight a number of
+        properties of the sliced multi-marginal Wasserstein
+        distance. In particular, we show that (i) the sliced
+        multi-marginal Wasserstein distance is a
+        (generalized) metric that induces the same topology
+        as the standard Wasserstein distance, (ii) it admits
+        a dimension-free sample complexity, (iii) it is
+        tightly connected with the problem of barycentric
+        averaging under the sliced-Wasserstein metric. We
+        conclude by illustrating the sliced multi-marginal
+        Wasserstein on multi-task density estimation and
+        multi-dynamics reinforcement learning problems.
+    }
+}
+
+@misc{richterpowell2021input,
+    title={Input Convex Gradient Networks},
+    author={Jack Richter-Powell and Jonathan Lorraine and Brandon Amos},
+    year={2021},
+    _venue={NeurIPS OTML},
+    url={https://arxiv.org/abs/2111.12187},
+    abstract={
+    The gradients of convex functions are expressive models of non-trivial
+    vector fields. For example, Brenier's theorem yields
+    that the optimal transport map between any two
+    measures on Euclidean space under the squared
+    distance is realized as a convex gradient, which is
+    a key insight used in recent generative flow
+    models. In this paper, we study how to model convex
+    gradients by integrating a Jacobian-vector product
+    parameterized by a neural network, which we call the
+    Input Convex Gradient Network (ICGN). We
+    theoretically study ICGNs and compare them to taking
+    the gradient of an Input-Convex Neural Network
+    (ICNN), empirically demonstrating that a single
+    layer ICGN can fit a toy example better than a
+    single layer ICNN. Lastly, we explore extensions to
+    deeper networks and connections to constructions
+    from Riemannian geometry.
+    }
+}
+
+
+
 @article{pineda2021mbrl,
   title={MBRL-Lib: A Modular Library for Model-based Reinforcement Learning},
   author={Pineda, Luis and Amos, Brandon and Zhang, Amy and Lambert, Nathan and Calandra, Roberto},
@@ -326,6 +389,8 @@
     state-action space.
   }
 }
+
+
 
 @inproceedings{amos2020differentiable,
   title={{The Differentiable Cross-Entropy Method}},

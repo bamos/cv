@@ -46,8 +46,11 @@ about: '
   study foundational topics in <b>machine learning</b> and <b>optimization</b>,
   recently involving reinforcement learning, control,
   optimal transport, and geometry.
-  I am interested in building learning systems that understand and
-  interact with our world.
+  My research is on learning systems that understand and interact with our world
+  and focuses on integrating structural information and domain knowledge into
+  these systems to represent non-trivial reasoning operations.
+  A key theme of my work in this space involves the use of optimization as
+  a differentiable building block in larger architectures that are end-to-end learned.
   I freely publish my research code to \href{https://github.com/bamos}{GitHub}
   as science should be open and reproducible and
   well-crafted software enables new frontiers.
@@ -480,6 +483,10 @@ all_publications:
     'Arnaud Fickinger': 'https://scholar.google.com/citations?user=bBFN_qwAAAAJ'
     'Hengyuan Hu': 'https://scholar.google.com/citations?user=sJwwn54AAAAJ'
     'Stuart Russell': 'http://people.eecs.berkeley.edu/~russell/'
+    'K S Sesh Kumar': 'https://scholar.google.co.in/citations?user=FPVUA-YAAAAJ'
+    'Yannik Pitcan': 'https://scholar.google.com/citations?user=jmM-JlIAAAAJ'
+    'Jack Richter-Powell': 'https://scholar.google.com/citations?hl=es&user=L78pVMMAAAAJ'
+    'Jonathan Lorraine': 'https://scholar.google.com/citations?user=Hzf8bu0AAAAJ'
 
 
 talks:
