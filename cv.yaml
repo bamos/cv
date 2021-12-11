@@ -52,8 +52,7 @@ about: '
   A key theme of my work in this space involves the use of optimization as
   a differentiable building block in larger architectures that are end-to-end learned.
   I freely publish my research code to \href{https://github.com/bamos}{GitHub}
-  as science should be open and reproducible and
-  well-crafted software enables new frontiers.
+  as science should be open and reproducible.
 <br><br>'
 
 service:
@@ -72,6 +71,9 @@ service:
     year: 2014 -- 2015
 
 repos:
+  - repo_url: https://github.com/facebookresearch/theseus
+    year: 2021
+    desc: Differentiable non-linear optimization library
   - repo_url: https://github.com/facebookresearch/mbrl-lib
     year: 2021
     desc: Model-based reinforcement learning library
