@@ -11,7 +11,7 @@
         {{ item.location }}
     {% endif %}
   </td>
-  <td class='col-md-1' style='text-align:right;'>{{ item.year }}</td>
+  <td class='col-md-2' style='text-align:right;'>{{ item.year }}</td>
 </tr>
 {% endfor %}
 </table>
