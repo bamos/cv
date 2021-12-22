@@ -539,10 +539,6 @@ talks:
     location: UC Berkeley
 
 advising:
-  - year: 2020 -- 2022
-    name: Aaron Lou
-    details: "(visiting FAIR from Cornell and Stanford)"
-    url: https://www.aaronlou.com/
   - year: 2021 -- 2022
     name: Eugene Vinitsky
     details: (visiting FAIR from Berkeley)
@@ -551,10 +547,14 @@ advising:
     name: Arnaud Fickinger
     details: (visiting FAIR from Berkeley)
     url: https://www.linkedin.com/in/arnaudfickinger/
-  - year: 2021
+  - year: 2021 -- 2022
     name: Samuel Cohen
     details: (visiting FAIR from UCL)
     url: https://scholar.google.com/citations?user=CmdjfTsAAAAJ
+  - year: 2020 -- 2022
+    name: Aaron Lou
+    details: "(visiting FAIR from Cornell and Stanford)"
+    url: https://www.aaronlou.com/
   - year: 2020
     name: Ricky Chen
     details: "(visiting FAIR from Toronto, now: scientist at FAIR)"
