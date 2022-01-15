@@ -1,4 +1,4 @@
 bibtexparser==0.6.2
-Jinja2==2.7.2
-PyYaml==3.11
-beautifulsoup4==4.3.2
+Jinja2==2.11.3
+PyYaml==5.4.1
+beautifulsoup4==4.9.3
