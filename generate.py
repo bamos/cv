@@ -385,9 +385,7 @@ def add_repo_data(context, config):
             repo_htmls[short_name] = r.content
         soup = BeautifulSoup(repo_htmls[short_name], 'html.parser')
 
-        item['stars'] = soup.find(
-            'a', class_="social-count js-social-count"
-        ).text.strip()
+        item['stars'] = soup.find(class_="js-social-count").text.strip()
 
         if 'desc' not in item:
             item['desc'] = soup.find('p', class_='f4 mt-3').text.strip()
