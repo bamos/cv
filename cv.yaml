@@ -72,7 +72,7 @@ service:
 
 repos:
   - repo_url: https://github.com/facebookresearch/theseus
-    year: 2021
+    year: 2022
     desc: Differentiable non-linear optimization library
   - repo_url: https://github.com/facebookresearch/mbrl-lib
     year: 2021
