@@ -51,8 +51,8 @@ about: '
   these systems to represent non-trivial reasoning operations.
   A key theme of my work in this space involves the use of optimization as
   a differentiable building block in larger architectures that are end-to-end learned.
-  I freely publish my research code to \href{https://github.com/bamos}{GitHub}
-  as science should be open and reproducible.
+  I believe that science should be open and reproducible and
+  freely publish my research code to \href{https://github.com/bamos}{GitHub}.
 <br><br>'
 
 service:
