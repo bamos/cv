@@ -216,6 +216,7 @@ def get_pub_md(context, config):
                 year_str = str(year)
                 if year == 2015:
                     year_str = "2015 and earlier"
+
                 details += f'<h2>{year_str}</h2>\n'
                 details += '<table class="table table-hover">\n'
 
@@ -461,8 +462,8 @@ class RenderContext(object):
             section_data = {'name': section_title}
             section_content = None if section_tag == "NEWPAGE" else yaml_data[section_tag]
             if section_tag == 'about':
-                if self._file_ending == '.tex':
-                    continue
+                # if self._file_ending == '.tex':
+                #     continue
                 section_template_name = "section" + self._file_ending
                 section_data['data'] = section_content
             elif section_tag == 'news':

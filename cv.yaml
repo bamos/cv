@@ -1,18 +1,18 @@
 name:
-  first: Brandon
-  last: Amos
+  first: Nathan
+  last: Lambert
 # phone: ~(540)~947~1238
-email: bda@fb.com
+email: nathan@natolambert.com
 pdf: /data/cv.pdf
-src: https://github.com/bamos/cv
-url: "bamos.github.io"
+src: https://github.com/natolambert/cv
+url: "natolambert.com"
 social:
-  github: bamos
-  twitter: brandondamos
-  linkedin: bdamos
-  google_scholar: d8gdZR4AAAAJ
-# Erdős  number is at most 4.
-# (Brandon Amos -> Layne Watson -> Leroy Kelly -> Zoltán Füredi -> Paul Erdős )
+  github: natolambert
+  twitter: natolambert
+  linkedin: natolambert
+  google_scholar: O4jW7BsAAAAJ
+# TBD what is my Erdős  number .
+# (Nathan Lambert -> ?  -> Paul Erdős )
 
 # LaTeX formatting.
 style: banking # casual, classic, oldstyle, or banking
@@ -21,17 +21,11 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 
 # (tag, section type, title)
 order:
-  - [about, NONE]
+  - [about, None]
   # - [news, News]
-  - [positions, Current Position]
   - [education, Education]
-  - [industry, Research Internships]
-  # - [research, Research Experience]
-  # - [selected_publications, Selected Publications]
+  - [industry, Industry Experience]
   - [honors, Honors \& Awards]
-  # - [projects, Projects]
-  # - [coursework, CMU Graduate Coursework]
-#  - [activities, Activities]
   - [all_publications, Publications]
   - [repos, Repositories]
   # - [NEWPAGE, NEWPAGE]
@@ -41,19 +35,12 @@ order:
   - [teaching, Teaching]
   - [skills, Skills]
 
-about: '
-  I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and
-  study foundational topics in <b>machine learning</b> and <b>optimization</b>,
-  recently involving reinforcement learning, control,
-  optimal transport, and geometry.
-  My research is on learning systems that understand and interact with our world
-  and focuses on integrating structural information and domain knowledge into
-  these systems to represent non-trivial reasoning operations.
-  A key theme of my work in this space involves the use of optimization as
-  a differentiable building block in larger architectures that are end-to-end learned.
-  I believe that science should be open and reproducible and
-  freely publish my research code to \href{https://github.com/bamos}{GitHub}.
-<br><br>'
+about: '\vspace{18pt} \small{
+  I research \textbf{data-driven decision making},
+  including progressing \textbf{model-based reinforcmement learning},
+  applications such as \textbf{robotics}, and understanding and planning for the \textbf{societal implications}
+  of these technologies.}
+'
 
 service:
   - details: "Reviewing: AAAI, ICML, NeurIPS, ICLR*, ICCV, CVPR, ICRA"
@@ -71,91 +58,32 @@ service:
     year: 2014 -- 2015
 
 repos:
-  - repo_url: https://github.com/facebookresearch/theseus
-    year: 2022
-    desc: Differentiable non-linear optimization library
+#  - repo_url: https://github.com/facebookresearch/theseus
+#    year: 2022
+#    desc: Differentiable non-linear optimization library
   - repo_url: https://github.com/facebookresearch/mbrl-lib
     year: 2021
     desc: Model-based reinforcement learning library
-  # - repo_url: https://github.com/facebookresearch/svg
-  #   year: 2021
-  #   desc: Stochastic Value Gradient Experiments
-  - repo_url: https://github.com/facebookresearch/dcem
-    year: 2020
-    desc: The Differentiable Cross-Entropy Method
-  - repo_url: https://github.com/facebookresearch/higher
-    year: 2019
-    desc: PyTorch higher-order gradient and optimization library
-  - repo_url: https://github.com/bamos/thesis
-    year: 2019
-    desc: Ph.D.~Thesis LaTeX source code
-  - repo_url: https://github.com/cvxgrp/cvxpylayers
-    year: 2019
-    desc: Differentiable Convex Optimization Layers
-  - repo_url: https://github.com/locuslab/mpc.pytorch
-    year: 2018
-    desc: Differentiable Model-Predictive Control
-  - repo_url: https://github.com/locuslab/icnn
-    year: 2017
-    desc: Input Convex Neural Networks
-  - repo_url: https://github.com/locuslab/optnet
-    year: 2017
-    desc: OptNet experiments
-  - repo_url: https://github.com/locuslab/qpth
-    www: https://locuslab.github.io/qpth/
-    year: 2017
-    desc: Differentiable PyTorch QP solver
-  - repo_url: https://github.com/bamos/densenet.pytorch
-    year: 2017
-    desc: PyTorch DenseNet implementation
-  - repo_url: https://github.com/bamos/block
-    year: 2017
-    desc: Intelligent block matrix constructions
-  - repo_url: https://github.com/bamos/setGPU
-    year: 2017
-    desc: Automatically use the least-loaded GPU
-  - repo_url: https://github.com/bamos/dcgan-completion.tensorflow
-    year: 2016
-    desc: Image completion with GANs
-  - repo_url: https://github.com/cmusatyalab/openface
-    www: http://cmusatyalab.github.io/openface/
-    year: 2015
-    desc: Face recognition with deep neural networks
-  - repo_url: https://github.com/bamos/zsh-history-analysis
-    year: 2014
-    desc: Analyze and plot your zsh history
-  - repo_url: https://github.com/bamos/cv
-    year: 2013
-    desc: "Source for this CV: Creates LaTeX/Markdown from YAML/BibTeX"
-  - repo_url: https://github.com/bamos/dotfiles
-    year: 2012
-    desc: Linux, mutt, xmonad, vim, emacs, zsh
 
 education:
-  - school: Carnegie Mellon University
-    location: Pittsburgh, PA
+  - school: University of California, Berkeley
+    location: Berkeley, CA
     degree: Ph.D. in Computer Science
-    dates: 2014 -- 2019
+    dates: 2017 -- 2022
     # dates: May 2019
-    overallGPA: 0.00/0.00
+    overallGPA: 4.0/4.0
     details:
-      - "\\textit{\\href{https://github.com/bamos/thesis}{Differentiable Optimization-Based Modeling for Machine Learning}}"
-      - "Advisors: \\href{http://zicokolter.com}{J. Zico Kolter} (2016 -- 2019),  \\href{https://www.cs.cmu.edu/~satya/}{Mahadev Satyanarayanan} (2014 -- 2016)"
+#      - "\\textit{\\href{https://github.com/bamos/thesis}{Differentiable Optimization-Based Modeling for Machine Learning}}"
+      - "Advisors: \\href{http://www.eecs.berkeley.edu/~pister/}{Kristofer S.J. Pister},  \\href{https://www.robertocalandra.com/about/}{Roberto Calandra}"
 
 
-  - school: Virginia Tech
-    location: Blacksburg, VA
-    degree: B.S. in Computer Science
-    dates: 2011 -- 2014
+  - school: Cornell University
+    location: Ithaca, NY
+    degree: B.S. in Electrical and Computer Engineering
+    dates: 2013 -- 2017
     # dates: May 2014
-    overallGPA: 3.99/4.00
-    majorGPA: 4.00/4.00
-    # details:
-    #   - "Advisors: \\href{https://people.cs.vt.edu/~ltw/shortvita.html}{Layne Watson}, \\href{https://www.magnum.io/people/jules.html}{Jules White}, \\href{https://www.ssrg.ece.vt.edu/}{Binoy Ravindran}"
-
-  # - school: Northside High School
-  #   location: Roanoke, VA
-    # dates: May 2011
+#    overallGPA: 3.99/4.00
+    majorGPA: 4.0/4.0
 
 research:
   - place: Facebook AI
@@ -163,166 +91,39 @@ research:
     title: Research Scientist
     dates: May 2019 -- Present
     area: Machine learning and optimization
-  - place: Carnegie Mellon University
-    location: Pittsburgh
-    title: Research Assistant
-    advisor: Zico Kolter
-    dates: Apr 2016 -- May 2019
-    area: Machine learning and optimization
-  - place: Intel Labs
-    location: Santa Clara
-    title: Research Intern (Vladlen Koltun)
-    dates: June 2018 -- Sept 2018
-    advisor: Vladlen Koltun
-    area: Machine learning
-  - place: Google DeepMind
-    location: London
-    title: Research Intern (Misha Denil and Nando de Freitas)
-    dates: May 2017 -- Oct 2017
-    advisor: Nando de Freitas
-    area: Machine and reinforcement learning
-  - place: Carnegie Mellon University
-    location: Pittsburgh, Pennsylvania
-    title: Research Assistant
-    advisor: Mahadev Satyanarayanan
-    dates: Aug 2014 -- Apr 2016
-    area: Applied machine learning and mobile systems
     details:
-      - |
-          Face recognition with deep neural networks:
-          \url{http://github.com/cmusatyalab/openface}
-  - place: Virginia Tech
-    location: Blacksburg, Virginia
-    title: Undergraduate Research Assistant
-    advisor: Jules White
-    dates: May 2012 -- May 2014
-    area: Mobile systems, cyber-physical systems, and security
-    details:
-      - Android malware detection research using
-        a distributed {\bf Actor-based Scala} system.
-      #- Modified the {\bf Android source} to provide non-standard logging
-      #  information for dynamic malware analysis.
-      - Manufacturing cyber-physical security research implemented
-        with {\bf VC\#} and {\bf Python}.
-      #- Developed {\bf VC\#} and {\bf Python} programs for a pilot study on
-      #  manufacturing cyber-physical security.
-      #- Assisted {\bf C++} and {\bf Make} development in {\bf Linux} for a
-      #  deployment optimization framework.
-  - place: Virginia Tech
-    location: Blacksburg, Virginia
-    title: Undergraduate Research Assistant
-    advisor: Layne Watson
-    dates: Jan 2013 -- May 2014
-    area: Scientific computing, global/stochastic optimization, and bioinformatics
-    details:
-      - Algorithm development for global and stochastic optimization using quasi-Newton
-        methods for {\bf parameter estimation} in
-        {\bf Fortran 95} and {\bf OpenMP}.
-      - Bioinformatics research on yeast cell modeling using
-        {\bf Fortran 95}, {\bf C++}, and {\bf Matlab}.
-
-  - place: Virginia Tech
-    location: Blacksburg, Virginia
-    title: Undergraduate Research Assistant
-    advisor: Binoy Ravindran
-    dates: Nov 2012 -- Mar 2014
-    area: Heterogeneous compilers
-    details:
-      - Compiler research on a heterogeneous system
-        on automatic {\bf OpenMP} to {\bf CUDA}
-        translation using {\bf C++} and the {\bf ROSE} compiler framework.
-      - Polyhedral loop optimization research to restructure
-        {\bf OpenCL} kernels for locality using {\bf LLVM} and {\bf Polly}.
-      #- '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
+      - to be done later
 
 positions:
-  - place: Facebook AI
+  - place: TBD
     location: New York City
     title: Research Scientist
     # dates: May 2019 -- Present
-    dates: 2019 -- Present
+    dates: TBD -- Present
 
 industry:
-  - place: Intel Labs
-    location: Santa Clara
-    # title: Research Intern
-    dates: 2018
+  - place: DeepMind
+    location: London (\textit{Virtual}) |
+#    title: Research Intern
+    dates: 2021
     # dates: June 2018 -- Sept 2018
     details:
-      - "(Host: \\href{http://vladlen.info/}{Vladlen Koltun})"
-  - place: Google DeepMind
-    location: London
-    # title: Research Intern
-    dates: 2017
+      - "Research Intern, "
+      - "(Host: \\href{https://www.riedmiller.me}{Martin Riedmiller})"
+  - place: Facebook AI
+    location: Menlo Park |
+#     title: Research Intern & Student Researcher
+    dates: 2019 -- 2020
     # dates: May 2017 -- Oct 2017
     details:
-      - "(Hosts: \\href{http://mdenil.com/}{Misha Denil} and \\href{https://scholar.google.com/citations?user=nzEluBwAAAAJ}{Nando de Freitas})"
-  - place: Adobe Research
-    location: San Jose
+      - "Research Intern and Student Researcher"
+      - "(Host: \\href{https://www.robertocalandra.com/about/}{Roberto Calandra})"
+  - place: Tesla
+    location: Palo Alto
     # title: Data Scientist Intern
-    dates: 2014
+    dates: 2015
     details:
-      - "(Host: \\href{https://research.adobe.com/person/david-tompkins/}{David Tompkins})"
-  #   # dates: May 2014 -- Aug 2014
-  #   area: Distributed Systems
-    # details:
-    #   - I built a web analytics processing engine using {\bf Scala},
-    #     {\bf Spark}, {\bf Spray}, {\bf Parquet}, and {\bf HDFS}.
-  # - place: Snowplow
-  #   location: London, UK (Remote)
-  #   title: Software Intern
-  #   dates: 2013
-    # dates: Dec 2013 -- Jan 2014
-    # details:
-    # - Open-source {\bf Scala} development with a startup on the
-    #   Snowplow analytics platform.
-    #   My commits are online at
-    #   \url{https://github.com/snowplow/snowplow/commits?author=bamos}.
-    # - Developed a new server using {\bf Spray} and {\bf Actors} to store
-    #   {\bf Thrift} events on {\bf Amazon Kinesis}.
-    # - "Helped port Snowplow's Scala enrichment process to Kinesis."
-  # - place: Qualcomm
-  #   location: San Diego, California
-  #   title: Software Intern
-  #   dates: 2013
-    # dates: May 2013 -- Aug 2013
-    # details:
-    # - "I created a specification format language translator for fuzz
-    #   testing with Python."
-    # - Developed an XML modification {\bf web application} for
-    #   fuzz vector generation.
-    #   Implemented with client-side {\bf HTML} and {\bf js},
-    #   using {\bf D3} for graphics and {\bf Handlebars} for templating.
-    # - Developed an XML-based grammar translator in {\bf C++} with
-    #   the {\bf Xerces} XML parser in {\bf Linux}.
-    #   Reimplemented in {\bf Python} using the {\bf ElementTree} XML API for
-    #   sophisticated analysis and tree transformations.
-  # - place: Phoenix Integration
-  #   location: Blacksburg, Virginia
-  #   title: Software Intern
-  #   dates: 2012
-    # dates: May 2012 -- Aug 2012
-    # details:
-    #   - I developed industry software for software integration and
-    #     design process optimization in {\bf VC++}, {\bf VC\#}, and {\bf Java}.
-      # - Developed industry software in
-      #   {\bf VC++}, {\bf VC\#}, {\bf Java}, and {\bf Tomcat}.
-      # - Improved the testing ({\bf JUnit} and {\bf NUnit}) and installation
-      #   ({\bf Ant}, {\bf InstallShield}, and {\bf Make}) frameworks.
-      # - Integrated a new licensing mode into CenterLink, a grid computing
-      #   application, using {\bf FLEXlm} and {\bf Java}.
-  # - place: Sunapsys
-  #   location: Vinton, Virginia
-  #   title: Network Administrator Intern
-  #   dates: 2011
-    # dates: Jan 2011 -- Aug 2011
-    # details:
-    #   - Internship in high school to replace Windows domain, mail,
-    #     DHCP, and DNS servers with virtual {\bf Linux} servers
-    #     using {\bf KVM} and {\bf virsh}.
-      # - Migrated the office's computers to the Linux servers.
-      # - Created {\bf Bash} scripts for incremental backups with rsync
-      #   and hard links.
+      - "Test Engineering Intern"
 
 teaching:
   - semester: S2017
@@ -346,7 +147,7 @@ teaching:
 #   group_by_year: False
 
 all_publications:
-  name: "Amos"
+  name: "Lambert"
   file: all.bib
   sort_bib: True
   include_image: False
@@ -571,163 +372,39 @@ advising:
     url: https://phillipkwang.com/
 
 coursework:
-  - semester: S2017
-    name: Statistical Machine Learning (10-702, Au)
-    instructor: L. Wasserman
-  - semester: S2017
-    name: Deep Reinforcement Learning (10-703, Au)
-    instructor: R. Salakhutdinov and A. Fragkiadaki
-  - semester: F2016
-    name: Intermediate Statistics (10-705, Au)
-    instructor: L. Wasserman
-  - semester: F2016
-    name: Topics in Deep Learning (10-807)
-    instructor: R. Salakhutdinov
-  - semester: F2015
-    name: Convex Optimization (10-725)
-    instructor: R. J. Tibshirani
-  - semester: F2015
-    name: Algorithms in the Real World (15-853)
-    instructor: G. Blelloch and A. Gupta
-  - semester: S2015
-    name: Semantics of Programming Languages (15-812)
-    instructor: A. Platzer
-  - semester: S2015
-    name: Optimizing Compilers for Modern Architecture (15-745)
-    instructor: T. Mowry
-  - semester: F2014
-    name: Advanced Operating and Distributed Systems (15-712)
-    instructor: D. Andersen
-  - semester: F2014
-    name: Mobile and Pervasive Computing (15-812)
-    instructor: M. Satyanarayanan and D. Siewiorek
+  - semester: S9999
+    name: MATH
+    instructor: YOU
+
 
 skills:
   - title: Programming
-    details: C, C++, Fortran, Haskell, Java,
-      Lua, Make, Mathematica, Python, R, Scala
+    details: Python
   - title: Frameworks
-    details: JAX, NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
+    details: JAX, NumPy, Pandas, PyTorch, SciPy
   - title: Tools
-    details: Linux, emacs, vim, evil, org, mu4e, xmonad, git, tmux, zsh
+    details: Linux, vim, git, tmux, zsh
 
 honors:
-  - title: NSF Graduate Research Fellowship
-    year: 2016 -- 2019
-  - title: Nine undergraduate scholarships
+  - title: Best Student Paper Finalist; IEEE Symposium on Multi-Robot and Multi-Agent Systems
+    year: 2021
+  - title: Berkeley EECS Demetri Angelakos Memorial Achievement Award
+    year: 2021
+  - title: Heart to Humanity Eternal (H2H8) Pioneer
+    year: 2021
+  - title: NDSEG Graduate Research Fellowship Program Top 200
+    year: 2018
+  - title: NSF Graduate Research Fellowship Program Honorable Mention
+    year: 2018, 2017
+  - title: Berkeley EECS Department Fellowship
+    year: 2017
+  - title: Eight undergraduate scholarships
     descr: |
-      Roanoke County Public Schools Engineering,
-      Salem--Roanoke County Chamber of Commerce,
-      Papa John's,
-      Scottish Rite of Freemasonry,
-      VT Intelligence Community Conter for Academic Excellence,
-      VT Pamplin Leader,
-      VT Benjamin F.~Bock, VT Gay B.~Shober, VT I.~Luck Gravett
-    year: 2011 -- 2014
-  # - title: Phi Beta Kappa Honor Society
-    # year: Inducted May 2014
-  # - title: 1st Place Undergraduate Senior Capstone Award, Virginia Tech Computer Science
-  #   year: 2014
-  # - title: David Heilman Research Award, Virginia Tech Computer Science
-  #   year: 2014
-    # descr: Awarded to the Computer Science student with the most
-    #   outstanding research experience.
-  # - title: Senior Scholar Award, Virginia Tech Computer Science
-  #   year: 2014
-    # descr: Awarded to the senior in Computer Science with the most
-    #        outstanding academic record.
-  # - title: ACC Meeting of the Minds Undergraduate Research Conference, 2014
-   # url: http://www.vtnews.vt.edu/articles/2014/03/030514-uged-accmom.html
-  # - title: Honorable Mention, CRA Outstanding Undergraduate Researcher Award
-  #   year: 2014
-    # descr: 1 of 15 North American males awarded honorable mention for
-    #        exemplary computer science research.
-    # url: http://cra.org/awards/undergrad-view/2014_outstanding_undergraduate_award_recipients/
-  #- title: Qualstar Award, Qualcomm, 2013
-  #- title: Pi Mu Epsilon Honor Society, Inducted 2013
-  # - title: Awarded eight undergraduate merit scholarships
-  #   year: 2011 -- 2014
-  # - title: Benjamin F. Bock Merit Scholarship, Virginia Tech Engineering
-    # year: 2013 -- 2014
-  # - title: Sophomore Scholar Award, Virginia Tech Computer Science, 2013
-  #descr: Awarded to the sophomore in Computer Science with the most
-  #         outstanding academic record.
-  #- title: University Honors, Virginia Tech, 2012 -- 2014
-  # - title: Intelligence Community Center of Academic Excellence Scholarship,
-      # Virginia Tech
-    # year: 2012 -- 2014
-    # descr: Merit-based scholarship providing a cyber-security
-    #        research fellowship.
-  #- title: Dean's List with Distinction, Virginia Tech, 2011 -- 2014
-  # - title: Engineering Merit Scholarship,
-           # Roanoke County Public Schools Education Foundation
-    # year: 2011
-    # descr: Merit-based scholarship presented annually to one student
-    #        in the graduating Engineering class.
-  # - title: "Papa John's Merit Scholarship"
-    # year: 2011
-  # - title: Gay B. Shober Memorial Merit Scholarship,
-        # Roanoke County Federal Credit Union
-    # year: 2011
-  # - title: Pamplin Leader Merit Scholarship, Virginia Tech
-    # year: 2011
-    # descr: Merit-based scholarship presented to one student from
-    #        each public high school in Virginia.
-    # url: http://ww2.roanoke.com/community/virginia/education/wb/292050
-  # - title: I. Luck Gravett Memorial Merit Scholarship,
-        # Scottish Rite of Freemasonry
-    # year: 2011
-  # - title: Salem -- Roanoke County Chamber of Commerce Merit Scholarship
-    # year: 2011
-    # url: http://s-rcchamber.org/wp-content/uploads/2011/03/August-2011-NL.pdf
-  #- title: 1st Place Regional CAD/Engineering Drawing,
-  #         Virginia TSA, Blue Ridge Region, 2011
-  #- title: District Band Trumpeter, VBODA District VI, 2009 -- 2011
-  #- title: Virginia Aerospace Science and Technology Scholar,
-  #         National Space Grant Foundation, 2010
-  #  descr: Selected as an attendee of a summer academy at NASA
-  #         Langley Research Center.
-  #- title: Head Junior Marshall, Northside High School, 2010
-  #- title: 3rd Place District Foreign Extemporaneous Speaker,
-  #         VHSL Forensics, 2009
-
-# projects:
-#   website:
-#     name: Personal Blog and Website
-#     url: http://bamos.github.io
-#     details:
-#       - Hosted on GitHub Pages. Uses {\bf Markdown} for posts and {\bf Jekyll}
-#           for static HTML generation.
-#       - '{\bf 42 posts} across the following tags,
-#         listed by highest frequency.'
-#       - Python, Bash, Linux, LaTeX, Fortran, Android, Scala, News,
-#         JavaScript, Zsh, C++, OpenMP, Lua, Make, Mathematica, mpv
-#   github:
-#     name: GitHub Portfolio
-#     url: http://github.com/bamos
-#     details:
-#       - Hosts code samples, original source code, and patches for
-#         open source projects.
-#       - 25 original repositories, 5 forked repositories.
-
-# activities:
-#   - Honors Residential College, Virginia Tech, 2013 -- 2014
-#   - Hokies Pep Band, Virginia Tech, 2012 -- 2013
-#   - Computer Science Community Service, Virginia Tech, 2012
-#   - Symphony Band, Virginia Tech, 2011 -- 2012
-#   - Linux and Unix Users Group, Virginia Tech, 2011 -- 2012
-#   - Galileo Living -- Learning Community, Virginia Tech, 2011 -- 2012
-# - Trumpet Section Leader, Maring Band, Northside High School, 2010 -- 2011
-# - Math Club, Northside High School, 2010 -- 2011
-# - National Honor Society, Northside High School, 2009 -- 2011
-# - Academic Team, Northside High School, 2009 -- 2011
-# - Chess Team, Northside High School, 2009 -- 2011
-# - Tennis Team, Northside High School, 2008 -- 2011
-# - Technology Student Association, Northside High School, 2008 -- 2011
-# - Maring Band, Northside High School, 2007 -- 2011
-# - Robotics Team, Virginia Western Community College, 2009 -- 2010
-# - Guitar Club, Northside High School, 2009 -- 2010
-# - Forensics Team, Northside High School, 2008 -- 2010
-# - Spanish Club, Northside High School, 2008 -- 2010
-# - Engineering Club, Burton Center for Arts and Technology, 2007 -- 2008
-# - Soccer Team, Northside High School, 2007 -- 2008
+      Cornell Rowing Charles E. Courtney Award,
+      Tau Beta Pi Scholarship,
+      Southeastern New England Defense Industry Alliance STEM Scholarship 2016, 2017,
+      Cornell Athletics 400 Club Induction,
+      Beta Pi Induction,
+      Eta Kappu Nu Induction,
+      American Society of Engineering Education SMART Scholar Award
+    year: 2013 -- 2017

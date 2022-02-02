@@ -7,3 +7,5 @@ __pycache__
 *.shelf.*
 venv
 auto
+.DS_Store
+repo_htmls.shelf
