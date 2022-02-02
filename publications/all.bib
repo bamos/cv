@@ -1,3 +1,37 @@
+@misc{amos2022tutorial,
+  title={Tutorial on amortized optimization for learning to optimize over continuous domains},
+  author={Brandon Amos},
+  year={2022},
+  url={https://arxiv.org/abs/2202.00665},
+  _venue={arXiv},
+  codeurl={https://github.com/facebookresearch/amortized-optimization-tutorial},
+  selected={true},
+  abstract={
+    Optimization is a ubiquitous modeling tool that is often deployed in
+    settings that repeatedly solve similar instances of
+    the same problem. Amortized optimization methods use
+    learning to predict the solutions to problems in
+    these settings. This leverages the shared structure
+    between similar problem instances. In this tutorial,
+    we will discuss the key design choices behind
+    amortized optimization, roughly categorizing 1)
+    models into fully-amortized and semi-amortized
+    approaches, and 2) learning methods into
+    regression-based and objective-based. We then view
+    existing applications through these foundations to
+    draw connections between them, including for
+    manifold optimization, variational inference, sparse
+    coding, meta-learning, control, reinforcement
+    learning, convex optimization, and deep equilibrium
+    networks. This framing enables us easily see, for
+    example, that the amortized inference in variational
+    autoencoders is conceptually identical to value
+    gradients in control and reinforcement learning as
+    they both use fully-amortized models with a
+    objective-based loss.
+  }
+}
+
 @misc{fickinger2021crossdomain,
   title={Cross-Domain Imitation Learning via Optimal Transport},
   author={Arnaud Fickinger and Samuel Cohen and Stuart Russell and Brandon Amos},
