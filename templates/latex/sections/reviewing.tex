@@ -1,0 +1,22 @@
+~< extends "section.tex" >~
+
+~< block body >~
+% \begin{tabular}{p{0.5in}p{5in}}
+  ~< for item in items >~
+    ~< if item.url >~
+      \href{<< item.url >>}{<< item.details>>}
+    ~< else >~
+      << item.details >>
+    ~< endif >~
+    ~< if item.sub_details >~
+      % \par \vspace{-1mm} {\scriptsize
+      \,\, {\scriptsize
+        \color{gray}{<< item.sub_details >>}
+      } % \\[2mm]
+    ~< endif >~
+    ~< if item.year >~
+        \hfill << item.year >> \\
+    ~< endif >~
+  ~< endfor >~
+% \end{tabular}
+~< endblock body >~

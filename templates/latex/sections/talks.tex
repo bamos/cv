@@ -5,10 +5,18 @@
   ~< for item in items >~
     ~< if item.url >~
       \href{<< item.url >>}{<< item.location >>}
+      \,\, {\scriptsize
+        \color{gray}{<< item.details >>}
+      }
     ~< else >~
       << item.location >>
   ~< endif >~
   \hfill << item.year >> \\
+   ~< if item.title >~
+   {\scriptsize
+        \textit{\color{gray}{<< item.title >>}}
+      } \vspace{3mm}
+   ~< endif >~ \\
   ~< endfor >~
 % \end{tabular}
 ~< endblock body >~

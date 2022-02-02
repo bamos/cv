@@ -5,6 +5,11 @@
         << item.name >>
         (<< item.short >>),
         << item.position >>
+        ~< if item.details >~
+            \, {\scriptsize
+            \textit{\color{gray}{<< item.details >>}}
+          }
+        ~< endif >~
         \hfill
         << item.semester>> \\
     ~< endfor >~

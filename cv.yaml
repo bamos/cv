@@ -30,32 +30,55 @@ order:
   - [repos, Repositories]
   # - [NEWPAGE, NEWPAGE]
   - [talks, Invited Talks]
-  - [advising, Interns and Students]
+  - [advising, Mentorship]
+  - [reviewing, Peer Review]
   - [service, Professional Activities]
   - [teaching, Teaching]
   - [skills, Skills]
 
 about: '\vspace{18pt} \small{
   I research \textbf{data-driven decision making},
-  including progressing \textbf{model-based reinforcmement learning},
-  applications such as \textbf{robotics}, and understanding and planning for the \textbf{societal implications}
+  including progressing \textbf{model-based reinforcmement learning} algorithms,
+  applying them to real-world problems such as \textbf{robotics}, and planning for the \textbf{societal implications}
   of these technologies.}
 '
 
+reviewing:
+  - details: Conference on Machine Learning (ICML)
+    year: 2020, 2022
+  - details: Conference on Learning Representations (ICLR)
+    year: 2021*, 2022
+    sub_details: "(*Outstanding Reviewer)"
+  - details: Conference on Robot Learning (CORL)
+    year: 2020
+  - details: Conference on Robotics and Automation (ICRA)
+    year: 2020, 2021, 2022
+  - details: Conference on Intelligent Robots and Systems (IROS)
+    year: 2021
+  - details: Conference on Decision and Control (CDC)
+    year: 2021
+  - details: Robotics and Automation Letters (RA-L)
+    year: 2019, 2020
+  - details: Transactions on Cybernetics
+    year: 2020
+
 service:
-  - details: "Reviewing: AAAI, ICML, NeurIPS, ICLR*, ICCV, CVPR, ICRA"
-    sub_details: "*Outstanding reviewer"
-  - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
-    year: 2020
-    url: https://sites.google.com/view/lmca2020/home
-  - details: CVPR Deep Declarative Workshop Organizer
-    url: https://anucvml.github.io/ddn-cvprw2020/
-    year: 2020
-  - details: ECCV Deep Declarative Tutorial Organizer
-    url: https://anucvml.github.io/ddn-eccvt2020/
-    year: 2020
-  - details: CMU CSD MS Admissions
-    year: 2014 -- 2015
+  - details: Member of Well-Being in Machine Learning
+    year: 2021 -- cont.
+    url: https://twitter.com/WellBeingInML
+  - details: NeurIPs Workshop on Robot Learning Organizor
+    year: 2021
+    url: http://robot-learning.ml
+  - details: Tapia Panel on Student Mental Health Organizor
+    year: 2021
+    url: https://tapiaconference.cmd-it.org/attend/presentation/?id=acad115&sess=sess251
+  - details: Founder of UC Berkeley EECS Equal Access to Application Assistance (EAAA) Program
+    url: https://sites.google.com/berkeley.edu/eaaa/home
+    year: 2020 -- 2022
+  - details: Wellness Coordinator for UC Berkeley Electrical Engineering Graduate Student Assembly (EEGSA)
+    year: 2020 -- 2022
+  - details: Bay Area Teachers in Schools
+    year: 2017
 
 repos:
 #  - repo_url: https://github.com/facebookresearch/theseus
@@ -82,8 +105,7 @@ education:
     degree: B.S. in Electrical and Computer Engineering
     dates: 2013 -- 2017
     # dates: May 2014
-#    overallGPA: 3.99/4.00
-    majorGPA: 4.0/4.0
+    overallGPA: 4.0/4.0
 
 research:
   - place: Facebook AI
@@ -116,7 +138,7 @@ industry:
     dates: 2019 -- 2020
     # dates: May 2017 -- Oct 2017
     details:
-      - "Research Intern and Student Researcher"
+      - "Research Intern and Student Researcher "
       - "(Host: \\href{https://www.robertocalandra.com/about/}{Roberto Calandra})"
   - place: Tesla
     location: Palo Alto
@@ -126,17 +148,26 @@ industry:
       - "Test Engineering Intern"
 
 teaching:
-  - semester: S2017
-    name: Graduate AI
-    short: CMU 15-780
+  - semester: Su2020, Fa2020
+    name: Introduction to Artificial Intelligence
+    short: UCB CS188
     position: TA
-  - semester: S2016
-    name: Distributed Systems
-    short: CMU 15-440/640
+  - semester: Sp2020
+    name: Introduction to Artificial Intelligence
+    short: UCB CS188
+    position: Instructor
+    details: lectured to 800+ students
+  - semester: Fa2019
+    name: Designing Information Devices and Systems II
+    short: UCB EE16B
     position: TA
-  - semester: S2013
-    name: Software Design and Data Structures
-    short: VT CS2114
+  - semester: Sp2017
+    name: Integrated Micro Sensors and Actuators
+    short: Cornell ECE4320
+    position: Grader
+  - semester: Fa2016
+    name: Mathematics of Signal and System Analysis
+    short: Cornell ECE 3250
     position: TA
 
 # selected_publications:
@@ -145,6 +176,72 @@ teaching:
 #   sort_bib: False
 #   include_image: True
 #   group_by_year: False
+
+talks:
+#  - year: December 2021
+#    location: Cruise AI
+  - year: March 2021
+    location: Cornell Robotics Seminar
+    details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Talk available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
+    url: https://robotics.cornell.edu/category/seminars/spring-2021/
+    title: Improving Model Predictive Control in Model-based Reinforcement Learning
+  - year: April 2020
+    location: UC Berkeley Semiautonomous Seminar
+    details: "(\\href{https://youtu.be/Z4EpSWfU48E}{Talk available}, \\href{https://docs.google.com/presentation/d/1Q0QYHAyPa_dO8iUsOyDcudvDAwhl24Rc/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
+    url: https://sites.google.com/berkeley.edu/semiautonomousseminar/spring-2020
+    title: Model Learning for Low-level Control in Robotics
+  - year: May 2019
+    location: UC Berkeley Semiautonomous Seminar
+    url: https://sites.google.com/view/cs-159-spring-2020/lectures
+
+
+advising:
+  - year: 2020
+    name: Mark Selden
+    details: "(UC Berkeley BS `22)"
+    url: https://www.linkedin.com/in/mark-selden/
+  - year: 2019
+    name: Albert Wilcox
+    details: "(UC Berkeley BS `22)"
+    url: https://www.linkedin.com/in/albert-wilcox-314898184
+  - year: 2019
+    name: Jason Zhou
+    details: "(UC Berkeley BS, MS '21 to \\href{https://matician.com/}{Matician})"
+    url: https://www.linkedin.com/in/albert-wilcox-314898184
+  - year: 2018
+    name: Felipe Campos
+    details: "(UC Berkeley BS '20 to \\href{https://armstrongrobotics.com/}{Armstrong Robotics})"
+    url: https://www.linkedin.com/in/howard-zhang-8366b1147
+  - year: 2018
+    name: Howard Zhang
+    details: "(UC Berkeley BS, MS'21 to UCLA PhD)"
+    url: https://www.linkedin.com/in/howard-zhang-8366b1147
+
+honors:
+  - title: Best Student Paper Finalist; IEEE Symposium on Multi-Robot and Multi-Agent Systems
+    year: 2021
+  - title: Berkeley EECS Demetri Angelakos Memorial Achievement Award
+    year: 2021
+  - title: Heart to Humanity Eternal (H2H8) Pioneer
+    year: 2021
+  - title: NDSEG Graduate Research Fellowship Program Top 200
+    year: 2018
+  - title: NSF Graduate Research Fellowship Program Honorable Mention
+    year: 2017, 2018
+  - title: Berkeley EECS Department Fellowship
+    year: 2017
+  - title: Eight undergraduate scholarships
+    descr: |
+      Cornell Rowing Charles E. Courtney Award,
+      Tau Beta Pi Scholarship,
+      Southeastern New England Defense Industry Alliance STEM Scholarship 2016, 2017,
+      Cornell Athletics 400 Club Induction,
+      Beta Pi Induction,
+      Eta Kappu Nu Induction,
+      American Society of Engineering Education SMART Scholar Award
+    year: 2013 -- 2017
+
+
 
 all_publications:
   name: "Lambert"
@@ -173,203 +270,37 @@ all_publications:
     #   file: posters.bib
 
   author_urls:
-    'Aaron Lou': 'https://www.aaronlou.com/'
-    'Akshay Agrawal': 'https://www.akshayagrawal.com/'
-    'Alex Hauptmann': 'http://www.cs.cmu.edu/~alex/'
-    'Alexander Rives': 'https://scholar.google.com/citations?user=vqb78-gAAAAJ'
-    'Alistair Muldal': 'https://scholar.google.com/citations?user=YfgdfyYAAAAJ'
+    'Aaron Snoswell': 'http://aaronsnoswell.github.io'
     'Amy Zhang': 'https://amyzhang.github.io/'
-    'Andrew Gordon Wilson': 'https://people.orie.cornell.edu/andrew/'
-    'Anselm Paulus': 'https://scholar.google.com/citations?user=njZL5CQAAAAJ'
-    'Anupam Das': 'https://anupamdas.org/'
-    'Artem Molchanov': 'https://amolchanov86.github.io/'
-    'Bartosz Ludwiczuk': 'https://www.linkedin.com/in/bartosz-ludwiczuk-a677a760'
-    'Benjamin Gilbert': 'https://github.com/bgilbert'
-    'Brent Castle': 'https://dblp.org/pid/142/1258.html'
-    'Byron Boots': 'https://homes.cs.washington.edu/~bboots/'
-    'Caroline Chen': 'https://www.linkedin.com/in/caroline-chen/'
-    'Christopher Williams': 'https://scholar.google.com/citations?user=AW81mosAAAAJ'
-    'Cihan Oguz': 'https://scholar.google.com/citations?user=Z4534DUAAAAJ'
-    'Cliff Shaffer': 'https://people.cs.vt.edu/shaffer/'
-    'Colmenarejo': 'https://scholar.google.com/citations?user=0Dkf68EAAAAJ'
-    'Daniel Siewiorek': 'http://www.cs.cmu.edu/~dps/'
-    'David Easterling': 'https://dblp.org/pid/75/8682.html'
-    'Deisenroth': 'https://deisenroth.cc/'
+    'Arunkumar Byravan': 'https://scholar.google.com/citations?user=obYwWiMAAAAJ&hl=en&oi=ao'
+    'Brandon Amos': 'http://bamos.github.io'
+    'Daniel Drew': 'http://danieldrew.me'
     'Denis Yarats': 'https://cs.nyu.edu/~dy1042/'
-    'Douwe Kiela': 'https://douwekiela.github.io/'
     'Edward Grefenstette': 'https://www.egrefen.com/'
     'Eugene Vinitsky': 'https://eugenevinitsky.github.io'
     'Franziska Meier': 'https://fmeier.github.io/'
-    'Geoff Gordon': 'http://www.cs.cmu.edu/~ggordon/'
-    'Georg': 'http://georg.playfulmachines.com/'
-    'Gisella Kakoti': 'https://dblp.org/pid/235/5473.html'
-    'Giulia Luise': 'https://giulslu.github.io/'
-    'Guanhang Wu': 'https://scholar.google.com/citations?user=0pF6i38AAAAJ'
-    'Hamilton Turner': 'https://scholar.google.com/citations?user=MRKab9cAAAAJ'
-    'Han Zhao': 'https://hanzhaoml.github.io/'
-    'Ilya Kostrikov': 'https://scholar.google.com/citations?user=PTS2AOgAAAAJ'
-    'Ivan Dario Jimenez Rodriguez': 'https://ivandariojr.io/'
-    'Jacob Sacks': 'https://scholar.google.com/citations?user=Th4PuGkAAAAJ'
-    'Jaime A. Camelio': 'https://scholar.google.com/citations?user=tWmVBNwAAAAJ'
-    'Jan Harkes': 'https://scholar.google.com/citations?user=jj5tN8sAAAAJ'
-    'Jason Liu': 'https://www.linkedin.com/in/jasonliu6/'
-    'Joelle Pineau': 'https://www.cs.mcgill.ca/~jpineau/'
-    'John Tyson': 'https://scholar.google.com/citations?user=syETjMMAAAAJ'
-    'Joshua Meier': 'https://scholar.google.com/citations?user=2M0OltAAAAAJ'
-    'Jules White': 'https://scholar.google.com/citations?user=10HSX90AAAAJ'
-    'Junjue Wang': 'https://junjuew.github.io/'
-    'Khalid Elgazzar': 'https://scholar.google.com/citations?user=R9r5_GIAAAAJ'
-    'Kiryong Ha': 'http://krha.kr/'
-    'Kyunghyun Cho': 'https://kyunghyuncho.me/'
-    'Laurent Dinh': 'https://laurent-dinh.github.io/'
-    'Layne T. Watson': 'https://people.cs.vt.edu/~ltw/shortvita.html'
-    'Lei Xu': 'https://leix28.github.io/'
-    'Lu Jiang': 'http://www.lujiang.info/'
-    'Luis Pineda': 'https://scholar.google.com/citations?user=rebEn8oAAAAJ'
-    'Mahadev Satyanarayanan': 'https://www.cs.cmu.edu/~satya/'
-    'Maximilian Nickel': 'https://mnick.github.io/'
-    'Michal Rol': 'https://mrolinek.github.io/'
-    'Mikael Henaff': 'http://www.mikaelhenaff.com/'
-    'Minghan Chen': 'https://chenm.sites.wfu.edu/publications/'
-    'Misha Denil': 'https://mdenil.com/'
-    'Musil': 'https://scholar.google.com/citations?user=hA1rlU4AAAAJ'
+    'Kristofer Pister': 'https://people.eecs.berkeley.edu/~pister/'
+    'Luis Pineda': 'https://scholar.google.com/citations?user=rebEn8oAAAAJ&hl=en'
+    'Martin Riedmiller': 'https://www.riedmiller.me'
+    'Markus Wulfmeier': 'https://markusrw.github.io'
+    'Michael Bloesch': 'https://scholar.google.com/citations?user=fn6GhgoAAAAJ'
     'Nando de Freitas': 'https://scholar.google.com/citations?user=nzEluBwAAAAJ'
     'Nathan Lambert': 'https://www.natolambert.com/'
-    'Nigel Davies': 'https://www.lancaster.ac.uk/sci-tech/about-us/people/nigel-davies'
-    'Nina Taft': 'https://scholar.google.com/citations?user=BItCgjYAAAAJ'
-    'Noam Brown': 'http://www.noambrown.com/'
-    'Norman Sadeh': 'https://www.normsadeh.org/'
     'Omry Yadan': 'https://scholar.google.com/citations?user=zSsW478AAAAJ'
-    'Padmanabhan Pillai': 'https://www.andrew.cmu.edu/user/pspillai/'
-    'Phu Mon Htut': 'https://phumonhtut.me/'
-    'Pieter Simoens': 'https://www.ugent.be/ea/idlab/en/members/pieter-simoens.htm'
-    'Priya L. Donti': 'https://priyadonti.com/'
-    'Ricky T. Q. Chen': 'https://scholar.google.com/citations?user=7MxQd6UAAAAJ'
-    'Rob Fergus': 'https://cs.nyu.edu/~fergus/pmwiki/pmwiki.php'
-    'Robert Parker': 'https://ieeexplore.ieee.org/author/37085729541'
-    'Robert Verkuil': 'https://dblp.org/pid/296/8930.html'
-    'Roberta Klatzky': 'https://www.cmu.edu/dietrich/psychology/people/core-training-faculty/klatzky-roberta.html'
     'Roberto Calandra': 'https://www.robertocalandra.com/about/'
-    'Rohit Upadhyaya': 'https://dblp.org/pid/207/9123.html'
+    'Sarah Dean': 'https://sdean.website'
     'Samuel Cohen': 'https://scholar.google.com/citations?user=CmdjfTsAAAAJ'
-    'Samuel Stanton': 'https://samuelstanton.github.io/'
-    'Sarah Clinch': 'http://www.sclinch.com/'
-    'Serkan Cabi': 'https://scholar.google.com/citations?user=l-HhJaUAAAAJ'
-    'Shane Barratt': 'https://web.stanford.edu/~sbarratt/'
-    'Shobha': 'https://scholar.google.com/citations?user=BFWurDEAAAAJ'
-    'Siyan Zhao': 'https://www.siyanz.com/'
-    'Soumith Chintala': 'https://soumith.ch/'
-    'Stephen Boyd': 'https://web.stanford.edu/~boyd/'
-    'Steven Diamond': 'https://stevendiamond.me/'
-    'Tameem Adel': 'https://tameemadel.wordpress.com/'
-    'Terenin': 'https://avt.im/'
-    'Thacker': 'https://scholar.google.com/citations?user=2I6IgikAAAAJ'
-    'Thomas Eiszler': 'https://dblp.org/pid/207/9122.html'
-    'Thomas Roth': 'https://dblp.org/pid/188/6045.html'
-    'Tom Erez': 'https://scholar.google.com/citations?user=gVFnjOcAAAAJ'
-    'Tom Sercu': 'https://tom.sercu.me/'
-    'Tricity Andrew': 'https://scholar.google.com/citations?user=qpRt_KYAAAAJ'
-    'Trosset': 'https://mtrosset.pages.iu.edu/'
-    'Tuomas Sandholm': 'http://www.cs.cmu.edu/~sandholm/'
-    'Vladlen Koltun': 'http://vladlen.info/'
-    'Wenlu Hu': 'http://www.cs.cmu.edu/~wenluh/'
-    'William Baumann': 'https://scholar.google.com/citations?user=fAmU38gAAAAJ'
-    'Wolfgang Richter': 'https://scholar.google.com/citations?user=vU6bKxEAAAAJ'
-    'Yang Cao': 'https://people.cs.vt.edu/~ycao/'
-    'Yann LeCun': 'http://yann.lecun.com/'
-    'Yaron Lipman': 'https://www.wisdom.weizmann.ac.il/~ylipman/'
-    'Ying Gao': 'https://www.linkedin.com/in/joelyinggao/'
-    'Yoshihisa Abe': 'https://dblp.org/pid/18/1620.html'
-    'Yu Xiao': 'https://scholar.google.com/citations?user=ZeRhyWsAAAAJ'
-    'Yuval Tassa': 'https://scholar.google.com/citations?user=CjOTm_4AAAAJ'
-    'Zeming Lin': 'https://scholar.google.com/citations?user=ZDjmMuwAAAAJ'
-    'Zhuo Chen': 'https://scholar.google.com/citations?user=-wKpBNkAAAAJ'
-    'Zico Kolter': 'http://zicokolter.com/'
-    'Arnaud Fickinger': 'https://scholar.google.com/citations?user=bBFN_qwAAAAJ'
-    'Hengyuan Hu': 'https://scholar.google.com/citations?user=sJwwn54AAAAJ'
     'Stuart Russell': 'http://people.eecs.berkeley.edu/~russell/'
-    'K S Sesh Kumar': 'https://scholar.google.co.in/citations?user=FPVUA-YAAAAJ'
-    'Yannik Pitcan': 'https://scholar.google.com/citations?user=jmM-JlIAAAAJ'
-    'Jack Richter-Powell': 'https://scholar.google.com/citations?hl=es&user=L78pVMMAAAAJ'
-    'Jonathan Lorraine': 'https://scholar.google.com/citations?user=Hzf8bu0AAAAJ'
+    'Thomas Gilbert': 'https://www.thomaskrendlgilbert.com'
+    'Thomas Krendl Gilbert': 'https://www.thomaskrendlgilbert.com'
+    'Tim Hertweck': 'https://scholar.google.com/citations?user=dlzWP0UAAAAJ&hl=en&oi=ao'
+    'Tom Zick': 'https://www.linkedin.com/in/tom-zick'
+    'Vladlen Koltun': 'http://vladlen.info/'
+    'Vibhavari Dasagi': 'https://scholar.google.com/citations?user=BrhJ6-EAAAAJ&hl=en&oi=ao'
+    'William Whitney': 'http://willwhitney.com'
+    'Yuval Tassa': 'https://scholar.google.com/citations?user=CjOTm_4AAAAJ'
 
 
-talks:
-  - year: 2021
-    location: Columbia University
-  - year: 2021
-    location: IBM Research
-  - year: 2020
-    location: Max Planck Institute for Intelligent Systems (Tübingen) Seminar
-  - year: 2020
-    location: Montreal Institute for Learning Algorithms Seminar
-  - year: 2020
-    location: ECCV Deep Declarative Networks Tutorial
-    url: https://anucvml.github.io/ddn-eccvt2020/
-  - year: 2020
-    location: CVPR Deep Declarative Networks Workshop
-    url: https://anucvml.github.io/ddn-cvprw2020/
-  - year: 2020
-    location: Caltech CS 159, Guest Lecture
-    url: https://sites.google.com/view/cs-159-spring-2020/lectures
-  - year: 2020
-    location: SIAM MDS Minisymposium on Learning Parameterized Energy Minimization Models
-  - year: 2019
-    location: New York University CILVR Seminar
-  - year: 2019
-    location: INFORMS Session on Prediction and Optimization
-  - year: 2019
-    location: Facebook AI Research
-  - year: 2018
-    location: ISMP Session on Machine Learning and Optimization
-  - year: 2018
-    location: Google Brain
-  - year: 2018
-    location: Bosch Center for AI
-  - year: 2018
-    location: Waymo Research
-  - year: 2018
-    location: Tesla AI
-  - year: 2018
-    location: NVIDIA Robotics
-  - year: 2018
-    location: Salesforce Research
-  - year: 2018
-    location: OpenAI
-  - year: 2018
-    location: NNAISENSE
-  - year: 2018
-    location: UC Berkeley
-
-advising:
-  - year: 2021 -- 2022
-    name: Eugene Vinitsky
-    details: (visiting FAIR from Berkeley)
-    url: https://eugenevinitsky.github.io/
-  - year: 2021 -- 2022
-    name: Arnaud Fickinger
-    details: (visiting FAIR from Berkeley)
-    url: https://www.linkedin.com/in/arnaudfickinger/
-  - year: 2021 -- 2022
-    name: Samuel Cohen
-    details: (visiting FAIR from UCL)
-    url: https://scholar.google.com/citations?user=CmdjfTsAAAAJ
-  - year: 2020 -- 2022
-    name: Aaron Lou
-    details: "(visiting FAIR from Cornell and Stanford)"
-    url: https://www.aaronlou.com/
-  - year: 2020
-    name: Ricky Chen
-    details: "(visiting FAIR from Toronto, now: scientist at FAIR)"
-    url: http://www.cs.toronto.edu/~rtqichen/
-  - year: 2020
-    name: Paul Liang
-    details: "(visiting FAIR from CMU)"
-    url: http://www.cs.cmu.edu/~pliang/
-  - year: 2018
-    name: Phillip Wang
-    details: "(at CMU, now: CEO at \\href{https://gather.town/}{Gather})"
-    url: https://phillipkwang.com/
 
 coursework:
   - semester: S9999
@@ -383,28 +314,5 @@ skills:
   - title: Frameworks
     details: JAX, NumPy, Pandas, PyTorch, SciPy
   - title: Tools
-    details: Linux, vim, git, tmux, zsh
+    details: Linux, vim, git, tmux
 
-honors:
-  - title: Best Student Paper Finalist; IEEE Symposium on Multi-Robot and Multi-Agent Systems
-    year: 2021
-  - title: Berkeley EECS Demetri Angelakos Memorial Achievement Award
-    year: 2021
-  - title: Heart to Humanity Eternal (H2H8) Pioneer
-    year: 2021
-  - title: NDSEG Graduate Research Fellowship Program Top 200
-    year: 2018
-  - title: NSF Graduate Research Fellowship Program Honorable Mention
-    year: 2018, 2017
-  - title: Berkeley EECS Department Fellowship
-    year: 2017
-  - title: Eight undergraduate scholarships
-    descr: |
-      Cornell Rowing Charles E. Courtney Award,
-      Tau Beta Pi Scholarship,
-      Southeastern New England Defense Industry Alliance STEM Scholarship 2016, 2017,
-      Cornell Athletics 400 Club Induction,
-      Beta Pi Induction,
-      Eta Kappu Nu Induction,
-      American Society of Engineering Education SMART Scholar Award
-    year: 2013 -- 2017

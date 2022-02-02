@@ -1,7 +1,7 @@
 @misc{gilbert2022reward,
   title={Reward Reports for Reinforcement Learning},
   author={Gilbert, Thomas and Dean, Sarah and Lambert, Nathan and Zick, Tom and Snoswell, Aaron},
-  year={9999},
+  year={2022},
   url={},
   _venue={Under Review},
   abstract={
@@ -19,15 +19,38 @@
   }
 }
 
-@article{lambert2021explore,
+@inproceedings{lambert2022compounding,
+  title={Investigating Compounding Prediction Errors in One-step Dynamics Models},
+  author={Lambert, Nathan and Calandra, Roberto and Pister, Kristofer},
+  year={2022},
+%  booktitle={L4DC},
+  _venue={Under Review},
+%  slidesurl={},
+  _talkurl={},
+% _note={},
+  selected={true},
+  abstract={
+  Model-based reinforcement learning (MBRL) has been shown to be a powerful framework for data-efficiently learning control of continuous tasks. Recent work in MBRL has mostly focused on using more advanced function approximators and planning schemes, with little development of the general framework. In this paper, we identify a fundamental issue of the standard MBRL framework--what we call the objective mismatch issue. Objective mismatch arises when one objective is optimized in the hope that a second, often uncorrelated, metric will also be optimized. In the context of MBRL, we characterize the objective mismatch between training the forward dynamics model wrt the likelihood of the one-step ahead prediction, and the overall goal of improving performance on a downstream control task. For example, this issue can emerge with the realization that dynamics models effective for a specific task do not necessarily need to be globally accurate, and vice versa globally accurate models might not be sufficiently accurate locally to obtain good control performance on a specific task. In our experiments, we study this objective mismatch issue and demonstrate that the likelihood of one-step ahead predictions is not always correlated with control performance. This observation highlights a critical limitation in the MBRL framework which will require further research to be fully understood and addressed. We propose an initial method to mitigate the mismatch issue by re-weighting dynamics model training. Building on it, we conclude with a discussion about other potential directions of research for addressing this issue.
+  }
+}
+
+@article{lambert2022explore,
   title={Understanding the Challenges of Exploration for Offline Reinforcement Learning},
-  author={Lambert, Nathan and Wulfmeier, Markus and Bryavan, Arunkumar and Bloesch, Michael and Whittney, Will and and Dasagi, Vibhavari and Hertweck, Tim and Riedmiller, Martin},
+  author={Lambert, Nathan and Wulfmeier, Markus and Byravan, Arunkumar and Bloesch, Michael and Whitney, William and Dasagi, Vibhavari and Hertweck, Tim and Riedmiller, Martin},
   _venue={arXiv Preprint},
   url={https://arxiv.org/abs/2201.11861},
   selected={true},
   year={2022},
   abstract={}
 }
+@article{Alvara2021bliss,
+  title={BLISS: Interplanetary Exploration with Swarms of Low-Cost Spacecraft},
+  author={Alvara*, Alexander  and Lambert*, Nathan and Sin*, Emmanuel and Lee*, Lydia and Kuhn, Beau and Westphal, Andrew and Pister, Kristofer},
+  _venue={Under Review},
+  _note={*co-lead authors},
+  year={2022}
+}
+
 
 @article{pineda2021mbrl,
   title={MBRL-Lib: A Modular Library for Model-based Reinforcement Learning},
@@ -59,12 +82,12 @@
   author={Lambert, Nathan and Amos, Brandon and Yadan, Omry and Calandra, Roberto},
   year={2020},
   booktitle={L4DC},
-  _venue={L4DC},
+  _venue={Conference on Learning for Decision and Control (L4DC)},
   year={2020},
   url={https://arxiv.org/abs/2002.04523},
-  slidesurl={},
+ % slidesurl={},
   _talkurl={},
-  _note={},
+%  _note={},
   selected={true},
   abstract={
   Model-based reinforcement learning (MBRL) has been shown to be a powerful framework for data-efficiently learning control of continuous tasks. Recent work in MBRL has mostly focused on using more advanced function approximators and planning schemes, with little development of the general framework. In this paper, we identify a fundamental issue of the standard MBRL framework--what we call the objective mismatch issue. Objective mismatch arises when one objective is optimized in the hope that a second, often uncorrelated, metric will also be optimized. In the context of MBRL, we characterize the objective mismatch between training the forward dynamics model wrt the likelihood of the one-step ahead prediction, and the overall goal of improving performance on a downstream control task. For example, this issue can emerge with the realization that dynamics models effective for a specific task do not necessarily need to be globally accurate, and vice versa globally accurate models might not be sufficiently accurate locally to obtain good control performance on a specific task. In our experiments, we study this objective mismatch issue and demonstrate that the likelihood of one-step ahead predictions is not always correlated with control performance. This observation highlights a critical limitation in the MBRL framework which will require further research to be fully understood and addressed. We propose an initial method to mitigate the mismatch issue by re-weighting dynamics model training. Building on it, we conclude with a discussion about other potential directions of research for addressing this issue.
@@ -72,3 +95,107 @@
 }
 
 
+@article{selden2021botnet,
+  title={BotNet: A Simulator for Studying the Effects of Accurate Communication Models on High-agent-count Multi-agent Control},
+  author={Selden, Mark and Campos, Felipe and Zhou, Jason and Lambert, Nathan and Drew, Daniel and Pister, Kristofer},
+  _venue={Symposium on Multi-Agent and Multi-Robot Systems},
+  url={https://arxiv.org/abs/2108.13606},
+  _note={Best Student Paper Finalist},
+  _talkurl={https://youtu.be/jRWk-rwSybU},
+  codeurl={https://github.com/PisterLab/BotNet},
+  year={2021}
+}
+
+@ARTICLE{dean2021axes,
+  author={Dean, Sarah and Gilbert, Thomas Krendl and Lambert, Nathan and Zick, Tom},
+  _venue={Transactions on Technology and Society (TTS)},
+  title={Axes for Sociotechnical Inquiry in AI Research},
+  year={2021},
+  _note={Authors arranged alphabetically},
+  url={https://arxiv.org/abs/2105.06551},
+}
+
+@article{zhang2020hyper,
+  title={On the Importance of Hyperparameter Optimization for Model-based Reinforcement Learning
+},
+  author={Zhang, Baohe and Rajan, Raghu and Pineda, Luis and Lambert, Nathan  and Biedenkapp, André and Chua, Kurtland and Hutter, Frank and Calandra, Roberto},
+  _venue={International Conference on
+Artificial Intelligence and Statistics (AISTATS)},
+url={https://arxiv.org/abs/2102.13651},
+  year={2021}
+}
+
+@article{mckane2020aidev,
+  title={AI Development for the Public Interest: From Abstraction Traps to Sociotechnical Risks},
+  author={Andrus, McKane and Dean, Sarah and Gilbert, Thomas and Lambert, Nathan  and Zick, Tom},
+  _venue={International Symposium on Technology and Society (ISTATS)},
+  year={2020},
+  url={https://arxiv.org/abs/2102.04255},
+  _note={Authors arranged alphabetically},
+}
+
+@article{lambert2020learning,
+  title={Learning Accurate Long-term Dynamics for Model-based Reinforcement Learning},
+  author={Lambert, Nathan and Wilcox, Albert and Zhang, Howard and Pister, Kristofer SJ and Calandra, Roberto},
+  _venue={International Conference on Decision and Control (CDC)},
+  year={2021},
+  selected={true},
+  url={https://arxiv.org/abs/2012.09156},
+  codeurl={https://github.com/natolambert/continuousprediction}
+}
+
+@ARTICLE{9300244,
+  author={Lambert, Nathan and Schindler, Craig and Drew, Daniel and Pister, Kristofer},
+  _venue={Robotics and Automation Letters (RAL)},
+  title={Nonholonomic Yaw Control of an Underactuated Flying Robot With Model-Based Reinforcement Learning},
+  year={2021},
+  url={https://arxiv.org/abs/2009.01221},
+  selected={true}
+  }
+
+
+@article{lambert2020micro,
+  title={Learning for Microrobot Exploration: Model-based Locomotion, Robust Navigation, and Low-Power Deep Classification},
+  author={Lambert, Nathan and Toddywala, Fahran and Liao, Brian and Zhu, Eric  and Lee, Lydia and Pister, Kristofer},
+  _venue={International Conference on Manipulation, Automation and Robotics at Small Scales (MARSS)},
+  url={https://arxiv.org/abs/2004.13194},
+  year={2020}
+}
+
+
+@article{hier-daisy,
+  title={Learning  Generalizable  Locomotion  Skills  with  HierarchicalReinforcement  Learning},
+  author={Li, Tianyu and Lambert, Nathan and Calandra, Roberto and Rai, Akshara  and Meier, Franziska},
+  _venue={International Conference on Robotics and Automation (ICRA)},
+  year={2020},
+  url={https://arxiv.org/abs/1909.12324},
+  _talkurl={https://www.youtube.com/watch?v=S7BdwYZQKHQ}
+}
+
+@ARTICLE{8769882,
+author={Lambert, Nathan and Drew, Daniel and Yaconelli, Joseph and Levine, Sergey and Calandra, Roberto and Pister, Kristofer},
+_venue={Robotics and Automation Letters (RAL)},
+title={Low-Level Control of a Quadrotor With Deep Model-Based Reinforcement Learning},
+year={2019},
+selected={true},
+url={https://arxiv.org/abs/1901.03737},
+codeurl={https://github.com/natolambert/dynamicslearn},
+_talkurl={https://www.youtube.com/watch?v=BAHxRRgdCt4}
+}
+
+
+@article{drew2018toward,
+  title={Toward Controlled Flight of the Ionocraft: A Flying Microrobot Using Electrohydrodynamic Thrust With Onboard Sensing and No Moving Parts},
+  author={Drew, Daniel S and Lambert, Nathan and Schindler, Craig B and Pister, Kristofer},
+  _venue={Robotics and Automation Letters (RAL)},
+  year={2018},
+  _talkurl={https://www.youtube.com/watch?v=6rDBV12sCB4}
+}
+
+@article{Vinayakumar2017,
+    author = {Vinayakumar, K. B. and Gund, V. and Lambert, Nathan and Lodha, S. and Lal, A.},
+    doi = {10.1109/ICSENS.2016.7808451},
+    _venue = {Sensors},
+    title = {{Enhanced lithium niobate pyroelectric ionizer for chip-scale ion mobility-based gas sensing}},
+    year = {2017}
+}
