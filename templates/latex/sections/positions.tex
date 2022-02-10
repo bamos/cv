@@ -1,0 +1,20 @@
+~< extends "section.tex" >~
+
+~< block body >~
+  % \begin{itemize}
+    ~< for item in items >~
+      ~<- if item.title ->~
+      \textbf{<< item.title >>}, << item.place >>
+      ~<- else ->~
+      \textbf{<< item.place>>}
+      ~<- endif ->~
+      ~<- if item.location ->~
+      , << item.location >>
+      ~< endif >~
+      ~< if item.inline_detail >~
+        (<< item.inline_detail >>)
+      ~< endif >~
+      \hfill << item.dates >> \par
+    ~< endfor >~
+  % \end{itemize}
+~< endblock body >~

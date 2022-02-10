@@ -475,14 +475,14 @@ class RenderContext(object):
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
-            elif section_tag in ['positions']:
+            elif section_tag in ['current_position']:
                 if self._context_name == 'markdown':
                     continue
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
-                    self.SECTIONS_DIR, 'industry' + self._file_ending)
+                    self.SECTIONS_DIR, 'positions' + self._file_ending)
             elif section_tag in ['coursework', 'education', 'honors',
-                                 'industry', 'research', 'skills', 'service',
+                                 'positions', 'research', 'skills', 'service',
                                  'teaching', 'talks', 'advising']:
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
