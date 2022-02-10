@@ -1,6 +1,4 @@
-# About
-This repo contains the source for my
-[CV](http://bamos.github.io):
+This repo contains the source for my CV:
 
 + [generate.py](generate.py) creates a [website](http://bamos.github.io)
   and [PDF](http://bamos.github.io/data/cv.pdf)
