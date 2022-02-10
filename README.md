@@ -1,13 +1,19 @@
 # About
-This repo contains the source I use to automatically generate
-my curriculum vitae as a
-[webpage](http://bamos.github.io)
-and
-[PDF](http://bamos.github.io/data/cv.pdf)
-from YAML and BibTeX input.
-[generate.py](generate.py) reads from [cv.yaml](cv.yaml) and
-[publications](publications) and outputs LaTeX and Markdown
-by using Jinja templates.
+This repo contains the source for my
+[CV](http://bamos.github.io):
+
++ [generate.py](generate.py) creates a [website](http://bamos.github.io)
+  and [PDF](http://bamos.github.io/data/cv.pdf)
+  from a shared [YAML source](cv.yaml)
+  by using Jinja templates.
++ The publications are rendered from a single
+  [BibTeX](publications/all.bib) file.
+  The abstracts are displayed in the website output
+  and the selected publications here are highlighted.
++ The [YAML source](cv.yaml) links to all author websites,
+  which will automatically be added to the
+  publication lists in the website and PDF.
+
 
 # Building and running
 Dependencies are included in `requirements.txt` and can be installed
