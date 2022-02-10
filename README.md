@@ -11,6 +11,7 @@ This repo contains the source for my CV:
 + The [YAML source](cv.yaml) links to all author websites,
   which will automatically be added to the
   publication lists in the website and PDF.
++ GitHub stars are automatically scraped and cached on disk.
 
 
 # Building and running
