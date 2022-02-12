@@ -49,8 +49,8 @@ about: '
 <br><br>'
 
 service:
-  - details: "Reviewing: AAAI, ICML, NeurIPS, ICLR*, ICCV, CVPR, ICRA"
-    sub_details: "*Outstanding reviewer"
+  - details: "Reviewing: AAAI, ICML, NeurIPS, ICLR, ICCV, CVPR, ICRA"
+  - details: "~" # Hack for space
   - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
     year: 2020
     url: https://sites.google.com/view/lmca2020/home
@@ -184,7 +184,7 @@ positions:
     #     {\bf Spark}, {\bf Spray}, {\bf Parquet}, and {\bf HDFS}.
   - place: Virginia Tech
     title: Research Assistant
-    inline_detail: "Advisor: \\href{https://people.cs.vt.edu/~ltw/shortvita.html}{Layne Watson}"
+    inline_detail: "Advisors: \\href{https://people.cs.vt.edu/~ltw/shortvita.html}{Layne Watson} and \\href{https://dblp.org/pid/75/8682.html}{David Easterling}"
     dates: 2013 -- 2014
     # area: Scientific computing, global/stochastic optimization, and bioinformatics
     # details:
@@ -195,7 +195,7 @@ positions:
     #     {\bf Fortran 95}, {\bf C++}, and {\bf Matlab}.
   - place: Virginia Tech
     title: Research Assistant
-    inline_detail: "Advisor: \\href{https://www.magnum.io/people/jules.html}{Jules White}"
+    inline_detail: "Advisors: \\href{https://www.magnum.io/people/jules.html}{Jules White} and \\href{https://scholar.google.com/citations?user=MRKab9cAAAAJ}{Hamilton Turner}"
     dates: 2012 -- 2014
     # dates: May 2012 -- May 2014
     # area: Mobile systems, cyber-physical systems, and security
@@ -212,7 +212,7 @@ positions:
       #  deployment optimization framework.
   - place: Virginia Tech
     title: Research Assistant
-    inline_detail: "Advisor: \\href{https://www.ssrg.ece.vt.edu/}{Binoy Ravindran}"
+    inline_detail: "Advisors: \\href{https://www.ssrg.ece.vt.edu/}{Binoy Ravindran} and \\href{http://www.alastairmurray.co.uk/}{Alastair Murray}"
     dates: 2012 -- 2014
     # dates: Nov 2012 -- Mar 2014
     # details:
@@ -505,8 +505,10 @@ skills:
     details: JAX, NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
   - title: Tools
     details: Linux, emacs, vim, evil, org, mu4e, xmonad, git, tmux, zsh
-
 honors:
+
+  - title: ICLR Outstanding Reviewer
+    year: 2019
   - title: NSF Graduate Research Fellowship
     year: 2016 -- 2019
   - title: Nine undergraduate scholarships
