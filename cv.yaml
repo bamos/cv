@@ -50,7 +50,6 @@ about: '
 
 service:
   - details: "Reviewing: AAAI, ICML, NeurIPS, ICLR, ICCV, CVPR, ICRA"
-  - details: "~" # Hack for space
   - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
     year: 2020
     url: https://sites.google.com/view/lmca2020/home

@@ -15,9 +15,10 @@
       } \\[2mm]
     ~< endif >~
     ~< if item.year >~
-        \hfill << item.year >>
+        \hfill << item.year >> \\
+    ~< else >~
+       \\[2mm]
     ~< endif >~
-        \\
   ~< endfor >~
 % \end{tabular}
 ~< endblock body >~
