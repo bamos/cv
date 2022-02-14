@@ -168,7 +168,7 @@ positions:
     location: London
     title: Research Intern
     dates: 2017
-    inline_detail: "Hosts: \\href{http://mdenil.com/}{Misha Denil} and \\href{https://scholar.google.com/citations?user=nzEluBwAAAAJ}{Nando de Freitas}"
+    inline_detail: "Hosts: \\href{https://scholar.google.com/citations?user=nzEluBwAAAAJ}{Nando de Freitas} and \\href{http://mdenil.com/}{Misha Denil}"
   - place: Carnegie Mellon University
     title: Research Assistant
     inline_detail: "Advisor: \\href{https://www.cs.cmu.edu/~satya/}{Mahadev Satyanarayanan}"
@@ -304,7 +304,7 @@ all_publications:
     'Alexander Rives': 'https://scholar.google.com/citations?user=vqb78-gAAAAJ'
     'Alistair Muldal': 'https://scholar.google.com/citations?user=YfgdfyYAAAAJ'
     'Amy Zhang': 'https://amyzhang.github.io/'
-    'Andrew Gordon Wilson': 'https://people.orie.cornell.edu/andrew/'
+    'Andrew Gordon Wilson': 'https://cims.nyu.edu/~andrewgw'
     'Anselm Paulus': 'https://scholar.google.com/citations?user=njZL5CQAAAAJ'
     'Anupam Das': 'https://anupamdas.org/'
     'Artem Molchanov': 'https://amolchanov86.github.io/'
