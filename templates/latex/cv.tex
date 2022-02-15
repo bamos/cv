@@ -9,7 +9,6 @@
 \DeclareRobustCommand*\cal{\@fontswitch\relax\mathcal}
 \DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
 
-
 \definecolor{tab_highlight}{HTML}{f0c967}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -17,72 +16,25 @@
 \moderncvstyle{<< style >>}
 \moderncvcolor{<< color >>}
 \definecolor{color2}{rgb}{<<color2>>}
-%\renewcommand{\familydefault}{\sfdefault}
 
 \usepackage[top=1in, bottom=1in, left=.7in, right=.7in]{geometry}
 \setlength{\hintscolumnwidth}{3cm}
-%\setlength{\makecvtitlenamewidth}{10cm}
-
-% \usepackage{ragged2e}
-% \newcolumntype{R}[1]{>{\RaggedLeft\hspace{0pt}}p{#1}}
 
 \usepackage{mathabx}
 
 \frenchspacing
-
-% \usepackage[backend=biber,style=ieee,defernumbers=true]{biblatex}
-% \usepackage[
-% backend=biber,style=publist,
-% sorting=ydmdnt,
-% %plauthorhandling=highlight,
-% % marginyear=true,
-% plnumbered=false,
-% maxnames=10,
-% nameorder=given-family
-% ]{biblatex}
-
-% Make the author's name bold in publications.
-% \DeclareNameFormat{author}{%
-%   \nameparts{#1}%
-%   \ifthenelse{\equal{\namepartfamily}{Amos}\or\equal{\namepartfamily}{Amos*}}%
-%     {\textbf{\ifblank{\namepartgiveni}{}{\namepartgiveni\space}\namepartfamily}}%
-%     {\ifblank{\namepartgiveni}{}{\namepartgiveni\space}\namepartfamily}%
-%   \ifthenelse{\value{listcount}=1 \AND \value{liststop}=2}%
-%     {\space and\space}
-%     {\ifthenelse{\value{listcount}<\value{liststop}}%
-%       {\addcomma\space}
-%       {}
-%     }
-% }
-% Old, broken:
-% \DeclareNameFormat{author}{%
-%   \ifthenelse{\equal{#1}{<< name.last >>}}%
-%     {\textbf{\ifblank{#4}{}{#4\space}#1}}%
-%     {\ifblank{#4}{}{#4\space}#1}%
-%   \ifthenelse{\value{listcount}=1 \AND \value{liststop}=2}%
-%     {\space and\space}
-%     {\ifthenelse{\value{listcount}<\value{liststop}}%
-%       {\addcomma\space}
-%       {}
-%     }
-% }
 
 \usepackage{lastpage}
 \cfoot{\addressfont\textcolor{gray}{\hypersetup{allcolors=gray}Page \thepage\ of \pageref{LastPage}}}
 
 \AtEndPreamble{\hypersetup{pdftitle={CV -- << name.first >> << name.last >>}}}
 \name{<< name.first >>}{<< name.last >>}
-%\title{Resumé title}
-%\address{street and number}{postcode city}{country}
-% \phone{<< phone >>}
 \email{<< email >>}
 \homepage{<< url >>}
 \social[linkedin]{<<social.linkedin>>}
 \social[twitter]{<<social.twitter>>}
 \social[github]{<<social.github>>}
 \extrainfo{\small Last updated on \today}
-%\photo[64pt][0.4pt]{picture}
-% \quote{Generated on \today}
 
 \AtBeginDocument{\hypersetup{colorlinks}}
 
