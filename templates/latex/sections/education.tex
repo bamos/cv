@@ -6,7 +6,7 @@
 ~< for school in items >~
     % \item 
   ~< if school.degree >~
-    \textbf{<< school.degree >>}, << school.school >>
+    \textbf{<< school.degree >>}, \emph{<< school.school >>}
     ~< if school.overallGPA >~
         (<< school.overallGPA >>)
     ~< endif >~

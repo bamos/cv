@@ -4,7 +4,7 @@
   % \begin{itemize}
     ~< for item in items >~
       ~<- if item.title ->~
-      \textbf{<< item.title >>}, << item.place >>
+      \textbf{<< item.title >>}, \emph{<< item.place >>}
       ~<- else ->~
       \textbf{<< item.place>>}
       ~<- endif ->~

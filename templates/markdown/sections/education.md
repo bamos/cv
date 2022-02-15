@@ -6,7 +6,7 @@
 {% for school in items %}
   <tr>
     <td>
-      <strong>{{ school.degree }}</strong>, {{ school.school }}
+      <strong>{{ school.degree }}</strong>, <em>{{ school.school }}</em>
       {% if school.overallGPA %}
         ({{ school.overallGPA }})
       {% endif %}

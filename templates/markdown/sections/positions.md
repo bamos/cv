@@ -7,7 +7,7 @@
   <td>
 <p markdown="1" style='margin: 0'>
 {%- if i.title -%}
-<strong>{{ i.title }}</strong>, {{ i.place }}
+<strong>{{ i.title }}</strong>, <em>{{ i.place }}</em>
 {%- else -%}
 <strong>{{ i.place}}</strong>
 {%- endif -%}

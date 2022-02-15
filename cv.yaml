@@ -231,10 +231,9 @@ positions:
       #- '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
 
   - place: Snowplow
-    location: London
+    location: Remote
     title: Software Intern
     dates: 2013 -- 2014
-    inline_detail: "Remote"
     # details:
     # - Open-source {\bf Scala} development with a startup on the
     #   Snowplow analytics platform.
