@@ -49,18 +49,26 @@ about: '
 <br><br>'
 
 service:
-  - details: "Reviewing: AAAI, ICML, NeurIPS, ICLR, ICCV, CVPR, ICRA"
-  - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
-    year: 2020
-    url: https://sites.google.com/view/lmca2020/home
-  - details: CVPR Deep Declarative Workshop Organizer
-    url: https://anucvml.github.io/ddn-cvprw2020/
-    year: 2020
-  - details: ECCV Deep Declarative Tutorial Organizer
-    url: https://anucvml.github.io/ddn-eccvt2020/
-    year: 2020
-  - details: CMU CSD MS Admissions
-    year: 2014 -- 2015
+  reviewing:
+    - "Neural Information Processing Systems (NeurIPS)"
+    - "International Conference on Machine Learning (ICML)"
+    - "International Conference on Learning Representations (ICLR)"
+    - "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+    - "IEEE International Conference on Computer Vision (ICCV)"
+    - "IEEE International Conference on Robotics and Automation (ICRA)"
+    - "AAAI Conference on Artificial Intelligence (AAAI)"
+  main:
+    - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
+      year: 2020
+      url: https://sites.google.com/view/lmca2020/home
+    - details: CVPR Deep Declarative Workshop Organizer
+      url: https://anucvml.github.io/ddn-cvprw2020/
+      year: 2020
+    - details: ECCV Deep Declarative Tutorial Organizer
+      url: https://anucvml.github.io/ddn-eccvt2020/
+      year: 2020
+    - details: CMU CSD MS Admissions
+      year: 2014 -- 2015
 
 repos:
   - repo_url: https://github.com/facebookresearch/theseus

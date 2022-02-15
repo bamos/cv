@@ -1,8 +1,7 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-% \begin{tabular}{p{0.5in}p{5in}}
-  ~< for item in items >~
+  ~< for item in items.main >~
     ~< if item.url >~
       \href{<< item.url >>}{<< item.details>>}
     ~< else >~
@@ -20,5 +19,9 @@
        \\[2mm]
     ~< endif >~
   ~< endfor >~
-% \end{tabular}
+
+  \subsection{Reviewing}
+  ~< for item in items.reviewing >~
+  << item >> \\
+  ~< endfor >~
 ~< endblock body >~
