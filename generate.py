@@ -561,6 +561,8 @@ MARKDOWN_CONTEXT = RenderContext(
         (r'\{ *\\it *(.*)\}', r'*\1*'),
         (r'\\LaTeX', 'LaTeX'),  # \LaTeX to boring old LaTeX
         (r'\\TeX', 'TeX'),  # \TeX to boring old TeX
+        (' --- ', '&nbsp;-&nbsp;'),  # em dash
+        (' -- ', '&nbsp;-&nbsp;'),  # en dash
         ('---', '-'),  # em dash
         ('--', '-'),  # en dash
         (r'``([^\']*)\'\'', r'"\1"'),  # quotes
