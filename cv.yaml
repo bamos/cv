@@ -234,6 +234,7 @@ positions:
     location: Remote
     title: Software Intern
     dates: 2013 -- 2014
+    inline_detail: "Scala development"
     # details:
     # - Open-source {\bf Scala} development with a startup on the
     #   Snowplow analytics platform.
@@ -245,6 +246,7 @@ positions:
   - place: Qualcomm
     location: San Diego
     title: Software Intern
+    inline_detail: "Python and C++ development"
     dates: 2013
     # details:
     # - "I created a specification format language translator for fuzz
@@ -261,6 +263,8 @@ positions:
     location: Virginia
     title: Software Intern
     dates: 2012
+    inline_detail: "C++, C\\#, and Java development"
+      #"{\bf VC++}, {\bf VC\#}, {\bf Java}"
     # details:
     #   - I developed industry software for software integration and
     #     design process optimization in {\bf VC++}, {\bf VC\#}, and {\bf Java}.
@@ -274,6 +278,7 @@ positions:
     location: Virginia
     title: Network Administrator Intern
     dates: 2011
+    inline_detail: "Bash development for Linux servers"
     # dates: Jan 2011 -- Aug 2011
     # details:
     #   - Internship in high school to replace Windows domain, mail,
