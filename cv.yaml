@@ -71,6 +71,9 @@ service:
       year: 2014 -- 2015
 
 repos:
+  - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
+    year: 2022
+    desc: Tutorial on amortized optimization
   - repo_url: https://github.com/facebookresearch/theseus
     year: 2022
     desc: Differentiable non-linear optimization library
