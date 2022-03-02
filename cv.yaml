@@ -186,7 +186,7 @@ positions:
     dates: 2014 -- 2016
   - place: Adobe Research
     location: San Jose
-    title: Data Scientist Intern
+    title: Research Intern
     dates: 2014
     inline_detail: "with \\href{https://research.adobe.com/person/david-tompkins/}{David Tompkins}"
     # details:
@@ -281,7 +281,6 @@ positions:
     location: Virginia
     title: Network Administrator Intern
     dates: 2011
-    inline_detail: "Bash development for Linux servers"
     # dates: Jan 2011 -- Aug 2011
     # details:
     #   - Internship in high school to replace Windows domain, mail,
