@@ -127,6 +127,9 @@ repos:
   - repo_url: https://github.com/bamos/zsh-history-analysis
     year: 2014
     desc: Analyze and plot your zsh history
+  - repo_url: https://github.com/cparse/cparse
+    year: 2013
+    desc: C++ expression parser using Dijkstra's shunting-yard algorithm
   - repo_url: https://github.com/bamos/cv
     year: 2013
     desc: "Source for this CV: Creates LaTeX/Markdown from YAML/BibTeX"
