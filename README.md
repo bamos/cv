@@ -41,11 +41,11 @@ new documents to another repository with `make jekyll` and `make push`.
 3. The LaTeX templates use modified Jinja delimiters to avoid overlaps with
    normal LaTeX. See `generate.py` for details.
 
-# People using this CV
-![](./images/websites.png)
-
+# Other people using this code
 You are welcome to use this code with or without attribution in the
 documents you produce, and add a link back here if you want!
+
+![](./images/websites.png)
 
 + [Alessandro Checco](https://alessandrochecco.github.io/) ([code](https://github.com/wcarvalho/cv))
 + [Alex Sludds](https://alexsludds.github.io/) ([code](https://github.com/wcarvalho/cv))
@@ -66,7 +66,7 @@ documents you produce, and add a link back here if you want!
 + [Jérémie Lumbroso](https://github.com/jlumbroso/cv)
 + [Krishnaditya Kancharla](https://krishnakancharla.github.io/about) ([code](https://github.com/wcarvalho/cv))
 + [Lamin Juwara](https://laminjuwara.github.io) ([code](https://github.com/LaminJuwara/laminjuwara.github.io))
-+ [Lekan](https://scriptedonachip.com/) ([code](https://github.com/wcarvalho/cv))
++ [Olalekan Ogunmolu](https://scriptedonachip.com/) ([code](https://github.com/wcarvalho/cv))
 + [Lizeth Joseline Fuentes Pérez](https://lizonly.github.io/cv/) ([code](https://github.com/lizOnly/cv))
 + [Marco Piccirilli](https://mpicci.github.io/)
 + [Matthew L. Bendall](https://github.com/mlbendall/cv)
@@ -79,7 +79,6 @@ documents you produce, and add a link back here if you want!
 + [Nurpeiis Baimukan](https://nurpeiis.github.io/) ([code](https://github.com/wcarvalho/cv))
 + [Pieter Vanderpol](https://github.com/petevdp/cv)
 + [Prachi Sudrik](https://prachisudrik.github.io/about) ([code](https://github.com/wcarvalho/cv))
-+ [Pınar Demetçi](https://pinardemetci.github.io/) ([code](https://github.com/wcarvalho/cv))
 + [Pınar Demetçi](https://pinardemetci.github.io/) ([code](https://github.com/wcarvalho/cv))
 + [Qian Ge](https://conan7882.github.io/) ([code](https://github.com/wcarvalho/cv))
 + [Renan Souza](https://renansouza.org/) ([code](https://github.com/renan-souza/cv))
