@@ -487,6 +487,8 @@ service:
     - "IEEE International Conference on Computer Vision (ICCV)"
     - "IEEE International Conference on Robotics and Automation (ICRA)"
     - "AAAI Conference on Artificial Intelligence (AAAI)"
+    - "Optimization Letters"
+
   main:
     - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
       year: 2020
