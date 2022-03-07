@@ -49,6 +49,7 @@ documents you produce, and add a link back here if you want!
 
 + [Alessandro Checco](https://alessandrochecco.github.io/) ([code](https://github.com/wcarvalho/cv))
 + [Alex Sludds](https://alexsludds.github.io/) ([code](https://github.com/wcarvalho/cv))
++ [Amara Dinesh Kumar](https://dineshresearch.github.io/)
 + [Boyo Chen](https://boyochen.github.io/) ([code](https://github.com/wcarvalho/cv))
 + [Chaitanya Ahuja](https://chahuja.com/) ([code](https://github.com/chahuja/cv))
 + [Chaitanya Bapat](https://chaibapchya.github.io/about) ([code](https://github.com/wcarvalho/cv))
@@ -66,7 +67,6 @@ documents you produce, and add a link back here if you want!
 + [Jérémie Lumbroso](https://github.com/jlumbroso/cv)
 + [Krishnaditya Kancharla](https://krishnakancharla.github.io/about) ([code](https://github.com/wcarvalho/cv))
 + [Lamin Juwara](https://laminjuwara.github.io) ([code](https://github.com/LaminJuwara/laminjuwara.github.io))
-+ [Olalekan Ogunmolu](https://scriptedonachip.com/) ([code](https://github.com/wcarvalho/cv))
 + [Lizeth Joseline Fuentes Pérez](https://lizonly.github.io/cv/) ([code](https://github.com/lizOnly/cv))
 + [Marco Piccirilli](https://mpicci.github.io/)
 + [Matthew L. Bendall](https://github.com/mlbendall/cv)
@@ -77,6 +77,7 @@ documents you produce, and add a link back here if you want!
 + [Nikos Doulaveras](https://github.com/niveras/BlogCV)
 + [Norman Kabir](https://github.com/nkabir/cv)
 + [Nurpeiis Baimukan](https://nurpeiis.github.io/) ([code](https://github.com/wcarvalho/cv))
++ [Olalekan Ogunmolu](https://scriptedonachip.com/) ([code](https://github.com/wcarvalho/cv))
 + [Pieter Vanderpol](https://github.com/petevdp/cv)
 + [Prachi Sudrik](https://prachisudrik.github.io/about) ([code](https://github.com/wcarvalho/cv))
 + [Pınar Demetçi](https://pinardemetci.github.io/) ([code](https://github.com/wcarvalho/cv))
@@ -90,4 +91,3 @@ documents you produce, and add a link back here if you want!
 + [Wilka Carvalho](https://github.com/wcarvalho/cv)
 + [Yann-Aël Le Borgne](https://yannael.github.io/) ([code](https://github.com/wcarvalho/cv))
 + [You-Feng Wu](https://lilyo.github.io/) ([code](https://github.com/wcarvalho/cv))
-+ [Amara Dinesh Kumar](https://dineshresearch.github.io/)
