@@ -61,6 +61,7 @@ print(tmpdir)
 driver = webdriver.Chrome(options=chrome_options)
 driver.set_page_load_timeout(20)
 for i, url in enumerate(urls):
+    # TODO: Quick hack for now, could clean up
     if isinstance(url, list):
         web_url, code_url = url
     else:
@@ -72,7 +73,10 @@ for i, url in enumerate(urls):
         print(f"+ {url}")
         continue
 
-    print(f"+ [{driver.title}]({web_url}) ([code]({code_url}))")
+    if isinstance(url, list):
+        print(f"+ [{driver.title}]({web_url}) ([code]({code_url}))")
+    else:
+        print(f"+ [{driver.title}]({web_url})")
     driver.save_screenshot(f"{tmpdir}/{i}.png")
 
 os.system(f'montage {tmpdir}/*.png -resize 700x -geometry +0-0 -tile 3x forks.png')
