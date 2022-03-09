@@ -73,7 +73,7 @@ def get_pub_md(context, config):
             formatted_authors.append(new_auth)
         return formatted_authors
 
-    def _get_pub_str(pub, prefix, gidx, includeImage):
+    def _get_pub_str(pub, prefix, gidx, include_image, image_height):
         author_str = _get_author_str(pub['author'])
         # prefix = category['prefix']
         title = pub['title']
@@ -86,13 +86,10 @@ def get_pub_md(context, config):
         title = title.replace("\n", " ")
 
         assert('_venue' in pub and 'year' in pub)
-        yearVenue = "{} {}".format(pub['_venue'], pub['year'])
+        year_venue = "{} {}".format(pub['_venue'], pub['year'])
 
-        highlight = 'selected' in pub
-        # if highlight:
-        imgStr = '<img src="images/publications/{}.png" onerror="this.style.display=\'none\'" style=\'border: none; height: 100px;\'/>'.format(pub['ID'], pub['ID'])
-        # else:
-        #     imgStr = ''
+        highlight = 'selected' in pub and pub['selected'].lower() == 'true'
+        img_str = f'<img src="images/publications/{pub["ID"]}.png" onerror="this.style.display=\'none\'" style=\'border: none; max-height: {image_height}; float: right;\'/>'
         links = []
         abstract = ''
         if 'abstract' in pub:
@@ -101,12 +98,10 @@ def get_pub_md(context, config):
     onclick=\'$(\"#abs_{}{}\").toggle()\'>abs</a>]""".format(pub['ID'], prefix))
             abstract = context.make_replacements(pub['abstract'])
         if 'link' in pub:
-            imgStr = "<a href=\'{}\' target='_blank'>{}</a> ".format(
-                pub['link'], imgStr)
+            img_str = "<a href=\'{}\' target='_blank'>{}</a> ".format(
+                pub['link'], img_str)
             title = "<a href=\'{}\' target='_blank'>{}</a> ".format(
                 pub['link'], title)
-            # links.append(
-            #     "[<a href=\'{}\' target='_blank'>pdf</a>] ".format(pub['link']))
 
         for base in ['code', 'slides', 'talk']:
             key = base + 'url'
@@ -129,37 +124,35 @@ def get_pub_md(context, config):
             note_str = ''
 
         tr_style = 'style="background-color: #ffffd0"' if highlight else ''
-        if includeImage:
-            return '''
-<tr id="tr-{}" {}>
+        if include_image:
+            return f'''
+<tr id="tr-{pub['ID']}" {tr_style}>
+<td align='right'>
+{prefix}{gidx}.
+</td>
 <td>
-<div class="col-sm-10">
-    <em>{}</em><br>
-    {}<br>
-    {} {} <br>
-    [{}{}] {}<br>
-    {}
-</div>
-<div class="col-sm-2">{}</div>
+{img_str}
+<em>{title}</em> {links}<br>
+{author_str}<br>
+{year_venue} {note_str} <br>
+{abstract}
 </td>
 </tr>
-'''.format(
-    pub['ID'], tr_style, title, author_str, yearVenue, note_str, prefix, gidx, links, abstract, imgStr,
-)
+'''
         else:
-            return '''
-<tr id="tr-{}" {}>
+            return f'''
+<tr id="tr-{pub['ID']}" {tr_style}>
+<td align='right'>
+{prefix}{gidx}.
+</td>
 <td>
-    <em>{}</em><br>
-    {}<br>
-    {} {} <br>
-    [{}{}] {}<br>
-    {}
+    <em>{title}</em> {links}<br>
+    {author_str}<br>
+    {year_venue} {note_str} <br>
+    {abstract}
 </td>
 </tr>
-'''.format(
-    pub['ID'], tr_style, title, author_str, yearVenue, note_str, prefix, gidx, links, abstract
-)
+'''
 
     def load_and_replace(bibtex_file):
         with open(os.path.join('publications', bibtex_file), 'r') as f:
@@ -184,13 +177,14 @@ def get_pub_md(context, config):
     #         sep = "\n"
     #         for i, pub in enumerate(pubs):
     #             details += _get_pub_str(pub, category['prefix'],
-    #                                     i + 1, includeImage=False) + sep
+    #                                     i + 1, include_image=False) + sep
     #         type_content['details'] = details
     #         type_content['file'] = category['file']
     #         contents.append(type_content)
     # else:
 
     include_image = config['include_image']
+    image_height = config.get('image_height', None)
     sort_bib = config['sort_bib']
     group_by_year = config['group_by_year']
 
@@ -221,7 +215,9 @@ def get_pub_md(context, config):
 
             for i, pub in enumerate(year_pubs):
                 details += _get_pub_str(
-                    pub, '', gidx, includeImage=include_image) + sep
+                    pub, '', gidx,
+                    include_image=include_image, image_height=image_height,
+                ) + sep
                 gidx += 1
 
             if print_year and year > 2015:
@@ -233,7 +229,9 @@ def get_pub_md(context, config):
     else:
         details = '<table class="table table-hover">'
         for i, pub in enumerate(pubs):
-            details += _get_pub_str(pub, '', i + 1, includeImage=include_image) + sep
+            details += _get_pub_str(pub, '', i + 1,
+                    include_image=include_image, image_height=image_height,
+                ) + sep
         details += '</table>'
     contents['details'] = details
     contents['file'] = config['file']
@@ -290,7 +288,7 @@ def get_pub_latex(context, config):
             title = r"\href{{{}}}{{{}}} ".format(pub['link'], title)
 
         assert('_venue' in pub and 'year' in pub)
-        yearVenue = "{} {}".format(pub['_venue'], pub['year'])
+        year_venue = "{} {}".format(pub['_venue'], pub['year'])
 
         links = []
         for base in ['code', 'slides', 'talk']:
@@ -300,7 +298,8 @@ def get_pub_latex(context, config):
                     r"[\href{{{}}}{{{}}}] ".format(pub[key], base))
         links = ' '.join(links)
 
-        highlight_color = '\cellcolor{tab_highlight}' if 'selected' in pub else ''
+        highlight = 'selected' in pub and pub['selected'].lower() == 'true'
+        highlight_color = '\cellcolor{tab_highlight}' if highlight else ''
         if '_note' in pub:
             # note_str = r'{} && \textbf{{{}}} \\'.format(
             note_str = f"({pub['_note']})"
@@ -312,7 +311,7 @@ def get_pub_latex(context, config):
 \begin{{tabular}}{{R{{8mm}}p{{1mm}}L{{6.5in}}}}
 {highlight_color} {prefix}{gidx}.\hspace*{{1mm}} && \textit{{{title}}} {links} \\
 {highlight_color} && {author_str} \\
-{highlight_color} && {yearVenue} {note_str} \\
+{highlight_color} && {year_venue} {note_str} \\
 \end{{tabular}} \\[2mm]
 \end{{minipage}}'''
 
@@ -389,7 +388,6 @@ def add_repo_data(context, config):
 
         if 'desc' not in item:
             item['desc'] = soup.find('p', class_='f4 mt-3').text.strip()
-    # import ipdb; ipdb.set_trace()
 
 
 class RenderContext(object):
@@ -500,7 +498,6 @@ class RenderContext(object):
                 pass
             else:
                 print("Error: Unrecognized section tag: {}".format(section_tag))
-                # sys.exit(-1) TODO
                 continue
 
             if section_tag == 'NEWPAGE':
