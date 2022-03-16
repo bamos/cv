@@ -34,7 +34,7 @@ order:
   - [reviewing, Peer Review]
   - [service, Professional Activities]
   - [teaching, Teaching]
-  - [skills, Skills]
+  - [extracur, Extracurriculars]
 
 about: '\vspace{18pt} \small{
   I research \textbf{data-driven decision making},
@@ -55,6 +55,8 @@ reviewing:
     year: 2020, 2021, 2022
   - details: Conference on Intelligent Robots and Systems (IROS)
     year: 2021
+  - details: Robotics - Science and Systems (RSS)
+    year: 2022
   - details: Conference on Decision and Control (CDC)
     year: 2021
   - details: Robotics and Automation Letters (RA-L)
@@ -180,6 +182,23 @@ teaching:
 talks:
 #  - year: December 2021
 #    location: Cruise AI
+  - year: March 2022
+    location: Microsoft Research
+    details: "(\\href{https://docs.google.com/presentation/d/1_8tNoTyn0Oc9KZnATmRwM3TVEXavU7bq/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides Available})"
+    title: Legible Reinforcement Learning via Dynamics Models
+  - year: February 2022
+    location: DeepMind Robotics All Hands
+#    details: "(\\href{https://docs.google.com/presentation/d/1uQKXAFAFzsS_Ucz-0hhPXyfruzETR987/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides Available})"
+    title: The Challenges of Exploration for Offline Reinforcement Learning
+  - year: February 2022
+    location: Amazon Robotics \& AI
+    details: "(\\href{https://docs.google.com/presentation/d/1uQKXAFAFzsS_Ucz-0hhPXyfruzETR987/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides Available})"
+#    url:
+    title: Synergy of Prediction and Control in Model-based Reinforcement Learning
+  - year: December 2021
+    location: Cruise AI
+#    details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Talk available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
+    title: Control-oriented Predictions in Model-based Reinforcement Learning
   - year: March 2021
     location: Cornell Robotics Seminar
     details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Talk available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
@@ -275,11 +294,13 @@ all_publications:
     'Arunkumar Byravan': 'https://scholar.google.com/citations?user=obYwWiMAAAAJ&hl=en&oi=ao'
     'Brandon Amos': 'http://bamos.github.io'
     'Daniel Drew': 'http://danieldrew.me'
+    'Daniel S Drew': 'http://danieldrew.me'
     'Denis Yarats': 'https://cs.nyu.edu/~dy1042/'
     'Edward Grefenstette': 'https://www.egrefen.com/'
     'Eugene Vinitsky': 'https://eugenevinitsky.github.io'
     'Franziska Meier': 'https://fmeier.github.io/'
     'Kristofer Pister': 'https://people.eecs.berkeley.edu/~pister/'
+    'Kristofer SJ Pister': 'https://people.eecs.berkeley.edu/~pister/'
     'Luis Pineda': 'https://scholar.google.com/citations?user=rebEn8oAAAAJ&hl=en'
     'Martin Riedmiller': 'https://www.riedmiller.me'
     'Markus Wulfmeier': 'https://markusrw.github.io'
@@ -301,11 +322,11 @@ all_publications:
     'Yuval Tassa': 'https://scholar.google.com/citations?user=CjOTm_4AAAAJ'
 
 
-
-coursework:
-  - semester: S9999
-    name: MATH
-    instructor: YOU
+#
+#coursework:
+#  - semester: S9999
+#    name: MATH
+#    instructor: YOU
 
 
 skills:
@@ -316,3 +337,14 @@ skills:
   - title: Tools
     details: Linux, vim, git, tmux
 
+
+extracur:
+  - details: Cornell Varisty Lightweight Rowing
+    year: 2013 -- 2017
+    url: https://cornellsun.com/2017/06/04/lightweight-rowing-wins-3rd-national-title-since-2014-to-cap-off-undefeated-season/
+  - details: Novice Rowing Coach
+    year: 2017 -- 2018
+    url: https://lightweightcrew.berkeley.edu
+  - details: Graduates for Engaged and Extended Scholarship in Computing and Engineering President
+    year: 2021 -- 2022
+    url: https://geesegraduates.org

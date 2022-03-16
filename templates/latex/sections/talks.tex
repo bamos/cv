@@ -10,6 +10,11 @@
       }
     ~< else >~
       << item.location >>
+      ~< if item.details >~
+      \,\, {\scriptsize
+        \color{gray}{<< item.details >>}
+      }
+      ~< endif>~
   ~< endif >~
   \hfill << item.year >> \\
    ~< if item.title >~
