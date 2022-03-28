@@ -62,6 +62,47 @@
   }
 }
 
+@article{chen2022semi,
+  title={Semi-Discrete Normalizing Flows through Differentiable Tessellation},
+
+  author={Ricky T. Q. Chen and Brandon Amos and Maximilian Nickel},
+  journal={arXiv preprint arXiv:2203.06832},
+  year={2022},
+  url={https://arxiv.org/abs/2203.06832},
+  _venue={arXiv},
+  abstract={
+    Mapping between discrete and continuous distributions is a difficult
+    task and many have had to resort to approximate or
+    heuristical approaches. We propose a
+    tessellation-based approach that directly learns
+    quantization boundaries on a continuous space,
+    complete with exact likelihood evaluations. This is
+    done through constructing normalizing flows on
+    convex polytopes parameterized through a
+    differentiable Voronoi tessellation. Using a simple
+    homeomorphism with an efficient log determinant
+    Jacobian, we can then cheaply parameterize
+    distributions on convex polytopes.
+
+    We explore this approach in two application settings, mapping from
+    discrete to continuous and vice versa. Firstly, a
+    Voronoi dequantization allows automatically learning
+    quantization boundaries in a multidimensional
+    space. The location of boundaries and distances
+    between regions can encode useful structural
+    relations between the quantized discrete
+    values. Secondly, a Voronoi mixture model has
+    constant computation cost for likelihood evaluation
+    regardless of the number of mixture
+    components. Empirically, we show improvements over
+    existing methods across a range of structured data
+    modalities, and find that we can achieve a
+    significant gain from just adding Voronoi mixtures
+    to a baseline model.
+  }
+}
+
+
 @misc{amos2021modelbased,
       title={On the model-based stochastic value gradient for continuous reinforcement learning},
       author={Brandon Amos and Samuel Stanton and Denis Yarats and Andrew Gordon Wilson},
