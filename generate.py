@@ -73,7 +73,7 @@ def get_pub_md(context, config):
             formatted_authors.append(new_auth)
         return formatted_authors
 
-    def _get_pub_str(pub, prefix, gidx, include_image, image_height):
+    def _get_pub_str(pub, prefix, gidx, include_image):
         author_str = _get_author_str(pub['author'])
         # prefix = category['prefix']
         title = pub['title']
@@ -89,7 +89,7 @@ def get_pub_md(context, config):
         year_venue = "{} {}".format(pub['_venue'], pub['year'])
 
         highlight = 'selected' in pub and pub['selected'].lower() == 'true'
-        img_str = f'<img src="images/publications/{pub["ID"]}.png" onerror="this.style.display=\'none\'" style=\'border: none; max-height: {image_height}; float: right; padding-top: 0; margin-top: 0; padding-bottom: 0; margin-bottom: 0; margin-left: 1em; \'/>'
+        img_str = f'<img src="images/publications/{pub["ID"]}.png" onerror="this.style.display=\'none\'" class="publicationImg" />'
         links = []
         abstract = ''
         if 'abstract' in pub:
@@ -184,7 +184,6 @@ def get_pub_md(context, config):
     # else:
 
     include_image = config['include_image']
-    image_height = config.get('image_height', None)
     sort_bib = config['sort_bib']
     group_by_year = config['group_by_year']
 
@@ -216,7 +215,7 @@ def get_pub_md(context, config):
             for i, pub in enumerate(year_pubs):
                 details += _get_pub_str(
                     pub, '', gidx,
-                    include_image=include_image, image_height=image_height,
+                    include_image=include_image,
                 ) + sep
                 gidx += 1
 
@@ -230,7 +229,7 @@ def get_pub_md(context, config):
         details = '<table class="table table-hover">'
         for i, pub in enumerate(pubs):
             details += _get_pub_str(pub, '', i + 1,
-                    include_image=include_image, image_height=image_height,
+                    include_image=include_image,
                 ) + sep
         details += '</table>'
     contents['details'] = details

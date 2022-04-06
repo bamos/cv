@@ -215,7 +215,6 @@ all_publications:
   file: all.bib
   sort_bib: True
   include_image: True
-  image_height: 125px
   group_by_year: True
   author_urls:
     'Aaron Lou': 'https://www.aaronlou.com/'
