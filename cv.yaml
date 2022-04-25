@@ -17,7 +17,9 @@ social:
 # LaTeX formatting.
 style: banking # casual, classic, oldstyle, or banking
 color: blue # blue, orange, green, red, purple, grey and black
+color1: '0.25,0.25,0.75' # Heading colors specifically for more options
 color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
+color3: '0.22,0.45,0.70'   # hyperlinks light blue
 
 # (tag, section type, title)
 order:
@@ -45,16 +47,17 @@ about: '\vspace{18pt} \small{
 
 reviewing:
   - details: Conference on Machine Learning (ICML)
-    year: 2020, 2022
+    year: 2020, 2022 (3)
+    sub_details: "(count is 1 unless labelled)"
   - details: Conference on Learning Representations (ICLR)
-    year: 2021*, 2022
+    year: 2021* (3), 2022 (3)
     sub_details: "(*Outstanding Reviewer)"
   - details: Conference on Robot Learning (CORL)
     year: 2020
   - details: Conference on Robotics and Automation (ICRA)
-    year: 2020, 2021, 2022
+    year: 2020, 2021, 2022 (2)
   - details: Conference on Intelligent Robots and Systems (IROS)
-    year: 2021
+    year: 2021, 2022 (2)
   - details: Robotics - Science and Systems (RSS)
     year: 2022
   - details: Conference on Decision and Control (CDC)
@@ -62,12 +65,18 @@ reviewing:
   - details: Robotics and Automation Letters (RA-L)
     year: 2019, 2020
   - details: Transactions on Cybernetics
-    year: 2020
+    year: 2019, 2020
 
 service:
   - details: Member of Well-Being in Machine Learning
     year: 2021 -- cont.
     url: https://twitter.com/WellBeingInML
+  - details: RLDM Workshop on Building Accountable and Transparent RL Organizer
+    year: 2022
+    url: https://rewardreports.github.io/workshop.html
+  - details: Berkeley AI Research Audio \& Video Team
+    year: 2021 -- 2022
+    #    url: https://twitter.com/WellBeingInML
   - details: NeurIPs Workshop on Robot Learning Organizor
     year: 2021
     url: http://robot-learning.ml
@@ -98,7 +107,7 @@ education:
     # dates: May 2019
     overallGPA: 4.0/4.0
     details:
-#      - "\\textit{\\href{https://github.com/bamos/thesis}{Differentiable Optimization-Based Modeling for Machine Learning}}"
+      - "\\textit{\\href{https://natolambert.com}{Synergy of Prediction and Control in Model-based Reinforcement Learning}}"
       - "Advisors: \\href{http://www.eecs.berkeley.edu/~pister/}{Kristofer S.J. Pister},  \\href{https://www.robertocalandra.com/about/}{Roberto Calandra}"
 
 
@@ -180,11 +189,14 @@ teaching:
 #   group_by_year: False
 
 talks:
-#  - year: December 2021
-#    location: Cruise AI
+  - year: April 2022
+    location: University of Pennsylvania -- Perception, Action, and Learning Group
+    details: "(\\href{https://youtu.be/HxbeQI7hfo4}{Recording Available}, \\href{https://docs.google.com/presentation/d/1cxpA8gGNErShrf4Bz04wbgY_rao3pLgd/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
+    title: Planning through Exploration and Exploitation in Model-based Reinforcement Learning
+    # url: 
   - year: March 2022
     location: Microsoft Research
-    details: "(\\href{https://docs.google.com/presentation/d/1_8tNoTyn0Oc9KZnATmRwM3TVEXavU7bq/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides Available})"
+    details: "(\\href{https://docs.google.com/presentation/d/1_8tNoTyn0Oc9KZnATmRwM3TVEXavU7bq/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
     title: Legible Reinforcement Learning via Dynamics Models
   - year: February 2022
     location: DeepMind Robotics All Hands
@@ -192,7 +204,7 @@ talks:
     title: The Challenges of Exploration for Offline Reinforcement Learning
   - year: February 2022
     location: Amazon Robotics \& AI
-    details: "(\\href{https://docs.google.com/presentation/d/1uQKXAFAFzsS_Ucz-0hhPXyfruzETR987/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides Available})"
+    details: "(\\href{https://docs.google.com/presentation/d/1uQKXAFAFzsS_Ucz-0hhPXyfruzETR987/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
 #    url:
     title: Synergy of Prediction and Control in Model-based Reinforcement Learning
   - year: December 2021
@@ -201,12 +213,12 @@ talks:
     title: Control-oriented Predictions in Model-based Reinforcement Learning
   - year: March 2021
     location: Cornell Robotics Seminar
-    details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Talk available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
+    details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Recording available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
     url: https://robotics.cornell.edu/category/seminars/spring-2021/
     title: Improving Model Predictive Control in Model-based Reinforcement Learning
   - year: April 2020
     location: UC Berkeley Semiautonomous Seminar
-    details: "(\\href{https://youtu.be/Z4EpSWfU48E}{Talk available}, \\href{https://docs.google.com/presentation/d/1Q0QYHAyPa_dO8iUsOyDcudvDAwhl24Rc/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
+    details: "(\\href{https://youtu.be/Z4EpSWfU48E}{Recording available}, \\href{https://docs.google.com/presentation/d/1Q0QYHAyPa_dO8iUsOyDcudvDAwhl24Rc/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
     url: https://sites.google.com/berkeley.edu/semiautonomousseminar/spring-2020
     title: Model Learning for Low-level Control in Robotics
   - year: May 2019
@@ -237,6 +249,8 @@ advising:
     url: https://www.linkedin.com/in/howard-zhang-8366b1147
 
 honors:
+  - title: Best Oral Presentation; Berkeley Sensor and Actuator Sensor Spring Review
+    year: 2022
   - title: Best Student Paper Finalist; IEEE Symposium on Multi-Robot and Multi-Agent Systems
     year: 2021
   - title: Berkeley EECS Demetri Angelakos Memorial Achievement Award

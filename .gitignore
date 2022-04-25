@@ -9,3 +9,5 @@ venv
 auto
 .DS_Store
 repo_htmls.shelf
+.vscode*
+.idea*
