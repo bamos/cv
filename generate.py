@@ -495,6 +495,7 @@ class RenderContext(object):
                 elif self._file_ending == ".md":
                     section_data['content'] = get_pub_md(self, section_content)
                 section_data['scholar_id'] = yaml_data['social']['google_scholar']
+                section_data['semantic_id'] = yaml_data['social']['semantic_scholar']
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             elif section_tag == 'NEWPAGE':

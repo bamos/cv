@@ -11,6 +11,7 @@ social:
   twitter: natolambert
   linkedin: natolambert
   google_scholar: O4jW7BsAAAAJ
+  semantic_scholar: 2052363815
 # TBD what is my Erdős  number .
 # (Nathan Lambert -> ?  -> Paul Erdős )
 
@@ -102,13 +103,14 @@ repos:
 education:
   - school: University of California, Berkeley
     location: Berkeley, CA
-    degree: Ph.D. in Computer Science
+    degree: Ph.D. in Electrical Engineering and Computer Science
     dates: 2017 -- 2022
     # dates: May 2019
     overallGPA: 4.0/4.0
     details:
-      - "\\textit{\\href{https://natolambert.com}{Synergy of Prediction and Control in Model-based Reinforcement Learning}}"
+      - "\\textit{\\href{https://www2.eecs.berkeley.edu/Pubs/TechRpts/2022/EECS-2022-65.html}{Synergy of Prediction and Control in Model-based Reinforcement Learning}}"
       - "Advisors: \\href{http://www.eecs.berkeley.edu/~pister/}{Kristofer S.J. Pister},  \\href{https://www.robertocalandra.com/about/}{Roberto Calandra}"
+      - "Committee: \\href{https://people.eecs.berkeley.edu/~svlevine/}{Sergey Levine},  \\href{https://people.eecs.berkeley.edu/~tomlin/}{Claire Tomlin}"
 
 
   - school: Cornell University
@@ -135,13 +137,20 @@ positions:
     dates: TBD -- Present
 
 industry:
+  - place: HuggingFace
+    location: Remote |
+#    title: Research Intern
+    dates: 2022
+    # dates: June 2018 -- Sept 2018
+    details:
+      - "Research Scientist"
   - place: DeepMind
     location: London (\textit{Virtual}) |
 #    title: Research Intern
     dates: 2021
     # dates: June 2018 -- Sept 2018
     details:
-      - "Research Intern, "
+      - "Research Intern "
       - "(Host: \\href{https://www.riedmiller.me}{Martin Riedmiller})"
   - place: Facebook AI
     location: Menlo Park |
@@ -213,12 +222,12 @@ talks:
     title: Control-oriented Predictions in Model-based Reinforcement Learning
   - year: March 2021
     location: Cornell Robotics Seminar
-    details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Recording available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
+    details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Recording Available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
     url: https://robotics.cornell.edu/category/seminars/spring-2021/
     title: Improving Model Predictive Control in Model-based Reinforcement Learning
   - year: April 2020
     location: UC Berkeley Semiautonomous Seminar
-    details: "(\\href{https://youtu.be/Z4EpSWfU48E}{Recording available}, \\href{https://docs.google.com/presentation/d/1Q0QYHAyPa_dO8iUsOyDcudvDAwhl24Rc/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
+    details: "(\\href{https://youtu.be/Z4EpSWfU48E}{Recording Available}, \\href{https://docs.google.com/presentation/d/1Q0QYHAyPa_dO8iUsOyDcudvDAwhl24Rc/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
     url: https://sites.google.com/berkeley.edu/semiautonomousseminar/spring-2020
     title: Model Learning for Low-level Control in Robotics
   - year: May 2019
@@ -306,16 +315,22 @@ all_publications:
     'Aaron Snoswell': 'http://aaronsnoswell.github.io'
     'Amy Zhang': 'https://amyzhang.github.io/'
     'Arunkumar Byravan': 'https://scholar.google.com/citations?user=obYwWiMAAAAJ&hl=en&oi=ao'
+    'Baohe Zhang': 'https://baohezhang.com/'
     'Brandon Amos': 'http://bamos.github.io'
+    'Craig Schindler': 'https://www.craigschindler.net/'
+    'Craig B Schindler': 'https://www.craigschindler.net/'
     'Daniel Drew': 'http://danieldrew.me'
     'Daniel S Drew': 'http://danieldrew.me'
     'Denis Yarats': 'https://cs.nyu.edu/~dy1042/'
     'Edward Grefenstette': 'https://www.egrefen.com/'
     'Eugene Vinitsky': 'https://eugenevinitsky.github.io'
     'Franziska Meier': 'https://fmeier.github.io/'
+    'Frank Hutter': 'https://ml.informatik.uni-freiburg.de/profile/hutter/'
+    'Kurtland Chua': 'https://kchua.github.io/'
     'Kristofer Pister': 'https://people.eecs.berkeley.edu/~pister/'
     'Kristofer SJ Pister': 'https://people.eecs.berkeley.edu/~pister/'
     'Luis Pineda': 'https://scholar.google.com/citations?user=rebEn8oAAAAJ&hl=en'
+    'Lydia Lee': 'http://people.eecs.berkeley.edu/~lydialee/'
     'Martin Riedmiller': 'https://www.riedmiller.me'
     'Markus Wulfmeier': 'https://markusrw.github.io'
     'Michael Bloesch': 'https://scholar.google.com/citations?user=fn6GhgoAAAAJ'
@@ -325,6 +340,7 @@ all_publications:
     'Roberto Calandra': 'https://www.robertocalandra.com/about/'
     'Sarah Dean': 'https://sdean.website'
     'Samuel Cohen': 'https://scholar.google.com/citations?user=CmdjfTsAAAAJ'
+    'Sergey Levine': 'https://people.eecs.berkeley.edu/~svlevine/'
     'Stuart Russell': 'http://people.eecs.berkeley.edu/~russell/'
     'Thomas Gilbert': 'https://www.thomaskrendlgilbert.com'
     'Thomas Krendl Gilbert': 'https://www.thomaskrendlgilbert.com'
