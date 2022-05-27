@@ -32,7 +32,7 @@ order:
   - [skills, Skills]
 
 about: '
-  I am a research scientist at <b>Facebook AI (FAIR)</b> in NYC and
+  I am a research scientist at <b>Meta AI (FAIR)</b> in NYC and
   study foundational topics in <b>machine learning</b> and <b>optimization</b>,
   recently involving reinforcement learning, control,
   optimal transport, and geometry.
@@ -46,7 +46,7 @@ about: '
 <br><br>'
 
 current_position:
-  - place: Facebook AI Research (Meta)
+  - place: Meta AI (FAIR)
     location: New York City
     title: Research Scientist
     dates: 2019 -- Present
