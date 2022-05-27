@@ -73,33 +73,33 @@ education:
 positions:
   - place: Carnegie Mellon University
     title: Research Assistant
-    inline_detail: "with \\href{http://zicokolter.com}{J. Zico Kolter}"
+    inline_detail: "with \\href{http://zicokolter.com}{J. Zico Kolter} on ML and optimization"
     dates: 2016 -- 2019
   - place: Intel Labs
     location: Santa Clara
     title: Research Intern
     dates: 2018
-    inline_detail: "with \\href{http://vladlen.info/}{Vladlen Koltun}"
+    inline_detail: "with \\href{http://vladlen.info/}{Vladlen Koltun} on computer vision"
   - place: Google DeepMind
     location: London
     title: Research Intern
     dates: 2017
-    inline_detail: "with \\href{https://scholar.google.com/citations?user=nzEluBwAAAAJ}{Nando de Freitas} and \\href{http://mdenil.com/}{Misha Denil}"
+    inline_detail: "with \\href{https://scholar.google.com/citations?user=nzEluBwAAAAJ}{Nando de Freitas} and \\href{http://mdenil.com/}{Misha Denil} on RL"
   - place: Carnegie Mellon University
     title: Research Assistant
-    inline_detail: "with \\href{https://www.cs.cmu.edu/~satya/}{Mahadev Satyanarayanan}"
+    inline_detail: "with \\href{https://www.cs.cmu.edu/~satya/}{Mahadev Satyanarayanan} on mobile systems"
     dates: 2014 -- 2016
   - place: Adobe Research
     location: San Jose
     title: Research Intern
     dates: 2014
-    inline_detail: "with \\href{https://research.adobe.com/person/david-tompkins/}{David Tompkins}"
+    inline_detail: "with \\href{https://research.adobe.com/person/david-tompkins/}{David Tompkins} on distributed systems"
     # details:
     #   - I built a web analytics processing engine using {\bf Scala},
     #     {\bf Spark}, {\bf Spray}, {\bf Parquet}, and {\bf HDFS}.
   - place: Virginia Tech
     title: Research Assistant
-    inline_detail: "with \\href{https://people.cs.vt.edu/~ltw/shortvita.html}{Layne Watson} and \\href{https://dblp.org/pid/75/8682.html}{David Easterling}"
+    inline_detail: "with \\href{https://people.cs.vt.edu/~ltw/shortvita.html}{Layne Watson} and \\href{https://dblp.org/pid/75/8682.html}{David Easterling} on optimization"
     dates: 2013 -- 2014
     # area: Scientific computing, global/stochastic optimization, and bioinformatics
     # details:
@@ -110,7 +110,7 @@ positions:
     #     {\bf Fortran 95}, {\bf C++}, and {\bf Matlab}.
   - place: Virginia Tech
     title: Research Assistant
-    inline_detail: "with \\href{https://www.magnum.io/people/jules.html}{Jules White} and \\href{https://scholar.google.com/citations?user=MRKab9cAAAAJ}{Hamilton Turner}"
+    inline_detail: "with \\href{https://www.magnum.io/people/jules.html}{Jules White} and \\href{https://scholar.google.com/citations?user=MRKab9cAAAAJ}{Hamilton Turner} on mobile systems"
     dates: 2012 -- 2014
     # dates: May 2012 -- May 2014
     # area: Mobile systems, cyber-physical systems, and security
@@ -127,7 +127,7 @@ positions:
       #  deployment optimization framework.
   - place: Virginia Tech
     title: Research Assistant
-    inline_detail: "with \\href{https://www.ssrg.ece.vt.edu/}{Binoy Ravindran} and \\href{http://www.alastairmurray.co.uk/}{Alastair Murray}"
+    inline_detail: "with \\href{https://www.ssrg.ece.vt.edu/}{Binoy Ravindran} and \\href{http://www.alastairmurray.co.uk/}{Alastair Murray} on compilers"
     dates: 2012 -- 2014
     # dates: Nov 2012 -- Mar 2014
     # details:

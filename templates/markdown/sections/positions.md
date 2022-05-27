@@ -15,8 +15,10 @@
 , {{ i.location }}
 {% endif %}
 {% if i.inline_detail %}
- ({{ i.inline_detail }})
-{% endif %}
+<span markdown="1" style="color:grey;font-size:1.4rem;margin: 0">
+({{ i.inline_detail }})
+</span>
+{%- endif -%}
 </p>
   </td>
   <td class='col-md-2' style='text-align:right;'>{{ i.dates }}</td>
