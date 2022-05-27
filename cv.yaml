@@ -408,51 +408,87 @@ repos:
     desc: Linux, mutt, xmonad, vim, emacs, zsh
 
 talks:
+  - year: 2022
+    location: ICML Workshop on Decision Awareness in RL
+    url: https://darl-workshop.github.io/
+    title: End-to-end model learning for control
+  - year: 2022
+    location: CPAIOR Master Class
+    url: https://sites.google.com/usc.edu/cpaior-2022/master_class
+    title: Differentiable optimization-based modeling for machine learning
+  - year: 2022
+    location: ICCOPT
+    title: Amortized optimization and learning to optimize
+  - year: 2022
+    location: SIAM MDS Minisymposium
+    title: Modeling and learning paradigms for learning to optimize
   - year: 2021
     location: Columbia University
+    title: Learning for control with differentiable optimization and ODEs
   - year: 2021
     location: IBM Research
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2020
-    location: Max Planck Institute for Intelligent Systems (Tübingen) Seminar
+    location: Max Planck Institute (Tübingen)
+    title: Differentiable optimization for control
   - year: 2020
-    location: Montreal Institute for Learning Algorithms Seminar
+    location: Mila Seminar
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2020
-    location: ECCV Deep Declarative Networks Tutorial
+    location: ECCV Tutorial
     url: https://anucvml.github.io/ddn-eccvt2020/
+    title: Deep Declarative Networks
   - year: 2020
     location: CVPR Deep Declarative Networks Workshop
     url: https://anucvml.github.io/ddn-cvprw2020/
+    title: On differentiable optimization for control and vision
   - year: 2020
-    location: Caltech CS 159, Guest Lecture
+    location: Caltech CS 159 (Guest Lecture)
     url: https://sites.google.com/view/cs-159-spring-2020/lectures
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2020
-    location: SIAM MDS Minisymposium on Learning Parameterized Energy Minimization Models
+    location: SIAM MDS Minisymposium
+    title: Unrolled optimization for learning deep energy models
+    url: https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=67922
   - year: 2019
-    location: New York University CILVR Seminar
+    location: NYU CILVR Seminar
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2019
-    location: INFORMS Session on Prediction and Optimization
+    location: INFORMS
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2019
     location: Facebook AI Research
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2018
-    location: ISMP Session on Machine Learning and Optimization
+    location: ISMP
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2018
     location: Google Brain
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2018
     location: Bosch Center for AI
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2018
     location: Waymo Research
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2018
     location: Tesla AI
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2018
     location: NVIDIA Robotics
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2018
     location: Salesforce Research
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2018
     location: OpenAI
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2018
     location: NNAISENSE
+    title: Differentiable optimization-based modeling for machine learning
   - year: 2018
     location: UC Berkeley
+    title: Differentiable optimization and control
 
 advising:
   - year: 2020 -- 2022

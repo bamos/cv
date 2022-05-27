@@ -5,6 +5,7 @@
 {% for item in items %}
 <tr>
   <td>
+     <em>{{ item.title }}</em>,
     {% if item.url %}
         <a href="{{ item.url }}">{{ item.location }}</a>
     {% else %}

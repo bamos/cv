@@ -1,14 +1,15 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-% \begin{tabular}{p{0.5in}p{5in}}
+\begin{longtable}[t]{p{6.4in}@{\hspace{1em}}r}
   ~< for item in items >~
+    \emph{<< item.title >>},
     ~< if item.url >~
       \href{<< item.url >>}{<< item.location >>}
     ~< else >~
       << item.location >>
   ~< endif >~
-  \hfill << item.year >> \\
+  & << item.year >> \\
   ~< endfor >~
-% \end{tabular}
+\end{longtable}
 ~< endblock body >~
