@@ -344,6 +344,12 @@ repos:
   - repo_url: https://github.com/facebookresearch/theseus
     year: 2022
     desc: Differentiable non-linear optimization library
+  - repo_url: https://github.com/facebookresearch/rcpm
+    year: 2021
+    desc: Riemannian Convex Potential Maps
+  - repo_url: https://github.com/facebookresearch/svg
+    year: 2021
+    desc: Model-based stochastic value gradient
   - repo_url: https://github.com/facebookresearch/mbrl-lib
     year: 2021
     desc: Model-based reinforcement learning library
