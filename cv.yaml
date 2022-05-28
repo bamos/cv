@@ -31,19 +31,19 @@ order:
   - [teaching, Teaching]
   - [skills, Skills]
 
-about: '
-  I am a research scientist at <b>Meta AI (FAIR)</b> in NYC and
-  study foundational topics in <b>machine learning</b> and <b>optimization</b>,
-  recently involving reinforcement learning, control,
-  optimal transport, and geometry.
-  My research is on learning systems that understand and interact with our world
-  and focuses on integrating structural information and domain knowledge into
-  these systems to represent non-trivial reasoning operations.
-  A key theme of my work in this space involves the use of optimization as
-  a differentiable building block in larger architectures that are end-to-end learned.
-  I believe that science should be open and reproducible and
-  freely publish my research code to \href{https://github.com/bamos}{GitHub}.
-<br><br>'
+about: '<p align="justify">
+I am a research scientist at <b>Meta AI (FAIR)</b> in NYC and
+study foundational topics in <b>machine learning</b> and <b>optimization</b>,
+recently involving reinforcement learning, control,
+optimal transport, and geometry.
+My research is on learning systems that understand and interact with our world
+and focuses on integrating structural information and domain knowledge into
+these systems to represent non-trivial reasoning operations.
+A key theme of my work in this space involves the use of optimization as
+a differentiable building block in larger architectures that are end-to-end learned.
+I believe that science should be open and reproducible and
+freely publish my research code to \href{https://github.com/bamos}{GitHub}.
+</p><br><br>'
 
 current_position:
   - place: Meta AI (FAIR)
