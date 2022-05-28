@@ -138,7 +138,7 @@ positions:
     #     {\bf OpenCL} kernels for locality using {\bf LLVM} and {\bf Polly}.
       #- '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
   - place: Snowplow
-    location: Remote
+    # location: Remote
     title: Software Intern
     dates: 2013 -- 2014
     inline_detail: "Scala development"
@@ -394,18 +394,33 @@ repos:
     www: http://cmusatyalab.github.io/openface/
     year: 2015
     desc: Face recognition with deep neural networks
+  - repo_url: https://github.com/bamos/snowglobe
+    year: 2014
+    desc: Haskell-driven, self-hosted web analytics with minimal configuration
   - repo_url: https://github.com/bamos/zsh-history-analysis
     year: 2014
     desc: Analyze and plot your zsh history
+  - repo_url: https://github.com/bamos/beamer-snippets
+    year: 2014
+    desc: Beamer and TikZ snippets
+  - repo_url: https://github.com/bamos/latex-templates
+    year: 2013
+    desc: LaTeX templates.
   - repo_url: https://github.com/cparse/cparse
     year: 2013
     desc: C++ expression parser using Dijkstra's shunting-yard algorithm
   - repo_url: https://github.com/bamos/cv
     year: 2013
     desc: "Source for this CV: Creates LaTeX/Markdown from YAML/BibTeX"
+  - repo_url: https://github.com/bamos/python-scripts
+    year: 2013
+    desc: Short and fun Python scripts
+  - repo_url: https://github.com/bamos/reading-list
+    year: 2013
+    desc: YAML reading list and notes system
   - repo_url: https://github.com/bamos/dotfiles
     year: 2012
-    desc: Linux, mutt, xmonad, vim, emacs, zsh
+    desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
   - year: 2022
@@ -535,10 +550,10 @@ service:
     - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
       year: 2020
       url: https://sites.google.com/view/lmca2020/home
-    - details: CVPR Deep Declarative Workshop Organizer
+    - details: CVPR Deep Declarative Networks Workshop Organizer
       url: https://anucvml.github.io/ddn-cvprw2020/
       year: 2020
-    - details: ECCV Deep Declarative Tutorial Organizer
+    - details: ECCV Deep Declarative Networks Tutorial Organizer
       url: https://anucvml.github.io/ddn-eccvt2020/
       year: 2020
     - details: CMU CSD MS Admissions
@@ -550,7 +565,7 @@ skills:
       Lua, Make, Mathematica, Python, R, Scala
   - title: Frameworks
     details: JAX, NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
-  - title: Tools
+  - title: Toolbox
     details: Linux, emacs, vim, evil, org, mu4e, xmonad, git, tmux, zsh
 
 teaching:

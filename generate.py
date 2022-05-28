@@ -566,6 +566,7 @@ MARKDOWN_CONTEXT = RenderContext(
         # (r'\\href{([^}]*)}{([^}]*)}', r'[\2](\1)'),  # urls
         (r'\\href{([^}]*)}{([^}]*)}', r'<a href="\1" target="_blank">\2</a>'),  # urls
         (r'\{([^}]*)\}', r'\1'),  # Brackets.
+        (r'\$\\varheart\$', r'<i class="fa fas fa-heart"></i>'),  # Heart.
     ]
 )
 
