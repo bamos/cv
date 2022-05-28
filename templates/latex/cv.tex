@@ -1,34 +1,22 @@
 \documentclass[11pt,letter,sans]{moderncv}
-\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
-\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
-\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
-\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
-\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
-\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
-\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
-\DeclareRobustCommand*\cal{\@fontswitch\relax\mathcal}
-\DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
 
 \usepackage{longtable}
 \definecolor{tab_highlight}{HTML}{f0c967}
-\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 \moderncvstyle{<< style >>}
 \moderncvcolor{<< color >>}
 \definecolor{color2}{rgb}{<<color2>>}
 
 \usepackage[top=1in, bottom=1in, left=.7in, right=.7in]{geometry}
-\setlength{\hintscolumnwidth}{3cm}
 
+% Define filled heart symbol
 \DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
 \DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
-\usepackage{mathabx}
 
-\frenchspacing
+\usepackage{mathabx} % For \bigstar
 
 \usepackage{lastpage}
-\cfoot{\addressfont\textcolor{gray}{\hypersetup{allcolors=gray}Page \thepage\ of \pageref{LastPage}}}
+\cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
 
 \AtEndPreamble{\hypersetup{pdftitle={CV -- << name.first >> << name.last >>}}}
 \name{<< name.first >>}{<< name.last >>}
@@ -44,7 +32,6 @@
 \begin{document}
 \hypersetup{allcolors=color1}
 \makecvtitle
-
 \vspace{-1cm}
 
 << body >>

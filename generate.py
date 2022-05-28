@@ -307,8 +307,8 @@ def get_pub_latex(context, config):
 
         return rf'''
 \begin{{minipage}}{{\textwidth}}
-\begin{{tabular}}{{R{{8mm}}p{{1mm}}L{{6.5in}}}}
-{highlight_color} {prefix}{gidx}.\hspace*{{1mm}} && \textit{{{title}}} {links} \\
+\begin{{tabular}}[t]{{p{{8mm}}p{{1mm}}p{{6.5in}}}}
+{highlight_color} \hfill{prefix}{gidx}.\hspace*{{1mm}} && \textit{{{title}}} {links} \\
 {highlight_color} && {author_str} \\
 {highlight_color} && {year_venue} {note_str} \\
 \end{{tabular}} \\[2mm]
