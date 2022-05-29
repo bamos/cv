@@ -127,7 +127,7 @@ def get_pub_md(context, config):
         if include_image:
             return f'''
 <tr id="tr-{pub['ID']}" {tr_style}>
-<td align='right'>
+<td align='right' style='padding-left:0;padding-right:0;'>
 {prefix}{gidx}.
 </td>
 <td>
@@ -307,7 +307,7 @@ def get_pub_latex(context, config):
 
         return rf'''
 \begin{{minipage}}{{\textwidth}}
-\begin{{tabular}}[t]{{p{{8mm}}p{{1mm}}p{{6.5in}}}}
+\begin{{tabular}}[t]{{p{{8mm}}p{{1mm}}>{{\raggedright\arraybackslash}}p{{6.5in}}}}
 {highlight_color} \hfill{prefix}{gidx}.\hspace*{{1mm}} && \textit{{{title}}} {links} \\
 {highlight_color} && {author_str} \\
 {highlight_color} && {year_venue} {note_str} \\
