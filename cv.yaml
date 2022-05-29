@@ -394,6 +394,9 @@ repos:
     www: http://cmusatyalab.github.io/openface/
     year: 2015
     desc: Face recognition with deep neural networks
+  - repo_url: https://github.com/vtopt/qnstop
+    year: 2014
+    desc: Fortran package for Quasi-newton stochastic optimization
   - repo_url: https://github.com/bamos/snowglobe
     year: 2014
     desc: Haskell-driven, self-hosted web analytics with minimal configuration
@@ -405,7 +408,7 @@ repos:
     desc: Beamer and TikZ snippets
   - repo_url: https://github.com/bamos/latex-templates
     year: 2013
-    desc: LaTeX templates.
+    desc: LaTeX templates
   - repo_url: https://github.com/cparse/cparse
     year: 2013
     desc: C++ expression parser using Dijkstra's shunting-yard algorithm
