@@ -1,8 +1,7 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-\vspace*{-3mm}
-\begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{6.2in}@{\hspace{1em}}r}
+\vspace*{-3mm}\begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{6.2in}@{\hspace{1em}}r}
   ~< for item in items >~
     \hfill << loop.index >>. & \emph{<< item.title >>},
     ~< if item.url >~
