@@ -1,6 +1,7 @@
 \documentclass[11pt,letter,sans]{moderncv}
 
 \usepackage{longtable}
+\setlength{\LTleft}{0pt}
 \definecolor{tab_highlight}{HTML}{f0c967}
 
 \moderncvstyle{<< style >>}
@@ -18,7 +19,7 @@
 \usepackage{lastpage}
 \cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
 
-\AtEndPreamble{\hypersetup{pdftitle={CV -- << name.first >> << name.last >>}}}
+\AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}}}
 \name{<< name.first >>}{<< name.last >>}
 \email{<< email >>}
 \homepage{<< url >>}

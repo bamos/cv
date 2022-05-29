@@ -24,7 +24,7 @@ order:
   - [honors, Honors \& Awards]
   - [all_publications, Publications]
   - [NEWPAGE, NEWPAGE]
-  - [repos, Repositories]
+  - [repos, Open Source Repositories]
   - [talks, Invited Talks]
   - [advising, Interns and Students]
   - [service, Professional Activities]
@@ -546,7 +546,7 @@ service:
     - "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
     - "IEEE International Conference on Computer Vision (ICCV)"
     - "IEEE International Conference on Robotics and Automation (ICRA)"
-    - "AAAI Conference on Artificial Intelligence (AAAI)"
+    - "AAAI Conference on Artificial Intelligence"
     - "Optimization Letters"
 
   main:

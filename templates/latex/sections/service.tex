@@ -1,27 +1,22 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
+\vspace*{-3mm}\begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{5.7in}@{\hspace{1em}}r}
   ~< for item in items.main >~
+     \hfill << loop.index >>. &
     ~< if item.url >~
       \href{<< item.url >>}{<< item.details>>}
     ~< else >~
       << item.details >>
     ~< endif >~
-    ~< if item.sub_details >~
-      % \par \vspace{-1mm} {\scriptsize
-      \,\, {\scriptsize
-        \color{gray}{<< item.sub_details >>}
-      } \\[2mm]
-    ~< endif >~
-    ~< if item.year >~
-        \hfill << item.year >> \\
-    ~< else >~
-       \\[2mm]
-    ~< endif >~
-  ~< endfor >~
+    & << item.year >> \\
+~< endfor >~
+\end{longtable}
 
-  \subsection{Reviewing}
-  ~< for item in items.reviewing >~
-  << item >> \\
-  ~< endfor >~
+\subsection{Reviewing}
+\vspace*{-3mm}\begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{6in}}
+~< for item in items.reviewing >~
+\hfill << loop.index >>. & << item >> \\
+~< endfor >~
+\end{longtable}
 ~< endblock body >~
