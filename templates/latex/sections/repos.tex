@@ -1,11 +1,13 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-% \begin{tabular}{p{0.5in}p{5in}}
+\vspace*{-3mm}
+\begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{6.2in}@{\hspace{1em}}r}
   ~< for item in items >~
+    \hfill << loop.index >>. &
     \href{<< item.repo_url >>}{<< item.name >>} | $\bigstar$<< item.stars >> |
-    \emph{<< item.desc >>} \hfill
-    << item.year>> \par
+    \emph{<< item.desc >>} &
+    << item.year>> \\
   ~< endfor >~
-% \end{tabular}
+\end{longtable}
 ~< endblock body >~

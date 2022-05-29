@@ -2,9 +2,9 @@
 
 ~< block body >~
 \vspace*{-3mm}
-\begin{longtable}[t]{p{6.4in}@{\hspace{1em}}r}
+\begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{6.2in}@{\hspace{1em}}r}
   ~< for item in items >~
-    \emph{<< item.title >>},
+    \hfill << loop.index >>. & \emph{<< item.title >>},
     ~< if item.url >~
       \href{<< item.url >>}{<< item.location >>}
     ~< else >~

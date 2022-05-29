@@ -4,6 +4,7 @@
 <table class="table table-hover">
 {% for item in items %}
 <tr>
+  <td align='right' style='padding-right:0;padding-left:0;'>{{ loop.index }}.</td>
   <td>
     <a href="{{ item.repo_url }}">{{ item.name }}</a> |
     <i class="fa fas fa-star"></i> {{ item.stars }} |

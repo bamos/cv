@@ -4,7 +4,8 @@
 <table class="table table-hover">
 {% for item in items %}
 <tr>
-  <td>
+  <td align='right' style='padding-right:0;padding-left:0;'>{{ loop.index }}.</td>
+  <td style='padding-right:0;'>
      <em>{{ item.title }}</em>,
     {% if item.url %}
         <a href="{{ item.url }}">{{ item.location }}</a>
@@ -12,7 +13,7 @@
         {{ item.location }}
     {% endif %}
   </td>
-  <td class='col-md-2' style='text-align:right;'>{{ item.year }}</td>
+  <td class='col-md-2' style='text-align:right; padding-left:0;'>{{ item.year }}</td>
 </tr>
 {% endfor %}
 </table>
