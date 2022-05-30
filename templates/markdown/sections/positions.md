@@ -4,7 +4,6 @@
 <table class="table table-hover">
 {% for i in items %}
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>{{ loop.index }}.</td>
   <td style='padding-right:0;'>
 <p markdown="1" style='margin: 0'>
 {%- if i.title -%}

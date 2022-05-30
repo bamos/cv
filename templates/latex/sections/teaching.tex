@@ -1,13 +1,10 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-\vspace*{-3mm}\begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{6.05in}@{\hspace{1em}}r}
 ~< for item in items >~
-  \hfill << loop.index >>. &
   << item.name >>
   (<< item.short >>),
   << item.position >>
-  & << item.semester>> \\
+  \hfill << item.semester>> \\
 ~< endfor >~
-\end{longtable}
 ~< endblock body >~

@@ -4,7 +4,6 @@
 <table class="table table-hover">
 {% for item in items %}
 <tr>
-  <td align='right' style='padding-right:0;padding-left:0;'>{{ loop.index }}.</td>
   <td style='padding-right:0;'>
     {% if item.url %}
         <a href="{{ item.url }}">{{ item.name }}</a> {{ item.details }}

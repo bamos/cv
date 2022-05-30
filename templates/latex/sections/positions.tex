@@ -1,21 +1,18 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-\vspace*{-3mm}\begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{5.7in}@{\hspace{1em}}r}
-    ~< for item in items >~
-      \hfill << loop.index >>. &
-      ~<- if item.title ->~
-      \textbf{<< item.title >>}, \emph{<< item.place >>}
-      ~<- else ->~
-      \textbf{<< item.place>>}
-      ~<- endif ->~
-      ~<- if item.location ->~
-      , << item.location >>
-      ~< endif >~
-      ~< if item.inline_detail >~
-        {\footnotesize \color{gray} (<< item.inline_detail >>)}
-      ~< endif >~
-      & << item.dates >> \\
-    ~< endfor >~
-\end{longtable}
+~< for item in items >~
+    ~<- if item.title ->~
+    \textbf{<< item.title >>}, \emph{<< item.place >>}
+    ~<- else ->~
+    \textbf{<< item.place>>}
+    ~<- endif ->~
+    ~<- if item.location ->~
+    , << item.location >>
+    ~< endif >~
+    ~< if item.inline_detail >~
+    {\footnotesize \color{gray} (<< item.inline_detail >>)}
+    ~< endif >~
+    \hfill << item.dates >> \par
+~< endfor >~
 ~< endblock body >~
