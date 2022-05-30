@@ -18,6 +18,7 @@ from bs4 import BeautifulSoup
 
 import shelve
 
+from scholarly import scholarly
 import bibtexparser.customization as bc
 from bibtexparser.bparser import BibTexParser
 from datetime import date
@@ -365,7 +366,6 @@ def get_pub_latex(context, config):
 def add_repo_data(context, config):
     repo_htmls = shelve.open('repo_htmls.shelf')
 
-
     for item in config:
         assert 'repo_url' in item
         assert 'year' in item
@@ -387,6 +387,16 @@ def add_repo_data(context, config):
 
         if 'desc' not in item:
             item['desc'] = soup.find('p', class_='f4 mt-3').text.strip()
+
+
+def get_scholar_stats(scholar_id):
+    scholar_stats = shelve.open('scholar_stats.shelf')
+    if 'h_index' not in scholar_stats:
+        author = scholarly.search_author_id(scholar_id)
+        author = scholarly.fill(author, sections=['indices'])
+        scholar_stats['h_index'] = author['hindex']
+        scholar_stats['citations'] = author['citedby']
+    return scholar_stats
 
 
 class RenderContext(object):
@@ -491,6 +501,7 @@ class RenderContext(object):
                 elif self._file_ending == ".md":
                     section_data['content'] = get_pub_md(self, section_content)
                 section_data['scholar_id'] = yaml_data['social']['google_scholar']
+                section_data['scholar_stats'] = get_scholar_stats(yaml_data['social']['google_scholar'])
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             elif section_tag == 'NEWPAGE':
