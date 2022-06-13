@@ -345,6 +345,9 @@ repos:
   - repo_url: https://github.com/facebookresearch/theseus
     year: 2022
     desc: Differentiable non-linear optimization library
+  - repo_url: https://github.com/facebookresearch/meta-ot
+    year: 2022
+    desc: Meta Optimal Transport
   - repo_url: https://github.com/facebookresearch/rcpm
     year: 2021
     desc: Riemannian Convex Potential Maps
