@@ -103,6 +103,32 @@
   }
 }
 
+@misc{amos2022meta,
+  title={Meta Optimal Transport},
+  author={Brandon Amos and Samuel Cohen and Giulia Luise and Ievgen Redko},
+  year={2022},
+  url={https://arxiv.org/abs/2206.05262},
+  codeurl={https://github.com/facebookresearch/meta-ot},
+  _venue={arXiv},
+  abstract={
+    We study the use of amortized optimization to predict optimal
+    transport (OT) maps from the input measures, which
+    we call Meta OT. This helps repeatedly solve similar
+    OT problems between different measures by leveraging
+    the knowledge and information present from past
+    problems to rapidly predict and solve new
+    problems. Otherwise, standard methods ignore the
+    knowledge of the past solutions and suboptimally
+    re-solve each problem from scratch. Meta OT models
+    surpass the standard convergence rates of
+    log-Sinkhorn solvers in the discrete setting and
+    convex potentials in the continuous setting. We
+    improve the computational time of standard OT
+    solvers by multiple orders of magnitude in discrete
+    and continuous transport settings between images,
+    spherical data, and color palettes.
+  }
+}
 
 @misc{amos2021modelbased,
       title={On the model-based stochastic value gradient for continuous reinforcement learning},
