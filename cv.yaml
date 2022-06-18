@@ -368,6 +368,9 @@ repos:
   - repo_url: https://github.com/cvxgrp/cvxpylayers
     year: 2019
     desc: Differentiable Convex Optimization Layers
+  - repo_url: https://github.com/locuslab/lml
+    year: 2019
+    desc: The Limited Multi-Label Projection Layer
   - repo_url: https://github.com/locuslab/mpc.pytorch
     year: 2018
     desc: Differentiable Model-Predictive Control
