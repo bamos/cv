@@ -58,4 +58,4 @@ push: stage
 	git -C $(WEBSITE_DIR) push
 
 clean:
-	rm -rf $(BUILD_DIR)/cv*
+	rm -rf *.db $(BUILD_DIR)/cv*
