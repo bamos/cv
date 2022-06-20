@@ -438,7 +438,8 @@ talks:
     title: End-to-end model learning for control
   - year: 2022
     location: CPAIOR Master Class
-    url: https://sites.google.com/usc.edu/cpaior-2022/master_class
+    url: https://drive.google.com/file/d/1-ySG0Kzs5NMIUvkqZ7z32ZR0dDpN8ZCP/view?usp=sharing
+    # url: https://sites.google.com/usc.edu/cpaior-2022/master_class
     title: Differentiable optimization-based modeling for machine learning
   - year: 2022
     location: ICCOPT
