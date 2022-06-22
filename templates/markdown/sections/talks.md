@@ -1,6 +1,9 @@
 {% extends "section.md" %}
 
 {% block body %}
+Slides for my major presentations are open-sourced at
+[bamos/presentations](https://github.com/bamos/presentations).
+
 <table class="table table-hover">
 {% for item in items %}
 <tr>
