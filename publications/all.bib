@@ -130,6 +130,43 @@
   }
 }
 
+
+@misc{vinitsky2022nocturne,
+  title = {Nocturne: a driving benchmark for multi-agent learning},
+  author = {Vinitsky, Eugene and Lichtlé, Nathan and Yang, Xiaomeng and Amos, Brandon and Foerster, Jakob},
+  year = {2022},
+  url = {https://arxiv.org/abs/2206.09889},
+  _venue={arXiv},
+  codeurl={https://github.com/facebookresearch/nocturne},
+  abstract={
+    We introduce Nocturne, a new 2D driving simulator for
+    investigating multi-agent coordination under partial
+    observability. The focus of Nocturne is to enable
+    research into inference and theory of mind in
+    real-world multi-agent settings without the
+    computational overhead of computer vision and
+    feature extraction from images. Agents in this
+    simulator only observe an obstructed view of the
+    scene, mimicking human visual sensing
+    constraints. Unlike existing benchmarks that are
+    bottlenecked by rendering human-like observations
+    directly using a camera input, Nocturne uses
+    efficient intersection methods to compute a
+    vectorized set of visible features in a C++
+    back-end, allowing the simulator to run at 2000+
+    steps-per-second. Using open-source trajectory and
+    map data, we construct a simulator to load and
+    replay arbitrary trajectories and scenes from
+    real-world driving data. Using this environment, we
+    benchmark reinforcement-learning and
+    imitation-learning agents and demonstrate that the
+    agents are quite far from human-level coordination
+    ability and deviate significantly from the expert
+    trajectories.
+  }
+}
+
+
 @misc{amos2021modelbased,
       title={On the model-based stochastic value gradient for continuous reinforcement learning},
       author={Brandon Amos and Samuel Stanton and Denis Yarats and Andrew Gordon Wilson},
