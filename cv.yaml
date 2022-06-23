@@ -350,6 +350,9 @@ repos:
   - repo_url: https://github.com/facebookresearch/meta-ot
     year: 2022
     desc: Meta Optimal Transport
+  - repo_url: https://github.com/bamos/presentations
+    year: 2022
+    desc: Source for my major presentations with a CC-BY license
   - repo_url: https://github.com/facebookresearch/rcpm
     year: 2021
     desc: Riemannian Convex Potential Maps
