@@ -382,10 +382,13 @@ repos:
     desc: The Limited Multi-Label Projection Layer
   - repo_url: https://github.com/locuslab/mpc.pytorch
     year: 2018
-    desc: Differentiable Model-Predictive Control
+    desc: Differentiable PyTorch Model Predictive Control library
+  - repo_url: https://github.com/locuslab/differentiable-mpc
+    year: 2018
+    desc: Differentiable MPC experiments
   - repo_url: https://github.com/locuslab/icnn
     year: 2017
-    desc: Input Convex Neural Networks
+    desc: Input Convex Neural Network experiments
   - repo_url: https://github.com/locuslab/optnet
     year: 2017
     desc: OptNet experiments
@@ -411,7 +414,7 @@ repos:
     desc: Face recognition with deep neural networks
   - repo_url: https://github.com/vtopt/qnstop
     year: 2014
-    desc: Fortran package for Quasi-newton stochastic optimization
+    desc: Fortran Quasi-newton stochastic optimization library
   - repo_url: https://github.com/bamos/snowglobe
     year: 2014
     desc: Haskell-driven, self-hosted web analytics with minimal configuration
@@ -441,6 +444,10 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
+  - year: 2022
+    location: IJCAI Tutorial
+    url: https://guaguakai.github.io/IJCAI22-differentiable-optimization/
+    title: Differentiable optimization
   - year: 2022
     location: ICML Workshop on Decision Awareness in RL
     url: https://darl-workshop.github.io/
@@ -556,13 +563,15 @@ advising:
 
 service:
   reviewing:
-    - "Neural Information Processing Systems (NeurIPS)"
-    - "International Conference on Machine Learning (ICML)"
-    - "International Conference on Learning Representations (ICLR)"
+    - "AAAI Conference on Artificial Intelligence"
     - "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
     - "IEEE International Conference on Computer Vision (ICCV)"
     - "IEEE International Conference on Robotics and Automation (ICRA)"
-    - "AAAI Conference on Artificial Intelligence"
+    - "International Conference on Learning Representations (ICLR)"
+    - "International Conference on Machine Learning (ICML)"
+    - "Journal of Machine Learning Research (JMLR)"
+    - "Mathematical Programming Computation (MPC)"
+    - "Neural Information Processing Systems (NeurIPS)"
     - "Optimization Letters"
 
   main:
