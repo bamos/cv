@@ -221,6 +221,7 @@ all_publications:
   group_by_year: True
   author_urls:
     'Aaron Lou': 'https://www.aaronlou.com/'
+    'Aditya Grover': 'https://aditya-grover.github.io/'
     'Akshay Agrawal': 'https://www.akshayagrawal.com/'
     'Alex Hauptmann': 'http://www.cs.cmu.edu/~alex/'
     'Alexander Rives': 'https://scholar.google.com/citations?user=vqb78-gAAAAJ'
@@ -254,6 +255,7 @@ all_publications:
     'Guanhang Wu': 'https://scholar.google.com/citations?user=0pF6i38AAAAJ'
     'Hamilton Turner': 'https://scholar.google.com/citations?user=MRKab9cAAAAJ'
     'Han Zhao': 'https://hanzhaoml.github.io/'
+    'Heli Ben-Hamu': 'https://helibenhamu.github.io/'
     'Ilya Kostrikov': 'https://scholar.google.com/citations?user=PTS2AOgAAAAJ'
     'Ievgen Redko': 'https://ievred.github.io'
     'Ivan Dario Jimenez Rodriguez': 'https://ivandariojr.io/'
@@ -262,6 +264,7 @@ all_publications:
     'Jan Harkes': 'https://scholar.google.com/citations?user=jj5tN8sAAAAJ'
     'Jason Liu': 'https://www.linkedin.com/in/jasonliu6/'
     'Joelle Pineau': 'https://www.cs.mcgill.ca/~jpineau/'
+    'Joey Bose': 'https://joeybose.github.io/'
     'John Tyson': 'https://scholar.google.com/citations?user=syETjMMAAAAJ'
     'Joshua Meier': 'https://scholar.google.com/citations?user=2M0OltAAAAAJ'
     'Jules White': 'https://scholar.google.com/citations?user=10HSX90AAAAJ'
@@ -576,6 +579,8 @@ service:
     - "Optimization Letters"
 
   main:
+    - details: AAAI Senior Program Committee
+      year: 2022
     - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
       year: 2020
       url: https://sites.google.com/view/lmca2020/home
