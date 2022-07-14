@@ -582,7 +582,7 @@ service:
 
   main:
     - details: AAAI Senior Program Committee
-      year: 2022
+      year: 2023
     - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
       year: 2020
       url: https://sites.google.com/view/lmca2020/home
