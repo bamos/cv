@@ -50,6 +50,8 @@ reviewing:
   - details: Conference on Machine Learning (ICML)
     year: 2020, 2022 (3)
     sub_details: "(count is 1 unless labelled)"
+  - details: Conference on Neural Information Processing Systems (NeurIPs)
+    year: 2022
   - details: Conference on Learning Representations (ICLR)
     year: 2021* (3), 2022 (3)
     sub_details: "(*Outstanding Reviewer)"
@@ -79,7 +81,7 @@ service:
     year: 2021 -- 2022
     #    url: https://twitter.com/WellBeingInML
   - details: NeurIPs Workshop on Robot Learning Organizor
-    year: 2021
+    year: 2021 -- 2022
     url: http://robot-learning.ml
   - details: Tapia Panel on Student Mental Health Organizor
     year: 2021
@@ -99,6 +101,10 @@ repos:
   - repo_url: https://github.com/facebookresearch/mbrl-lib
     year: 2021
     desc: Model-based reinforcement learning library
+  - repo_url: https://github.com/huggingface/diffusers
+    year: 2022
+    desc: Diffusion models library
+
 
 education:
   - school: University of California, Berkeley
@@ -119,22 +125,6 @@ education:
     dates: 2013 -- 2017
     # dates: May 2014
     overallGPA: 4.0/4.0
-
-research:
-  - place: Facebook AI
-    location: New York City
-    title: Research Scientist
-    dates: May 2019 -- Present
-    area: Machine learning and optimization
-    details:
-      - to be done later
-
-positions:
-  - place: TBD
-    location: New York City
-    title: Research Scientist
-    # dates: May 2019 -- Present
-    dates: TBD -- Present
 
 industry:
   - place: HuggingFace
@@ -198,6 +188,10 @@ teaching:
 #   group_by_year: False
 
 talks:
+  - year: July 2022
+    location: Lead The Future
+#    details: "(\\href{}{Slides Available})"
+    title: Synthesizing Robotic Controllers with Model-based Reinforcement Learning
   - year: April 2022
     location: University of Pennsylvania -- Perception, Action, and Learning Group
     details: "(\\href{https://youtu.be/HxbeQI7hfo4}{Recording Available}, \\href{https://docs.google.com/presentation/d/1cxpA8gGNErShrf4Bz04wbgY_rao3pLgd/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
