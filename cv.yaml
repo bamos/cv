@@ -457,7 +457,7 @@ talks:
   - year: 2022
     location: ICML Workshop on Decision Awareness in RL
     url: https://darl-workshop.github.io/
-    title: Differentiable optimization for control and reinforcement learning
+    title: Differentiable optimization for control and RL
   - year: 2022
     location: CPAIOR Master Class
     url: https://sites.google.com/usc.edu/cpaior-2022/master_class
