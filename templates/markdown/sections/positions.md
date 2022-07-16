@@ -5,6 +5,7 @@
 {% for i in items %}
 <tr>
   <td style='padding-right:0;'>
+<span class='cvdate'>{{ i.dates }}</span>
 <p markdown="1" style='margin: 0'>
 {%- if i.title -%}
 <strong>{{ i.title }}</strong>, <em>{{ i.place }}</em>
@@ -21,7 +22,6 @@
 {%- endif -%}
 </p>
   </td>
-  <td class='col-md-2' style='text-align:right; padding-left:0;'>{{ i.dates }}</td>
 </tr>
 {% endfor %}
 </table>

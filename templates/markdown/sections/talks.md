@@ -9,6 +9,7 @@ Slides for my major presentations are open-sourced with a CC-BY license at
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>{{ loop.index }}.</td>
   <td style='padding-right:0;'>
+    <span class='cvdate'>{{ item.year }}</span>
      <em>{{ item.title }}</em>,
     {% if item.url %}
         <a href="{{ item.url }}">{{ item.location }}</a>
@@ -16,7 +17,6 @@ Slides for my major presentations are open-sourced with a CC-BY license at
         {{ item.location }}
     {% endif %}
   </td>
-  <td class='col-md-2' style='text-align:right; padding-left:0;'>{{ item.year }}</td>
 </tr>
 {% endfor %}
 </table>
