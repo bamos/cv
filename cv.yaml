@@ -298,6 +298,7 @@ all_publications:
     'Phu Mon Htut': 'https://phumonhtut.me/'
     'Pieter Simoens': 'https://www.ugent.be/ea/idlab/en/members/pieter-simoens.htm'
     'Priya L. Donti': 'https://priyadonti.com/'
+    'Ricky Chen': 'https://scholar.google.com/citations?user=7MxQd6UAAAAJ'
     'Ricky T. Q. Chen': 'https://scholar.google.com/citations?user=7MxQd6UAAAAJ'
     'Rob Fergus': 'https://cs.nyu.edu/~fergus/pmwiki/pmwiki.php'
     'Robert Parker': 'https://ieeexplore.ieee.org/author/37085729541'
@@ -348,6 +349,15 @@ all_publications:
     'Yannik Pitcan': 'https://scholar.google.com/citations?user=jmM-JlIAAAAJ'
     'Jack Richter-Powell': 'https://scholar.google.com/citations?hl=es&user=L78pVMMAAAAJ'
     'Jonathan Lorraine': 'https://scholar.google.com/citations?user=Hzf8bu0AAAAJ'
+    'Taosha Fan': 'https://scholar.google.com/citations?user=3PJeg1wAAAAJ'
+    'Maurizio Monge': 'https://scholar.google.com/citations?user=gpgb4LgAAAAJ'
+    'Paloma Sodhi': 'https://psodhi.github.io/'
+    'Joseph Ortiz': 'https://joeaortiz.github.io/'
+    'Daniel DeTone': 'https://danieldetone.com/'
+    'Austin Wang': 'https://scholar.google.com/citations?user=keDqjK0AAAAJ'
+    'Stuart Anderson': 'https://scholar.google.com/citations?user=8orqBsYAAAAJ'
+    'Jing Dong': 'https://www.linkedin.com/in/jing-dong-24b26ab3/'
+    'Mustafa Mukadam': 'https://www.mustafamukadam.com/'
 
 repos:
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
