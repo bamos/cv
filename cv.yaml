@@ -465,7 +465,7 @@ talks:
     title: Differentiable optimization-based modeling for machine learning
   - year: 2022
     location: ICCOPT
-    title: Amortized optimization and learning to optimize
+    title: Tutorial on amortized optimization
   - year: 2022
     location: SIAM MDS Minisymposium
     title: Modeling and learning paradigms for learning to optimize
