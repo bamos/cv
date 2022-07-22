@@ -51,7 +51,7 @@ reviewing:
     year: 2020, 2022 (3)
     sub_details: "(count is 1 unless labelled)"
   - details: Conference on Neural Information Processing Systems (NeurIPs)
-    year: 2022
+    year: 2022 (2)
   - details: Conference on Learning Representations (ICLR)
     year: 2021* (3), 2022 (3)
     sub_details: "(*Outstanding Reviewer)"
@@ -98,12 +98,15 @@ repos:
 #  - repo_url: https://github.com/facebookresearch/theseus
 #    year: 2022
 #    desc: Differentiable non-linear optimization library
-  - repo_url: https://github.com/facebookresearch/mbrl-lib
-    year: 2021
-    desc: Model-based reinforcement learning library
   - repo_url: https://github.com/huggingface/diffusers
     year: 2022
     desc: Diffusion models library
+  - repo_url: https://github.com/facebookresearch/mbrl-lib
+    year: 2021
+    desc: Model-based reinforcement learning library
+  - repo_url: https://github.com/natolambert/dynamicslearn
+    year: 2020
+    desc: Model-based RL for mixed sim. & real
 
 
 education:
