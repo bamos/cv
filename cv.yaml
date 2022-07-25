@@ -106,7 +106,7 @@ repos:
     desc: Model-based reinforcement learning library
   - repo_url: https://github.com/natolambert/dynamicslearn
     year: 2020
-    desc: Model-based RL for mixed sim. & real
+    desc: Model-based RL for mixed sim. and real
 
 
 education:
@@ -192,41 +192,46 @@ teaching:
 
 talks:
   - year: July 2022
+    location: ICML Workshop on Responsible Decision Making in Dynamic Environments
+    details: "(\\href{https://docs.google.com/presentation/d/1Id6nDc6Q1kIPeB0VI0FqmJZcrwCY5p6rY-az50h2ArI/edit?usp=sharing}{Slides})"
+    url: https://responsibledecisionmaking.github.io/schedule/
+    title: (Contributed Talk) Reward Reports for Reinforcement Learning
+  - year: July 2022
     location: Lead The Future
 #    details: "(\\href{}{Slides Available})"
-    title: Synthesizing Robotic Controllers with Model-based Reinforcement Learning
+    title: (Invited Seminar) Synthesizing Robotic Controllers with Model-based Reinforcement Learning
   - year: April 2022
     location: University of Pennsylvania -- Perception, Action, and Learning Group
     details: "(\\href{https://youtu.be/HxbeQI7hfo4}{Recording Available}, \\href{https://docs.google.com/presentation/d/1cxpA8gGNErShrf4Bz04wbgY_rao3pLgd/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
-    title: Planning through Exploration and Exploitation in Model-based Reinforcement Learning
+    title: (Invited Seminar) Planning through Exploration and Exploitation in Model-based Reinforcement Learning
     # url: 
   - year: March 2022
     location: Microsoft Research
     details: "(\\href{https://docs.google.com/presentation/d/1_8tNoTyn0Oc9KZnATmRwM3TVEXavU7bq/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
-    title: Legible Reinforcement Learning via Dynamics Models
+    title: (Job Talk) Legible Reinforcement Learning via Dynamics Models
   - year: February 2022
     location: DeepMind Robotics All Hands
 #    details: "(\\href{https://docs.google.com/presentation/d/1uQKXAFAFzsS_Ucz-0hhPXyfruzETR987/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides Available})"
-    title: The Challenges of Exploration for Offline Reinforcement Learning
+    title: (Invited Seminar) The Challenges of Exploration for Offline Reinforcement Learning
   - year: February 2022
     location: Amazon Robotics \& AI
     details: "(\\href{https://docs.google.com/presentation/d/1uQKXAFAFzsS_Ucz-0hhPXyfruzETR987/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
 #    url:
-    title: Synergy of Prediction and Control in Model-based Reinforcement Learning
+    title: (Job Talk) Synergy of Prediction and Control in Model-based Reinforcement Learning
   - year: December 2021
     location: Cruise AI
 #    details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Talk available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
-    title: Control-oriented Predictions in Model-based Reinforcement Learning
+    title: (Job Talk) Control-oriented Predictions in Model-based Reinforcement Learning
   - year: March 2021
     location: Cornell Robotics Seminar
     details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Recording Available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
     url: https://robotics.cornell.edu/category/seminars/spring-2021/
-    title: Improving Model Predictive Control in Model-based Reinforcement Learning
+    title: (Invited Seminar) Improving Model Predictive Control in Model-based Reinforcement Learning
   - year: April 2020
     location: UC Berkeley Semiautonomous Seminar
     details: "(\\href{https://youtu.be/Z4EpSWfU48E}{Recording Available}, \\href{https://docs.google.com/presentation/d/1Q0QYHAyPa_dO8iUsOyDcudvDAwhl24Rc/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
     url: https://sites.google.com/berkeley.edu/semiautonomousseminar/spring-2020
-    title: Model Learning for Low-level Control in Robotics
+    title: (Invited Seminar) Model Learning for Low-level Control in Robotics
   - year: May 2019
     location: UC Berkeley Semiautonomous Seminar
     url: https://sites.google.com/view/cs-159-spring-2020/lectures
