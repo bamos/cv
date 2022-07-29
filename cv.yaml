@@ -588,6 +588,10 @@ service:
     - "Journal of Machine Learning Research (JMLR)"
     - "Mathematical Programming Computation (MPC)"
     - "Neural Information Processing Systems (NeurIPS)"
+    - "Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks Track"
+    - "Neural Information Processing Systems (NeurIPS) OPT Workshop"
+    - "Neural Information Processing Systems (NeurIPS) DiffCVGP Workshop"
+    - "Neural Information Processing Systems (NeurIPS) Deep RL Workshop"
     - "Optimization Letters"
 
   main:
