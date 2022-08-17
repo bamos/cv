@@ -477,8 +477,8 @@ talks:
     location: ICCOPT
     title: Tutorial on amortized optimization
   - year: 2022
-    location: SIAM MDS Minisymposium
-    title: Modeling and learning paradigms for learning to optimize
+    location: Gridmatic
+    title: Differentiable optimization for control and RL
   - year: 2021
     location: Columbia University
     title: Learning for control with differentiable optimization and ODEs
