@@ -580,7 +580,9 @@ advising:
 service:
   reviewing:
     - "AAAI Conference on Artificial Intelligence"
+    - "American Controls Conference (ACC)"
     - "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+    - "IEEE Control Systems Letters (L-CSS)"
     - "IEEE International Conference on Computer Vision (ICCV)"
     - "IEEE International Conference on Robotics and Automation (ICRA)"
     - "International Conference on Learning Representations (ICLR)"
