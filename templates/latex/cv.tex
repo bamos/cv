@@ -19,7 +19,7 @@
 \usepackage{lastpage}
 \cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
 
-\AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}}}
+\AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}, allcolors=color1, colorlinks}}
 \name{<< name.first >>}{<< name.last >>}
 \email{<< email >>}
 \homepage{<< url >>}
@@ -28,11 +28,9 @@
 \social[github]{<<social.github>>}
 \extrainfo{\small Last updated on \today}
 
-\AtBeginDocument{\hypersetup{colorlinks}}
 \frenchspacing
 
 \begin{document}
-\hypersetup{allcolors=color1}
 \makecvtitle
 \vspace{-1cm}
 
