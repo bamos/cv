@@ -66,7 +66,7 @@ reviewing:
   - details: Conference on Decision and Control (CDC)
     year: 2021
   - details: Robotics and Automation Letters (RA-L)
-    year: 2019, 2020
+    year: 2019, 2020, 2022
   - details: Transactions on Cybernetics
     year: 2019, 2020
 
@@ -231,7 +231,7 @@ talks:
     location: UC Berkeley Semiautonomous Seminar
     details: "(\\href{https://youtu.be/Z4EpSWfU48E}{Recording Available}, \\href{https://docs.google.com/presentation/d/1Q0QYHAyPa_dO8iUsOyDcudvDAwhl24Rc/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
     url: https://sites.google.com/berkeley.edu/semiautonomousseminar/spring-2020
-    title: (Invited Seminar) Model Learning for Low-level Control in Robotics
+    title: (Invited Seminar) Model Learning for Low-level Control in Robotics 
   - year: May 2019
     location: UC Berkeley Semiautonomous Seminar
     url: https://sites.google.com/view/cs-159-spring-2020/lectures
