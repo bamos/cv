@@ -608,7 +608,7 @@ def main():
     yaml_data = {}
     for yaml_file in args.yamls:
         with open(yaml_file) as f:
-            yaml_data.update(yaml.load(f))
+            yaml_data.update(yaml.safe_load(f))
 
     if args.latex or args.markdown:
         if args.latex:

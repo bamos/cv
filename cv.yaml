@@ -24,8 +24,10 @@ order:
   - [honors, Honors \& Awards]
   - [all_publications, Publications]
   - [repos, Open Source Repositories]
+  - [NEWPAGE, NONE]
   - [talks, Invited Talks]
   - [advising, Interns and Students]
+  # - [NEWPAGE, NONE]
   - [service, Professional Activities]
   - [teaching, Teaching]
   - [skills, Skills]
@@ -198,6 +200,8 @@ positions:
       #   and hard links.
 
 honors:
+  - title: NeurIPS Outstanding Reviewer
+    year: 2022
   - title: ICML Outstanding Reviewer
     year: 2022
   - title: ICLR Outstanding Reviewer
@@ -461,7 +465,7 @@ repos:
 
 talks:
   - year: 2022
-    location: Colorado School of Mines AMS Colloquium
+    location: Colorado Mines AMS Colloquium
     title: Differentiable optimization-based modeling for machine learning
   - year: 2022
     location: IJCAI Tutorial
