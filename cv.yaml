@@ -461,6 +461,9 @@ repos:
 
 talks:
   - year: 2022
+    location: Colorado School of Mines AMS Colloquium
+    title: Differentiable optimization-based modeling for machine learning
+  - year: 2022
     location: IJCAI Tutorial
     url: https://guaguakai.github.io/IJCAI22-differentiable-optimization/
     title: Differentiable optimization
@@ -548,18 +551,34 @@ talks:
     title: Differentiable optimization and control
 
 advising:
-  - year: 2020 -- 2022
+  - year: 2022 -- present
+    name: Aram-Alexandre Pooladian
+    details: "(visiting FAIR from NYU)"
+    url: http://arampooladian.com/
+  - year: 2022 -- present
+    name: Carles Domingo-Enrich
+    details: "(visiting FAIR from NYU)"
+    url: https://cims.nyu.edu/~cd2754/
+  - year: 2022 -- present
+    name: Sanae Lotfi
+    details: "(visiting FAIR from NYU)"
+    url: https://sanaelotfi.github.io/
+  - year: 2022 -- present
+    name: Dishank Bansal
+    details: "(AI resident at FAIR)"
+    url: https://dishank-b.github.io
+  - year: 2020 -- present
     name: Aaron Lou
     details: "(visiting FAIR from Cornell and Stanford)"
     url: https://www.aaronlou.com/
+  - year: 2021 -- present
+    name: Arnaud Fickinger
+    details: (visiting FAIR from Berkeley)
+    url: https://www.linkedin.com/in/arnaudfickinger/
   - year: 2021 -- 2022
     name: Eugene Vinitsky
     details: "(visiting FAIR from Berkeley, now incoming professor at NYU)"
     url: https://eugenevinitsky.github.io/
-  - year: 2021 -- 2022
-    name: Arnaud Fickinger
-    details: (visiting FAIR from Berkeley)
-    url: https://www.linkedin.com/in/arnaudfickinger/
   - year: 2021 -- 2022
     name: Samuel Cohen
     details: "(visiting FAIR from UCL, now CEO at FairGen)"

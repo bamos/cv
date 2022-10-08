@@ -107,7 +107,7 @@
   journal={arXiv preprint arXiv:2203.06832},
   year={2022},
   url={https://arxiv.org/abs/2203.06832},
-  _venue={arXiv},
+  _venue={NeurIPS},
   abstract={
     Mapping between discrete and continuous distributions is a difficult
     task and many have had to resort to approximate or
@@ -140,40 +140,43 @@
   }
 }
 
-@misc{amos2022meta,
-  title={Meta Optimal Transport},
-  author={Brandon Amos and Samuel Cohen and Giulia Luise and Ievgen Redko},
-  year={2022},
-  url={https://arxiv.org/abs/2206.05262},
-  codeurl={https://github.com/facebookresearch/meta-ot},
-  _venue={arXiv},
+@misc{pineda2022theseus,
+  url = {https://arxiv.org/abs/2207.09442},
+  author = {Pineda, Luis and Fan, Taosha and Monge, Maurizio and Venkataraman, Shobha and Sodhi, Paloma and Chen, Ricky and Ortiz, Joseph and DeTone, Daniel and Wang, Austin and Anderson, Stuart and Dong, Jing and Amos, Brandon and Mukadam, Mustafa},
+  title = {Theseus: A Library for Differentiable Nonlinear Optimization},
+  _venue = {NeurIPS},
+  codeurl={https://github.com/facebookresearch/theseus},
+  year = 2022,
   abstract={
-    We study the use of amortized optimization to predict optimal
-    transport (OT) maps from the input measures, which
-    we call Meta OT. This helps repeatedly solve similar
-    OT problems between different measures by leveraging
-    the knowledge and information present from past
-    problems to rapidly predict and solve new
-    problems. Otherwise, standard methods ignore the
-    knowledge of the past solutions and suboptimally
-    re-solve each problem from scratch. Meta OT models
-    surpass the standard convergence rates of
-    log-Sinkhorn solvers in the discrete setting and
-    convex potentials in the continuous setting. We
-    improve the computational time of standard OT
-    solvers by multiple orders of magnitude in discrete
-    and continuous transport settings between images,
-    spherical data, and color palettes.
+    We present Theseus, an efficient application-agnostic open source
+    library for differentiable nonlinear least squares
+    (DNLS) optimization built on PyTorch, providing a
+    common framework for end-to-end structured learning
+    in robotics and vision. Existing DNLS
+    implementations are application specific and do not
+    always incorporate many ingredients important for
+    efficiency. Theseus is application-agnostic, as we
+    illustrate with several example applications that
+    are built using the same underlying differentiable
+    components, such as second-order optimizers,
+    standard costs functions, and Lie groups. For
+    efficiency, Theseus incorporates support for sparse
+    solvers, automatic vectorization, batching, GPU
+    acceleration, and gradient computation with implicit
+    differentiation and direct loss minimization. We do
+    extensive performance evaluation in a set of
+    applications, demonstrating significant efficiency
+    gains and better scalability when these features are
+    incorporated.
   }
 }
-
 
 @misc{vinitsky2022nocturne,
   title = {Nocturne: a driving benchmark for multi-agent learning},
   author = {Vinitsky, Eugene and Lichtlé, Nathan and Yang, Xiaomeng and Amos, Brandon and Foerster, Jakob},
   year = {2022},
   url = {https://arxiv.org/abs/2206.09889},
-  _venue={arXiv},
+  _venue={NeurIPS Datasets and Benchmarks Track},
   codeurl={https://github.com/facebookresearch/nocturne},
   abstract={
     We introduce Nocturne, a new 2D driving simulator for
@@ -203,34 +206,32 @@
   }
 }
 
-@misc{pineda2022theseus,
-  url = {https://arxiv.org/abs/2207.09442},
-  author = {Pineda, Luis and Fan, Taosha and Monge, Maurizio and Venkataraman, Shobha and Sodhi, Paloma and Chen, Ricky and Ortiz, Joseph and DeTone, Daniel and Wang, Austin and Anderson, Stuart and Dong, Jing and Amos, Brandon and Mukadam, Mustafa},
-  title = {Theseus: A Library for Differentiable Nonlinear Optimization},
-  _venue = {arXiv},
-  codeurl={https://github.com/facebookresearch/theseus},
-  year = {2022},
+
+
+@misc{amos2022meta,
+  title={Meta Optimal Transport},
+  author={Brandon Amos and Samuel Cohen and Giulia Luise and Ievgen Redko},
+  year={2022},
+  url={https://arxiv.org/abs/2206.05262},
+  codeurl={https://github.com/facebookresearch/meta-ot},
+  _venue={arXiv},
   abstract={
-    We present Theseus, an efficient application-agnostic open source
-    library for differentiable nonlinear least squares
-    (DNLS) optimization built on PyTorch, providing a
-    common framework for end-to-end structured learning
-    in robotics and vision. Existing DNLS
-    implementations are application specific and do not
-    always incorporate many ingredients important for
-    efficiency. Theseus is application-agnostic, as we
-    illustrate with several example applications that
-    are built using the same underlying differentiable
-    components, such as second-order optimizers,
-    standard costs functions, and Lie groups. For
-    efficiency, Theseus incorporates support for sparse
-    solvers, automatic vectorization, batching, GPU
-    acceleration, and gradient computation with implicit
-    differentiation and direct loss minimization. We do
-    extensive performance evaluation in a set of
-    applications, demonstrating significant efficiency
-    gains and better scalability when these features are
-    incorporated.
+    We study the use of amortized optimization to predict optimal
+    transport (OT) maps from the input measures, which
+    we call Meta OT. This helps repeatedly solve similar
+    OT problems between different measures by leveraging
+    the knowledge and information present from past
+    problems to rapidly predict and solve new
+    problems. Otherwise, standard methods ignore the
+    knowledge of the past solutions and suboptimally
+    re-solve each problem from scratch. Meta OT models
+    surpass the standard convergence rates of
+    log-Sinkhorn solvers in the discrete setting and
+    convex potentials in the continuous setting. We
+    improve the computational time of standard OT
+    solvers by multiple orders of magnitude in discrete
+    and continuous transport settings between images,
+    spherical data, and color palettes.
   }
 }
 
