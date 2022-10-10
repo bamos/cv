@@ -7,7 +7,11 @@
   <td>
   <div style='float: right'>{{ award.year }}</div>
   <div>
-    {{ award.title }}
+    {% if award.url %}
+        <a href="{{award.url}}">{{ award.title }}</a>
+    {% else %}
+        {{ award.title }}
+    {% endif %}
     {% if award.descr %}
     <br><p style="color:grey;font-size:1.2rem">{{ award.descr }}</p>
     {% endif %}

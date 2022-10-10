@@ -200,12 +200,15 @@ positions:
       #   and hard links.
 
 honors:
-  - title: NeurIPS Outstanding Reviewer
+  - title: NeurIPS Top Reviewer
     year: 2022
+    url: https://neurips.cc/Conferences/2022/ProgramCommittee
   - title: ICML Outstanding Reviewer
     year: 2022
+    url: https://icml.cc/Conferences/2022/Reviewers
   - title: ICLR Outstanding Reviewer
     year: 2019
+    url: https://iclr.cc/Conferences/2019/Awards
   - title: NSF Graduate Research Fellowship
     year: 2016 -- 2019
   - title: Nine undergraduate scholarships

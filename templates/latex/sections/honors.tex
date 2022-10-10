@@ -3,7 +3,12 @@
 ~< block body >~
 % \begin{itemize}
 ~< for award in items >~
-  << award.title >> \hfill << award['year'] >>
+  ~< if award.url >~
+    \href{<<award.url>>}{<<award.title>>}
+  ~< else >~
+    << award.title >>
+  ~< endif >~
+  \hfill << award['year'] >>
   ~< if award.descr >~
     \\ {\scriptsize \color{gray}{<< award.descr >>} \par}
   ~< else >~
