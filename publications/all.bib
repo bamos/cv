@@ -235,6 +235,45 @@
   }
 }
 
+@misc{zheng2022semi,
+  title = {Semi-Supervised Offline Reinforcement Learning with Action-Free Trajectories},
+  author = {Zheng, Qinqing and Henaff, Mikael and Amos, Brandon and Grover, Aditya},
+  year = {2022},
+  url = {https://arxiv.org/abs/2210.06518},
+  _venue={arXiv},
+  abstract={
+Natural agents can effectively learn from multiple data sources that
+differ in size, quality, and types of
+measurements. We study this heterogeneity in the
+context of offline reinforcement learning (RL) by
+introducing a new, practically motivated
+semi-supervised setting. Here, an agent has access
+to two sets of trajectories: labelled trajectories
+containing state, action, reward triplets at every
+timestep, along with unlabelled trajectories that
+contain only state and reward information. For this
+setting, we develop a simple meta-algorithmic
+pipeline that learns an inverse-dynamics model on
+the labelled data to obtain proxy-labels for the
+unlabelled data, followed by the use of any offline
+RL algorithm on the true and proxy-labelled
+trajectories. Empirically, we find this simple
+pipeline to be highly successful -- on several D4RL
+benchmarks, certain offline RL
+algorithms can match the performance of variants
+trained on a fully labeled dataset even when we
+label only 10\% trajectories from the low return
+regime. Finally, we perform a large-scale controlled
+empirical study investigating the interplay of
+data-centric properties of the labelled and
+unlabelled datasets, with algorithmic design choices
+(e.g., inverse dynamics, offline RL algorithm) to
+identify general trends and best practices for
+training RL agents on semi-supervised offline
+datasets.
+  }
+}
+
 
 
 @misc{amos2021modelbased,

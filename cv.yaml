@@ -365,6 +365,7 @@ all_publications:
     'Stuart Anderson': 'https://scholar.google.com/citations?user=8orqBsYAAAAJ'
     'Jing Dong': 'https://www.linkedin.com/in/jing-dong-24b26ab3/'
     'Mustafa Mukadam': 'https://www.mustafamukadam.com/'
+    'Qinqing Zheng': 'https://enosair.github.io/'
 
 repos:
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
