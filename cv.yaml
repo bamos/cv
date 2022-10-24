@@ -24,13 +24,12 @@ order:
   - [honors, Honors \& Awards]
   - [all_publications, Publications]
   - [repos, Open Source Repositories]
-  - [NEWPAGE, NONE]
   - [talks, Invited Talks]
   - [advising, Interns and Students]
-  # - [NEWPAGE, NONE]
   - [service, Professional Activities]
   - [teaching, Teaching]
   - [skills, Skills]
+  # - [NEWPAGE, NONE]
 
 about: |
   <p align='justify'>
@@ -377,6 +376,9 @@ repos:
   - repo_url: https://github.com/facebookresearch/meta-ot
     year: 2022
     desc: Meta Optimal Transport
+  - repo_url: https://github.com/facebookresearch/w2ot
+    year: 2022
+    desc: Wasserstein-2 optimal transport in JAX
   - repo_url: https://github.com/bamos/presentations
     year: 2022
     desc: Source for my major presentations with a CC-BY license
@@ -468,6 +470,12 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
+  - year: 2022
+    location: NYU
+    title: "Theseus: A library for differentiable nonlinear optimization"
+  - year: 2022
+    location: University of Zurich
+    title: "Theseus: A library for differentiable nonlinear optimization"
   - year: 2022
     location: Colorado Mines AMS Colloquium
     title: Differentiable optimization-based modeling for machine learning
