@@ -395,7 +395,7 @@ def get_scholar_stats(scholar_id):
         author = scholarly.search_author_id(scholar_id)
         author = scholarly.fill(author, sections=['indices'])
         scholar_stats['h_index'] = author['hindex']
-        scholar_stats['citations'] = author['citedby']
+        scholar_stats['citations'] = '{:.1f}k'.format(author['citedby'] / 1000)
     return scholar_stats
 
 
