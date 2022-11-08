@@ -1,6 +1,8 @@
 {% extends "section.md" %}
 
 {% block body %}
+{{ total_stars }} GitHub stars across all repositories.
+
 <table class="table table-hover">
 {% for item in items %}
 <tr>

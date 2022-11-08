@@ -366,6 +366,7 @@ def get_pub_latex(context, config):
 def add_repo_data(context, config):
     repo_htmls = shelve.open('repo_htmls.shelf')
 
+    total_stars = 0
     for item in config:
         assert 'repo_url' in item
         assert 'year' in item
@@ -383,10 +384,19 @@ def add_repo_data(context, config):
             repo_htmls[short_name] = r.content
         soup = BeautifulSoup(repo_htmls[short_name], 'html.parser')
 
-        item['stars'] = soup.find(class_="js-social-count").text.strip()
+        star_str = soup.find(class_="js-social-count").text.strip()
+        item['stars'] = star_str
+
+        if star_str.endswith('k'):
+            star_int = int(float(star_str[:-1])*1000)
+        else:
+            star_int = int(star_str)
+        total_stars += star_int
 
         if 'desc' not in item:
             item['desc'] = soup.find('p', class_='f4 mt-3').text.strip()
+
+    return '{:.1f}k'.format(total_stars/1000)
 
 
 def get_scholar_stats(scholar_id):
@@ -478,8 +488,9 @@ class RenderContext(object):
                 section_template_name = os.path.join(self.SECTIONS_DIR, 'news.md')
                 section_data['items'] = section_content
             elif section_tag == 'repos':
-                add_repo_data(self, section_content)
+                total_stars = add_repo_data(self, section_content)
                 section_data['items'] = section_content
+                section_data['total_stars'] = total_stars
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             elif section_tag in ['current_position']:
