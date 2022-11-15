@@ -473,6 +473,22 @@ repos:
 
 talks:
   - year: 2022
+    location: Microsoft Research
+    title: "Learning with differentiable and amortized optimization"
+  - year: 2022
+    location: Flatiron Workshop
+    title: "Amortized optimization for computing optimal transport maps"
+    url: https://sites.google.com/view/sampling-transport-diffusions/home
+  - year: 2022
+    location: Cornell AI Seminar
+    title: "Learning with differentiable and amortized optimization"
+  - year: 2022
+    location: Cornell Tech Seminar
+    title: "Learning with differentiable and amortized optimization"
+  - year: 2022
+    location: Argonne National Laboratory
+    title: "Learning with differentiable and amortized optimization"
+  - year: 2022
     location: NYU
     title: "Theseus: A library for differentiable nonlinear optimization"
   - year: 2022
