@@ -71,6 +71,9 @@ reviewing:
     year: 2019, 2020
 
 service:
+  - details: Farama Foundation Technical Advisor
+    year: 2022 -- cont.
+    url: https://farama.org/
   - details: Member of Well-Being in Machine Learning
     year: 2021 -- cont.
     url: https://twitter.com/WellBeingInML
@@ -95,9 +98,9 @@ service:
     year: 2017
 
 repos:
-#  - repo_url: https://github.com/facebookresearch/theseus
-#    year: 2022
-#    desc: Differentiable non-linear optimization library
+  - repo_url: https://github.com/huggingface/simulate
+    year: 2022
+    desc: Tool for building embodied AI environments
   - repo_url: https://github.com/huggingface/diffusers
     year: 2022
     desc: Diffusion models library
@@ -193,7 +196,7 @@ teaching:
 talks:
   - year: July 2022
     location: ICML Workshop on Responsible Decision Making in Dynamic Environments
-    details: "(\\href{https://docs.google.com/presentation/d/1Id6nDc6Q1kIPeB0VI0FqmJZcrwCY5p6rY-az50h2ArI/edit?usp=sharing}{Slides})"
+    details: "(\\href{https://slideslive.com/38988545/reward-reports-for-reinforcement-learning}{Recording Available}, \\href{https://docs.google.com/presentation/d/1Id6nDc6Q1kIPeB0VI0FqmJZcrwCY5p6rY-az50h2ArI/edit?usp=sharing}{Slides})"
     url: https://responsibledecisionmaking.github.io/schedule/
     title: (Contributed Talk) Reward Reports for Reinforcement Learning
   - year: July 2022
