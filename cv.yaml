@@ -365,6 +365,8 @@ all_publications:
     'Jing Dong': 'https://www.linkedin.com/in/jing-dong-24b26ab3/'
     'Mustafa Mukadam': 'https://www.mustafamukadam.com/'
     'Qinqing Zheng': 'https://enosair.github.io/'
+    'Rajiv Sambharya': 'https://rajivsambharya.github.io/'
+    'Bartolomeo Stellato': 'https://stellato.io/'
 
 repos:
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
