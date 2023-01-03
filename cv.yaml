@@ -59,7 +59,7 @@ education:
   - school: Carnegie Mellon University
     location: Pittsburgh, PA
     degree: Ph.D. in Computer Science
-    dates: 2014 -- 2019
+    dates: 2014 -- 2019 # May 19, 2019
     overallGPA: 0.00/0.00
     details:
       - "Thesis: \\textit{\\href{https://github.com/bamos/thesis}{Differentiable Optimization-Based Modeling for Machine Learning}}"
@@ -238,7 +238,10 @@ all_publications:
     'Andrew Gordon Wilson': 'https://cims.nyu.edu/~andrewgw'
     'Anselm Paulus': 'https://scholar.google.com/citations?user=njZL5CQAAAAJ'
     'Anupam Das': 'https://anupamdas.org/'
+    'Arnaud Fickinger': 'https://scholar.google.com/citations?user=bBFN_qwAAAAJ'
     'Artem Molchanov': 'https://amolchanov86.github.io/'
+    'Austin Wang': 'https://scholar.google.com/citations?user=keDqjK0AAAAJ'
+    'Bartolomeo Stellato': 'https://stellato.io/'
     'Bartosz Ludwiczuk': 'https://www.linkedin.com/in/bartosz-ludwiczuk-a677a760'
     'Benjamin Gilbert': 'https://github.com/bgilbert'
     'Brent Castle': 'https://dblp.org/pid/142/1258.html'
@@ -248,6 +251,7 @@ all_publications:
     'Cihan Oguz': 'https://scholar.google.com/citations?user=Z4534DUAAAAJ'
     'Cliff Shaffer': 'https://people.cs.vt.edu/shaffer/'
     'Colmenarejo': 'https://scholar.google.com/citations?user=0Dkf68EAAAAJ'
+    'Daniel DeTone': 'https://danieldetone.com/'
     'Daniel Siewiorek': 'http://www.cs.cmu.edu/~dps/'
     'David Easterling': 'https://dblp.org/pid/75/8682.html'
     'Deisenroth': 'https://deisenroth.cc/'
@@ -257,26 +261,34 @@ all_publications:
     'Eugene Vinitsky': 'https://eugenevinitsky.github.io'
     'Franziska Meier': 'https://fmeier.github.io/'
     'Geoff Gordon': 'http://www.cs.cmu.edu/~ggordon/'
-    'Georg': 'http://georg.playfulmachines.com/'
+    'Georg Martius': 'https://al.is.mpg.de/person/gmartius'
+    'Georgina Hall': 'https://sites.google.com/view/georgina-hall'
     'Gisella Kakoti': 'https://dblp.org/pid/235/5473.html'
     'Giulia Luise': 'https://giulslu.github.io/'
     'Guanhang Wu': 'https://scholar.google.com/citations?user=0pF6i38AAAAJ'
     'Hamilton Turner': 'https://scholar.google.com/citations?user=MRKab9cAAAAJ'
     'Han Zhao': 'https://hanzhaoml.github.io/'
     'Heli Ben-Hamu': 'https://helibenhamu.github.io/'
-    'Ilya Kostrikov': 'https://scholar.google.com/citations?user=PTS2AOgAAAAJ'
+    'Hengyuan Hu': 'https://scholar.google.com/citations?user=sJwwn54AAAAJ'
     'Ievgen Redko': 'https://ievred.github.io'
+    'Ilya Kostrikov': 'https://scholar.google.com/citations?user=PTS2AOgAAAAJ'
     'Ivan Dario Jimenez Rodriguez': 'https://ivandariojr.io/'
+    'Jack Richter-Powell': 'https://scholar.google.com/citations?hl=es&user=L78pVMMAAAAJ'
     'Jacob Sacks': 'https://scholar.google.com/citations?user=Th4PuGkAAAAJ'
     'Jaime A. Camelio': 'https://scholar.google.com/citations?user=tWmVBNwAAAAJ'
+    'Jakob Foerster': 'https://www.jakobfoerster.com/'
     'Jan Harkes': 'https://scholar.google.com/citations?user=jj5tN8sAAAAJ'
     'Jason Liu': 'https://www.linkedin.com/in/jasonliu6/'
+    'Jing Dong': 'https://www.linkedin.com/in/jing-dong-24b26ab3/'
     'Joelle Pineau': 'https://www.cs.mcgill.ca/~jpineau/'
     'Joey Bose': 'https://joeybose.github.io/'
     'John Tyson': 'https://scholar.google.com/citations?user=syETjMMAAAAJ'
+    'Jonathan Lorraine': 'https://scholar.google.com/citations?user=Hzf8bu0AAAAJ'
+    'Joseph Ortiz': 'https://joeaortiz.github.io/'
     'Joshua Meier': 'https://scholar.google.com/citations?user=2M0OltAAAAAJ'
     'Jules White': 'https://scholar.google.com/citations?user=10HSX90AAAAJ'
     'Junjue Wang': 'https://junjuew.github.io/'
+    'K S Sesh Kumar': 'https://scholar.google.co.in/citations?user=FPVUA-YAAAAJ'
     'Khalid Elgazzar': 'https://scholar.google.com/citations?user=R9r5_GIAAAAJ'
     'Kiryong Ha': 'http://krha.kr/'
     'Kyunghyun Cho': 'https://kyunghyuncho.me/'
@@ -286,12 +298,14 @@ all_publications:
     'Lu Jiang': 'http://www.lujiang.info/'
     'Luis Pineda': 'https://scholar.google.com/citations?user=rebEn8oAAAAJ'
     'Mahadev Satyanarayanan': 'https://www.cs.cmu.edu/~satya/'
+    'Maurizio Monge': 'https://scholar.google.com/citations?user=gpgb4LgAAAAJ'
     'Maximilian Nickel': 'https://mnick.github.io/'
     'Michal Rol': 'https://mrolinek.github.io/'
     'Mikael Henaff': 'http://www.mikaelhenaff.com/'
     'Minghan Chen': 'https://chenm.sites.wfu.edu/publications/'
     'Misha Denil': 'https://mdenil.com/'
     'Musil': 'https://scholar.google.com/citations?user=hA1rlU4AAAAJ'
+    'Mustafa Mukadam': 'https://www.mustafamukadam.com/'
     'Nando de Freitas': 'https://scholar.google.com/citations?user=nzEluBwAAAAJ'
     'Nathan Lambert': 'https://www.natolambert.com/'
     'Nathan Lichtlé': 'https://www.nathanlct.com/about'
@@ -301,9 +315,12 @@ all_publications:
     'Norman Sadeh': 'https://www.normsadeh.org/'
     'Omry Yadan': 'https://scholar.google.com/citations?user=zSsW478AAAAJ'
     'Padmanabhan Pillai': 'https://www.andrew.cmu.edu/user/pspillai/'
+    'Paloma Sodhi': 'https://psodhi.github.io/'
     'Phu Mon Htut': 'https://phumonhtut.me/'
     'Pieter Simoens': 'https://www.ugent.be/ea/idlab/en/members/pieter-simoens.htm'
     'Priya L. Donti': 'https://priyadonti.com/'
+    'Qinqing Zheng': 'https://enosair.github.io/'
+    'Rajiv Sambharya': 'https://rajivsambharya.github.io/'
     'Ricky Chen': 'https://scholar.google.com/citations?user=7MxQd6UAAAAJ'
     'Ricky T. Q. Chen': 'https://scholar.google.com/citations?user=7MxQd6UAAAAJ'
     'Rob Fergus': 'https://cs.nyu.edu/~fergus/pmwiki/pmwiki.php'
@@ -322,11 +339,13 @@ all_publications:
     'Soumith Chintala': 'https://soumith.ch/'
     'Stephen Boyd': 'https://web.stanford.edu/~boyd/'
     'Steven Diamond': 'https://stevendiamond.me/'
+    'Stuart Anderson': 'https://scholar.google.com/citations?user=8orqBsYAAAAJ'
+    'Stuart Russell': 'http://people.eecs.berkeley.edu/~russell/'
     'Tameem Adel': 'https://tameemadel.wordpress.com/'
+    'Taosha Fan': 'https://scholar.google.com/citations?user=3PJeg1wAAAAJ'
     'Terenin': 'https://avt.im/'
     'Thacker': 'https://scholar.google.com/citations?user=2I6IgikAAAAJ'
     'Thomas Eiszler': 'https://dblp.org/pid/207/9122.html'
-    'Jakob Foerster': 'https://www.jakobfoerster.com/'
     'Thomas Roth': 'https://dblp.org/pid/188/6045.html'
     'Tom Erez': 'https://scholar.google.com/citations?user=gVFnjOcAAAAJ'
     'Tom Sercu': 'https://tom.sercu.me/'
@@ -340,6 +359,7 @@ all_publications:
     'Xiaomeng Yang': 'https://www.linkedin.com/in/xiaomeng-yang-356a976b/'
     'Yang Cao': 'https://people.cs.vt.edu/~ycao/'
     'Yann LeCun': 'http://yann.lecun.com/'
+    'Yannik Pitcan': 'https://scholar.google.com/citations?user=jmM-JlIAAAAJ'
     'Yaron Lipman': 'https://www.wisdom.weizmann.ac.il/~ylipman/'
     'Ying Gao': 'https://www.linkedin.com/in/joelyinggao/'
     'Yoshihisa Abe': 'https://dblp.org/pid/18/1620.html'
@@ -348,25 +368,6 @@ all_publications:
     'Zeming Lin': 'https://scholar.google.com/citations?user=ZDjmMuwAAAAJ'
     'Zhuo Chen': 'https://scholar.google.com/citations?user=-wKpBNkAAAAJ'
     'Zico Kolter': 'http://zicokolter.com/'
-    'Arnaud Fickinger': 'https://scholar.google.com/citations?user=bBFN_qwAAAAJ'
-    'Hengyuan Hu': 'https://scholar.google.com/citations?user=sJwwn54AAAAJ'
-    'Stuart Russell': 'http://people.eecs.berkeley.edu/~russell/'
-    'K S Sesh Kumar': 'https://scholar.google.co.in/citations?user=FPVUA-YAAAAJ'
-    'Yannik Pitcan': 'https://scholar.google.com/citations?user=jmM-JlIAAAAJ'
-    'Jack Richter-Powell': 'https://scholar.google.com/citations?hl=es&user=L78pVMMAAAAJ'
-    'Jonathan Lorraine': 'https://scholar.google.com/citations?user=Hzf8bu0AAAAJ'
-    'Taosha Fan': 'https://scholar.google.com/citations?user=3PJeg1wAAAAJ'
-    'Maurizio Monge': 'https://scholar.google.com/citations?user=gpgb4LgAAAAJ'
-    'Paloma Sodhi': 'https://psodhi.github.io/'
-    'Joseph Ortiz': 'https://joeaortiz.github.io/'
-    'Daniel DeTone': 'https://danieldetone.com/'
-    'Austin Wang': 'https://scholar.google.com/citations?user=keDqjK0AAAAJ'
-    'Stuart Anderson': 'https://scholar.google.com/citations?user=8orqBsYAAAAJ'
-    'Jing Dong': 'https://www.linkedin.com/in/jing-dong-24b26ab3/'
-    'Mustafa Mukadam': 'https://www.mustafamukadam.com/'
-    'Qinqing Zheng': 'https://enosair.github.io/'
-    'Rajiv Sambharya': 'https://rajivsambharya.github.io/'
-    'Bartolomeo Stellato': 'https://stellato.io/'
 
 repos:
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
@@ -601,14 +602,14 @@ advising:
     name: Dishank Bansal
     details: "(AI resident at FAIR)"
     url: https://dishank-b.github.io
-  - year: 2020 -- present
-    name: Aaron Lou
-    details: "(visiting FAIR from Cornell and Stanford)"
-    url: https://www.aaronlou.com/
-  - year: 2021 -- present
+  - year: 2021 -- 2022
     name: Arnaud Fickinger
     details: (visiting FAIR from Berkeley)
     url: https://www.linkedin.com/in/arnaudfickinger/
+  - year: 2020 -- 2022
+    name: Aaron Lou
+    details: "(visiting FAIR from Cornell and Stanford)"
+    url: https://www.aaronlou.com/
   - year: 2021 -- 2022
     name: Eugene Vinitsky
     details: "(visiting FAIR from Berkeley, now incoming professor at NYU)"
