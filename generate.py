@@ -12,6 +12,7 @@ import copy
 import os
 import re
 import yaml
+import math
 
 import requests
 from bs4 import BeautifulSoup
@@ -405,7 +406,9 @@ def get_scholar_stats(scholar_id):
         author = scholarly.search_author_id(scholar_id)
         author = scholarly.fill(author, sections=['indices'])
         scholar_stats['h_index'] = author['hindex']
-        scholar_stats['citations'] = '{:.1f}k'.format(author['citedby'] / 1000)
+
+        thousand_citations = math.trunc(author['citedby']/100)/10
+        scholar_stats['citations'] = '{:.1f}k'.format(thousand_citations)
     return scholar_stats
 
 
