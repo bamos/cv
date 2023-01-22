@@ -364,6 +364,11 @@ def get_pub_latex(context, config):
     return contents
 
 
+def truncate_to_k(num):
+    num_k = math.trunc(num/100)/10
+    return '{:.1f}k'.format(num_k)
+
+
 def add_repo_data(context, config):
     repo_htmls = shelve.open('repo_htmls.shelf')
 
@@ -397,8 +402,7 @@ def add_repo_data(context, config):
         if 'desc' not in item:
             item['desc'] = soup.find('p', class_='f4 mt-3').text.strip()
 
-    return '{:.1f}k'.format(total_stars/1000)
-
+    return truncate_to_k(total_stars)
 
 def get_scholar_stats(scholar_id):
     scholar_stats = shelve.open('scholar_stats.shelf')
@@ -406,9 +410,7 @@ def get_scholar_stats(scholar_id):
         author = scholarly.search_author_id(scholar_id)
         author = scholarly.fill(author, sections=['indices'])
         scholar_stats['h_index'] = author['hindex']
-
-        thousand_citations = math.trunc(author['citedby']/100)/10
-        scholar_stats['citations'] = '{:.1f}k'.format(thousand_citations)
+        scholar_stats['citations'] = truncate_to_k(author['citedby'])
     return scholar_stats
 
 
