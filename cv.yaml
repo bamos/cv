@@ -74,6 +74,9 @@ service:
   - details: Farama Foundation Technical Advisor
     year: 2022 -- cont.
     url: https://farama.org/
+  - details: NeurIPs Workshop on Robot Learning Organizor
+    year: 2021, 2022
+    url: http://robot-learning.ml
   - details: Member of Well-Being in Machine Learning
     year: 2021 -- cont.
     url: https://twitter.com/WellBeingInML
@@ -82,10 +85,9 @@ service:
     url: https://rewardreports.github.io/workshop.html
   - details: Berkeley AI Research Audio \& Video Team
     year: 2021 -- 2022
-    #    url: https://twitter.com/WellBeingInML
-  - details: NeurIPs Workshop on Robot Learning Organizor
-    year: 2021 -- 2022
-    url: http://robot-learning.ml
+  - details: Machine Learning Collective Office Hours
+    year: 2021 -- cont.
+    url: https://mlcollective.org/services/
   - details: Tapia Panel on Student Mental Health Organizor
     year: 2021
     url: https://tapiaconference.cmd-it.org/attend/presentation/?id=acad115&sess=sess251
@@ -136,7 +138,7 @@ industry:
   - place: HuggingFace
     location: Remote |
 #    title: Research Intern
-    dates: 2022
+    dates: 2022 -- cont.
     # dates: June 2018 -- Sept 2018
     details:
       - "Research Scientist"
@@ -186,14 +188,10 @@ teaching:
     short: Cornell ECE 3250
     position: TA
 
-# selected_publications:
-#   name: "Amos"
-#   file: selected.bib
-#   sort_bib: False
-#   include_image: True
-#   group_by_year: False
-
 talks:
+  - year: Feb 2023
+    location: Microsoft Data Science Gems
+    title: (Invited Seminar) Reinforcement Learning from Human Feedback; Pathways to Open Reproduction of ChatGPT
   - year: July 2022
     location: ICML Workshop on Responsible Decision Making in Dynamic Environments
     details: "(\\href{https://slideslive.com/38988545/reward-reports-for-reinforcement-learning}{Recording Available}, \\href{https://docs.google.com/presentation/d/1Id6nDc6Q1kIPeB0VI0FqmJZcrwCY5p6rY-az50h2ArI/edit?usp=sharing}{Slides})"
@@ -296,25 +294,6 @@ all_publications:
   sort_bib: True
   include_image: False
   group_by_year: True
-  # categories:
-  #   - heading: Preprints and Tech Reports
-  #     prefix: P
-  #     file: tech-reports.bib
-  #   - heading: Conference Proceedings
-  #     prefix: C
-  #     file: conference.bib
-  #   - heading: Journal Articles
-  #     prefix: J
-  #     file: journal.bib
-  #   - heading: Workshop, Symposium, and Short Papers
-  #     prefix: W
-  #     file: short.bib
-  #   - heading: Magazine Articles
-  #     prefix: M
-  #     file: magazine.bib
-    # - heading: Posters
-    #   prefix: S
-    #   file: posters.bib
 
   author_urls:
     'Aaron Snoswell': 'http://aaronsnoswell.github.io'
@@ -357,12 +336,6 @@ all_publications:
     'Yuval Tassa': 'https://scholar.google.com/citations?user=CjOTm_4AAAAJ'
 
 
-#
-#coursework:
-#  - semester: S9999
-#    name: MATH
-#    instructor: YOU
-
 
 skills:
   - title: Programming
@@ -374,7 +347,7 @@ skills:
 
 
 extracur:
-  - details: Cornell Varisty Lightweight Rowing
+  - details: Cornell Varsity Lightweight Rowing
     year: 2013 -- 2017
     url: https://cornellsun.com/2017/06/04/lightweight-rowing-wins-3rd-national-title-since-2014-to-cap-off-undefeated-season/
   - details: Novice Rowing Coach
