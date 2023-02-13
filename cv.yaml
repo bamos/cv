@@ -384,7 +384,7 @@ repos:
     desc: Wasserstein-2 optimal transport in JAX
   - repo_url: https://github.com/bamos/presentations
     year: 2022
-    desc: Source for my major presentations with a CC-BY license
+    desc: Source for my major presentations
   - repo_url: https://github.com/facebookresearch/rcpm
     year: 2021
     desc: Riemannian Convex Potential Maps
@@ -473,6 +473,9 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
+  - year: 2023
+    location: Vanderbilt ML Seminar
+    title: "Learning with differentiable and amortized optimization"
   - year: 2022
     location: Microsoft Research
     title: "Learning with differentiable and amortized optimization"
