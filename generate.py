@@ -366,7 +366,9 @@ def get_pub_latex(context, config):
 
 def truncate_to_k(num):
     num_k = math.trunc(num/100)/10
-    return '{:.1f}k+'.format(num_k)
+    num_k = f'{num_k:.1f}'
+    num_k = num_k[:-2] if num_k.endswith('.0') else num_k
+    return f"{num_k}k+"
 
 
 def add_repo_data(context, config):
