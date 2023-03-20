@@ -371,17 +371,17 @@ all_publications:
 
 repos:
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
-    year: 2022
+    year: 2023
     desc: Tutorial on amortized optimization
+  - repo_url: https://github.com/facebookresearch/w2ot
+    year: 2023
+    desc: Wasserstein-2 optimal transport in JAX
   - repo_url: https://github.com/facebookresearch/theseus
     year: 2022
     desc: Differentiable non-linear optimization library
   - repo_url: https://github.com/facebookresearch/meta-ot
     year: 2022
     desc: Meta Optimal Transport
-  - repo_url: https://github.com/facebookresearch/w2ot
-    year: 2022
-    desc: Wasserstein-2 optimal transport in JAX
   - repo_url: https://github.com/bamos/presentations
     year: 2022
     desc: Source for my major presentations
@@ -473,6 +473,10 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
+  - year: 2023
+    location: 'ICML Learning, Control, and Dynamical Systems Workshop'
+    url: https://frontiers4lcd.github.io/
+    title: "Introduction to Control for ML"
   - year: 2023
     location: Vanderbilt ML Seminar
     title: "Learning with differentiable and amortized optimization"
