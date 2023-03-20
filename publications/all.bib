@@ -59,6 +59,83 @@
   }
 }
 
+@misc{sambharya2022l2a,
+  title={End-to-End Learning to Warm-Start for Real-Time Quadratic Optimization},
+  author={Rajiv Sambharya and Georgina Hall and Brandon Amos and Bartolomeo Stellato},
+  year={2022},
+  url={https://arxiv.org/abs/2212.08260},
+  codeurl={https://github.com/stellatogrp/l2ws},
+  _venue={L4DC},
+  abstract={
+    First-order methods are widely used to solve convex quadratic programs
+    (QPs) in real-time applications because of their low
+    per-iteration cost. However, they can suffer from
+    slow convergence to accurate solutions. In this
+    paper, we present a framework which learns an
+    effective warm-start for a popular first-order
+    method in real-time applications, Douglas-Rachford
+    (DR) splitting, across a family of parametric
+    QPs. This framework consists of two modules: a
+    feedforward neural network block, which takes as
+    input the parameters of the QP and outputs a
+    warm-start, and a block which performs a fixed
+    number of iterations of DR splitting from this
+    warm-start and outputs a candidate solution. A key
+    feature of our framework is its ability to do
+    end-to-end learning as we differentiate through the
+    DR iterations. To illustrate the effectiveness of
+    our method, we provide generalization bounds (based
+    on Rademacher complexity) that improve with the
+    number of training problems and number of iterations
+    simultaneously. We further apply our method to three
+    real-time applications and observe that, by learning
+    good warm-starts, we are able to significantly
+    reduce the number of iterations required to obtain
+    high-quality solutions.
+  }
+}
+
+@misc{zheng2022semi,
+  title = {Semi-Supervised Offline Reinforcement Learning with Action-Free Trajectories},
+  author = {Zheng, Qinqing and Henaff, Mikael and Amos, Brandon and Grover, Aditya},
+  year = {2022},
+  url = {https://arxiv.org/abs/2210.06518},
+  _venue={ICLR RRL Workshop},
+  abstract={
+Natural agents can effectively learn from multiple data sources that
+differ in size, quality, and types of
+measurements. We study this heterogeneity in the
+context of offline reinforcement learning (RL) by
+introducing a new, practically motivated
+semi-supervised setting. Here, an agent has access
+to two sets of trajectories: labelled trajectories
+containing state, action, reward triplets at every
+timestep, along with unlabelled trajectories that
+contain only state and reward information. For this
+setting, we develop a simple meta-algorithmic
+pipeline that learns an inverse-dynamics model on
+the labelled data to obtain proxy-labels for the
+unlabelled data, followed by the use of any offline
+RL algorithm on the true and proxy-labelled
+trajectories. Empirically, we find this simple
+pipeline to be highly successful -- on several D4RL
+benchmarks, certain offline RL
+algorithms can match the performance of variants
+trained on a fully labeled dataset even when we
+label only 10\% trajectories from the low return
+regime. Finally, we perform a large-scale controlled
+empirical study investigating the interplay of
+data-centric properties of the labelled and
+unlabelled datasets, with algorithmic design choices
+(e.g., inverse dynamics, offline RL algorithm) to
+identify general trends and best practices for
+training RL agents on semi-supervised offline
+datasets.
+  }
+}
+
+
+
 
 @misc{fickinger2021crossdomain,
   title={Cross-Domain Imitation Learning via Optimal Transport},
@@ -235,46 +312,6 @@
   }
 }
 
-@misc{zheng2022semi,
-  title = {Semi-Supervised Offline Reinforcement Learning with Action-Free Trajectories},
-  author = {Zheng, Qinqing and Henaff, Mikael and Amos, Brandon and Grover, Aditya},
-  year = {2022},
-  url = {https://arxiv.org/abs/2210.06518},
-  _venue={arXiv},
-  abstract={
-Natural agents can effectively learn from multiple data sources that
-differ in size, quality, and types of
-measurements. We study this heterogeneity in the
-context of offline reinforcement learning (RL) by
-introducing a new, practically motivated
-semi-supervised setting. Here, an agent has access
-to two sets of trajectories: labelled trajectories
-containing state, action, reward triplets at every
-timestep, along with unlabelled trajectories that
-contain only state and reward information. For this
-setting, we develop a simple meta-algorithmic
-pipeline that learns an inverse-dynamics model on
-the labelled data to obtain proxy-labels for the
-unlabelled data, followed by the use of any offline
-RL algorithm on the true and proxy-labelled
-trajectories. Empirically, we find this simple
-pipeline to be highly successful -- on several D4RL
-benchmarks, certain offline RL
-algorithms can match the performance of variants
-trained on a fully labeled dataset even when we
-label only 10\% trajectories from the low return
-regime. Finally, we perform a large-scale controlled
-empirical study investigating the interplay of
-data-centric properties of the labelled and
-unlabelled datasets, with algorithmic design choices
-(e.g., inverse dynamics, offline RL algorithm) to
-identify general trends and best practices for
-training RL agents on semi-supervised offline
-datasets.
-  }
-}
-
-
 @misc{amos2022meta,
   title={Meta Optimal Transport},
   author={Brandon Amos and Samuel Cohen and Giulia Luise and Ievgen Redko},
@@ -299,42 +336,6 @@ datasets.
     solvers by multiple orders of magnitude in discrete
     and continuous transport settings between images,
     spherical data, and color palettes.
-  }
-}
-
-@misc{sambharya2022l2a,
-  title={End-to-End Learning to Warm-Start for Real-Time Quadratic Optimization},
-  author={Rajiv Sambharya and Georgina Hall and Brandon Amos and Bartolomeo Stellato},
-  year={2022},
-  url={https://arxiv.org/abs/2212.08260},
-  codeurl={https://github.com/stellatogrp/l2ws},
-  _venue={arXiv},
-  abstract={
-    First-order methods are widely used to solve convex quadratic programs
-    (QPs) in real-time applications because of their low
-    per-iteration cost. However, they can suffer from
-    slow convergence to accurate solutions. In this
-    paper, we present a framework which learns an
-    effective warm-start for a popular first-order
-    method in real-time applications, Douglas-Rachford
-    (DR) splitting, across a family of parametric
-    QPs. This framework consists of two modules: a
-    feedforward neural network block, which takes as
-    input the parameters of the QP and outputs a
-    warm-start, and a block which performs a fixed
-    number of iterations of DR splitting from this
-    warm-start and outputs a candidate solution. A key
-    feature of our framework is its ability to do
-    end-to-end learning as we differentiate through the
-    DR iterations. To illustrate the effectiveness of
-    our method, we provide generalization bounds (based
-    on Rademacher complexity) that improve with the
-    number of training problems and number of iterations
-    simultaneously. We further apply our method to three
-    real-time applications and observe that, by learning
-    good warm-starts, we are able to significantly
-    reduce the number of iterations required to obtain
-    high-quality solutions.
   }
 }
 

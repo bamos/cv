@@ -653,6 +653,7 @@ service:
     - "Neural Information Processing Systems (NeurIPS) DiffCVGP Workshop"
     - "Neural Information Processing Systems (NeurIPS) Deep RL Workshop"
     - "Optimization Letters"
+    - "Transactions on Machine Learning Research (TMLR)"
 
   main:
     - details: NeurIPS Area Chair
