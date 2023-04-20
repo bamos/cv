@@ -658,6 +658,7 @@ service:
     - "International Conference on Learning Representations (ICLR)"
     - "International Conference on Machine Learning (ICML)"
     - "Journal of Machine Learning Research (JMLR)"
+    - "Learning for Dynamics and Control (L4DC)"
     - "Mathematical Programming Computation (MPC)"
     - "Neural Information Processing Systems (NeurIPS)"
     - "Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks Track"
