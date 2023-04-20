@@ -478,6 +478,12 @@ talks:
     url: https://frontiers4lcd.github.io/
     title: "Introduction to Control for ML"
   - year: 2023
+    title: "Tutorial on amortized optimization"
+    location: Brown University
+  - year: 2023
+    location: NYU AI Seminar
+    title: "Learning with differentiable and amortized optimization"
+  - year: 2023
     location: Vanderbilt ML Seminar
     title: "Learning with differentiable and amortized optimization"
   - year: 2022
@@ -643,6 +649,7 @@ service:
     - "AAAI Conference on Artificial Intelligence"
     - "American Controls Conference (ACC)"
     - "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+    - "IEEE Conference on Decision and Control (CDC)"
     - "IEEE Control Systems Letters (L-CSS)"
     - "IEEE International Conference on Computer Vision (ICCV)"
     - "IEEE International Conference on Intelligent Robots and Systems (IROS)"
