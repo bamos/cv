@@ -228,6 +228,8 @@ all_publications:
   include_image: True
   group_by_year: True
   author_urls:
+    'Aram-Alexandre Pooladian': 'http://arampooladian.com/'
+    'Carles Domingo-Enrich': 'https://cims.nyu.edu/~cd2754/'
     'Aaron Lou': 'https://www.aaronlou.com/'
     'Aditya Grover': 'https://aditya-grover.github.io/'
     'Akshay Agrawal': 'https://www.akshayagrawal.com/'

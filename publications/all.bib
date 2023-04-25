@@ -3,7 +3,7 @@
   author={Brandon Amos},
   year={2023},
   url={https://arxiv.org/abs/2202.00665},
-  _venue={Foundations and Trends in Machine Learning (to appear)},
+  _venue={Foundations and Trends in Machine Learning},
   codeurl={https://github.com/facebookresearch/amortized-optimization-tutorial},
   selected={true},
   abstract={
@@ -95,12 +95,74 @@
   }
 }
 
+@misc{amos2023meta,
+  title={Meta Optimal Transport},
+  author={Brandon Amos and Samuel Cohen and Giulia Luise and Ievgen Redko},
+  year={2023},
+  url={https://arxiv.org/abs/2206.05262},
+  codeurl={https://github.com/facebookresearch/meta-ot},
+  _venue={ICML},
+  selected={true},
+  abstract={
+    We study the use of amortized optimization to predict optimal
+    transport (OT) maps from the input measures, which
+    we call Meta OT. This helps repeatedly solve similar
+    OT problems between different measures by leveraging
+    the knowledge and information present from past
+    problems to rapidly predict and solve new
+    problems. Otherwise, standard methods ignore the
+    knowledge of the past solutions and suboptimally
+    re-solve each problem from scratch. Meta OT models
+    surpass the standard convergence rates of
+    log-Sinkhorn solvers in the discrete setting and
+    convex potentials in the continuous setting. We
+    improve the computational time of standard OT
+    solvers by multiple orders of magnitude in discrete
+    and continuous transport settings between images,
+    spherical data, and color palettes.
+  }
+}
+
+@misc{pooladian2023multisample,
+  title={Multisample Flow Matching with Optimal Transport Couplings},
+  author={Aram-Alexandre Pooladian and Heli Ben-Hamu and Carles Domingo-Enrich and Brandon Amos and Yaron Lipman and Ricky T. Q. Chen},
+  year={2023},
+  _venue={ICML},
+  abstract={
+    Simulation-free methods for training continuous-time generative
+    models construct probability paths that go between
+    noise distributions and individual data
+    samples. Recent works, such as Flow Matching,
+    derived paths that are optimal for each data
+    sample. However, these algorithms rely on
+    independent data and noise samples, and do not
+    exploit underlying structure in the data
+    distribution for constructing probability paths. We
+    propose Multisample Flow Matching, a more general
+    framework that uses non-trivial couplings between
+    data and noise samples while satisfying the correct
+    marginal constraints. At small overhead costs, this
+    generalization allows us to (i) reduce gradient
+    variance during training, (ii) obtain straighter
+    flows for the learned vector field, which allows us
+    to generate high-quality samples using fewer
+    function evaluations, and (iii) obtain transport
+    maps with low cost in high dimensions, which has
+    applications beyond generative
+    modeling. Importantly, we do so in a completely
+    simulation-free manner with a simple minimization
+    objective. We show that our proposed methods improve
+    sample consistency on downsampled ImageNet data
+    sets, and lead to better low-cost sample generation.
+  }
+}
+
 @misc{zheng2023semi,
   title = {Semi-Supervised Offline Reinforcement Learning with Action-Free Trajectories},
   author = {Zheng, Qinqing and Henaff, Mikael and Amos, Brandon and Grover, Aditya},
   year = {2023},
   url = {https://arxiv.org/abs/2210.06518},
-  _venue={ICLR RRL Workshop},
+  _venue={ICML},
   abstract={
 Natural agents can effectively learn from multiple data sources that
 differ in size, quality, and types of
@@ -309,33 +371,6 @@ datasets.
     agents are quite far from human-level coordination
     ability and deviate significantly from the expert
     trajectories.
-  }
-}
-
-@misc{amos2022meta,
-  title={Meta Optimal Transport},
-  author={Brandon Amos and Samuel Cohen and Giulia Luise and Ievgen Redko},
-  year={2022},
-  url={https://arxiv.org/abs/2206.05262},
-  codeurl={https://github.com/facebookresearch/meta-ot},
-  _venue={arXiv},
-  abstract={
-    We study the use of amortized optimization to predict optimal
-    transport (OT) maps from the input measures, which
-    we call Meta OT. This helps repeatedly solve similar
-    OT problems between different measures by leveraging
-    the knowledge and information present from past
-    problems to rapidly predict and solve new
-    problems. Otherwise, standard methods ignore the
-    knowledge of the past solutions and suboptimally
-    re-solve each problem from scratch. Meta OT models
-    surpass the standard convergence rates of
-    log-Sinkhorn solvers in the discrete setting and
-    convex potentials in the continuous setting. We
-    improve the computational time of standard OT
-    solvers by multiple orders of magnitude in discrete
-    and continuous transport settings between images,
-    spherical data, and color palettes.
   }
 }
 
