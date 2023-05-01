@@ -14,6 +14,8 @@ import re
 import yaml
 import math
 
+from collections import defaultdict
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -363,6 +365,16 @@ def get_pub_latex(context, config):
 
     return contents
 
+def get_pub_summary(bibtex_file):
+    with open(os.path.join('publications', bibtex_file), 'r') as f:
+        p = BibTexParser(f.read(), bc.author).get_entry_list()
+    venue_counts = defaultdict(int)
+    for pub in p:
+        if '_venue' in pub:
+            venue_counts[pub['_venue']] += 1
+    sorted_venue_counts = sorted(venue_counts.items(), key=lambda x: x[1], reverse=True)
+    print('publication venues:', sorted_venue_counts)
+    return sorted_venue_counts
 
 def truncate_to_k(num):
     num_k = math.trunc(num/100)/10
@@ -518,6 +530,7 @@ class RenderContext(object):
                     section_data['content'] = get_pub_latex(self, section_content)
                 elif self._file_ending == ".md":
                     section_data['content'] = get_pub_md(self, section_content)
+                section_data['summary'] = get_pub_summary(section_content['file'])
                 section_data['scholar_id'] = yaml_data['social']['google_scholar']
                 section_data['scholar_stats'] = get_scholar_stats(yaml_data['social']['google_scholar'])
                 section_template_name = os.path.join(
