@@ -372,9 +372,19 @@ def get_pub_summary(bibtex_file):
     for pub in p:
         if '_venue' in pub:
             venue_counts[pub['_venue']] += 1
-    sorted_venue_counts = sorted(venue_counts.items(), key=lambda x: x[1], reverse=True)
-    print('publication venues:', sorted_venue_counts)
-    return sorted_venue_counts
+    venue_counts = sorted(venue_counts.items(), key=lambda x: x[1], reverse=True)
+    print('publication venues:', venue_counts)
+    venue_counts = list(filter(lambda x: x[1] >= 5, venue_counts))
+    summary = 'I most frequently publish at '
+    for i, (venue, count) in enumerate(venue_counts):
+        if i == len(venue_counts) - 1:
+            summary += ', and '
+        elif i > 0:
+            summary += ', '
+
+        summary += f'{venue} ({count} papers)'
+    summary += '.'
+    return summary
 
 def truncate_to_k(num):
     num_k = math.trunc(num/100)/10
