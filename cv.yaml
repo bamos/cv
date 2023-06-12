@@ -659,6 +659,7 @@ service:
     - "International Conference on the Constraint Programming, AI, and Operations Research (CPAIOR)"
     - "International Conference on Learning Representations (ICLR)"
     - "International Conference on Machine Learning (ICML)"
+    - "International Conference on Machine Learning (ICML) SODS Workshop"
     - "Journal of Machine Learning Research (JMLR)"
     - "Learning for Dynamics and Control (L4DC)"
     - "Mathematical Programming Computation (MPC)"
@@ -671,6 +672,8 @@ service:
     - "Transactions on Machine Learning Research (TMLR)"
 
   main:
+    - details: AAAI Senior Program Committee
+      year: 2024
     - details: NeurIPS Area Chair
       year: 2023
     - details: AAAI Senior Program Committee
