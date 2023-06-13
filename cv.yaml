@@ -676,6 +676,8 @@ service:
       year: 2024
     - details: NeurIPS Area Chair
       year: 2023
+    - details: NeurIPS Datasets and Benchmarks Area Chair
+      year: 2023
     - details: AAAI Senior Program Committee
       year: 2023
     - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
