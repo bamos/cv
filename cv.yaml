@@ -194,6 +194,10 @@ teaching:
     position: TA
 
 talks:
+  - year: Jun 2023
+    location: ACM Conference on Fairness, Accountability, and Transparency
+    title: (Tutorial) Steering language models with reinforcement learning from human feedback and constitutional AI
+    details: "(\\href{https://docs.google.com/presentation/d/1-SzKvrfqKpK8NbTrnlLwJL5IHohPoW-0X7G17hSVW-Y/edit?usp=sharing}{Slides Available})"
   - year: Mar 2023
     location: UCL Dark Lab
     title: (Invited Seminar) Reinforcement Learning from Human Feedback; Open and Academic Progress
