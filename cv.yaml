@@ -41,8 +41,8 @@ order:
 
 about: '\vspace{18pt} \small{
   I research \textbf{data-driven decision making},
-  including progressing \textbf{model-based reinforcmement learning} algorithms,
-  applying them to real-world problems such as \textbf{robotics}, and planning for the \textbf{societal implications}
+  including progressing \textbf{reinforcmement learning} algorithms,
+  applying them to real-world problems such as \textbf{large language models} and \textbf{robotics}, and planning for the \textbf{societal implications}
   of these technologies.}
 '
 
@@ -73,7 +73,7 @@ reviewing:
 service:
   - details: Associate Editor (AE), Conference on Intelligent Robots and Systems (IROS)
     year: 2023
-  - details: Farama Foundation Technical Advisor
+  - details: Farama Foundation Board of Technical Advisors
     year: 2022 -- cont.
     url: https://farama.org/
   - details: NeurIPs Workshop on Robot Learning Organizor
