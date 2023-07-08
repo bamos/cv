@@ -42,8 +42,7 @@ order:
 about: '\vspace{18pt} \small{
   I research \textbf{data-driven decision making},
   including progressing \textbf{reinforcmement learning} algorithms,
-  applying them to real-world problems such as \textbf{large language models} and \textbf{robotics}, and planning for the \textbf{societal implications}
-  of these technologies.}
+  applying them to real-world problems such as \textbf{large language models} and \textbf{robotics}, and planning for the \textbf{societal implications} therein.}
 '
 
 reviewing:
