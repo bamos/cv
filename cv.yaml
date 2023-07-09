@@ -31,6 +31,7 @@ order:
   - [honors, Honors \& Awards]
   - [all_publications, Publications]
   - [repos, Repositories]
+  - [artifacts, Machine Learning Artifacts]
   # - [NEWPAGE, NEWPAGE]
   - [talks, Invited Talks]
   - [advising, Mentorship]
@@ -117,6 +118,19 @@ repos:
     year: 2020
     desc: Model-based RL for mixed sim. and real
 
+artifacts:
+  - id: HuggingFaceH4/starchat-alpha
+    year: 2023
+    type: model
+    desc: Coding assistant language model
+  - id: HuggingFaceH4/open_llm_leaderboard
+    year: 2023
+    type: space
+    desc: Leaderboard for open instruction-tuned LLMs
+  - id: HuggingFaceH4/stack-exchange-preferences
+    year: 2023
+    type: dataset
+    desc: Preference dataset for RLHF from StackExchange
 
 education:
   - school: University of California, Berkeley
