@@ -28,6 +28,14 @@ from jinja2 import Environment, FileSystemLoader
 # init
 api = HfApi()
 
+def human_format(num):
+    num = float('{:.3g}'.format(num))
+    magnitude = 0
+    while abs(num) >= 1000:
+        magnitude += 1
+        num /= 1000.0
+    return '{}{}'.format('{:f}'.format(num).rstrip('0').rstrip('.'), ['', 'K', 'M', 'B', 'T'][magnitude])
+
 # TODO add function like `add_repo_data` that works for HF
 def add_hf_data(context, config):
     for item in config:
@@ -41,14 +49,19 @@ def add_hf_data(context, config):
         if type == 'model':
             model_info = api.model_info(asset_name)
             likes = model_info.likes
+            item['repo_url'] = "https://huggingface.co/" + asset_name
         elif type == 'dataset':
             data_info = api.dataset_info(asset_name)
             likes = data_info.likes
+            item['repo_url'] = "https://huggingface.co/" + "datasets/" + asset_name
         elif type == 'space':
             space_info = api.space_info(asset_name)
             likes = space_info.likes
+            item['repo_url'] = "https://huggingface.co/" + "spaces/" + asset_name
 
-        item['repo_url'] = "https://huggingface.co/" + asset_name
+        item['id'] = item['id'].replace("_", "-")
+
+
         # Scrape the repo HTML instead of using the GitHub API
         # to avoid being rate-limited (sorry), and be nice by
         # caching to disk.
