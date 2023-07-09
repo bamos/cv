@@ -5,6 +5,7 @@
 __author__ = [
     'Brandon Amos <http://bamos.github.io>',
     'Ellis Michael <http://ellismichael.com>',
+    'Nathan Lambert <https://natolambert.com>',
 ]
 
 import argparse
@@ -12,7 +13,7 @@ import copy
 import os
 import re
 import yaml
-
+from huggingface_hub import HfApi
 import requests
 from bs4 import BeautifulSoup
 
@@ -23,6 +24,19 @@ from bibtexparser.bparser import BibTexParser
 from datetime import date
 from itertools import groupby
 from jinja2 import Environment, FileSystemLoader
+
+# TODO add function like `add_repo_data` that works for HF
+def hf_get_likes(artifact, type):
+    """
+    Get the number of likes for a given artifact.
+    :param artifact: a string for HF identifier, like "HuggingFaceH4/starchat-alpha"
+    :param type: One of model, dataset, or space
+    :return: like count
+    """
+    return None
+
+def hf_get_model_info():
+    return None
 
 # TODO: Could really be cleaned up
 def get_pub_md(context, config):

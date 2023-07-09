@@ -1,13 +1,14 @@
 # About
 This repo contains the source I use to automatically generate
 my curriculum vitae as a
-[webpage](http://bamos.github.io)
-and
-[PDF](http://bamos.github.io/data/cv.pdf)
+[PDF](https://natolambert.com/cv)
 from YAML and BibTeX input.
 [generate.py](generate.py) reads from [cv.yaml](cv.yaml) and
 [publications](publications) and outputs LaTeX and Markdown
 by using Jinja templates.
+
+**Credit: ** this is just a lowly fork, of the awesome code built by my colleague Brandon Amos.
+The notable addition I added is getting stars for 🤗 HuggingFace models, datasets, and spaces.
 
 # Building and running
 Dependencies are included in `requirements.txt` and can be installed
