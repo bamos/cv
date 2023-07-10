@@ -10,6 +10,10 @@
 \DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
 \usepackage{lmodern}
 
+% for heart
+\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+\DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
 
 \definecolor{tab_highlight}{HTML}{f0c967}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
