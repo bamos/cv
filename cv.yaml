@@ -370,6 +370,15 @@ all_publications:
     'Zeming Lin': 'https://scholar.google.com/citations?user=ZDjmMuwAAAAJ'
     'Zhuo Chen': 'https://scholar.google.com/citations?user=-wKpBNkAAAAJ'
     'Zico Kolter': 'http://zicokolter.com/'
+    'Dishank Bansal': 'https://dishank-b.github.io/'
+    'Matthew Retchin': 'https://mhr.github.io/'
+    'Steven Brunton': 'https://www.eigensteve.com/'
+    'Shuran Song': 'https://shurans.github.io/'
+    'Arman Zharmagambetov': 'https://arman-z.github.io/'
+    'Aaron Ferber': 'https://scholar.google.com/citations?user=TuVq07oAAAAJ'
+    'Taoan Huang': 'https://taoanhuang.github.io/'
+    'Bistra Dilkina': 'https://scholar.google.com/citations?user=1jjyaBYAAAAJ'
+    'Yuandong Tian': 'https://yuandong-tian.com/'
 
 repos:
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial

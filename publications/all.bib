@@ -191,6 +191,131 @@ datasets.
   }
 }
 
+@misc{bansal2023taskmet,
+  title = {TaskMet: Task-Driven Metric Learning for Model Learning},
+  author = {Dishank Bansal and Ricky T. Q. Chen and Mustafa Mukadam and Brandon Amos},
+  year = {2023},
+  _venue={ICML Differentiable Almost Everything Workshop},
+  url={https://openreview.net/forum?id=Yr7XOXCPQR},
+  abstract={
+    Deep learning models are often used with some downstream
+    task. Models solely trained to achieve accurate
+    predictions may struggle to perform well on
+    the desired downstream tasks. We propose using the
+    task's loss to learn a metric which parameterizes a
+    loss to train the model.This approach does not alter
+    the optimal prediction model itself, but rather
+    changes the model learning to emphasize the
+    information important for the downstream task.This
+    enables us to achieve the best of both worlds:a
+    prediction model trained in the original prediction
+    space while also being valuable for the desired
+    downstream task.We validate our approach through
+    experiments conducted in two main settings: 1)
+    decision-focused model learning scenarios involving
+    portfolio optimization and budget allocation, and2)
+    reinforcement learning in noisy environments with
+    distracting states.
+  }
+}
+
+@misc{retchin2023koopman,
+  title = {Koopman Constrained Policy Optimization: A Koopman operator theoretic method for differentiable optimal control in robotics},
+  author = {Matthew Retchin and Brandon Amos and Steven Brunton and Shuran Song},
+  year = {2023},
+  _venue={ICML Differentiable Almost Everything Workshop},
+  url={https://openreview.net/forum?id=3W7vPqWCeM},
+  abstract={
+    We introduce Koopman Constrained Policy Optimization (KCPO),
+    combining implicitly differentiable model predictive
+    control with a deep Koopman autoencoder for robot
+    learning in unknown and nonlinear dynamical
+    systems. KCPO is a new policy optimization algorithm
+    that trains neural policies end-to-end with hard box
+    constraints on controls. Guaranteed satisfaction of
+    hard constraints helps ensure the performance and
+    safety of robots. We perform imitation learning with
+    KCPO to recover expert policies on the Simple
+    Pendulum, Cartpole Swing-Up, Reacher, and
+    Differential Drive environments, outperforming
+    baseline methods in generalizing to
+    out-of-distribution constraints in most environments
+    after training.
+  }
+}
+
+@misc{zharmagambetov2023landscape,
+  title = {Landscape Surrogate: Learning Decision Losses for Mathematical Optimization Under Partial Information},
+  author = {Arman Zharmagambetov and Brandon Amos and Aaron Ferber and Taoan Huang and Bistra Dilkina and Yuandong Tian},
+  year = {2023},
+  url={https://openreview.net/forum?id=qGzlOO27Cn},
+  _venue={ICML Differentiable Almost Everything Workshop},
+  abstract={
+    Recent works in learning-integrated optimization have shown promise in
+    settings where the optimization problem is only
+    partially observed or where general-purpose
+    optimizers perform poorly without expert tuning. By
+    learning an optimizer g to tackle these challenging
+    problems with f as the objective, the optimization
+    process can be substantially accelerated by
+    leveraging past experience. Training the optimizer
+    can be done with supervision from known optimal
+    solutions (not always available) or implicitly by
+    optimizing the compound function f ∘ g , but the
+    implicit approach is slow and challenging due to
+    frequent calls to the optimizer and sparse
+    gradients, particularly for combinatorial
+    solvers. To address these challenges, we propose
+    using a smooth and learnable **Landscape Surrogate**
+    M instead of f ∘ g . This surrogate can be computed
+    faster than g , provides dense and smooth gradients
+    during training, can generalize to unseen
+    optimization problems, and is efficiently learned
+    via alternating optimization. We test our approach
+    on both synthetic problems and real-world problems,
+    achieving comparable or superior objective values
+    compared to state-of-the-art baselines while
+    reducing the number of calls to g . Notably, our
+    approach outperforms existing methods for
+    computationally expensive high-dimensional problems.
+  }
+}
+
+@misc{pooladian2023neural,
+  title = {Neural Optimal Transport with Lagrangian Costs},
+  author = {Aram-Alexandre Pooladian and Carles Domingo-Enrich and Ricky T. Q. Chen and Brandon Amos},
+  year = {2023},
+  _venue={ICML New Frontiers in Learning, Control, and Dynamical Systems Workshop},
+  url={https://openreview.net/forum?id=myb0FKB8C9},
+  abstract={
+Computational efforts in optimal transport traditionally
+revolve around the squared-Euclidean cost. In this
+work, we choose to investigate the optimal transport
+problem between probability measures when the
+underlying metric space is non-Euclidean, or when
+the cost function is understood to satisfy a least
+action principle,also known as a Lagrangian
+cost. These two generalizations are useful when
+connecting observations from a physical system,
+where the transport dynamics are influenced by the
+geometry of the system, such as obstacles, and
+allows practitioners to incorporate a priori
+knowledge of the underlying system. Examples include
+barriers for transport, or enforcing a certain
+geometry, i.e., paths must be circular. We
+demonstrate the effectiveness of this formulation on
+existing synthetic examples in the literature, where
+we solve the optimal transport problems in the
+absence of regularization, which is novel in the
+literature. Our contributions are of computational
+interest, where we demonstrate the ability to
+efficiently compute geodesics and amortize
+spline-based paths. We demonstrate the effectiveness
+of this formulation on existing synthetic examples
+in the literature, where we solve the optimal
+transport problems in the absence of regularization.
+  }
+}
 
 
 
@@ -799,7 +924,7 @@ our methods and expert demonstrations.
   year={2020},
   url={https://arxiv.org/abs/2002.04523},
   abstract={
-  Model-based reinforcement learning (MBRL) has been shown to be a powerful framework for data-efficiently learning control of continuous tasks. Recent work in MBRL has mostly focused on using more advanced function approximators and planning schemes, with little development of the general framework. In this paper, we identify a fundamental issue of the standard MBRL framework--what we call the objective mismatch issue. Objective mismatch arises when one objective is optimized in the hope that a second, often uncorrelated, metric will also be optimized. In the context of MBRL, we characterize the objective mismatch between training the forward dynamics model wrt the likelihood of the one-step ahead prediction, and the overall goal of improving performance on a downstream control task. For example, this issue can emerge with the realization that dynamics models effective for a specific task do not necessarily need to be globally accurate, and vice versa globally accurate models might not be sufficiently accurate locally to obtain good control performance on a specific task. In our experiments, we study this objective mismatch issue and demonstrate that the likelihood of one-step ahead predictions is not always correlated with control performance. This observation highlights a critical limitation in the MBRL framework which will require further research to be fully understood and addressed. We propose an initial method to mitigate the mismatch issue by re-weighting dynamics model training. Building on it, we conclude with a discussion about other potential directions of research for addressing this issue.
+  Model-based reinforcement learning (MBRL) has been shown to be a powerful framework for data-efficiently learning control of continuous tasks. Recent work in MBRL has mostly focused on using more advanced function approximators and planning schemes, with little development of the general framework. In this paper, we identify a fundamental issue of the standard MBRL framework--what we call the objective mismatch issue. Objective mismatch arises when one objective is optimized in the hope that a second, often uncorrelated, metric will also be optimized. In the context of MBRL, we characterize the objective mismatch between training the forward dynamics model with respect to the likelihood of the one-step ahead prediction, and the overall goal of improving performance on a downstream control task. For example, this issue can emerge with the realization that dynamics models effective for a specific task do not necessarily need to be globally accurate, and vice versa globally accurate models might not be sufficiently accurate locally to obtain good control performance on a specific task. In our experiments, we study this objective mismatch issue and demonstrate that the likelihood of one-step ahead predictions is not always correlated with control performance. This observation highlights a critical limitation in the MBRL framework which will require further research to be fully understood and addressed. We propose an initial method to mitigate the mismatch issue by re-weighting dynamics model training. Building on it, we conclude with a discussion about other potential directions of research for addressing this issue.
   }
 }
 
@@ -1485,7 +1610,7 @@ for highly interactive mobile applications.
     This paper examines the impact of user mobility on cloudlet offload, and
     shows that even modest user mobility can result in significant network
     degradation. We propose VM handoff as a technique for seamlessly transferring
-    VMencapsulated execution to a more optimal offload site as users move. Our
+    VM-encapsulated execution to a more optimal offload site as users move. Our
     approach can perform handoff in roughly a minute even over limited WANs by
     adaptively reducing data transferred. We present experimental results to
     validate our implementation and to demonstrate effectiveness of adaptation to
