@@ -487,7 +487,7 @@ talks:
   - year: 2023
     location: 'ICML Learning, Control, and Dynamical Systems Workshop'
     url: https://frontiers4lcd.github.io/
-    title: "Introduction to Control for ML"
+    title: "On optimal control and machine learning"
   - year: 2023
     title: "Tutorial on amortized optimization"
     location: Brown University
