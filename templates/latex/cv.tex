@@ -18,8 +18,6 @@
 
 \usepackage{lastpage}
 \cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
-\lfoot{}
-\rfoot{}
 
 \AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}, allcolors=color1, colorlinks}}
 \name{<< name.first >>}{<< name.last >>}
@@ -35,6 +33,8 @@
 \begin{document}
 \makecvtitle
 \vspace{-1cm}
+
+\rfoot{}
 
 << body >>
 
