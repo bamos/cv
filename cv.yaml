@@ -610,6 +610,10 @@ talks:
     title: Differentiable optimization and control
 
 advising:
+  - year: 2023 -- present
+    name: Anselm Paulus
+    details: "(visiting FAIR from MPI-IS)"
+    url: https://scholar.google.com/citations?user=njZL5CQAAAAJ
   - year: 2022 -- present
     name: Aram-Alexandre Pooladian
     details: "(visiting FAIR from NYU)"
@@ -618,11 +622,11 @@ advising:
     name: Carles Domingo-Enrich
     details: "(visiting FAIR from NYU)"
     url: https://cims.nyu.edu/~cd2754/
-  - year: 2022 -- present
+  - year: 2022 -- 2023
     name: Sanae Lotfi
     details: "(visiting FAIR from NYU)"
     url: https://sanaelotfi.github.io/
-  - year: 2022 -- present
+  - year: 2022 -- 2023
     name: Dishank Bansal
     details: "(AI resident at FAIR)"
     url: https://dishank-b.github.io
