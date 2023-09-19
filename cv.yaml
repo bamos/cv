@@ -211,10 +211,15 @@ teaching:
     position: TA
 
 talks:
+  - year: Aug. 2023
+    location: Deep Learning Classics and Trends
+    url: https://mlcollective.org/dlct/
+    title: (Invited Seminar) Objective Mimatch in Reinforcement Learning from Human Feedback
+    details: "(\\href{https://drive.google.com/file/d/1F1lIi48PrWl5_80wQF40Y5dQmCBiZUUh/view?usp=sharing}{Slides Available}, \\href{https://youtu.be/j6Lss2_GSrY}{Recording Available})"
   - year: July 2023
     location: International Conference on Machine Learning
     title: (Tutorial) Reinforcement Learning from Human Feedback
-    details: "(\\href{https://docs.google.com/presentation/d/1JVJz-tqD5kJEYvqYSyUFpfCA8GjtObw7f7NfA5grm-4/edit?usp=sharing}{Slides Available})"
+    details: "(\\href{https://docs.google.com/presentation/d/1JVJz-tqD5kJEYvqYSyUFpfCA8GjtObw7f7NfA5grm-4/edit?usp=sharing}{Slides Available}, \\href{https://slideslive.com/39004357/reinforcement-learning-from-human-feedback-a-tutorial-}{Recording Available})"
   - year: Jun 2023
     location: ACM Conference on Fairness, Accountability, and Transparency
     title: (Tutorial) Steering language models with reinforcement learning from human feedback and constitutional AI
