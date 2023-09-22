@@ -195,7 +195,8 @@ datasets.
   title = {TaskMet: Task-Driven Metric Learning for Model Learning},
   author = {Dishank Bansal and Ricky T. Q. Chen and Mustafa Mukadam and Brandon Amos},
   year = {2023},
-  _venue={ICML Differentiable Almost Everything Workshop},
+  _venue={NeurIPS},
+  selected={true},
   url={https://differentiable.xyz/papers/paper_43.pdf},
   abstract={
     Deep learning models are often used with some downstream
@@ -219,37 +220,12 @@ datasets.
   }
 }
 
-@misc{retchin2023koopman,
-  title = {Koopman Constrained Policy Optimization: A Koopman operator theoretic method for differentiable optimal control in robotics},
-  author = {Matthew Retchin and Brandon Amos and Steven Brunton and Shuran Song},
-  year = {2023},
-  _venue={ICML Differentiable Almost Everything Workshop},
-  url={https://differentiable.xyz/papers/paper_45.pdf},
-  abstract={
-    We introduce Koopman Constrained Policy Optimization (KCPO),
-    combining implicitly differentiable model predictive
-    control with a deep Koopman autoencoder for robot
-    learning in unknown and nonlinear dynamical
-    systems. KCPO is a new policy optimization algorithm
-    that trains neural policies end-to-end with hard box
-    constraints on controls. Guaranteed satisfaction of
-    hard constraints helps ensure the performance and
-    safety of robots. We perform imitation learning with
-    KCPO to recover expert policies on the Simple
-    Pendulum, Cartpole Swing-Up, Reacher, and
-    Differential Drive environments, outperforming
-    baseline methods in generalizing to
-    out-of-distribution constraints in most environments
-    after training.
-  }
-}
-
 @misc{zharmagambetov2023landscape,
   title = {Landscape Surrogate: Learning Decision Losses for Mathematical Optimization Under Partial Information},
   author = {Arman Zharmagambetov and Brandon Amos and Aaron Ferber and Taoan Huang and Bistra Dilkina and Yuandong Tian},
   year = {2023},
   url={https://arxiv.org/abs/2307.08964},
-  _venue={ICML Differentiable Almost Everything Workshop},
+  _venue={NeurIPS},
   abstract={
     Recent works in learning-integrated optimization have shown promise in
     settings where the optimization problem is only
@@ -278,6 +254,32 @@ datasets.
     reducing the number of calls to g . Notably, our
     approach outperforms existing methods for
     computationally expensive high-dimensional problems.
+  }
+}
+
+
+@misc{retchin2023koopman,
+  title = {Koopman Constrained Policy Optimization: A Koopman operator theoretic method for differentiable optimal control in robotics},
+  author = {Matthew Retchin and Brandon Amos and Steven Brunton and Shuran Song},
+  year = {2023},
+  _venue={ICML Differentiable Almost Everything Workshop},
+  url={https://differentiable.xyz/papers/paper_45.pdf},
+  abstract={
+    We introduce Koopman Constrained Policy Optimization (KCPO),
+    combining implicitly differentiable model predictive
+    control with a deep Koopman autoencoder for robot
+    learning in unknown and nonlinear dynamical
+    systems. KCPO is a new policy optimization algorithm
+    that trains neural policies end-to-end with hard box
+    constraints on controls. Guaranteed satisfaction of
+    hard constraints helps ensure the performance and
+    safety of robots. We perform imitation learning with
+    KCPO to recover expert policies on the Simple
+    Pendulum, Cartpole Swing-Up, Reacher, and
+    Differential Drive environments, outperforming
+    baseline methods in generalizing to
+    out-of-distribution constraints in most environments
+    after training.
   }
 }
 
