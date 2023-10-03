@@ -157,10 +157,17 @@ education:
     overallGPA: 4.0/4.0
 
 industry:
+  - place: Allen Institue for AI
+    location: Remote |
+#    title: Research Intern
+    dates: 2023 - cont.
+    # dates: June 2018 -- Sept 2018
+    details:
+      - "Research Scientist"
   - place: HuggingFace
     location: Remote |
 #    title: Research Intern
-    dates: 2022 -- cont.
+    dates: 2022 -- 2023
     # dates: June 2018 -- Sept 2018
     details:
       - "Research Scientist and RLHF Team Lead"
