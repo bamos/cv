@@ -119,6 +119,10 @@ repos:
     desc: Model-based RL for mixed sim. and real
 
 artifacts:
+  - id: HuggingFaceH4/zephyr-7b-alpha
+    year: 2023
+    type: model
+    desc: Small and powerful chat model
   - id: HuggingFaceH4/starchat-playground
     year: 2023
     type: space
@@ -160,7 +164,7 @@ industry:
   - place: Allen Institute for AI
     location: Remote |
 #    title: Research Intern
-    dates: 2023 - cont.
+    dates: 2023 -- cont.
     # dates: June 2018 -- Sept 2018
     details:
       - "Research Scientist"
@@ -395,6 +399,12 @@ skills:
 
 
 extracur:
+  - details: The Retort AI Podcast
+    year: 2023 -- cont.
+    url: https://retortai.com/
+  - details: Interconnects AI Blog
+    year: 2020 -- cont.
+    url: https://www.interconnects.ai/
   - details: Cornell Varsity Lightweight Rowing
     year: 2013 -- 2017
     url: https://cornellsun.com/2017/06/04/lightweight-rowing-wins-3rd-national-title-since-2014-to-cap-off-undefeated-season/
