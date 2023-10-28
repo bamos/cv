@@ -102,6 +102,9 @@ service:
     year: 2017
 
 repos:
+  - repo_url: https://github.com/huggingface/alignment-handbook
+    year: 2023
+    desc: RLHF model lessons and recipes
   - repo_url: https://github.com/lvwerra/trl
     year: 2023
     desc: Lean library for RLHF
@@ -119,6 +122,10 @@ repos:
     desc: Model-based RL for mixed sim. and real
 
 artifacts:
+  - id: HuggingFaceH4/zephyr-7b-beta
+    year: 2023
+    type: model
+    desc: Small and powerful chat model v2
   - id: HuggingFaceH4/zephyr-7b-alpha
     year: 2023
     type: model
@@ -199,6 +206,11 @@ industry:
       - "Test Engineering Intern"
 
 teaching:
+  - semester: Fa2023
+    name: AI History
+    short: Seoul National University, School of Law
+    position: Guest Lecture on RL History
+    # http://aihistoryclass.com/
   - semester: Su2020, Fa2020
     name: Introduction to Artificial Intelligence
     short: UCB CS188
