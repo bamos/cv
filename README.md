@@ -83,6 +83,7 @@ documents you produce, and add a link back here if you want!
 + [Pınar Demetçi](https://pinardemetci.github.io/)
 + [Qian Ge](https://conan7882.github.io/)
 + [Renan Souza](https://renansouza.org/) ([code](https://github.com/renan-souza/cv))
++ [Songlin Jiang](https://hollowman6.github.io/resume/)
 + [Stefan Doerr](https://github.com/stefdoerr/cv)
 + [Steve T.K. Jan](https://stevetkjan.github.io/)
 + [Swaminathan Gurumurthy](https://swami1995.github.io/)
