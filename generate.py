@@ -601,6 +601,7 @@ MARKDOWN_CONTEXT = RenderContext(
         (r'\.~', '. '),  # spaces
         (r'\\ ', ' '),  # spaces
         (r'\\&', '&'),  # unescape &
+        (r'\\_', '_'),  # unescape _
         (r'\\\$', '\$'),  # unescape $
         (r'\\%', '%'),  # unescape %
         (r'\\textbf{(.*)}', r'**\1**'),  # bold text
