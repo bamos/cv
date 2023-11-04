@@ -604,10 +604,10 @@ MARKDOWN_CONTEXT = RenderContext(
         (r'\\_', '_'),  # unescape _
         (r'\\\$', '\$'),  # unescape $
         (r'\\%', '%'),  # unescape %
-        (r'\\textbf{(.*)}', r'**\1**'),  # bold text
-        (r'\{ *\\bf *(.*)\}', r'**\1**'),
-        (r'\\textit{(.*)}', r'*\1*'),  # italic text
-        (r'\{ *\\it *(.*)\}', r'*\1*'),
+        (r'\\textbf{(.*?)}', r'<b>\1</b>'),  # bold text
+        (r'\{ *\\bf *(.*?)\}', r'<b>\1</b>'),
+        (r'\\textit{(.*?)}', r'<i>\1</i>'),  # italic text
+        (r'\{ *\\it *(.*?)\}', r'<i>\1</i>'),
         (r'\\LaTeX', 'LaTeX'),  # \LaTeX to boring old LaTeX
         (r'\\TeX', 'TeX'),  # \TeX to boring old TeX
         (' --- ', '&nbsp;-&nbsp;'),  # em dash
