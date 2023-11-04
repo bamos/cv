@@ -62,7 +62,7 @@ education:
     dates: 2014 -- 2019 # May 19, 2019
     overallGPA: 0.00/0.00
     details:
-      - "Thesis: \\textit{\\href{https://github.com/bamos/thesis}{Differentiable Optimization-Based Modeling for Machine Learning}}"
+      - "Thesis: \\href{https://github.com/bamos/thesis}{\\textit{Differentiable Optimization-Based Modeling for Machine Learning}}"
       - "Advisor: \\href{http://zicokolter.com}{J. Zico Kolter}"
   - school: Virginia Tech
     location: Blacksburg, VA
