@@ -483,6 +483,10 @@ repos:
 
 talks:
   - year: 2023
+    location: 'NeurIPS'
+    url: https://otmlworkshop.github.io/schedule/
+    title: "Amortized optimization for optimal transport"
+  - year: 2023
     location: 'ICML Learning, Control, and Dynamical Systems Workshop'
     url: https://frontiers4lcd.github.io/
     title: "On optimal control and machine learning"
