@@ -483,7 +483,7 @@ repos:
 
 talks:
   - year: 2023
-    location: 'NeurIPS'
+    location: 'NeurIPS Optimal Transport and ML Workshop'
     url: https://otmlworkshop.github.io/schedule/
     title: "Amortized optimization for optimal transport"
   - year: 2023
