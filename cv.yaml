@@ -612,10 +612,6 @@ talks:
     title: Differentiable optimization and control
 
 advising:
-  - year: 2023 -- present
-    name: Anselm Paulus
-    details: "(visiting FAIR from Max Planck Institute, Tübingen)"
-    url: https://scholar.google.com/citations?user=njZL5CQAAAAJ
   - year: 2022 -- present
     name: Aram-Alexandre Pooladian
     details: "(visiting FAIR from NYU)"
@@ -624,6 +620,14 @@ advising:
     name: Carles Domingo-Enrich
     details: "(visiting FAIR from NYU)"
     url: https://cims.nyu.edu/~cd2754/
+  - year: 2023 -- 2024
+    name: Anselm Paulus
+    details: "(visiting FAIR from Max Planck Institute, Tübingen)"
+    url: https://scholar.google.com/citations?user=njZL5CQAAAAJ
+  - year: 2023
+    name: Matthew Retchin
+    details: "(Columbia MS thesis committee, now at Harvard)"
+    url: https://www.mhr.ai
   - year: 2022 -- 2023
     name: Sanae Lotfi
     details: "(visiting FAIR from NYU)"
@@ -642,7 +646,7 @@ advising:
     url: https://www.aaronlou.com/
   - year: 2021 -- 2022
     name: Eugene Vinitsky
-    details: "(visiting FAIR from Berkeley, now incoming professor at NYU)"
+    details: "(visiting FAIR from Berkeley, now professor at NYU)"
     url: https://eugenevinitsky.github.io/
   - year: 2021 -- 2022
     name: Samuel Cohen
