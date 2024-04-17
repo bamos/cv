@@ -24,6 +24,7 @@ order:
   - [honors, Honors \& Awards]
   - [all_publications, Publications]
   - [repos, Open Source Repositories]
+  - [NEWPAGE, NONE]
   - [talks, Invited Talks]
   - [advising, Interns and Students]
   - [service, Professional Activities]
@@ -455,7 +456,7 @@ repos:
     desc: Face recognition with deep neural networks
   - repo_url: https://github.com/vtopt/qnstop
     year: 2014
-    desc: Fortran Quasi-newton stochastic optimization library
+    desc: Fortran quasi-Newton stochastic optimization library
   - repo_url: https://github.com/bamos/snowglobe
     year: 2014
     desc: Haskell-driven, self-hosted web analytics with minimal configuration
@@ -701,6 +702,10 @@ service:
     - "Transactions on Machine Learning Research (TMLR)"
 
   main:
+    - details: NeurIPS Area Chair
+      year: 2024
+    - details: NeurIPS Datasets and Benchmarks Area Chair
+      year: 2024
     - details: AAAI Senior Program Committee
       year: 2024
     - details: NeurIPS Area Chair
