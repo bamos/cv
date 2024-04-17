@@ -379,6 +379,9 @@ all_publications:
     'Joan Bruna': 'https://cims.nyu.edu/~bruna/'
 
 repos:
+  - repo_url: https://github.com/bamos/zsh-autosuggestions.ai
+    year: 2024
+    desc: AI-generated autosuggestions for zsh
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
     year: 2023
     desc: Tutorial on amortized optimization
