@@ -41,6 +41,12 @@ def get_pub_md(context, config):
         authors = authors.replace(r'\"o', '&ouml;')
         authors = authors.replace(r'\'o', '&oacute;')
         authors = authors.replace(r"\'\i", '&iacute;')
+        # if r'\diamond' in authors:
+        #     import ipdb; ipdb.set_trace()
+        # if 'Guo' in authors:
+        #     import ipdb; ipdb.set_trace()
+        authors = authors.replace("$^\\dagger$", '<sup>&dagger;</sup>')
+        authors = authors.replace("$^*$", '<sup>*</sup>')
 
         return authors
 
