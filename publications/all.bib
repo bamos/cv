@@ -12,6 +12,45 @@ We train the AdvPrompter using a novel algorithm that does not require access to
   }
 }
 
+@misc{pooladian2023neural,
+  title = {Neural Optimal Transport with Lagrangian Costs},
+  author = {Aram-Alexandre Pooladian and Carles Domingo-Enrich and Ricky T. Q. Chen and Brandon Amos},
+  year = {2024},
+  _venue={UAI},
+  selected={true},
+  url={https://openreview.net/forum?id=myb0FKB8C9},
+  abstract={
+Computational efforts in optimal transport traditionally
+revolve around the squared-Euclidean cost. In this
+work, we choose to investigate the optimal transport
+problem between probability measures when the
+underlying metric space is non-Euclidean, or when
+the cost function is understood to satisfy a least
+action principle,also known as a Lagrangian
+cost. These two generalizations are useful when
+connecting observations from a physical system,
+where the transport dynamics are influenced by the
+geometry of the system, such as obstacles, and
+allows practitioners to incorporate a priori
+knowledge of the underlying system. Examples include
+barriers for transport, or enforcing a certain
+geometry, i.e., paths must be circular. We
+demonstrate the effectiveness of this formulation on
+existing synthetic examples in the literature, where
+we solve the optimal transport problems in the
+absence of regularization, which is novel in the
+literature. Our contributions are of computational
+interest, where we demonstrate the ability to
+efficiently compute geodesics and amortize
+spline-based paths. We demonstrate the effectiveness
+of this formulation on existing synthetic examples
+in the literature, where we solve the optimal
+transport problems in the absence of regularization.
+  }
+}
+
+
+
 @misc{sambharya2024learning,
   title={Learning to Warm-Start Fixed-Point Optimization Algorithms},
   author={Rajiv Sambharya and Georgina Hall and Brandon Amos and Bartolomeo Stellato},
@@ -307,43 +346,6 @@ datasets.
     after training.
   }
 }
-
-@misc{pooladian2023neural,
-  title = {Neural Optimal Transport with Lagrangian Costs},
-  author = {Aram-Alexandre Pooladian and Carles Domingo-Enrich and Ricky T. Q. Chen and Brandon Amos},
-  year = {2023},
-  _venue={ICML New Frontiers in Learning, Control, and Dynamical Systems Workshop},
-  url={https://openreview.net/forum?id=myb0FKB8C9},
-  abstract={
-Computational efforts in optimal transport traditionally
-revolve around the squared-Euclidean cost. In this
-work, we choose to investigate the optimal transport
-problem between probability measures when the
-underlying metric space is non-Euclidean, or when
-the cost function is understood to satisfy a least
-action principle,also known as a Lagrangian
-cost. These two generalizations are useful when
-connecting observations from a physical system,
-where the transport dynamics are influenced by the
-geometry of the system, such as obstacles, and
-allows practitioners to incorporate a priori
-knowledge of the underlying system. Examples include
-barriers for transport, or enforcing a certain
-geometry, i.e., paths must be circular. We
-demonstrate the effectiveness of this formulation on
-existing synthetic examples in the literature, where
-we solve the optimal transport problems in the
-absence of regularization, which is novel in the
-literature. Our contributions are of computational
-interest, where we demonstrate the ability to
-efficiently compute geodesics and amortize
-spline-based paths. We demonstrate the effectiveness
-of this formulation on existing synthetic examples
-in the literature, where we solve the optimal
-transport problems in the absence of regularization.
-  }
-}
-
 
 @misc{domingoenrich2023stochastic,
       title={Stochastic Optimal Control Matching}, 
