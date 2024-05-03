@@ -3,6 +3,7 @@
   author={Anselm Paulus* and Arman Zharmagambetov* and Chuan Guo and Brandon Amos$^{\dagger}$ and Yuandong Tian$^{\dagger}$},
   year={2024},
   url={https://arxiv.org/abs/2404.16873},
+  codeurl={https://github.com/facebookresearch/advprompter},
   _venue={arXiv},
   selected={true},
   abstract={
@@ -20,32 +21,7 @@ We train the AdvPrompter using a novel algorithm that does not require access to
   selected={true},
   url={https://openreview.net/forum?id=myb0FKB8C9},
   abstract={
-Computational efforts in optimal transport traditionally
-revolve around the squared-Euclidean cost. In this
-work, we choose to investigate the optimal transport
-problem between probability measures when the
-underlying metric space is non-Euclidean, or when
-the cost function is understood to satisfy a least
-action principle,also known as a Lagrangian
-cost. These two generalizations are useful when
-connecting observations from a physical system,
-where the transport dynamics are influenced by the
-geometry of the system, such as obstacles, and
-allows practitioners to incorporate a priori
-knowledge of the underlying system. Examples include
-barriers for transport, or enforcing a certain
-geometry, i.e., paths must be circular. We
-demonstrate the effectiveness of this formulation on
-existing synthetic examples in the literature, where
-we solve the optimal transport problems in the
-absence of regularization, which is novel in the
-literature. Our contributions are of computational
-interest, where we demonstrate the ability to
-efficiently compute geodesics and amortize
-spline-based paths. We demonstrate the effectiveness
-of this formulation on existing synthetic examples
-in the literature, where we solve the optimal
-transport problems in the absence of regularization.
+We investigate the optimal transport problem between probability measures when the underlying cost function is understood to satisfy a least action principle, also known as a Lagrangian cost. These generalizations are useful when connecting observations from a physical system, where the transport dynamics are influenced by the geometry of the system, such as obstacles, (e.g., incorporating barrier functions in the Lagrangian) and allows practitioners to incorporate a priori knowledge of the underlying system such as non-Euclidean geometries (e.g., paths must be circular). Our contributions are of computational interest, where we demonstrate the ability to efficiently compute geodesics and amortize spline-based paths, which has not been done before, even in low dimensional problems. Unlike prior work, we also output the resulting Lagrangian optimal transport map without requiring an ODE solver. We demonstrate the effectiveness of our formulation on low-dimensional examples taken from  prior work. 
   }
 }
 
@@ -56,6 +32,7 @@ transport problems in the absence of regularization.
   author={Rajiv Sambharya and Georgina Hall and Brandon Amos and Bartolomeo Stellato},
   year={2024},
   url={https://arxiv.org/abs/2309.07835},
+  codeurl={https://github.com/stellatogrp/l2ws},
   _venue={JMLR},
   abstract={
 We introduce a machine-learning framework to warm-start fixed-point optimization algorithms. Our architecture consists of a neural network mapping problem parameters to warm starts, followed by a predefined number of fixed-point iterations. We propose two loss functions designed to either minimize the fixed-point residual or the distance to a ground truth solution. In this way, the neural network predicts warm starts with the end-to-end goal of minimizing the downstream loss. An important feature of our architecture is its flexibility, in that it can predict a warm start for fixed-point algorithms run for any number of steps, without being limited to the number of steps it has been trained on. We provide PAC-Bayes generalization bounds on unseen data for common classes of fixed-point operators: contractive, linearly convergent, and averaged. Applying this framework to well-known applications in control, statistics, and signal processing, we observe a significant reduction in the number of iterations and solution time required to solve these problems, through learned warm starts.
