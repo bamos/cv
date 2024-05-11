@@ -391,6 +391,9 @@ repos:
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
     year: 2023
     desc: Tutorial on amortized optimization
+  - repo_url: https://github.com/facebookresearch/taskmet
+    year: 2023
+    desc: "TaskMet: Task-Driven Metric Learning for Model Learning"
   - repo_url: https://github.com/facebookresearch/w2ot
     year: 2023
     desc: Wasserstein-2 optimal transport in JAX
