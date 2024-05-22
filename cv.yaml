@@ -48,7 +48,7 @@ about: '\vspace{18pt} \small{
 
 reviewing:
   - details: Conference on Machine Learning (ICML)
-    year: 2020, 2022 (3), 2023
+    year: 2020, 2022 (3), 2023, 2024 (3)
     sub_details: "(count is 1 unless labelled)"
   - details: Conference on Neural Information Processing Systems (NeurIPs)
     year: 2022 (2), 2023
@@ -74,7 +74,7 @@ service:
   - details: Associate Editor (AE), Conference on Intelligent Robots and Systems (IROS)
     year: 2023
   - details: Farama Foundation Board of Technical Advisors
-    year: 2022 -- cont.
+    year: 2022 -- 2024
     url: https://farama.org/
   - details: NeurIPs Workshop on Robot Learning Organizor
     year: 2021, 2022
@@ -102,6 +102,12 @@ service:
     year: 2017
 
 repos:
+  - repo_url: https://github.com/allenai/reward-bench
+    year: 2024
+    desc: The first evaluation tool for reward models
+  - repo_url: https://github.com/natolambert/blogcaster
+    year: 2023
+    desc: AI tools for multimodal blogging
   - repo_url: https://github.com/huggingface/alignment-handbook
     year: 2023
     desc: RLHF model lessons and recipes
@@ -122,6 +128,18 @@ repos:
     desc: Model-based RL for mixed sim. and real
 
 artifacts:
+  - id: allenai/reward-bench
+    year: 2024
+    type: space
+    desc: Benchmark for reward modeling
+  - id: allenai/OLMo-7B-Instruct
+    year: 2024
+    type: model
+    desc: A truly open-source chat model
+  - id: allenai/tulu-2-dpo-70b
+    year: 2023
+    type: model
+    desc: First model scaling DPO
   - id: HuggingFaceH4/zephyr-7b-beta
     year: 2023
     type: model
@@ -145,7 +163,7 @@ artifacts:
   - id: HuggingFaceH4/stack-exchange-preferences
     year: 2023
     type: dataset
-    desc: Preference dataset for RLHF from StackExchange
+    desc: Preference dataset for RLHF
 
 education:
   - school: University of California, Berkeley
@@ -169,7 +187,7 @@ education:
 
 industry:
   - place: Allen Institute for AI
-    location: Remote |
+    location: Seattle, WA |
 #    title: Research Intern
     dates: 2023 -- cont.
     # dates: June 2018 -- Sept 2018
@@ -206,11 +224,31 @@ industry:
       - "Test Engineering Intern"
 
 teaching:
+  - semester: Sp2024
+    name: NLP with Deep Learning
+    short: Stanford University CS224N
+    position: Guest Lecture, Life after DPO
+    details: "(\\href{https://docs.google.com/presentation/d/1on5xTePaUYg47vui3dUr0Lp6GUXmOXmhceNJLXRbGsE/edit?usp=sharing}{slides}, \\href{https://web.stanford.edu/class/cs224n/}{course})"
+  - semester: Sp2024
+    name: Transformers United
+    short: Stanford University CS25N
+    position: Guest Lecture, hi story of open alignment
+    details: "(\\href{https://docs.google.com/presentation/d/1quMyI4BAx4rvcDfk8jjv063bmHg4RxZd9mhQloXpMn0/edit?usp=sharing}{slides}, \\href{https://www.youtube.com/watch?v=AdLgPmcrXwQ}{recording})"
+  - semester: Sp2024
+    name: Policy Challenges of AI
+    short: Harvard Univeristy
+    position: Guest lecture on open-source AI
+    details: "(\\href{https://docs.google.com/presentation/d/1VI6u104kGFsZRh-CHheUsS2BA7J9ZpUSdyr1lBPaoA8/edit?usp=sharing}{slides}, \\href{https://hls.harvard.edu/courses/case-studies-in-public-and-private-policy-challenges-of-artificial-intelligence/}{course})"
+  - semester: Fa2023
+    name: Machine Learning from Human Preferences
+    short: Stanford Univeristy CS329H
+    position: Guest lecture on RLHF
+    details: "(\\href{https://docs.google.com/presentation/d/1T6X8ZlwrBek14wGfKljLxikwkTBDdM88r0AZ6NiodU4/edit?usp=sharing}{slides}, \\href{https://web.stanford.edu/class/cs329h/}{course})"
   - semester: Fa2023
     name: AI History
     short: Seoul National University, School of Law
-    position: Guest Lecture on RL History
-    # http://aihistoryclass.com/
+    position: Guest lecture on RL History
+    details: "(\\href{http://aihistoryclass.com/}{course})"
   - semester: Su2020, Fa2020
     name: Introduction to Artificial Intelligence
     short: UCB CS188
@@ -234,6 +272,27 @@ teaching:
     position: TA
 
 talks:
+  - year: Mar. 2024
+    location: Deep Learning Classics and Trends
+    title: RewardBench, Evaluating Reward Models for Language Modeling 
+    details: "(\\href{https://docs.google.com/presentation/d/11ykKLSnHAE-YbI8V_DTkbXYHsgItqYTTywIGyoK9D_0/edit?pli=1#slide=id.g26c4c1f906b_0_0}{slides})"  
+  - year: Feb. 2024
+    location: Anthropic Societal Impacts Team
+    title: RewardBench 
+    # details: "(\\href{ https://docs.google.com/presentation/d/12YyZmOpgrsUT2dE0PRZC8u-_uPG_dTExM0TpI9mnfDE/edit?usp=sharing}{slides})"  
+  - year: Dec. 2023
+    location: Workshop of Social Choice for AI Ethics and Safety
+    title: History and Risks of RLHF 
+    # details: "(\\href{ https://docs.google.com/presentation/d/12YyZmOpgrsUT2dE0PRZC8u-_uPG_dTExM0TpI9mnfDE/edit?usp=sharing}{slides})"  
+  - year: Dec. 2023
+    location: Workshop on Sociotechnical AI Safety
+    title: History and Risks of RLHF 
+    details: "(\\href{https://docs.google.com/presentation/d/12YyZmOpgrsUT2dE0PRZC8u-_uPG_dTExM0TpI9mnfDE/edit?usp=sharing}{slides})"  
+  - year: Nov. 2023
+    location: CoRL LangRob Workshop
+    url: https://sites.google.com/view/langrob-corl23/home
+    title: Bridging RLHF from LLMs back to control 
+    details: "(\\href{https://docs.google.com/presentation/d/15i_7iqyUJwDMtyzzzSn83JLETET4Lz2Y7e4sDCAZhfM/edit?usp=sharing}{slides},\\href{https://www.youtube.com/live/ThgGAZF4hgI?si=EUGqtGr1XqIELhIj&t=8827}{recording})"  
   - year: Aug. 2023
     location: Deep Learning Classics and Trends
     url: https://mlcollective.org/dlct/
