@@ -631,7 +631,7 @@ talks:
     year: 2018
 
 advising:
-  - year: 2024
+  - year: 2024 -- present
     name: Aaron Havens
     details: "(visiting FAIR from UIUC)"
     url: https://scholar.google.com/citations?user=HBAXF6YAAAAJ
