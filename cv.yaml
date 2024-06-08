@@ -249,6 +249,11 @@ teaching:
     short: Seoul National University, School of Law
     position: Guest lecture on RL History
     details: "(\\href{http://aihistoryclass.com/}{course})"
+  - semester: Win.2022
+    name: HuggingFace Deep RL Course
+    short: RLHF, from 0 to ChatGPT
+    position: Online (>160k views)
+    details: "(\\href{https://www.youtube.com/watch?v=2MBJOuVq380}{watch})"
   - semester: Su2020, Fa2020
     name: Introduction to Artificial Intelligence
     short: UCB CS188
@@ -296,7 +301,7 @@ talks:
   - year: Aug. 2023
     location: Deep Learning Classics and Trends
     url: https://mlcollective.org/dlct/
-    title: (Invited Seminar) Objective Mimatch in Reinforcement Learning from Human Feedback
+    title: Objective Mimatch in Reinforcement Learning from Human Feedback
     details: "(\\href{https://drive.google.com/file/d/1F1lIi48PrWl5_80wQF40Y5dQmCBiZUUh/view?usp=sharing}{Slides Available}, \\href{https://youtu.be/j6Lss2_GSrY}{Recording Available})"
   - year: July 2023
     location: International Conference on Machine Learning
@@ -308,24 +313,24 @@ talks:
     details: "(\\href{https://docs.google.com/presentation/d/1-SzKvrfqKpK8NbTrnlLwJL5IHohPoW-0X7G17hSVW-Y/edit?usp=sharing}{Slides Available})"
   - year: Mar 2023
     location: UCL Dark Lab
-    title: (Invited Seminar) Reinforcement Learning from Human Feedback; Open and Academic Progress
+    title: Reinforcement Learning from Human Feedback; Open and Academic Progress
     details: "(\\href{https://www.youtube.com/watch?v=8SgKDSX-Me0}{Recording Available}, \\href{https://docs.google.com/presentation/d/1jUipk6Mu8On2mWu_qfiocmbgnNux7SWp/edit#slide=id.p1}{Slides})"
   - year: Feb 2023
     location: Microsoft Data Science Gems
-    title: (Invited Seminar) Reinforcement Learning from Human Feedback; Pathways to Open Reproduction of ChatGPT
+    title: Reinforcement Learning from Human Feedback; Pathways to Open Reproduction of ChatGPT
   - year: July 2022
     location: ICML Workshop on Responsible Decision Making in Dynamic Environments
     details: "(\\href{https://slideslive.com/38988545/reward-reports-for-reinforcement-learning}{Recording Available}, \\href{https://docs.google.com/presentation/d/1Id6nDc6Q1kIPeB0VI0FqmJZcrwCY5p6rY-az50h2ArI/edit?usp=sharing}{Slides})"
     url: https://responsibledecisionmaking.github.io/schedule/
-    title: (Contributed Talk) Reward Reports for Reinforcement Learning
+    title: Reward Reports for Reinforcement Learning
   - year: July 2022
     location: Lead The Future
 #    details: "(\\href{}{Slides Available})"
-    title: (Invited Seminar) Synthesizing Robotic Controllers with Model-based Reinforcement Learning
+    title: Synthesizing Robotic Controllers with Model-based Reinforcement Learning
   - year: April 2022
     location: University of Pennsylvania -- Perception, Action, and Learning Group
     details: "(\\href{https://youtu.be/HxbeQI7hfo4}{Recording Available}, \\href{https://docs.google.com/presentation/d/1cxpA8gGNErShrf4Bz04wbgY_rao3pLgd/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
-    title: (Invited Seminar) Planning through Exploration and Exploitation in Model-based Reinforcement Learning
+    title: Planning through Exploration and Exploitation in Model-based Reinforcement Learning
     # url: 
   - year: March 2022
     location: Microsoft Research
@@ -334,7 +339,7 @@ talks:
   - year: February 2022
     location: DeepMind Robotics All Hands
 #    details: "(\\href{https://docs.google.com/presentation/d/1uQKXAFAFzsS_Ucz-0hhPXyfruzETR987/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides Available})"
-    title: (Invited Seminar) The Challenges of Exploration for Offline Reinforcement Learning
+    title: The Challenges of Exploration for Offline Reinforcement Learning
   - year: February 2022
     location: Amazon Robotics \& AI
     details: "(\\href{https://docs.google.com/presentation/d/1uQKXAFAFzsS_Ucz-0hhPXyfruzETR987/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
@@ -348,12 +353,12 @@ talks:
     location: Cornell Robotics Seminar
     details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Recording Available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
     url: https://robotics.cornell.edu/category/seminars/spring-2021/
-    title: (Invited Seminar) Improving Model Predictive Control in Model-based Reinforcement Learning
+    title: Improving Model Predictive Control in Model-based Reinforcement Learning
   - year: April 2020
     location: UC Berkeley Semiautonomous Seminar
     details: "(\\href{https://youtu.be/Z4EpSWfU48E}{Recording Available}, \\href{https://docs.google.com/presentation/d/1Q0QYHAyPa_dO8iUsOyDcudvDAwhl24Rc/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
     url: https://sites.google.com/berkeley.edu/semiautonomousseminar/spring-2020
-    title: (Invited Seminar) Model Learning for Low-level Control in Robotics 
+    title: Model Learning for Low-level Control in Robotics 
   - year: May 2019
     location: UC Berkeley Semiautonomous Seminar
     url: https://sites.google.com/view/cs-159-spring-2020/lectures
