@@ -37,6 +37,7 @@ order:
   - [advising, Mentorship]
   - [reviewing, Peer Review]
   - [service, Professional Activities]
+  - [policy, Policy Engagement]
   - [teaching, Teaching]
   - [extracur, Extracurriculars]
 
@@ -47,11 +48,13 @@ about: '\vspace{18pt} \small{
 '
 
 reviewing:
+  - details: Transactions on Machine Learning Research (TMLR)
+    year: 2024
   - details: Conference on Machine Learning (ICML)
     year: 2020, 2022 (3), 2023, 2024 (3)
     sub_details: "(count is 1 unless labelled)"
   - details: Conference on Neural Information Processing Systems (NeurIPs)
-    year: 2022 (2), 2023
+    year: 2022 (2), 2023, 2024
   - details: Conference on Learning Representations (ICLR)
     year: 2021* (3), 2022 (3)
     sub_details: "(*Outstanding Reviewer)"
@@ -69,6 +72,16 @@ reviewing:
     year: 2019, 2020, 2022
   - details: Transactions on Cybernetics
     year: 2019, 2020
+
+policy:
+  - details: Columbia Convening on Openness and AI
+    year: 2024
+    url: https://blog.mozilla.org/en/mozilla/ai/introducing-columbia-convening-openness-and-ai/
+  - details: NAIRR Panel at AI Expo for National Competitiveness
+    year: 2024
+  - details: IAS AI Policy and Governance Working Group
+    year: 2024
+    url: https://www.ias.edu/stsv-lab/aipolicy
 
 service:
   - details: Associate Editor (AE), Conference on Intelligent Robots and Systems (IROS)
