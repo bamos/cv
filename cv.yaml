@@ -111,7 +111,7 @@ repos:
   - repo_url: https://github.com/huggingface/alignment-handbook
     year: 2023
     desc: RLHF model lessons and recipes
-  - repo_url: https://github.com/lvwerra/trl
+  - repo_url: https://github.com/huggingface/trl
     year: 2023
     desc: Lean library for RLHF
   - repo_url: https://github.com/huggingface/simulate
