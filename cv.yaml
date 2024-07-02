@@ -323,19 +323,19 @@ all_publications:
     'Rajiv Sambharya': 'https://rajivsambharya.github.io/'
     'Ricky Chen': 'https://scholar.google.com/citations?user=7MxQd6UAAAAJ'
     'Ricky T. Q. Chen': 'https://scholar.google.com/citations?user=7MxQd6UAAAAJ'
-    'Rob Fergus': 'https://cs.nyu.edu/~fergus/pmwiki/pmwiki.php'
+    'Rob Fergus': 'https://scholar.google.com/citations?user=GgQ9GEkAAAAJ&h'
     'Robert Parker': 'https://ieeexplore.ieee.org/author/37085729541'
     'Robert Verkuil': 'https://dblp.org/pid/296/8930.html'
-    'Roberta Klatzky': 'https://www.cmu.edu/dietrich/psychology/people/core-training-faculty/klatzky-roberta.html'
+    'Roberta Klatzky': 'https://scholar.google.com/citations?user=wUPKh58AAAAJ'
     'Roberto Calandra': 'https://www.robertocalandra.com/about/'
     'Rohit Upadhyaya': 'https://dblp.org/pid/207/9123.html'
     'Samuel Cohen': 'https://scholar.google.com/citations?user=CmdjfTsAAAAJ'
     'Samuel Stanton': 'https://samuelstanton.github.io/'
     'Sarah Clinch': 'http://www.sclinch.com/'
     'Serkan Cabi': 'https://scholar.google.com/citations?user=l-HhJaUAAAAJ'
-    'Shane Barratt': 'https://web.stanford.edu/~sbarratt/'
+    'Shane Barratt': 'https://scholar.google.com/citations?user=HmCZLyoAAAAJ'
     'Shobha': 'https://scholar.google.com/citations?user=BFWurDEAAAAJ'
-    'Siyan Zhao': 'https://www.siyanz.com/'
+    'Siyan Zhao': 'https://scholar.google.com/citations?user=0OpjwCMAAAAJ'
     'Soumith Chintala': 'https://soumith.ch/'
     'Stephen Boyd': 'https://web.stanford.edu/~boyd/'
     'Steven Diamond': 'https://stevendiamond.me/'
@@ -380,6 +380,19 @@ all_publications:
     'Yuandong Tian': 'https://yuandong-tian.com/'
     'Jiequn Han': 'https://scholar.google.com/citations?user=el5gT4AAAAAJ'
     'Joan Bruna': 'https://cims.nyu.edu/~bruna/'
+    'Mattia Silvestri': 'https://scholar.google.com/citations?user=yHEb8eAAAAAJ'
+    'Senne Berden': 'https://scholar.google.com/citations?user=sMtjmx4AAAAJ'
+    'Jayanta Mandi': 'https://jayantamandi.com/'
+    'Ali İrfan Mahmutoğulları': 'https://scholar.google.com/citations?user=muyZLrYAAAAJ'
+    'Tias Guns': 'https://people.cs.kuleuven.be/~tias.guns/'
+    'Michele Lombardi': 'https://scholar.google.com/citations?user=lJJ6EOMAAAAJ'
+    'Lazar Atanackovic': 'https://lazaratan.github.io/'
+    'Xi Zhang': 'https://scholar.google.com/citations?user=CblgXekAAAAJ'
+    'Mathieu Blanchette': 'https://www.cs.mcgill.ca/~blanchem/'
+    'Leo J Lee': 'https://scholar.google.ca/citations?user=DN3LoTEAAAAJ'
+    'Yoshua Bengio': 'https://yoshuabengio.org/profile/'
+    'Alexander Tong': 'https://www.alextong.net/'
+    'Kirill Neklyudov': 'https://necludov.github.io/'
 
 repos:
   - repo_url: https://github.com/facebookresearch/advprompter
@@ -388,9 +401,6 @@ repos:
   - repo_url: https://github.com/facebookresearch/lagrangian-ot
     year: 2024
     desc: Lagrangian OT
-  - repo_url: https://github.com/bamos/zsh-autosuggestions.ai
-    year: 2024
-    desc: AI-generated autosuggestions for zsh
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
     year: 2023
     desc: Tutorial on amortized optimization
