@@ -24,7 +24,7 @@ order:
   - [honors, Honors \& Awards]
   - [all_publications, Publications]
   - [repos, Open Source Repositories]
-  - [NEWPAGE, NONE]
+  # - [NEWPAGE, NONE]
   - [talks, Invited Talks]
   - [advising, Interns and Students]
   - [service, Professional Activities]
