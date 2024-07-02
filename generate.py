@@ -417,7 +417,11 @@ def add_repo_data(context, config, in_tex):
         # caching to disk.
         if short_name not in repo_htmls:
             r = requests.get(item['repo_url'])
-            repo_htmls[short_name] = r.content
+            if r.status_code == 200:
+                repo_htmls[short_name] = r.content
+            else:
+                print(f"+ Skipping {item['repo_url']} (status code {r.status_code})")
+                continue
         soup = BeautifulSoup(repo_htmls[short_name], 'html.parser')
 
         star_str = soup.find(class_="js-social-count").text.strip()
@@ -443,6 +447,11 @@ def get_scholar_stats(scholar_id):
         scholar_stats['citations'] = truncate_to_k(author['citedby'])
     return scholar_stats
 
+def check_author_urls(author_urls_dict):
+    for author, url in author_urls_dict.items():
+        r = requests.head(url)
+        if r.status_code != 200:
+            print(f"+ URL for {author} ({url}) returned status code {r.status_code}")
 
 class RenderContext(object):
     BUILD_DIR = 'build'
@@ -551,6 +560,7 @@ class RenderContext(object):
                 section_data['scholar_stats'] = get_scholar_stats(yaml_data['social']['google_scholar'])
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
+                # check_author_urls(section_content['author_urls'])
             elif section_tag == 'NEWPAGE':
                 pass
             else:
