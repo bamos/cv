@@ -63,6 +63,42 @@ Numerous biological and physical processes can be modeled as systems of interact
   }
 }
 
+@inproceedings{lotfi2024unlocking,
+  title={Unlocking Tokens as Data Points for Generalization Bounds on Larger Language Models},
+  author={Sanae Lotfi and Yilun Kuang and Marc Anton Finzi and Brandon Amos and Micah Goldblum and Andrew Gordon Wilson},
+  _venue={ICML TF2M Workshop},
+  year={2024},
+  url={https://openreview.net/forum?id=cQWsTeTSkZ},
+  abstract={
+  Large language models (LLMs) with billions of parameters excel at
+  predicting the next token in a sequence. Recent work
+  computes non-vacuous compression-based
+  generalization bounds for LLMs, but these bounds are
+  vacuous for large models at the billion-parameter
+  scale. Moreover, these bounds are obtained through
+  restrictive compression techniques, bounding
+  compressed models that generate low-quality
+  text. Additionally, the tightness of these existing
+  bounds depends on the number of IID documents in a
+  training set rather than the much larger number of
+  non-IID constituent tokens, leaving untapped
+  potential for tighter bounds. In this work, we
+  instead use properties of martingales to derive
+  generalization bounds that benefit from the vast
+  number of tokens in LLM training sets. Since a
+  dataset contains far more tokens than documents, our
+  generalization bounds not only tolerate but actually
+  benefit from far less restrictive compression
+  schemes. With Monarch matrices, Kronecker
+  factorizations, and post-training quantization, we
+  achieve non-vacuous generalization bounds for LLMs
+  as large as LLaMA2-70B. Unlike previous approaches,
+  our work achieves the first non-vacuous bounds for
+  models that are deployed in practice and generate
+  high-quality text.
+  }
+}
+
 @misc{amos2023tutorial,
   title={Tutorial on amortized optimization},
   author={Brandon Amos},

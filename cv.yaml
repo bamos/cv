@@ -507,9 +507,15 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
+  - title: Amortized optimization for optimal transport and LLM attacks
+    location: ISMP
+    year: 2024
   - title: Differentiable optimization for control and robotics
     location: RSS Optimization for Robotics Workshop
     url: https://sites.google.com/robotics.utias.utoronto.ca/frontiers-optimization-rss24/schedule
+    year: 2024
+  - title: Amortized optimization-based reasoning for AI
+    location: University of Amsterdam
     year: 2024
   - title: End-to-end learning geometries for graphs, dynamical systems, and regression
     location: LoG New York
