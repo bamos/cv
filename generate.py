@@ -52,6 +52,7 @@ def get_pub_md(context, config):
 
     def _format_author_list(immut_author_list):
         formatted_authors = []
+        author_not_found = False
         for author in immut_author_list:
             new_auth = author.split(", ")
             assert len(new_auth) == 2
@@ -61,6 +62,7 @@ def get_pub_md(context, config):
             k = list(filter(lambda k: k in new_auth, author_urls.keys()))
             if len(k) == 0 and config['name'] not in new_auth:
                 print(f"+ Author URL not found for {new_auth}")
+                author_not_found = True
 
             new_auth = new_auth.replace(' ', '&nbsp;')
             if len(k) > 0:
@@ -81,6 +83,10 @@ def get_pub_md(context, config):
             #     if config['name'] in new_auth:
             #         new_auth = "<strong>" + new_auth + "</strong>"
             formatted_authors.append(new_auth)
+
+        if author_not_found and config['error_without_author_url']:
+            raise ValueError('error: author URLs not found')
+
         return formatted_authors
 
     def _get_pub_str(pub, prefix, gidx, include_image):

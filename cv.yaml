@@ -224,6 +224,7 @@ all_publications:
   sort_bib: True
   include_image: True
   group_by_year: True
+  error_without_author_url: True
   author_urls:
     'Aram-Alexandre Pooladian': 'http://arampooladian.com/'
     'Carles Domingo-Enrich': 'https://cims.nyu.edu/~cd2754/'
@@ -393,6 +394,10 @@ all_publications:
     'Yoshua Bengio': 'https://yoshuabengio.org/profile/'
     'Alexander Tong': 'https://www.alextong.net/'
     'Kirill Neklyudov': 'https://necludov.github.io/'
+    'Sanae Lotfi': 'https://sanaelotfi.github.io/'
+    'Yilun Kuang': 'https://yilunkuang.github.io/'
+    'Marc Anton Finzi': 'https://mfinzi.github.io/'
+    'Micah Goldblum': 'https://goldblum.github.io/'
 
 repos:
   - repo_url: https://github.com/facebookresearch/advprompter
@@ -510,7 +515,7 @@ talks:
   - title: Amortized optimization for optimal transport and LLM attacks
     location: ISMP
     year: 2024
-  - title: Differentiable optimization for control and robotics
+  - title: Differentiable optimization for robotics
     location: RSS Optimization for Robotics Workshop
     url: https://sites.google.com/robotics.utias.utoronto.ca/frontiers-optimization-rss24/schedule
     year: 2024
