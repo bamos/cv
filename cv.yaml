@@ -18,7 +18,7 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 
 order:
   - [about, NONE]
-  - [current_position, Current Position]
+  - [current_position, Current Positions]
   - [education, Education]
   - [positions, Previous Positions]
   - [honors, Honors \& Awards]
@@ -41,6 +41,7 @@ about: |
   in NYC and study foundational topics in <b>machine learning</b> and
   <b>optimization</b>, recently involving
   reinforcement learning, control, optimal transport, and geometry.
+  I also teach machine learning at <b>Cornell Tech</b>.
   My research is on learning systems that understand and interact with our world
   and focuses on integrating structural information and domain knowledge into
   these systems to represent non-trivial reasoning operations.
@@ -51,6 +52,10 @@ current_position:
     location: New York City
     title: Research Scientist
     dates: 2019 -- Present
+  - place: Cornell Tech
+    location: New York City
+    title: Visiting Lecturer
+    dates: 2024 -- Present
 
 education:
   - school: Carnegie Mellon University
@@ -128,7 +133,7 @@ positions:
       #  deployment optimization framework.
   - place: Virginia Tech
     title: Research Assistant
-    inline_detail: "with \\href{https://www.ssrg.ece.vt.edu/}{Binoy Ravindran} and \\href{http://www.alastairmurray.co.uk/}{Alastair Murray} on compilers"
+    inline_detail: "with \\href{https://www.ssrg.ece.vt.edu/}{Binoy Ravindran} and \\href{https://scholar.google.com/citations?user=UG5yHRIAAAAJ}{Alastair Murray} on compilers"
     dates: 2012 -- 2014
     # dates: Nov 2012 -- Mar 2014
     # details:
@@ -659,11 +664,11 @@ advising:
     name: Aaron Havens
     details: "(visiting FAIR from UIUC)"
     url: https://scholar.google.com/citations?user=HBAXF6YAAAAJ
-  - year: 2022 -- present
+  - year: 2022 -- 2024
     name: Aram-Alexandre Pooladian
     details: "(visiting FAIR from NYU)"
     url: http://arampooladian.com/
-  - year: 2022 -- present
+  - year: 2022 -- 2024
     name: Carles Domingo-Enrich
     details: "(visiting FAIR from NYU)"
     url: https://cims.nyu.edu/~cd2754/
@@ -689,7 +694,7 @@ advising:
     url: https://www.linkedin.com/in/arnaudfickinger/
   - year: 2020 -- 2022
     name: Aaron Lou
-    details: "(visiting FAIR from Cornell and Stanford)"
+    details: "(visiting FAIR from Cornell and Stanford, now scientist at OpenAI)"
     url: https://www.aaronlou.com/
   - year: 2021 -- 2022
     name: Eugene Vinitsky
@@ -772,6 +777,10 @@ skills:
     details: Linux, emacs, vim, evil, org, mu4e, xmonad, git, tmux, zsh
 
 teaching:
+  - semester: F2024
+    name: Applied Machine Learning
+    short: Cornell Tech CS5785
+    position: Co-instructor
   - semester: S2017
     name: Graduate AI
     short: CMU 15-780
