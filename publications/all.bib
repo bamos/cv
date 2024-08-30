@@ -13,7 +13,7 @@ We train the AdvPrompter using a novel algorithm that does not require access to
   }
 }
 
-@misc{pooladian2023neural,
+@misc{pooladian2024neural,
   title = {Neural Optimal Transport with Lagrangian Costs},
   author = {Aram-Alexandre Pooladian and Carles Domingo-Enrich and Ricky T. Q. Chen and Brandon Amos},
   year = {2024},
@@ -56,10 +56,10 @@ Many real-world optimization problems contain parameters that are unknown before
   author={Lazar Atanackovic and Xi Zhang and Brandon Amos and Mathieu Blanchette and Leo J Lee and Yoshua Bengio and Alexander Tong and Kirill Neklyudov},
   booktitle={ICML 2024 Workshop on Geometry-grounded Representation Learning and Generative Modeling},
   year={2024},
-  url={https://openreview.net/forum?id=f9GsKvLdzs},
+  url={https://arxiv.org/abs/2408.14608},
   _venue={ICML GRaM Workshop},
   abstract={
-Numerous biological and physical processes can be modeled as systems of interacting samples evolving continuously over time, e.g. the dynamics of communicating cells or physical particles. Flow-based models allow for learning these dynamics at the population level --- they model the evolution of the entire distribution of samples. However, current flow-based models are limited to a single initial population and a set of predefined conditions which describe different dynamics. We propose (MFM), a practical approach to integrating along vector fields on the Wasserstein manifold by amortizing the flow model over the initial populations. We demonstrate empirically the ability of MFM to improve prediction of individual treatment responses on a large scale multi-patient single-cell drug screen dataset.
+Numerous biological and physical processes can be modeled as systems of interacting entities evolving continuously over time, e.g. the dynamics of communicating cells or physical particles. Learning the dynamics of such systems is essential for predicting the temporal evolution of populations across novel samples and unseen environments. Flow-based models allow for learning these dynamics at the population level - they model the evolution of the entire distribution of samples. However, current flow-based models are limited to a single initial population and a set of predefined conditions which describe different dynamics. We argue that multiple processes in natural sciences have to be represented as vector fields on the Wasserstein manifold of probability densities. That is, the change of the population at any moment in time depends on the population itself due to the interactions between samples. In particular, this is crucial for personalized medicine where the development of diseases and their respective treatment response depends on the microenvironment of cells specific to each patient. We propose Meta Flow Matching (MFM), a practical approach to integrating along these vector fields on the Wasserstein manifold by amortizing the flow model over the initial populations. Namely, we embed the population of samples using a Graph Neural Network (GNN) and use these embeddings to train a Flow Matching model. This gives MFM the ability to generalize over the initial distributions unlike previously proposed methods. We demonstrate the ability of MFM to improve prediction of individual treatment responses on a large scale multi-patient single-cell drug screen dataset.
   }
 }
 
