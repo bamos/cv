@@ -65,7 +65,7 @@ education:
     overallGPA: 0.00/0.00
     details:
       - "Thesis: \\href{https://github.com/bamos/thesis}{\\textit{Differentiable Optimization-Based Modeling for Machine Learning}}"
-      - "Advisor: \\href{http://zicokolter.com}{J. Zico Kolter}"
+      - "Advisor: \\href{https://zicokolter.com}{J. Zico Kolter}"
   - school: Virginia Tech
     location: Blacksburg, VA
     degree: B.S. in Computer Science
@@ -79,7 +79,7 @@ education:
 positions:
   - place: Carnegie Mellon University
     title: Research Assistant
-    inline_detail: "with \\href{http://zicokolter.com}{J. Zico Kolter} on ML and optimization"
+    inline_detail: "with \\href{https://zicokolter.com}{J. Zico Kolter} on ML and optimization"
     dates: 2016 -- 2019
   - place: Intel Labs
     location: Santa Clara
@@ -231,16 +231,16 @@ all_publications:
   group_by_year: True
   error_without_author_url: True
   author_urls:
-    'Aram-Alexandre Pooladian': 'http://arampooladian.com/'
-    'Carles Domingo-Enrich': 'https://cims.nyu.edu/~cd2754/'
-    'Aaron Lou': 'https://www.aaronlou.com/'
+    'Aram-Alexandre Pooladian': 'https://arampooladian.com/'
+    'Carles Domingo-Enrich': 'https://cdenrich.github.io/'
+    'Aaron Lou': 'https://aaronlou.com/'
     'Aditya Grover': 'https://aditya-grover.github.io/'
     'Akshay Agrawal': 'https://www.akshayagrawal.com/'
     'Alex Hauptmann': 'http://www.cs.cmu.edu/~alex/'
     'Alexander Rives': 'https://scholar.google.com/citations?user=vqb78-gAAAAJ'
     'Alistair Muldal': 'https://scholar.google.com/citations?user=YfgdfyYAAAAJ'
     'Amy Zhang': 'https://amyzhang.github.io/'
-    'Andrew Gordon Wilson': 'https://cims.nyu.edu/~andrewgw'
+    'Andrew Gordon Wilson': 'https://cims.nyu.edu/~andrewgw/'
     'Anselm Paulus': 'https://scholar.google.com/citations?user=njZL5CQAAAAJ'
     'Anupam Das': 'https://anupamdas.org/'
     'Arnaud Fickinger': 'https://scholar.google.com/citations?user=bBFN_qwAAAAJ'
@@ -260,11 +260,11 @@ all_publications:
     'Daniel DeTone': 'https://danieldetone.com/'
     'Daniel Siewiorek': 'http://www.cs.cmu.edu/~dps/'
     'David Easterling': 'https://dblp.org/pid/75/8682.html'
-    'Deisenroth': 'https://deisenroth.cc/'
+    'Deisenroth': 'https://www.deisenroth.cc/'
     'Denis Yarats': 'https://cs.nyu.edu/~dy1042/'
     'Douwe Kiela': 'https://douwekiela.github.io/'
     'Edward Grefenstette': 'https://www.egrefen.com/'
-    'Eugene Vinitsky': 'https://eugenevinitsky.github.io'
+    'Eugene Vinitsky': 'https://www.eugenevinitsky.com'
     'Franziska Meier': 'https://fmeier.github.io/'
     'Geoff Gordon': 'http://www.cs.cmu.edu/~ggordon/'
     'Georg Martius': 'https://al.is.mpg.de/person/gmartius'
@@ -293,21 +293,21 @@ all_publications:
     'Joseph Ortiz': 'https://joeaortiz.github.io/'
     'Joshua Meier': 'https://scholar.google.com/citations?user=2M0OltAAAAAJ'
     'Jules White': 'https://scholar.google.com/citations?user=10HSX90AAAAJ'
-    'Junjue Wang': 'https://junjuew.github.io/'
+    'Junjue Wang': 'https://www.junjuewang.com'
     'K S Sesh Kumar': 'https://scholar.google.co.in/citations?user=FPVUA-YAAAAJ'
     'Khalid Elgazzar': 'https://scholar.google.com/citations?user=R9r5_GIAAAAJ'
     'Kiryong Ha': 'http://krha.kr/'
     'Kyunghyun Cho': 'https://kyunghyuncho.me/'
     'Laurent Dinh': 'https://laurent-dinh.github.io/'
     'Layne T. Watson': 'https://people.cs.vt.edu/~ltw/shortvita.html'
-    'Lei Xu': 'https://leix28.github.io/'
+    'Lei Xu': 'https://leixx.io/'
     'Lu Jiang': 'http://www.lujiang.info/'
     'Luis Pineda': 'https://scholar.google.com/citations?user=rebEn8oAAAAJ'
     'Mahadev Satyanarayanan': 'https://www.cs.cmu.edu/~satya/'
     'Maurizio Monge': 'https://scholar.google.com/citations?user=gpgb4LgAAAAJ'
-    'Maximilian Nickel': 'https://mnick.github.io/'
+    'Maximilian Nickel': 'https://maxn.io/'
     'Michal Rol': 'https://mrolinek.github.io/'
-    'Mikael Henaff': 'http://www.mikaelhenaff.com/'
+    'Mikael Henaff': 'https://www.mikaelhenaff.com/'
     'Minghan Chen': 'https://chenm.sites.wfu.edu/publications/'
     'Misha Denil': 'https://mdenil.com/'
     'Musil': 'https://scholar.google.com/citations?user=hA1rlU4AAAAJ'
@@ -317,7 +317,7 @@ all_publications:
     'Nathan Lichtlé': 'https://www.nathanlct.com/about'
     'Nigel Davies': 'https://www.lancaster.ac.uk/sci-tech/about-us/people/nigel-davies'
     'Nina Taft': 'https://scholar.google.com/citations?user=BItCgjYAAAAJ'
-    'Noam Brown': 'http://www.noambrown.com/'
+    'Noam Brown': 'https://noambrown.github.io/'
     'Norman Sadeh': 'https://www.normsadeh.org/'
     'Omry Yadan': 'https://scholar.google.com/citations?user=zSsW478AAAAJ'
     'Padmanabhan Pillai': 'https://www.andrew.cmu.edu/user/pspillai/'
@@ -374,7 +374,7 @@ all_publications:
     'Yuval Tassa': 'https://scholar.google.com/citations?user=CjOTm_4AAAAJ'
     'Zeming Lin': 'https://scholar.google.com/citations?user=ZDjmMuwAAAAJ'
     'Zhuo Chen': 'https://scholar.google.com/citations?user=-wKpBNkAAAAJ'
-    'Zico Kolter': 'http://zicokolter.com/'
+    'Zico Kolter': 'https://zicokolter.com/'
     'Dishank Bansal': 'https://dishank-b.github.io/'
     'Matthew Retchin': 'https://www.linkedin.com/in/matthew-retchin/'
     'Steven Brunton': 'https://www.eigensteve.com/'
@@ -667,11 +667,11 @@ advising:
   - year: 2022 -- 2024
     name: Aram-Alexandre Pooladian
     details: "(visiting FAIR from NYU)"
-    url: http://arampooladian.com/
+    url: https://arampooladian.com/
   - year: 2022 -- 2024
     name: Carles Domingo-Enrich
     details: "(visiting FAIR from NYU, now at MSR)"
-    url: https://cims.nyu.edu/~cd2754/
+    url: https://cdenrich.github.io/
   - year: 2023 -- 2024
     name: Anselm Paulus
     details: "(visiting FAIR from Max Planck Institute, Tübingen)"
@@ -695,11 +695,11 @@ advising:
   - year: 2020 -- 2022
     name: Aaron Lou
     details: "(visiting FAIR from Cornell and Stanford, now scientist at OpenAI)"
-    url: https://www.aaronlou.com/
+    url: https://aaronlou.com/
   - year: 2021 -- 2022
     name: Eugene Vinitsky
     details: "(visiting FAIR from Berkeley, now professor at NYU)"
-    url: https://eugenevinitsky.github.io/
+    url: https://www.eugenevinitsky.com
   - year: 2021 -- 2022
     name: Samuel Cohen
     details: "(visiting FAIR from UCL, now CEO at FairGen)"
@@ -810,7 +810,7 @@ teaching:
 #   descr: Awarded to the senior in Computer Science with the most
 #          outstanding academic record.
 # - title: ACC Meeting of the Minds Undergraduate Research Conference, 2014
-#   url: http://www.vtnews.vt.edu/articles/2014/03/030514-uged-accmom.html
+#   url: https://news.vt.edu/articles/2014/03/030514-uged-accmom.html
 # - title: Honorable Mention, CRA Outstanding Undergraduate Researcher Award
 #   year: 2014
 # - title: Qualstar Award, Qualcomm, 2013
@@ -840,13 +840,12 @@ teaching:
 #   year: 2011
 #   descr: Merit-based scholarship presented to one student from
 #          each public high school in Virginia.
-#   url: http://ww2.roanoke.com/community/virginia/education/wb/292050
 # - title: I. Luck Gravett Memorial Merit Scholarship,
 #       Scottish Rite of Freemasonry
 #   year: 2011
 # - title: Salem -- Roanoke County Chamber of Commerce Merit Scholarship
 #   year: 2011
-#   url: http://s-rcchamber.org/wp-content/uploads/2011/03/August-2011-NL.pdf
+#   url: https://roanoke.com/business/salem-roanoke-county-chamber-awards-area-scholarships/article_c73df5c1-f6d5-5a77-bb64-eab623da42d3.html
 # - title: 1st Place Regional CAD/Engineering Drawing,
 #          Virginia TSA, Blue Ridge Region, 2011
 # - title: District Band Trumpeter, VBODA District VI, 2009 -- 2011
