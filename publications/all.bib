@@ -40,36 +40,13 @@ We introduce a machine-learning framework to warm-start fixed-point optimization
   }
 }
 
-@misc{silvestri2024score,
-    title={Score Function Gradient Estimation to Widen the Applicability of Decision-Focused Learning},
-    author={Mattia Silvestri and Senne Berden and Jayanta Mandi and Ali İrfan Mahmutoğulları and Brandon Amos and Tias Guns and Michele Lombardi},
-    year={2024},
-    url={https://arxiv.org/abs/2307.05213},
-    _venue={arXiv},
-    abstract={
-Many real-world optimization problems contain parameters that are unknown before deployment time, either due to stochasticity or to lack of information (e.g., demand or travel times in delivery problems). A common strategy in such cases is to estimate said parameters via machine learning (ML) models trained to minimize the prediction error, which however is not necessarily aligned with the downstream task-level error. The decision-focused learning (DFL) paradigm overcomes this limitation by training to directly minimize a task loss, e.g. regret. Since the latter has non-informative gradients for combinatorial problems, state-of-the-art DFL methods introduce surrogates and approximations that enable training. But these methods exploit specific assumptions about the problem structures (e.g., convex or linear problems, unknown parameters only in the objective function). We propose an alternative method that makes no such assumptions, it combines stochastic smoothing with score function gradient estimation which works on any task loss. This opens up the use of DFL methods to nonlinear objectives, uncertain parameters in the problem constraints, and even two-stage stochastic optimization. Experiments show that it typically requires more epochs, but that it is on par with specialized methods and performs especially well for the difficult case of problems with uncertainty in the constraints, in terms of solution quality, scalability, or both.
-  }
-}
-
-@inproceedings{atanackovic2024meta,
-  title={Meta Flow Matching:  Integrating Vector Fields on the Wasserstein Manifold},
-  author={Lazar Atanackovic and Xi Zhang and Brandon Amos and Mathieu Blanchette and Leo J Lee and Yoshua Bengio and Alexander Tong and Kirill Neklyudov},
-  booktitle={ICML 2024 Workshop on Geometry-grounded Representation Learning and Generative Modeling},
-  year={2024},
-  url={https://arxiv.org/abs/2408.14608},
-  _venue={ICML GRaM Workshop},
-  abstract={
-Numerous biological and physical processes can be modeled as systems of interacting entities evolving continuously over time, e.g. the dynamics of communicating cells or physical particles. Learning the dynamics of such systems is essential for predicting the temporal evolution of populations across novel samples and unseen environments. Flow-based models allow for learning these dynamics at the population level - they model the evolution of the entire distribution of samples. However, current flow-based models are limited to a single initial population and a set of predefined conditions which describe different dynamics. We argue that multiple processes in natural sciences have to be represented as vector fields on the Wasserstein manifold of probability densities. That is, the change of the population at any moment in time depends on the population itself due to the interactions between samples. In particular, this is crucial for personalized medicine where the development of diseases and their respective treatment response depends on the microenvironment of cells specific to each patient. We propose Meta Flow Matching (MFM), a practical approach to integrating along these vector fields on the Wasserstein manifold by amortizing the flow model over the initial populations. Namely, we embed the population of samples using a Graph Neural Network (GNN) and use these embeddings to train a Flow Matching model. This gives MFM the ability to generalize over the initial distributions unlike previously proposed methods. We demonstrate the ability of MFM to improve prediction of individual treatment responses on a large scale multi-patient single-cell drug screen dataset.
-  }
-}
-
 @inproceedings{lotfi2024unlocking,
   title={Unlocking Tokens as Data Points for Generalization Bounds on Larger Language Models},
   author={Sanae Lotfi and Yilun Kuang and Marc Anton Finzi and Brandon Amos and Micah Goldblum and Andrew Gordon Wilson},
-  _venue={ICML TF2M Workshop},
-  _note={Best paper},
+  _venue={NeurIPS},
+  _old_note={Best paper at ICML TF2M workshop},
   year={2024},
-  url={https://openreview.net/forum?id=cQWsTeTSkZ},
+  url={https://arxiv.org/abs/2407.18158},
   abstract={
   Large language models (LLMs) with billions of parameters excel at
   predicting the next token in a sequence. Recent work
@@ -99,6 +76,41 @@ Numerous biological and physical processes can be modeled as systems of interact
   high-quality text.
   }
 }
+
+
+@misc{domingoenrich2024stochastic,
+      title={Stochastic Optimal Control Matching},
+      author={Carles Domingo-Enrich and Jiequn Han and Brandon Amos and Joan Bruna and Ricky T. Q. Chen},
+      year={2024},
+      url={https://arxiv.org/abs/2312.02027},
+      _venue={NeurIPS},
+      abstract={Stochastic optimal control, which has the goal of driving the behavior of noisy systems, is broadly applicable in science, engineering and artificial intelligence. Our work introduces Stochastic Optimal Control Matching (SOCM), a novel Iterative Diffusion Optimization (IDO) technique for stochastic optimal control that stems from the same philosophy as the conditional score matching loss for diffusion models. That is, the control is learned via a least squares problem by trying to fit a matching vector field. The training loss, which is closely connected to the cross-entropy loss, is optimized with respect to both the control function and a family of reparameterization matrices which appear in the matching vector field. The optimization with respect to the reparameterization matrices aims at minimizing the variance of the matching vector field. Experimentally, our algorithm achieves lower error than all the existing IDO techniques for stochastic optimal control for four different control settings. The key idea underlying SOCM is the path-wise reparameterization trick, a novel technique that is of independent interest, e.g., for generative modeling.}
+}
+
+
+@inproceedings{atanackovic2024meta,
+  title={Meta Flow Matching:  Integrating Vector Fields on the Wasserstein Manifold},
+  author={Lazar Atanackovic and Xi Zhang and Brandon Amos and Mathieu Blanchette and Leo J Lee and Yoshua Bengio and Alexander Tong and Kirill Neklyudov},
+  booktitle={ICML 2024 Workshop on Geometry-grounded Representation Learning and Generative Modeling},
+  year={2024},
+  url={https://arxiv.org/abs/2408.14608},
+  _venue={ICML GRaM Workshop},
+  abstract={
+Numerous biological and physical processes can be modeled as systems of interacting entities evolving continuously over time, e.g. the dynamics of communicating cells or physical particles. Learning the dynamics of such systems is essential for predicting the temporal evolution of populations across novel samples and unseen environments. Flow-based models allow for learning these dynamics at the population level - they model the evolution of the entire distribution of samples. However, current flow-based models are limited to a single initial population and a set of predefined conditions which describe different dynamics. We argue that multiple processes in natural sciences have to be represented as vector fields on the Wasserstein manifold of probability densities. That is, the change of the population at any moment in time depends on the population itself due to the interactions between samples. In particular, this is crucial for personalized medicine where the development of diseases and their respective treatment response depends on the microenvironment of cells specific to each patient. We propose Meta Flow Matching (MFM), a practical approach to integrating along these vector fields on the Wasserstein manifold by amortizing the flow model over the initial populations. Namely, we embed the population of samples using a Graph Neural Network (GNN) and use these embeddings to train a Flow Matching model. This gives MFM the ability to generalize over the initial distributions unlike previously proposed methods. We demonstrate the ability of MFM to improve prediction of individual treatment responses on a large scale multi-patient single-cell drug screen dataset.
+  }
+}
+
+@misc{silvestri2024score,
+    title={Score Function Gradient Estimation to Widen the Applicability of Decision-Focused Learning},
+    author={Mattia Silvestri and Senne Berden and Jayanta Mandi and Ali İrfan Mahmutoğulları and Brandon Amos and Tias Guns and Michele Lombardi},
+    year={2024},
+    url={https://arxiv.org/abs/2307.05213},
+    _venue={arXiv},
+    abstract={
+Many real-world optimization problems contain parameters that are unknown before deployment time, either due to stochasticity or to lack of information (e.g., demand or travel times in delivery problems). A common strategy in such cases is to estimate said parameters via machine learning (ML) models trained to minimize the prediction error, which however is not necessarily aligned with the downstream task-level error. The decision-focused learning (DFL) paradigm overcomes this limitation by training to directly minimize a task loss, e.g. regret. Since the latter has non-informative gradients for combinatorial problems, state-of-the-art DFL methods introduce surrogates and approximations that enable training. But these methods exploit specific assumptions about the problem structures (e.g., convex or linear problems, unknown parameters only in the objective function). We propose an alternative method that makes no such assumptions, it combines stochastic smoothing with score function gradient estimation which works on any task loss. This opens up the use of DFL methods to nonlinear objectives, uncertain parameters in the problem constraints, and even two-stage stochastic optimization. Experiments show that it typically requires more epochs, but that it is on par with specialized methods and performs especially well for the difficult case of problems with uncertainty in the constraints, in terms of solution quality, scalability, or both.
+  }
+}
+
 
 @misc{amos2023tutorial,
   title={Tutorial on amortized optimization},
@@ -383,15 +395,6 @@ datasets.
     out-of-distribution constraints in most environments
     after training.
   }
-}
-
-@misc{domingoenrich2023stochastic,
-      title={Stochastic Optimal Control Matching}, 
-      author={Carles Domingo-Enrich and Jiequn Han and Brandon Amos and Joan Bruna and Ricky T. Q. Chen},
-      year={2023},
-      url={https://arxiv.org/abs/2312.02027},
-      _venue={arXiv},
-      abstract={Stochastic optimal control, which has the goal of driving the behavior of noisy systems, is broadly applicable in science, engineering and artificial intelligence. Our work introduces Stochastic Optimal Control Matching (SOCM), a novel Iterative Diffusion Optimization (IDO) technique for stochastic optimal control that stems from the same philosophy as the conditional score matching loss for diffusion models. That is, the control is learned via a least squares problem by trying to fit a matching vector field. The training loss, which is closely connected to the cross-entropy loss, is optimized with respect to both the control function and a family of reparameterization matrices which appear in the matching vector field. The optimization with respect to the reparameterization matrices aims at minimizing the variance of the matching vector field. Experimentally, our algorithm achieves lower error than all the existing IDO techniques for stochastic optimal control for four different control settings. The key idea underlying SOCM is the path-wise reparameterization trick, a novel technique that is of independent interest, e.g., for generative modeling.}
 }
 
 @misc{fickinger2021crossdomain,
