@@ -15,7 +15,7 @@ headers = {
 }
 
 def extract_urls(file_path):
-    url_pattern = r'(https?://[^\s\'\}]+)'
+    url_pattern = r'(https?://[^\s\'\"\}\)\<]+)'
     with open(file_path, 'r') as file:
         content = file.read()
     urls = re.findall(url_pattern, content)
@@ -30,9 +30,11 @@ def print_url_status(url):
         response = requests.head(url, headers=headers, timeout=5)
         if response.status_code in [200, 302]:
             return
-        elif response.status_code == 301: # redirect
-            redirected_url = response.headers.get('Location')
-            print(f'{response.status_code}: {url} -> {redirected_url}')
+        elif response.status_code in [301, 403]:
+            return
+        # elif response.status_code == 301: # redirect
+        #     redirected_url = response.headers.get('Location')
+        #     print(f'{response.status_code}: {url} -> {redirected_url}')
         else:
             print(f'{response.status_code}: {url}')
     except requests.RequestException as e:
