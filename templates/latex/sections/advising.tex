@@ -3,9 +3,9 @@
 ~< block body >~
 ~< for item in items >~
   ~< if item.url >~
-    \href{<< item.url >>}{<< item.name >>} << item.details >>
+    \href{<< item.url >>}{<< item.name >>} (<< item.details >>)
   ~< else >~
-    << item.name >> << item.details >>
+    << item.name >> (<< item.details >>)
   ~< endif >~
   \hfill << item.year >> \\
 ~< endfor >~

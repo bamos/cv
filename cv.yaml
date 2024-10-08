@@ -705,31 +705,31 @@ talks:
 advising:
   - year: 2024 -- present
     name: Aaron Havens
-    details: "(visiting FAIR from UIUC)"
+    details: "visiting FAIR from UIUC"
     url: https://scholar.google.com/citations?user=HBAXF6YAAAAJ
   - year: 2022 -- 2024
     name: Aram-Alexandre Pooladian
-    details: "(visiting FAIR from NYU)"
+    details: "visiting FAIR from NYU"
     url: https://arampooladian.com/
   - year: 2022 -- 2024
     name: Carles Domingo-Enrich
-    details: "(visiting FAIR from NYU, now at MSR)"
+    details: "visiting FAIR from NYU, now at MSR"
     url: https://cdenrich.github.io/
   - year: 2023 -- 2024
     name: Anselm Paulus
-    details: "(visiting FAIR from Max Planck Institute, Tübingen)"
+    details: "visiting FAIR from Max Planck Institute, Tübingen"
     url: https://scholar.google.com/citations?user=njZL5CQAAAAJ
   - year: 2023
     name: Matthew Retchin
-    details: "(Columbia MS thesis committee, now at Harvard)"
+    details: "Columbia MS thesis committee, now at Harvard"
     url: https://www.mhr.ai
   - year: 2022 -- 2023
     name: Sanae Lotfi
-    details: "(visiting FAIR from NYU)"
+    details: "visiting FAIR from NYU"
     url: https://sanaelotfi.github.io/
   - year: 2022 -- 2023
     name: Dishank Bansal
-    details: "(AI resident at FAIR)"
+    details: "AI resident at FAIR"
     url: https://dishank-b.github.io
   - year: 2021 -- 2022
     name: Arnaud Fickinger
@@ -737,27 +737,27 @@ advising:
     url: https://www.linkedin.com/in/arnaudfickinger/
   - year: 2020 -- 2022
     name: Aaron Lou
-    details: "(visiting FAIR from Cornell and Stanford, now scientist at OpenAI)"
+    details: "visiting FAIR from Cornell and Stanford, now scientist at OpenAI"
     url: https://aaronlou.com/
   - year: 2021 -- 2022
     name: Eugene Vinitsky
-    details: "(visiting FAIR from Berkeley, now professor at NYU)"
+    details: "visiting FAIR from Berkeley, now professor at NYU"
     url: https://www.eugenevinitsky.com
   - year: 2021 -- 2022
     name: Samuel Cohen
-    details: "(visiting FAIR from UCL, now CEO at FairGen)"
+    details: "visiting FAIR from UCL, now CEO at FairGen"
     url: https://scholar.google.com/citations?user=CmdjfTsAAAAJ
   - year: 2020
     name: Ricky Chen
-    details: "(visiting FAIR from Toronto, now scientist at FAIR)"
+    details: "visiting FAIR from Toronto, now scientist at FAIR"
     url: http://www.cs.toronto.edu/~rtqichen/
   - year: 2020
     name: Paul Liang
-    details: "(visiting FAIR from CMU, now professor at MIT)"
+    details: "visiting FAIR from CMU, now professor at MIT"
     url: http://www.cs.cmu.edu/~pliang/
   - year: 2018
     name: Phillip Wang
-    details: "(at CMU, now CEO at \\href{https://gather.town/}{Gather})"
+    details: "at CMU, now CEO at \\href{https://gather.town/}{Gather}"
     url: https://phillipkwang.com/
 
 service:

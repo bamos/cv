@@ -7,9 +7,9 @@
   <td style='padding-right:0;'>
     <span class='cvdate'>{{ item.year }}</span>
     {% if item.url %}
-        <a href="{{ item.url }}">{{ item.name }}</a> {{ item.details }}
+        <a href="{{ item.url }}">{{ item.name }}</a> ({{ item.details }})
     {% else %}
-        {{ item.name }} {{item.details }}
+        {{ item.name }} ({{item.details }})
     {% endif %}
   </td>
 </tr>
