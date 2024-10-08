@@ -10,9 +10,13 @@ Slides for my major presentations are open-sourced with a CC-BY license at
   <td align='right' style='padding-right:0;padding-left:0;'>{{ loop.index }}.</td>
   <td style='padding-right:0;'>
     <span class='cvdate'>{{ item.year }}</span>
-     <em>{{ item.title }}</em>,
     {% if item.url %}
-        <a href="{{ item.url }}">{{ item.location }}</a>
+     <a href="{{ item.url }}"><em>{{ item.title }}</em></a> &mdash;
+    {% else %}
+     <em>{{ item.title }}</em> &mdash;
+    {% endif %}
+    {% if item.location_url %}
+        <a href="{{ item.location_url }}">{{ item.location }}</a>
     {% else %}
         {{ item.location }}
     {% endif %}
