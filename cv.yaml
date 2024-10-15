@@ -403,6 +403,11 @@ all_publications:
     'Yilun Kuang': 'https://yilunkuang.github.io/'
     'Marc Anton Finzi': 'https://mfinzi.github.io/'
     'Micah Goldblum': 'https://goldblum.github.io/'
+    'Buu Phan': 'https://truongbuu.github.io/'
+    'Itai Gat': 'https://itaigat.com/'
+    'Marton Havasi': 'https://mhavasi.github.io/'
+    'Matthew Muckley': 'https://mmuckley.github.io/'
+    'Karen Ullrich': 'https://karenullrich.info/'
 
 repos:
   - repo_url: https://github.com/facebookresearch/advprompter
