@@ -408,6 +408,14 @@ all_publications:
     'Marton Havasi': 'https://mhavasi.github.io/'
     'Matthew Muckley': 'https://mmuckley.github.io/'
     'Karen Ullrich': 'https://karenullrich.info/'
+    'Da JU': 'https://scholar.google.com/citations?user=YW5jp5QAAAA'
+    'Song Jiang': 'https://scholar.google.com/citations?user=SjbhMQEAAAAJ'
+    'Andrew Cohen': 'https://scholar.google.com/citations?user=v1Frtb0AAAAJ'
+    'Aaron Foss': 'https://openreview.net/profile?id=~Aaron_Foss1'
+    'Sasha Mitts': 'https://scholar.google.com/citations?user=ncFsSKMAAAAJ'
+    'Xian Li': 'https://scholar.google.com/citations?user=v_sIgawAAAAJ'
+    'Justine T Kao': 'https://scholar.google.com/citations?hl=es&user=Y9BLeTAAAAAJ'
+    'Maryam Fazel-Zarandi': 'https://scholar.google.com/citations?user=7-a1MKEAAAAJ'
 
 repos:
   - repo_url: https://github.com/facebookresearch/advprompter
