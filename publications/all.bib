@@ -125,7 +125,7 @@ title={To the Globe ({TTG}): Towards Language-Driven Guaranteed Travel Planning}
 author={Da JU and Song Jiang and Andrew Cohen and Aaron Foss and Sasha Mitts and Arman Zharmagambetov and Brandon Amos and Xian Li and Justine T Kao and Maryam Fazel-Zarandi and Yuandong Tian},
 _venue={EMNLP Demo},
 year={2024},
-url={https://openreview.net/forum?id=tddSwc692A},
+url={https://arxiv.org/abs/2410.16456},
 abstract={Travel planning is a challenging and time-consuming task that aims to find an itinerary which satisfies multiple, interdependent constraints regarding flights, accommodations, attractions, and other travel arrangements. In this paper, we propose To the Globe (TTG), a real-time demo system that takes natural language requests from users, translates it to symbolic form via a fine-tuned Large Language Model, and produces optimal travel itineraries with Mixed Integer Linear Programming solvers. The overall system takes ~5 seconds to reply to the user request with guaranteed itineraries. To train TTG, we develop a synthetic data pipeline that generates user requests, flight and hotel information in symbolic form without human annotations, based on the statistics of real-world datasets, and fine-tune an LLM to translate NL user requests to their symbolic form, which is sent to the symbolic solver to compute optimal itineraries. Our NL-symbolic translation achieves ~91% exact match in a backtranslation metric (i.e., whether the estimated symbolic form of generated natural language matches the groundtruth), and its returned itineraries have a ratio of 0.979 compared to the optimal cost of the ground truth user request. When evaluated by users, TTG achieves consistently high Net Promoter Scores (NPS) of 35-40% on generated itinerary.}
 }
 
