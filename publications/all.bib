@@ -83,6 +83,7 @@ We introduce a machine-learning framework to warm-start fixed-point optimization
       author={Carles Domingo-Enrich and Jiequn Han and Brandon Amos and Joan Bruna and Ricky T. Q. Chen},
       year={2024},
       url={https://arxiv.org/abs/2312.02027},
+      codeurl={https://github.com/facebookresearch/soc-matching},
       _venue={NeurIPS},
       abstract={Stochastic optimal control, which has the goal of driving the behavior of noisy systems, is broadly applicable in science, engineering and artificial intelligence. Our work introduces Stochastic Optimal Control Matching (SOCM), a novel Iterative Diffusion Optimization (IDO) technique for stochastic optimal control that stems from the same philosophy as the conditional score matching loss for diffusion models. That is, the control is learned via a least squares problem by trying to fit a matching vector field. The training loss, which is closely connected to the cross-entropy loss, is optimized with respect to both the control function and a family of reparameterization matrices which appear in the matching vector field. The optimization with respect to the reparameterization matrices aims at minimizing the variance of the matching vector field. Experimentally, our algorithm achieves lower error than all the existing IDO techniques for stochastic optimal control for four different control settings. The key idea underlying SOCM is the path-wise reparameterization trick, a novel technique that is of independent interest, e.g., for generative modeling.}
 }
@@ -94,6 +95,7 @@ We introduce a machine-learning framework to warm-start fixed-point optimization
   booktitle={ICML 2024 Workshop on Geometry-grounded Representation Learning and Generative Modeling},
   year={2024},
   url={https://arxiv.org/abs/2408.14608},
+  codeurl={https://github.com/lazaratan/meta-flow-matching},
   _venue={ICML GRaM Workshop},
   abstract={
 Numerous biological and physical processes can be modeled as systems of interacting entities evolving continuously over time, e.g. the dynamics of communicating cells or physical particles. Learning the dynamics of such systems is essential for predicting the temporal evolution of populations across novel samples and unseen environments. Flow-based models allow for learning these dynamics at the population level - they model the evolution of the entire distribution of samples. However, current flow-based models are limited to a single initial population and a set of predefined conditions which describe different dynamics. We argue that multiple processes in natural sciences have to be represented as vector fields on the Wasserstein manifold of probability densities. That is, the change of the population at any moment in time depends on the population itself due to the interactions between samples. In particular, this is crucial for personalized medicine where the development of diseases and their respective treatment response depends on the microenvironment of cells specific to each patient. We propose Meta Flow Matching (MFM), a practical approach to integrating along these vector fields on the Wasserstein manifold by amortizing the flow model over the initial populations. Namely, we embed the population of samples using a Graph Neural Network (GNN) and use these embeddings to train a Flow Matching model. This gives MFM the ability to generalize over the initial distributions unlike previously proposed methods. We demonstrate the ability of MFM to improve prediction of individual treatment responses on a large scale multi-patient single-cell drug screen dataset.
@@ -330,6 +332,7 @@ datasets.
   _venue={NeurIPS},
   selected={true},
   url={https://arxiv.org/abs/2312.05250},
+  codeurl={https://github.com/facebookresearch/taskmet},
   abstract={
     Deep learning models are often used with some downstream
     task. Models solely trained to achieve accurate
@@ -357,6 +360,7 @@ datasets.
   author = {Arman Zharmagambetov and Brandon Amos and Aaron Ferber and Taoan Huang and Bistra Dilkina and Yuandong Tian},
   year = {2023},
   url={https://arxiv.org/abs/2307.08964},
+  codeurl={https://github.com/facebookresearch/LANCER},
   _venue={NeurIPS},
   abstract={
     Recent works in learning-integrated optimization have shown promise in

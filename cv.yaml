@@ -424,6 +424,9 @@ repos:
   - repo_url: https://github.com/facebookresearch/lagrangian-ot
     year: 2024
     desc: Lagrangian OT
+  - repo_url: https://github.com/lazaratan/meta-flow-matching
+    year: 2024
+    desc: Meta Flow Matching
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
     year: 2023
     desc: Tutorial on amortized optimization
