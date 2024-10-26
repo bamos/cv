@@ -439,6 +439,9 @@ repos:
   - repo_url: https://github.com/facebookresearch/w2ot
     year: 2023
     desc: Wasserstein-2 optimal transport in JAX
+  - repo_url: https://github.com/facebookresearch/LANCER
+    year: 2023
+    desc: Landscape Surrogate Learning Decision Losses
   - repo_url: https://github.com/facebookresearch/theseus
     year: 2022
     desc: Differentiable non-linear optimization library
@@ -448,6 +451,12 @@ repos:
   - repo_url: https://github.com/bamos/presentations
     year: 2022
     desc: Source for my major presentations
+  - repo_url: https://github.com/facebookresearch/gwil
+    year: 2022
+    desc: Gromov-Wasserstein Cross Domain Imitation Learning
+  - repo_url: https://github.com/facebookresearch/nocturne
+    year: 2022
+    desc: A partially-observable multi-agent driving simulator
   - repo_url: https://github.com/facebookresearch/rcpm
     year: 2021
     desc: Riemannian Convex Potential Maps
@@ -457,6 +466,21 @@ repos:
   - repo_url: https://github.com/facebookresearch/mbrl-lib
     year: 2021
     desc: Model-based reinforcement learning library
+  - repo_url: https://github.com/martius-lab/CombOptNet
+    year: 2021
+    desc: CombOptNet
+  - repo_url: https://github.com/samcohen16/Aligning-Time-Series
+    year: 2021
+    desc: Aligning time series on incomparable spaces
+  - repo_url: https://github.com/facebookresearch/neural_stpp
+    year: 2021
+    desc: Neural Spatio-Temporal Point Processes
+  - repo_url: https://github.com/facebookresearch/neural-scs
+    year: 2021
+    desc: Neural Fixed-Point Acceleration for SCS
+  - repo_url: https://github.com/rtqichen/torchdiffeq
+    year: 2021
+    desc: PyTorch Differentiable ODE Solvers (differentiable event handling)
   - repo_url: https://github.com/facebookresearch/dcem
     year: 2020
     desc: The Differentiable Cross-Entropy Method
