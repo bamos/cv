@@ -427,6 +427,9 @@ repos:
   - repo_url: https://github.com/lazaratan/meta-flow-matching
     year: 2024
     desc: Meta Flow Matching
+  - repo_url: https://github.com/facebookresearch/soc-matching
+    year: 2024
+    desc: Stochastic Optimal Control Matching
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
     year: 2023
     desc: Tutorial on amortized optimization
