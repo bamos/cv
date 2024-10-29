@@ -560,6 +560,11 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
+  - title: On LLM prompt optimization and amortization
+    url: https://bamos.github.io/presentations/2024/10/27/prompt-optimization-and-amortization.html
+    location: Dagstuhl Seminar on ML for CO
+    location_url: https://www.dagstuhl.de/24441
+    year: 2024
   - title: Amortized optimization for optimal transport and LLM attacks
     url: https://bamos.github.io/presentations/2024/07/01/amortized-optimization-for-OT-and-LLMs.html
     location: ISMP
