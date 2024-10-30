@@ -528,6 +528,12 @@ repos:
     www: http://cmusatyalab.github.io/openface/
     year: 2015
     desc: Face recognition with deep neural networks
+  - repo_url: https://github.com/bamos/girl
+    year: 2015
+    desc: GitHub README link checker
+  - repo_url: https://github.com/bamos/conference-tracker
+    year: 2015
+    desc: Minimal conference tracker
   - repo_url: https://github.com/vtopt/qnstop
     year: 2014
     desc: Fortran quasi-Newton stochastic optimization library
@@ -549,6 +555,9 @@ repos:
   - repo_url: https://github.com/bamos/cv
     year: 2013
     desc: "Source for this CV: Creates LaTeX/Markdown from YAML/BibTeX"
+  - repo_url: https://github.com/bamos/parsec-benchmark
+    year: 2013
+    desc: PARSEC benchmark support for Arch Linux
   - repo_url: https://github.com/bamos/python-scripts
     year: 2013
     desc: Short and fun Python scripts
