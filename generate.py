@@ -379,8 +379,8 @@ def get_pub_summary(bibtex_file):
             venue_counts[pub['_venue']] += 1
     venue_counts = sorted(venue_counts.items(), key=lambda x: x[1], reverse=True)
     print('publication venues:', venue_counts)
-    venue_counts = list(filter(lambda x: x[1] >= 5, venue_counts))
-    summary = 'I most frequently publish at '
+    venue_counts = list(filter(lambda x: x[1] >= 5 and x[0] != 'arXiv', venue_counts))
+    summary = ''
     for i, (venue, count) in enumerate(venue_counts):
         if i == len(venue_counts) - 1:
             summary += ', and '
@@ -388,7 +388,6 @@ def get_pub_summary(bibtex_file):
             summary += ', '
 
         summary += f'{venue} ({count} papers)'
-    summary += '.'
     return summary
 
 def truncate_to_k(num):
@@ -554,7 +553,7 @@ class RenderContext(object):
                     section_data['content'] = get_pub_latex(self, section_content)
                 elif self._file_ending == ".md":
                     section_data['content'] = get_pub_md(self, section_content)
-                section_data['summary'] = get_pub_summary(section_content['file'])
+                section_data['venue_counts'] = get_pub_summary(section_content['file'])
                 section_data['scholar_id'] = yaml_data['social']['google_scholar']
                 section_data['scholar_stats'] = get_scholar_stats(yaml_data['social']['google_scholar'])
                 section_template_name = os.path.join(
