@@ -434,7 +434,7 @@ repos:
     desc: Stochastic Optimal Control Matching
   - repo_url: https://github.com/kuleshov/cornell-cs5785-2024-applied-ml
     year: 2024
-    desc: Cornell CS5785 Slides
+    desc: Slides for our applied ML course
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
     year: 2023
     desc: Tutorial on amortized optimization
