@@ -574,10 +574,10 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
-  - title: On flows and amortization
+  - title: Transport and flows on distributions over distributions
     location: Genesis Therapeutics
     year: 2024
-  - title: On flows and amortization
+  - title: Transport and flows on distributions over distributions
     location: UT Austin
     year: 2024
   - title: On LLM prompt optimization and amortization
