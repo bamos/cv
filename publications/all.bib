@@ -176,6 +176,42 @@ Many real-world optimization problems contain parameters that are unknown before
   }
 }
 
+@misc{haviv2024wasserstein,
+  title={Wasserstein Flow Matching: Generative modeling over families of distributions},
+  author={Doron Haviv and Aram-Alexandre Pooladian and Dana Pe'er and Brandon Amos},
+  year={2024},
+  _venue={arXiv},
+  abstract={
+    Generative modeling typically concerns the transport of a single
+    source distribution to a single target distribution
+    by learning (i.e., regressing onto) simple
+    probability flows. However, in modern data-driven
+    fields such as computer graphics and single-cell
+    genomics, samples (say, point-clouds) from datasets
+    can themselves be viewed as distributions (as, say,
+    discrete measures). In these settings, the standard
+    generative modeling paradigm of flow matching would
+    ignore the relevant geometry of the samples. To
+    remedy this, we propose \emph{Wasserstein flow
+    matching} (WFM), which appropriately lifts flow
+    matching onto families of distributions by appealing
+    to the Riemannian nature of the Wasserstein
+    geometry. Our algorithm leverages theoretical and
+    computational advances in (entropic) optimal
+    transport, as well as the attention mechanism in our
+    neural network architecture. We present two novel
+    algorithmic contributions. First, we demonstrate how
+    to perform generative modeling over Gaussian
+    distributions, where we generate representations of
+    granular cell states from single-cell genomics
+    data. Secondly, we show that WFM can learn flows
+    between high-dimensional and variable sized
+    point-clouds and synthesize cellular
+    microenvironments from spatial transcriptomics
+    datasets.
+  }
+}
+
 @misc{amos2023tutorial,
   title={Tutorial on amortized optimization},
   author={Brandon Amos},

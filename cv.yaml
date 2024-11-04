@@ -416,6 +416,8 @@ all_publications:
     'Xian Li': 'https://scholar.google.com/citations?user=v_sIgawAAAAJ'
     'Justine T Kao': 'https://scholar.google.com/citations?hl=es&user=Y9BLeTAAAAAJ'
     'Maryam Fazel-Zarandi': 'https://scholar.google.com/citations?user=7-a1MKEAAAAJ'
+    'Doron Haviv': 'https://scholar.google.co.il/citations?user=tWeeha4AAAAJ'
+    "Dana Pe'er": 'https://scholar.google.com/citations?user=aJOeGRoAAAAJ'
 
 repos:
   - repo_url: https://github.com/facebookresearch/advprompter
@@ -430,6 +432,9 @@ repos:
   - repo_url: https://github.com/facebookresearch/soc-matching
     year: 2024
     desc: Stochastic Optimal Control Matching
+  - repo_url: https://github.com/kuleshov/cornell-cs5785-2024-applied-ml
+    year: 2024
+    desc: Cornell CS5785 Slides
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
     year: 2023
     desc: Tutorial on amortized optimization
@@ -569,6 +574,12 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
+  - title: On flows and amortization
+    location: Genesis Therapeutics
+    year: 2024
+  - title: On flows and amortization
+    location: UT Austin
+    year: 2024
   - title: On LLM prompt optimization and amortization
     url: https://bamos.github.io/presentations/2024/10/27/prompt-optimization-and-amortization.html
     location: Dagstuhl Seminar on ML for CO
