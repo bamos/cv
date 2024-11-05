@@ -574,12 +574,14 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
-  - title: Transport and flows on distributions over distributions
+  - title: Transport and flows between distributions over distributions
     location: Genesis Therapeutics
     year: 2024
-  - title: Transport and flows on distributions over distributions
+    url: https://bamos.github.io/presentations/2024/11/05/transport-between-distributions-over-distributions.html
+  - title: Transport and flows between distributions over distributions
     location: UT Austin
     year: 2024
+    url: https://bamos.github.io/presentations/2024/11/05/transport-between-distributions-over-distributions.html
   - title: On LLM prompt optimization and amortization
     url: https://bamos.github.io/presentations/2024/10/27/prompt-optimization-and-amortization.html
     location: Dagstuhl Seminar on ML for CO
