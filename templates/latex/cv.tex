@@ -11,9 +11,16 @@
 \usepackage{lmodern}
 
 % for heart
-\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
-\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
-\DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
+% \DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+% \DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+% \DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
+% \let\leftmoon\relax   % Clear the existing definition
+% \let\rightmoon\relax  % Clear the existing definition
+% \let\fullmoon\relax  % Clear the existing definition
+% \let\diameter\relax  % Clear the existing definition
+% \usepackage{wasysym}
+\let\varheart\heartsuit
+\let\vardiamond\diamond
 
 \definecolor{tab_highlight}{HTML}{f0c967}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}

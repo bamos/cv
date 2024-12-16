@@ -14,13 +14,41 @@ The notable addition I added is getting stars for 🤗 HuggingFace models, datas
 Dependencies are included in `requirements.txt` and can be installed
 using `pip` with `pip3 install -r requirements.txt`.
 `make` will call [generate.py](generate.py) and
-build the LaTeX documents with `latexmk` and `biber`.
+build the LaTeX documents with `latexmk` and `biber`. (install with `sudo tlmgr install latexmk` with latex installed, e.g. `brew install --cask basictex` and `sudo tlmgr update --self`)
 The Makefile can also:
 
 1. Stage to my website with `make stage`,
 2. Start a local jekyll server of my website with updated
   documents with `make jekyll`, and
 3. Push updated documents to my website with `make push`.
+
+Note: I needed to install `pyyaml` with conda:
+```
+conda install pyyaml=5.4.1
+```
+
+Note: If errors with:
+```
+! LaTeX Error: File `moderncv.cls' not found.
+```
+Install `moderncv` with:
+```
+sudo tlmgr update --self
+sudo tlmgr install moderncv
+sudo tlmgr install mathabx
+```
+
+**Python env**:
+
+1. Create and activate a conda environment:
+```bash
+conda create -n YOUR_ENV_NAME python=3.10
+conda activate YOUR_ENV_NAME
+```
+2. Install required packages (see above)
+3. Modify the `.env` file with `YOUR_ENV_NAME`
+
+
 
 # What to modify
 Change the content in `cv.yaml`.

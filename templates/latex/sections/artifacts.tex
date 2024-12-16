@@ -2,9 +2,10 @@
 
 ~< block body >~
 % \begin{tabular}{p{0.5in}p{5in}}
+  \small{Key -- \texttt{M: Model, D: Dataset, S: Space}}\\
   ~< for item in items >~
-    \href{<< item.repo_url >>}{<< item.id >>} | \small{$\varheart$}<< item.stars >> |
-    \emph{<< item.desc >>} \small{(\textit{<< item.type >>})} \hfill
+    \href{<< item.repo_url >>}{<< item.id >>} $\bigstar$<< item.stars >> | \small{\texttt{<< item.type >>}} |
+    \emph{<< item.desc >>} \hfill
     << item.year>> \par
   ~< endfor >~
 % \end{tabular}

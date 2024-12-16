@@ -3,6 +3,9 @@
 # Brandon Amos <http://bamos.github.io> and
 # Ellis Michael <http://ellismichael.com>
 
+# Read conda environment name from .env file, default to 'cv' if not found
+CONDA_ENV_NAME ?= $(shell grep CONDA_ENV_NAME .env 2>/dev/null | cut -d '=' -f2 || echo "cv")
+
 WEBSITE_DIR=$(HOME)/repos/website
 WEBSITE_PDF=$(WEBSITE_DIR)/data/cv.pdf
 WEBSITE_MD=$(WEBSITE_DIR)/_includes/cv.md
@@ -32,7 +35,10 @@ public: $(BUILD_DIR) $(TEMPLATES) $(YAML_FILES) generate.py
 	./generate.py cv.yaml
 
 $(TEX) $(MD): $(TEMPLATES) $(YAML_FILES) generate.py publications/*.bib
-	./generate.py $(YAML_FILES)
+	CONDA_PREFIX=$$(conda info --base) && \
+	source $${CONDA_PREFIX}/etc/profile.d/conda.sh && \
+	conda activate $(CONDA_ENV_NAME) && \
+	python ./generate.py $(YAML_FILES)
 
 $(PDF): $(TEX)
 	# TODO: Hack for biber on OSX.

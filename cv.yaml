@@ -48,6 +48,8 @@ about: '\vspace{18pt} \small{
 '
 
 reviewing:
+  - details: Empirical Methods in Natural Language Processing, Demo Track
+    year: 2024
   - details: Transactions on Machine Learning Research (TMLR)
     year: 2024
   - details: Conference on Machine Learning (ICML)
@@ -115,9 +117,15 @@ service:
     year: 2017
 
 repos:
+  - repo_url: https://github.com/allenai/awesome-open-source-lms
+    year: 2024
+    desc: A curated list of open-source language models
   - repo_url: https://github.com/allenai/reward-bench
     year: 2024
     desc: The first evaluation tool for reward models
+  - repo_url: https://github.com/allenai/open-instruct
+    year: 2023
+    desc: Post-training language models
   - repo_url: https://github.com/natolambert/blogcaster
     year: 2023
     desc: AI tools for multimodal blogging
@@ -141,41 +149,65 @@ repos:
     desc: Model-based RL for mixed sim. and real
 
 artifacts:
+  - id: allenai/OLMo-2-1124-13B-Instruct
+    year: 2024
+    type: M
+    desc: Round 2!
+  - id: allenai/Llama-3.1-Tulu-3-8B
+    year: 2024
+    type: M
+    desc: Our SOTA post-training on Llama 3.1
+  - id: allenai/tulu-3-sft-mixture
+    year: 2024
+    type: D
+    desc: Our new SFT dataset
+  - id: allenai/OLMoE-1B-7B-0924-Instruct
+    year: 2024
+    type: M
+    desc: Open-source MoE model
+  - id: allenai/tulu-2.5-preference-data
+    year: 2024
+    type: D
+    desc: Collection of preference datasets
   - id: allenai/reward-bench
     year: 2024
-    type: space
+    type: S
     desc: Benchmark for reward modeling
   - id: allenai/OLMo-7B-Instruct
     year: 2024
-    type: model
+    type: M
     desc: A truly open-source chat model
+  - id: allenai/OLMo-7B
+    year: 2024
+    type: M
+    desc: Our first open-source language model
   - id: allenai/tulu-2-dpo-70b
     year: 2023
-    type: model
+    type: M
     desc: First model scaling DPO
   - id: HuggingFaceH4/zephyr-7b-beta
     year: 2023
-    type: model
+    type: M
     desc: Small and powerful chat model v2
   - id: HuggingFaceH4/zephyr-7b-alpha
     year: 2023
-    type: model
+    type: M
     desc: Small and powerful chat model
   - id: HuggingFaceH4/starchat-playground
     year: 2023
-    type: space
+    type: S
     desc: Playground for coding assistant models
   - id: HuggingFaceH4/starchat-alpha
     year: 2023
-    type: model
+    type: M
     desc: Coding assistant language model
   - id: HuggingFaceH4/open_llm_leaderboard
     year: 2023
-    type: space
+    type: S
     desc: Leaderboard for open instruction-tuned LLMs
   - id: HuggingFaceH4/stack-exchange-preferences
     year: 2023
-    type: dataset
+    type: D
     desc: Preference dataset for RLHF
 
 education:
@@ -400,6 +432,14 @@ advising:
     url: https://www.linkedin.com/in/howard-zhang-8366b1147
 
 honors:
+  - title: Ai2 The Cat Herder
+    year: 2024
+  - title: ACL Best Resource Paper Award (Dolma)
+    year: 2024
+  - title: ACL Best Theme Paper Award (OLMo)
+    year: 2024
+  - title: GeekWire Innovation of the year (OLMo)
+    year: 2024
   - title: Reward Reports - Auditing AI Mozilla Technology Fund Cohort
     year: 2023
   - title: Best Oral Presentation; Berkeley Sensor and Actuator Sensor Spring Review

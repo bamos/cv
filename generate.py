@@ -16,10 +16,11 @@ import yaml
 from huggingface_hub import HfApi
 import requests
 from bs4 import BeautifulSoup
-
+import math
 import shelve
 
 import bibtexparser.customization as bc
+from scholarly import scholarly
 from bibtexparser.bparser import BibTexParser
 from datetime import date
 from itertools import groupby
@@ -36,25 +37,41 @@ def human_format(num):
         num /= 1000.0
     return '{}{}'.format('{:f}'.format(num).rstrip('0').rstrip('.'), ['', 'K', 'M', 'B', 'T'][magnitude])
 
+def get_scholar_stats(scholar_id):
+    scholar_stats = shelve.open('scholar_stats.shelf')
+    author = scholarly.search_author_id(scholar_id)
+    author = scholarly.fill(author, sections=['indices'])
+    scholar_stats['h_index'] = author['hindex']
+    scholar_stats['citations'] = truncate_to_k(author['citedby'])
+    return scholar_stats
+
+def truncate_to_k(num):
+    if num < 1000:
+        return str(num)
+    num_k = math.trunc(num/100)/10
+    num_k = f'{num_k:.1f}'
+    num_k = num_k[:-2] if num_k.endswith('.0') else num_k
+    return f"{num_k}k+"
+
 # TODO add function like `add_repo_data` that works for HF
 def add_hf_data(context, config):
     for item in config:
         assert 'id' in item
         assert 'year' in item
         assert 'type' in item
-        assert item['type'] in ['model', 'dataset', 'space']
+        assert item['type'] in ['M', 'D', 'S']
 
         asset_name = item['id']
         type = item['type']
-        if type == 'model':
+        if type == 'M':
             model_info = api.model_info(asset_name)
             likes = model_info.likes
             item['repo_url'] = "https://huggingface.co/" + asset_name
-        elif type == 'dataset':
+        elif type == 'D':
             data_info = api.dataset_info(asset_name)
             likes = data_info.likes
             item['repo_url'] = "https://huggingface.co/" + "datasets/" + asset_name
-        elif type == 'space':
+        elif type == 'S':
             space_info = api.space_info(asset_name)
             likes = space_info.likes
             item['repo_url'] = "https://huggingface.co/" + "spaces/" + asset_name
@@ -71,7 +88,7 @@ def add_hf_data(context, config):
         #     repo_htmls[short_name] = r.content
         # soup = BeautifulSoup(repo_htmls[short_name], 'html.parser')
 
-        item['stars'] = likes
+        item['stars'] = truncate_to_k(likes)
 
 
 # TODO: Could really be cleaned up
@@ -551,6 +568,7 @@ class RenderContext(object):
                     section_data['content'] = get_pub_md(self, section_content)
                 section_data['scholar_id'] = yaml_data['social']['google_scholar']
                 section_data['semantic_id'] = yaml_data['social']['semantic_scholar']
+                section_data['scholar_stats'] = get_scholar_stats(yaml_data['social']['google_scholar'])
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             elif section_tag == 'NEWPAGE':
