@@ -322,91 +322,121 @@ teaching:
     position: TA
 
 talks:
-  - year: Mar. 2024
-    location: Deep Learning Classics and Trends
-    title: RewardBench, Evaluating Reward Models for Language Modeling 
-    details: "(\\href{https://docs.google.com/presentation/d/11ykKLSnHAE-YbI8V_DTkbXYHsgItqYTTywIGyoK9D_0/edit?pli=1#slide=id.g26c4c1f906b_0_0}{slides})"  
-  - year: Feb. 2024
-    location: Anthropic Societal Impacts Team
-    title: RewardBench 
-    # details: "(\\href{ https://docs.google.com/presentation/d/12YyZmOpgrsUT2dE0PRZC8u-_uPG_dTExM0TpI9mnfDE/edit?usp=sharing}{slides})"  
-  - year: Dec. 2023
-    location: Workshop of Social Choice for AI Ethics and Safety
-    title: History and Risks of RLHF 
-    # details: "(\\href{ https://docs.google.com/presentation/d/12YyZmOpgrsUT2dE0PRZC8u-_uPG_dTExM0TpI9mnfDE/edit?usp=sharing}{slides})"  
-  - year: Dec. 2023
-    location: Workshop on Sociotechnical AI Safety
-    title: History and Risks of RLHF 
-    details: "(\\href{https://docs.google.com/presentation/d/12YyZmOpgrsUT2dE0PRZC8u-_uPG_dTExM0TpI9mnfDE/edit?usp=sharing}{slides})"  
-  - year: Nov. 2023
-    location: CoRL LangRob Workshop
-    url: https://sites.google.com/view/langrob-corl23/home
-    title: Bridging RLHF from LLMs back to control 
-    details: "(\\href{https://docs.google.com/presentation/d/15i_7iqyUJwDMtyzzzSn83JLETET4Lz2Y7e4sDCAZhfM/edit?usp=sharing}{slides},\\href{https://www.youtube.com/live/ThgGAZF4hgI?si=EUGqtGr1XqIELhIj&t=8827}{recording})"  
-  - year: Aug. 2023
-    location: Deep Learning Classics and Trends
-    url: https://mlcollective.org/dlct/
-    title: Objective Mimatch in Reinforcement Learning from Human Feedback
-    details: "(\\href{https://drive.google.com/file/d/1F1lIi48PrWl5_80wQF40Y5dQmCBiZUUh/view?usp=sharing}{Slides Available}, \\href{https://youtu.be/j6Lss2_GSrY}{Recording Available})"
-  - year: July 2023
-    location: International Conference on Machine Learning
-    title: (Tutorial) Reinforcement Learning from Human Feedback
-    details: "(\\href{https://docs.google.com/presentation/d/1JVJz-tqD5kJEYvqYSyUFpfCA8GjtObw7f7NfA5grm-4/edit?usp=sharing}{Slides Available}, \\href{https://slideslive.com/39004357/reinforcement-learning-from-human-feedback-a-tutorial-}{Recording Available})"
-  - year: Jun 2023
-    location: ACM Conference on Fairness, Accountability, and Transparency
-    title: (Tutorial) Steering language models with reinforcement learning from human feedback and constitutional AI
-    details: "(\\href{https://docs.google.com/presentation/d/1-SzKvrfqKpK8NbTrnlLwJL5IHohPoW-0X7G17hSVW-Y/edit?usp=sharing}{Slides Available})"
-  - year: Mar 2023
-    location: UCL Dark Lab
-    title: Reinforcement Learning from Human Feedback; Open and Academic Progress
-    details: "(\\href{https://www.youtube.com/watch?v=8SgKDSX-Me0}{Recording Available}, \\href{https://docs.google.com/presentation/d/1jUipk6Mu8On2mWu_qfiocmbgnNux7SWp/edit#slide=id.p1}{Slides})"
-  - year: Feb 2023
-    location: Microsoft Data Science Gems
-    title: Reinforcement Learning from Human Feedback; Pathways to Open Reproduction of ChatGPT
-  - year: July 2022
-    location: ICML Workshop on Responsible Decision Making in Dynamic Environments
-    details: "(\\href{https://slideslive.com/38988545/reward-reports-for-reinforcement-learning}{Recording Available}, \\href{https://docs.google.com/presentation/d/1Id6nDc6Q1kIPeB0VI0FqmJZcrwCY5p6rY-az50h2ArI/edit?usp=sharing}{Slides})"
-    url: https://responsibledecisionmaking.github.io/schedule/
-    title: Reward Reports for Reinforcement Learning
-  - year: July 2022
-    location: Lead The Future
-#    details: "(\\href{}{Slides Available})"
-    title: Synthesizing Robotic Controllers with Model-based Reinforcement Learning
-  - year: April 2022
-    location: University of Pennsylvania -- Perception, Action, and Learning Group
-    details: "(\\href{https://youtu.be/HxbeQI7hfo4}{Recording Available}, \\href{https://docs.google.com/presentation/d/1cxpA8gGNErShrf4Bz04wbgY_rao3pLgd/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
-    title: Planning through Exploration and Exploitation in Model-based Reinforcement Learning
-    # url: 
-  - year: March 2022
-    location: Microsoft Research
-    details: "(\\href{https://docs.google.com/presentation/d/1_8tNoTyn0Oc9KZnATmRwM3TVEXavU7bq/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
-    title: (Job Talk) Legible Reinforcement Learning via Dynamics Models
-  - year: February 2022
-    location: DeepMind Robotics All Hands
-#    details: "(\\href{https://docs.google.com/presentation/d/1uQKXAFAFzsS_Ucz-0hhPXyfruzETR987/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides Available})"
-    title: The Challenges of Exploration for Offline Reinforcement Learning
-  - year: February 2022
-    location: Amazon Robotics \& AI
-    details: "(\\href{https://docs.google.com/presentation/d/1uQKXAFAFzsS_Ucz-0hhPXyfruzETR987/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
-#    url:
-    title: (Job Talk) Synergy of Prediction and Control in Model-based Reinforcement Learning
-  - year: December 2021
-    location: Cruise AI
-#    details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Talk available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{slides})"
-    title: (Job Talk) Control-oriented Predictions in Model-based Reinforcement Learning
-  - year: March 2021
-    location: Cornell Robotics Seminar
-    details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Recording Available}, \\href{https://docs.google.com/presentation/d/14TZn_FpJHh1waDUYv5HBa7SmkyR8ji9d/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
-    url: https://robotics.cornell.edu/category/seminars/spring-2021/
-    title: Improving Model Predictive Control in Model-based Reinforcement Learning
-  - year: April 2020
-    location: UC Berkeley Semiautonomous Seminar
-    details: "(\\href{https://youtu.be/Z4EpSWfU48E}{Recording Available}, \\href{https://docs.google.com/presentation/d/1Q0QYHAyPa_dO8iUsOyDcudvDAwhl24Rc/edit?usp=sharing&ouid=103787877275033430455&rtpof=true&sd=true}{Slides})"
-    url: https://sites.google.com/berkeley.edu/semiautonomousseminar/spring-2020
-    title: Model Learning for Low-level Control in Robotics 
-  - year: May 2019
-    location: UC Berkeley Semiautonomous Seminar
-    url: https://sites.google.com/view/cs-159-spring-2020/lectures
+- year: 2024
+  month: December
+  location: Neural Information Processing Systems
+  title: (Tutorial) Language Modeling
+  details: "(\\href{https://docs.google.com/presentation/d/179dpzWSQ9G7EAUlvaJdeE0av9PLuk9Rl33nfhHSJ4xI/edit?usp=sharing}{slides})"
+- year: 2024
+  month: December
+  location: Infer AI Engineer Vancouver
+  url: https://infervan.com/
+  title: How to approach post-training for AI applications
+  details: "(\\href{https://docs.google.com/presentation/d/1LWHbtz74GwKSGYZKyBVUtcyvp8lgYOi5EVpMnVDXBPs}{slides})"
+- year: 2024
+  month: November
+  location: Princeton AI Alignment and Safety Seminar (PASS)
+  url: https://pli.princeton.edu/events/princeton-ai-alignment-and-safety-seminar
+  title: Tülu 3 Preview
+  details: "(\\href{https://docs.google.com/presentation/d/13BMCKdugxBn75hAkPX3qHWnoRxy5XhvX228pODWxJJ8/edit?usp=sharing}{slides}, \\href{https://www.youtube.com/watch?v=ltSzUIJ9m6s&list=PLWRU-w8UhT6jNg64UfBB0VtlvI4Upe914}{recording})"
+- year: 2024
+  month: March
+  location: Deep Learning Classics and Trends
+  title: RewardBench, Evaluating Reward Models for Language Modeling
+  details: "(\\href{https://docs.google.com/presentation/d/11ykKLSnHAE-YbI8V_DTkbXYHsgItqYTTywIGyoK9D_0/edit?pli=1#slide=id.g26c4c1f906b_0_0}{slides})"
+- year: 2024
+  month: February
+  location: Anthropic Societal Impacts Team
+  title: RewardBench
+- year: 2023
+  month: December
+  location: Workshop of Social Choice for AI Ethics and Safety
+  title: History and Risks of RLHF
+- year: 2023
+  month: December
+  location: Workshop on Sociotechnical AI Safety
+  title: History and Risks of RLHF
+  details: "(\\href{https://docs.google.com/presentation/d/12YyZmOpgrsUT2dE0PRZC8u-_uPG_dTExM0TpI9mnfDE/edit?usp=sharing}{slides})"
+- year: 2023
+  month: November
+  location: CoRL LangRob Workshop
+  url: https://sites.google.com/view/langrob-corl23/home
+  title: Bridging RLHF from LLMs back to control
+  details: "(\\href{https://docs.google.com/presentation/d/15i_7iqyUJwDMtyzzzSn83JLETET4Lz2Y7e4sDCAZhfM/edit?usp=sharing}{slides},\\href{https://www.youtube.com/live/ThgGAZF4hgI?si=EUGqtGr1XqIELhIj&t=8827}{recording})"
+- year: 2023
+  month: August
+  location: Deep Learning Classics and Trends
+  url: https://mlcollective.org/dlct/
+  title: Objective Mimatch in Reinforcement Learning from Human Feedback
+  details: "(\\href{https://drive.google.com/file/d/1F1lIi48PrWl5_80wQF40Y5dQmCBiZUUh/view?usp=sharing}{Slides Available}, \\href{https://youtu.be/j6Lss2_GSrY}{Recording Available})"
+- year: 2023
+  month: July
+  location: International Conference on Machine Learning
+  title: (Tutorial) Reinforcement Learning from Human Feedback
+  details: "(\\href{https://docs.google.com/presentation/d/1JVJz-tqD5kJEYvqYSyUFpfCA8GjtObw7f7NfA5grm-4/edit?usp=sharing}{Slides Available}, \\href{https://slideslive.com/39004357/reinforcement-learning-from-human-feedback-a-tutorial-}{Recording Available})"
+- year: 2023
+  month: June
+  location: ACM Conference on Fairness, Accountability, and Transparency
+  title: (Tutorial) Steering language models with reinforcement learning from human feedback and constitutional AI
+  details: "(\\href{https://docs.google.com/presentation/d/1-SzKvrfqKpK8NbTrnlLwJL5IHohPoW-0X7G17hSVW-Y/edit?usp=sharing}{Slides Available})"
+- year: 2023
+  month: March
+  location: UCL Dark Lab
+  title: Reinforcement Learning from Human Feedback; Open and Academic Progress
+  details: "(\\href{https://www.youtube.com/watch?v=8SgKDSX-Me0}{Recording Available}, \\href{https://docs.google.com/presentation/d/1jUipk6Mu8On2mWu_qfiocmbgnNux7SWp/edit#slide=id.p1}{Slides})"
+- year: 2023
+  month: February
+  location: Microsoft Data Science Gems
+  title: Reinforcement Learning from Human Feedback; Pathways to Open Reproduction of ChatGPT
+- year: 2022
+  month: July
+  location: ICML Workshop on Responsible Decision Making in Dynamic Environments
+  details: "(\\href{https://slideslive.com/38988545/reward-reports-for-reinforcement-learning}{Recording Available}, \\href{https://docs.google.com/presentation/d/1Id6nDc6Q1kIPeB0VI0FqmJZcrwCY5p6rY-az50h2ArI/edit?usp=sharing}{Slides})"
+  url: https://responsibledecisionmaking.github.io/schedule/
+  title: Reward Reports for Reinforcement Learning
+- year: 2022
+  month: July
+  location: Lead The Future
+  title: Synthesizing Robotic Controllers with Model-based Reinforcement Learning
+- year: 2022
+  month: April
+  location: University of Pennsylvania -- Perception, Action, and Learning Group
+  details: "(\\href{https://youtu.be/HxbeQI7hfo4}{Recording Available}, \\href{https://docs.google.com/presentation/d/1oKmu4gdpt1OMhKD751ASReHu2fa_kywq/edit?usp=sharing&ouid=113700012080756993161&rtpof=true&sd=true}{Slides})"
+  title: Planning through Exploration and Exploitation in Model-based Reinforcement Learning
+- year: 2022
+  month: March
+  location: Microsoft Research
+  details: "(\\href{https://docs.google.com/presentation/d/1x8duM427_KvazHE6FVYS2cGb-HCuTmBt/edit?usp=sharing&ouid=113700012080756993161&rtpof=true&sd=true}{Slides})"
+  title: (Job Talk) Legible Reinforcement Learning via Dynamics Models
+- year: 2022
+  month: February
+  location: DeepMind Robotics All Hands
+  title: The Challenges of Exploration for Offline Reinforcement Learning
+- year: 2022
+  month: February
+  location: Amazon Robotics \& AI
+  details: "(\\href{https://docs.google.com/presentation/d/1TZOY4DaJjDJzTZjF5peFTAXP7oFZYLY_/edit?usp=sharing&ouid=113700012080756993161&rtpof=true&sd=true}{Slides})"
+  title: (Job Talk) Synergy of Prediction and Control in Model-based Reinforcement Learning
+- year: 2021
+  month: December
+  location: Cruise AI
+  title: (Job Talk) Control-oriented Predictions in Model-based Reinforcement Learning
+- year: 2021
+  month: March
+  location: Cornell Robotics Seminar
+  details: "(\\href{https://www.youtube.com/watch?v=H5Q1UAEkhZY&t=1013s}{Recording Available}, \\href{https://docs.google.com/presentation/d/1ik0SsBsUApv7f1FRhG--dslSvuIobfHs/edit?usp=sharing&ouid=113700012080756993161&rtpof=true&sd=true}{Slides})"
+  url: https://robotics.cornell.edu/category/seminars/spring-2021/
+  title: Improving Model Predictive Control in Model-based Reinforcement Learning
+- year: 2020
+  month: April
+  location: UC Berkeley Semiautonomous Seminar
+  details: "(\\href{https://youtu.be/Z4EpSWfU48E}{Recording Available}, \\href{https://docs.google.com/presentation/d/18mvQ3Evy0mUABhPKvBVGjC3BlbecLvov/edit?usp=sharing&ouid=113700012080756993161&rtpof=true&sd=true}{Slides})"
+  url: https://sites.google.com/berkeley.edu/semiautonomousseminar/spring-2020
+  title: Model Learning for Low-level Control in Robotics
+- year: 2019
+  month: May
+  location: UC Berkeley Semiautonomous Seminar
+  url: https://sites.google.com/view/cs-159-spring-2020/lectures
 
 
 advising:
@@ -416,7 +446,7 @@ advising:
     url: https://www.linkedin.com/in/mark-selden/
   - year: 2019
     name: Albert Wilcox
-    details: "(UC Berkeley BS `22)"
+    details: "(UC Berkeley BS `22, Ph.D. student at Georgia Tech)"
     url: https://www.linkedin.com/in/albert-wilcox-314898184
   - year: 2019
     name: Jason Zhou

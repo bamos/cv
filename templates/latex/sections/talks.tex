@@ -2,26 +2,31 @@
 
 ~< block body >~
 % \begin{tabular}{p{0.5in}p{5in}}
-  ~< for item in items >~
-    ~< if item.url >~
-      \href{<< item.url >>}{<< item.location >>}
-      \,\, {\scriptsize
-        \color{gray}{<< item.details >>}
-      }
-    ~< else >~
-      << item.location >>
-      ~< if item.details >~
-      \,\, {\scriptsize
-        \color{gray}{<< item.details >>}
-      }
-      ~< endif>~
-  ~< endif >~
-  \hfill << item.year >> \\
-   ~< if item.title >~
-   {\scriptsize
+  ~< set counter = [1] >~
+  ~< for year, year_items in items|groupby('year')|reverse >~
+    \subsection*{<< year >>}
+    ~< for item in year_items >~
+      << counter[0] >>. ~< if item.url >~
+        \href{<< item.url >>}{<< item.location >>}
+        \,\, {\scriptsize
+          \color{gray}{<< item.details >>}
+        }
+      ~< else >~
+        << item.location >>
+        ~< if item.details >~
+        \,\, {\scriptsize
+          \color{gray}{<< item.details >>}
+        }
+        ~< endif >~
+      ~< endif >~
+      \hfill << item.month >>\\
+      ~< if item.title >~
+      {\scriptsize
         \textit{\color{gray}{<< item.title >>}}
       } \vspace{3mm}
-   ~< endif >~ \\
+      ~< endif >~ \\
+      ~< set _ = counter.append(counter.pop() + 1) >~
+    ~< endfor >~
   ~< endfor >~
 % \end{tabular}
 ~< endblock body >~
