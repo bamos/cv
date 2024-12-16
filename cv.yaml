@@ -52,10 +52,6 @@ current_position:
     location: New York City
     title: Research Scientist
     dates: 2019 -- Present
-  - place: Cornell Tech
-    location: New York City
-    title: Visiting Lecturer
-    dates: 2024 -- Present
 
 education:
   - school: Carnegie Mellon University
@@ -77,6 +73,10 @@ education:
 #   dates: 2011
 
 positions:
+  - place: Cornell Tech
+    location: New York City
+    title: Visiting Lecturer
+    dates: 2024
   - place: Carnegie Mellon University
     title: Research Assistant
     inline_detail: "with \\href{https://zicokolter.com}{J. Zico Kolter} on ML and optimization"
