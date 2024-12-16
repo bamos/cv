@@ -418,6 +418,8 @@ all_publications:
     'Maryam Fazel-Zarandi': 'https://scholar.google.com/citations?user=7-a1MKEAAAAJ'
     'Doron Haviv': 'https://doronhav.github.io/'
     "Dana Pe'er": 'https://scholar.google.com/citations?user=aJOeGRoAAAAJ'
+    'Sicheng Zhu': "https://schzhu.github.io/"
+    'Ivan Evtimov': 'https://ivanevtimov.eu/'
 
 repos:
   - repo_url: https://github.com/facebookresearch/advprompter

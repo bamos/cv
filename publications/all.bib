@@ -214,6 +214,40 @@ Many real-world optimization problems contain parameters that are unknown before
   }
 }
 
+@misc{zhu2024advprefixobjectivenuancedllm,
+      title={AdvPrefix: An Objective for Nuanced LLM Jailbreaks},
+      author={Sicheng Zhu and Brandon Amos and Yuandong Tian and Chuan Guo and Ivan Evtimov},
+      _venue={arXiv},
+      year={2024},
+      url={https://arxiv.org/abs/2412.10321},
+      abstract={
+        Many jailbreak attacks on large language models (LLMs) rely on a
+        common objective: making the model respond with the
+        prefix "Sure, here is (harmful request)". While
+        straightforward, this objective has two limitations:
+        limited control over model behaviors, often
+        resulting in incomplete or unrealistic responses,
+        and a rigid format that hinders optimization. To
+        address these limitations, we introduce AdvPrefix, a
+        new prefix-forcing objective that enables more
+        nuanced control over model behavior while being easy
+        to optimize. Our objective leverages model-dependent
+        prefixes, automatically selected based on two
+        criteria: high prefilling attack success rates and
+        low negative log-likelihood. It can further simplify
+        optimization by using multiple prefixes for a single
+        user request. AdvPrefix can integrate seamlessly
+        into existing jailbreak attacks to improve their
+        performance for free. For example, simply replacing
+        GCG attack's target prefixes with ours on Llama-3
+        improves nuanced attack success rates from 14\% to
+        80\%, suggesting that current alignment struggles to
+        generalize to unseen prefixes. Our work demonstrates
+        the importance of jailbreak objectives in achieving
+        nuanced jailbreaks.
+      }
+}
+
 @misc{amos2023tutorial,
   title={Tutorial on amortized optimization},
   author={Brandon Amos},
