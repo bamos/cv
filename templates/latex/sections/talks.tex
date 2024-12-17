@@ -6,11 +6,13 @@
   ~< for year, year_items in items|groupby('year')|reverse >~
     \subsection*{<< year >>}
     ~< for item in year_items >~
-      << counter[0] >>. ~< if item.url >~
+      << counter[0] >>. << item.title >> -- ~< if item.url >~
         \href{<< item.url >>}{<< item.location >>}
+        ~< if item.details >~
         \,\, {\scriptsize
           \color{gray}{<< item.details >>}
         }
+        ~< endif >~
       ~< else >~
         << item.location >>
         ~< if item.details >~
@@ -19,12 +21,7 @@
         }
         ~< endif >~
       ~< endif >~
-      \hfill << item.month >>\\
-      ~< if item.title >~
-      {\scriptsize
-        \textit{\color{gray}{<< item.title >>}}
-      } \vspace{3mm}
-      ~< endif >~ \\
+      \\[0.5mm]
       ~< set _ = counter.append(counter.pop() + 1) >~
     ~< endfor >~
   ~< endfor >~

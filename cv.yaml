@@ -95,7 +95,7 @@ service:
     year: 2021, 2022
     url: http://robot-learning.ml
   - details: Member of Well-Being in Machine Learning
-    year: 2021 -- cont.
+    year: 2021 -- 2024
     url: https://twitter.com/WellBeingInML
   - details: RLDM Workshop on Building Accountable and Transparent RL Organizer
     year: 2022
@@ -507,6 +507,36 @@ all_publications:
   group_by_year: True
 
   author_urls:
+    'Valentina Pyatkin': 'https://valentinapy.github.io/'
+    'Jacob Morrison': 'https://jacobmorrison.com/'
+    'Shengyi Huang': 'https://costa.sh/'
+    'Hamish Ivison': 'https://ivison.id.au/'
+    'Faeze Brahman': 'https://fabrahman.github.io/'
+    'Lester James V. Miranda': 'https://ljvmiranda921.github.io/'
+    'Alisa Liu': 'https://alisawuffles.github.io/'
+    'Nouha Dziri': 'https://nouhadziri.github.io/'
+    'Shane Lyu': 'https://alrope123.github.io/'
+    'Yuling Gu': 'https://yulinggu-cs.github.io/'
+    # 'Saumya Malik': ''
+    # 'Victoria Graf': ''
+    'Jena D. Hwang': 'https://jenahwang.github.io/'
+    # 'Jiangjiang Yang': ''
+    'Ronan Le Bras': 'https://rlebras.github.io/'
+    # 'Oyvind Tafjord': ''
+    # 'Chris Wilhelm': ''
+    'Luca Soldaini': 'https://soldaini.net/'
+    'Noah A. Smith': 'https://nasmith.github.io/'
+    'Noah A Smith': 'https://nasmith.github.io/'
+    'Noah Smith': 'https://nasmith.github.io/'
+    'Yizhong Wang': 'https://homes.cs.washington.edu/~yizhongw/'
+    'Pradeep Dasigi': 'https://pdasigi.github.io/'
+    'Hannaneh Hajishirzi': 'https://homes.cs.washington.edu/~hannaneh/'
+    'Hanna Hajishirzi': 'https://homes.cs.washington.edu/~hannaneh/'
+    'Matt Deitke': 'https://mattdeitke.com/'
+    'Christopher Clark': 'https://chrisc36.github.io/'
+    'Sangho Lee': 'https://sangho-vision.github.io/'
+    'Ali Farhadi': 'https://homes.cs.washington.edu/~ali/'
+    'Kyle Lo': 'https://kyleclo.com/'
     'Aaron Snoswell': 'http://aaronsnoswell.github.io'
     'Amy Zhang': 'https://amyzhang.github.io/'
     'Arunkumar Byravan': 'https://scholar.google.com/citations?user=obYwWiMAAAAJ&hl=en&oi=ao'
