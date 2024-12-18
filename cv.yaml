@@ -421,12 +421,15 @@ all_publications:
     'Ivan Evtimov': 'https://ivanevtimov.eu/'
 
 repos:
+  - repo_url: https://github.com/facebookresearch/oni
+    year: 2024
+    desc: Online LLM intrinsic rewards for NetHack
   - repo_url: https://github.com/facebookresearch/advprompter
     year: 2024
     desc: Fast Adaptive Adversarial Prompting for LLMs
   - repo_url: https://github.com/facebookresearch/lagrangian-ot
     year: 2024
-    desc: Lagrangian OT
+    desc: Lagrangian Optimal Transport
   - repo_url: https://github.com/lazaratan/meta-flow-matching
     year: 2024
     desc: Meta Flow Matching
@@ -474,7 +477,7 @@ repos:
     desc: Model-based reinforcement learning library
   - repo_url: https://github.com/martius-lab/CombOptNet
     year: 2021
-    desc: CombOptNet
+    desc: "Fit the Right NP-Hard Problem by Learning Integer Programming Constraints"
   - repo_url: https://github.com/samcohen16/Aligning-Time-Series
     year: 2021
     desc: Aligning time series on incomparable spaces
