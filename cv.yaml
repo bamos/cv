@@ -440,6 +440,14 @@ talks:
 
 
 advising:
+  - year: 2024
+    name: Saumya Malik
+    details: "(Ai2 Pre-Doctoral Researcher `25)"
+    url: https://www.linkedin.com/in/saumya-malik-983a11229/
+  - year: 2024
+    name: Jacob Morrison
+    details: "(Ai2 Pre-Doctoral Researcher `25)"
+    url: https://jacobmorrison.com/
   - year: 2020
     name: Mark Selden
     details: "(UC Berkeley BS `22)"
@@ -451,11 +459,11 @@ advising:
   - year: 2019
     name: Jason Zhou
     details: "(UC Berkeley BS, MS '21 to \\href{https://matician.com/}{Matician})"
-    url: https://www.linkedin.com/in/albert-wilcox-314898184
+    url: https://www.linkedin.com/in/jasonxzhou/
   - year: 2018
     name: Felipe Campos
     details: "(UC Berkeley BS '20 to \\href{https://armstrongrobotics.com/}{Armstrong Robotics})"
-    url: https://www.linkedin.com/in/howard-zhang-8366b1147
+    url: https://scholar.google.com/citations?hl=en&user=PNvJsN0AAAAJ&view_op=list_works&sortby=pubdate
   - year: 2018
     name: Howard Zhang
     details: "(UC Berkeley BS, MS'21 to UCLA PhD)"
