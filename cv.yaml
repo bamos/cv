@@ -43,7 +43,7 @@ order:
 
 about: '\vspace{18pt} \small{
   I research \textbf{data-driven decision making},
-  including progressing \textbf{reinforcmement learning} algorithms,
+  including progressing \textbf{reinforcement learning} algorithms,
   applying them to real-world problems such as \textbf{large language models} and \textbf{robotics}, and planning for the \textbf{societal implications} therein.}
 '
 
@@ -94,7 +94,7 @@ service:
   - details: Farama Foundation Board of Technical Advisors
     year: 2022 -- 2024
     url: https://farama.org/
-  - details: NeurIPs Workshop on Robot Learning Organizor
+  - details: NeurIPs Workshop on Robot Learning Organizer
     year: 2021, 2022
     url: http://robot-learning.ml
   - details: Member of Well-Being in Machine Learning
@@ -284,12 +284,12 @@ teaching:
     details: "(\\href{https://docs.google.com/presentation/d/1quMyI4BAx4rvcDfk8jjv063bmHg4RxZd9mhQloXpMn0/edit?usp=sharing}{slides}, \\href{https://www.youtube.com/watch?v=AdLgPmcrXwQ}{recording})"
   - semester: Sp2024
     name: Policy Challenges of AI
-    short: Harvard Univeristy
+    short: Harvard University
     position: Guest lecture on open-source AI
     details: "(\\href{https://docs.google.com/presentation/d/1VI6u104kGFsZRh-CHheUsS2BA7J9ZpUSdyr1lBPaoA8/edit?usp=sharing}{slides}, \\href{https://hls.harvard.edu/courses/case-studies-in-public-and-private-policy-challenges-of-artificial-intelligence/}{course})"
   - semester: Fa2023
     name: Machine Learning from Human Preferences
-    short: Stanford Univeristy CS329H
+    short: Stanford University CS329H
     position: Guest lecture on RLHF
     details: "(\\href{https://docs.google.com/presentation/d/1T6X8ZlwrBek14wGfKljLxikwkTBDdM88r0AZ6NiodU4/edit?usp=sharing}{slides}, \\href{https://web.stanford.edu/class/cs329h/}{course})"
   - semester: Fa2023
