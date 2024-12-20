@@ -370,7 +370,7 @@ talks:
   month: August
   location: Deep Learning Classics and Trends
   url: https://mlcollective.org/dlct/
-  title: Objective Mimatch in Reinforcement Learning from Human Feedback
+  title: Objective Mismatch in Reinforcement Learning from Human Feedback
   details: "(\\href{https://drive.google.com/file/d/1F1lIi48PrWl5_80wQF40Y5dQmCBiZUUh/view?usp=sharing}{Slides Available}, \\href{https://youtu.be/j6Lss2_GSrY}{Recording Available})"
 - year: 2023
   month: July
