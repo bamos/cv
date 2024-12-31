@@ -477,7 +477,7 @@ repos:
     desc: Model-based reinforcement learning library
   - repo_url: https://github.com/martius-lab/CombOptNet
     year: 2021
-    desc: "Fit the Right NP-Hard Problem by Learning Integer Programming Constraints"
+    desc: Combinatorial OptNet
   - repo_url: https://github.com/samcohen16/Aligning-Time-Series
     year: 2021
     desc: Aligning time series on incomparable spaces
@@ -777,7 +777,7 @@ talks:
     year: 2018
 
 advising:
-  - year: 2024 -- present
+  - year: 2024 -- 2025
     name: Aaron Havens
     details: "visiting FAIR from UIUC"
     url: https://scholar.google.com/citations?user=HBAXF6YAAAAJ
@@ -847,17 +847,17 @@ service:
     - "IEEE International Conference on Robotics and Automation (ICRA)"
     - "International Conference on Learning Representations (ICLR)"
     - "International Conference on Learning Representations (ICLR) Blog Posts"
-    - "International Conference on Machine Learning (ICML) SODS Workshop"
     - "International Conference on Machine Learning (ICML)"
+    - "International Conference on Machine Learning (ICML) SODS Workshop"
     - "International Conference on the Constraint Programming, AI, and Operations Research (CPAIOR)"
     - "Journal of Machine Learning Research (JMLR)"
     - "Learning for Dynamics and Control (L4DC)"
     - "Mathematical Programming Computation (MPC)"
+    - "Neural Information Processing Systems (NeurIPS)"
     - "Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks Track"
     - "Neural Information Processing Systems (NeurIPS) Deep RL Workshop"
     - "Neural Information Processing Systems (NeurIPS) DiffCVGP Workshop"
     - "Neural Information Processing Systems (NeurIPS) OPT Workshop"
-    - "Neural Information Processing Systems (NeurIPS)"
     - "Optimization Letters"
     - "Transactions on Machine Learning Research (TMLR)"
     - "Uncertainty in Artificial Intelligence (UAI)"
