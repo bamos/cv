@@ -1,3 +1,24 @@
+@misc{phan2024exactbytelevelprobabilitiestokenized,
+  title={Exact Byte-Level Probabilities from Tokenized Language Models for FIM-Tasks and Model Ensembles},
+  author={Buu Phan and Brandon Amos and Itai Gat and Marton Havasi and Matthew Muckley and Karen Ullrich},
+  year={2025},
+  _venue={ICLR},
+  url={https://arxiv.org/abs/2410.09303},
+  abstract={Tokenization is associated with many poorly understood shortcomings in language models (LMs), yet remains an important component for long sequence scaling purposes. This work studies how tokenization impacts model performance by analyzing and comparing the stochastic behavior of tokenized models with their byte-level, or token-free, counterparts. We discover that, even when the two models are statistically equivalent, their predictive distributions over the next byte can be substantially different, a phenomenon we term as "tokenization bias". To fully characterize this phenomenon, we introduce the Byte-Token Representation Lemma, a framework that establishes a mapping between the learned token distribution and its equivalent byte-level distribution. From this result, we develop a next-byte sampling algorithm that eliminates tokenization bias without requiring further training or optimization. In other words, this enables zero-shot conversion of tokenized LMs into statistically equivalent token-free ones. We demonstrate its broad applicability with two use cases: fill-in-the-middle (FIM) tasks and model ensembles. In FIM tasks where input prompts may terminate mid-token, leading to out-of-distribution tokenization, our method mitigates performance degradation and achieves an approximately 18% improvement in FIM coding benchmarks, consistently outperforming the standard token healing fix. For model ensembles where each model employs a distinct vocabulary, our approach enables seamless integration, resulting in improved performance (up to 3.7%) over individual models across various standard baselines in reasoning, knowledge, and coding.}
+}
+
+@misc{atanackovic2024meta,
+  title={Meta Flow Matching:  Integrating Vector Fields on the Wasserstein Manifold},
+  author={Lazar Atanackovic and Xi Zhang and Brandon Amos and Mathieu Blanchette and Leo J Lee and Yoshua Bengio and Alexander Tong and Kirill Neklyudov},
+  url={https://arxiv.org/abs/2408.14608},
+  codeurl={https://github.com/lazaratan/meta-flow-matching},
+  year={2025},
+  _venue={ICLR},
+  abstract={
+Numerous biological and physical processes can be modeled as systems of interacting entities evolving continuously over time, e.g. the dynamics of communicating cells or physical particles. Learning the dynamics of such systems is essential for predicting the temporal evolution of populations across novel samples and unseen environments. Flow-based models allow for learning these dynamics at the population level - they model the evolution of the entire distribution of samples. However, current flow-based models are limited to a single initial population and a set of predefined conditions which describe different dynamics. We argue that multiple processes in natural sciences have to be represented as vector fields on the Wasserstein manifold of probability densities. That is, the change of the population at any moment in time depends on the population itself due to the interactions between samples. In particular, this is crucial for personalized medicine where the development of diseases and their respective treatment response depends on the microenvironment of cells specific to each patient. We propose Meta Flow Matching (MFM), a practical approach to integrating along these vector fields on the Wasserstein manifold by amortizing the flow model over the initial populations. Namely, we embed the population of samples using a Graph Neural Network (GNN) and use these embeddings to train a Flow Matching model. This gives MFM the ability to generalize over the initial distributions unlike previously proposed methods. We demonstrate the ability of MFM to improve prediction of individual treatment responses on a large scale multi-patient single-cell drug screen dataset.
+  }
+}
+
 @misc{paulus2024advprompter,
   title={AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs},
   author={Anselm Paulus* and Arman Zharmagambetov* and Chuan Guo and Brandon Amos$^{\dagger}$ and Yuandong Tian$^{\dagger}$},
@@ -89,20 +110,6 @@ We introduce a machine-learning framework to warm-start fixed-point optimization
       abstract={Stochastic optimal control, which has the goal of driving the behavior of noisy systems, is broadly applicable in science, engineering and artificial intelligence. Our work introduces Stochastic Optimal Control Matching (SOCM), a novel Iterative Diffusion Optimization (IDO) technique for stochastic optimal control that stems from the same philosophy as the conditional score matching loss for diffusion models. That is, the control is learned via a least squares problem by trying to fit a matching vector field. The training loss, which is closely connected to the cross-entropy loss, is optimized with respect to both the control function and a family of reparameterization matrices which appear in the matching vector field. The optimization with respect to the reparameterization matrices aims at minimizing the variance of the matching vector field. Experimentally, our algorithm achieves lower error than all the existing IDO techniques for stochastic optimal control for four different control settings. The key idea underlying SOCM is the path-wise reparameterization trick, a novel technique that is of independent interest, e.g., for generative modeling.}
 }
 
-
-@inproceedings{atanackovic2024meta,
-  title={Meta Flow Matching:  Integrating Vector Fields on the Wasserstein Manifold},
-  author={Lazar Atanackovic and Xi Zhang and Brandon Amos and Mathieu Blanchette and Leo J Lee and Yoshua Bengio and Alexander Tong and Kirill Neklyudov},
-  booktitle={ICML 2024 Workshop on Geometry-grounded Representation Learning and Generative Modeling},
-  year={2024},
-  url={https://arxiv.org/abs/2408.14608},
-  codeurl={https://github.com/lazaratan/meta-flow-matching},
-  _venue={ICML GRaM Workshop},
-  abstract={
-Numerous biological and physical processes can be modeled as systems of interacting entities evolving continuously over time, e.g. the dynamics of communicating cells or physical particles. Learning the dynamics of such systems is essential for predicting the temporal evolution of populations across novel samples and unseen environments. Flow-based models allow for learning these dynamics at the population level - they model the evolution of the entire distribution of samples. However, current flow-based models are limited to a single initial population and a set of predefined conditions which describe different dynamics. We argue that multiple processes in natural sciences have to be represented as vector fields on the Wasserstein manifold of probability densities. That is, the change of the population at any moment in time depends on the population itself due to the interactions between samples. In particular, this is crucial for personalized medicine where the development of diseases and their respective treatment response depends on the microenvironment of cells specific to each patient. We propose Meta Flow Matching (MFM), a practical approach to integrating along these vector fields on the Wasserstein manifold by amortizing the flow model over the initial populations. Namely, we embed the population of samples using a Graph Neural Network (GNN) and use these embeddings to train a Flow Matching model. This gives MFM the ability to generalize over the initial distributions unlike previously proposed methods. We demonstrate the ability of MFM to improve prediction of individual treatment responses on a large scale multi-patient single-cell drug screen dataset.
-  }
-}
-
 @inproceedings{ju2024to,
 title={To the Globe ({TTG}): Towards Language-Driven Guaranteed Travel Planning},
 author={Da JU and Song Jiang and Andrew Cohen and Aaron Foss and Sasha Mitts and Arman Zharmagambetov and Brandon Amos and Xian Li and Justine T Kao and Maryam Fazel-Zarandi and Yuandong Tian},
@@ -122,15 +129,6 @@ abstract={Travel planning is a challenging and time-consuming task that aims to 
     abstract={
 Many real-world optimization problems contain parameters that are unknown before deployment time, either due to stochasticity or to lack of information (e.g., demand or travel times in delivery problems). A common strategy in such cases is to estimate said parameters via machine learning (ML) models trained to minimize the prediction error, which however is not necessarily aligned with the downstream task-level error. The decision-focused learning (DFL) paradigm overcomes this limitation by training to directly minimize a task loss, e.g. regret. Since the latter has non-informative gradients for combinatorial problems, state-of-the-art DFL methods introduce surrogates and approximations that enable training. But these methods exploit specific assumptions about the problem structures (e.g., convex or linear problems, unknown parameters only in the objective function). We propose an alternative method that makes no such assumptions, it combines stochastic smoothing with score function gradient estimation which works on any task loss. This opens up the use of DFL methods to nonlinear objectives, uncertain parameters in the problem constraints, and even two-stage stochastic optimization. Experiments show that it typically requires more epochs, but that it is on par with specialized methods and performs especially well for the difficult case of problems with uncertainty in the constraints, in terms of solution quality, scalability, or both.
   }
-}
-
-@misc{phan2024exactbytelevelprobabilitiestokenized,
-  title={Exact Byte-Level Probabilities from Tokenized Language Models for FIM-Tasks and Model Ensembles},
-  author={Buu Phan and Brandon Amos and Itai Gat and Marton Havasi and Matthew Muckley and Karen Ullrich},
-  year={2024},
-  _venue={arXiv},
-  url={https://arxiv.org/abs/2410.09303},
-  abstract={Tokenization is associated with many poorly understood shortcomings in language models (LMs), yet remains an important component for long sequence scaling purposes. This work studies how tokenization impacts model performance by analyzing and comparing the stochastic behavior of tokenized models with their byte-level, or token-free, counterparts. We discover that, even when the two models are statistically equivalent, their predictive distributions over the next byte can be substantially different, a phenomenon we term as "tokenization bias". To fully characterize this phenomenon, we introduce the Byte-Token Representation Lemma, a framework that establishes a mapping between the learned token distribution and its equivalent byte-level distribution. From this result, we develop a next-byte sampling algorithm that eliminates tokenization bias without requiring further training or optimization. In other words, this enables zero-shot conversion of tokenized LMs into statistically equivalent token-free ones. We demonstrate its broad applicability with two use cases: fill-in-the-middle (FIM) tasks and model ensembles. In FIM tasks where input prompts may terminate mid-token, leading to out-of-distribution tokenization, our method mitigates performance degradation and achieves an approximately 18% improvement in FIM coding benchmarks, consistently outperforming the standard token healing fix. For model ensembles where each model employs a distinct vocabulary, our approach enables seamless integration, resulting in improved performance (up to 3.7%) over individual models across various standard baselines in reasoning, knowledge, and coding.}
 }
 
 @misc{zheng2024onlineintrinsicrewardsdecision,
