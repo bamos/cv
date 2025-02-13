@@ -325,17 +325,28 @@ teaching:
     position: TA
 
 talks:
+- year: 2025
+  month: February
+  location: Minds and Machines Seminar, Seattle
+  title: An unexpected RL renaissance
+  details: "(\\href{https://docs.google.com/presentation/d/1z-i4NuqSc7rFKmI9zNnz3CJ_eshUBpJpbvcswCeWvPk/edit#slide=id.p}{slides}, \\href{https://www.youtube.com/watch?v=YXTYbr3hiFU}{recording})"
 - year: 2024
   month: December
   location: Neural Information Processing Systems
   title: (Tutorial) Language Modeling
-  details: "(\\href{https://docs.google.com/presentation/d/179dpzWSQ9G7EAUlvaJdeE0av9PLuk9Rl33nfhHSJ4xI/edit?usp=sharing}{slides})"
+  details: "(\\href{https://docs.google.com/presentation/d/179dpzWSQ9G7EAUlvaJdeE0av9PLuk9Rl33nfhHSJ4xI/edit?usp=sharing}{slides}, \\href{https://neurips.cc/virtual/2024/tutorial/99526}{recording})"
 - year: 2024
   month: December
   location: Infer AI Engineer Vancouver
   url: https://infervan.com/
   title: How to approach post-training for AI applications
-  details: "(\\href{https://docs.google.com/presentation/d/1LWHbtz74GwKSGYZKyBVUtcyvp8lgYOi5EVpMnVDXBPs}{slides})"
+  details: "(\\href{https://docs.google.com/presentation/d/1LWHbtz74GwKSGYZKyBVUtcyvp8lgYOi5EVpMnVDXBPs}{slides}, \\href{https://www.youtube.com/watch?v=grpc-Wyy-Zg}{recording})"
+- year: 2024
+  month: December
+  location: Latent Space @ NeurIPS
+  url: https://lu.ma/LSLIVE
+  title: The state of reasoning
+  details: "(\\href{https://docs.google.com/presentation/d/1PNipMudHb5HTNnVosve0lqdrgwKSWck4SCE9TSPCJkY/edit}{slides}, \\href{https://www.youtube.com/watch?v=2pHE9L4ZZXM}{recording})"
 - year: 2024
   month: November
   location: Princeton AI Alignment and Safety Seminar (PASS)
