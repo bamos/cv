@@ -579,6 +579,10 @@ repos:
 
 talks:
   - title: Transport and flows between distributions over distributions
+    location: Columbia University
+    year: 2025
+    url: https://bamos.github.io/presentations/2024/11/05/transport-between-distributions-over-distributions.html
+  - title: Transport and flows between distributions over distributions
     location: Genesis Therapeutics
     year: 2024
     url: https://bamos.github.io/presentations/2024/11/05/transport-between-distributions-over-distributions.html
