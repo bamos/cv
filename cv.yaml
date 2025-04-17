@@ -419,6 +419,17 @@ all_publications:
     "Dana Pe'er": 'https://scholar.google.com/citations?user=aJOeGRoAAAAJ'
     'Sicheng Zhu': "https://schzhu.github.io/"
     'Ivan Evtimov': 'https://ivanevtimov.eu/'
+    'Aaron Havens': 'https://aaronhavens.github.io/'
+    'Benjamin Kurt Miller': 'https://scholar.google.com/citations?user=IrCdg_wAAAAJ'
+    'Bing Yan': 'https://scholar.google.com/citations?user=337w9-V_WxIC'
+    'Anuroop Sriram': 'https://scholar.google.com/citations?user=D4uRc_UAAAAJ'
+    'Brandon Wood': 'https://scholar.google.com/citations?user=KbqboRgAAAAJ'
+    'Daniel Levine': 'https://scholar.google.com/citations?user=AcE5Wt4AAAAJ'
+    'Bin Hu': 'https://scholar.google.com/citations?user=o3tVp68AAAAJ'
+    'Brian Karrer': 'https://scholar.google.com/citations?user=Wewcpo4AAAAJ'
+    'Xiang Fu': 'https://scholar.google.com/citations?user=Cb-ZgHEAAAAJ'
+    'Guan-Horng Liu': 'https://scholar.google.com/citations?user=2Dt0VJ4AAAAJ'
+
 
 repos:
   - repo_url: https://github.com/facebookresearch/oni
