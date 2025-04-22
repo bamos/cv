@@ -200,6 +200,9 @@ positions:
       #   and hard links.
 
 honors:
+  - title: AISTATS Best Reviewer
+    year: 2025
+    url: https://aistats.org/aistats2025/awards.html
   - title: NeurIPS Top Reviewer
     year: 2022
     url: https://neurips.cc/Conferences/2022/ProgramCommittee
