@@ -44,8 +44,7 @@ order:
 about: '\vspace{18pt} \small{
   I research \textbf{data-driven decision making},
   including progressing \textbf{reinforcement learning} algorithms,
-  applying them to real-world problems such as \textbf{large language models} and \textbf{robotics}, and planning for the \textbf{societal implications} therein.}
-'
+  applying them to real-world problems such as \textbf{large language models} and \textbf{robotics}, and planning for the \textbf{societal implications} therein.}'
 
 reviewing:
   - details: Empirical Methods in Natural Language Processing, Demo Track
@@ -56,7 +55,7 @@ reviewing:
     year: 2020, 2022 (3), 2023, 2024 (3)
     sub_details: "(count is 1 unless labelled)"
   - details: Conference on Neural Information Processing Systems (NeurIPs)
-    year: 2022 (2), 2023, 2024
+    year: 2022 (2), 2023, 2024, 2025 (2)
   - details: Conference on Learning Representations (ICLR)
     year: 2021* (3), 2022 (3)
     sub_details: "(*Outstanding Reviewer)"
@@ -89,6 +88,8 @@ policy:
     url: https://www.ias.edu/stsv-lab/aipolicy
 
 service:
+  - details: Area Chair (AC), Conference on Language Modeling (COLM)
+    year: 2025
   - details: Associate Editor (AE), Conference on Intelligent Robots and Systems (IROS)
     year: 2023
   - details: Farama Foundation Board of Technical Advisors
@@ -272,11 +273,16 @@ industry:
       - "Test Engineering Intern"
 
 teaching:
+  - semester: Sp2025
+    name: Advances and Challenges in Language Models, Reasoning, and AI Agents
+    short: U.W. CSE599H
+    position: Guest Lecture, An introduction to post-training
+    details: "(\\href{https://docs.google.com/presentation/d/1RJLyfUz7_IbudBxoLZ5YHafzJbvlcZJdKmRWBtstZnQ/edit}{slides}, \\href{https://rulinshao.github.io/cse599/}{course})"
   - semester: Sp2024
     name: NLP with Deep Learning
     short: Stanford University CS224N
     position: Guest Lecture, Life after DPO
-    details: "(\\href{https://docs.google.com/presentation/d/1on5xTePaUYg47vui3dUr0Lp6GUXmOXmhceNJLXRbGsE/edit?usp=sharing}{slides}, \\href{https://web.stanford.edu/class/cs224n/}{course})"
+    details: "(\\href{https://docs.google.com/presentation/d/1on5xTePaUYg47vui3dUr0Lp6GUXmOXmhceNJLXRbGsE/edit?usp=sharing}{slides}, \\href{https://web.stanford.edu/class/cs224n/}{course}, \\href{https://www.youtube.com/watch?v=dnF463_Ar9I}{recording})"
   - semester: Sp2024
     name: Transformers United
     short: Stanford University CS25N
@@ -325,6 +331,16 @@ teaching:
     position: TA
 
 talks:
+- year: 2025
+  month: April
+  location: USC Information Sciences Institute
+  title: Experiments with Reinforcement Learning with Verifiable Rewards
+  details: "(\\href{https://docs.google.com/presentation/d/13dBH2cYoJI4hCOHX5r5razq4HHdQVRIWOOIe08PTmPM/edit?slide=id.p#slide=id.p}{slides}, \\href{https://www.youtube.com/watch?v=zYeIqzULzr0&t=2s}{recording})"
+- year: 2025
+  month: March
+  location: UC Santa Cruz, Silicon Valley Extension
+  title: The RL Era of Language Models
+  details: "(\\href{https://docs.google.com/presentation/d/1MnY-_YMhEwUdEO6oNIJcdGaEBN3goqCNUu_NLn_eYW4/edit?slide=id.p#slide=id.p}{slides}, \\href{https://www.youtube.com/watch?v=J1APR8Bo9dE}{recording})"
 - year: 2025
   month: February
   location: Minds and Machines Seminar, Seattle

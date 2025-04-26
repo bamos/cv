@@ -64,9 +64,9 @@ def add_hf_data(context, config):
         asset_name = item['id']
         type = item['type']
         if type == 'M':
-            model_info = api.model_info(asset_name)
+            model_info = api.model_info(asset_name) # now hits the real repo
             likes = model_info.likes
-            item['repo_url'] = "https://huggingface.co/" + asset_name
+            item["repo_url"] = f"https://huggingface.co/{asset_name}"
         elif type == 'D':
             data_info = api.dataset_info(asset_name)
             likes = data_info.likes
@@ -672,8 +672,9 @@ def main():
 
     yaml_data = {}
     for yaml_file in args.yamls:
-        with open(yaml_file) as f:
-            yaml_data.update(yaml.load(f))
+        with open("cv.yaml") as f:
+            yaml_data.update(yaml.safe_load(f))          # safest
+            #            or yaml.load(f, Loader=yaml.FullLoader)  # if you need full features
 
     if args.latex or args.markdown:
         if args.latex:
