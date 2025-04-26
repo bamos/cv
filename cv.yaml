@@ -121,6 +121,9 @@ service:
     year: 2017
 
 repos:
+  - repo_url: https://github.com/natolambert/rlhf-book
+    year: 2025
+    desc: Book on RLHF
   - repo_url: https://github.com/allenai/awesome-open-source-lms
     year: 2024
     desc: A curated list of open-source language models
