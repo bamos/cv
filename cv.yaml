@@ -593,7 +593,8 @@ repos:
 
 talks:
   - title: On amortized optimization for RL, Bayesian optimization, and biology
-    location: Artificial Intelligence laboratory for Bioscience (ai
+    location: ai4b.io
+    location_url: https://ai4b.io
     year: 2025
     url: https://bamos.github.io/presentations/2025/05/01/amortization-rl-bio.html
   - title: Transport and flows between distributions over distributions
