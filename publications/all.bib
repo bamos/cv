@@ -1,3 +1,49 @@
+@misc{zheng2024onlineintrinsicrewardsdecision,
+  title={Online Intrinsic Rewards for Decision Making Agents from Large Language Model Feedback},
+  author={Qinqing Zheng and Mikael Henaff and Amy Zhang and Aditya Grover and Brandon Amos},
+  year={2025},
+  codeurl = {https://github.com/facebookresearch/oni},
+  url={https://arxiv.org/abs/2410.23022},
+  _venue={RLC},
+  selected={true},
+  abstract={
+    Automatically synthesizing dense rewards from natural language
+    descriptions is a promising paradigm in
+    reinforcement learning (RL), with applications to
+    sparse reward problems, open-ended exploration, and
+    hierarchical skill design. Recent works have made
+    promising steps by exploiting the prior knowledge of
+    large language models (LLMs). However, these
+    approaches suffer from important limitations: they
+    are either not scalable to problems requiring
+    billions of environment samples; or are limited to
+    reward functions expressible by compact code, which
+    may require source code and have difficulty
+    capturing nuanced semantics; or require a diverse
+    offline dataset, which may not exist or be
+    impossible to collect. In this work, we address
+    these limitations through a combination of
+    algorithmic and systems-level contributions. We
+    propose ONI, a distributed architecture that
+    simultaneously learns an RL policy and an intrinsic
+    reward function using LLM feedback. Our approach
+    annotates the agent's collected experience via an
+    asynchronous LLM server, which is then distilled
+    into an intrinsic reward model. We explore a range
+    of algorithmic choices for reward modeling with
+    varying complexity, including hashing,
+    classification, and ranking models. By studying
+    their relative tradeoffs, we shed light on questions
+    regarding intrinsic reward design for sparse reward
+    problems. Our approach achieves state-of-the-art
+    performance across a range of challenging, sparse
+    reward tasks from the NetHack Learning Environment
+    in a simple unified process, solely using the
+    agent's gathered experience, without requiring
+    external datasets nor source code.
+  }
+}
+
 @misc{paulus2024advprompter,
   title={AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs},
   author={Anselm Paulus* and Arman Zharmagambetov* and Chuan Guo and Brandon Amos$^{\dagger}$ and Yuandong Tian$^{\dagger}$},
@@ -83,6 +129,7 @@ We train the AdvPrompter using a novel algorithm that does not require access to
 Numerous biological and physical processes can be modeled as systems of interacting entities evolving continuously over time, e.g. the dynamics of communicating cells or physical particles. Learning the dynamics of such systems is essential for predicting the temporal evolution of populations across novel samples and unseen environments. Flow-based models allow for learning these dynamics at the population level - they model the evolution of the entire distribution of samples. However, current flow-based models are limited to a single initial population and a set of predefined conditions which describe different dynamics. We argue that multiple processes in natural sciences have to be represented as vector fields on the Wasserstein manifold of probability densities. That is, the change of the population at any moment in time depends on the population itself due to the interactions between samples. In particular, this is crucial for personalized medicine where the development of diseases and their respective treatment response depends on the microenvironment of cells specific to each patient. We propose Meta Flow Matching (MFM), a practical approach to integrating along these vector fields on the Wasserstein manifold by amortizing the flow model over the initial populations. Namely, we embed the population of samples using a Graph Neural Network (GNN) and use these embeddings to train a Flow Matching model. This gives MFM the ability to generalize over the initial distributions unlike previously proposed methods. We demonstrate the ability of MFM to improve prediction of individual treatment responses on a large scale multi-patient single-cell drug screen dataset.
   }
 }
+
 
 @misc{pooladian2024neural,
   title = {Neural Optimal Transport with Lagrangian Costs},
@@ -178,51 +225,6 @@ abstract={Travel planning is a challenging and time-consuming task that aims to 
     _venue={arXiv},
     abstract={
 Many real-world optimization problems contain parameters that are unknown before deployment time, either due to stochasticity or to lack of information (e.g., demand or travel times in delivery problems). A common strategy in such cases is to estimate said parameters via machine learning (ML) models trained to minimize the prediction error, which however is not necessarily aligned with the downstream task-level error. The decision-focused learning (DFL) paradigm overcomes this limitation by training to directly minimize a task loss, e.g. regret. Since the latter has non-informative gradients for combinatorial problems, state-of-the-art DFL methods introduce surrogates and approximations that enable training. But these methods exploit specific assumptions about the problem structures (e.g., convex or linear problems, unknown parameters only in the objective function). We propose an alternative method that makes no such assumptions, it combines stochastic smoothing with score function gradient estimation which works on any task loss. This opens up the use of DFL methods to nonlinear objectives, uncertain parameters in the problem constraints, and even two-stage stochastic optimization. Experiments show that it typically requires more epochs, but that it is on par with specialized methods and performs especially well for the difficult case of problems with uncertainty in the constraints, in terms of solution quality, scalability, or both.
-  }
-}
-
-@misc{zheng2024onlineintrinsicrewardsdecision,
-  title={Online Intrinsic Rewards for Decision Making Agents from Large Language Model Feedback},
-  author={Qinqing Zheng and Mikael Henaff and Amy Zhang and Aditya Grover and Brandon Amos},
-  year={2024},
-  codeurl = {https://github.com/facebookresearch/oni},
-  url={https://arxiv.org/abs/2410.23022},
-  _venue={arXiv},
-  abstract={
-    Automatically synthesizing dense rewards from natural language
-    descriptions is a promising paradigm in
-    reinforcement learning (RL), with applications to
-    sparse reward problems, open-ended exploration, and
-    hierarchical skill design. Recent works have made
-    promising steps by exploiting the prior knowledge of
-    large language models (LLMs). However, these
-    approaches suffer from important limitations: they
-    are either not scalable to problems requiring
-    billions of environment samples; or are limited to
-    reward functions expressible by compact code, which
-    may require source code and have difficulty
-    capturing nuanced semantics; or require a diverse
-    offline dataset, which may not exist or be
-    impossible to collect. In this work, we address
-    these limitations through a combination of
-    algorithmic and systems-level contributions. We
-    propose ONI, a distributed architecture that
-    simultaneously learns an RL policy and an intrinsic
-    reward function using LLM feedback. Our approach
-    annotates the agent's collected experience via an
-    asynchronous LLM server, which is then distilled
-    into an intrinsic reward model. We explore a range
-    of algorithmic choices for reward modeling with
-    varying complexity, including hashing,
-    classification, and ranking models. By studying
-    their relative tradeoffs, we shed light on questions
-    regarding intrinsic reward design for sparse reward
-    problems. Our approach achieves state-of-the-art
-    performance across a range of challenging, sparse
-    reward tasks from the NetHack Learning Environment
-    in a simple unified process, solely using the
-    agent's gathered experience, without requiring
-    external datasets nor source code.
   }
 }
 

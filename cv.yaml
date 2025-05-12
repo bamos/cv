@@ -203,6 +203,10 @@ honors:
   - title: AISTATS Best Reviewer
     year: 2025
     url: https://aistats.org/aistats2025/awards.html
+  - title: Outstandird Paper Award at the ICML 2024 Theoretical Foundations Workshop
+    year: 2024
+    url: https://icml.cc/virtual/2024/39245
+    # descr: Unlocking Tokens as Data Points for Generalization Bounds on Larger Language Models
   - title: NeurIPS Top Reviewer
     year: 2022
     url: https://neurips.cc/Conferences/2022/ProgramCommittee
@@ -212,6 +216,10 @@ honors:
   - title: ICLR Outstanding Reviewer
     year: 2019
     url: https://iclr.cc/Conferences/2019/Awards
+  - title: Best Paper Award at ACM MMSys
+    year: 2017
+    link: https://records.sigmm.org/2017/10/02/report-from-acm-mmsys-2017/
+    # descr: A Scalable and Privacy-Aware IoT Service for Live Video Analytics
   - title: NSF Graduate Research Fellowship
     year: 2016 -- 2019
   - title: Nine undergraduate scholarships
@@ -800,13 +808,21 @@ talks:
     year: 2018
 
 advising:
+  - year: 2025
+    name: Ollie Liu
+    details: "visiting FAIR from USC"
+    url: https://ollieliu.com/
+  - year: 2025
+    name: Doron Haviv
+    details: "MSKCC PhD committee"
+    url: https://doronhav.github.io/
   - year: 2024 -- 2025
     name: Aaron Havens
     details: "visiting FAIR from UIUC"
     url: https://scholar.google.com/citations?user=HBAXF6YAAAAJ
   - year: 2022 -- 2024
     name: Aram-Alexandre Pooladian
-    details: "visiting FAIR from NYU"
+    details: "visiting FAIR from NYU, now at Yale"
     url: https://arampooladian.com/
   - year: 2022 -- 2024
     name: Carles Domingo-Enrich
@@ -826,7 +842,7 @@ advising:
     url: https://sanaelotfi.github.io/
   - year: 2022 -- 2023
     name: Dishank Bansal
-    details: "AI resident at FAIR"
+    details: "AI resident at FAIR, now at the UK AI Safety Institute"
     url: https://dishank-b.github.io
   - year: 2021 -- 2022
     name: Arnaud Fickinger
