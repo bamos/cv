@@ -203,7 +203,7 @@ honors:
   - title: AISTATS Best Reviewer
     year: 2025
     url: https://aistats.org/aistats2025/awards.html
-  - title: Outstanding Paper Award at the ICML 2024 Theoretical Foundations Workshop
+  - title: Outstanding Paper Award at the ICML Theoretical Foundations Workshop
     year: 2024
     url: https://icml.cc/virtual/2024/39245
     # descr: Unlocking Tokens as Data Points for Generalization Bounds on Larger Language Models
