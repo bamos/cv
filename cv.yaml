@@ -203,7 +203,7 @@ honors:
   - title: AISTATS Best Reviewer
     year: 2025
     url: https://aistats.org/aistats2025/awards.html
-  - title: Outstandird Paper Award at the ICML 2024 Theoretical Foundations Workshop
+  - title: Outstanding Paper Award at the ICML 2024 Theoretical Foundations Workshop
     year: 2024
     url: https://icml.cc/virtual/2024/39245
     # descr: Unlocking Tokens as Data Points for Generalization Bounds on Larger Language Models
@@ -218,7 +218,7 @@ honors:
     url: https://iclr.cc/Conferences/2019/Awards
   - title: Best Paper Award at ACM MMSys
     year: 2017
-    link: https://records.sigmm.org/2017/10/02/report-from-acm-mmsys-2017/
+    url: https://records.sigmm.org/2017/10/02/report-from-acm-mmsys-2017/
     # descr: A Scalable and Privacy-Aware IoT Service for Live Video Analytics
   - title: NSF Graduate Research Fellowship
     year: 2016 -- 2019
