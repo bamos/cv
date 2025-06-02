@@ -600,7 +600,11 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
-  - title: On amortized optimization for RL, Bayesian optimization, and biology
+  - title: "AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs"
+    location: USC
+    year: 2025
+    url: https://bamos.github.io/presentations/2025/05/09/advprompter.html
+  - title: "On amortized optimization for RL, Bayesian optimization, and biology"
     location: ai4b.io
     location_url: https://ai4b.io
     year: 2025
