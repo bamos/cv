@@ -47,6 +47,8 @@ about: '\vspace{18pt} \small{
   applying them to real-world problems such as \textbf{large language models} and \textbf{robotics}, and planning for the \textbf{societal implications} therein.}'
 
 reviewing:
+  - details: Association for Computational Linguistics (ACL) ARR
+    year: 2025 (1)
   - details: Empirical Methods in Natural Language Processing, Demo Track
     year: 2024
   - details: Transactions on Machine Learning Research (TMLR)
@@ -55,7 +57,7 @@ reviewing:
     year: 2020, 2022 (3), 2023, 2024 (3)
     sub_details: "(count is 1 unless labelled)"
   - details: Conference on Neural Information Processing Systems (NeurIPs)
-    year: 2022 (2), 2023, 2024, 2025 (2)
+    year: 2022 (2), 2023, 2024, 2025 (3)
   - details: Conference on Learning Representations (ICLR)
     year: 2021* (3), 2022 (3)
     sub_details: "(*Outstanding Reviewer)"
@@ -335,6 +337,20 @@ teaching:
 
 talks:
 - year: 2025
+  month: June
+  location: VentureBeat Transform
+  title: Reasoning; What comes next?
+- year: 2025
+  month: June
+  location: Enterprise AI Agent Summit, Seattle WA
+  title: The art of a good (reasoning) model
+  details: "(\\href{https://docs.google.com/presentation/d/1_ByHKLt49h3Vuk9bkprD6iaBDOY40ASfSwXGD7aheEc/edit?slide=id.g367b7d3a6a1_0_294#slide=id.g367b7d3a6a1_0_294}{slides}, \\href{https://www.youtube.com/watch?v=VAzL8RHot1c&t=4s}{recording})"
+- year: 2025
+  month: June
+  location: AI Engineer World's Fair
+  title: A taxonomy for next-generation reasoning models
+  details: "(\\href{https://docs.google.com/presentation/d/1U4mKDpKnm4E7FgruUr_dD9ZGa3tZDEp7PCYYBk9Pn6A/edit?usp=sharing}{slides}, \\href{https://www.youtube.com/live/-9E9_21tx04?si=SJ3KETsRrNvPzeOM&t=11348}{recording})"
+- year: 2025
   month: April
   location: USC Information Sciences Institute
   title: Experiments with Reinforcement Learning with Verifiable Rewards
@@ -473,6 +489,10 @@ talks:
 
 
 advising:
+  - year: 2025
+    name: Daniel Marta
+    details: "(Thesis Committee Member)"
+    url: https://daniellsm.github.io/
   - year: 2024
     name: Saumya Malik
     details: "(Ai2 Pre-Doctoral Researcher `25)"
@@ -503,6 +523,10 @@ advising:
     url: https://www.linkedin.com/in/howard-zhang-8366b1147
 
 honors:
+  - title: CVPR Best Paper Honorable Mention (Molmo \& Pixmo)
+    year: 2025  
+  - title: Best Reasoning \& RL Talk, AI Engineer World's Fair
+    year: 2025
   - title: Ai2 The Cat Herder
     year: 2024
   - title: ACL Best Resource Paper Award (Dolma)
