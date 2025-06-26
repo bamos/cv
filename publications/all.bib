@@ -50,6 +50,7 @@
   year={2025},
   url={https://arxiv.org/abs/2404.16873},
   codeurl={https://github.com/facebookresearch/advprompter},
+  slidesurl={https://bamos.github.io/presentations/2025/05/09/advprompter.html},
   _venue={ICML},
   selected={true},
   abstract={
@@ -105,6 +106,9 @@ We train the AdvPrompter using a novel algorithm that does not require access to
   year={2025},
   _venue={ICML},
   url={https://arxiv.org/abs/2504.11713},
+  codeurl={https://github.com/facebookresearch/adjoint_sampling},
+  abstract={
+  We introduce Adjoint Sampling, a highly scalable and efficient algorithm for learning diffusion processes that sample from unnormalized densities, or energy functions. It is the first on-policy approach that allows significantly more gradient updates than the number of energy evaluations and model samples, allowing us to scale to much larger problem settings than previously explored by similar methods. Our framework is theoretically grounded in stochastic optimal control and shares the same theoretical guarantees as Adjoint Matching, being able to train without the need for corrective measures that push samples towards the target distribution. We show how to incorporate key symmetries, as well as periodic boundary conditions, for modeling molecules in both cartesian and torsional coordinates. We demonstrate the effectiveness of our approach through extensive experiments on classical energy functions, and further scale up to neural network-based energy models where we perform amortized conformer generation across many molecular systems. To encourage further research in developing highly scalable sampling methods, we open source these challenging benchmarks, where successful methods can directly impact progress in computational chemistry.}
 }
 
 
