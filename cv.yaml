@@ -38,12 +38,39 @@ about: |
   <b>Fundamental AI Research (FAIR)</b>
   group at
   <b>Meta</b> in NYC
-  and study foundational topics in <b>machine learning</b> and
-  <b>optimization</b>, recently involving
-  reinforcement learning, control, transport, flows, and diffusion.
-  My research is on learning systems that understand and interact with our world
-  and focuses on integrating structural information and domain knowledge into
-  these systems to represent non-trivial reasoning operations.
+  and study foundational topics spanning <b>machine learning</b>,
+  <b>optimization</b>, <b>reinforcement learning</b>, and <b>control</b>.
+  I am interested in building safe intelligent systems that
+  understand and interact with our world.
+  Recently I have been focusing on language modeling
+  and diffusion/flow-based generative modeling.
+  </p>
+  <p align='justify'>
+  A few major themes of my research involve
+  1) <b>attacking models</b> to improve safety and alignment
+  (in <a href="https://arxiv.org/abs/2404.16873">AdvPrompter</a>
+  and <a href="https://arxiv.org/abs/2412.10321">AdvPrefix</a>),
+  2) <b>extracting information from language models</b> to improve
+  game-playing agents (in <a href="https://arxiv.org/abs/2410.23022">ONI</a>),
+  3) <b>transport between distributions over distributions</b>
+  (in <a href="https://arxiv.org/abs/2206.05262">Meta Optimal Transport</a>,
+  <a href="https://arxiv.org/abs/2408.14608">Meta Flow Matching</a>,
+  <a href="https://arxiv.org/abs/2304.14772">Multisample Flow Matching</a>,
+  and <a href="https://arxiv.org/abs/2411.00698">Wasserstein Flow Matching</a>
+  — see also <a href="https://bamos.github.io/presentations/2024/11/05/transport-between-distributions-over-distributions.html">these slides</a>),
+  4) <b>amortization, meta-optimization, and meta-learning</b> between tasks
+  (for <a href="https://arxiv.org/abs/2504.11713">sampling molecular conformers</a>,
+  <a href="https://arxiv.org/abs/2210.12153">convex conjugates and OT</a>,
+  and other <a href="https://arxiv.org/abs/2107.10254">convex optimization</a>
+  and <a href="https://arxiv.org/abs/2309.07835">fixed point operations</a>
+  — see also <a href="https://arxiv.org/abs/2202.00665">my tutorial</a>), and
+  5) <b>integrating structural information</b> and
+  domain knowledge into AI systems to represent non-trivial reasoning operations,
+  such as with <b>differentiable optimization</b> in
+  <a href="https://arxiv.org/abs/1703.00443">OptNet</a>,
+  <a href="https://arxiv.org/abs/1609.07152">Input Convex Neural Networks</a>,
+  <a href="https://arxiv.org/abs/1810.13400">End-to-End Task-Based Learning</a>,
+  and <a href="https://arxiv.org/abs/1810.13400">Differentiable Model Predictive Control</a>.
   </p><br>
 
 current_position:
@@ -443,6 +470,9 @@ all_publications:
 
 
 repos:
+  - repo_url: https://github.com/facebookresearch/adjoint_sampling
+    year: 2025
+    desc: Adjoint Sampling
   - repo_url: https://github.com/facebookresearch/oni
     year: 2024
     desc: Online LLM intrinsic rewards for NetHack
