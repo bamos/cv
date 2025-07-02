@@ -135,6 +135,53 @@ Numerous biological and physical processes can be modeled as systems of interact
 }
 
 
+@inproceedings{zhang2025cultivating,
+title={Cultivating Pluralism In Algorithmic Monoculture: The Community Alignment Dataset},
+author={Lily H Zhang and Smitha Milli and Karen Long Jusko and Jonathan Smith and Brandon Amos and Wassim Bouaziz and Jack Kussman and Manon Revel and Lisa Titus and Bhaktipriya Radharapu and Jane Yu and Vidya Sarma and Kristopher Rose and Maximilian Nickel},
+year={2025},
+_venue={ICML MoFA Workshop},
+url={https://openreview.net/pdf?id=4hbwVQ6OMd},
+abstract={
+How can large language models (LLMs) serve users with varying preferences that may conflict across cultural, political, or other dimensions? To advance this challenge, this paper establishes four key results. First, we demonstrate, through a large-scale multilingual human study with representative samples from five countries (N=15,000), that humans exhibit significantly more variation in preferences than the responses of 21 state-of-the-art LLMs. Second, we show that existing methods for preference dataset collection are insufficient for learning the diversity of human preferences even along two of the most salient dimensions of variability in global values, due to the underlying homogeneity of candidate responses. Third, we argue that this motivates the need for negatively-correlated sampling when generating candidate sets, and we show that simple prompt-based techniques for doing so significantly enhance the performance of alignment methods in learning heterogeneous preferences. Fourth, based on this novel candidate sampling approach, we collect and open-source Community Alignment, the largest and most representative multilingual and multi-turn preference dataset to date, featuring almost 200,000 comparisons from annotators spanning five countries. We hope that the Community Alignment dataset will be a valuable resource for improving the effectiveness of LLMs for a diverse global population.
+  }
+}
+
+@misc{press2025algotune,
+  title = {{AlgoTune: Can Language Models Speed Up General-Purpose Numerical Programs?}},
+  author = {Ori Press and Brandon Amos and Haoyu Zhao and Yikai Wu and Samuel K. Ainsworth and Dominik Krupke and Patrick Kidger and Touqir Sajed and Bartolomeo Stellato and Jisun Park and Nathanael Bosch and Eli Meril and Albert Steppi and Arman Zharmagambetov and Fangzhao Zhang and David Pérez-Piñeiro and Alberto Mercurio and Ni Zhan and Talor Abramovich and Kilian Lieret and Hanlin Zhang and Shirley Huang and Matthias Bethge and Ofir Press},
+  year={2025},
+  _venue={preprint},
+  url={https://algotune.io/paper.pdf},
+  abstract={
+    Despite progress in language model (LM) capabilities, evaluations
+    have thus far focused on models’ performance on
+    tasks that humans have previously solved, including
+    in programming (Jimenez et al., 2024) and
+    mathematics (Glazer et al., 2024). We therefore
+    propose testing models’ ability to design and
+    implement algorithms in an open-ended benchmark: We
+    task LMs with writing code that efficiently solves
+    computationally challenging problems in computer
+    science, physics, and mathematics. Our AlgoTune
+    benchmark consists of 155 coding tasks collected
+    from domain experts and a framework for validating
+    and timing LM-synthesized solution code, which is
+    compared to reference implementations from popular
+    opensource packages. In addition, we develop a
+    baseline LM agent, AlgoTuner, and evaluate its
+    performance across a suite of frontier
+    models. AlgoTuner achieves an average 1.76x speedup
+    against our reference solvers, which use libraries
+    such as SciPy, sk-learn and CVXPY. However, we find
+    that current models fail to discover algorithmic
+    innovations, instead preferring surface-level
+    optimizations. We hope that AlgoTune catalyzes the
+    development of LM agents exhibiting creative problem
+    solving beyond state-of-the-art human performance.
+  }
+}
+
+
 @misc{pooladian2024neural,
   title = {Neural Optimal Transport with Lagrangian Costs},
   author = {Aram-Alexandre Pooladian and Carles Domingo-Enrich and Ricky T. Q. Chen and Brandon Amos},
