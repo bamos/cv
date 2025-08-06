@@ -81,6 +81,7 @@ about: |
     <a href="https://arxiv.org/abs/2206.05262">optimal transport</a>,
     <a href="https://arxiv.org/abs/2408.14608">flow matching</a>,
     <a href="https://arxiv.org/abs/2107.10254">convex optimization</a>,
+    <a href="https://arxiv.org/abs/2404.16873">language model attacks</a>,
     and <a href="https://arxiv.org/abs/2309.07835">fixed point operations</a>
     — see also <a href="https://arxiv.org/abs/2202.00665">my tutorial</a>)
   </li>
@@ -686,6 +687,10 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
+  # - title: TODO
+  #   location: NeurIPS ScaleOPT Workshop
+  #   year: 2025
+  #   url: TODO
   - title: "AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs"
     location: USC
     year: 2025
