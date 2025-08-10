@@ -134,6 +134,17 @@ Numerous biological and physical processes can be modeled as systems of interact
   }
 }
 
+@misc{silvestri2024score,
+    title={Score Function Gradient Estimation to Widen the Applicability of Decision-Focused Learning},
+    author={Mattia Silvestri and Senne Berden and Jayanta Mandi and Ali İrfan Mahmutoğulları and Brandon Amos and Tias Guns and Michele Lombardi},
+    year={2025},
+    url={https://arxiv.org/abs/2307.05213},
+    _venue={JAIR},
+    abstract={
+Many real-world optimization problems contain parameters that are unknown before deployment time, either due to stochasticity or to lack of information (e.g., demand or travel times in delivery problems). A common strategy in such cases is to estimate said parameters via machine learning (ML) models trained to minimize the prediction error, which however is not necessarily aligned with the downstream task-level error. The decision-focused learning (DFL) paradigm overcomes this limitation by training to directly minimize a task loss, e.g. regret. Since the latter has non-informative gradients for combinatorial problems, state-of-the-art DFL methods introduce surrogates and approximations that enable training. But these methods exploit specific assumptions about the problem structures (e.g., convex or linear problems, unknown parameters only in the objective function). We propose an alternative method that makes no such assumptions, it combines stochastic smoothing with score function gradient estimation which works on any task loss. This opens up the use of DFL methods to nonlinear objectives, uncertain parameters in the problem constraints, and even two-stage stochastic optimization. Experiments show that it typically requires more epochs, but that it is on par with specialized methods and performs especially well for the difficult case of problems with uncertainty in the constraints, in terms of solution quality, scalability, or both.
+  }
+}
+
 
 @inproceedings{zhang2025cultivating,
 title={Cultivating Pluralism In Algorithmic Monoculture: The Community Alignment Dataset},
@@ -265,18 +276,6 @@ _venue={EMNLP Demo},
 year={2024},
 url={https://arxiv.org/abs/2410.16456},
 abstract={Travel planning is a challenging and time-consuming task that aims to find an itinerary which satisfies multiple, interdependent constraints regarding flights, accommodations, attractions, and other travel arrangements. In this paper, we propose To the Globe (TTG), a real-time demo system that takes natural language requests from users, translates it to symbolic form via a fine-tuned Large Language Model, and produces optimal travel itineraries with Mixed Integer Linear Programming solvers. The overall system takes ~5 seconds to reply to the user request with guaranteed itineraries. To train TTG, we develop a synthetic data pipeline that generates user requests, flight and hotel information in symbolic form without human annotations, based on the statistics of real-world datasets, and fine-tune an LLM to translate NL user requests to their symbolic form, which is sent to the symbolic solver to compute optimal itineraries. Our NL-symbolic translation achieves ~91% exact match in a backtranslation metric (i.e., whether the estimated symbolic form of generated natural language matches the groundtruth), and its returned itineraries have a ratio of 0.979 compared to the optimal cost of the ground truth user request. When evaluated by users, TTG achieves consistently high Net Promoter Scores (NPS) of 35-40% on generated itinerary.}
-}
-
-
-@misc{silvestri2024score,
-    title={Score Function Gradient Estimation to Widen the Applicability of Decision-Focused Learning},
-    author={Mattia Silvestri and Senne Berden and Jayanta Mandi and Ali İrfan Mahmutoğulları and Brandon Amos and Tias Guns and Michele Lombardi},
-    year={2024},
-    url={https://arxiv.org/abs/2307.05213},
-    _venue={arXiv},
-    abstract={
-Many real-world optimization problems contain parameters that are unknown before deployment time, either due to stochasticity or to lack of information (e.g., demand or travel times in delivery problems). A common strategy in such cases is to estimate said parameters via machine learning (ML) models trained to minimize the prediction error, which however is not necessarily aligned with the downstream task-level error. The decision-focused learning (DFL) paradigm overcomes this limitation by training to directly minimize a task loss, e.g. regret. Since the latter has non-informative gradients for combinatorial problems, state-of-the-art DFL methods introduce surrogates and approximations that enable training. But these methods exploit specific assumptions about the problem structures (e.g., convex or linear problems, unknown parameters only in the objective function). We propose an alternative method that makes no such assumptions, it combines stochastic smoothing with score function gradient estimation which works on any task loss. This opens up the use of DFL methods to nonlinear objectives, uncertain parameters in the problem constraints, and even two-stage stochastic optimization. Experiments show that it typically requires more epochs, but that it is on par with specialized methods and performs especially well for the difficult case of problems with uncertainty in the constraints, in terms of solution quality, scalability, or both.
-  }
 }
 
 @misc{zhu2024advprefixobjectivenuancedllm,
