@@ -18,7 +18,7 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 
 order:
   - [about, NONE]
-  - [current_position, Current Positions]
+  - [current_position, Current Position]
   - [education, Education]
   - [positions, Previous Positions]
   - [honors, Honors \& Awards]
