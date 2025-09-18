@@ -145,23 +145,46 @@ Many real-world optimization problems contain parameters that are unknown before
   }
 }
 
-
-@inproceedings{zhang2025cultivating,
-title={Cultivating Pluralism In Algorithmic Monoculture: The Community Alignment Dataset},
-author={Lily H Zhang and Smitha Milli and Karen Long Jusko and Jonathan Smith and Brandon Amos and Wassim Bouaziz and Jack Kussman and Manon Revel and Lisa Titus and Bhaktipriya Radharapu and Jane Yu and Vidya Sarma and Kristopher Rose and Maximilian Nickel},
-year={2025},
-_venue={ICML MoFA Workshop},
-url={https://arxiv.org/abs/2507.09650},
-abstract={
-How can large language models (LLMs) serve users with varying preferences that may conflict across cultural, political, or other dimensions? To advance this challenge, this paper establishes four key results. First, we demonstrate, through a large-scale multilingual human study with representative samples from five countries (N=15,000), that humans exhibit significantly more variation in preferences than the responses of 21 state-of-the-art LLMs. Second, we show that existing methods for preference dataset collection are insufficient for learning the diversity of human preferences even along two of the most salient dimensions of variability in global values, due to the underlying homogeneity of candidate responses. Third, we argue that this motivates the need for negatively-correlated sampling when generating candidate sets, and we show that simple prompt-based techniques for doing so significantly enhance the performance of alignment methods in learning heterogeneous preferences. Fourth, based on this novel candidate sampling approach, we collect and open-source Community Alignment, the largest and most representative multilingual and multi-turn preference dataset to date, featuring almost 200,000 comparisons from annotators spanning five countries. We hope that the Community Alignment dataset will be a valuable resource for improving the effectiveness of LLMs for a diverse global population.
-  }
+@misc{zhu2025advprefixobjectivenuancedllm,
+      title={AdvPrefix: An Objective for Nuanced LLM Jailbreaks},
+      author={Sicheng Zhu and Brandon Amos and Yuandong Tian and Chuan Guo and Ivan Evtimov},
+      _venue={NeurIPS},
+      year={2025},
+      url={https://arxiv.org/abs/2412.10321},
+      abstract={
+        Many jailbreak attacks on large language models (LLMs) rely on a
+        common objective: making the model respond with the
+        prefix "Sure, here is (harmful request)". While
+        straightforward, this objective has two limitations:
+        limited control over model behaviors, often
+        resulting in incomplete or unrealistic responses,
+        and a rigid format that hinders optimization. To
+        address these limitations, we introduce AdvPrefix, a
+        new prefix-forcing objective that enables more
+        nuanced control over model behavior while being easy
+        to optimize. Our objective leverages model-dependent
+        prefixes, automatically selected based on two
+        criteria: high prefilling attack success rates and
+        low negative log-likelihood. It can further simplify
+        optimization by using multiple prefixes for a single
+        user request. AdvPrefix can integrate seamlessly
+        into existing jailbreak attacks to improve their
+        performance for free. For example, simply replacing
+        GCG attack's target prefixes with ours on Llama-3
+        improves nuanced attack success rates from 14\% to
+        80\%, suggesting that current alignment struggles to
+        generalize to unseen prefixes. Our work demonstrates
+        the importance of jailbreak objectives in achieving
+        nuanced jailbreaks.
+      }
 }
+
 
 @misc{press2025algotune,
   title = {{AlgoTune: Can Language Models Speed Up General-Purpose Numerical Programs?}},
   author = {Ori Press and Brandon Amos and Haoyu Zhao and Yikai Wu and Samuel K. Ainsworth and Dominik Krupke and Patrick Kidger and Touqir Sajed and Bartolomeo Stellato and Jisun Park and Nathanael Bosch and Eli Meril and Albert Steppi and Arman Zharmagambetov and Fangzhao Zhang and David Pérez-Piñeiro and Alberto Mercurio and Ni Zhan and Talor Abramovich and Kilian Lieret and Hanlin Zhang and Shirley Huang and Matthias Bethge and Ofir Press},
   year={2025},
-  _venue={preprint},
+  _venue={NeurIPS Datasets and Benchmarks Track},
   url={https://algotune.io/paper.pdf},
   abstract={
     Despite progress in language model (LM) capabilities, evaluations
@@ -192,6 +215,18 @@ How can large language models (LLMs) serve users with varying preferences that m
   }
 }
 
+
+
+@inproceedings{zhang2025cultivating,
+title={Cultivating Pluralism In Algorithmic Monoculture: The Community Alignment Dataset},
+author={Lily H Zhang and Smitha Milli and Karen Long Jusko and Jonathan Smith and Brandon Amos and Wassim Bouaziz and Jack Kussman and Manon Revel and Lisa Titus and Bhaktipriya Radharapu and Jane Yu and Vidya Sarma and Kristopher Rose and Maximilian Nickel},
+year={2025},
+_venue={ICML MoFA Workshop},
+url={https://arxiv.org/abs/2507.09650},
+abstract={
+How can large language models (LLMs) serve users with varying preferences that may conflict across cultural, political, or other dimensions? To advance this challenge, this paper establishes four key results. First, we demonstrate, through a large-scale multilingual human study with representative samples from five countries (N=15,000), that humans exhibit significantly more variation in preferences than the responses of 21 state-of-the-art LLMs. Second, we show that existing methods for preference dataset collection are insufficient for learning the diversity of human preferences even along two of the most salient dimensions of variability in global values, due to the underlying homogeneity of candidate responses. Third, we argue that this motivates the need for negatively-correlated sampling when generating candidate sets, and we show that simple prompt-based techniques for doing so significantly enhance the performance of alignment methods in learning heterogeneous preferences. Fourth, based on this novel candidate sampling approach, we collect and open-source Community Alignment, the largest and most representative multilingual and multi-turn preference dataset to date, featuring almost 200,000 comparisons from annotators spanning five countries. We hope that the Community Alignment dataset will be a valuable resource for improving the effectiveness of LLMs for a diverse global population.
+  }
+}
 
 @misc{pooladian2024neural,
   title = {Neural Optimal Transport with Lagrangian Costs},
@@ -276,40 +311,6 @@ _venue={EMNLP Demo},
 year={2024},
 url={https://arxiv.org/abs/2410.16456},
 abstract={Travel planning is a challenging and time-consuming task that aims to find an itinerary which satisfies multiple, interdependent constraints regarding flights, accommodations, attractions, and other travel arrangements. In this paper, we propose To the Globe (TTG), a real-time demo system that takes natural language requests from users, translates it to symbolic form via a fine-tuned Large Language Model, and produces optimal travel itineraries with Mixed Integer Linear Programming solvers. The overall system takes ~5 seconds to reply to the user request with guaranteed itineraries. To train TTG, we develop a synthetic data pipeline that generates user requests, flight and hotel information in symbolic form without human annotations, based on the statistics of real-world datasets, and fine-tune an LLM to translate NL user requests to their symbolic form, which is sent to the symbolic solver to compute optimal itineraries. Our NL-symbolic translation achieves ~91% exact match in a backtranslation metric (i.e., whether the estimated symbolic form of generated natural language matches the groundtruth), and its returned itineraries have a ratio of 0.979 compared to the optimal cost of the ground truth user request. When evaluated by users, TTG achieves consistently high Net Promoter Scores (NPS) of 35-40% on generated itinerary.}
-}
-
-@misc{zhu2024advprefixobjectivenuancedllm,
-      title={AdvPrefix: An Objective for Nuanced LLM Jailbreaks},
-      author={Sicheng Zhu and Brandon Amos and Yuandong Tian and Chuan Guo and Ivan Evtimov},
-      _venue={arXiv},
-      year={2024},
-      url={https://arxiv.org/abs/2412.10321},
-      abstract={
-        Many jailbreak attacks on large language models (LLMs) rely on a
-        common objective: making the model respond with the
-        prefix "Sure, here is (harmful request)". While
-        straightforward, this objective has two limitations:
-        limited control over model behaviors, often
-        resulting in incomplete or unrealistic responses,
-        and a rigid format that hinders optimization. To
-        address these limitations, we introduce AdvPrefix, a
-        new prefix-forcing objective that enables more
-        nuanced control over model behavior while being easy
-        to optimize. Our objective leverages model-dependent
-        prefixes, automatically selected based on two
-        criteria: high prefilling attack success rates and
-        low negative log-likelihood. It can further simplify
-        optimization by using multiple prefixes for a single
-        user request. AdvPrefix can integrate seamlessly
-        into existing jailbreak attacks to improve their
-        performance for free. For example, simply replacing
-        GCG attack's target prefixes with ours on Llama-3
-        improves nuanced attack success rates from 14\% to
-        80\%, suggesting that current alignment struggles to
-        generalize to unseen prefixes. Our work demonstrates
-        the importance of jailbreak objectives in achieving
-        nuanced jailbreaks.
-      }
 }
 
 @misc{amos2023tutorial,
