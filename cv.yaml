@@ -34,10 +34,9 @@ order:
 
 about: |
   <p>
-  I am a research scientist in the
-  <b>Fundamental AI Research (FAIR)</b>
-  group at
-  <b>Meta</b> in NYC
+  I am a research scientist at
+  <b>Meta Superintelligence Labs</b>
+  in NYC
   and study foundational topics spanning <b>machine learning</b>,
   <b>optimization</b>, <b>reinforcement learning</b>, and <b>control</b>.
   I am interested in building safe intelligent systems that
@@ -49,15 +48,23 @@ about: |
 
   <ol>
   <li>
-    <b>attacking language models</b> to improve safety and alignment
-    (in <a href="https://arxiv.org/abs/2404.16873">AdvPrompter</a>
-    and <a href="https://arxiv.org/abs/2412.10321">AdvPrefix</a>)</li>
+    <b>improving language models</b>
+    (on attacks to improve safety and alignment in
+    <a href="https://arxiv.org/abs/2404.16873">AdvPrompter</a> and
+    <a href="https://arxiv.org/abs/2412.10321">AdvPrefix</a>,
+    coding agents in <a href="https://arxiv.org/abs/2507.15887">AlgoTune</a>,
+    RL post-training for social value alignment in <a href="https://arxiv.org/abs/2507.15887">community alignment</a>,
+    and understanding how to
+    <a href="https://arxiv.org/abs/2410.09303">fix broken tokens</a> and
+    <a href="https://arxiv.org/abs/2407.18158">improve generalization bounds</a>)
+  </li>
   <li>
     <b>improving RL, control, and game-playing AI</b>
     (in
     <a href="https://arxiv.org/abs/1810.13400">differentiable MPC</a>,
     <a href="https://arxiv.org/abs/1804.06318">learning awareness models</a>,
     <a href="https://arxiv.org/abs/2008.12775">the model-based SVG</a>, and
+    with language-based intrinsic rewards in
     <a href="https://arxiv.org/abs/2410.23022">ONI</a>)
   </li>
   <li>
@@ -98,7 +105,8 @@ about: |
   <br>
 
 current_position:
-  - place: Meta, Fundamental AI Research (FAIR)
+  # - place: Meta
+  - place: Meta Superintelligence Labs (FAIR)
     location: New York City
     title: Research Scientist
     dates: 2019 -- Present
