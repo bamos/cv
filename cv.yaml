@@ -917,11 +917,11 @@ advising:
     url: https://ollieliu.com/
   - year: 2025
     name: Doron Haviv
-    details: "MSKCC PhD committee, now an Genentech"
+    details: "MSKCC PhD committee, now at Genentech"
     url: https://doronhav.github.io/
   - year: 2024 -- 2025
     name: Aaron Havens
-    details: "visiting FAIR from UIUC, now at FAIR"
+    details: "visiting FAIR from UIUC, now postdoc at FAIR"
     url: https://scholar.google.com/citations?user=HBAXF6YAAAAJ
   - year: 2022 -- 2024
     name: Aram-Alexandre Pooladian
@@ -941,7 +941,7 @@ advising:
     url: https://www.mhr.ai
   - year: 2022 -- 2023
     name: Sanae Lotfi
-    details: "visiting FAIR from NYU"
+    details: "visiting FAIR from NYU, now scientist at FAIR"
     url: https://sanaelotfi.github.io/
   - year: 2022 -- 2023
     name: Dishank Bansal
