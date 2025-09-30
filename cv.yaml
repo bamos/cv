@@ -699,6 +699,10 @@ talks:
   #   location: NeurIPS ScaleOPT Workshop
   #   year: 2025
   #   url: TODO
+  - title: "On meta prompt optimization and coding agents"
+    location: Flatiron ML Seminar
+    year: 2025
+    url: https://bamos.github.io/presentations/2025/09/30/advprompter-algotune.html
   - title: "AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs"
     location: USC
     year: 2025
