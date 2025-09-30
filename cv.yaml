@@ -916,6 +916,14 @@ talks:
 
 advising:
   - year: 2025
+    name: Kathy Zhou
+    details: "visiting FAIR from NYU"
+    url: https://gaoyuezhou.github.io/
+  - year: 2025
+    name: Ulyana Piterbarg
+    details: "visiting FAIR from NYU"
+    url: https://upiterbarg.github.io/
+  - year: 2025
     name: Ollie Liu
     details: "visiting FAIR from USC"
     url: https://ollieliu.com/
