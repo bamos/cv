@@ -703,6 +703,7 @@ talks:
     location: Flatiron ML Seminar
     year: 2025
     url: https://bamos.github.io/presentations/2025/09/30/advprompter-algotune.html
+    location_url: https://www.simonsfoundation.org/event/machine-learning-at-the-flatiron-institute-brandon-amos/
   - title: "AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs"
     location: USC
     year: 2025
