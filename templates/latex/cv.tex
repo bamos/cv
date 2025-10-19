@@ -6,6 +6,7 @@
 
 \moderncvcolor{<< color >>}
 \definecolor{color2}{rgb}{<<color2>>}
+\definecolor{linkcolor}{rgb}{<<linkcolor>>}
 \moderncvstyle{<< style >>}
 \colorlet{firstnamecolor}{color1}
 
@@ -24,7 +25,7 @@
 \usepackage{lastpage}
 \cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
 
-\AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}, allcolors=color1, colorlinks}}
+\AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}, allcolors=linkcolor, colorlinks}}
 \name{<< name.first >>}{<< name.last >>}
 \email{<< email >>}
 \homepage{<< url >>}

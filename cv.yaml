@@ -13,14 +13,15 @@ social:
 
 # LaTeX formatting
 style: banking # casual, classic, oldstyle, or banking
-color: blue # blue, orange, green, red, purple, grey and black
+color: black # blue, orange, green, red, purple, grey and black
 color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
+linkcolor: '0.27,0.51,0.93'
 
 order:
   - [about, NONE]
   # - [current_position, Current Position]
   - [education, Education]
-  - [positions, Previous Positions]
+  - [positions, Positions]
   - [honors, Honors \& Awards]
   - [all_publications, Publications]
   - [repos, Open Source Repositories]
