@@ -241,7 +241,14 @@ We investigate the optimal transport problem between probability measures when t
   }
 }
 
-
+@misc{lee2025banelexplorationposteriorsgenerative,
+    title={BaNEL: Exploration Posteriors for Generative Modeling Using Only Negative Rewards}, 
+    author={Sangyun Lee and Brandon Amos and Giulia Fanti},
+    year={2025},
+    url={https://arxiv.org/abs/2510.09596}, 
+    _venue={arXiv},
+    abstract={Today's generative models thrive with large amounts of supervised data and informative reward functions characterizing the quality of the generation. They work under the assumptions that the supervised data provides knowledge to pre-train the model, and the reward function provides dense information about how to further improve the generation quality and correctness. However, in the hardest instances of important problems, two problems arise: (1) the base generative model attains a near-zero reward signal, and (2) calls to the reward oracle are expensive. This setting poses a fundamentally different learning challenge than standard reward-based post-training. To address this, we propose BaNEL (Bayesian Negative Evidence Learning), an algorithm that post-trains the model using failed attempts only, while minimizing the number of reward evaluations (NREs). Our method is based on the idea that the problem of learning regularities underlying failures can be cast as another, in-loop generative modeling problem. We then leverage this model to assess whether new data resembles previously seen failures and steer the generation away from them. We show that BaNEL can improve model performance without observing a single successful sample on several sparse-reward tasks, outperforming existing novelty-bonus approaches by up to several orders of magnitude in success rate, while using fewer reward evaluations.}
+}
 
 @misc{sambharya2024learning,
   title={Learning to Warm-Start Fixed-Point Optimization Algorithms},
@@ -1488,6 +1495,17 @@ enables rapid prototyping of the approaches in this thesis.
   }
 }
 
+@misc{amos2016deepcompletion,
+  title={Image Completion with Deep Learning in TensorFlow},
+  author={Brandon Amos},
+  year={2016},
+  url={https://bamos.github.io/2016/08/09/deep-completion/},
+  _venue={Blog Post},
+  abstract={
+    Content-aware fill is a powerful tool designers and photographers use to fill in unwanted or missing parts of images. Image completion and inpainting are closely related technologies used to fill in missing or corrupted parts of images. There are many ways to do content-aware fill, image completion, and inpainting. In this blog post, I present Raymond Yeh and Chen Chen et al.'s paper "Semantic Image Inpainting with Perceptual and Contextual Losses," which was just posted on arXiv on July 26, 2016. This paper shows how to use deep learning for image completion with a DCGAN.
+  },
+  selected={true}
+}
 
 @inproceedings{zhao2016collapsed,
   title={{{Collapsed Variational Inference for Sum-Product Networks}}},
