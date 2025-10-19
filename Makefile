@@ -4,8 +4,8 @@
 # Ellis Michael <http://ellismichael.com>
 
 WEBSITE_DIR=$(HOME)/repos/website
-WEBSITE_PDF=$(WEBSITE_DIR)/data/cv.pdf
-WEBSITE_MD=$(WEBSITE_DIR)/_includes/cv.md
+WEBSITE_PDF=$(WEBSITE_DIR)/cv.pdf
+WEBSITE_MD=$(WEBSITE_DIR)/index.md
 
 TEMPLATES=$(shell find templates -type f)
 

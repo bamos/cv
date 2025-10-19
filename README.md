@@ -1,7 +1,7 @@
 This repo contains the source for my CV:
 
 + [generate.py](generate.py) creates a [website](http://bamos.github.io)
-  and [PDF](http://bamos.github.io/data/cv.pdf)
+  and [PDF](http://bamos.github.io/cv.pdf)
   from a shared [YAML source](cv.yaml)
   by using Jinja templates.
 + The publications are rendered from a single
