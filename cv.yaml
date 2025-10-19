@@ -7,8 +7,8 @@ src: https://github.com/bamos/cv
 url: "bamos.github.io"
 social:
   github: bamos
-  twitter: brandondamos
-  linkedin: bdamos
+  # twitter: brandondamos
+  # linkedin: bdamos
   google_scholar: d8gdZR4AAAAJ
 
 # LaTeX formatting
@@ -18,7 +18,7 @@ color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
 
 order:
   - [about, NONE]
-  - [current_position, Current Position]
+  # - [current_position, Current Position]
   - [education, Education]
   - [positions, Previous Positions]
   - [honors, Honors \& Awards]
@@ -33,22 +33,16 @@ order:
   # - [NEWPAGE, NONE]
 
 about: |
-  <p>
-  I am a research scientist at
-  <b>Meta Superintelligence Labs</b>
-  in NYC
-  and study foundational topics spanning <b>machine learning</b>,
-  <b>optimization</b>, <b>reinforcement learning</b>, and <b>control</b>.
-  I am interested in building safe intelligent systems that
+  <p style="text-align: justify;">
+  I am a person in NYC.
+  I study <b>safe, intelligent systems</b> that
   understand and interact with our world.
-  Recently I have been focusing on language modeling
-  and diffusion/flow-based generative modeling.
   A few major themes of my research involve:
   </p>
 
   <ol>
   <li>
-    <b>improving language models</b>
+    <b>language models</b>
     (on attacks to improve safety and alignment in
     <a href="https://arxiv.org/abs/2404.16873">AdvPrompter</a> and
     <a href="https://arxiv.org/abs/2412.10321">AdvPrefix</a>,
@@ -59,7 +53,7 @@ about: |
     <a href="https://arxiv.org/abs/2407.18158">improve generalization bounds</a>)
   </li>
   <li>
-    <b>improving RL, control, and game-playing AI</b>
+    <b>reinforcement learning, control, and game-playing AI</b>
     (in
     <a href="https://arxiv.org/abs/1810.13400">differentiable MPC</a>,
     <a href="https://arxiv.org/abs/1804.06318">learning awareness models</a>,
@@ -104,12 +98,11 @@ about: |
   </ol>
   <br>
 
-current_position:
-  # - place: Meta
-  - place: Meta Superintelligence Labs (FAIR)
-    location: New York City
-    title: Research Scientist
-    dates: 2019 -- Present
+# current_position:
+#   - place: Meta Superintelligence Labs (FAIR)
+#     location: New York City
+#     title: Research Scientist
+#     dates: 2019 -- Present
 
 education:
   - school: Carnegie Mellon University
@@ -131,6 +124,10 @@ education:
 #   dates: 2011
 
 positions:
+  - place: Meta Superintelligence Labs (FAIR)
+    location: New York City
+    title: Research Scientist
+    dates: 2019 -- 2025
   - place: Cornell Tech
     location: New York City
     title: Visiting Lecturer
@@ -532,14 +529,19 @@ all_publications:
     'Shirley Huang': 'https://www.hbs.edu/faculty/Pages/profile.aspx?facId=1542499'
     'Matthias Bethge': 'https://scholar.google.com/citations?user=0z0fNxUAAAAJ'
     'Ofir Press': 'https://ofir.io/about'
+    'Sangyun Lee': 'https://sangyun884.github.io/about/'
+    'Giulia Fanti': 'https://gfanti.github.io/'
 
 
 repos:
+  - repo_url: https://github.com/oripress/AlgoTune
+    year: 2025
+    desc: AlgoTune
   - repo_url: https://github.com/facebookresearch/adjoint_sampling
     year: 2025
     desc: Adjoint Sampling
   - repo_url: https://github.com/facebookresearch/oni
-    year: 2024
+    year: 2025
     desc: Online LLM intrinsic rewards for NetHack
   - repo_url: https://github.com/facebookresearch/advprompter
     year: 2024
