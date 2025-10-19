@@ -3,7 +3,7 @@
 ~< block body >~
 \begin{tabular}{p{1in}p{5in}}
   ~< for item in items >~
-    << item.title >> & << item.details >>
+    \textbf{<< item.title >>} & << item.details >>
     ~< if item.sub_details >~
     \scriptsize{
       \color{gray}{<< item.sub_details >>}

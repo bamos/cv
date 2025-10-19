@@ -4,7 +4,7 @@
 <table class="table table-hover">
 {% for item in items %}
 <tr>
-  <td class='col-md-2'>{{ item.title }}</td>
+  <td class='col-md-2'><strong>{{ item.title }}</strong></td>
   <td>
 {{ item.details }}
 {% if item.sub_details %}

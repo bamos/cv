@@ -2,8 +2,8 @@
 
 ~< block body >~
 ~< for item in items >~
-  << item.name >>
-  (<< item.short >>),
+  \textbf{<< item.name >>},
+  \emph{<< item.short >>},
   << item.position >>
   \hfill << item.semester>> \\
 ~< endfor >~

@@ -38,7 +38,7 @@ about: |
   I am a person in NYC.
   I study <b>safe, intelligent systems</b> that
   understand and interact with our world.
-  A few major themes of my research involve:
+  A few themes of my research involve:
   </p>
 
   <ol>
@@ -48,7 +48,7 @@ about: |
     <a href="https://arxiv.org/abs/2404.16873">AdvPrompter</a> and
     <a href="https://arxiv.org/abs/2412.10321">AdvPrefix</a>,
     coding agents in <a href="https://arxiv.org/abs/2507.15887">AlgoTune</a>,
-    RL post-training for social value alignment in <a href="https://arxiv.org/abs/2507.15887">community alignment</a>,
+    RL post-training for social value alignment in <a href="https://arxiv.org/abs/2507.09650">community alignment</a>,
     and understanding how to
     <a href="https://arxiv.org/abs/2410.09303">fix broken tokens</a> and
     <a href="https://arxiv.org/abs/2407.18158">improve generalization bounds</a>)
@@ -125,7 +125,7 @@ education:
 #   dates: 2011
 
 positions:
-  - place: Meta Superintelligence Labs (FAIR)
+  - place: Meta Superintelligence Labs
     location: New York City
     title: Research Scientist
     dates: 2019 -- 2025
@@ -285,7 +285,7 @@ honors:
       Salem--Roanoke County Chamber of Commerce,
       Papa John's,
       Scottish Rite of Freemasonry,
-      VT Intelligence Community Conter for Academic Excellence,
+      VT Intelligence Community Center for Academic Excellence,
       VT Pamplin Leader,
       VT Benjamin F.~Bock, VT Gay B.~Shober, VT I.~Luck Gravett
     year: 2011 -- 2014
@@ -537,10 +537,8 @@ all_publications:
 repos:
   - repo_url: https://github.com/oripress/AlgoTune
     year: 2025
-    desc: AlgoTune
   - repo_url: https://github.com/facebookresearch/adjoint_sampling
     year: 2025
-    desc: Adjoint Sampling
   - repo_url: https://github.com/facebookresearch/oni
     year: 2025
     desc: Online LLM intrinsic rewards for NetHack
@@ -549,10 +547,8 @@ repos:
     desc: Fast Adaptive Adversarial Prompting for LLMs
   - repo_url: https://github.com/facebookresearch/lagrangian-ot
     year: 2024
-    desc: Lagrangian Optimal Transport
   - repo_url: https://github.com/lazaratan/meta-flow-matching
     year: 2024
-    desc: Meta Flow Matching
   - repo_url: https://github.com/facebookresearch/soc-matching
     year: 2024
     desc: Stochastic Optimal Control Matching
@@ -561,13 +557,12 @@ repos:
     desc: Slides for our applied ML course
   - repo_url: https://github.com/facebookresearch/amortized-optimization-tutorial
     year: 2023
-    desc: Tutorial on amortized optimization
   - repo_url: https://github.com/facebookresearch/taskmet
     year: 2023
-    desc: "TaskMet: Task-Driven Metric Learning for Model Learning"
+    desc: "Task-Driven Metric Learning for Model Learning"
   - repo_url: https://github.com/facebookresearch/w2ot
     year: 2023
-    desc: Wasserstein-2 optimal transport in JAX
+    desc: Wasserstein-2 optimal transport
   - repo_url: https://github.com/facebookresearch/LANCER
     year: 2023
     desc: Landscape Surrogate Learning Decision Losses
@@ -576,10 +571,8 @@ repos:
     desc: Differentiable non-linear optimization library
   - repo_url: https://github.com/facebookresearch/meta-ot
     year: 2022
-    desc: Meta Optimal Transport
   - repo_url: https://github.com/bamos/presentations
     year: 2022
-    desc: Source for my major presentations
   - repo_url: https://github.com/facebookresearch/gwil
     year: 2022
     desc: Gromov-Wasserstein Cross Domain Imitation Learning
@@ -597,7 +590,6 @@ repos:
     desc: Model-based reinforcement learning library
   - repo_url: https://github.com/martius-lab/CombOptNet
     year: 2021
-    desc: Combinatorial OptNet
   - repo_url: https://github.com/samcohen16/Aligning-Time-Series
     year: 2021
     desc: Aligning time series on incomparable spaces
@@ -630,20 +622,17 @@ repos:
     desc: Differentiable PyTorch Model Predictive Control library
   - repo_url: https://github.com/locuslab/differentiable-mpc
     year: 2018
-    desc: Differentiable MPC experiments
   - repo_url: https://github.com/locuslab/icnn
     year: 2017
     desc: Input Convex Neural Network experiments
   - repo_url: https://github.com/locuslab/optnet
     year: 2017
-    desc: OptNet experiments
   - repo_url: https://github.com/locuslab/qpth
     www: https://locuslab.github.io/qpth/
     year: 2017
     desc: Differentiable PyTorch QP solver
   - repo_url: https://github.com/bamos/densenet.pytorch
     year: 2017
-    desc: PyTorch DenseNet implementation
   - repo_url: https://github.com/bamos/block
     year: 2017
     desc: Intelligent block matrix constructions
@@ -662,34 +651,29 @@ repos:
     desc: GitHub README link checker
   - repo_url: https://github.com/bamos/conference-tracker
     year: 2015
-    desc: Minimal conference tracker
   - repo_url: https://github.com/vtopt/qnstop
     year: 2014
     desc: Fortran quasi-Newton stochastic optimization library
   - repo_url: https://github.com/bamos/snowglobe
     year: 2014
-    desc: Haskell-driven, self-hosted web analytics with minimal configuration
+    desc: Haskell-driven, self-hosted web analytics
   - repo_url: https://github.com/bamos/zsh-history-analysis
     year: 2014
-    desc: Analyze and plot your zsh history
   - repo_url: https://github.com/bamos/beamer-snippets
     year: 2014
-    desc: Beamer and TikZ snippets
   - repo_url: https://github.com/bamos/latex-templates
     year: 2013
-    desc: LaTeX templates
   - repo_url: https://github.com/cparse/cparse
     year: 2013
     desc: C++ expression parser using Dijkstra's shunting-yard algorithm
   - repo_url: https://github.com/bamos/cv
     year: 2013
-    desc: "Source for this CV: Creates LaTeX/Markdown from YAML/BibTeX"
+    desc: "Source for this CV: creates LaTeX/Markdown from YAML/BibTeX"
   - repo_url: https://github.com/bamos/parsec-benchmark
     year: 2013
     desc: PARSEC benchmark support for Arch Linux
   - repo_url: https://github.com/bamos/python-scripts
     year: 2013
-    desc: Short and fun Python scripts
   - repo_url: https://github.com/bamos/reading-list
     year: 2013
     desc: YAML reading list and notes system
@@ -1071,7 +1055,7 @@ teaching:
     position: TA
   - semester: S2016
     name: Distributed Systems
-    short: CMU 15-440/640
+    short: CMU 15-640
     position: TA
   - semester: S2013
     name: Software Design and Data Structures

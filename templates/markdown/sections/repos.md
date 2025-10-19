@@ -11,9 +11,9 @@
     <span class='cvdate'>{{ item.year }}</span>
     <a href="{{ item.repo_url }}">{{ item.name }}</a>
     <span style="white-space: nowrap">
-    | <i class="fa fas fa-star"></i>&nbsp;{{ item.stars }} |
+    | <i class="fa fas fa-star"></i>&nbsp;{{ item.stars }}
     </span>
-    <em>{{ item.desc }}</em>
+    {% if item.desc %} <em style="color: gray;">&mdash; {{ item.desc }}</em>{% endif %}
   </td>
 </tr>
 {% endfor %}

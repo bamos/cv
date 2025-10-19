@@ -5,8 +5,8 @@
 \begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{6.2in}@{\hspace{1em}}r}
   ~< for item in items >~
     \hfill << loop.index >>. &
-    \href{<< item.repo_url >>}{<< item.name >>} | $\bigstar$<< item.stars >> |
-    \emph{<< item.desc >>} &
+    \href{<< item.repo_url >>}{<< item.name >>} | $\bigstar$<< item.stars >>~< if item.desc >~ ---
+    \textcolor{gray}{\emph{<< item.desc >>}}~< endif >~ &
     << item.year>> \\
   ~< endfor >~
 \end{longtable}

@@ -432,7 +432,9 @@ def add_repo_data(context, config, in_tex):
         total_stars += star_int
 
         if 'desc' not in item:
-            item['desc'] = soup.find('p', class_='f4 mt-3').text.strip()
+            desc_elem = soup.find('p', class_='f4 mt-3')
+            if desc_elem:
+                item['desc'] = desc_elem.text.strip()
 
     return truncate_to_k(total_stars)
 
