@@ -98,7 +98,14 @@ def get_pub_md(context, config):
         year_venue = "{} {}".format(pub['_venue'], pub['year'])
 
         highlight = 'selected' in pub and pub['selected'].lower() == 'true'
-        img_str = f'<img src="images/publications/{pub["ID"]}.png" onerror="this.style.display=\'none\'" class="publicationImg" />'
+        
+        # Check if image exists in the website repo
+        img_path = os.path.join('..', 'website', 'images', 'publications', f'{pub["ID"]}.png')
+        if os.path.exists(img_path):
+            img_str = f'<img src="images/publications/{pub["ID"]}.png" class="publicationImg" />'
+        else:
+            img_str = ''
+        
         links = []
         abstract = ''
         if 'abstract' in pub:
@@ -107,8 +114,9 @@ def get_pub_md(context, config):
     onclick=\'$(\"#abs_{}{}\").toggle()\'>abs</a>]""".format(pub['ID'], prefix))
             abstract = context.make_replacements(pub['abstract'])
         if 'link' in pub:
-            img_str = "<a href=\'{}\' target='_blank'>{}</a> ".format(
-                pub['link'], img_str)
+            if img_str:  # Only wrap image in link if image exists
+                img_str = "<a href=\'{}\' target='_blank'>{}</a> ".format(
+                    pub['link'], img_str)
             title = "<a href=\'{}\' target='_blank'>{}</a> ".format(
                 pub['link'], title)
 
