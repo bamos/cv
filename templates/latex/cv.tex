@@ -28,10 +28,10 @@
 \name{<< name.first >>}{<< name.last >>}
 \email{<< email >>}
 \homepage{<< url >>}
-\social[linkedin]{<<social.linkedin>>}
-\social[twitter]{<<social.twitter>>}
-\social[github]{<<social.github>>}
-\extrainfo{\small Last updated on \today}
+~< if social.linkedin >~\social[linkedin]{<<social.linkedin>>}
+~< endif >~~< if social.twitter >~\social[twitter]{<<social.twitter>>}
+~< endif >~~< if social.github >~\social[github]{<<social.github>>}
+~< endif >~\extrainfo{\small Last updated on \today}
 
 \frenchspacing
 
