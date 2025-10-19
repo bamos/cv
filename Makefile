@@ -6,7 +6,6 @@
 WEBSITE_DIR=$(HOME)/repos/website
 WEBSITE_PDF=$(WEBSITE_DIR)/data/cv.pdf
 WEBSITE_MD=$(WEBSITE_DIR)/_includes/cv.md
-WEBSITE_DATE=$(WEBSITE_DIR)/_includes/last-updated.txt
 
 TEMPLATES=$(shell find templates -type f)
 
@@ -45,17 +44,23 @@ viewpdf: $(PDF)
 	gnome-open $(PDF)
 
 stage: $(PDF) $(MD)
-	git -C $(WEBSITE_DIR) checkout $(WEBSITE_PDF) $(WEBSITE_MD) $(WEBSITE_DATE)
-	git -C $(WEBSITE_DIR) pull --rebase
+	git -C $(WEBSITE_DIR) checkout $(WEBSITE_PDF) $(WEBSITE_MD)
+	@if git -C $(WEBSITE_DIR) diff-index --quiet HEAD --; then \
+		git -C $(WEBSITE_DIR) pull --rebase; \
+	else \
+		echo "Warning: $(WEBSITE_DIR) has uncommitted changes, skipping pull"; \
+	fi
 	cp $(PDF) $(WEBSITE_PDF)
 	cp $(MD) $(WEBSITE_MD)
-	date +%Y-%m-%d > $(WEBSITE_DATE)
+
+stage-md: $(MD)
+	cp $(MD) $(WEBSITE_MD)
 
 jekyll: stage
 	cd $(WEBSITE_DIR) && bundle exec jekyll server
 
 push: stage
-	git -C $(WEBSITE_DIR) add $(WEBSITE_PDF) $(WEBSITE_MD) $(WEBSITE_DATE)
+	git -C $(WEBSITE_DIR) add $(WEBSITE_PDF) $(WEBSITE_MD)
 	git -C $(WEBSITE_DIR) commit -m "Update cv."
 	git -C $(WEBSITE_DIR) push
 
