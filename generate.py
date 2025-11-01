@@ -106,13 +106,21 @@ def get_pub_md(context, config):
         else:
             img_str = ''
         
-        links = []
+        link_items = []
         abstract = ''
         if 'abstract' in pub:
-            links.append("""
-[<a href='javascript:;'
-    onclick=\'$(\"#abs_{}{}\").toggle()\'>abs</a>]""".format(pub['ID'], prefix))
-            abstract = context.make_replacements(pub['abstract'])
+            abstract_body = context.make_replacements(pub['abstract']).strip()
+            if abstract_body:
+                link_items.append(
+                    "<a class='pub-pill' href='javascript:;' "
+                    "onclick='$(\"#abs_{}{}\").toggle()'>abstract</a>".format(
+                        pub['ID'], prefix))
+                abstract = (
+                    "<div id=\"abs_{id}{prefix}\" class=\"abstract-box\" "
+                    "style=\"display: none\" markdown=\"1\">\n"
+                    "{body}\n"
+                    "</div>"
+                ).format(id=pub['ID'], prefix=prefix, body=abstract_body).rstrip()
         if 'link' in pub:
             if img_str:  # Only wrap image in link if image exists
                 img_str = "<a href=\'{}\' target='_blank'>{}</a> ".format(
@@ -123,17 +131,13 @@ def get_pub_md(context, config):
         for base in ['code', 'slides', 'talk']:
             key = base + 'url'
             if key in pub:
-                links.append(
-                    "[<a href=\'{}\' target='_blank'>{}</a>] ".format(
-                        pub[key], base))
-        links = ' '.join(links)
-
-        if abstract:
-            abstract = '''
-<div id="abs_{}{}" style="text-align: justify; display: none" markdown="1">
-{}
-</div>
-'''.format(pub['ID'], prefix, abstract)
+                link_items.append(
+                    "<a class='pub-pill' href='{url}' target='_blank'>{label}</a>".format(
+                        url=pub[key], label=base))
+        links = ''
+        if link_items:
+            link_items[0] = '&nbsp;' + link_items[0]
+            links = ''.join(link_items)
 
         if '_note' in pub:
             note_str = f"({pub['_note']})"
@@ -306,13 +310,19 @@ def get_pub_latex(context, config):
         assert('_venue' in pub and 'year' in pub)
         year_venue = "{} {}".format(pub['_venue'], pub['year'])
 
-        links = []
+        def _make_pill(url, label):
+            return r"\pubpill{{\href{{{}}}{{\textcolor{{pilltext}}{{{}}}}}}}".format(
+                url, label)
+
+        link_items = []
         for base in ['code', 'slides', 'talk']:
             key = base + 'url'
             if key in pub:
-                links.append(
-                    r"[\href{{{}}}{{{}}}] ".format(pub[key], base))
-        links = ' '.join(links)
+                link_items.append(_make_pill(pub[key], base))
+        links = ''
+        if link_items:
+            sep = r"\hspace{0.08em}"
+            links = r"~" + sep.join(link_items)
 
         highlight = 'selected' in pub and pub['selected'].lower() == 'true'
         highlight_color = r'\cellcolor{tab_highlight}' if highlight else ''
@@ -325,7 +335,7 @@ def get_pub_latex(context, config):
         return rf'''
 \begin{{minipage}}{{\textwidth}}
 \begin{{tabular}}[t]{{p{{8mm}}p{{1mm}}>{{\raggedright\arraybackslash}}p{{6.5in}}}}
-{highlight_color} \hfill{prefix}{gidx}.\hspace*{{1mm}} && \textit{{{title}}} {links} \\
+{highlight_color} \hfill{prefix}{gidx}.\hspace*{{1mm}} && \textit{{{title}}}\hspace{{-2mm}} {links} \\
 {highlight_color} && {author_str} \\
 {highlight_color} && {year_venue} {note_str} \\
 \end{{tabular}} \\[2mm]

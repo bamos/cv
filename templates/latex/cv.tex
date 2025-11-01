@@ -9,6 +9,8 @@
 \definecolor{linkcolor}{rgb}{<<linkcolor>>}
 \moderncvstyle{<< style >>}
 \colorlet{firstnamecolor}{color1}
+\definecolor{pillbg}{HTML}{ecedee}
+\definecolor{pilltext}{HTML}{3f4966}
 
 \usepackage[top=1in, bottom=1in, left=.7in, right=.7in]{geometry}
 
@@ -21,11 +23,30 @@
 % Use the new X logo (aka a sans-serif blackboard X)
 \usepackage{bbm}
 \renewcommand*{\twittersocialsymbol}{$\mathbbmss{X}$~}
+\usepackage{tikz}
+\usetikzlibrary{calc}
 
 \usepackage{lastpage}
 \cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
 
 \AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}, allcolors=linkcolor, colorlinks}}
+\newcommand{\pubpill}[1]{%
+  \raisebox{0.25ex}{%
+    \tikz[baseline=(P.base)]{%
+      \node[
+        anchor=base,
+        fill=pillbg,
+        rounded corners=6pt,
+        inner xsep=4pt,
+        inner ysep=1.1pt,
+        minimum height=9pt,
+        text height=1.65ex,
+        text depth=0.4ex
+      ] (P) {{\footnotesize\strut #1}};
+    }%
+  }%
+}
+
 \name{<< name.first >>}{<< name.last >>}
 \email{<< email >>}
 \homepage{<< url >>}
