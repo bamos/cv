@@ -1,6 +1,6 @@
-bibtexparser==0.6.2
-Jinja2==3.1.4
-PyYaml==6.0.2
-beautifulsoup4==4.9.3
-markupsafe==2.0.1
+bibtexparser==1.4.3
+Jinja2==3.1.6
+PyYAML==6.0.3
+beautifulsoup4==4.14.2
+markupsafe==3.0.3
 scholarly==1.7.11
