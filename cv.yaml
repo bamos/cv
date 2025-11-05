@@ -380,7 +380,7 @@ all_publications:
     'Mustafa Mukadam': 'https://www.mustafamukadam.com/'
     'Nando de Freitas': 'https://scholar.google.com/citations?user=nzEluBwAAAAJ'
     'Nathan Lambert': 'https://www.natolambert.com/'
-    'Nathan Lichtlé': 'https://www.nathanlct.com/about'
+    'Nathan Lichtlé': 'https://www.nathanlct.com'
     'Nigel Davies': 'https://www.lancaster.ac.uk/sci-tech/about-us/people/nigel-davies'
     'Nina Taft': 'https://scholar.google.com/citations?user=BItCgjYAAAAJ'
     'Noam Brown': 'https://noambrown.github.io/'
@@ -388,8 +388,8 @@ all_publications:
     'Omry Yadan': 'https://scholar.google.com/citations?user=zSsW478AAAAJ'
     'Padmanabhan Pillai': 'https://www.andrew.cmu.edu/user/pspillai/'
     'Paloma Sodhi': 'https://psodhi.github.io/'
-    'Phu Mon Htut': 'https://phumonhtut.me/'
-    'Pieter Simoens': 'https://www.ugent.be/ea/idlab/en/members/pieter-simoens.htm'
+    'Phu Mon Htut': 'https://phu-pmh.github.io/'
+    'Pieter Simoens': 'https://scholar.google.com/citations?user=vAPWme0AAAAJ'
     'Priya L. Donti': 'https://priyadonti.com/'
     'Qinqing Zheng': 'https://enosair.github.io/'
     'Rajiv Sambharya': 'https://rajivsambharya.github.io/'
@@ -688,7 +688,7 @@ talks:
   - title: "On meta prompt optimization and coding agents"
     location: Flatiron ML Seminar
     year: 2025
-    url: https://bamos.github.io/presentations/2025/09/30/advprompter-algotune.html
+    url: https://bamos.github.io/presentations/2025/12/07/advprompter-algotune.html
     location_url: https://www.simonsfoundation.org/event/machine-learning-at-the-flatiron-institute-brandon-amos/
   - title: "AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs"
     location: USC
