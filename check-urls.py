@@ -15,31 +15,32 @@ headers = {
 }
 
 def extract_urls(file_path):
-    url_pattern = r'(https?://[^\s\'\"\}\)\<]+)'
+    url_pattern = r'(https?://[^\s\'\"\}\)\<\>]+)'
     with open(file_path, 'r') as file:
         content = file.read()
     urls = re.findall(url_pattern, content)
     urls = list(set(urls))
     return urls
 
-def print_url_status(url):
+def check_url(url):
     if 'scholar' in url or 'linkedin' in url:
         # ignore Google Scholar and LinkedIn
-        return
+        return None
     try:
-        response = requests.head(url, headers=headers, timeout=5)
-        if response.status_code in [200, 302]:
-            return
-        elif response.status_code in [301, 403]:
-            return
-        # elif response.status_code == 301: # redirect
-        #     redirected_url = response.headers.get('Location')
-        #     print(f'{response.status_code}: {url} -> {redirected_url}')
-        else:
-            print(f'{response.status_code}: {url}')
+        response = requests.head(url, headers=headers, timeout=5, allow_redirects=True)
+        if response.status_code in [200, 301, 302, 403]:
+            return None
+        if response.status_code == 405:
+            raise requests.RequestException("HEAD not allowed")
+        return f'{response.status_code}: {url}'
     except requests.RequestException as e:
-        print(f"Invalid (Error: {e})")
-        pass
+        try:
+            response = requests.get(url, headers=headers, timeout=10, allow_redirects=True)
+            if response.status_code in [200, 301, 302, 403]:
+                return None
+            return f'{response.status_code}: {url}'
+        except requests.RequestException as get_error:
+            return f'Invalid (Error: {get_error}) {url}'
 
 def main():
     if len(sys.argv) != 2:
@@ -56,7 +57,16 @@ def main():
     print(f"Found {len(urls)} URL(s). Checking status...\n")
 
     with Pool(processes=32) as pool:
-        pool.map(print_url_status, urls)
+        results = pool.map(check_url, urls)
+
+    failures = [result for result in results if result]
+
+    if failures:
+        for failure in failures:
+            print(failure)
+        sys.exit(1)
+
+    print("All URLs are valid.")
 
 if __name__ == "__main__":
     main()
