@@ -321,7 +321,7 @@ def get_pub_latex(context, config):
                 link_items.append(_make_pill(pub[key], base))
         links = ''
         if link_items:
-            sep = r"\hspace{0.08em}"
+            sep = r"\hspace{0.3em}"
             links = r"~" + sep.join(link_items)
 
         highlight = 'selected' in pub and pub['selected'].lower() == 'true'
