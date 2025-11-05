@@ -28,7 +28,7 @@ def check_url(url):
         return None
     try:
         response = requests.head(url, headers=headers, timeout=5, allow_redirects=True)
-        if response.status_code in [200, 301, 302, 403]:
+        if response.status_code in [200, 301, 302, 403, 429]:
             return None
         if response.status_code == 405:
             raise requests.RequestException("HEAD not allowed")
@@ -36,7 +36,7 @@ def check_url(url):
     except requests.RequestException as e:
         try:
             response = requests.get(url, headers=headers, timeout=10, allow_redirects=True)
-            if response.status_code in [200, 301, 302, 403]:
+            if response.status_code in [200, 301, 302, 403, 429]:
                 return None
             return f'{response.status_code}: {url}'
         except requests.RequestException as get_error:
