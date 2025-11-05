@@ -1,0 +1,37 @@
+name: Check URLs
+
+on:
+  push:
+    paths:
+      - cv.yaml
+      - publications/all.bib
+      - .github/workflows/check-urls.yml
+  pull_request:
+    paths:
+      - cv.yaml
+      - publications/all.bib
+      - .github/workflows/check-urls.yml
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install link check dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install requests
+
+      - name: Check URLs in cv.yaml
+        run: python check-urls.py cv.yaml
+
+      - name: Check URLs in publications/all.bib
+        run: python check-urls.py publications/all.bib
