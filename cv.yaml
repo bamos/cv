@@ -44,56 +44,56 @@ about: |
   <li>
     <b>language models</b>
     (on attacks to improve safety and alignment in
-    <a href="https://arxiv.org/abs/2404.16873">AdvPrompter</a> and
-    <a href="https://arxiv.org/abs/2412.10321">AdvPrefix</a>,
-    coding agents in <a href="https://arxiv.org/abs/2507.15887">AlgoTune</a>,
-    RL post-training for social values in <a href="https://arxiv.org/abs/2507.09650">community alignment</a>,
+    <a href="https://arxiv.org/abs/2404.16873" target="_blank">AdvPrompter</a> and
+    <a href="https://arxiv.org/abs/2412.10321" target="_blank">AdvPrefix</a>,
+    coding agents in <a href="https://arxiv.org/abs/2507.15887" target="_blank">AlgoTune</a>,
+    RL post-training for social values in <a href="https://arxiv.org/abs/2507.09650" target="_blank">community alignment</a>,
     and understanding how to
-    <a href="https://arxiv.org/abs/2410.09303">fix broken tokens</a> and
-    <a href="https://arxiv.org/abs/2407.18158">improve generalization bounds</a>)
+    <a href="https://arxiv.org/abs/2410.09303" target="_blank">fix broken tokens</a> and
+    <a href="https://arxiv.org/abs/2407.18158" target="_blank">improve generalization bounds</a>)
   </li>
   <li>
     <b>reinforcement learning, control, and game-playing AI</b>
     (in
-    <a href="https://arxiv.org/abs/1810.13400">differentiable MPC</a>,
-    <a href="https://arxiv.org/abs/1804.06318">learning awareness models</a>,
-    <a href="https://arxiv.org/abs/2008.12775">the model-based SVG</a>, and
+    <a href="https://arxiv.org/abs/1810.13400" target="_blank">differentiable MPC</a>,
+    <a href="https://arxiv.org/abs/1804.06318" target="_blank">learning awareness models</a>,
+    <a href="https://arxiv.org/abs/2008.12775" target="_blank">the model-based SVG</a>, and
     with language-based intrinsic rewards in
-    <a href="https://arxiv.org/abs/2410.23022">ONI</a>)
+    <a href="https://arxiv.org/abs/2410.23022" target="_blank">ONI</a>)
   </li>
   <li>
     <b>applied optimal transport and flows</b>
     (in
-    <a href="https://arxiv.org/abs/2106.10272">Riemannian Convex Potential Maps</a>,
-    <a href="https://arxiv.org/abs/2110.03684">Gromov-Wasserstein Imitation Learning</a>,
-    <a href="https://arxiv.org/abs/2210.12153">amortized convex conjugates</a>,
-    <a href="https://arxiv.org/abs/2406.00288">Lagrangian OT</a>,
-    <a href="https://arxiv.org/abs/2206.05262">Meta Optimal Transport</a>,
-    <a href="https://arxiv.org/abs/2408.14608">Meta Flow Matching</a>,
-    <a href="https://arxiv.org/abs/2304.14772">Multisample Flow Matching</a>,
-    <a href="https://arxiv.org/abs/2504.11713">Adjoint Sampling</a>,
-    and <a href="https://arxiv.org/abs/2411.00698">Wasserstein Flow Matching</a>
-    — see also <a href="https://bamos.github.io/presentations/2024/11/05/transport-between-distributions-over-distributions.html">these slides</a>)
+    <a href="https://arxiv.org/abs/2106.10272" target="_blank">Riemannian Convex Potential Maps</a>,
+    <a href="https://arxiv.org/abs/2110.03684" target="_blank">Gromov-Wasserstein Imitation Learning</a>,
+    <a href="https://arxiv.org/abs/2210.12153" target="_blank">amortized convex conjugates</a>,
+    <a href="https://arxiv.org/abs/2406.00288" target="_blank">Lagrangian OT</a>,
+    <a href="https://arxiv.org/abs/2206.05262" target="_blank">Meta Optimal Transport</a>,
+    <a href="https://arxiv.org/abs/2408.14608" target="_blank">Meta Flow Matching</a>,
+    <a href="https://arxiv.org/abs/2304.14772" target="_blank">Multisample Flow Matching</a>,
+    <a href="https://arxiv.org/abs/2504.11713" target="_blank">Adjoint Sampling</a>,
+    and <a href="https://arxiv.org/abs/2411.00698" target="_blank">Wasserstein Flow Matching</a>
+    — see also <a href="https://bamos.github.io/presentations/2024/11/05/transport-between-distributions-over-distributions.html" target="_blank">these slides</a>)
   </li>
   <li>
     <b>amortization, meta-optimization, and meta-learning</b> between tasks
     (for
-    <a href="https://arxiv.org/abs/2504.11713">sampling molecular conformers</a>,
-    <a href="https://arxiv.org/abs/2206.05262">optimal transport</a>,
-    <a href="https://arxiv.org/abs/2408.14608">flow matching</a>,
-    <a href="https://arxiv.org/abs/2107.10254">convex optimization</a>,
-    <a href="https://arxiv.org/abs/2404.16873">language model attacks</a>,
-    and <a href="https://arxiv.org/abs/2309.07835">fixed point operations</a>
-    — see also <a href="https://arxiv.org/abs/2202.00665">my tutorial</a>)
+    <a href="https://arxiv.org/abs/2504.11713" target="_blank">sampling molecular conformers</a>,
+    <a href="https://arxiv.org/abs/2206.05262" target="_blank">optimal transport</a>,
+    <a href="https://arxiv.org/abs/2408.14608" target="_blank">flow matching</a>,
+    <a href="https://arxiv.org/abs/2107.10254" target="_blank">convex optimization</a>,
+    <a href="https://arxiv.org/abs/2404.16873" target="_blank">language model attacks</a>,
+    and <a href="https://arxiv.org/abs/2309.07835" target="_blank">fixed point operations</a>
+    — see also <a href="https://arxiv.org/abs/2202.00665" target="_blank">my tutorial</a>)
   </li>
   <li>
     <b>integrating structural information</b> and
     domain knowledge into AI systems to represent non-trivial reasoning operations,
     such as with <b>differentiable optimization</b> (in
-    <a href="https://arxiv.org/abs/1703.00443">OptNet</a>,
-    <a href="https://arxiv.org/abs/1609.07152">Input Convex Neural Networks</a>,
-    <a href="https://arxiv.org/abs/1810.13400">End-to-End Task-Based Learning</a>,
-    and <a href="https://arxiv.org/abs/1810.13400">Differentiable MPC</a>)
+    <a href="https://arxiv.org/abs/1703.00443" target="_blank">OptNet</a>,
+    <a href="https://arxiv.org/abs/1609.07152" target="_blank">Input Convex Neural Networks</a>,
+    <a href="https://arxiv.org/abs/1810.13400" target="_blank">End-to-End Task-Based Learning</a>,
+    and <a href="https://arxiv.org/abs/1810.13400" target="_blank">Differentiable MPC</a>)
   </li>
   </ol>
   <br>
