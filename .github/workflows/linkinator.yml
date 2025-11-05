@@ -1,0 +1,25 @@
+name: Linkinator
+
+on:
+  push:
+    paths:
+      - cv.yaml
+      - publications/all.bib
+  pull_request:
+    paths:
+      - cv.yaml
+      - publications/all.bib
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check links in cv.yaml and publications/all.bib
+        uses: JustinBeckwith/linkinator-action@v1
+        with:
+          paths: |
+            cv.yaml
+            publications/all.bib
