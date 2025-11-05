@@ -2,17 +2,7 @@ name: Check URLs
 
 on:
   push:
-    paths:
-      - cv.yaml
-      - publications/all.bib
-      - .github/workflows/check-urls.yml
-      - check-urls.py
   pull_request:
-    paths:
-      - cv.yaml
-      - publications/all.bib
-      - .github/workflows/check-urls.yml
-      - check-urls.py
 
 jobs:
   check-links:
