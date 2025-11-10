@@ -13,7 +13,7 @@
     <span style="white-space: nowrap">
     | <i class="fa fas fa-star"></i>&nbsp;{{ item.stars }}
     </span>
-    {% if item.desc %} <em style="color: gray;">&mdash; {{ item.desc }}</em>{% endif %}
+    {% if item.desc %} <span style='color: gray;'>| <em>{{ item.desc }}</em></span>{% endif %}
   </td>
 </tr>
 {% endfor %}

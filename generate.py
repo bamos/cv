@@ -45,7 +45,8 @@ def get_pub_md(context, config):
         #     import ipdb; ipdb.set_trace()
         # if 'Guo' in authors:
         #     import ipdb; ipdb.set_trace()
-        authors = authors.replace("$^\\dagger$", '<sup>&dagger;</sup>')
+        authors = authors.replace(
+            "$^\\dagger$", "<sup style=\"font-family: Georgia, serif;\">&dagger;</sup>")
         authors = authors.replace("$^*$", '<sup>*</sup>')
 
         return authors
@@ -644,10 +645,10 @@ MARKDOWN_CONTEXT = RenderContext(
         (r'\{ *\\it *(.*?)\}', r'<i>\1</i>'),
         (r'\\LaTeX', 'LaTeX'),  # \LaTeX to boring old LaTeX
         (r'\\TeX', 'TeX'),  # \TeX to boring old TeX
-        (' --- ', '&nbsp;-&nbsp;'),  # em dash
-        (' -- ', '&nbsp;-&nbsp;'),  # en dash
-        ('---', '-'),  # em dash
-        ('--', '-'),  # en dash
+        (' --- ', '&ndash;'),  # normalize triple dash to en dash without spacing
+        (' -- ', '&ndash;'),  # en dash for spaced double dash
+        ('---', '&ndash;'),  # compact triple dash
+        ('--', '&ndash;'),  # compact double dash
         (r'``([^\']*)\'\'', r'"\1"'),  # quotes
         (r'\\url{([^}]*)}', r'[\1](\1)'),  # urls
         # (r'\\href{([^}]*)}{([^}]*)}', r'[\2](\1)'),  # urls

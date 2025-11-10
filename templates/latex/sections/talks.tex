@@ -9,9 +9,9 @@ under a CC-BY license.}
   ~< for item in items >~
     \hfill << loop.index >>. &
     ~< if item.url >~
-      \href{<< item.url >>}{\emph{<< item.title >>}}~\textemdash~%
+      \href{<< item.url >>}{\emph{<< item.title >>}},
     ~< else >~
-      \emph{<< item.title >>}~\textemdash~%
+      \emph{<< item.title >>},
     ~< endif >~
     ~< if item.location_url >~
       \href{<< item.location_url >>}{<< item.location >>}

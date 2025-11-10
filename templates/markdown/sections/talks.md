@@ -12,9 +12,9 @@ under a CC-BY license.*
   <td style='padding-right:0;'>
     <span class='cvdate'>{{ item.year }}</span>
     {% if item.url %}
-     <a href="{{ item.url }}"><em>{{ item.title }}</em></a> &mdash;
+     <a href="{{ item.url }}"><em>{{ item.title }}</em></a>,
     {% else %}
-     <em>{{ item.title }}</em> &mdash;
+     <em>{{ item.title }}</em>,
     {% endif %}
     {% if item.location_url %}
         <a href="{{ item.location_url }}">{{ item.location }}</a>
