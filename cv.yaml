@@ -72,7 +72,7 @@ about: |
     <a href="https://arxiv.org/abs/2408.14608" target="_blank">Meta Flow Matching</a>,
     <a href="https://arxiv.org/abs/2304.14772" target="_blank">Multisample Flow Matching</a>,
     <a href="https://arxiv.org/abs/2504.11713" target="_blank">Adjoint Sampling</a>,
-    and <a href="https://arxiv.org/abs/2411.00698" target="_blank">Wasserstein Flow Matching</a>—see also <a href="https://bamos.github.io/presentations/2024/11/05/transport-between-distributions-over-distributions.html" target="_blank">these slides</a>)
+    and <a href="https://arxiv.org/abs/2411.00698" target="_blank">Wasserstein Flow Matching</a>—see also <a href="https://bamos.github.io/presentations/2024.transport-between-distributions-over-distributions.html" target="_blank">these slides</a>)
   </li>
   <li>
     <b>amortization, meta-optimization, and meta-learning</b> between tasks
@@ -679,100 +679,104 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
-  # - title: TODO
-  #   location: NeurIPS ScaleOPT Workshop
-  #   year: 2025
-  #   url: TODO
+  - title: "On meta prompt optimization and coding agents"
+    location: NeurIPS ScaleOPT Workshop
+    year: 2025
+    url: https://bamos.github.io/presentations/2025.advprompter-algotune.html
+  - title: Demystifying language models
+    location: NeurIPS ScaleOPT Workshop
+    year: 2025
+    url: https://bamos.github.io/presentations/2025.demystifying-lms.html
   - title: "On meta prompt optimization and coding agents"
     location: Flatiron ML Seminar
     year: 2025
-    url: https://bamos.github.io/presentations/2025/12/07/advprompter-algotune.html
+    url: https://bamos.github.io/presentations/2025.advprompter-algotune.html
     location_url: https://www.simonsfoundation.org/event/machine-learning-at-the-flatiron-institute-brandon-amos/
   - title: "AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs"
     location: USC
     year: 2025
-    url: https://bamos.github.io/presentations/2025/05/09/advprompter.html
+    url: https://bamos.github.io/presentations/2025.advprompter.html
   - title: "On amortized optimization for RL, Bayesian optimization, and biology"
     location: ai4b.io
     location_url: https://ai4b.io
     year: 2025
-    url: https://bamos.github.io/presentations/2025/05/01/amortization-rl-bio.html
+    url: https://bamos.github.io/presentations/2025.amortization-rl-bio.html
   - title: Transport and flows between distributions over distributions
     location: Columbia University
     year: 2025
-    url: https://bamos.github.io/presentations/2024/11/05/transport-between-distributions-over-distributions.html
+    url: https://bamos.github.io/presentations/2024.transport-between-distributions-over-distributions.html
   - title: Transport and flows between distributions over distributions
     location: Genesis Therapeutics
     year: 2024
-    url: https://bamos.github.io/presentations/2024/11/05/transport-between-distributions-over-distributions.html
+    url: https://bamos.github.io/presentations/2024.transport-between-distributions-over-distributions.html
   - title: Transport and flows between distributions over distributions
     location: UT Austin
     year: 2024
-    url: https://bamos.github.io/presentations/2024/11/05/transport-between-distributions-over-distributions.html
+    url: https://bamos.github.io/presentations/2024.transport-between-distributions-over-distributions.html
   - title: On LLM prompt optimization and amortization
-    url: https://bamos.github.io/presentations/2024/10/27/prompt-optimization-and-amortization.html
+    url: https://bamos.github.io/presentations/2024.prompt-optimization-and-amortization.html
     location: Dagstuhl Seminar on ML for CO
     location_url: https://www.dagstuhl.de/24441
     year: 2024
   - title: Amortized optimization for optimal transport and LLM attacks
-    url: https://bamos.github.io/presentations/2024/07/01/amortized-optimization-for-OT-and-LLMs.html
+    url: https://bamos.github.io/presentations/2024.amortized-optimization-for-OT-and-LLMs.html
     location: ISMP
     year: 2024
   - title: Differentiable optimization for robotics
-    url: https://bamos.github.io/presentations/2024/07/01/differentiable-optimization-and-robotics.html
+    url: https://bamos.github.io/presentations/2024.differentiable-optimization-and-robotics.html
     location: RSS Optimization for Robotics Workshop
     location_url: https://sites.google.com/robotics.utias.utoronto.ca/frontiers-optimization-rss24/schedule
     year: 2024
   - title: Amortized optimization-based reasoning for AI
-    url: https://bamos.github.io/presentations/2024/07/01/amortized-optimization-and-AI.html
+    url: https://bamos.github.io/presentations/2024.amortized-optimization-and-AI.html
     location: University of Amsterdam
     year: 2024
   - title: End-to-end learning geometries for graphs, dynamical systems, and regression
-    url: https://bamos.github.io/presentations/2024/02/01/e2e-geometries.html
+    url: https://bamos.github.io/presentations/2024.e2e-geometries.html
     location: LoG New York
     location_url: https://logmeetupnyc.github.io/
     year: 2024
   - title: "Amortized optimization for optimal transport"
-    url: https://bamos.github.io/presentations/2023/01/01/amortized-optimal-transport.html
+    url: https://bamos.github.io/presentations/2023.amortized-optimal-transport.html
     location: 'NeurIPS Optimal Transport and ML Workshop'
     location_url: https://otmlworkshop.github.io/schedule/
     year: 2023
   - title: "On optimal control and machine learning"
-    url: https://bamos.github.io/presentations/2023/01/01/control-learning.html
+    url: https://bamos.github.io/presentations/2023.control-learning.html
     location: 'ICML Control and Dynamical Systems Workshop'
     location_url: https://frontiers4lcd.github.io/
     year: 2023
   - title: "Tutorial on amortized optimization"
-    url: https://bamos.github.io/presentations/2023/01/01/amortized-optimization.html
+    url: https://bamos.github.io/presentations/2023.amortized-optimization.html
     location: Brown University
     year: 2023
   - title: "Learning with differentiable and amortized optimization"
-    url: https://bamos.github.io/presentations/2023/01/01/differentiable-amortized-optimization.html
+    url: https://bamos.github.io/presentations/2023.differentiable-amortized-optimization.html
     location: NYU AI Seminar
     year: 2023
   - title: "Learning with differentiable and amortized optimization"
-    url: https://bamos.github.io/presentations/2023/01/01/differentiable-amortized-optimization.html
+    url: https://bamos.github.io/presentations/2023.differentiable-amortized-optimization.html
     location: Vanderbilt ML Seminar
     year: 2023
   - title: "Learning with differentiable and amortized optimization"
-    url: https://bamos.github.io/presentations/2023/01/01/differentiable-amortized-optimization.html
+    url: https://bamos.github.io/presentations/2023.differentiable-amortized-optimization.html
     location: Microsoft Research
     year: 2022
   - title: "Amortized optimization for computing optimal transport maps"
-    url: https://bamos.github.io/presentations/2022/01/01/amortized-optimal-transport.html
+    url: https://bamos.github.io/presentations/2022.amortized-optimal-transport.html
     location: Flatiron Workshop
     location_url: https://sites.google.com/view/sampling-transport-diffusions/home
     year: 2022
   - title: "Learning with differentiable and amortized optimization"
-    url: https://bamos.github.io/presentations/2023/01/01/differentiable-amortized-optimization.html
+    url: https://bamos.github.io/presentations/2023.differentiable-amortized-optimization.html
     location: Cornell AI Seminar
     year: 2022
   - title: "Learning with differentiable and amortized optimization"
-    url: https://bamos.github.io/presentations/2023/01/01/differentiable-amortized-optimization.html
+    url: https://bamos.github.io/presentations/2023.differentiable-amortized-optimization.html
     location: Cornell Tech Seminar
     year: 2022
   - title: "Learning with differentiable and amortized optimization"
-    url: https://bamos.github.io/presentations/2023/01/01/differentiable-amortized-optimization.html
+    url: https://bamos.github.io/presentations/2023.differentiable-amortized-optimization.html
     location: Argonne National Laboratory
     year: 2022
   - title: "Theseus: A library for differentiable nonlinear optimization"
@@ -784,118 +788,118 @@ talks:
     location: University of Zurich
     year: 2022
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: Colorado Mines AMS Colloquium
     year: 2022
   - title: Differentiable optimization
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: IJCAI Tutorial
     location_url: https://guaguakai.github.io/IJCAI22-differentiable-optimization/
     year: 2022
   - title: Differentiable optimization for control and RL
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-control.html
+    url: https://bamos.github.io/presentations/2022.differentiable-control.html
     location: ICML Workshop on Decision Awareness in RL
     location_url: https://darl-workshop.github.io/
     year: 2022
   - location: CPAIOR Master Class
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location_url: https://sites.google.com/usc.edu/cpaior-2022/master_class
     title: Differentiable optimization-based modeling for machine learning
     year: 2022
   - title: Tutorial on amortized optimization
-    url: https://bamos.github.io/presentations/2022/01/01/amortized-optimization.html
+    url: https://bamos.github.io/presentations/2022.amortized-optimization.html
     location: ICCOPT
     year: 2022
   - title: Differentiable optimization for control and RL
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-control.html
+    url: https://bamos.github.io/presentations/2022.differentiable-control.html
     location: Gridmatic
     year: 2022
   - title: Learning for control with differentiable optimization and ODEs
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-control.html
+    url: https://bamos.github.io/presentations/2022.differentiable-control.html
     location: Columbia University
     year: 2021
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: IBM Research
     year: 2021
   - title: Differentiable optimization for control
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-control.html
+    url: https://bamos.github.io/presentations/2022.differentiable-control.html
     location: Max Planck Institute (Tübingen)
     year: 2020
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: Mila Seminar
     year: 2020
   - title: Deep Declarative Networks
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: ECCV Tutorial
     location_url: https://anucvml.github.io/ddn-eccvt2020/
     year: 2020
   - title: On differentiable optimization for control and vision
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: CVPR Deep Declarative Networks Workshop
     location_url: https://anucvml.github.io/ddn-cvprw2020/
     year: 2020
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: Caltech CS 159 (Guest Lecture)
     location_url: https://sites.google.com/view/cs-159-spring-2020/lectures
     year: 2020
   - title: Unrolled optimization for learning deep energy models
-    url: https://bamos.github.io/presentations/2020/01/01/dcem.html
+    url: https://bamos.github.io/presentations/2020.dcem.html
     location: SIAM MDS Minisymposium
     location_url: https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=67922
     year: 2020
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: NYU CILVR Seminar
     year: 2019
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: INFORMS
     year: 2019
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: Facebook AI Research
     year: 2019
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: ISMP
     year: 2018
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: Google Brain
     year: 2018
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: Bosch Center for AI
     year: 2018
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: Waymo Research
     year: 2018
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: Tesla AI
     year: 2018
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: NVIDIA Robotics
     year: 2018
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: Salesforce Research
     year: 2018
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: OpenAI
     year: 2018
   - title: Differentiable optimization-based modeling for machine learning
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-optimization.html
+    url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
     location: NNAISENSE
     year: 2018
   - title: Differentiable optimization and control
-    url: https://bamos.github.io/presentations/2022/01/01/differentiable-control.html
+    url: https://bamos.github.io/presentations/2022.differentiable-control.html
     location: UC Berkeley
     year: 2018
 
