@@ -5,6 +5,7 @@ __pycache__
 *.pdf
 *.db
 *.shelf.*
+*.shelf-*
 *.shelf
 venv
 auto
