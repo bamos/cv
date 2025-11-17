@@ -15,7 +15,7 @@ social:
 style: banking # casual, classic, oldstyle, or banking
 color: black # blue, orange, green, red, purple, grey and black
 color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
-linkcolor: '0.27,0.51,0.93'
+linkcolor: '0.17,0.44,0.51'
 
 order:
   - [about, NONE]
@@ -48,9 +48,8 @@ about: |
     <a href="https://arxiv.org/abs/2412.10321" target="_blank">AdvPrefix</a>,
     coding agents in <a href="https://arxiv.org/abs/2507.15887" target="_blank">AlgoTune</a>,
     RL post-training for social values in <a href="https://arxiv.org/abs/2507.09650" target="_blank">community alignment</a>,
-    and understanding how to
-    <a href="https://arxiv.org/abs/2410.09303" target="_blank">fix broken tokens</a> and
-    <a href="https://arxiv.org/abs/2407.18158" target="_blank">improve generalization bounds</a>)
+    and <a href="https://arxiv.org/abs/2410.09303" target="_blank">fixing broken tokens</a> and
+    <a href="https://arxiv.org/abs/2407.18158" target="_blank">improving generalization bounds</a>)
   </li>
   <li>
     <b>reinforcement learning, control, and game-playing AI</b>
@@ -683,8 +682,17 @@ talks:
     location: NeurIPS ScaleOPT Workshop
     year: 2025
     url: https://bamos.github.io/presentations/2025.advprompter-algotune.html
+  # - title: Language model alignment and tool use
+  #   location: Cornell Tech Guest Lecture
+  #   year: 2025
+    # url: https://bamos.github.io/presentations/2025.alignment-and-tools.html
+  - title: On transport, flows, and physics
+    location: The Physics of John Hopfield Workshop at Princeton University
+    year: 2025
+    url: https://bamos.github.io/presentations/2025.transport-flows-physics.html
+    location_url: https://pcts.princeton.edu/events/2025/physics-john-hopfield
   - title: Demystifying language models
-    location: NeurIPS ScaleOPT Workshop
+    location: ICT Dumaguete Seminar
     year: 2025
     url: https://bamos.github.io/presentations/2025.demystifying-lms.html
   - title: "On meta prompt optimization and coding agents"
@@ -1007,6 +1015,8 @@ service:
 
   main:
     - details: AAAI Senior Program Committee
+      year: 2026
+    - details: AISTATS Area Chair
       year: 2026
     - details: NeurIPS Area Chair
       year: 2025
