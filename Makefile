@@ -65,4 +65,4 @@ push: stage
 	git -C $(WEBSITE_DIR) push
 
 clean:
-	rm -rf *.db $(BUILD_DIR)/cv*
+	rm -rf *.db *.shelf $(BUILD_DIR)/cv*
