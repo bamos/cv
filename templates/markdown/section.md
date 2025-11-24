@@ -1,5 +1,5 @@
 {% if name.lower() != "none" %}
-## <i class="fa fa-chevron-right"></i> {{ name }}
+## <i class="fa fa-chevron-right" style='font-size: 0.9em;'></i> {{ name }}
 {% endif %}
 {% if legend %}
 {{ legend }}
