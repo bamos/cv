@@ -682,10 +682,10 @@ talks:
     location: NeurIPS ScaleOPT Workshop
     year: 2025
     url: https://bamos.github.io/presentations/2025.advprompter-algotune.html
-  # - title: Language model alignment and tool use
-  #   location: Cornell Tech Guest Lecture
-  #   year: 2025
-    # url: https://bamos.github.io/presentations/2025.alignment-and-tools.html
+  - title: Language model alignment and tool use
+    location: Cornell Tech CS5785 Guest Lecture
+    year: 2025
+    url: https://bamos.github.io/presentations/2025.alignment-and-tools.html
   - title: On transport, flows, and physics
     location: The Physics of John Hopfield Workshop at Princeton University
     year: 2025
@@ -850,7 +850,7 @@ talks:
     year: 2020
   - title: Differentiable optimization-based modeling for machine learning
     url: https://bamos.github.io/presentations/2022.differentiable-optimization.html
-    location: Caltech CS 159 (Guest Lecture)
+    location: Caltech CS159 Guest Lecture
     location_url: https://sites.google.com/view/cs-159-spring-2020/lectures
     year: 2020
   - title: Unrolled optimization for learning deep energy models
@@ -1014,6 +1014,8 @@ service:
     - "Uncertainty in Artificial Intelligence (UAI)"
 
   main:
+    - details: ICML Area Chair
+      year: 2026
     - details: AAAI Senior Program Committee
       year: 2026
     - details: AISTATS Area Chair
