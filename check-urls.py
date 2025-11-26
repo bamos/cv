@@ -79,7 +79,7 @@ def main():
         print("No URLs found in the file.")
         sys.exit(0)
 
-    print(f"Found {len(urls)} URL(s). Checking status...\n")
+    print(f"Found {len(urls)} URL(s). Checking status...")
 
     with Pool(processes=32) as pool:
         results = pool.map(check_url, urls)
@@ -91,7 +91,7 @@ def main():
             print(failure)
         sys.exit(1)
 
-    print("All URLs are valid.")
+    print("\nURLs are valid.")
 
 if __name__ == "__main__":
     main()
