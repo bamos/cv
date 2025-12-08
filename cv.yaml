@@ -96,10 +96,10 @@ about: |
   <br>
 
 # current_position:
-#   - place: Meta Superintelligence Labs (FAIR)
+#   - place: Reflection AI
 #     location: New York City
-#     title: Research Scientist
-#     dates: 2019--Present
+#     title: Member of Technical Staff
+#     dates: 2025--
 
 education:
   - school: Carnegie Mellon University
@@ -121,6 +121,10 @@ education:
 #   dates: 2011
 
 positions:
+  - place: Reflection AI
+    location: New York City
+    title: Member of Technical Staff
+    dates: 2025--
   - place: Meta Superintelligence Labs
     location: New York City
     title: Research Scientist

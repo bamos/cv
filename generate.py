@@ -557,8 +557,8 @@ class RenderContext(object):
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
             elif section_tag in ['current_position']:
-                if self._context_name == 'markdown':
-                    continue
+                # if self._context_name == 'markdown':
+                #     continue
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, 'positions' + self._file_ending)
