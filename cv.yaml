@@ -123,15 +123,15 @@ education:
 positions:
   - place: Reflection AI
     location: New York City
-    title: Member of Technical Staff
+    title: Member of Technical Staff in Post-Training
     dates: 2025--
   - place: Meta Superintelligence Labs
     location: New York City
-    title: Research Scientist
+    title: Research Scientist in FAIR
     dates: 2019--2025
   - place: Cornell Tech
     location: New York City
-    title: Visiting Lecturer
+    title: Visiting Lecturer of Computer Science
     dates: 2024
   - place: Carnegie Mellon University
     title: Research Assistant
@@ -374,7 +374,7 @@ all_publications:
     'Maurizio Monge': 'https://scholar.google.com/citations?user=gpgb4LgAAAAJ'
     'Maximilian Nickel': 'https://maxn.io/'
     'Michal Rol': 'https://mrolinek.github.io/'
-    'Mikael Henaff': 'https://www.mikaelhenaff.com/'
+    'Mikael Henaff': 'https://scholar.google.com/citations?user=bX__wkYAAAAJ'
     'Minghan Chen': 'https://chenm.sites.wfu.edu/publications/'
     'Misha Denil': 'https://mdenil.com/'
     'Musil': 'https://scholar.google.com/citations?user=hA1rlU4AAAAJ'
@@ -450,7 +450,6 @@ all_publications:
     'Aaron Ferber': 'https://scholar.google.com/citations?user=TuVq07oAAAAJ'
     'Taoan Huang': 'https://taoanhuang.github.io/'
     'Bistra Dilkina': 'https://scholar.google.com/citations?user=1jjyaBYAAAAJ'
-    'Yuandong Tian': 'https://yuandong-tian.com/'
     'Jiequn Han': 'https://scholar.google.com/citations?user=el5gT4AAAAAJ'
     'Joan Bruna': 'https://cims.nyu.edu/~bruna/'
     'Mattia Silvestri': 'https://scholar.google.com/citations?user=yHEb8eAAAAAJ'
