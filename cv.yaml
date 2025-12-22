@@ -155,7 +155,7 @@ positions:
     location: San Jose
     title: Research Intern
     dates: 2014
-    inline_detail: "with \\href{https://www.linkedin.com/in/davidtompkins}{David Tompkins} on distributed systems"
+    inline_detail: "with \\href{https://research.adobe.com/person/david-tompkins/}{David Tompkins} on distributed systems"
     # details:
     #   - I built a web analytics processing engine using {\bf Scala},
     #     {\bf Spark}, {\bf Spray}, {\bf Parquet}, and {\bf HDFS}.
