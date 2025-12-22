@@ -19,6 +19,15 @@
 {% endfor %}
 </table>
 
+### Area Chair
+<table class="table table-hover">
+{% for item in items.area_chair %}
+<tr>
+  <td style='padding-right:0;'>{{ item }}</td>
+</tr>
+{% endfor %}
+</table>
+
 ### Reviewing
 <table class="table table-hover">
 {% for item in items.reviewing %}

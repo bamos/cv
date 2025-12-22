@@ -256,6 +256,7 @@ We investigate the optimal transport problem between probability measures when t
   author={Zihao Zhao and Kai-Chia Mo and Shing-Hei Ho and Brandon Amos and Kai Wang},
   year={2025},
   url={https://arxiv.org/abs/2512.02494},
+  codeurl={https://github.com/guaguakai/FFOLayer},
   abstract={Differentiable optimization layers enable learning systems to make decisions by solving embedded optimization problems. However, computing gradients via implicit differentiation requires solving a linear system with Hessian terms, which is both compute- and memory-intensive. To address this challenge, we propose a novel algorithm that computes the gradient using only first-order information. The key insight is to rewrite the differentiable optimization as a bilevel optimization problem and leverage recent advances in bilevel methods. Specifically, we introduce an active-set Lagrangian hypergradient oracle that avoids Hessian evaluations and provides finite-time, non-asymptotic approximation guarantees. We show that an approximate hypergradient can be computed using only first-order information in about constant time (up to logarithmic factors), leading to an overall complexity on the order of δ⁻¹ε⁻³ for constrained bilevel optimization, which matches the best known rate for non-smooth non-convex optimization. Furthermore, we release an open-source Python library that can be easily adapted from existing solvers.},
   _venue={arXiv}
 }

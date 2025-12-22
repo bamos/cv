@@ -993,10 +993,31 @@ advising:
     url: https://phillipkwang.com/
 
 service:
+  main:
+    - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
+      year: 2020
+      url: https://sites.google.com/view/lmca2020/home
+    - details: CVPR Deep Declarative Networks Workshop Organizer
+      url: https://anucvml.github.io/ddn-cvprw2020/
+      year: 2020
+    - details: ECCV Deep Declarative Networks Tutorial Organizer
+      url: https://anucvml.github.io/ddn-eccvt2020/
+      year: 2020
+    - details: CMU CSD MS Admissions
+      year: 2014--2015
+
+  area_chair:
+    - "Artificial Intelligence and Statistics (AISTATS)"
+    - "Association for the Advancement of Artificial Intelligence (AAAI)"
+    - "International Conference on Learning Representations (ICLR)"
+    - "International Conference on Machine Learning (ICML)"
+    - "Neural Information Processing Systems (NeurIPS)"
+    - "Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks"
+
   reviewing:
-    - "AAAI Conference on Artificial Intelligence"
     - "American Controls Conference (ACC)"
     - "Artificial Intelligence and Statistics (AISTATS)"
+    - "Association for the Advancement of Artificial Intelligence (AAAI)"
     - "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
     - "IEEE Conference on Decision and Control (CDC)"
     - "IEEE Control Systems Letters (L-CSS)"
@@ -1019,41 +1040,6 @@ service:
     - "Optimization Letters"
     - "Transactions on Machine Learning Research (TMLR)"
     - "Uncertainty in Artificial Intelligence (UAI)"
-
-  main:
-    - details: ICML Area Chair
-      year: 2026
-    - details: AAAI Senior Program Committee
-      year: 2026
-    - details: AISTATS Area Chair
-      year: 2026
-    - details: NeurIPS Area Chair
-      year: 2025
-    - details: AAAI Senior Program Committee
-      year: 2025
-    - details: NeurIPS Area Chair
-      year: 2024
-    - details: NeurIPS Datasets and Benchmarks Area Chair
-      year: 2024
-    - details: AAAI Senior Program Committee
-      year: 2024
-    - details: NeurIPS Area Chair
-      year: 2023
-    - details: NeurIPS Datasets and Benchmarks Area Chair
-      year: 2023
-    - details: AAAI Senior Program Committee
-      year: 2023
-    - details: NeurIPS Learning Meets Combinatorial Optimization Workshop Organizer
-      year: 2020
-      url: https://sites.google.com/view/lmca2020/home
-    - details: CVPR Deep Declarative Networks Workshop Organizer
-      url: https://anucvml.github.io/ddn-cvprw2020/
-      year: 2020
-    - details: ECCV Deep Declarative Networks Tutorial Organizer
-      url: https://anucvml.github.io/ddn-eccvt2020/
-      year: 2020
-    - details: CMU CSD MS Admissions
-      year: 2014--2015
 
 skills:
   - title: Programming
