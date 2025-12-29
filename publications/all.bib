@@ -261,6 +261,37 @@ We investigate the optimal transport problem between probability measures when t
   _venue={arXiv}
 }
 
+@misc{paulus2025safetyalignmentlmsnoncooperative,
+    title={Safety Alignment of LMs via Non-cooperative Games},
+    author={Anselm Paulus and Ilia Kulikov and Brandon Amos and Rémi Munos and Ivan Evtimov and Kamalika Chaudhuri and Arman Zharmagambetov},
+    year={2025},
+    codeurl={https://github.com/facebookresearch/advgame},
+    url={https://arxiv.org/abs/2512.20806},
+    _venue={arXiv},
+    abstract={Ensuring the safety of language models (LMs) while
+        maintaining their usefulness remains a critical
+        challenge in AI alignment. Current approaches rely
+        on sequential adversarial training: generating
+        adversarial prompts and fine-tuning LMs to defend
+        against them. We introduce a different paradigm:
+        framing safety alignment as a non-zero-sum game
+        between an Attacker LM and a Defender LM trained
+        jointly via online reinforcement learning. Each LM
+        continuously adapts to the other's evolving
+        strategies, driving iterative improvement. Our
+        method uses a preference-based reward signal derived
+        from pairwise comparisons instead of point-wise
+        scores, providing more robust supervision and
+        potentially reducing reward hacking. Our RL recipe,
+        AdvGame, shifts the Pareto frontier of safety and
+        utility, yielding a Defender LM that is
+        simultaneously more helpful and more resilient to
+        adversarial attacks. In addition, the resulting
+        Attacker LM converges into a strong, general-purpose
+        red-teaming agent that can be directly deployed to
+        probe arbitrary target models.}
+}
+
 @misc{sambharya2024learning,
   title={Learning to Warm-Start Fixed-Point Optimization Algorithms},
   author={Rajiv Sambharya and Georgina Hall and Brandon Amos and Bartolomeo Stellato},
