@@ -2,10 +2,10 @@
 
 import re
 import requests
-from requests import exceptions as requests_exc
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 import sys
 from multiprocessing import Pool
-from urllib3 import exceptions as urllib3_exc
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36",
@@ -16,25 +16,9 @@ headers = {
     "Upgrade-Insecure-Requests": "1"
 }
 
-IGNORED_REQUEST_EXCEPTIONS = (
-    requests_exc.ConnectTimeout,
-    requests_exc.ReadTimeout,
-)
-
-IGNORED_CAUSE_EXCEPTIONS = (
-    urllib3_exc.MaxRetryError,
-    urllib3_exc.ConnectTimeoutError,
-)
-
-def should_ignore_error(err):
-    if isinstance(err, IGNORED_REQUEST_EXCEPTIONS):
-        return True
-    cause = err.__cause__
-    while cause:
-        if isinstance(cause, IGNORED_CAUSE_EXCEPTIONS):
-            return True
-        cause = cause.__cause__
-    return False
+IGNORED_URLS = {
+    'https://pcts.princeton.edu/events/2025/physics-john-hopfield', # 403
+}
 
 def extract_urls(file_path):
     url_pattern = r'(https?://[^\s\'\"\}\)\<\>]+)'
@@ -45,27 +29,29 @@ def extract_urls(file_path):
     return urls
 
 def check_url(url):
-    if 'scholar' in url or 'linkedin' in url:
-        # ignore Google Scholar and LinkedIn
+    """Check a URL with retry logic."""
+    if url in IGNORED_URLS:
         return None
+
+    if 'linkedin.com' in url:
+        return None
+
+    session = requests.Session()
+    retry = Retry(total=3, backoff_factor=1.0, status_forcelist=[408, 429, 500, 502, 503, 504])
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+
     try:
-        response = requests.head(url, headers=headers, timeout=5, allow_redirects=True)
-        if response.status_code in [200, 301, 302, 403, 429]:
+        response = session.head(url, headers=headers, timeout=5, allow_redirects=True)
+        if response.status_code in [202, 405]:
+            response = session.get(url, headers=headers, timeout=5, allow_redirects=True)
+
+        if response.status_code == 200:
             return None
-        if response.status_code == 405:
-            raise requests.RequestException("HEAD not allowed")
         return f'{response.status_code}: {url}'
     except requests.RequestException as e:
-        try:
-            response = requests.get(url, headers=headers, timeout=10, allow_redirects=True)
-            if response.status_code in [200, 301, 302, 403, 429]:
-                return None
-            return f'{response.status_code}: {url}'
-        except requests.RequestException as get_error:
-            if should_ignore_error(get_error):
-                print(f'\n--- Skipping error for {url}\n{get_error}')
-                return None
-            return f'Invalid (Error: {get_error}) {url}'
+        return f'{type(e).__name__}: {url}'
 
 def main():
     if len(sys.argv) != 2:
