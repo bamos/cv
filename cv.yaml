@@ -1018,7 +1018,7 @@ service:
     - "Neural Information Processing Systems (NeurIPS)"
     - "Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks"
 
-  reviewing:
+  reviewer:
     - "American Controls Conference (ACC)"
     - "Artificial Intelligence and Statistics (AISTATS)"
     - "Association for the Advancement of Artificial Intelligence (AAAI)"

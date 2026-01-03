@@ -28,9 +28,9 @@
 {% endfor %}
 </table>
 
-### Reviewing
+### Reviewer
 <table class="table table-hover">
-{% for item in items.reviewing %}
+{% for item in items.reviewer %}
 <tr>
   <td style='padding-right:0;'>{{ item }}</td>
 </tr>
