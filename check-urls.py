@@ -30,10 +30,8 @@ def extract_urls(file_path):
 
 def check_url(url):
     """Check a URL with retry logic."""
-    if url in IGNORED_URLS:
-        return None
-
-    if 'linkedin.com' in url:
+    if url in IGNORED_URLS or 'linkedin.com' in url:
+        print(f'skipping: {url}')
         return None
 
     session = requests.Session()
