@@ -535,11 +535,19 @@ class RenderContext(object):
         yaml_data = self.make_replacements(yaml_data)
 
         body = ''
-        for section_tag, section_title in yaml_data['order']:
+        if self._file_ending == '.md' and 'order_md' in yaml_data:
+            order = yaml_data['order_md']
+        elif self._file_ending == '.tex' and 'order_latex' in yaml_data:
+            order = yaml_data['order_latex']
+        else:
+            order = yaml_data['order']
+
+        for section_tag, section_title in order:
             print("Processing section: {}".format(section_tag))
 
             section_data = {'name': section_title}
             section_content = None if section_tag == "NEWPAGE" else yaml_data[section_tag]
+
             if section_tag == 'about':
                 if self._file_ending == '.tex':
                     continue
