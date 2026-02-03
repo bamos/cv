@@ -44,8 +44,8 @@ def check_url(url):
         response = session.head(url, headers=headers, timeout=5, allow_redirects=True)
         if response.status_code in [202, 405]:
             response = session.get(url, headers=headers, timeout=5, allow_redirects=True)
-        if response.status_code == 403:
-            print(f'403 (ignored): {url}')
+        if response.status_code in [400, 403]:
+            print(f'{response.status_code} (ignored): {url}')
             return None
         if response.status_code == 200:
             return None
