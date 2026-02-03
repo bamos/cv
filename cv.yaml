@@ -40,7 +40,7 @@ order_latex:
 
 about: |
   <p style="text-align: justify;">
-  Hi! I am a member of technical staff in post-training at
+  Hi! I am a member of technical staff at
   <a href="https://www.reflection.ai/" target="_blank" rel="noopener">Reflection AI</a> in New York City.
   </p>
 
@@ -152,7 +152,7 @@ education:
 positions:
   - place: Reflection AI
     location: New York City
-    title: Member of Technical Staff in Post-Training
+    title: Member of Technical Staff
     dates: 2025--
   - place: Meta Superintelligence Labs
     location: New York City
