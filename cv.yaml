@@ -721,6 +721,10 @@ repos:
 
 talks:
   - title: "On meta prompt optimization and coding agents"
+    location: Netflix
+    year: 2025
+    url: https://bamos.github.io/presentations/2025.advprompter-algotune.html
+  - title: "On meta prompt optimization and coding agents"
     location: NeurIPS ScaleOPT Workshop
     year: 2025
     url: https://bamos.github.io/presentations/2025.advprompter-algotune.html
