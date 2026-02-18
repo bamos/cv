@@ -57,6 +57,9 @@ def check_url(url):
             return None
         return f'{response.status_code}: {url}'
     except requests.RequestException as e:
+        if type(e).__name__ == 'RetryError':
+            print(f'{type(e).__name__} (ignored): {url}')
+            return None
         return f'{type(e).__name__}: {url}'
 
 def main():
