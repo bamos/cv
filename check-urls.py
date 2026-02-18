@@ -18,6 +18,7 @@ headers = {
 
 IGNORED_URLS = {
     'https://pcts.princeton.edu/events/2025/physics-john-hopfield', # 403
+    'https://research.adobe.com', # SSLError
 }
 
 def extract_urls(file_path):
