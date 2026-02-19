@@ -720,14 +720,14 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
-  - title: "On meta prompt optimization and coding agents"
+  - title: "On prompt optimization and coding agents"
     location: Netflix
     year: 2026
-    url: https://bamos.github.io/presentations/2025.advprompter-algotune.html
-  - title: "On meta prompt optimization and coding agents"
+    url: https://bamos.github.io/presentations/2026.advprompter-algotune.html
+  - title: "On prompt optimization and coding agents"
     location: NeurIPS ScaleOPT Workshop
     year: 2025
-    url: https://bamos.github.io/presentations/2025.advprompter-algotune.html
+    url: https://bamos.github.io/presentations/2026.advprompter-algotune.html
   - title: Language model alignment and tool use
     location: Cornell Tech CS5785 Guest Lecture
     year: 2025
@@ -741,10 +741,10 @@ talks:
     location: ICT Dumaguete Seminar
     year: 2025
     url: https://bamos.github.io/presentations/2025.demystifying-lms.html
-  - title: "On meta prompt optimization and coding agents"
+  - title: "On prompt optimization and coding agents"
     location: Flatiron ML Seminar
     year: 2025
-    url: https://bamos.github.io/presentations/2025.advprompter-algotune.html
+    url: https://bamos.github.io/presentations/2026.advprompter-algotune.html
     location_url: https://www.simonsfoundation.org/event/machine-learning-at-the-flatiron-institute-brandon-amos/
   - title: "AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs"
     location: USC
