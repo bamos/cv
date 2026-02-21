@@ -9,15 +9,6 @@ How can large language models (LLMs) serve users with varying preferences that m
   }
 }
 
-@misc{chang2026surprisingdifficultysearchmodelbased,
-  title={The Surprising Difficulty of Search in Model-Based Reinforcement Learning},
-  author={Wei-Di Chang and Mikael Henaff and Brandon Amos and Gregory Dudek and Scott Fujimoto},
-  year={2026},
-  _venue={arXiv},
-  url={https://arxiv.org/abs/2601.21306},
-  abstract={This paper investigates search in model-based reinforcement learning (RL). Conventional wisdom holds that long-term predictions and compounding errors are the primary obstacles for model-based RL. We challenge this view, showing that search is not a plug-and-play replacement for a learned policy. Surprisingly, we find that search can harm performance even when the model is highly accurate. Instead, we show that mitigating distribution shift matters more than improving model or value function accuracy. Building on this insight, we identify key techniques for enabling effective search, achieving state-of-the-art performance across multiple popular benchmark domains.},
-}
-
 @misc{silvestri2026score,
     title={Score Function Gradient Estimation to Widen the Applicability of Decision-Focused Learning},
     author={Mattia Silvestri and Senne Berden and Jayanta Mandi and Ali İrfan Mahmutoğulları and Brandon Amos and Tias Guns and Michele Lombardi},
@@ -27,6 +18,15 @@ How can large language models (LLMs) serve users with varying preferences that m
     abstract={
 Many real-world optimization problems contain parameters that are unknown before deployment time, either due to stochasticity or to lack of information (e.g., demand or travel times in delivery problems). A common strategy in such cases is to estimate said parameters via machine learning (ML) models trained to minimize the prediction error, which however is not necessarily aligned with the downstream task-level error. The decision-focused learning (DFL) paradigm overcomes this limitation by training to directly minimize a task loss, e.g. regret. Since the latter has non-informative gradients for combinatorial problems, state-of-the-art DFL methods introduce surrogates and approximations that enable training. But these methods exploit specific assumptions about the problem structures (e.g., convex or linear problems, unknown parameters only in the objective function). We propose an alternative method that makes no such assumptions, it combines stochastic smoothing with score function gradient estimation which works on any task loss. This opens up the use of DFL methods to nonlinear objectives, uncertain parameters in the problem constraints, and even two-stage stochastic optimization. Experiments show that it typically requires more epochs, but that it is on par with specialized methods and performs especially well for the difficult case of problems with uncertainty in the constraints, in terms of solution quality, scalability, or both.
   }
+}
+
+@misc{chang2026surprisingdifficultysearchmodelbased,
+  title={The Surprising Difficulty of Search in Model-Based Reinforcement Learning},
+  author={Wei-Di Chang and Mikael Henaff and Brandon Amos and Gregory Dudek and Scott Fujimoto},
+  year={2026},
+  _venue={arXiv},
+  url={https://arxiv.org/abs/2601.21306},
+  abstract={This paper investigates search in model-based reinforcement learning (RL). Conventional wisdom holds that long-term predictions and compounding errors are the primary obstacles for model-based RL. We challenge this view, showing that search is not a plug-and-play replacement for a learned policy. Surprisingly, we find that search can harm performance even when the model is highly accurate. Instead, we show that mitigating distribution shift matters more than improving model or value function accuracy. Building on this insight, we identify key techniques for enabling effective search, achieving state-of-the-art performance across multiple popular benchmark domains.},
 }
 
 @misc{zheng2024onlineintrinsicrewardsdecision,
