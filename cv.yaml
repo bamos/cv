@@ -720,8 +720,20 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
+  # - title: "On prompt optimization and coding agents"
+  #   location: Columbia NLP Seminar
+  #   year: 2026
+  #   url: https://bamos.github.io/presentations/2026.advprompter-algotune.html
   - title: "On prompt optimization and coding agents"
-    location: Princeton PLI
+    location: Cornell Tech ML Reading Group
+    year: 2026
+    url: https://bamos.github.io/presentations/2026.advprompter-algotune.html
+  - title: "On prompt optimization and coding agents"
+    location: Tel Aviv University
+    year: 2026
+    url: https://bamos.github.io/presentations/2026.advprompter-algotune.html
+  - title: "On prompt optimization and coding agents"
+    location: Princeton PLI Seminar
     year: 2026
     url: https://bamos.github.io/presentations/2026.advprompter-algotune.html
   - title: "On prompt optimization and coding agents"
