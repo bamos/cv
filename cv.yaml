@@ -571,7 +571,12 @@ all_publications:
     'Wei-Di Chang': 'https://scholar.google.com/citations?user=1EW9Jt4AAAAJ'
     'Gregory Dudek': 'https://scholar.google.com/citations?user=BSORuFoAAAAJ'
     'Scott Fujimoto': 'https://scholar.google.com/citations?user=1Nk3WZoAAAAJ'
-
+    'Sonja Kraiczy': 'https://www.sonja.uk/'
+    'Ratip Emin Berker': 'https://www.eminberker.com/'
+    'Avinandan Bose': 'https://avinandan22.github.io/'
+    'Jamelle Watson-Daniels': 'https://www.jamellewd.com/'
+    'Edith Elkind': 'https://sagemath.openbsd.amsterdam/edith/'
+    'Ariel D. Procaccia': 'https://procaccia.info/'
 
 repos:
   - repo_url: https://github.com/oripress/AlgoTune
