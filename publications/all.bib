@@ -18,6 +18,17 @@ How can large language models (LLMs) serve users with varying preferences that m
   abstract={This paper investigates search in model-based reinforcement learning (RL). Conventional wisdom holds that long-term predictions and compounding errors are the primary obstacles for model-based RL. We challenge this view, showing that search is not a plug-and-play replacement for a learned policy. Surprisingly, we find that search can harm performance even when the model is highly accurate. Instead, we show that mitigating distribution shift matters more than improving model or value function accuracy. Building on this insight, we identify key techniques for enabling effective search, achieving state-of-the-art performance across multiple popular benchmark domains.},
 }
 
+@inproceedings{
+kraiczy2026social,
+title={Social Choice Foundations for Simulation-Augmented Generation},
+author={Sonja Kraiczy and Smitha Milli and Ratip Emin Berker and Avinandan Bose and Brandon Amos and Jamelle Watson-Daniels and Maximilian Nickel and Edith Elkind and Ariel D. Procaccia},
+_venue={ICML AI4GOOD Workshop},
+year={2026},
+url={https://openreview.net/forum?id=xX1qb7SNt8},
+abstract={
+Users increasingly turn to AI systems for normative assistance—guidance on what one ought to do or think—yet models are often opaque about whose viewpoints they represent. A promising approach is simulation-augmented generation (SAGE), which involves querying generative simulations of individuals in a target population at inference time, soliciting their open-ended judgments, and synthesizing them into a response while transparently reporting whose viewpoints are reflected. However, inference-time simulation raises acute scalability constraints. Since the key benefit of simulation is improved representativeness, the core challenge is scaling simulation without sacrificing representation. We introduce the first formalization of this problem, grounded in proportional clustering concepts from social choice theory. We prove that to represent a population of m humans, we need only create n≪m simulations of them, and need only dynamically query k≪n of those simulations at inference time, while still maintaining approximate proportional representation guarantees for the full population. We empirically validate that our inference-time algorithm yields better representation--efficiency trade-offs than baseline approaches.}
+}
+
 @misc{paulus2025safetyalignmentlmsnoncooperative,
     title={Safety Alignment of LMs via Non-cooperative Games},
     author={Anselm Paulus and Ilia Kulikov and Brandon Amos and Rémi Munos and Ivan Evtimov and Kamalika Chaudhuri and Arman Zharmagambetov},
