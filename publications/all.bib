@@ -18,17 +18,6 @@ How can large language models (LLMs) serve users with varying preferences that m
   abstract={This paper investigates search in model-based reinforcement learning (RL). Conventional wisdom holds that long-term predictions and compounding errors are the primary obstacles for model-based RL. We challenge this view, showing that search is not a plug-and-play replacement for a learned policy. Surprisingly, we find that search can harm performance even when the model is highly accurate. Instead, we show that mitigating distribution shift matters more than improving model or value function accuracy. Building on this insight, we identify key techniques for enabling effective search, achieving state-of-the-art performance across multiple popular benchmark domains.},
 }
 
-@inproceedings{
-kraiczy2026social,
-title={Social Choice Foundations for Simulation-Augmented Generation},
-author={Sonja Kraiczy and Smitha Milli and Ratip Emin Berker and Avinandan Bose and Brandon Amos and Jamelle Watson-Daniels and Maximilian Nickel and Edith Elkind and Ariel D. Procaccia},
-_venue={ICML AI4GOOD Workshop},
-year={2026},
-url={https://openreview.net/forum?id=xX1qb7SNt8},
-abstract={
-Users increasingly turn to AI systems for normative assistance—guidance on what one ought to do or think—yet models are often opaque about whose viewpoints they represent. A promising approach is simulation-augmented generation (SAGE), which involves querying generative simulations of individuals in a target population at inference time, soliciting their open-ended judgments, and synthesizing them into a response while transparently reporting whose viewpoints are reflected. However, inference-time simulation raises acute scalability constraints. Since the key benefit of simulation is improved representativeness, the core challenge is scaling simulation without sacrificing representation. We introduce the first formalization of this problem, grounded in proportional clustering concepts from social choice theory. We prove that to represent a population of m humans, we need only create n≪m simulations of them, and need only dynamically query k≪n of those simulations at inference time, while still maintaining approximate proportional representation guarantees for the full population. We empirically validate that our inference-time algorithm yields better representation--efficiency trade-offs than baseline approaches.}
-}
-
 @misc{paulus2025safetyalignmentlmsnoncooperative,
     title={Safety Alignment of LMs via Non-cooperative Games},
     author={Anselm Paulus and Ilia Kulikov and Brandon Amos and Rémi Munos and Ivan Evtimov and Kamalika Chaudhuri and Arman Zharmagambetov},
@@ -79,6 +68,17 @@ Users increasingly turn to AI systems for normative assistance—guidance on wha
     abstract={
 Many real-world optimization problems contain parameters that are unknown before deployment time, either due to stochasticity or to lack of information (e.g., demand or travel times in delivery problems). A common strategy in such cases is to estimate said parameters via machine learning (ML) models trained to minimize the prediction error, which however is not necessarily aligned with the downstream task-level error. The decision-focused learning (DFL) paradigm overcomes this limitation by training to directly minimize a task loss, e.g. regret. Since the latter has non-informative gradients for combinatorial problems, state-of-the-art DFL methods introduce surrogates and approximations that enable training. But these methods exploit specific assumptions about the problem structures (e.g., convex or linear problems, unknown parameters only in the objective function). We propose an alternative method that makes no such assumptions, it combines stochastic smoothing with score function gradient estimation which works on any task loss. This opens up the use of DFL methods to nonlinear objectives, uncertain parameters in the problem constraints, and even two-stage stochastic optimization. Experiments show that it typically requires more epochs, but that it is on par with specialized methods and performs especially well for the difficult case of problems with uncertainty in the constraints, in terms of solution quality, scalability, or both.
   }
+}
+
+@inproceedings{
+kraiczy2026social,
+title={Social Choice Foundations for Simulation-Augmented Generation},
+author={Sonja Kraiczy and Smitha Milli and Ratip Emin Berker and Avinandan Bose and Brandon Amos and Jamelle Watson-Daniels and Maximilian Nickel and Edith Elkind and Ariel D. Procaccia},
+_venue={ICML AI4GOOD Workshop},
+year={2026},
+url={https://openreview.net/forum?id=xX1qb7SNt8},
+abstract={
+Users increasingly turn to AI systems for normative assistance—guidance on what one ought to do or think—yet models are often opaque about whose viewpoints they represent. A promising approach is simulation-augmented generation (SAGE), which involves querying generative simulations of individuals in a target population at inference time, soliciting their open-ended judgments, and synthesizing them into a response while transparently reporting whose viewpoints are reflected. However, inference-time simulation raises acute scalability constraints. Since the key benefit of simulation is improved representativeness, the core challenge is scaling simulation without sacrificing representation. We introduce the first formalization of this problem, grounded in proportional clustering concepts from social choice theory. We prove that to represent a population of m humans, we need only create n≪m simulations of them, and need only dynamically query k≪n of those simulations at inference time, while still maintaining approximate proportional representation guarantees for the full population. We empirically validate that our inference-time algorithm yields better representation--efficiency trade-offs than baseline approaches.}
 }
 
 @misc{zheng2024onlineintrinsicrewardsdecision,
