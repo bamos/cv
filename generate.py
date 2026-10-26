@@ -571,7 +571,7 @@ class RenderContext(object):
         for section_tag, section_title in order:
             print("Processing section: {}".format(section_tag))
 
-            section_data = {'name': section_title}
+            section_data = {'name': section_title, 'section_id': section_tag}
             section_content = None if section_tag == "NEWPAGE" else yaml_data[section_tag]
 
             if section_tag == 'about':

@@ -27,7 +27,31 @@
 \usetikzlibrary{calc}
 
 \usepackage{lastpage}
-\cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}
+
+% Keep navigation in sync with the PDF's section order.
+~< set nav_labels = {'honors': 'Awards', 'repos': 'Repositories', 'talks': 'Talks', 'advising': 'Students', 'service': 'Service'} >~
+\colorlet{navbg}{linkcolor!9!white}
+\newcommand{\cvnavigationbar}{%
+  \tikz[baseline=(N.base)]{%
+    \node[fill=navbg,rounded corners=5pt,inner xsep=10pt,inner ysep=6pt] (N) {%
+      \makebox[\dimexpr\textwidth-20pt\relax]{%
+        \fontsize{9}{11}\selectfont
+        \textcolor{color2}{Jump to:}%
+~< for section_tag, section_title in order_latex|default(order) if section_tag not in ['NEWPAGE', 'about', 'news'] and section_title.lower() != 'none' >~
+        \hfill\hyperref[cv:<< section_tag >>]{<< nav_labels.get(section_tag, section_title) >>}%
+~< endfor >~
+      }%
+    };%
+  }%
+}
+\setlength{\headheight}{26pt}
+\fancypagestyle{cvnavigation}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+  \fancyhead[C]{\ifnum\value{page}>1\cvnavigationbar\fi}%
+  \fancyfoot[C]{\addressfont\textcolor{gray}{Page \thepage\ of \pageref*{LastPage}}}%
+}
 
 \AtEndPreamble{\hypersetup{pdftitle={<< name.first >> << name.last >>: CV}, allcolors=linkcolor, colorlinks}}
 \newcommand{\pubpill}[1]{%
@@ -65,9 +89,8 @@
 
 \begin{document}
 \makecvtitle
+\pagestyle{cvnavigation}
 \vspace{-1cm}
-
-\rfoot{}
 
 << body >>
 
