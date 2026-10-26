@@ -287,6 +287,9 @@ positions:
       #   and hard links.
 
 honors:
+  - title: INFORMS Computing Society Prize, Honorable Mention
+    year: 2026
+    url: https://connect.informs.org/computing/awards/ics-prize/ics-prize-2022-2026
   - title: AISTATS Best Reviewer
     year: 2025
     url: https://aistats.org/aistats2025/awards.html
