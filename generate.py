@@ -9,6 +9,7 @@ __author__ = [
 
 import argparse
 import copy
+import json
 import os
 import re
 import yaml
@@ -416,6 +417,32 @@ def truncate_to_k(num):
     return f"{num_k}k+"
 
 
+def get_repo_stars(soup):
+    # GitHub's React repository page includes an exact count in its page data.
+    for script in soup.select('script[type="application/json"]'):
+        try:
+            payload = json.loads(script.string or '{}').get('payload', {})
+        except (ValueError, AttributeError):
+            continue
+        about = payload.get('sidebarAbout') or payload.get(
+            'codeViewRepoRoute', {}).get('overview', {}).get('sidebarAboutData', {})
+        if isinstance(about.get('stargazerCount'), int):
+            count = about['stargazerCount']
+            return str(count), count
+
+    # Also support older cached pages and GitHub's server-rendered counters.
+    counter = soup.select_one('#repo-stars-counter-star, .js-social-count')
+    if counter is not None:
+        label = counter.get_text(strip=True)
+        number = counter.get('title') or label
+        number = number.replace(',', '').strip().lower()
+        multiplier = 1000 if number.endswith('k') else 1000000 if number.endswith('m') else 1
+        count = int(float(number.rstrip('km')) * multiplier)
+        return label, count
+
+    raise ValueError('GitHub repository page contains no recognizable star count')
+
+
 def add_repo_data(context, config, in_tex):
     repo_htmls = shelve.open('repo_htmls.shelf')
 
@@ -441,13 +468,12 @@ def add_repo_data(context, config, in_tex):
                 continue
         soup = BeautifulSoup(repo_htmls[short_name], 'html.parser')
 
-        star_str = soup.find(class_="js-social-count").text.strip()
+        try:
+            star_str, star_int = get_repo_stars(soup)
+        except ValueError as exc:
+            raise ValueError(f"Cannot read stars for {item['repo_url']}: {exc}") from exc
         item['stars'] = star_str
 
-        if star_str.endswith('k'):
-            star_int = int(float(star_str[:-1])*1000)
-        else:
-            star_int = int(star_str)
         total_stars += star_int
 
         if 'desc' not in item:
