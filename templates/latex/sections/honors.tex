@@ -4,9 +4,9 @@
 % \begin{itemize}
 ~< for award in items >~
   ~< if award.url >~
-    \href{<<award.url>>}{<<award.title>>}
+    \href{<<award.url>>}{<< award.title ~ (' at ' ~ award.venue if award.venue else '') >>}
   ~< else >~
-    << award.title >>
+    << award.title ~ (' at ' ~ award.venue if award.venue else '') >>
   ~< endif >~
   \hfill << award['year'] >>
   ~< if award.descr >~

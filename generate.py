@@ -28,9 +28,34 @@ from bibtexparser.bparser import BibTexParser
 from datetime import date
 from itertools import groupby
 from jinja2 import Environment, FileSystemLoader
+from html import escape
+
+
+def index_awards(honors):
+    awards = {}
+    for honor in honors:
+        if 'id' in honor:
+            award_id = honor['id']
+            if award_id in awards:
+                raise ValueError(f'Duplicate award ID: {award_id}')
+            awards[award_id] = honor
+    return awards
+
+
+def get_publication_awards(pub, awards):
+    resolved = []
+    for award_id in pub.get('awards', '').split(','):
+        award_id = award_id.strip()
+        if not award_id:
+            continue
+        if award_id not in awards:
+            raise ValueError(f"Unknown award ID {award_id!r} in publication {pub['ID']}")
+        resolved.append(awards[award_id])
+    return resolved
 
 # TODO: Could really be cleaned up
-def get_pub_md(context, config):
+def get_pub_md(context, config, awards=None):
+    awards = awards or {}
     def _get_author_str(immut_author_list):
         authors = copy.copy(immut_author_list)
         if len(authors) > 1:
@@ -147,6 +172,14 @@ def get_pub_md(context, config):
             note_str = ''
 
         tr_style = 'style="background-color: #ffffd0"' if highlight else ''
+        award_lines = ''
+        for award in get_publication_awards(pub, awards):
+            label = '<i class="fa fa-trophy" aria-hidden="true"></i> ' + escape(award['title'])
+            if award.get('url'):
+                label = f'<a href="{escape(award["url"], quote=True)}" target="_blank">{label}</a>'
+            award_lines += (
+                f'<div class="publication-award-row"><span class="publication-award">{label}</span></div>\n'
+            )
         if include_image:
             return f'''
 <tr id="tr-{pub['ID']}" {tr_style}>
@@ -157,7 +190,8 @@ def get_pub_md(context, config):
 {img_str}
 <em>{title}</em> {links}<br>
 {author_str}<br>
-{year_venue} {note_str} <br>
+{year_venue} {note_str}<br>
+{award_lines}
 {abstract}
 </td>
 </tr>
@@ -171,7 +205,8 @@ def get_pub_md(context, config):
 <td>
     <em>{title}</em> {links}<br>
     {author_str}<br>
-    {year_venue} {note_str} <br>
+    {year_venue} {note_str}<br>
+    {award_lines}
     {abstract}
 </td>
 </tr>
@@ -262,7 +297,8 @@ def get_pub_md(context, config):
 
 
 # TODO: Could really be cleaned up
-def get_pub_latex(context, config):
+def get_pub_latex(context, config, awards=None):
+    awards = awards or {}
     def _get_author_str(immut_author_list):
         authors = copy.copy(immut_author_list)
         if len(authors) > 1:
@@ -334,13 +370,21 @@ def get_pub_latex(context, config):
         else:
             note_str = ''
 
+        award_lines = ''
+        for award in get_publication_awards(pub, awards):
+            label = rf'\textcolor{{awardtext}}{{\faTrophy\ {award["title"]}}}'
+            if award.get('url'):
+                label = rf'\href{{{award["url"]}}}{{{label}}}'
+            award_lines += rf'{highlight_color} && \awardbadge{{{label}}} \\' + '\n'
+        venue_row_end = r'\\[1pt]' if award_lines else r'\\'
+
         return rf'''
 \begin{{minipage}}{{\textwidth}}
 \begin{{tabular}}[t]{{p{{8mm}}p{{1mm}}>{{\raggedright\arraybackslash}}p{{6.5in}}}}
 {highlight_color} \hfill{prefix}{gidx}.\hspace*{{1mm}} && \textit{{{title}}}\hspace{{-2mm}} {links} \\
 {highlight_color} && {author_str} \\
-{highlight_color} && {year_venue} {note_str} \\
-\end{{tabular}} \\[2mm]
+{highlight_color} && {year_venue} {note_str} {venue_row_end}
+{award_lines}\end{{tabular}} \\[2mm]
 \end{{minipage}}'''
 
     def load_and_replace(bibtex_file):
@@ -559,6 +603,7 @@ class RenderContext(object):
     def render_resume(self, yaml_data):
         # Make the replacements first on the yaml_data
         yaml_data = self.make_replacements(yaml_data)
+        awards = index_awards(yaml_data.get('honors', []))
 
         body = ''
         if self._file_ending == '.md' and 'order_md' in yaml_data:
@@ -605,9 +650,9 @@ class RenderContext(object):
             elif 'publications' in section_tag:
                 if self._file_ending == ".tex":
                     # section_data['content'] = section_content
-                    section_data['content'] = get_pub_latex(self, section_content)
+                    section_data['content'] = get_pub_latex(self, section_content, awards)
                 elif self._file_ending == ".md":
-                    section_data['content'] = get_pub_md(self, section_content)
+                    section_data['content'] = get_pub_md(self, section_content, awards)
                 section_data['venue_counts'] = get_pub_summary(section_content['file'])
                 section_data['scholar_id'] = yaml_data['social']['google_scholar']
                 section_data['scholar_stats'] = get_scholar_stats(yaml_data['social']['google_scholar'])

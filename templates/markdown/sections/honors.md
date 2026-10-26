@@ -8,9 +8,9 @@
   <div style='float: right'>{{ award.year }}</div>
   <div>
     {% if award.url %}
-        <a href="{{award.url}}">{{ award.title }}</a>
+        <a href="{{award.url}}">{{ award.title }}{% if award.venue %} at {{ award.venue }}{% endif %}</a>
     {% else %}
-        {{ award.title }}
+        {{ award.title }}{% if award.venue %} at {{ award.venue }}{% endif %}
     {% endif %}
     {% if award.descr %}
     <br><p style="color:grey;font-size:1.2rem">{{ award.descr }}</p>

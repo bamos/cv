@@ -11,6 +11,9 @@
 \colorlet{firstnamecolor}{color1}
 \definecolor{pillbg}{HTML}{ecedee}
 \definecolor{pilltext}{HTML}{3f4966}
+\definecolor{awardtext}{HTML}{4B535B}
+\definecolor{boxbg}{HTML}{F1F2F3}
+\definecolor{boxborder}{HTML}{D8DCDF}
 
 \usepackage[top=1in, bottom=1in, left=.7in, right=.7in]{geometry}
 
@@ -25,16 +28,18 @@
 \renewcommand*{\twittersocialsymbol}{$\mathbbmss{X}$~}
 \usepackage{tikz}
 \usetikzlibrary{calc}
+\tikzset{cvbox/.style={fill=boxbg,draw=boxborder,line width=1.2pt,
+  rounded corners=5pt,inner xsep=8pt,inner ysep=4pt,
+  text height=0.75em,text depth=0.15em}}
 
 \usepackage{lastpage}
 
 % Keep navigation in sync with the PDF's section order.
 ~< set nav_labels = {'honors': 'Awards', 'repos': 'Repositories', 'talks': 'Talks', 'advising': 'Students', 'service': 'Service'} >~
-\colorlet{navbg}{linkcolor!9!white}
 \newcommand{\cvnavigationbar}{%
   \tikz[baseline=(N.base)]{%
-    \node[fill=navbg,rounded corners=5pt,inner xsep=10pt,inner ysep=6pt] (N) {%
-      \makebox[\dimexpr\textwidth-20pt\relax]{%
+    \node[cvbox] (N) {%
+      \makebox[\dimexpr\textwidth-16pt\relax]{%
         \fontsize{9}{11}\selectfont
         \textcolor{color2}{Jump to:}%
 ~< for section_tag, section_title in order_latex|default(order) if section_tag not in ['NEWPAGE', 'about', 'news'] and section_title.lower() != 'none' >~
@@ -68,6 +73,12 @@
         text depth=0.4ex
       ] (P) {{\footnotesize\strut #1}};
     }%
+  }%
+}
+
+\newcommand{\awardbadge}[1]{%
+  \tikz[baseline=(A.base)]{%
+    \node[cvbox,anchor=base,inner xsep=4pt] (A) {{#1}};%
   }%
 }
 

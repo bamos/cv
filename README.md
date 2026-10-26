@@ -28,6 +28,15 @@ The Makefile can also:
 
 # What to modify
 Change the content in `cv.yaml`.
+Paper awards are maintained in its `honors` list. Give an award a unique `id`
+(for example, `informs-ics-2026`), then reference it in a publication's BibTeX
+entry with `awards={informs-ics-2026}`. Multiple IDs can be separated by commas.
+The website and PDF show each referenced award in an outlined trophy box below
+the paper's venue, at the same text size, using the title and URL from Honors & Awards. Update the
+award's title or URL only in `cv.yaml`; unknown or duplicate IDs fail generation.
+An optional `venue` adds "at [venue]" in Honors & Awards, while the paper's
+badge uses just the title to avoid repeating its venue.
+
 You should also look through the template files to make sure there isn't any
 special-case code that needs to be modified.
 The `Makefile` can also start a Jekyll server and push the
