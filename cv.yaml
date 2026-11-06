@@ -12,6 +12,7 @@ social:
   google_scholar: d8gdZR4AAAAJ
 
 # LaTeX formatting
+show_navigation: False # Set to True to show section links in page headers.
 style: banking # casual, classic, oldstyle, or banking
 color: black # blue, orange, green, red, purple, grey and black
 color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
