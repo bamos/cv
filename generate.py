@@ -53,6 +53,17 @@ def get_publication_awards(pub, awards):
         resolved.append(awards[award_id])
     return resolved
 
+
+def format_publication_venue(pub):
+    venue = pub['_venue'].strip()
+    year = pub['year'].strip()
+    if re.search(r'(?<!\d)' + re.escape(year) + r'(?!\d)', venue):
+        raise ValueError(
+            f"Publication {pub['ID']!r} repeats year {year!r} in _venue {venue!r}; "
+            "keep the publication year only in the year field."
+        )
+    return f'{venue} {year}'.strip()
+
 # TODO: Could really be cleaned up
 def get_pub_md(context, config, awards=None):
     awards = awards or {}
@@ -110,7 +121,7 @@ def get_pub_md(context, config, awards=None):
         return formatted_authors
 
     def _get_pub_str(pub, prefix, gidx, include_image):
-        author_str = _get_author_str(pub['author'])
+        author_str = pub.get('_author_display') or _get_author_str(pub['author'])
         # prefix = category['prefix']
         title = pub['title']
         # if title[-1] not in ("?", ".", "!"):
@@ -121,8 +132,7 @@ def get_pub_md(context, config, awards=None):
         #         pub['link'], title)
         title = title.replace("\n", " ")
 
-        assert('_venue' in pub and 'year' in pub)
-        year_venue = "{} {}".format(pub['_venue'], pub['year'])
+        year_venue = format_publication_venue(pub)
 
         highlight = 'selected' in pub and pub['selected'].lower() == 'true'
         
@@ -219,7 +229,8 @@ def get_pub_md(context, config, awards=None):
             for field in pub:
                 if field != 'link':
                     pub[field] = context.make_replacements(pub[field])
-            pub['author'] = _format_author_list(pub['author'])
+            if not pub.get('_author_display'):
+                pub['author'] = _format_author_list(pub['author'])
         return p
 
     # if 'categories' in config:
@@ -332,7 +343,7 @@ def get_pub_latex(context, config, awards=None):
 
 
     def _get_pub_str(pub, prefix, gidx):
-        author_str = _get_author_str(pub['author'])
+        author_str = pub.get('_author_display') or _get_author_str(pub['author'])
         # prefix = category['prefix']
         title = pub['title']
         # if title[-1] not in ("?", ".", "!"):
@@ -345,8 +356,7 @@ def get_pub_latex(context, config, awards=None):
         if 'link' in pub:
             title = r"\href{{{}}}{{{}}} ".format(pub['link'], title)
 
-        assert('_venue' in pub and 'year' in pub)
-        year_venue = "{} {}".format(pub['_venue'], pub['year'])
+        year_venue = format_publication_venue(pub)
 
         def _make_pill(url, label):
             return r"\pubpill{{\href{{{}}}{{\textcolor{{pilltext}}{{{}}}}}}}".format(
@@ -394,7 +404,8 @@ def get_pub_latex(context, config, awards=None):
             for field in pub:
                 if field != 'link':
                     pub[field] = context.make_replacements(pub[field])
-            pub['author'] = _format_author_list(pub['author'])
+            if not pub.get('_author_display'):
+                pub['author'] = _format_author_list(pub['author'])
         return p
 
     sort_bib = config['sort_bib']

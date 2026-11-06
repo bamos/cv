@@ -28,6 +28,10 @@ The Makefile can also:
 
 # What to modify
 Change the content in `cv.yaml`.
+Publication venues in BibTeX's `_venue` field should omit the publication year.
+The website and PDF append `year` automatically and fail generation if that year
+also appears in `_venue`. Leave `_venue` empty to display just the year.
+
 Paper awards are maintained in its `honors` list. Give an award a unique `id`
 (for example, `informs-ics-2026`), then reference it in a publication's BibTeX
 entry with `awards={informs-ics-2026}`. Multiple IDs can be separated by commas.
@@ -39,6 +43,10 @@ badge uses just the title to avoid repeating its venue.
 
 You should also look through the template files to make sure there isn't any
 special-case code that needs to be modified.
+For team-authored reports, an optional `_author_display` BibTeX field overrides
+the author line in the website and PDF while preserving the citation's `author`
+field. Use LaTeX formatting, as in `cv.yaml`; for example,
+`_author_display={\href{https://reflection.ai/}{Reflection Team}}`.
 The `Makefile` can also start a Jekyll server and push the
 new documents to another repository with `make jekyll` and `make push`.
 
