@@ -20,7 +20,7 @@ else
 	YAML_FILES = cv.yaml
 endif
 
-.PHONY: all public viewpdf stage jekyll push clean
+.PHONY: all public viewpdf stage jekyll check-pushed push clean
 
 all: $(PDF) $(MD)
 
@@ -59,7 +59,29 @@ stage-md: $(MD)
 jekyll: stage
 	cd $(WEBSITE_DIR) && bundle exec jekyll server
 
-push: stage
+check-pushed:
+	@set -eu; \
+	status=$$(git status --porcelain --untracked-files=normal); \
+	if [ -n "$$status" ]; then \
+		echo "Commit all changes in the CV repository and push them before running make push." >&2; \
+		exit 1; \
+	fi; \
+	if ! branch=$$(git symbolic-ref --quiet --short HEAD) || \
+	   ! remote=$$(git config --get "branch.$$branch.remote") || \
+	   ! upstream=$$(git config --get "branch.$$branch.merge") || \
+	   [ "$$remote" = "." ]; then \
+		echo "Push the current CV branch to a remote with git push -u before running make push." >&2; \
+		exit 1; \
+	fi; \
+	git fetch --quiet "$$remote" "$$upstream"; \
+	if ! git merge-base --is-ancestor HEAD FETCH_HEAD; then \
+		echo "Push the current CV commit with git push before running make push." >&2; \
+		exit 1; \
+	fi
+
+# Run staging only after the guard succeeds, including with parallel make.
+push: check-pushed
+	$(MAKE) stage
 	git -C $(WEBSITE_DIR) add $(WEBSITE_PDF) $(WEBSITE_MD)
 	git -C $(WEBSITE_DIR) commit -m "Update cv."
 	git -C $(WEBSITE_DIR) push

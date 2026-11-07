@@ -26,6 +26,11 @@ The Makefile can also:
   documents with `make jekyll`, and
 3. Push updated documents to my website with `make push`.
 
+Before `make push`, commit and push all changes in this CV repository.
+The command refuses to publish if there are uncommitted or untracked files,
+or if the current commit is not on the branch's remote upstream. It fetches
+the upstream branch to verify this before building or staging the website.
+
 # What to modify
 Change the content in `cv.yaml`.
 Publication venues in BibTeX's `_venue` field should omit the publication year.
