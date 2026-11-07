@@ -64,6 +64,14 @@ def format_publication_venue(pub):
         )
     return f'{venue} {year}'.strip()
 
+
+def validate_publication_abstract(pub):
+    if not pub.get('abstract', '').strip():
+        raise ValueError(
+            f"Publication {pub['ID']!r} has a missing or empty abstract; "
+            "add a nonempty abstract field."
+        )
+
 # TODO: Could really be cleaned up
 def get_pub_md(context, config, awards=None):
     awards = awards or {}
@@ -229,6 +237,7 @@ def get_pub_md(context, config, awards=None):
             for field in pub:
                 if field != 'link':
                     pub[field] = context.make_replacements(pub[field])
+            validate_publication_abstract(pub)
             if not pub.get('_author_display'):
                 pub['author'] = _format_author_list(pub['author'])
         return p
@@ -404,6 +413,7 @@ def get_pub_latex(context, config, awards=None):
             for field in pub:
                 if field != 'link':
                     pub[field] = context.make_replacements(pub[field])
+            validate_publication_abstract(pub)
             if not pub.get('_author_display'):
                 pub['author'] = _format_author_list(pub['author'])
         return p

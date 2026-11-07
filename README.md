@@ -31,6 +31,9 @@ Change the content in `cv.yaml`.
 Publication venues in BibTeX's `_venue` field should omit the publication year.
 The website and PDF append `year` automatically and fail generation if that year
 also appears in `_venue`. Leave `_venue` empty to display just the year.
+Every publication must have a nonempty `abstract` field. Website and PDF
+generation reject missing, empty, or whitespace-only abstracts and identify the
+publication that needs fixing.
 
 Paper awards are maintained in its `honors` list. Give an award a unique `id`
 (for example, `informs-ics-2026`), then reference it in a publication's BibTeX
