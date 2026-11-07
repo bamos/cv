@@ -173,7 +173,7 @@ def get_pub_md(context, config, awards=None):
             title = "<a href=\'{}\' target='_blank'>{}</a> ".format(
                 pub['link'], title)
 
-        for base in ['code', 'slides', 'talk']:
+        for base in ['code', 'data', 'slides', 'talk']:
             key = base + 'url'
             if key in pub:
                 link_items.append(
@@ -372,7 +372,7 @@ def get_pub_latex(context, config, awards=None):
                 url, label)
 
         link_items = []
-        for base in ['code', 'slides', 'talk']:
+        for base in ['code', 'data', 'slides', 'talk']:
             key = base + 'url'
             if key in pub:
                 link_items.append(_make_pill(pub[key], base))

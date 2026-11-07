@@ -35,6 +35,10 @@ Every publication must have a nonempty `abstract` field. Website and PDF
 generation reject missing, empty, or whitespace-only abstracts and identify the
 publication that needs fixing.
 
+Publication resource links use `codeurl`, `dataurl`, `slidesurl`, and `talkurl`
+fields in BibTeX. Both the website and PDF render the corresponding code, data,
+slides, and talk links; use `dataurl` for dataset repositories.
+
 Paper awards are maintained in its `honors` list. Give an award a unique `id`
 (for example, `informs-ics-2026`), then reference it in a publication's BibTeX
 entry with `awards={informs-ics-2026}`. Multiple IDs can be separated by commas.

@@ -32,6 +32,7 @@ author={Lily H Zhang and Smitha Milli and Karen Long Jusko and Jonathan Smith an
 year={2026},
 _venue={ICLR},
 url={https://arxiv.org/abs/2507.09650},
+dataurl={https://github.com/facebookresearch/community-alignment-dataset},
 abstract={
 How can large language models (LLMs) serve users with varying preferences that may conflict across cultural, political, or other dimensions? To advance this challenge, this paper establishes four key results. First, we demonstrate, through a large-scale multilingual human study with representative samples from five countries (N=15,000), that humans exhibit significantly more variation in preferences than the responses of 21 state-of-the-art LLMs. Second, we show that existing methods for preference dataset collection are insufficient for learning the diversity of human preferences even along two of the most salient dimensions of variability in global values, due to the underlying homogeneity of candidate responses. Third, we argue that this motivates the need for negatively-correlated sampling when generating candidate sets, and we show that simple prompt-based techniques for doing so significantly enhance the performance of alignment methods in learning heterogeneous preferences. Fourth, based on this novel candidate sampling approach, we collect and open-source Community Alignment, the largest and most representative multilingual and multi-turn preference dataset to date, featuring almost 200,000 comparisons from annotators spanning five countries. We hope that the Community Alignment dataset will be a valuable resource for improving the effectiveness of LLMs for a diverse global population.
   }
@@ -43,6 +44,7 @@ How can large language models (LLMs) serve users with varying preferences that m
   year={2026},
   _venue={ICML},
   url={https://arxiv.org/abs/2601.21306},
+  codeurl={https://github.com/facebookresearch/MRSQ},
   abstract={This paper investigates search in model-based reinforcement learning (RL). Conventional wisdom holds that long-term predictions and compounding errors are the primary obstacles for model-based RL. We challenge this view, showing that search is not a plug-and-play replacement for a learned policy. Surprisingly, we find that search can harm performance even when the model is highly accurate. Instead, we show that mitigating distribution shift matters more than improving model or value function accuracy. Building on this insight, we identify key techniques for enabling effective search, achieving state-of-the-art performance across multiple popular benchmark domains.},
 }
 
@@ -93,6 +95,7 @@ How can large language models (LLMs) serve users with varying preferences that m
     author={Mattia Silvestri and Senne Berden and Jayanta Mandi and Ali İrfan Mahmutoğulları and Brandon Amos and Tias Guns and Michele Lombardi},
     year={2026},
     url={https://arxiv.org/abs/2307.05213},
+    codeurl={https://github.com/matsilv/sfge-dfl},
     _venue={JAIR},
     abstract={
 Many real-world optimization problems contain parameters that are unknown before deployment time, either due to stochasticity or to lack of information (e.g., demand or travel times in delivery problems). A common strategy in such cases is to estimate said parameters via machine learning (ML) models trained to minimize the prediction error, which however is not necessarily aligned with the downstream task-level error. The decision-focused learning (DFL) paradigm overcomes this limitation by training to directly minimize a task loss, e.g. regret. Since the latter has non-informative gradients for combinatorial problems, state-of-the-art DFL methods introduce surrogates and approximations that enable training. But these methods exploit specific assumptions about the problem structures (e.g., convex or linear problems, unknown parameters only in the objective function). We propose an alternative method that makes no such assumptions, it combines stochastic smoothing with score function gradient estimation which works on any task loss. This opens up the use of DFL methods to nonlinear objectives, uncertain parameters in the problem constraints, and even two-stage stochastic optimization. Experiments show that it typically requires more epochs, but that it is on par with specialized methods and performs especially well for the difficult case of problems with uncertainty in the constraints, in terms of solution quality, scalability, or both.
@@ -254,6 +257,7 @@ Numerous biological and physical processes can be modeled as systems of interact
       _venue={NeurIPS},
       year={2025},
       url={https://arxiv.org/abs/2412.10321},
+      codeurl={https://github.com/facebookresearch/jailbreak-objectives},
       slidesurl={https://bamos.github.io/presentations/2026.advprompter-algotune.html},
       abstract={
         Many jailbreak attacks on large language models (LLMs) rely on a
@@ -784,6 +788,7 @@ datasets.
   journal={arXiv preprint arXiv:2203.06832},
   year={2022},
   url={https://arxiv.org/abs/2203.06832},
+  codeurl={https://github.com/facebookresearch/semi-discrete-flow},
   _venue={NeurIPS},
   abstract={
     Mapping between discrete and continuous distributions is a difficult
@@ -1622,6 +1627,7 @@ enables rapid prototyping of the approaches in this thesis.
   _venue={ICML},
   year={2016},
   url={http://proceedings.mlr.press/v48/zhaoa16.html},
+  codeurl={https://github.com/uiuctml/Sum-Product-Networks},
   abstract={
     Sum-Product Networks (SPNs) are probabilistic inference machines that admit
     exact inference in linear time in the size of the network. Existing
