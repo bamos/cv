@@ -6,7 +6,24 @@
   month={nov},
   _venue={},
   url={https://reflection.ai/documents/beam-model-tech-report},
-  selected={true}
+  selected={true},
+  abstract={
+Beam is a sparse Mixture-of-Experts (MoE) model with 501.3B total parameters and 23.4B
+active parameters, specifically built and optimized for coding, reasoning, and agentic workloads.
+Beam delivers frontier level reasoning, while requiring 3-4x less inference compute than many
+models of its class. Pretrained on 23.8T diverse, curated, high-quality tokens, Beam features
+a 1M-token context window achieved through a novel two-stage midtraining phase, built on
+verifiable, correctness-anchored data. Post-training leveraged a large-scale, fully asynchronous
+reinforcement learning (RL) campaign across 10.5K GB300 GPUs, generating over 100M rollouts
+over 4 weeks of training. We believe this is one of the largest scale RL runs conducted by any open
+lab to date. Across our evaluation suite, capabilities continued to improve as we increased RL
+compute, with no sign of a plateau. Supported by deep hardware-model co-design, FP8/NVFP4
+quantization, and a 1.93B-parameter speculative decoding drafter (DFlash 2), Beam maximizes
+serving throughput with efficient, flexible deployment. Averaged across conversation turns and
+harm categories, Beam refuses or pivots on 88.9% of harmful requests while complying with
+81.5% of harmless requests, achieving the highest refusal/pivot rate on harmful requests among
+open-weight models on the Pareto frontier.
+  }
 }
 
 @inproceedings{zhang2026cultivating,
@@ -35,6 +52,7 @@ How can large language models (LLMs) serve users with varying preferences that m
     year={2026},
     codeurl={https://github.com/facebookresearch/advgame},
     url={https://arxiv.org/abs/2512.20806},
+    slidesurl={https://bamos.github.io/presentations/2026.advprompter-algotune.html},
     _venue={ICML},
     abstract={Ensuring the safety of language models (LMs) while
         maintaining their usefulness remains a critical
@@ -160,6 +178,7 @@ We train the AdvPrompter using a novel algorithm that does not require access to
   year={2025},
   _venue={ICML},
   url={https://arxiv.org/abs/2411.00698},
+  slidesurl={https://bamos.github.io/presentations/2024.transport-between-distributions-over-distributions.html},
   codeurl={https://github.com/DoronHav/WassersteinFlowMatching},
   _venue={ICML},
   selected={true},
@@ -220,6 +239,7 @@ We train the AdvPrompter using a novel algorithm that does not require access to
   title={Meta Flow Matching:  Integrating Vector Fields on the Wasserstein Manifold},
   author={Lazar Atanackovic and Xi Zhang and Brandon Amos and Mathieu Blanchette and Leo J Lee and Yoshua Bengio and Alexander Tong and Kirill Neklyudov},
   url={https://arxiv.org/abs/2408.14608},
+  slidesurl={https://bamos.github.io/presentations/2024.transport-between-distributions-over-distributions.html},
   codeurl={https://github.com/lazaratan/meta-flow-matching},
   year={2025},
   _venue={ICLR},
@@ -234,6 +254,7 @@ Numerous biological and physical processes can be modeled as systems of interact
       _venue={NeurIPS},
       year={2025},
       url={https://arxiv.org/abs/2412.10321},
+      slidesurl={https://bamos.github.io/presentations/2026.advprompter-algotune.html},
       abstract={
         Many jailbreak attacks on large language models (LLMs) rely on a
         common objective: making the model respond with the
@@ -269,6 +290,7 @@ Numerous biological and physical processes can be modeled as systems of interact
   year={2025},
   _venue={NeurIPS Datasets and Benchmarks Track},
   url={https://arxiv.org/abs/2507.15887},
+  slidesurl={https://bamos.github.io/presentations/2026.advprompter-algotune.html},
   codeurl={https://github.com/oripress/AlgoTune},
   abstract={
     Despite progress in language model (LM) capabilities, evaluations
@@ -307,6 +329,7 @@ Numerous biological and physical processes can be modeled as systems of interact
   _venue={UAI},
   selected={true},
   url={https://arxiv.org/abs/2406.00288},
+  slidesurl={https://bamos.github.io/presentations/2025.transport-flows-physics.html},
   codeurl={https://github.com/facebookresearch/lagrangian-ot},
   abstract={
 We investigate the optimal transport problem between probability measures when the underlying cost function is understood to satisfy a least action principle, also known as a Lagrangian cost. These generalizations are useful when connecting observations from a physical system, where the transport dynamics are influenced by the geometry of the system, such as obstacles, (e.g., incorporating barrier functions in the Lagrangian) and allows practitioners to incorporate a priori knowledge of the underlying system such as non-Euclidean geometries (e.g., paths must be circular). Our contributions are of computational interest, where we demonstrate the ability to efficiently compute geodesics and amortize spline-based paths, which has not been done before, even in low dimensional problems. Unlike prior work, we also output the resulting Lagrangian optimal transport map without requiring an ODE solver. We demonstrate the effectiveness of our formulation on low-dimensional examples taken from  prior work.
@@ -398,6 +421,7 @@ abstract={Travel planning is a challenging and time-consuming task that aims to 
   author={Brandon Amos},
   year={2023},
   url={https://arxiv.org/abs/2202.00665},
+  slidesurl={https://bamos.github.io/presentations/2023.amortized-optimization.html},
   _venue={Foundations and Trends in Machine Learning},
   codeurl={https://github.com/facebookresearch/amortized-optimization-tutorial},
   selected={true},
@@ -427,6 +451,7 @@ transport, and deep equilibrium networks.
   author={Brandon Amos},
   year={2023},
   url={https://arxiv.org/abs/2210.12153},
+  slidesurl={https://bamos.github.io/presentations/2023.w2ot.html},
   codeurl={https://github.com/facebookresearch/w2ot},
   _venue={ICLR},
   selected={true},
@@ -490,6 +515,7 @@ transport, and deep equilibrium networks.
   author={Brandon Amos and Samuel Cohen and Giulia Luise and Ievgen Redko},
   year={2023},
   url={https://arxiv.org/abs/2206.05262},
+  slidesurl={https://bamos.github.io/presentations/2023.meta-ot.html},
   codeurl={https://github.com/facebookresearch/meta-ot},
   _venue={ICML},
   selected={true},
@@ -594,6 +620,7 @@ datasets.
   _venue={NeurIPS},
   selected={true},
   url={https://arxiv.org/abs/2312.05250},
+  slidesurl={https://bamos.github.io/presentations/2024.e2e-geometries.html},
   codeurl={https://github.com/facebookresearch/taskmet},
   abstract={
     Deep learning models are often used with some downstream
@@ -687,6 +714,7 @@ datasets.
   author={Arnaud Fickinger and Samuel Cohen and Stuart Russell and Brandon Amos},
   year={2022},
   url={https://arxiv.org/abs/2110.03684},
+  slidesurl={https://bamos.github.io/presentations/2025.transport-flows-physics.html},
   codeurl={https://github.com/facebookresearch/gwil},
   _venue={ICLR},
   selected={true},
@@ -791,6 +819,7 @@ datasets.
 
 @misc{pineda2022theseus,
   url = {https://arxiv.org/abs/2207.09442},
+  slidesurl={https://bamos.github.io/presentations/2024.differentiable-optimization-and-robotics.html},
   author = {Pineda, Luis and Fan, Taosha and Monge, Maurizio and Venkataraman, Shobha and Sodhi, Paloma and Chen, Ricky and Ortiz, Joseph and DeTone, Daniel and Wang, Austin and Anderson, Stuart and Dong, Jing and Amos, Brandon and Mukadam, Mustafa},
   title = {Theseus: A Library for Differentiable Nonlinear Optimization},
   _venue = {NeurIPS},
@@ -864,7 +893,7 @@ datasets.
       _note={Oral},
       url={https://arxiv.org/abs/2008.12775},
       codeurl={https://github.com/facebookresearch/svg},
-      slidesurl={http://bamos.github.io/data/slides/2021.svg.pdf},
+      slidesurl={https://bamos.github.io/presentations/2021.svg.html},
       _talkurl={https://youtu.be/ABS40GW7Ekk?t=5393},
       selected={true},
       abstract={
@@ -908,7 +937,7 @@ datasets.
   year={2021},
   url={https://arxiv.org/abs/2106.10272},
   codeurl={https://github.com/facebookresearch/rcpm},
-  slidesurl={http://bamos.github.io/data/slides/2021.rcpm.pdf},
+  slidesurl={https://bamos.github.io/presentations/2021.rcpm.html},
   selected={true},
   abstract={
     Modeling distributions on Riemannian manifolds is a crucial
@@ -994,7 +1023,7 @@ datasets.
       _venue={AISTATS},
       url={https://arxiv.org/abs/2006.12648},
       codeurl={https://github.com/samcohen16/Aligning-Time-Series},
-      slidesurl={http://bamos.github.io/data/slides/2021.gdtw.pdf},
+      slidesurl={https://bamos.github.io/data/slides/2021.gdtw.pdf},
       abstract={
         Dynamic time warping (DTW) is a useful method for aligning, comparing
         and combining time series, but it requires them to
@@ -1254,7 +1283,7 @@ our methods and expert demonstrations.
   year={2020},
   url={https://arxiv.org/abs/1909.12830},
   codeurl={https://github.com/facebookresearch/dcem},
-  slidesurl={http://bamos.github.io/data/slides/2020.dcem.pdf},
+  slidesurl={https://bamos.github.io/presentations/2020.dcem.html},
   selected={true},
   abstract={
     We study the Cross-Entropy Method (CEM) for the non-convex
@@ -1345,6 +1374,7 @@ our methods and expert demonstrations.
   year={2020},
   _venue = {NeurIPS Geo4dl Workshop},
   url={https://drive.google.com/file/d/1Ewro0Ne1tvK15nHyYopY4wZ59QTVB-1c/view},
+  slidesurl={https://bamos.github.io/presentations/2024.e2e-geometries.html},
   abstract = {
 We present a new class of learnable Riemannian manifolds with a metric
 parameterized by a deep neural network. The core manifold operations–specifically
@@ -1366,6 +1396,7 @@ in graph embedding tasks.
   _venue = {Ph.D. Thesis},
   codeurl={https://github.com/bamos/thesis},
   url={https://github.com/bamos/thesis/raw/master/bamos_thesis.pdf},
+  slidesurl={https://bamos.github.io/presentations/2019.thesis.html},
   selected={true},
   abstract={
 Domain-specific modeling priors and specialized components are becoming
@@ -1393,6 +1424,7 @@ enables rapid prototyping of the approaches in this thesis.
   booktitle={NeurIPS},
   _venue={NeurIPS},
   url={http://web.stanford.edu/~boyd/papers/pdf/diff_cvxpy.pdf},
+  slidesurl={https://bamos.github.io/presentations/2022.differentiable-optimization.html},
   codeurl={https://github.com/cvxgrp/cvxpylayers},
   selected={true},
   abstract={
@@ -1442,6 +1474,7 @@ enables rapid prototyping of the approaches in this thesis.
   booktitle={NeurIPS},
   _venue={NeurIPS},
   url={https://arxiv.org/abs/1810.13400},
+  slidesurl={https://bamos.github.io/presentations/2018.differentiable-mpc.html},
   codeurl={https://locuslab.github.io/mpc.pytorch/},
   selected={true},
   abstract={
@@ -1457,7 +1490,7 @@ enables rapid prototyping of the approaches in this thesis.
   year={2017},
   url={http://arxiv.org/abs/1703.00443},
   codeurl={https://github.com/locuslab/optnet},
-  slidesurl={http://bamos.github.io/data/slides/2017.optnet.pdf},
+  slidesurl={https://bamos.github.io/presentations/2017.optnet.html},
   selected={true},
   abstract={
     This paper presents OptNet, a network architecture that integrates
@@ -1493,7 +1526,7 @@ enables rapid prototyping of the approaches in this thesis.
   codeurl={https://github.com/locuslab/icnn},
   year={2017},
   url={http://arxiv.org/abs/1609.07152},
-  slidesurl={http://bamos.github.io/data/slides/2017.icnn.pdf},
+  slidesurl={https://bamos.github.io/presentations/2017.icnn.html},
   selected={true},
   abstract={
     This paper presents the input convex neural network
@@ -1523,6 +1556,7 @@ enables rapid prototyping of the approaches in this thesis.
   _venue={NeurIPS},
   codeurl={https://github.com/locuslab/e2e-model-learning},
   url={http://arxiv.org/abs/1703.04529},
+  slidesurl={https://bamos.github.io/presentations/2018.optnet.ismp.html},
   abstract={
     As machine learning techniques have become more ubiquitous, it has
     become common to see machine learning prediction algorithms operating
