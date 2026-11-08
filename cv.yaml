@@ -992,7 +992,7 @@ advising:
     url: https://gaoyuezhou.github.io/
   - year: 2025
     name: Ulyana Piterbarg
-    details: "visiting FAIR from NYU, now at Google DeepMind"
+    details: "visiting FAIR from NYU, now scientist at Google DeepMind"
     url: https://upiterbarg.github.io/
   - year: 2025
     name: Ollie Liu
@@ -1004,8 +1004,8 @@ advising:
     url: https://doronhav.github.io/
   - year: 2024--2025
     name: Aaron Havens
-    details: "visiting FAIR from UIUC, now postdoc at FAIR"
-    url: https://scholar.google.com/citations?user=HBAXF6YAAAAJ
+    details: "visiting FAIR from UIUC, now scientist at FAIR"
+    url: https://aaronhavens.github.io/
   - year: 2022--2024
     name: Aram-Alexandre Pooladian
     details: "visiting FAIR from NYU, now at Yale"
@@ -1016,8 +1016,8 @@ advising:
     url: https://cdenrich.github.io/
   - year: 2023--2024
     name: Anselm Paulus
-    details: "visiting FAIR from Max Planck Institute, Tübingen"
-    url: https://scholar.google.com/citations?user=njZL5CQAAAAJ
+    details: "visiting FAIR from Max Planck Institute, Tübingen, now co-founder at Exponential Security Labs"
+    url: https://a-paulus.github.io/
   - year: 2023
     name: Matthew Retchin
     details: "Columbia MS thesis committee, now at Harvard"
@@ -1053,10 +1053,10 @@ advising:
   - year: 2020
     name: Paul Liang
     details: "visiting FAIR from CMU, now professor at MIT"
-    url: http://www.cs.cmu.edu/~pliang/
+    url: https://pliang279.github.io/
   - year: 2018
     name: Phillip Wang
-    details: "at CMU, now CEO at \\href{https://gather.town/}{Gather}"
+    details: "at CMU, now director at Figma"
     url: https://phillipkwang.com/
 
 service:
