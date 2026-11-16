@@ -26,6 +26,28 @@ open-weight models on the Pareto frontier.
   }
 }
 
+@misc{amos2026numerical,
+  title={On numerical issues of divergences between nearly equal distributions},
+  author={Brandon Amos},
+  year={2026},
+  month={nov},
+  _venue={},
+  url={https://arxiv.org/abs/2611.18511},
+  selected={true},
+  abstract={
+Barron et al. (2026) recently identified numerical issues in the softmax and soft
+cross-entropy loss. We show that similar issues are present in standard divergence
+operations between categorical distributions. This includes the forward and
+reverse Kullback-Leibler (KL) divergence and generalized Jensen-Shannon divergence
+(JSD), as well as Monte Carlo KL estimates and entropy. When the distributions are
+nearly equal, rounding and cancellation issues affect the forward and gradient
+computations. These issues can affect settings using divergences in optimization
+objectives, such as knowledge distillation, reinforcement learning, and proximal
+methods. We propose numerically stable reformulations and provide example
+implementations for each setting, validated by property-based tests.
+  }
+}
+
 @inproceedings{zhang2026cultivating,
 title={Cultivating Pluralism In Algorithmic Monoculture: The Community Alignment Dataset},
 author={Lily H Zhang and Smitha Milli and Karen Long Jusko and Jonathan Smith and Brandon Amos and Wassim Bouaziz and Jack Kussman and Manon Revel and Lisa Titus and Bhaktipriya Radharapu and Jane Yu and Vidya Sarma and Kristopher Rose and Maximilian Nickel},
