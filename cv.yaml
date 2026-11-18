@@ -732,6 +732,11 @@ repos:
     desc: $\varheart$ Linux, xmonad, emacs, vim, zsh, tmux
 
 talks:
+  - title: "Safety Alignment of LMs via Non-cooperative Games"
+    location: Penn ASSET Center
+    year: 2026
+    url: https://bamos.github.io/presentations/2026.advgame.html
+    location_url: https://asset.engineering.upenn.edu/event/brandon-amos-reflection-ai-advgame-safety-alignment-of-lms-via-non-cooperative-games/
   - title: "On prompt optimization and coding agents"
     location: Columbia NLP Seminar
     year: 2026
