@@ -482,6 +482,12 @@ def truncate_to_k(num):
     return f"{num_k}k+"
 
 
+def format_repo_stars(count):
+    if count < 1000:
+        return str(count)
+    return f'{count / 1000:.1f}'.removesuffix('.0') + 'k'
+
+
 def get_repo_stars(soup):
     # GitHub's React repository page includes an exact count in its page data.
     for script in soup.select('script[type="application/json"]'):
@@ -534,10 +540,10 @@ def add_repo_data(context, config, in_tex):
         soup = BeautifulSoup(repo_htmls[short_name], 'html.parser')
 
         try:
-            star_str, star_int = get_repo_stars(soup)
+            _, star_int = get_repo_stars(soup)
         except ValueError as exc:
             raise ValueError(f"Cannot read stars for {item['repo_url']}: {exc}") from exc
-        item['stars'] = star_str
+        item['stars'] = format_repo_stars(star_int)
 
         total_stars += star_int
 
