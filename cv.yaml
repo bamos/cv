@@ -733,7 +733,7 @@ repos:
 
 talks:
   - title: "Safety Alignment of LMs via Non-cooperative Games"
-    location: Penn ASSET Center
+    location: Penn ASSET Center Seminar
     year: 2026
     url: https://bamos.github.io/presentations/2026.advgame.html
     location_url: https://asset.engineering.upenn.edu/event/brandon-amos-reflection-ai-advgame-safety-alignment-of-lms-via-non-cooperative-games/
