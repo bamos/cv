@@ -33,6 +33,18 @@ the upstream branch to verify this before building or staging the website.
 
 # What to modify
 Change the content in `cv.yaml`.
+The informal biography is in `about`, and the formal biography is in
+`about_formal` immediately below it. Both support website markup; the formal
+biography uses Markdown links. Generation writes `build/cv.md` and `build/bio.md`.
+The homepage includes the generated bio so its Formal switch and the standalone
+bio page use the same text.
+
+`make stage-md` copies both Markdown files to the website. `make stage` also
+updates the PDF. The homepage tabs, section containers, abstract buttons, image
+labels, and search-snippet exclusions are generated here. The website repository
+owns the layouts, styles, JavaScript, and photos; staging leaves those files intact.
+Edit the YAML, templates, or generator rather than the generated website files.
+
 Publication venues in BibTeX's `_venue` field should omit the publication year.
 The website and PDF append `year` automatically and fail generation if that year
 also appears in `_venue`. Leave `_venue` empty to display just the year.

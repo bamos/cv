@@ -6,6 +6,7 @@
 WEBSITE_DIR=$(HOME)/repos/website
 WEBSITE_PDF=$(WEBSITE_DIR)/cv.pdf
 WEBSITE_MD=$(WEBSITE_DIR)/index.md
+WEBSITE_BIO=$(WEBSITE_DIR)/bio.md
 
 TEMPLATES=$(shell find templates -type f)
 
@@ -13,6 +14,7 @@ BUILD_DIR=build
 TEX=$(BUILD_DIR)/cv.tex
 PDF=$(BUILD_DIR)/cv.pdf
 MD=$(BUILD_DIR)/cv.md
+BIO=$(BUILD_DIR)/bio.md
 
 ifneq ("$(wildcard cv.hidden.yaml)","")
 	YAML_FILES = cv.yaml cv.hidden.yaml
@@ -22,7 +24,7 @@ endif
 
 .PHONY: all public viewpdf stage jekyll check-pushed push clean
 
-all: $(PDF) $(MD)
+all: $(PDF) $(MD) $(BIO)
 
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
@@ -30,7 +32,7 @@ $(BUILD_DIR):
 public: $(BUILD_DIR) $(TEMPLATES) $(YAML_FILES) generate.py
 	./generate.py cv.yaml
 
-$(TEX) $(MD): $(TEMPLATES) $(YAML_FILES) generate.py publications/*.bib
+$(TEX) $(MD) $(BIO): $(TEMPLATES) $(YAML_FILES) generate.py publications/*.bib
 	./generate.py $(YAML_FILES)
 
 $(PDF): $(TEX)
@@ -43,8 +45,7 @@ $(PDF): $(TEX)
 viewpdf: $(PDF)
 	gnome-open $(PDF)
 
-stage: $(PDF) $(MD)
-	git -C $(WEBSITE_DIR) checkout $(WEBSITE_PDF) $(WEBSITE_MD)
+stage: $(PDF) $(MD) $(BIO)
 	@if git -C $(WEBSITE_DIR) diff-index --quiet HEAD --; then \
 		git -C $(WEBSITE_DIR) pull --rebase; \
 	else \
@@ -52,9 +53,11 @@ stage: $(PDF) $(MD)
 	fi
 	cp $(PDF) $(WEBSITE_PDF)
 	cp $(MD) $(WEBSITE_MD)
+	cp $(BIO) $(WEBSITE_BIO)
 
-stage-md: $(MD)
+stage-md: $(MD) $(BIO)
 	cp $(MD) $(WEBSITE_MD)
+	cp $(BIO) $(WEBSITE_BIO)
 
 jekyll: stage
 	cd $(WEBSITE_DIR) && bundle exec jekyll server
@@ -82,9 +85,9 @@ check-pushed:
 # Run staging only after the guard succeeds, including with parallel make.
 push: check-pushed
 	$(MAKE) stage
-	git -C $(WEBSITE_DIR) add $(WEBSITE_PDF) $(WEBSITE_MD)
+	git -C $(WEBSITE_DIR) add $(WEBSITE_PDF) $(WEBSITE_MD) $(WEBSITE_BIO)
 	git -C $(WEBSITE_DIR) commit -m "Update cv."
 	git -C $(WEBSITE_DIR) push
 
 clean:
-	rm -rf *.db *.shelf $(BUILD_DIR)/cv*
+	rm -rf *.db *.shelf $(BUILD_DIR)/cv* $(BIO)

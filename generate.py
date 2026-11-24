@@ -147,7 +147,8 @@ def get_pub_md(context, config, awards=None):
         # Check if image exists in the website repo
         img_path = os.path.join('..', 'website', 'images', 'publications', f'{pub["ID"]}.png')
         if os.path.exists(img_path):
-            img_str = f'<img src="images/publications/{pub["ID"]}.png" class="publicationImg" />'
+            image_label = escape('Read ' + ' '.join(BeautifulSoup(title, 'html.parser').get_text().split()), quote=True)
+            img_str = f'<img src="images/publications/{pub["ID"]}.png" alt="{image_label}" class="publicationImg" />'
         else:
             img_str = ''
         
@@ -157,18 +158,18 @@ def get_pub_md(context, config, awards=None):
             abstract_body = context.make_replacements(pub['abstract']).strip()
             if abstract_body:
                 link_items.append(
-                    "<a class='pub-pill' href='javascript:;' "
-                    "onclick='$(\"#abs_{}{}\").toggle()'>abstract</a>".format(
+                    '<button type="button" class="pub-pill" '
+                    'aria-controls="abs_{}{}" aria-expanded="false">abstract</button>'.format(
                         pub['ID'], prefix))
                 abstract = (
                     "<div id=\"abs_{id}{prefix}\" class=\"abstract-box\" "
-                    "style=\"display: none\" markdown=\"1\">\n"
+                    "data-nosnippet style=\"display: none\" markdown=\"1\">\n"
                     "{body}\n"
                     "</div>"
                 ).format(id=pub['ID'], prefix=prefix, body=abstract_body).rstrip()
         if 'link' in pub:
             if img_str:  # Only wrap image in link if image exists
-                img_str = "<a href=\'{}\' target='_blank'>{}</a> ".format(
+                img_str = "<a href=\'{}\' target='_blank'>{}</a>".format(
                     pub['link'], img_str)
             title = "<a href=\'{}\' target='_blank'>{}</a> ".format(
                 pub['link'], title)
@@ -633,6 +634,7 @@ class RenderContext(object):
         awards = index_awards(yaml_data.get('honors', []))
 
         body = ''
+        sections = []
         if self._file_ending == '.md' and 'order_md' in yaml_data:
             order = yaml_data['order_md']
         elif self._file_ending == '.tex' and 'order_latex' in yaml_data:
@@ -643,7 +645,8 @@ class RenderContext(object):
         for section_tag, section_title in order:
             print("Processing section: {}".format(section_tag))
 
-            section_data = {'name': section_title, 'section_id': section_tag}
+            home_id = {'all_publications': 'publications', 'repos': 'code'}.get(section_tag, section_tag)
+            section_data = {'name': section_title, 'section_id': section_tag, 'home_id': home_id}
             section_content = None if section_tag == "NEWPAGE" else yaml_data[section_tag]
 
             if section_tag == 'about':
@@ -701,8 +704,10 @@ class RenderContext(object):
                 rendered_section = self._render_template(
                     section_template_name, section_data)
                 body += rendered_section.rstrip() + '\n\n\n'
+                sections.append({'id': home_id, 'name': section_title, 'content': rendered_section.rstrip()})
 
         yaml_data['body'] = body
+        yaml_data['sections'] = sections
         yaml_data['today'] = date.today().strftime("%B %d, %Y")
         return self._render_template(
             self._base_template, yaml_data).rstrip() + '\n'
@@ -771,6 +776,10 @@ def process_resume(context, yaml_data, preview):
         print(rendered_resume)
     else:
         context.write_to_outfile(rendered_resume)
+        if context is MARKDOWN_CONTEXT and yaml_data.get('about_formal'):
+            bio = context._render_template('bio.md', context.make_replacements(yaml_data))
+            with open(os.path.join(context.BUILD_DIR, 'bio.md'), 'w', encoding='utf-8') as out:
+                out.write(bio.rstrip() + '\n')
 
 
 def main():

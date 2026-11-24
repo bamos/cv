@@ -2,14 +2,14 @@
 
 {% block body %}
 *Slides for my major presentations are available
-[here](https://bamos.github.io/presentations/)
+[here](https://github.com/bamos/presentations)
 under a CC-BY license.*
 
 <table class="table table-hover">
 {% for item in items %}
 <tr>
   <td align='right' style='padding-right:0;padding-left:0;'>{{ loop.index }}.</td>
-  <td style='padding-right:0;'>
+  <td>
     <span class='cvdate'>{{ item.year }}</span>
     {% if item.url %}
      <a href="{{ item.url }}"><em>{{ item.title }}</em></a>

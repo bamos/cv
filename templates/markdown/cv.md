@@ -1,43 +1,47 @@
 ---
 layout: index
-title: Brandon Amos
+title: {{ name.first }} {{ name.last }}
 ---
 
-<style>
-.publication-award-row { margin-top: 3px; }
-.publication-award {
-  display: inline-flex;
-  align-items: center;
-  padding: 2px 6px;
-  border: none;
-  border-radius: 5px;
-  background: #f1f2f3;
-  color: #4b535b;
-  font-size: inherit;
-  line-height: 1.25;
-  vertical-align: baseline;
-  transition: background-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
-}
-.publication-award a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35em;
-  color: inherit;
-  text-decoration: none;
-}
-.publication-award i { color: inherit; line-height: 1; }
-.publication-award:hover,
-.publication-award:focus-within {
-  background: #e9ecef;
-  box-shadow: 0 2px 6px rgba(35, 45, 55, 0.14);
-  transform: translateY(-1px);
-}
-@media (prefers-reduced-motion: reduce) {
-  .publication-award { transition: none; }
-  .publication-award:hover, .publication-award:focus-within { transform: none; }
-}
-</style>
+{% for section in sections if section.id == 'about' %}
+<div id="about-intro" markdown="1">
 
-{{ body }}
+{{ section.content }}
 
-<p style="font-size: 0.85em; color: #999;">Last updated on {{ today }}.</p>
+</div>
+{% endfor %}
+
+{% if about_formal %}
+<div id="bio" class="home-bio-formal" hidden markdown="1">
+
+{% raw %}{% comment %}Generated from about_formal in the CV YAML; bio.md also serves the standalone page.{% endcomment %}
+{% capture formal_bio %}{% include_relative bio.md %}{% endcapture %}
+{% assign bio_parts = formal_bio | split: '---' %}
+{{ bio_parts | slice: 2, bio_parts.size | join: '---' | normalize_whitespace | markdownify }}{% endraw %}
+
+</div>
+{% endif %}
+
+<div class="home-sections" markdown="1">
+
+<div class="home-tabs-slot" markdown="0">
+<div class="home-navigation">
+<nav class="home-tabs" aria-label="Homepage sections">
+{% for section in sections if section.id != 'about' %}
+  <a id="tab-{{ section.id }}" href="#{{ section.id }}">{{ section.name }}</a>
+{% endfor %}
+</nav>
+</div>
+</div>
+
+{% for section in sections if section.id != 'about' %}
+<section id="{{ section.id }}" class="home-section" markdown="1">
+
+{{ section.content }}
+
+</section>
+
+{% endfor %}
+</div>
+
+<p id="last-updated" style="font-size: 0.85em; color: #999;">Last updated on {{ today }}.</p>
