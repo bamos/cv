@@ -1,19 +1,22 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-% \begin{itemize}
 ~< for award in items >~
+  ~< set award_number = loop.index >~
+  \cvonelinerow{<< section_id >>, entry << award_number >>}{%
   ~< if award.url >~
     \href{<<award.url>>}{<< award.title ~ (' at ' ~ award.venue if award.venue else '') >>}
   ~< else >~
     << award.title ~ (' at ' ~ award.venue if award.venue else '') >>
   ~< endif >~
-  \hfill << award['year'] >>
+  \hfill << award.year >>}
   ~< if award.descr >~
-    \\ {\scriptsize \color{gray}{<< award.descr >>} \par}
+    ~< for line in award.descr.strip().split('\n\n') >~
+      {\scriptsize\color{gray}%
+        \cvonelinerow{<< section_id >>, entry << award_number >>, description line << loop.index >>}{<< line >>}}
+    ~< endfor >~
   ~< else >~
-    \\[0.5mm]
+    \vspace{0.5mm}
   ~< endif >~
 ~< endfor >~
-% \end{itemize}
 ~< endblock body >~

@@ -15,8 +15,14 @@ This repo contains the source for my CV:
 
 
 # Building and running
-Dependencies are included in `requirements.txt` and can be installed
-using `pip` with `pip3 install -r requirements.txt`.
+Install the Python dependencies in a local environment:
+
+```sh
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
 `make` will call [generate.py](generate.py) and
 build the LaTeX documents with `latexmk` and `biber`.
 The Makefile can also:
@@ -67,6 +73,12 @@ badge uses just the title to avoid repeating its venue.
 
 You should also look through the template files to make sure there isn't any
 special-case code that needs to be modified.
+The PDF build fails if an entry in Education, Positions, Honors & Awards, Code,
+Talks, Interns and Students, Professional Activities, Teaching, or Skills
+exceeds its line width. The error identifies the section and entry number.
+Use a blank line in an award's YAML block description to start an intentional
+new line in the PDF.
+
 For team-authored reports, an optional `_author_display` BibTeX field overrides
 the author line in the website and PDF while preserving the citation's `author`
 field. Use LaTeX formatting, as in `cv.yaml`; for example,

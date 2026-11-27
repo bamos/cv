@@ -2,21 +2,22 @@
 
 ~< block body >~
   ~< for item in items.main >~
+    \cvonelinerow{<< section_id >>, entry << loop.index >>}{%
     ~< if item.url >~
       \href{<< item.url >>}{<< item.details>>}
     ~< else >~
       << item.details >>
     ~< endif >~
-    \hfill << item.year >> \\
+    \hfill << item.year >>}
 ~< endfor >~
 
 \subsection{Area Chair}
 ~< for item in items.area_chair >~
-<< item >> \\
+\cvonelinerow{<< section_id >>, Area Chair entry << loop.index >>}{<< item >>}
 ~< endfor >~
 
 \subsection{Reviewer}
 ~< for item in items.reviewer >~
-<< item >> \\
+\cvonelinerow{<< section_id >>, Reviewer entry << loop.index >>}{<< item >>}
 ~< endfor >~
 ~< endblock body >~

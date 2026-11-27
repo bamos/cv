@@ -24,6 +24,9 @@ endif
 
 .PHONY: all public viewpdf stage jekyll check-pushed push clean
 
+# Discard incomplete output if LaTeX stops on an error.
+.DELETE_ON_ERROR:
+
 all: $(PDF) $(MD) $(BIO)
 
 $(BUILD_DIR):

@@ -1,7 +1,6 @@
 \documentclass[11pt,letter,sans]{moderncv}
 
 \usepackage{longtable}
-\setlength{\LTleft}{0pt}
 \definecolor{tab_highlight}{HTML}{f0c967}
 
 \moderncvcolor{<< color >>}
@@ -33,6 +32,32 @@
   text height=0.75em,text depth=0.15em}}
 
 \usepackage{lastpage}
+
+% Measure the typeset row (or table cell) at its natural width.
+\newsavebox{\cvlinebox}
+\newcommand{\cvoneline}[2]{%
+  \begingroup
+  \def\cvlinebreakerror{%
+    \PackageError{cv}{Line break in #1}{Keep the entry on a single line.}}%
+  \sbox{\cvlinebox}{%
+    \let\\\cvlinebreakerror
+    \let\newline\cvlinebreakerror
+    \let\linebreak\cvlinebreakerror
+    \let\par\cvlinebreakerror
+    \ignorespaces#2\unskip}%
+  \ifdim\wd\cvlinebox>\linewidth
+    \PackageError{cv}{#1 does not fit on one line}{Shorten the entry.}%
+  \fi
+  \leavevmode\hbox to \linewidth{\unhbox\cvlinebox\hfil}%
+  \endgroup
+}
+
+\newcommand{\cvonelinerow}[2]{\noindent\cvoneline{#1}{#2}\par}
+
+% Shared columns for numbered entries with a year at the right.
+\newenvironment{cvdatedtable}
+  {\begin{longtable}[l]{@{}p{.2in}@{\hspace{1mm}}p{6.25in}@{\hspace{.5em}}r@{}}}
+  {\end{longtable}}
 
 % Keep navigation in sync with the PDF's section order.
 ~< if show_navigation|default(true) >~

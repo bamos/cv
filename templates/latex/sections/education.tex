@@ -1,24 +1,22 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-% \vspace{-2mm}
-% \begin{itemize}
 ~< for school in items >~
-    % \item 
+  ~< set school_number = loop.index >~
   ~< if school.degree >~
+    \cvonelinerow{<< section_id >>, entry << school_number >>}{%
     \textbf{<< school.degree >>}, \emph{<< school.school >>}
     ~< if school.overallGPA >~
         (<< school.overallGPA >>)
     ~< endif >~
-    \hfill << school.dates >> \par
+    \hfill << school.dates >>}
   ~< endif >~
   ~< if school.details >~
     ~< for detail in school.details ->~
-        <<detail>> \par
+        \cvonelinerow{<< section_id >>, entry << school_number >>, detail << loop.index >>}{<< detail >>}
     ~< endfor >~
   ~< endif >~
   \vspace{3mm}
 ~< endfor >~
-% \end{itemize}
 \vspace{-3mm}
 ~< endblock body >~

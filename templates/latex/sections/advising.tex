@@ -2,11 +2,12 @@
 
 ~< block body >~
 ~< for item in items >~
+  \cvonelinerow{<< section_id >>, entry << loop.index >>}{%
   ~< if item.url >~
     \href{<< item.url >>}{<< item.name >>} (<< item.details >>)
   ~< else >~
     << item.name >> (<< item.details >>)
   ~< endif >~
-  \hfill << item.year >> \\
+  \hfill << item.year >>}
 ~< endfor >~
 ~< endblock body >~

@@ -1,12 +1,14 @@
 ~< extends "section.tex" >~
 
 ~< block body >~
-\emph{<< total_stars >> GitHub stars across all repositories.}
-\begin{longtable}[t]{p{.2in}@{\hspace{1mm}}p{6.2in}@{\hspace{1em}}r}
+\cvonelinerow{<< section_id >>, introduction}{\emph{<< total_stars >> GitHub stars across all repositories.}}
+\begin{cvdatedtable}
   ~< for item in items >~
     \hfill << loop.index >>. &
-    \href{<< item.repo_url >>}{<< item.name >>} | $\bigstar$<< item.stars >>~< if item.desc >~ \textcolor{gray}{| \emph{<< item.desc >>}}~< endif >~ &
+    \cvoneline{<< section_id >>, entry << loop.index >>}{%
+      \href{<< item.repo_url >>}{<< item.name >>} | $\bigstar$<< item.stars >>~< if item.desc >~ \textcolor{gray}{| \emph{<< item.desc >>}}~< endif >~}
+    &
     << item.year>> \\
   ~< endfor >~
-\end{longtable}
+\end{cvdatedtable}
 ~< endblock body >~

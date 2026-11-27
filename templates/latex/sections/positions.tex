@@ -2,6 +2,7 @@
 
 ~< block body >~
 ~< for item in items >~
+  \cvonelinerow{<< section_id >>, entry << loop.index >>}{
     ~<- if item.title ->~
     \textbf{<< item.title >>}, \emph{<< item.place >>}
     ~<- else ->~
@@ -13,6 +14,6 @@
     ~< if item.inline_detail >~
     {\footnotesize \color{gray} (<< item.inline_detail >>)}
     ~< endif >~
-    \hfill << item.dates >> \par
+    \hfill << item.dates >>}
 ~< endfor >~
 ~< endblock body >~

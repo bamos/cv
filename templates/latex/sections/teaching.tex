@@ -2,9 +2,10 @@
 
 ~< block body >~
 ~< for item in items >~
+  \cvonelinerow{<< section_id >>, entry << loop.index >>}{%
   \textbf{<< item.name >>},
   \emph{<< item.short >>},
   << item.position >>
-  \hfill << item.semester>> \\
+  \hfill << item.semester >>}
 ~< endfor >~
 ~< endblock body >~
