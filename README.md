@@ -76,8 +76,7 @@ special-case code that needs to be modified.
 The PDF build fails if an entry in Education, Positions, Honors & Awards, Code,
 Talks, Interns and Students, Professional Activities, Teaching, or Skills
 exceeds its line width. The error identifies the section and entry number.
-Use a blank line in an award's YAML block description to start an intentional
-new line in the PDF.
+Award descriptions wrap as justified paragraphs under the title and year.
 
 For team-authored reports, an optional `_author_display` BibTeX field overrides
 the author line in the website and PDF while preserving the citation's `author`

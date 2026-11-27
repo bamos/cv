@@ -11,10 +11,7 @@
   ~< endif >~
   \hfill << award.year >>}
   ~< if award.descr >~
-    ~< for line in award.descr.strip().split('\n\n') >~
-      {\scriptsize\color{gray}%
-        \cvonelinerow{<< section_id >>, entry << award_number >>, description line << loop.index >>}{<< line >>}}
-    ~< endfor >~
+    {\scriptsize\color{gray}\noindent << award.descr >>\par}
   ~< else >~
     \vspace{0.5mm}
   ~< endif >~
